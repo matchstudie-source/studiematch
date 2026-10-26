@@ -1,29 +1,5 @@
 [
  {
-  "title": "Vil du arbejde tæt på toppen af dansk erhvervsliv?",
-  "co": "Dansk Industri",
-  "city": "København",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "finance",
-   "marketing"
-  ],
-  "skills": [],
-  "industry": "Interesseorganisation",
-  "postedAt": "2026-10-13T07:53:20+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Bliv praktikant i DI’s Relationsordning. Hvordan styrker man relationen til nogle af Danmarks største virksomheder – og hvordan omsætter man data til handling?",
-  "url": "https://danskindustri.teamtailor.com/jobs/8536001-vil-du-arbejde-taet-pa-toppen-af-dansk-erhvervsliv",
-  "enrichedBy": "regler",
-  "id": "x9d70754302b1",
-  "live": true
- },
- {
   "title": "Skibsførerstuderende - Åben ansøgning - Praktik 2026",
   "co": "DFDS Denmark",
   "city": "København",
@@ -171,27 +147,6 @@
   "url": "https://gmlhr.teamtailor.com/jobs/8513262-studentermedhjaelper-til-gml-a-s",
   "enrichedBy": "regler",
   "id": "x53562c66613c",
-  "live": true
- },
- {
-  "title": "Klinikassistent til Hellerup",
-  "co": "Colosseum Tandlægerne",
-  "city": "Hellerup",
-  "region": "cph",
-  "hMin": 25,
-  "hMax": 30,
-  "danish": "required",
-  "fam": "health",
-  "sec": [],
-  "skills": [],
-  "industry": "Sundhed",
-  "postedAt": "2026-09-15T09:56:28+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Til vores klinik i Hellerup søger vi en engageret klinikassistent til en fast stilling på 25–30 timer om ugen med opstart 1. januar 2027 eller snarest derefter.",
-  "url": "https://colosseumklinikken.teamtailor.com/jobs/8381062-klinikassistent-til-hellerup",
-  "enrichedBy": "regler",
-  "id": "xa53f54c17fd7",
   "live": true
  },
  {
@@ -444,7 +399,7 @@
   "live": true
  },
  {
-  "title": "2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt",
+  "title": "Er du sygeplejestuderende, så har vi relevant studiejob – ”Brobygger” i Akutafdelingen Kolding",
   "co": "Region Syddanmark",
   "city": "Kolding",
   "region": "ode",
@@ -454,23 +409,22 @@
   "fam": "health",
   "sec": [],
   "skills": [
-   "Løn",
-   "Rekruttering"
+   "Løn"
   ],
   "industry": "Sundhed og region",
-  "postedAt": "2026-10-22T09:49:27+00:00",
-  "deadlineAt": "2026-12-02T23:59:59+00:00",
+  "postedAt": "2026-10-01T09:02:56+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Har du lyst til introduktion til det internt medicinske speciale med særligt fokus på kardiologi – er dette noget for dig!",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237566&DepartmentId=6713&MediaId=5",
+  "blurb": "Vi søger nye Brobyggere, da flere af vores nuværende bliver færdiguddannede som sygeplejersker.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237292&DepartmentId=6711&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x71ff93bad587",
+  "id": "xd18eaf652702",
   "live": true
  },
  {
-  "title": "2 introduktionsstillinger i Intern medicin; Kardiologi på Hjertesygdomme, Vejle Sygehus, Sygehus Lillebælt",
+  "title": "Fagligt relevant studiejob til sygeplejestuderende i Region Syddanmark - få erfaring og fleksibilitet",
   "co": "Region Syddanmark",
-  "city": "Vejle",
+  "city": "Børkop",
   "region": "ode",
   "hMin": 0,
   "hMax": 0,
@@ -478,22 +432,146 @@
   "fam": "health",
   "sec": [],
   "skills": [
-   "R",
-   "Rekruttering"
+   "Løn"
   ],
   "industry": "Sundhed og region",
-  "postedAt": "2026-10-26T08:40:05+00:00",
-  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "postedAt": "2026-10-12T07:40:17+00:00",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Har du lyst til introduktion til det internt medicinske speciale på en dynamisk og ambitiøs afdeling – er dette noget for dig!",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237613&DepartmentId=6713&MediaId=5",
+  "blurb": "Er du sygeplejestuderende og vil du have et fagligt relevant studiejob? Ønsker du at forberede fremtidige ansættelsesmuligheder? Så bliv en del af Vagtordningen Region Syddanmark.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=234234&DepartmentId=21940&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x3f9dd64b1a84",
+  "id": "x735b10462d52",
+  "live": true
+ },
+ {
+  "title": "Kommunikationsrådgiver til arbejdet med OUH's digitale platforme",
+  "co": "Region Syddanmark",
+  "city": "Odense",
+  "region": "ode",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "health",
+   "social"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-10-09T13:31:34+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at udvikle og understøtte de digitale løsninger og den kommunikation, som møder patienter, pårørende og medarbejdere på OUH? Har du erfaring med digital kommunikation, web og CMS-systemer?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237444&DepartmentId=6847&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x7d876c9e584d",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til Afdeling for Tværfaglig Traumebehandling, Sygehus Lillebælt",
+  "co": "Region Syddanmark",
+  "city": "Middelfart",
+  "region": "ode",
+  "hMin": 8,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "health",
+  "sec": [],
+  "skills": [
+   "Løn",
+   "Patientkontakt"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-10-13T15:28:09+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du opnå praktisk erfaring med klinisk forskning og samtidig bidrage til en vigtig indsats for flygtninge med traumer - PTSD og andre traumerelaterede psykiske lidelser.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237428&DepartmentId=21955&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x43061ab56ec0",
+  "live": true
+ },
+ {
+  "title": "Studerende til juridiske opgaver",
+  "co": "Region Syddanmark",
+  "city": "Vejle",
+  "region": "ode",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-10-12T08:59:48+00:00",
+  "deadlineAt": "2026-11-02T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Studerende til juridiske opgaver Er du jurastuderende og brænder du for sundhedsområdet og forvaltningsret?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237453&DepartmentId=5563&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x44f0bcf2b5dc",
+  "live": true
+ },
+ {
+  "title": "Vi søger en studerende på audiologopædiuddannelsen til varetagelse af stemmeanalyser på OUH",
+  "co": "Region Syddanmark",
+  "city": "Odense",
+  "region": "ode",
+  "hMin": 5,
+  "hMax": 7,
+  "danish": "required",
+  "fam": "health",
+  "sec": [],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-10-16T14:14:20+00:00",
+  "deadlineAt": "2026-10-30T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Arbejdsområder: Arbejdsopgaverne består i, at du skal udføre forskellige stemmeanalyser på patienter, der i forvejen følges i foniatrisk ambulatorium.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237521&DepartmentId=6875&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xe5808037f13a",
+  "live": true
+ },
+ {
+  "title": "Weekendafløsere søges til Rengøringsenheden Vejle Sygehus",
+  "co": "Region Syddanmark",
+  "city": "Vejle",
+  "region": "ode",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "hr",
+   "customer"
+  ],
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-10-14T10:17:39+00:00",
+  "deadlineAt": "2026-10-28T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Har du behov for et studiejob eller tilsvarende, så søger vi rengøringsassistenter til aftenkøkken og weekendafløsning, med en gennemsnitlig arbejdstid på 2,75 timer om ugen. Arbejdstiden er kl.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237498&DepartmentId=10927&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xa835e70447b0",
   "live": true
  },
  {
   "title": "Student Assistant, Regional Marketing, Planetary Health Biosolutions - Novonesis",
-  "co": "1000 Novozymes A/S",
+  "co": "Novozymes A/S",
   "city": "Lyngby, Danmark",
   "region": "cph",
   "hMin": 15,
@@ -519,7 +597,7 @@
  },
  {
   "title": "Student Assistant, Novonesis R&D IT, Lyngby",
-  "co": "1000 Novozymes A/S",
+  "co": "Novozymes A/S",
   "city": "Lyngby, Danmark",
   "region": "cph",
   "hMin": 10,
@@ -612,29 +690,31 @@
   "live": true
  },
  {
-  "title": "Administrativ koordinator med sans for struktur og detaljer",
+  "title": "Studentermedhjælper til Indkøbsanalyse og -udvikling",
   "co": "Energinet",
   "city": "Fredericia",
   "region": "ode",
-  "hMin": 0,
-  "hMax": 0,
+  "hMin": 10,
+  "hMax": 15,
   "danish": "required",
-  "fam": "pmo",
+  "fam": "procurement",
   "sec": [
-   "customer",
+   "operations",
    "strategy"
   ],
   "skills": [
-   "Dokumentation"
+   "Excel",
+   "Power BI",
+   "Dataanalyse"
   ],
   "industry": "Energi",
-  "postedAt": "2026-10-26T10:15:40+00:00",
-  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "postedAt": "2026-09-14T09:30:26+00:00",
+  "deadlineAt": "2026-10-30T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Trives du i et miljø med mange sideløbende opgaver, og motiveres du af tværgående koordinering, professionel interessenthåndtering og planlægning?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188974&DepartmentId=21678&MediaId=5",
+  "blurb": "Er du studerende, og har du lyst til at bruge din faglighed i praksis?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188796&DepartmentId=21679&MediaId=5",
   "enrichedBy": "regler",
-  "id": "xc54a96683c8e",
+  "id": "x9fd36f6d089b",
   "live": true
  },
  {
@@ -690,24 +770,31 @@
   "live": true
  },
  {
-  "title": "To maskinmestre til bachelorpraktik på Amagerværket",
+  "title": "Bæredygtighedskonsulent til klimaanalyse og udvikling i HOFOR",
   "co": "HOFOR",
-  "city": "Amagerværket, Vindmøllevej 48, 2300 København S",
+  "city": "Hovedkontoret, Ørestads Boulevard 35, 2300 København",
   "region": "cph",
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "operations",
-  "sec": [],
-  "skills": [],
+  "fam": "sustain",
+  "sec": [
+   "strategy"
+  ],
+  "skills": [
+   "Excel",
+   "Power BI",
+   "Dokumentation",
+   "Dataanalyse"
+  ],
   "industry": "Forsyning",
-  "postedAt": "2026-10-14T10:49:09+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
+  "postedAt": "2026-10-15T08:59:59+00:00",
+  "deadlineAt": "2026-10-28T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du i praktik i en spændende forsyningsvirksomhed i rivende udvikling? I HOFOR ser vi praktikanter som et inspirerende bidrag til virksomheden.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184445&DepartmentId=21891&MediaId=5",
+  "blurb": "Vil du være med til at videreudvikle HOFORs klimaregnskab og bæredygtighedsarbejde gennem analyser, data og faglige indsigter? I HOFOR arbejder vi hver dag for at skabe fremtidens bæredygtige forsyning.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184438&DepartmentId=21999&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x4cb446562637",
+  "id": "xa11e050d88e9",
   "live": true
  },
  {
@@ -739,77 +826,1442 @@
   "live": true
  },
  {
-  "title": "Product Development Placement Student",
-  "co": "Carlsberg",
-  "city": "København",
+  "title": "Cinemateket søger løbende studentermedhjælpere til butiks- og billetskranken",
+  "co": "Det Danske Filminstitut",
+  "city": "Gothersgade 55, 1123 København K",
   "region": "cph",
-  "hMin": 35,
-  "hMax": 35,
-  "danish": "no",
-  "fam": "product",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "supply",
   "sec": [
-   "operations",
-   "customer"
+   "salesops",
+   "operations"
   ],
-  "skills": [],
-  "industry": "Fødevarer og drikkevarer",
-  "postedAt": "2026-10-24T02:00:00+00:00",
+  "skills": [
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-02-09T11:07:24+00:00",
   "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Job Title: Product Development Placement Student (sandwich year) Location: Hemel Hempstead - Breakspear Park Job Length: 12 Months Fixed Term Contract Working Hours: 35 hours per week Competitive Salary with extensive…",
-  "url": "https://careers.carlsberg.com/CarlsbergMarstons/job/Hemel-Hempstead-Product-Development-Placement-Student/1441474733/",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du aktiv studerende på en videregående uddannelse, og er du servicemindet og passioneret omkring film, så kunne et job i Cinematekets butik- og billetsalg være noget for dig. Om jobbet Jobbet består bl.a.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=156399&DepartmentId=19910&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x7189b9b1c429",
+  "id": "xca4bff245491",
   "live": true
  },
  {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Finanstilsynet",
-  "city": "Korsør",
+  "title": "Cinemateket søger praktikanter til kommunikation og markedsføring",
+  "co": "Det Danske Filminstitut",
+  "city": "Gothersgade 55, 1123 København K",
   "region": "cph",
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
   "fam": "marketing",
-  "sec": [
-   "public"
+  "sec": [],
+  "skills": [
+   "Copywriting",
+   "Sociale medier"
   ],
-  "skills": [],
   "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "postedAt": "2026-10-09T11:26:48+00:00",
+  "deadlineAt": "2026-11-05T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
+  "blurb": "Drømmer du om at arbejde med kommunikation og markedsføring i en kreativ kulturinstitution? Og er du studerende ved en videregående uddannelse og måske endda vild med film? Så skal du søge praktik i Cinemateket!",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170868&DepartmentId=19910&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x5b11114e7395",
+  "id": "x6861343ce7ae",
   "live": true
  },
  {
-  "title": "SU-rådgivere til vejledning og sagsbehandling i ATP",
-  "co": "ATP",
-  "city": "Haderslev",
+  "title": "Det Kongelige Teater søger studentermedhjælper, med flair for analyse og Business Intelligence og med kærlighed til kulturen",
+  "co": "Salg & Planlægning",
+  "city": "Skuespilhuset",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "bi",
+  "sec": [
+   "education"
+  ],
+  "skills": [
+   "Excel",
+   "Power BI",
+   "SQL",
+   "PowerPoint"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-26T10:37:07+00:00",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Det Kongelige Teater er en spændende arbejdsplads med mange forskellige funktioner og medarbejdergrupper, hvor mange unge og studerende er beskæftigede i teatrets forskellige afdelinger.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171459&DepartmentId=20375&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x105b9f57a915",
+  "live": true
+ },
+ {
+  "title": "Drømmer du om en praktikplads i krydsfeltet mellem politik og praksis?",
+  "co": "Styrelsen for International Rekruttering og Integration",
+  "city": "Valby",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "strategy",
+  "sec": [
+   "public",
+   "operations"
+  ],
+  "skills": [
+   "Løn",
+   "Rekruttering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-26T12:30:11+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du arbejde med at styrke integration og beskæftigelse for flygtninge og fordrevne? Vil du også bidrage til at styrke danskuddannelse for voksne udlændinge?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x2ce08920d332",
+  "live": true
+ },
+ {
+  "title": "Få fingrene i rigtige data: Studentermedhjælper med flair for SQL og PowerBI søges",
+  "co": "Det Kgl. Bibliotek",
+  "city": "Aarhus",
+  "region": "aar",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "bi",
+  "sec": [
+   "hr",
+   "public"
+  ],
+  "skills": [
+   "Excel",
+   "Regnskab",
+   "Power BI",
+   "SQL",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-09T14:06:25+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du omsætte komplekse HR- og økonomidata til skarpe indsigter i et af Danmarks største videnshuse? På Det Kgl.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170803&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x36b0e44f236a",
+  "live": true
+ },
+ {
+  "title": "Ingeniørpraktikant til geoteknik og fundering",
+  "co": "Befæstelser, Bygværker og Målinger",
+  "city": "Skanderborg",
+  "region": "cph",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "engineering",
+  "sec": [
+   "procurement",
+   "education"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-01T15:46:26+00:00",
+  "deadlineAt": "2026-11-01T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du gerne kickstarte din karriere indenfor geoteknik, og vil du lære, hvordan geotekniske undersøgelser og rådgivning planlægges og gennemføres på nogle af Danmarks største vejprojekter?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170265&DepartmentId=19793&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x0178caa004af",
+  "live": true
+ },
+ {
+  "title": "Ingeniørpraktikant til Projektering og Normer",
+  "co": "Teknik & Udførelse",
+  "city": "Region Syddanmark",
+  "region": "cph",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [
+   "engineering",
+   "operations"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-02T14:59:49+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at sikre og udvikle den tekniske kvalitet i Danmarks jernbaneinfrastruktur? Og er du interesseret i at prøve kræfter med teknisk sagsbehandling, normarbejde og drift og vedligehold?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169131&DepartmentId=19780&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xf2591d8ea4a5",
+  "live": true
+ },
+ {
+  "title": "IT-Driftssikkerhedskonsulenter til arbejdet med sikkerhed, beredskab, compliance og analyser i UFST",
+  "co": "Udviklings- og Forenklingsstyrelsen",
+  "city": "Storkøbenhavn",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "strategy",
+   "legal"
+  ],
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T08:51:00+00:00",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at arbejde med sikkerhed, beredskab og compliance samt indsamle og formidle viden om dette til en topledelse i en af statens mest komplekse organisationer?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171608&DepartmentId=19140&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xacf090de36d0",
+  "live": true
+ },
+ {
+  "title": "Jurastuderende til Justitsministeriets departement",
+  "co": "Justitsministeriets departement",
+  "city": "Justitsministeriets departement",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "legal"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-08T13:54:02+00:00",
+  "deadlineAt": "2026-11-02T12:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "I Justitsministeriets departement arbejder vi for at værne om retsstatens grundlæggende principper og for at sikre, at Danmark er et trygt og sikkert samfund.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170763&DepartmentId=19001&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xcc5716f68a4c",
+  "live": true
+ },
+ {
+  "title": "Jurastuderende til Retten på Færøerne",
+  "co": "Retten på Færøerne",
+  "city": "Retten på Færøerne",
+  "region": "cph",
+  "hMin": 8,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-29T09:49:04+00:00",
+  "deadlineAt": "2026-10-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Jurastuderende til Retten på Færøerne Retten på Færøerne søger en dygtig jurastuderende til tiltrædelse snarest muligt. Stillingen er foreløbig tidsbegrænset i 6 måneder, men med forventet mulighed for forlængelse.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170001&DepartmentId=20153&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x1385062a9a43",
+  "live": true
+ },
+ {
+  "title": "Juridisk student til Beskæftigelses- og Ligestillingsministeriet",
+  "co": "Beskæftigelses- og Ligestillingsministeriets departement",
+  "city": "Beskæftigelses- og Ligestillingsministeriets departement",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "legal"
+  ],
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T11:43:08+00:00",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Bliv vores nye kollega i Beskæftigelses- og Ligestillingsministeriets Kontor for Arbejdsret og Jura! Udvikl dig juridisk og personligt i et ministerium med en samfundsmæssig vigtig opgave.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171662&DepartmentId=19045&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x7fc8a184c96e",
+  "live": true
+ },
+ {
+  "title": "Juridiske studentermedhjælpere til Contract Management",
+  "co": "Udviklings- og Forenklingsstyrelsen",
+  "city": "Storkøbenhavn",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-14T14:44:08+00:00",
+  "deadlineAt": "2026-10-29T12:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du lære, hvordan det er at arbejde i en politisk drevet organisation?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xcce2cb7cd081",
+  "live": true
+ },
+ {
+  "title": "Metodestærk student med flair for data og analyser",
+  "co": "Danmarks Fængsler - Styrelsen for Danmarks Fængsler",
+  "city": "Region Hovedstaden",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "bi",
+  "sec": [
+   "public",
+   "finance"
+  ],
+  "skills": [
+   "Excel",
+   "Løn",
+   "Power BI",
+   "SQL",
+   "Python",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-20T10:39:46+00:00",
+  "deadlineAt": "2026-11-05T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du i gang med en videregående samfundsvidenskabelig uddannelse? Har du analytisk tæft, og er du skarp med tal? Har du høje kvalitetsstandarder og blik for både helhed og detaljen?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171345&DepartmentId=19147&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x63df743f15d2",
+  "live": true
+ },
+ {
+  "title": "Plan- og Landdistriktsstyrelsen søger stud.jur. til Team Byudvikling og Plantilsyn",
+  "co": "Plan- og Landdistriktsstyrelsen",
+  "city": "Carsten Niebuhrs Gade 43, 1577 København V",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "legal"
+  ],
+  "skills": [
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-19T11:11:42+00:00",
+  "deadlineAt": "2026-11-02T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du have indblik i arbejdet med samfundsrelevante opgaver gennem konkret sagsbehandling på et politisk aktuelt område? Plan- og Landdistriktsstyrelsen søger en stud.jur. til Team Byudvikling og Plantilsyn.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171313&DepartmentId=19274&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x56b8629c6cc7",
+  "live": true
+ },
+ {
+  "title": "Praktikant til afdeling for kontrakter og udbud",
+  "co": "Indkøb",
+  "city": "Skanderborg",
+  "region": "cph",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-11T13:37:20+00:00",
+  "deadlineAt": "2026-11-08T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du have indblik i udbudsretlige problemstillinger og prøve kræfter med at være intern rådgiver og sparringpartner? Har du kendskab til eller interesse for udbud, entrepriseret og kontrakter generelt?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=168961&DepartmentId=19798&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x5a98c4cbd51e",
+  "live": true
+ },
+ {
+  "title": "Praktikant til Kommunikation og arrangementer på Det Kgl. Bibliotek i Aarhus",
+  "co": "Det Kgl. Bibliotek",
+  "city": "Aarhus",
+  "region": "aar",
+  "hMin": 30,
+  "hMax": 30,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [],
+  "skills": [
+   "Løn",
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-19T11:57:02+00:00",
+  "deadlineAt": "2026-11-10T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du studerende med en interesse for kommunikation, kultur og brugerinddragelse?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171312&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x6721916dd7d7",
+  "live": true
+ },
+ {
+  "title": "Praktikant til kommunikation og formidling i De Økonomiske Råds Sekretariat",
+  "co": "De Økonomiske Råd",
+  "city": "Horsens",
+  "region": "aar",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "finance",
+   "public"
+  ],
+  "skills": [
+   "Dokumentation",
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-02T14:15:23+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du arbejde i krydsfeltet mellem kommunikation, formidling, politik og analyse?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169964&DepartmentId=19000&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xffcee1b75b3a",
+  "live": true
+ },
+ {
+  "title": "Praktikant til Litteratur & Talks i Den Sorte Diamant",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "cph",
+  "hMin": 30,
+  "hMax": 30,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "hr"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-23T13:14:24+00:00",
+  "deadlineAt": "2026-10-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Afdelingen for Publikum og Arrangementer søger en praktikant, der har lyst til at arbejde med at udvikle og producere Den Sorte Diamants store Litteratur & Talks-program, herunder formater som International…",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169370&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x1135bee4b382",
+  "live": true
+ },
+ {
+  "title": "Praktikant til musikproduktion i Den Sorte Diamant",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "cph",
+  "hMin": 25,
+  "hMax": 25,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "product",
+   "hr"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-23T13:47:27+00:00",
+  "deadlineAt": "2026-10-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Det Kgl. Biblioteks Musikteam søger en praktikant, der har lyst til at prøve kræfter med arbejdet omkring produktion af koncerter i Den Sorte Diamant.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169423&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xe9d672862e2a",
+  "live": true
+ },
+ {
+  "title": "Praktikanter til Sundhedsstyrelsen",
+  "co": "Sundhedsstyrelsen",
+  "city": "København",
+  "region": "cph",
+  "hMin": 30,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "public",
+   "education"
+  ],
+  "skills": [
+   "Dataanalyse"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-14T14:38:29+00:00",
+  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Har du lyst til at se, hvordan Sundhedsstyrelsen arbejder indefra, og er du klar til at bruge fem måneder på at omsætte din viden fra studiet og få praktisk erfaring?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171182&DepartmentId=19038&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xcc26ec01f6b4",
+  "live": true
+ },
+ {
+  "title": "Praktikanter til undervisning og børneaktiviteter",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "cph",
+  "hMin": 30,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-23T13:22:25+00:00",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Afdelingen for Publikum og Arrangementer på Det Kgl.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169438&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x3ffd0fc5900a",
+  "live": true
+ },
+ {
+  "title": "Protokolmedarbejder til Folketingets Administration (tidsbegrænset stilling)",
+  "co": "Folketinget",
+  "city": "København K",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [
+   "finance",
+   "customer"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T10:11:08+00:00",
+  "deadlineAt": "2026-11-06T12:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Folketingets protokol søger en medarbejder til at bistå teamet i forbindelse med øget opgavemængde pga. Nordisk Råds jubilæum i 2027. Har du flair for at arrangere og koordinere events og arrangementer?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171641&DepartmentId=18972&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x486830e62682",
+  "live": true
+ },
+ {
+  "title": "Slots- og Kulturstyrelsen søger praktikant til foråret 2027",
+  "co": "Slots- og Kulturstyrelsen",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-20T15:05:39+00:00",
+  "deadlineAt": "2026-11-20T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Interesserer du dig for, hvordan kunst og kultur kan spille en rolle på den internationale scene?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171434&DepartmentId=19817&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x2f2c85f29b36",
+  "live": true
+ },
+ {
+  "title": "Stud.jur. til et spændende og selvstændigt studiejob ved Retten i Esbjerg",
+  "co": "Retten i Esbjerg",
+  "city": "Retten i Esbjerg",
+  "region": "ode",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "hr",
+   "legal"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-12T09:16:08+00:00",
+  "deadlineAt": "2026-10-26T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du have et juridisk relevant studiejob, hvor du får ansvar, møder borgere og får et tæt indblik i arbejdet ved Danmarks Domstole? Så er du måske en af vores to nye studentermedhjælpere.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170948&DepartmentId=20146&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xe624ed890c5f",
+  "live": true
+ },
+ {
+  "title": "Stud.jur. til kontoret Hav- og Fiskeritilskud i Nørresundby",
+  "co": "Miljøstyrelsen",
+  "city": "Miljøstyrelsen, Region Nordjylland",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "legal",
+   "sustain"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-20T14:01:12+00:00",
+  "deadlineAt": "2026-11-08T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Kunne du tænke dig at arbejde tæt på politiske aftaler og beslutninger, i et kontor der udmønter tilskudsmidler, sikrer understøttelse af et bæredygtigt fiskeri og har politisk bevågenhed?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171416&DepartmentId=19117&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x02ad64616375",
+  "live": true
+ },
+ {
+  "title": "Student til Finanstilsynets juridiske kontor",
+  "co": "Finanstilsynet",
+  "city": "København",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "hr"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-12T08:25:33+00:00",
+  "deadlineAt": "2026-10-28T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du på udkig efter et spændende studiejob i et godt arbejdsmiljø og med gode udviklingsmuligheder? Så er det måske netop dig, vi søger lige nu. Finanstilsynet søger en ny dygtig stud.jur.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170944&DepartmentId=18985&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xf94b08e1da77",
+  "live": true
+ },
+ {
+  "title": "Student til Grønt Politisk Center (GPC) i Finansministeriet",
+  "co": "Finansministeriets departement",
+  "city": "København K",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-20T10:22:00+00:00",
+  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Interesserer du dig for at arbejde med klima-, energi-, miljø- og landbrugspolitik?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171146&DepartmentId=18978&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x850f10e4555f",
+  "live": true
+ },
+ {
+  "title": "Student til Ledelsessekretariatet i Styrelsen for International Rekruttering og Integration",
+  "co": "Styrelsen for International Rekruttering og Integration",
+  "city": "Valby",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "hr"
+  ],
+  "skills": [
+   "Excel",
+   "Løn",
+   "PowerPoint",
+   "Rekruttering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T11:21:51+00:00",
+  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du serviceminded, struktureret og nysgerrig på, hvordan en offentlig styrelse arbejder på et politisk område med stor bevågenhed?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170922&DepartmentId=19029&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xe2ce5ea43717",
+  "live": true
+ },
+ {
+  "title": "Studentermedarbejdere med viden om EU søges til Folketingets EU-Oplysning",
+  "co": "Folketinget",
+  "city": "København K",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "strategy",
+  "sec": [
+   "pmo",
+   "finance"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-22T09:40:50+00:00",
+  "deadlineAt": "2026-11-11T12:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Studentermedarbejdere med viden om EU søges til Folketingets EU-Oplysning Folketinget søger to studentermedarbejdere med stor interesse for arbejdet i EU’s institutioner, Folketingets arbejde med EU-sager, og…",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171536&DepartmentId=18972&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x041593cb92c6",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper – selskabsskat",
+  "co": "Skattestyrelsen",
+  "city": "Østjylland",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "public"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-19T09:49:08+00:00",
+  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du studerende på en juridisk eller revisions-/regnskabsmæssig uddannelse eller på uddannelsen som professionsbachelor i skat, og har du interesse for selskabskatteret?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171295&DepartmentId=19143&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x4b723687406b",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper (stud.jur.) søges til Center for Ungdomsuddannelser i Styrelsen for Undervisning og Kvalitet",
+  "co": "Styrelsen for Undervisning og Kvalitet",
+  "city": "Styrelsen for Undervisning og Kvalitet i København",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "education",
+   "legal"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-15T10:31:06+00:00",
+  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Har du lyst til at afprøve dine akademiske og juridiske evner i praksis, og drømmer du om et studiejob, hvor du får ansvar, udfordringer og mulighed for at bruge din uddannelse?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171208&DepartmentId=19749&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x69817511fde0",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper i Udenrigsministeriet",
+  "co": "Udenrigsministeriet",
+  "city": "Danmark",
+  "region": "cph",
+  "hMin": 19,
+  "hMax": 19,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2025-06-24T16:03:10+00:00",
+  "deadlineAt": "2050-01-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Kan jeg blive studentermedhjælper i Udenrigsministeriet? Studentermedhjælpere skal være aktivt studerende og indskrevet ved en højere læreanstalt.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=147873&DepartmentId=19811&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x25fb2f711132",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper med interesse for miljø og regulering søges",
+  "co": "Miljøstyrelsen",
+  "city": "Miljøstyrelsen, Region Syddanmark",
+  "region": "cph",
+  "hMin": 5,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "sustain",
+  "sec": [
+   "public",
+   "research"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-16T13:25:28+00:00",
+  "deadlineAt": "2026-11-15T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du studerende og interesseret i miljø, myndighedsarbejde og regulering?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171259&DepartmentId=19117&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xd6bbdc5dfa5d",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til afdeling for skatteøkonomisk kriminalitet",
+  "co": "Skattestyrelsen",
+  "city": "Nordsjælland",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "public"
+  ],
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-21T20:37:05+00:00",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Kan du arbejde selvstændigt og struktureret med stort fokus på detaljerne? Så er det måske dig, vi leder efter.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171518&DepartmentId=19143&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x0cea13a161a2",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til AI og digitalisering i Finansministeriet",
+  "co": "Finansministeriets departement",
+  "city": "København",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "datasci",
+   "operations"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-09T14:36:17+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Finansministeriets departement søger 1-2 studentermedhjælpere til Center for Sikkerhed, Digitalisering og Jura til arbejdet med udvikling, implementering og drift af AI-løsninger.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170860&DepartmentId=18978&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xc19092f2008e",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til arresthuse i Østjylland",
+  "co": "Danmarks Fængsler - Fængselskreds Vest",
+  "city": "Region Midtjylland",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "hr",
+   "health"
+  ],
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-12T14:41:22+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du have et spændende og relevant job, hvor du har mulighed for at gøre en forskel for indsatte i Østjyllands arrester? Vi søger en studerende til administrativ understøttelse i Aarhus, Randers og Silkeborg arrester.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170793&DepartmentId=19152&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x8de7498b89d0",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til arresthuse i Østjylland",
+  "co": "Danmarks Fængsler - Fængselskreds Vest",
+  "city": "Region Hovedstaden",
+  "region": "cph",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "product",
+   "public"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-28T07:14:57+00:00",
+  "deadlineAt": "2026-10-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Kalaallisut danskisullu oqalussinnaavit allassinnaallutillu – aammalu Kalaallit Nunaanni Parnaarussiveqarfinni Isertitsivinni ilinniartitaanerup siunissaanik ilusilersueqataarusuppit?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=165454&DepartmentId=19152&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x6a94858ca9a4",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Cinematekets programredaktion",
+  "co": "Det Danske Filminstitut",
+  "city": "Gothersgade 55, 1123 København K",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "supply",
+   "operations"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-05T10:49:07+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Brænder du for film og filmformidling – og er du god til at skrive? Så er dette måske studiejobbet for dig.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170400&DepartmentId=19910&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x8b9f44bf7257",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til forseglingsopgaver hos Fødevarestyrelsen, Aarhus Havn Aarhus",
+  "co": "Fødevarestyrelsen",
+  "city": "Fødevarestyrelsen",
+  "region": "cph",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "customer"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T14:10:29+00:00",
+  "deadlineAt": "2026-11-13T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du studerende og vil du have et studiejob med ansvar, hvor du får indblik i myndighedsarbejde og bidrager til opgaver med betydning for import og kontrol af varer?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171310&DepartmentId=19122&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xebf837def789",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Miljøstyrelsen i Aalborg",
+  "co": "Miljøstyrelsen",
+  "city": "Miljøstyrelsen, Region Nordjylland",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "sustain"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-07T14:44:40+00:00",
+  "deadlineAt": "2026-11-01T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "I undergrunden ligger en af Danmarks vigtigste ressourcer – grundvandet. Det er herfra, vi får alt vores drikkevand. For at beskytte det, skal vi vide, hvor det findes, hvordan det bevæger sig – og hvor sårbart det er.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xf7a9c804a726",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Ministeriet for Samfundssikkerhed og Beredskab",
+  "co": "Ministeriet for Samfundssikkerhed og Beredskabs departement",
+  "city": "København K",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations"
+  ],
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-12T13:24:12+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med i kampen mod den hybride trussel? Har du lyst til at være med til at styrke cyber- og informationssikkerheden i Danmark? Og brænder du for internationale forhold?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170969&DepartmentId=19926&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x2c8db860b6fb",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til selskabsomstrukturering og kontrol af hovedaktionærer i Aalborg",
+  "co": "Skattestyrelsen",
+  "city": "Region Nordjylland",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance",
+   "hr"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-14T13:59:24+00:00",
+  "deadlineAt": "2026-10-28T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du på udkig efter et studiejob på ca. 15 timer om ugen med mulighed for fleksibilitet i eksamensperioder, som giver dig relevant erhvervserfaring?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171176&DepartmentId=19143&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xf49e4faf2fcb",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til økonomistyring, regnskab og god tilskudsforvaltning i Udenrigsministeriet",
+  "co": "Udenrigsministeriet",
+  "city": "Danmark",
+  "region": "cph",
+  "hMin": 19,
+  "hMax": 19,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "public",
+   "education"
+  ],
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2025-06-20T12:01:31+00:00",
+  "deadlineAt": "2050-01-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Kan jeg blive studentermedhjælper i Udenrigsministeriet? Studentermedhjælpere skal være aktivt studerende og indskrevet ved en højere læreanstalt.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=147910&DepartmentId=19811&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x872e0c2c3325",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere med interesse for jura til klagesagsområdet",
+  "co": "Skatteankestyrelsen",
+  "city": "Midt- og Vestjylland",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "public",
+   "finance"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-09T09:01:50+00:00",
+  "deadlineAt": "2026-10-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "”Du kan se frem til at få mulighed for at tage ansvar for dine egne opgaver og følge dem til dørs. Der er hele tiden noget nyt at sætte sig ind, så du kan lære meget”.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170766&DepartmentId=18996&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x05ce412db5df",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til it-udviklingsopgaver i stort digitaliseringsprogram",
+  "co": "Domstolsstyrelsen",
+  "city": "Domstolsstyrelsen",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "software",
+  "sec": [
+   "public",
+   "operations"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-30T13:14:31+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du prøve kræfter med udvikling og test i et stort digitaliseringsprogram? Og vil du være med til at udvikle den offentlige it-infrastruktur på Færøerne og i Grønland? Så er du måske vores nye studentermedhjælper.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170143&DepartmentId=19239&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xe721c934d379",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til projektunderstøttelse i stort digitaliseringsprogram",
+  "co": "Domstolsstyrelsen",
+  "city": "Domstolsstyrelsen",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [
+   "public",
+   "operations"
+  ],
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-30T11:51:43+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du prøve kræfter med opgaver inden for projektstyring- og understøttelse i et stort digitaliseringsprogram? Og vil du være med til at udvikle den offentlige it-infrastruktur på Færøerne og i Grønland?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170126&DepartmentId=19239&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x8a0766cab505",
+  "live": true
+ },
+ {
+  "title": "Studenterrådgivningen i Jylland søger en psykolog eller socialrådgiver med terapeutisk efteruddannelse",
+  "co": "Studenterrådgivningen",
+  "city": "Studenterrådgivningen",
   "region": "cph",
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
   "fam": "social",
+  "sec": [],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T13:18:23+00:00",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du bidrage til at fremme trivsel hos studerende ved videregående uddannelser? Er du psykolog eller socialrådgiver med en terapeutisk efteruddannelse?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171688&DepartmentId=19053&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x8d2ba2658b16",
+  "live": true
+ },
+ {
+  "title": "Studiejob i SIRI: Kan du finde nålen i høstakken?",
+  "co": "Styrelsen for International Rekruttering og Integration",
+  "city": "Valby",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
   "sec": [
-   "public",
+   "finance",
    "hr"
   ],
   "skills": [
-   "Dokumentation",
-   "Kundeservice"
+   "Løn",
+   "Rekruttering"
   ],
-  "industry": "Pension og forsikring",
-  "postedAt": "2026-10-23T12:53:33+00:00",
-  "deadlineAt": "2026-11-15T23:59:00+00:00",
+  "industry": "Offentlig",
+  "postedAt": "2026-10-13T15:10:23+00:00",
+  "deadlineAt": "2026-10-27T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du kombinere grundig sagsbehandling med tydelig og nærværende vejledning af studerende? Og motiveres du af at sætte dig ind i regler, træffe korrekte afgørelser og hjælpe den enkelte videre?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=208&ProjectId=184898&DepartmentId=21761&MediaId=5",
+  "blurb": "Interesserer du dig for sagsbehandling og offentlig administration, og er du nysgerrig på, hvordan data kan bruges til at finde mønstre og forbedre arbejdsgange?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170221&DepartmentId=19029&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x686687f0f0a0",
+  "id": "x4476aa74bce2",
+  "live": true
+ },
+ {
+  "title": "Sæt dit aftryk på beskæftigelsesområdet som vores nye studentermedhjælper",
+  "co": "Styrelsen for Arbejdsmarked og Rekruttering",
+  "city": "Beskæftigelses- og Ligestillingsministeriets departement",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "hr",
+   "legal"
+  ],
+  "skills": [
+   "Løn",
+   "Rekruttering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-14T09:30:21+00:00",
+  "deadlineAt": "2026-11-05T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du styrke dine juridiske kompetencer og komme tæt på de politiske processer, der former indsatsen for at hjælpe ledige i arbejde? Så er det måske dig, vi leder efter.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170989&DepartmentId=19047&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xc0f7fcea71fd",
+  "live": true
+ },
+ {
+  "title": "Teknisk dygtig studerende til analysecenter i Digital Sundhed Danmark",
+  "co": "IT- og Digitalisering",
+  "city": "København",
+  "region": "cph",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "public",
+   "finance"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-09T12:22:37+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at sikre den danske sundhedssektor mod cybertrusler? Er du villig til at være oppe om natten og passe på os andre mens vi sover eller holder weekend?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170517&DepartmentId=20166&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xc2fd3d30957a",
+  "live": true
+ },
+ {
+  "title": "Uddannelsespraktik for administrationsbachelorer  Skatte- og Vækstministeriets koncern har muligheder til dig i Fredericia",
+  "co": "Skattestyrelsen",
+  "city": "Midt- og Vestjylland",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance",
+   "operations"
+  ],
+  "skills": [
+   "Løn",
+   "Rekruttering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-21T11:16:10+00:00",
+  "deadlineAt": "2026-10-30T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du afprøve og udvikle din viden og færdigheder indenfor det administrative, drift, planlægning og udvikling?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169447&DepartmentId=19143&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xef25e27a7016",
+  "live": true
+ },
+ {
+  "title": "Uddannelsespraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning",
+  "co": "Skatte- og Vækstministeriet",
+  "city": "Danmark",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance"
+  ],
+  "skills": [
+   "Regnskab"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-06-18T10:30:06+00:00",
+  "deadlineAt": "2026-12-18T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vidste du, at dine kompetencer indenfor fx revision, regnskab, finansiering, ejendomshandel, erhvervsjura, administration, kommunikation, IT samt privat-, samfunds- og erhvervsøkonomi kan bringes i spil i en…",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=147643&DepartmentId=19771&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x63d28e0dbf8e",
+  "live": true
+ },
+ {
+  "title": "Udstillingspraktikant (design) til Det Kgl. Bibliotek, Den Sorte Diamant",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "product",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-30T09:36:27+00:00",
+  "deadlineAt": "2026-10-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Afdelingen for Publikum og Arrangementer på Det Kgl.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169446&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x709759cecc8d",
+  "live": true
+ },
+ {
+  "title": "Udstillingspraktikant (formidling) til Det Kgl. Bibliotek, Den Sorte Diamant",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "hr",
+   "product"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-09-23T13:25:01+00:00",
+  "deadlineAt": "2026-10-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Afdelingen for Publikum og Arrangementer på Det Kgl.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169441&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x644d73c8286f",
+  "live": true
+ },
+ {
+  "title": "Vil du bidrage til at skabe en mere bæredygtig fødevareproduktion og samtidig få indblik i arbejdet i en statslig styrelse? Bliv student hos os!",
+  "co": "Fødevarestyrelsen",
+  "city": "Fødevarestyrelsen",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations",
+   "product"
+  ],
+  "skills": [
+   "Excel",
+   "Løn",
+   "Statistik",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-19T16:43:19+00:00",
+  "deadlineAt": "2026-11-02T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du have relevant joberfaring og en unik mulighed for at arbejde helt tæt på beslutningerne og beslutningstagerne i en stor statslig styrelse? Så kan du være vores nye student i Fødevarestyrelsen.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169891&DepartmentId=19122&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x8d26916d0782",
+  "live": true
+ },
+ {
+  "title": "Økonomi- og Indenrigsministeriet søger to praktikanter til Center for Demokrati til forårssemesteret 2027",
+  "co": "Økonomi- og Indenrigsministeriets departement",
+  "city": "København K",
+  "region": "cph",
+  "hMin": 7,
+  "hMax": 7,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance"
+  ],
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-23T11:44:33+00:00",
+  "deadlineAt": "2026-11-12T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Drømmer du om at arbejde med demokrati, valg eller lokaldemokrati i kommuner og regioner i et departement tæt på det politiske miljø og samtidig prøve kræfter med din uddannelse i praksis?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171664&DepartmentId=18999&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xf800a10bfe08",
   "live": true
  },
  {
@@ -867,28 +2319,27 @@
   "live": true
  },
  {
-  "title": "HR-studentmedarbetare, deltid",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
+  "title": "Vil du supplere dit jurastudie med et job hos Gjensidige Forsikring?",
+  "co": "Gjensidige",
+  "city": "København",
   "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
+  "hMin": 15,
+  "hMax": 20,
   "danish": "required",
-  "fam": "operations",
+  "fam": "legal",
   "sec": [
-   "hr"
+   "research",
+   "customer"
   ],
-  "skills": [
-   "R"
-  ],
+  "skills": [],
   "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
+  "postedAt": "2026-10-13T00:00:00+00:00",
+  "deadlineAt": "2026-12-18T23:00:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Vi söker dig som vill jobba extra under dina studier och samtidigt få värdefull erfarenhet av brett HR-arbete. Hos oss kommer du bli en välkommen del av ett engagerat och sammansvetsat team!",
-  "url": "https://careers.tryg.com/Trygg-Hansa/job/Malm%C3%B6-HR-studentmedarbetare%2C-deltid/1448602033/",
+  "blurb": "Gjensidige har sine rødder i Norge og en historie, der går tilbage til 1816. I dag er vi et førende nordisk forsikringsselskab med omkring 4.600 medarbejdere i Norge, Sverige og Danmark.",
+  "url": "https://jobs.gjensidige.com/job/K%C3%B8benhavn-SV-Vil-du-supplere-dit-jurastudie-med-et-job-hos-Gjensidige-Forsikring-2450/1446759233/",
   "enrichedBy": "regler",
-  "id": "x277f23b0654c",
+  "id": "xa7eab751c83b",
   "live": true
  },
  {
@@ -913,27 +2364,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1762&ProjectId=144522&DepartmentId=18956&MediaId=5",
   "enrichedBy": "regler",
   "id": "x22fa50d3135e",
-  "live": true
- },
- {
-  "title": "KPMG TechAcademy 2027",
-  "co": "KPMG Danmark",
-  "city": "Copenhagen",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "engineering",
-  "sec": [],
-  "skills": [],
-  "industry": "Revision og rådgivning",
-  "postedAt": "2026-09-28T14:14:29+00:00",
-  "deadlineAt": "2026-11-30T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Solve business challenges with AI alongside industry-leading experts KPMG TechAcademy is an intensive, hands-on program for motivated students who want to explore how technology, AI and consulting come together to solve…",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1762&ProjectId=144526&DepartmentId=18956&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xe2cdb74daf33",
   "live": true
  },
  {
@@ -1079,32 +2509,6 @@
   "live": true
  },
  {
-  "title": "Kom i praktik som el-installatør i foråret 2027",
-  "co": "Per Aarsleff",
-  "city": "Viby J",
-  "region": "aar",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "supply",
-  "sec": [
-   "procurement",
-   "pmo"
-  ],
-  "skills": [
-   "Dokumentation"
-  ],
-  "industry": "Byggeri",
-  "postedAt": "2026-10-13T11:08:11+00:00",
-  "deadlineAt": "2026-12-01T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du el-installatørstuderende, og trives du med ansvar og udfordringer? Har du lyst til at prøve teorien af i praksis?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182833&DepartmentId=21654&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xbbd69cc1fe40",
-  "live": true
- },
- {
   "title": "Juridisk studentermedhjælper – Privacy og Regulatory",
   "co": "3 Danmark",
   "city": "København",
@@ -1153,211 +2557,137 @@
   "live": true
  },
  {
-  "title": "Strategisk konsulent til samarbejde med uddannelses institutionerne",
-  "co": "HK",
-  "city": "HK Forbundet",
-  "region": "cph",
+  "title": "Fast weekend medarbejder søges til Bofællesskabet Mårslet Hus 17",
+  "co": "Aarhus Kommune",
+  "city": "Bofællesskabet Mårslet, Ved Kirken 17, 8320 Mårslet",
+  "region": "aar",
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "strategy",
-  "sec": [],
+  "fam": "health",
+  "sec": [
+   "education",
+   "public"
+  ],
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-13T10:51:25+00:00",
+  "deadlineAt": "2026-10-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Brænder du for at arbejde med mennesker i en omsorgsrolle? Og er du nysgerrig på hvad socialområdet kan tilbyde?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144510&DepartmentId=21623&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x536988f90380",
+  "live": true
+ },
+ {
+  "title": "Praktikant til Staben for Sundhed og Forebyggelse i Sundhed og Omsorg",
+  "co": "Aarhus Kommune",
+  "city": "Grøndalsvej 2",
+  "region": "aar",
+  "hMin": 30,
+  "hMax": 30,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "strategy",
+   "operations"
+  ],
+  "skills": [
+   "Excel",
+   "Løn",
+   "SQL",
+   "PowerPoint"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-06T12:49:33+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Om jobbet: Sundhed og Omsorg tilbyder i foråret 2027 en praktikplads i Staben for Sundhed og Forebyggelse, der er en afdeling i forvaltningen, Sundhed og Forebyggelse.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144463&DepartmentId=22295&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x09dd1360b26d",
+  "live": true
+ },
+ {
+  "title": "Projektmedarbejder til FrirumAarhus",
+  "co": "Aarhus Kommune",
+  "city": "Carl Blochs Gade 28 8000 Aarhus",
+  "region": "aar",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [
+   "operations",
+   "hr"
+  ],
   "skills": [
    "Løn",
    "Forhandling"
   ],
-  "industry": "Interesseorganisation",
-  "postedAt": "2026-10-21T12:10:26+00:00",
-  "deadlineAt": "2026-11-08T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du være med til at bygge bro mellem uddannelse og arbejdsliv? Er du en stærk relationsskaber og erfaren forhandler, der kan omsætte fælles interesser til konkrete samarbejdsaftaler?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=318&ProjectId=180157&DepartmentId=21527&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x43e6fd3e1d1c",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Skatteforvaltningen",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
   "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "postedAt": "2026-10-13T11:08:27+00:00",
+  "deadlineAt": "2026-11-01T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
+  "blurb": "Vil du være med til at støtte unge i Aarhus til at omsætte deres idéer til fællesskaber og trivsel?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144379&DepartmentId=22315&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x5b11114e7395",
+  "id": "x28c431ef2e73",
   "live": true
  },
  {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Danmarks Statistik",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
+  "title": "Studentermedhjælper med kommunikationsprofil, stærke formidlingsevner og interesse for udviklingen af byens udsatte boligområder",
+  "co": "Aarhus Kommune",
+  "city": "Rådhuset, Rådhuspladsen 2, 8000 Aarhus C",
+  "region": "aar",
+  "hMin": 12,
+  "hMax": 12,
   "danish": "required",
   "fam": "marketing",
   "sec": [
-   "public"
+   "social"
   ],
-  "skills": [],
+  "skills": [
+   "Løn"
+  ],
   "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "postedAt": "2026-10-12T11:12:44+00:00",
+  "deadlineAt": "2026-10-26T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
+  "blurb": "Om jobbet: I Bydelsudvikling og Boliger i Magistraten for Sociale Forhold og Beskæftigelse søger vi en studentermedhjælper til et barselsvikariat med opstart senest d. 1. december 2026 og gerne hurtigst muligt.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144541&DepartmentId=22140&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x5b11114e7395",
+  "id": "x062b8877ec36",
   "live": true
  },
  {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Digitaliseringsstyrelsen",
-  "city": "Korsør",
-  "region": "cph",
+  "title": "Teknik og Miljø søger studentermedhjælper til håndtering af aktindsigter",
+  "co": "Aarhus Kommune",
+  "city": "Karen Blixens Boulevard 7, 8220 Brabrand",
+  "region": "aar",
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "sustain",
   "sec": [
-   "public"
+   "public",
+   "legal"
   ],
-  "skills": [],
+  "skills": [
+   "Løn"
+  ],
   "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "postedAt": "2026-10-23T15:58:08+00:00",
+  "deadlineAt": "2026-11-19T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
+  "blurb": "Er du f.eks. administrationsbachelorstuderende og på udkig efter et fagligt relevant studiejob i en stor offentlig forvaltning? Ønsker du at styrke dine kompetencer inden for bl.a.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144661&DepartmentId=22761&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Energistyrelsen",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Statens Serum Institut",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Sundhed",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Finansministeriet",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Erhvervsministeriet",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Uddannelses- og Forskningsministeriet",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
+  "id": "x3f053d2292b8",
   "live": true
  },
  {
@@ -1468,132 +2798,6 @@
   "live": true
  },
  {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "Kriminalforsorgen",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "Barselsvikar som kommunikations- og pressemedarbejder til Søfartsstyrelsen",
-  "co": "CBS",
-  "city": "Korsør",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "public"
-  ],
-  "skills": [],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-19T16:13:43+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med en bred kommunikationsrolle i Søfartsstyrelsen? Har du styr på skriftlig formidling og lyst til seks måneder med mange forskellige kommunikations- og presseopgaver?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171338&DepartmentId=18988&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5b11114e7395",
-  "live": true
- },
- {
-  "title": "AV Tekniker",
-  "co": "Roskilde Universitet",
-  "city": "Roskilde Universitet",
-  "region": "cph",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "finance",
-   "customer"
-  ],
-  "skills": [
-   "SQL",
-   "JavaScript",
-   "Dokumentation"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-09T14:24:31+00:00",
-  "deadlineAt": "2026-11-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du være med til at sikre udviklingen af RUC’s Audio Visuelle landskab, stå for drift og support af AV-netværk og udstyr på hele Roskilde Universitets campus?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148323&DepartmentId=18978&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xb68ecba817a5",
-  "live": true
- },
- {
-  "title": "Instruktor-stillinger i Kvantitativ Metode",
-  "co": "Roskilde Universitet",
-  "city": "Roskilde Universitet",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "education",
-  "sec": [],
-  "skills": [
-   "Statistik",
-   "R",
-   "Stata",
-   "Dokumentation"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-09-28T12:42:26+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Institut for Samfundsvidenskab og Erhverv, Roskilde Universitet, opslår hermed en stilling som instruktor på den samfundsvidenskabelige bacheloruddannelse med undervisning i kurset Kvantitativ metode (BK8) på 4. semester.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148318&DepartmentId=18972&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x3f06a65ecc60",
-  "live": true
- },
- {
-  "title": "Medarbejder til tværgående opgaver i Digital",
-  "co": "Roskilde Universitet",
-  "city": "Roskilde Universitet",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "marketing",
-   "public"
-  ],
-  "skills": [
-   "Dokumentation"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-20T16:38:01+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du optaget af at skabe gode brugeroplevelser med digitalisering, og har du erfaring med at arbejde med brugerindsigter og brugerrettet formidling i en digital kontekst?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148331&DepartmentId=18978&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x46113e99f6ad",
-  "live": true
- },
- {
   "title": "Studentermedhjælper (HK) til ressourcestyring på Institut for Samfundsvidenskab og Erhverv (ISE)",
   "co": "Roskilde Universitet",
   "city": "Roskilde Universitet",
@@ -1647,58 +2851,8 @@
   "live": true
  },
  {
-  "title": "Teaching Assistant Professorship in development, fabrication, assembly of mechanical prototypes and robotic systems at the IT University of Copenhagen",
-  "co": "IT-Universitetet",
-  "city": "Data, Systems and Robotics",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "engineering",
-  "sec": [
-   "education",
-   "customer"
-  ],
-  "skills": [],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-12T14:58:10+00:00",
-  "deadlineAt": "2026-10-26T23:59:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "The IT University of Copenhagen invites highly motivated individuals to apply for a Teaching Assistant Professor position starting in January or soon thereafter.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181915&DepartmentId=3439&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x0c439604179e",
-  "live": true
- },
- {
-  "title": "Det Kongelige Akademi søger 2 serviceassistenter pr. 1. februar 2027",
-  "co": "Professionshøjskolen Absalon",
-  "city": "Holmen",
-  "region": "cph",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "customer",
-  "sec": [
-   "finance"
-  ],
-  "skills": [
-   "Løn",
-   "Forhandling"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-22T08:01:31+00:00",
-  "deadlineAt": "2026-11-27T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Det Kongelige Akademi søger 2 serviceassistenter pr. 1. februar 2027 Det Kongelige Akademi er en uddannelsesinstitution fortrinsvis beliggende i København på Holmen og Esplanaden.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194472&DepartmentId=7810&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xcf6d78051d7f",
-  "live": true
- },
- {
   "title": "Fagligt dygtige jurastuderende",
-  "co": "Professionshøjskolen Absalon",
+  "co": "Ligebehandling",
   "city": "Roskilde",
   "region": "cph",
   "hMin": 15,
@@ -1722,177 +2876,108 @@
   "live": true
  },
  {
-  "title": "Juridisk underviser til socialrådgiveruddannelsen",
-  "co": "Professionshøjskolen Absalon",
-  "city": "Roskilde",
-  "region": "cph",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "social",
-  "sec": [
-   "education",
-   "legal"
-  ],
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-08T11:50:46+00:00",
-  "deadlineAt": "2026-11-09T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du god til at skabe forståelse for, hvordan man anvender og formidler jura?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194378&DepartmentId=9378&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xa4cf843fc617",
-  "live": true
- },
- {
-  "title": "Konsulent til forretningsudvikling af efter- og videreuddannelse",
-  "co": "Professionshøjskolen Absalon",
-  "city": "Slagelse",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "strategy",
-  "sec": [
-   "bizdev",
-   "operations"
-  ],
-  "skills": [],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-19T12:31:10+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vi er i gang med at samle EVU-forretning og EVU-administration i ét fælles EVU-team i Uddannelsesservice.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194460&DepartmentId=9396&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x95d48438cb41",
-  "live": true
- },
- {
-  "title": "Det Kongelige Akademi søger 2 serviceassistenter pr. 1. februar 2027",
-  "co": "Erhvervsakademi Aarhus",
-  "city": "Holmen",
-  "region": "aar",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "customer",
-  "sec": [
-   "finance"
-  ],
-  "skills": [
-   "Løn",
-   "Forhandling"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-22T08:01:31+00:00",
-  "deadlineAt": "2026-11-27T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Det Kongelige Akademi søger 2 serviceassistenter pr. 1. februar 2027 Det Kongelige Akademi er en uddannelsesinstitution fortrinsvis beliggende i København på Holmen og Esplanaden.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194472&DepartmentId=7810&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xcf6d78051d7f",
-  "live": true
- },
- {
-  "title": "Fagligt dygtige jurastuderende",
-  "co": "Erhvervsakademi Aarhus",
-  "city": "Aarhus",
-  "region": "aar",
-  "hMin": 15,
-  "hMax": 15,
+  "title": "Stud.jur. til uddannelsesjura hos UC SYD",
+  "co": "Studieservice",
+  "city": "Esbjerg",
+  "region": "ode",
+  "hMin": 8,
+  "hMax": 10,
   "danish": "required",
   "fam": "legal",
   "sec": [
-   "public"
+   "public",
+   "hr"
   ],
   "skills": [
    "Løn"
   ],
   "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-07T12:53:45+00:00",
-  "deadlineAt": "2026-10-28T12:00:00+00:00",
+  "postedAt": "2026-10-26T09:39:19+00:00",
+  "deadlineAt": "2026-11-23T23:59:00+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Om os Institut for Menneskerettigheder er oprettet ved lov af Folketinget som Danmarks nationale menneskerettighedsinstitution for at fremme og beskytte menneskerettighederne.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194429&DepartmentId=10178&MediaId=5",
+  "blurb": "Er du jurastuderende og interesserer du dig for forvaltningsret, uddannelsesjura og juridisk sagsbe-handling?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194482&DepartmentId=8336&MediaId=5",
   "enrichedBy": "regler",
-  "id": "xaf1d14874025",
+  "id": "x8a6d867d5edb",
   "live": true
  },
  {
-  "title": "Juridisk underviser til socialrådgiveruddannelsen",
-  "co": "Erhvervsakademi Aarhus",
-  "city": "Roskilde",
+  "title": "To studentermedhjælpere til Kommunikation på TEC",
+  "co": "Technical Education Copenhagen",
+  "city": "Stæhr Johansens Vej 7, 2000 Frederiksberg",
   "region": "cph",
-  "hMin": 37,
-  "hMax": 37,
+  "hMin": 15,
+  "hMax": 15,
   "danish": "required",
-  "fam": "social",
+  "fam": "marketing",
   "sec": [
-   "education",
-   "legal"
+   "education"
   ],
   "skills": [
-   "Løn"
+   "Løn",
+   "Dokumentation",
+   "Sociale medier"
   ],
   "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-08T11:50:46+00:00",
-  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "postedAt": "2026-10-06T10:24:50+00:00",
+  "deadlineAt": "2026-10-27T23:59:00+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du god til at skabe forståelse for, hvordan man anvender og formidler jura?",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194378&DepartmentId=9378&MediaId=5",
+  "blurb": "Kan du fortælle en god historie med et kamera i hånden? Eller er du typen, der både kan skrive den gode invitation og få 300 gæster sikkert gennem døren? Så er det måske dig, vi leder efter.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194421&DepartmentId=8478&MediaId=5",
   "enrichedBy": "regler",
-  "id": "xa4cf843fc617",
+  "id": "x05d9f61924f9",
   "live": true
  },
  {
-  "title": "Konsulent til forretningsudvikling af efter- og videreuddannelse",
-  "co": "Erhvervsakademi Aarhus",
-  "city": "Slagelse",
-  "region": "aar",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "strategy",
-  "sec": [
-   "bizdev",
-   "operations"
-  ],
-  "skills": [],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-19T12:31:10+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vi er i gang med at samle EVU-forretning og EVU-administration i ét fælles EVU-team i Uddannelsesservice.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194460&DepartmentId=9396&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x95d48438cb41",
-  "live": true
- },
- {
-  "title": "PhD fellowship in climate and health epidemiology",
-  "co": "Kræftens Bekæmpelse",
-  "city": "Hovedstaden",
+  "title": "Ulønnet praktikant til AI- og digitaliseringsprojekt i Røde Kors asylafdeling",
+  "co": "Stabe",
+  "city": "Nordsjælland",
   "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
+  "hMin": 20,
+  "hMax": 30,
   "danish": "required",
-  "fam": "sustain",
-  "sec": [],
+  "fam": "pmo",
+  "sec": [
+   "finance",
+   "education"
+  ],
   "skills": [
    "R"
   ],
-  "industry": "NGO",
-  "postedAt": "2026-10-13T09:26:21+00:00",
-  "deadlineAt": "2026-11-15T23:59:00+00:00",
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-10-21T14:30:30+00:00",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "PhD fellowship in climate and health epidemiology A 3-year PhD fellowship is available at the Work, Environment and Cancer group at the Danish Cancer Institute.",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145634&DepartmentId=18958&MediaId=5",
+  "blurb": "Vil du være med til at undersøge, hvordan AI kan bruges ansvarligt og værdiskabende i en humanitær organisation?",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194470&DepartmentId=8703&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x7f37d194a612",
+  "id": "xfd148d3f1f4a",
+  "live": true
+ },
+ {
+  "title": "Værksteder på Det Kongelige Akademi, arkitektur, design og konservering",
+  "co": "Det Kongelige Akademi - Arkitektur, Design, Konservering",
+  "city": "Kalundborg",
+  "region": "cph",
+  "hMin": 4,
+  "hMax": 4,
+  "danish": "required",
+  "fam": "product",
+  "sec": [
+   "education",
+   "operations"
+  ],
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-09-28T10:41:00+00:00",
+  "deadlineAt": "2026-11-01T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Ny ansøgningsfrist: Tutorer til Værksteder på Det Kongelige Akademi, arkitektur, design og konservering.",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194387&DepartmentId=7810&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xeb4a21b58522",
   "live": true
  },
  {
