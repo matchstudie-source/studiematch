@@ -1,0 +1,84 @@
+name,source,ref,city,region,industry,title,fam,sec,danish,hours,blurb,src_label,found_on
+Novo Nordisk,sitemap,https://www.novonordisk.com,Bagsværd,cph,Medicinal,,,,,,,,https://www.novonordisk.com/careers/find-a-job.html
+Novonesis,workday,https://novonesis.wd103.myworkdayjobs.com/en-US/Novonesis_Careers,Lyngby,cph,Bioteknologi,,,,,,,,https://www.novonesis.com/en/careers/jobs
+LEO Pharma,sitemap,https://jobs.leo-pharma.com,Ballerup,cph,Medicinal,,,,,,,,https://jobs.leo-pharma.com/
+Demant,sitemap,https://careers.demant.com,Smørum,cph,Medicinsk udstyr,,,,,,,,https://careers.demant.com
+GN Group,workday,https://gn.wd3.myworkdayjobs.com/GN-Careers,Ballerup,cph,Elektronik,,,,,,,,https://www.gn.com/
+Bavarian Nordic,workday,https://bavariannordic.wd103.myworkdayjobs.com/en-US/BavarianNordic,Hellerup,cph,Bioteknologi,,,,,,,,https://www.bavarian-nordic.com/careers/careers.aspx
+ALK,teamtailor,https://careers.alk.net,Hørsholm,cph,Medicinal,,,,,,,,https://careers.alk.net/
+Vestas,sitemap,https://careers.vestas.com,Aarhus,aar,Energi,,,,,,,,https://careers.vestas.com/search/?q=&locationsearch=
+Energinet,hrmanager,energinet,Fredericia,ode,Energi,,,,,,,,https://www.energinet.dk/karriere/
+Norlys,sitemap,https://www.job-karriere.dk,Silkeborg,aar,Energi,,,,,,,,https://www.job-karriere.dk/Norlys/go/Norlys-All-Jobs/9241201/
+Andel,hrmanager,andel,Svinninge,cph,Energi,,,,,,,,https://andel.dk/karriere/ledige-stillinger/
+HOFOR,hrmanager,ke,København,cph,Forsyning,,,,,,,,https://www.hofor.dk/om-hofor/job/
+Carlsberg,sitemap,https://careers.carlsberg.com,København,cph,Fødevarer og drikkevarer,,,,,,,,https://careers.carlsberg.com/
+Danish Crown,sitemap,https://jobs.danishcrown.com,Randers,aar,Fødevarer og drikkevarer,,,,,,,,https://jobs.danishcrown.com/
+Royal Unibrew,sitemap,https://www.royalunibrew.com,Faxe,cph,Fødevarer og drikkevarer,,,,,,,,https://www.royalunibrew.com/careers/build-your-career
+Grundfos,sitemap,https://www.grundfos.com,Bjerringbro,aar,Industri,,,,,,,,https://www.grundfos.com/careers
+FLSmidth,workday,https://flsmidth.wd3.myworkdayjobs.com/FLS_Global,Valby,cph,Industri,,,,,,,,https://fls.com/en/company/careers/open-positions
+NKT,sitemap,https://www.nkt.com,Brøndby,cph,Industri,,,,,,,,https://www.nkt.com/career
+Velux,workday,https://velux.wd3.myworkdayjobs.com/Velux_Residential,Hørsholm,cph,Industri,,,,,,,,https://www.velux.com/company/career
+Bang & Olufsen,sitemap,https://www.bang-olufsen.com,Struer,aar,Elektronik,,,,,,,,https://www.bang-olufsen.com/en/us/story/careers
+Matas,emply,https://matas.career.emply.com,Allerød,cph,Detailhandel,,,,,,,,https://www.matas.dk/
+Nationalbanken,workday,https://nationalbanken.wd103.myworkdayjobs.com/da-DK/Danmarks_Nationalbank,København,cph,Finans,,,,,,,,https://www.nationalbanken.dk/da/karriere
+Finanstilsynet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://www.finanstilsynet.dk/karriere/bliv-en-del-af-finanstilsynet
+Saxo Bank,workday,https://saxobank.wd3.myworkdayjobs.com/en-US/CareeratSaxoBank,Hellerup,cph,Finans,,,,,,,,https://www.home.saxo/about-us/careers
+Lunar,teamtailor,https://jobs.lunar.app,København,cph,Finans,,,,,,,,https://jobs.lunar.app/jobs
+Pleo,careerpage,https://jobs.ashbyhq.com/pleo/edab5b3d-3aed-403a-b4ca-2aa1ff136cf9,København,cph,Tech,,,,,,,,https://jobs.ashbyhq.com/pleo/edab5b3d-3aed-403a-b4ca-2aa1ff136cf9
+PFA,sitemap,https://www.pfa.dk,København,cph,Pension og forsikring,,,,,,,,https://www.pfa.dk/om-pfa/job-i-pfa/ledige-job/?icid=linklist_nyttigelinks_ledigestillingeripfa
+ATP,hrmanager,atp,Hillerød,cph,Pension og forsikring,,,,,,,,https://www.atp.dk/en/career
+PKA,hrmanager,forcapartner_tr,Hellerup,cph,Pension og forsikring,,,,,,,,https://pka.dk/job
+Alka,sitemap,https://careers.tryg.com,Høje-Taastrup,cph,Pension og forsikring,,,,,,,,https://careers.tryg.com/Alka?locale=da_DK&utm_source=corpsite
+Gjensidige,sitemap,https://jobs.gjensidige.com,København,cph,Pension og forsikring,,,,,,,,https://jobs.gjensidige.com/?locale=da_DK
+LB Forsikring,emply,https://lbforsikring.career.emply.com,København,cph,Pension og forsikring,,,,,,,,https://www.lbforsikring.dk/job
+KPMG Danmark,hrmanager,kpmg,Frederiksberg,cph,Revision og rådgivning,,,,,,,,https://kpmg.com/dk/da.html
+BDO Danmark,emply,https://bdo.career.emply.com,København,cph,Revision og rådgivning,,,,,,,,https://jobs.bdo.dk/sog-uopfordret
+twoday,teamtailor,https://twodayfinland.teamtailor.com,København,cph,IT og software,,,,,,,,https://www.twoday.com/careers
+Columbus,teamtailor,https://careers.columbusglobal.com,Ballerup,cph,IT og software,,,,,,,,https://careers.columbusglobal.com/
+Templafy,teamtailor,https://templafy.teamtailor.com,København,cph,Tech,,,,,,,,https://www.templafy.com/home/about-us/careers/
+Queue-it,teamtailor,https://queueit.teamtailor.com,København,cph,Tech,,,,,,,,https://queue-it.com/careers/
+NIRAS,hrmanager,niras_tr,Allerød,cph,Ingeniørrådgivning,,,,,,,,https://www.niras.dk/karriere/
+Sweco Danmark,hrmanager,grontmij,København,cph,Ingeniørrådgivning,,,,,,,,https://www.sweco.dk/karriere-hos-sweco/ledige-stillinger/
+Per Aarsleff,hrmanager,aarsleff,Aarhus,aar,Byggeri,,,,,,,,https://www.aarsleff.dk/ext/karriere/karriere
+DSB,sitemap,https://www.dsb.dk,København,cph,Transport,,,,,,,,https://www.dsb.dk/om-dsb/job-og-karriere/
+DR,sitemap,https://dr.jobs.hr.cloud.sap,København,cph,Medier,,,,,,,,https://dr.jobs.hr.cloud.sap/go/Alle-ledige-stillinger/9773401/
+Telenor Danmark,teamtailor,https://www.telenor.dk,Aalborg,aal,Telekommunikation,,,,,,,,https://www.telenor.dk/om-telenor/jobs/ledige-stillinger/
+3 Danmark,teamtailor,https://careers.3.dk,København,cph,Telekommunikation,,,,,,,,https://careers.3.dk/connect
+ISS,sitemap,https://jobs.issworld.com,Søborg,cph,Service,,,,,,,,https://jobs.issworld.com/search/?createNewAlert=false
+Danske Regioner,emply,https://regioner.career.emply.com,København,cph,Offentlig,,,,,,,,https://www.regioner.dk/
+HK,hrmanager,hkdanmark,København,cph,Interesseorganisation,,,,,,,,https://www.hk.dk/job
+Region Syddanmark,hrmanager,regionsyddanmark,Vejle,ode,Sundhed,,,,,,,,https://regionsyddanmark.dk/socialomradet/om-socialomradet/job-i-socialomradet
+Region Nordjylland,hrmanager,region-nordjylland_tr,Aalborg,aal,Sundhed,,,,,,,,https://jobs.talentech.com/regionnordjylland
+Aarhus Kommune,hrmanager,aarhuskommune_tr,Aarhus,aar,Offentlig,,,,,,,,https://aarhus.dk/job
+Odense Kommune,hrmanager,odense-kommune_tr,Odense,ode,Offentlig,,,,,,,,https://www.odense.dk/job
+Aalborg Kommune,emply,https://aalborg.career.emply.com,Aalborg,aal,Offentlig,,,,,,,,https://www.aalborg.dk/job-og-karriere/se-ledige-job/
+Frederiksberg Kommune,emply,https://frederiksberg.career.emply.com,Frederiksberg,cph,Offentlig,,,,,,,,https://www.frederiksberg.dk/job-og-ledighed/job-i-kommunen/ledige-stillinger
+Hvidovre Kommune,hrmanager,hvidovre,Hvidovre,cph,Offentlig,,,,,,,,https://www.hvidovre.dk/om-kommunen/job/ledige-stillinger
+Brøndby Kommune,emply,https://brondby.career.emply.com,Brøndby,cph,Offentlig,,,,,,,,https://www.brondby.dk/borger
+Næstved Kommune,emply,https://naestved.career.emply.com,Næstved,cph,Offentlig,,,,,,,,https://www.naestved.dk/
+Holbæk Kommune,emply,https://holbaek.career.emply.com,Holbæk,cph,Offentlig,,,,,,,,https://holbaek.dk/om-kommunen/job-i-kommunen
+Svendborg Kommune,emply,https://svendborg.career.emply.com,Svendborg,ode,Offentlig,,,,,,,,https://www.svendborg.dk/ledige-stillinger/
+Skatteforvaltningen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://toldst.dk/job-og-karriere
+Danmarks Statistik,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://www.dst.dk/da/OmDS/Job/ledige-job
+Digitaliseringsstyrelsen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://digst.dk/job/
+Energistyrelsen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://ens.dk/om-os/karriere-i-energistyrelsen/ledige-stillinger
+Statens Serum Institut,hrmanager,statensrekrutteringsloesning_tr,København,cph,Sundhed,,,,,,,,https://www.ssi.dk/om-ssi/job-hos-ssi
+Finansministeriet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://fm.dk/karriere/
+Erhvervsministeriet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://www.em.dk/job-og-karriere
+Uddannelses- og Forskningsministeriet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://fudm.dk/ministeriet/job-i-ministeriet/
+Politiet,sitemap,https://job.politi.dk,København,cph,Offentlig,,,,,,,,https://job.politi.dk/
+Kriminalforsorgen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://xn--danmarksfngsler-5lb.dk/karriere/ledige-stillinger/
+Forbrugerrådet Tænk,hrmanager,taenk,København,cph,Interesseorganisation,,,,,,,,https://taenk.dk/om-os/job-hos-forbrugerraadet-taenk
+CBS,hrmanager,statensrekrutteringsloesning_tr,Frederiksberg,cph,Uddannelse og forskning,,,,,,,,https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger
+Roskilde Universitet,hrmanager,ruc,Roskilde,cph,Uddannelse og forskning,,,,,,,,https://ruc.dk/roskilde-universitets-jobunivers
+IT-Universitetet,hrmanager,ituniversitetet,København,cph,Uddannelse og forskning,,,,,,,,https://www.itu.dk/Om-ITU/Stillinger
+Københavns Professionshøjskole,emply,https://kp.career.emply.com,København,cph,Uddannelse og forskning,,,,,,,,https://www.kp.dk/
+Professionshøjskolen Absalon,hrmanager,statens_erekruttering,Roskilde,cph,Uddannelse og forskning,,,,,,,,https://phabsalon.dk/job-i-absalon
+VIA University College,emply,https://via.career.emply.com,Aarhus,aar,Uddannelse og forskning,,,,,,,,https://www.via.dk/om-via/job
+UCN,emply,https://ucn.career.emply.com,Aalborg,aal,Uddannelse og forskning,,,,,,,,https://www.ucn.dk/job
+Erhvervsakademi København,emply,https://ek.career.emply.com,København,cph,Uddannelse og forskning,,,,,,,,https://www.ek.dk/om-os/job-og-karriere
+Erhvervsakademi Aarhus,hrmanager,statens_erekruttering,Aarhus,aar,Uddannelse og forskning,,,,,,,,https://www.eaaa.dk/job
+Dansk Røde Kors,emply,https://rodekors.career.emply.com,København,cph,NGO,,,,,,,,https://www.rodekors.dk/
+Mellemfolkeligt Samvirke,hrmanager,MFS,København,cph,NGO,,,,,,,,https://ms.dk/job
+Kræftens Bekæmpelse,hrmanager,Cancer,København,cph,NGO,,,,,,,,https://www.cancer.dk/om-os/job-og-karriere/
+Redpill Linpro,teamtailor,https://careers.redpill-linpro.com,København,cph,IT og software,,,,,,,,https://careers.redpill-linpro.com/
