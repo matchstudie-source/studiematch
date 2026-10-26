@@ -76,12 +76,34 @@ CITY_REGION = {
 }
 
 
+# Stillinger, der aldrig er studiejob, selvom "studerende" står i teksten
+NOT_STUDENT_RE = re.compile(
+    r"ph\.?\s?d|postdoc|professor|lektor|adjunkt|introduktionsstilling|hoveduddannelse|overlæge|afdelingslæge|"
+    r"speciallæge|barselsvikar|underviser|teaching assistant professorship|fellowship", re.I)
+# Kun disse udtryk i selve teksten tæller, når titlen ikke siger det
+STUDENT_TEXT_RE = re.compile(
+    r"studentermedhjælp|studentermedarbejder|student assistant|student worker|working student|studiejob|"
+    r"ved siden af (?:dit|dine) studi|sideløbende med (?:dit|dine) studi|while (?:you are )?studying|"
+    r"part-time student|deltidsjob for studerende|studerende,? der", re.I)
+
+
+# Svenske og norske opslag fra nordiske koncerner (fx "studentmedarbetare", "vi söker")
+FOREIGN_NORDIC_RE = re.compile(r"medarbetare|vi söker|tjänst|ansökan|söknad|stillingen er ledig i norge|arbeidssted", re.I)
+
+
 def is_student_job(title: str, text: str, commitment: str = "") -> bool:
+    if FOREIGN_NORDIC_RE.search(title) or len(FOREIGN_NORDIC_RE.findall(text[:2000])) >= 2:
+        return False
+    if NOT_STUDENT_RE.search(title):
+        return False
+    hours = detect_hours(text)
+    if hours[0] >= 30 and not re.search(r"praktik|intern", title, re.I):
+        return False  # fuldtid er ikke et studiejob (praktik kan godt være fuldtid)
     if STUDENT_RE.search(title) or STUDENT_RE.search(commitment or ""):
         return True
-    if SENIOR_RE.search(title):
+    if SENIOR_RE.search(title) or re.search(r"\bkonsulent|\bkoordinator|\btekniker|serviceassistent", title, re.I):
         return False
-    return bool(STUDENT_RE.search(text[:1500]))
+    return bool(STUDENT_TEXT_RE.search(text[:2500]))
 
 
 def classify_families(title: str, text: str) -> tuple[str, list[str]]:

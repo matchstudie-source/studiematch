@@ -52,6 +52,13 @@ class EnrichTests(unittest.TestCase):
         self.assertTrue(enrich.is_student_job("Studentermedhjælper til regnskab", ""))
         self.assertTrue(enrich.is_student_job("Data Analyst", "", "Student Assistant"))
         self.assertFalse(enrich.is_student_job("Senior Controller", "We need a student mentor"))
+        self.assertFalse(enrich.is_student_job("PhD fellowship in climate epidemiology", "studerende"))
+        self.assertFalse(enrich.is_student_job("2 introduktionsstillinger i Intern Medicin", "studerende"))
+        self.assertFalse(enrich.is_student_job("AV Tekniker", "Stillingen er på 37 timer om ugen. Studerende er velkomne."))
+        self.assertFalse(enrich.is_student_job("Medarbejder til tværgående opgaver", "Vi samarbejder med mange studerende."))
+        self.assertTrue(enrich.is_student_job("Medarbejder til kundeservice", "Et studiejob på 10-15 timer om ugen."))
+        self.assertFalse(enrich.is_student_job("HR-studentmedarbetare, deltid", ""))
+        self.assertTrue(enrich.is_student_job("Arkitektpraktikanter", "Praktik på fuld tid, 37 timer om ugen."))
 
     def test_danish(self):
         self.assertEqual(enrich.detect_danish("Du taler og skriver dansk flydende"), "required")
