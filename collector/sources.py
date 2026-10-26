@@ -359,6 +359,24 @@ def _real_date(value: str | None) -> str | None:
 HRM_SHARED = {"statensrekrutteringsloesning_tr", "statens_erekruttering"}
 
 
+HRM_GENERIC = re.compile(r"rekruttering|^staten\b|^statens\b", re.I)
+
+
+def hrm_institution(pos) -> str:
+    """Øverste niveau i afdelingstræet er institutionen (fx 'Det Kgl. Bibliotek'); afdelingen er ofte bare 'Indkøb'."""
+    names = []
+    for tag in ("DepartmentTree", "Department"):
+        el = pos.find(f"{HRM_NS}{tag}")
+        if el is not None:
+            name = el.find(f"{HRM_NS}Name")
+            if name is not None and name.text and name.text.strip():
+                names.append(name.text.strip())
+    for n in names:
+        if not HRM_GENERIC.search(n):
+            return n
+    return ""
+
+
 def parse_hrmanager_xml(xml_text: str, company: str, shared: bool = False) -> list[dict]:
     """Bemærk: listen indeholder også kontaktpersoner. Dem læser vi bevidst ikke."""
     root = ET.fromstring(xml_text)
@@ -374,7 +392,7 @@ def parse_hrmanager_xml(xml_text: str, company: str, shared: bool = False) -> li
         ad_text = " ".join(html_to_text(el.text) for el in ads.iter() if el.text and el.text.strip()) if ads is not None else ""
         jobs.append({
             "title": text("Name"),
-            "company": (text("Name", dept) or text("CustomerName") or company) if shared else company,
+            "company": hrm_institution(pos) or company if shared else company,
             "location": location,
             "description": " ".join(x for x in (html_to_text(text("ShortDescription")), ad_text) if x),
             "url": text("AdvertisementUrlSecure") or text("AdvertisementUrl"),

@@ -84,7 +84,7 @@ NOT_STUDENT_RE = re.compile(
 STUDENT_TEXT_RE = re.compile(
     r"studentermedhjælp|studentermedarbejder|student assistant|student worker|working student|studiejob|"
     r"ved siden af (?:dit|dine) studi|sideløbende med (?:dit|dine) studi|while (?:you are )?studying|"
-    r"part-time student|deltidsjob for studerende|studerende,? der", re.I)
+    r"part-time student|deltidsjob for studerende", re.I)
 
 
 # Svenske og norske opslag fra nordiske koncerner (fx "studentmedarbetare", "vi söker")
@@ -101,7 +101,8 @@ def is_student_job(title: str, text: str, commitment: str = "") -> bool:
         return False  # fuldtid er ikke et studiejob (praktik kan godt være fuldtid)
     if STUDENT_RE.search(title) or STUDENT_RE.search(commitment or ""):
         return True
-    if SENIOR_RE.search(title) or re.search(r"\bkonsulent|\bkoordinator|\btekniker|serviceassistent", title, re.I):
+    if SENIOR_RE.search(title) or re.search(
+            r"konsulent|koordinator|tekniker|serviceassistent|rådgiver|psykolog|afløser|weekend", title, re.I):
         return False
     return bool(STUDENT_TEXT_RE.search(text[:2500]))
 

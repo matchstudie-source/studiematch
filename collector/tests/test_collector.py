@@ -58,6 +58,9 @@ class EnrichTests(unittest.TestCase):
         self.assertFalse(enrich.is_student_job("Medarbejder til tværgående opgaver", "Vi samarbejder med mange studerende."))
         self.assertTrue(enrich.is_student_job("Medarbejder til kundeservice", "Et studiejob på 10-15 timer om ugen."))
         self.assertFalse(enrich.is_student_job("HR-studentmedarbetare, deltid", ""))
+        self.assertFalse(enrich.is_student_job("Bæredygtighedskonsulent til klimaanalyse", "et studiejob for dig"))
+        self.assertFalse(enrich.is_student_job("Fast weekend medarbejder søges", "studiejob ved siden af dit studie"))
+        self.assertTrue(enrich.is_student_job("Studentermedarbejdere med viden om EU", ""))
         self.assertTrue(enrich.is_student_job("Arkitektpraktikanter", "Praktik på fuld tid, 37 timer om ugen."))
 
     def test_danish(self):
@@ -295,6 +298,8 @@ class FixTests(unittest.TestCase):
     def test_shared_hrmanager_uses_department(self):
         xml = fixture("hrmanager.xml")
         self.assertEqual(sources.parse_hrmanager_xml(xml, "Portal", shared=True)[0]["company"], "Økonomi")
+        tree = xml.replace("<Department>", "<DepartmentTree><Name>Det Kgl. Bibliotek</Name></DepartmentTree><Department>", 1)
+        self.assertEqual(sources.parse_hrmanager_xml(tree, "Portal", shared=True)[0]["company"], "Det Kgl. Bibliotek")
         self.assertEqual(sources.parse_hrmanager_xml(xml, "Portal")[0]["company"], "Portal")
 
     def test_normalize_sources(self):
