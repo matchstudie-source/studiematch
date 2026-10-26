@@ -1992,7 +1992,7 @@
   "region": "cph",
   "hMin": 0,
   "hMax": 0,
-  "danish": "required",
+  "danish": "no",
   "fam": "public",
   "sec": [],
   "famConf": "title",
@@ -2001,7 +2001,7 @@
   "postedAt": "2026-10-12T13:24:12+00:00",
   "deadlineAt": "2026-10-26T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du være med i kampen mod den hybride trussel? Har du lyst til at være med til at styrke cyber- og informationssikkerheden i Danmark? Og brænder du for internationale forhold?",
+  "blurb": "",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170969&DepartmentId=19926&MediaId=5",
   "enrichedBy": "regler",
@@ -2698,6 +2698,115 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
+  "enrichedBy": "regler",
+  "id": "x91d9b736c8c3",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
+  "enrichedBy": "regler",
+  "id": "x7cb33429ddad",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "cph",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "cph",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true
+ },
+ {
   "title": "Revenue Operations Student Assistant",
   "co": "Templafy",
   "city": "København",
@@ -3087,6 +3196,198 @@
   "live": true
  },
  {
+  "title": "Studiejob som fast afløser ved Bofællesskaber, Bostøtte og Værested",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "aal",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "health"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Bemærk: Ansættelsen er fast og forudsætter, at du er aktivt indskrevet ved en uddannelsesinstitution.",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studiejob-som-fast-afloser-ved-bofaellesskaber-bostotte-og-vaerested/hy6x66",
+  "enrichedBy": "regler",
+  "id": "xc7d7908ffe24",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til kommunikation, web og administration",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "aal",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper til kommunikation, web og administration Vil du være med til at styrke kunsten og kulturen i hele Nordjylland? Kulturkanten søger en engageret studentermedhjælper ca.",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-til-kommunikation-web-og-administration/52bbs6",
+  "enrichedBy": "regler",
+  "id": "x4d0b5a823a7b",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper søges til myndighedsopgaver i Team Vejforvaltningen",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "aal",
+  "hMin": 7,
+  "hMax": 14,
+  "danish": "required",
+  "fam": "public",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper søges til myndighedsopgaver i Team Vejforvaltningen Interesserer du dig for myndighedsarbejde, og brænder du for at kombinere din uddannelse med praktisk erfaring inden…",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-soges-til-myndighedsopgaver-i-team-vejforvaltningen/gvzy2o",
+  "enrichedBy": "regler",
+  "id": "xb5d341de83a1",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper med flair for SoMe søges til arbejdet med nikotinforebyggelse blandt børn og unge",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "aal",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper med flair for SoMe søges til arbejdet med nikotinforebyggelse blandt børn og unge Er du skarp på sociale medier, og ved du, hvordan man kommunikerer til unge i øjenhøjde?",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-med-flair-for-some-soges-til-arbejdet-med-nikotinforebyggelse/lrworl",
+  "enrichedBy": "regler",
+  "id": "x3587e9074645",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til belysning",
+  "co": "Frederiksberg Kommune",
+  "city": "Frederiksberg",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "product",
+  "sec": [
+   "engineering",
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "req": null,
+  "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-belysning/1su2ap",
+  "enrichedBy": "regler",
+  "id": "x885c92b4081d",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til grønne events, kommunikation og koordinering",
+  "co": "Frederiksberg Kommune",
+  "city": "Frederiksberg",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "strategy",
+   "sustain"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "req": null,
+  "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-gronne-events-kommunikation-og-koordinering/dvdqw0",
+  "enrichedBy": "regler",
+  "id": "x4bfabffdb220",
+  "live": true
+ },
+ {
+  "title": "Frederiksberg Kommune - Center for Digital Udvikling og Erhverv søger studentermedhjælper",
+  "co": "Frederiksberg Kommune",
+  "city": "Frederiksberg",
+  "region": "cph",
+  "hMin": 8,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "public",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "req": null,
+  "url": "https://frederiksberg.career.emply.com/ad/frederiksberg-kommune-center-for-digital-udvikling-og-erhverv-soger-studenterme/g3doqv",
+  "enrichedBy": "regler",
+  "id": "x2e49cb220a99",
+  "live": true
+ },
+ {
   "title": "Stilling som studentermedhjælper i Kultur, idræt og fritidsforvaltning Brøndby kommune",
   "co": "Brøndby Kommune",
   "city": "Brøndby",
@@ -3445,6 +3746,60 @@
   "live": true
  },
  {
+  "title": "Studenterundervisere til psykomotorikuddannelsen",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R",
+   "Rekruttering"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Login My profile My profile Studenterundervisere til psykomotorikuddannelsen Brænder du for din profession?",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studenterundervisere-til-psykomotorikuddannelsen/yi487t",
+  "enrichedBy": "regler",
+  "id": "x59e1cdb865c3",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Forskning og Udvikling ved Institut for Sygeplejerske- og Ernæringsuddannelser",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "research"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Login My profile My profile Studentermedhjælper til Forskning og Udvikling ved Institut for Sygeplejerske- og Ernæringsuddannelser Er du studerende, og vil du gerne arbejde med forskningsunderstøttelse og…",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forskning-og-udvikling-ved-institut-for-sygeplejerske-og/bka7i0",
+  "enrichedBy": "regler",
+  "id": "x951b965062ac",
+  "live": true
+ },
+ {
   "title": "Fagligt dygtige jurastuderende",
   "co": "Ligebehandling",
   "city": "Roskilde",
@@ -3635,6 +3990,34 @@
   "url": "https://ek.career.emply.com/da/ad/studentermedhjaelper-til-okonomiafdelingen/pxybc1",
   "enrichedBy": "regler",
   "id": "xa6bfa322b85d",
+  "live": true
+ },
+ {
+  "title": "Labtrainee til nyt labmiljø i Nansensgade - studenterjob på Erhvervsakademi København",
+  "co": "Erhvervsakademi København",
+  "city": "København",
+  "region": "cph",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "sustain",
+  "sec": [
+   "operations",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Sociale medier"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Tilmeld dig JobAgent ledige stillinger Dansk English Log ind Min profil Min profil Labtrainee til nyt labmiljø i Nansensgade - studenterjob på Erhvervsakademi København Er du nysgerrig på teknologi, kreativ produktion…",
+  "req": null,
+  "url": "https://ek.career.emply.com/da/ad/labtrainee-til-nyt-labmiljo-i-nansensgade-studenterjob-pa-erhvervsakademi-koben/0eommu",
+  "enrichedBy": "regler",
+  "id": "x9376ec0e9963",
   "live": true
  },
  {
@@ -3918,6 +4301,61 @@
   "live": true
  },
  {
+  "title": "Dansklærer eller lærerstuderende til en barselsstilling fra 1. januar 2027",
+  "co": "Ballerup Kommune",
+  "city": "Ballerup",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Forhandling"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "januar 2027 Vi mangler dig, der brænder for at lave inspirerende undervisning i dansk i en 4. klasse og har viden om, eller erfaring med, arbejdet med Basis- og DSA-elever.",
+  "req": null,
+  "url": "https://job.ballerup.dk/ad/dansklaerer-eller-laererstuderende-til-en-barselsstilling-fra-1-januar-2027/equ2sy",
+  "enrichedBy": "regler",
+  "id": "x86e892455625",
+  "live": true
+ },
+ {
+  "title": "To studentermedhjælpere til Center for Børne- og Ungerådgivning",
+  "co": "Ballerup Kommune",
+  "city": "Ballerup",
+  "region": "cph",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Dokumentation",
+   "Forhandling"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige jobs Mange muligheder Bliv elev Log ind Min profil Min profil To studentermedhjælpere til Center for Børne- og Ungerådgivning Vil du omsætte din socialfaglige viden til praksis og få erfaring med…",
+  "req": null,
+  "url": "https://job.ballerup.dk/ad/to-studentermedhjaelpere-til-center-for-borne-og-ungeradgivning/ce9e7p",
+  "enrichedBy": "regler",
+  "id": "x307c4d7b15e9",
+  "live": true
+ },
+ {
   "title": "2 Student Assistants for the Health Area",
   "co": "Novo Nordisk Fonden",
   "city": "Hellerup, Denmark",
@@ -3996,6 +4434,36 @@
   "url": "https://rksk-v2.career.emply.com/ad/uddannet-sosu-ufaglaert-efterlonner-eller-studerende/02058v",
   "enrichedBy": "regler",
   "id": "x6d11cf6e94d0",
+  "live": true
+ },
+ {
+  "title": "Deltidsjob / studiejob som klubmedarbejder til Center Aaløkke",
+  "co": "Tønder Kommune",
+  "city": "Tønder",
+  "region": "ode",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "finance",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "R",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Opret jobagent Log ind Min profil Min profil Deltidsjob / studiejob som klubmedarbejder til Center Aaløkke Har du mod på at kaste dig ud i at arbejde med børn på et asylcenter? Så læs videre herunder.",
+  "req": null,
+  "url": "https://toender.career.emply.com/ad/deltidsjob-studiejob-som-klubmedarbejder-til-center-aalokke/6q2f8p",
+  "enrichedBy": "regler",
+  "id": "x48ebeb6f21a7",
   "live": true
  },
  {
