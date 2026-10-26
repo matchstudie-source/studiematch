@@ -1,6 +1,6 @@
-# Jobindsamling 2026-10-26 15:25 UTC
+# Jobindsamling 2026-10-26 20:05 UTC
 
-122 studiejob gemt. AI-kald i denne kørsel: 0.
+142 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -36,16 +36,16 @@
 | Novo Nordisk | rmk | 3 | 1 |  |
 | Novonesis | workday | 5 | 2 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
-| Demant | rmk | 2 | 1 |  |
+| Demant | rmk | 3 | 2 |  |
 | GN Group | workday | 0 | 0 |  |
 | Bavarian Nordic | workday | 3 | 2 |  |
 | ALK | teamtailor | 12 | 0 |  |
 | Vestas | rmk | 2 | 1 |  |
 | Energinet | hrmanager | 42 | 1 |  |
 | Norlys | sitemap | 2 | 2 |  |
-| Andel | hrmanager | 7 | 0 |  |
-| HOFOR | hrmanager | 21 | 0 |  |
-| Carlsberg | rmk | 2 | 1 |  |
+| Andel | hrmanager | 8 | 0 |  |
+| HOFOR | hrmanager | 22 | 0 |  |
+| Carlsberg | rmk | 4 | 2 |  |
 | Danish Crown | rmk | 1 | 0 |  |
 | Royal Unibrew | sitemap | 0 | 0 |  |
 | Grundfos | sitemap | 0 | 0 |  |
@@ -55,20 +55,20 @@
 | Bang & Olufsen | sitemap | 0 | 0 |  |
 | Matas | emply | 0 | 0 |  |
 | Nationalbanken | workday | 0 | 0 |  |
-| Statslige arbejdsgivere | hrmanager | 420 | 57 |  |
+| Statslige arbejdsgivere | hrmanager | 421 | 58 |  |
 | Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 22 | 0 |  |
 | Pleo | ashby | 33 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
 | ATP | hrmanager | 23 | 0 |  |
 | PKA | hrmanager | 0 | 0 |  |
-| Alka | rmk | 5 | 3 |  |
-| Gjensidige | rmk | 2 | 1 |  |
+| Alka | rmk | 8 | 5 |  |
+| Gjensidige | rmk | 3 | 2 |  |
 | LB Forsikring | emply | 0 | 0 |  |
 | KPMG Danmark | hrmanager | 18 | 1 |  |
 | BDO Danmark | emply | 0 | 0 |  |
 | twoday | teamtailor | 12 | 0 |  |
-| Columbus | teamtailor | 77 | 0 |  |
+| Columbus | teamtailor | 88 | 0 |  |
 | Templafy | teamtailor | 6 | 1 |  |
 | Queue-it | teamtailor | 3 | 0 |  |
 | NIRAS | hrmanager | 11 | 1 |  |
@@ -77,7 +77,7 @@
 | DSB | sitemap | 0 | 0 |  |
 | DR | sitemap | 0 | 0 |  |
 | 3 Danmark | teamtailor | 19 | 1 |  |
-| ISS | rmk | 2 | 2 |  |
+| ISS | rmk | 4 | 4 |  |
 | HK | hrmanager | 3 | 0 |  |
 | Aarhus Kommune | hrmanager | 166 | 4 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
@@ -88,7 +88,7 @@
 | Næstved Kommune | emply | 0 | 0 |  |
 | Holbæk Kommune | emply | 0 | 0 |  |
 | Svendborg Kommune | emply | 0 | 0 |  |
-| Politiet | rmk | 8 | 4 |  |
+| Politiet | rmk | 12 | 8 |  |
 | Forbrugerrådet Tænk | hrmanager | 2 | 0 |  |
 | Roskilde Universitet | hrmanager | 6 | 1 |  |
 | IT-Universitetet | hrmanager | 5 | 2 |  |
@@ -105,3 +105,5 @@
 | Københavns Kommune (alle stillinger) | sitemap | 0 | 0 |  |
 | Aarhus Universitet | emply | 0 | 0 |  |
 | DSV | rmk | 1 | 0 |  |
+| Coloplast | rmk | 8 | 7 |  |
+| Ascendis Pharma | workable | 22 | 1 |  |
