@@ -341,11 +341,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 #toast button{background:none;border:0;color:inherit;font-weight:800;text-decoration:underline;cursor:pointer;padding:2px}
 @media(min-width:900px){#toast{bottom:calc(28px + env(safe-area-inset-bottom,0px))}}
 
-.more-box{margin-top:18px;padding:18px 20px;border:1px dashed var(--line);border-radius:18px;background:var(--surface-2);display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.more-h{margin:0;font-weight:800;color:var(--fg)}
-.more-sub{margin:4px 0 0;color:var(--muted);font-size:14px}
-.more-links{display:flex;gap:8px;flex-wrap:wrap}
-
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -1055,24 +1050,8 @@ function filterNote(){
 function tForYou(){
   const f=feed(); const now=new Date().toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"});
   const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} job rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} studiejob gennemgået.</p></div>`;
-  if(!f.length) return head+filterNote()+emptyFeed()+moreElsewhere();
-  return head+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`+moreElsewhere();
-}
-/* Links til andre jobsider med de rigtige søgeord. Vi linker kun; vi kopierer ikke deres opslag. */
-function searchKeyword(){
-  const p=S.profile; const name=(p.programShort||p.programName||"").trim();
-  if(name && name.length<=22) return name.toLowerCase();
-  const top=Object.entries(p.weights||{}).sort((a,b)=>b[1]-a[1])[0];
-  return top && FAM[top[0]] ? FAM[top[0]].n : "studiejob";
-}
-function moreElsewhere(){
-  const kw=searchKeyword();
-  const ji="https://www.jobindex.dk/jobsoegning?q="+encodeURIComponent("studentermedhjælper "+kw);
-  const li="https://www.linkedin.com/jobs/search/?keywords="+encodeURIComponent("student "+kw)+"&location=Denmark";
-  return `<div class="more-box"><div><p class="more-h">Find flere studiejob til ${esc(kw)}</p>
-    <p class="more-sub">Vi viser kun job fra virksomhedernes egne sider. Her kan du søge videre andre steder.</p></div>
-    <div class="more-links"><a class="btn btn-ghost btn-sm" href="${ji}" target="_blank" rel="noopener">Jobindex ↗</a>
-    <a class="btn btn-ghost btn-sm" href="${li}" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>`;
+  if(!f.length) return head+filterNote()+emptyFeed();
+  return head+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
 }
 function emptyFeed(){
   const p=S.profile;
