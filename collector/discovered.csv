@@ -6,6 +6,7 @@ Demant,sitemap,https://careers.demant.com,Smørum,cph,Medicinsk udstyr,,,,,,,,ht
 GN Group,workday,https://gn.wd3.myworkdayjobs.com/GN-Careers,Ballerup,cph,Elektronik,,,,,,,,https://www.gn.com/
 Bavarian Nordic,workday,https://bavariannordic.wd103.myworkdayjobs.com/en-US/BavarianNordic,Hellerup,cph,Bioteknologi,,,,,,,,https://www.bavarian-nordic.com/careers/careers.aspx
 ALK,teamtailor,https://careers.alk.net,Hørsholm,cph,Medicinal,,,,,,,,https://careers.alk.net/
+Ascendis Pharma,workable,ascendis-pharma,Hellerup,cph,Bioteknologi,,,,,,,,https://ascendispharma.com/careers/
 Vestas,sitemap,https://careers.vestas.com,Aarhus,aar,Energi,,,,,,,,https://careers.vestas.com/search/?q=&locationsearch=
 Energinet,hrmanager,energinet,Fredericia,ode,Energi,,,,,,,,https://www.energinet.dk/karriere/
 Norlys,sitemap,https://www.job-karriere.dk,Silkeborg,aar,Energi,,,,,,,,https://www.job-karriere.dk/Norlys/go/Norlys-All-Jobs/9241201/
@@ -24,7 +25,7 @@ Nationalbanken,workday,https://nationalbanken.wd103.myworkdayjobs.com/da-DK/Danm
 Finanstilsynet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://www.finanstilsynet.dk/karriere/bliv-en-del-af-finanstilsynet
 Saxo Bank,workday,https://saxobank.wd3.myworkdayjobs.com/en-US/CareeratSaxoBank,Hellerup,cph,Finans,,,,,,,,https://www.home.saxo/about-us/careers
 Lunar,teamtailor,https://jobs.lunar.app,København,cph,Finans,,,,,,,,https://jobs.lunar.app/jobs
-Pleo,careerpage,https://jobs.ashbyhq.com/pleo/edab5b3d-3aed-403a-b4ca-2aa1ff136cf9,København,cph,Tech,,,,,,,,https://jobs.ashbyhq.com/pleo/edab5b3d-3aed-403a-b4ca-2aa1ff136cf9
+Pleo,ashby,pleo,København,cph,Tech,,,,,,,,https://www.pleo.io/en/careers
 PFA,sitemap,https://www.pfa.dk,København,cph,Pension og forsikring,,,,,,,,https://www.pfa.dk/om-pfa/job-i-pfa/ledige-job/?icid=linklist_nyttigelinks_ledigestillingeripfa
 ATP,hrmanager,atp,Hillerød,cph,Pension og forsikring,,,,,,,,https://www.atp.dk/en/career
 PKA,hrmanager,forcapartner_tr,Hellerup,cph,Pension og forsikring,,,,,,,,https://pka.dk/job
@@ -49,15 +50,6 @@ Danske Regioner,emply,https://regioner.career.emply.com,København,cph,Offentlig
 HK,hrmanager,hkdanmark,København,cph,Interesseorganisation,,,,,,,,https://www.hk.dk/job
 Region Syddanmark,hrmanager,regionsyddanmark,Vejle,ode,Sundhed,,,,,,,,https://regionsyddanmark.dk/socialomradet/om-socialomradet/job-i-socialomradet
 Region Nordjylland,hrmanager,region-nordjylland_tr,Aalborg,aal,Sundhed,,,,,,,,https://jobs.talentech.com/regionnordjylland
-Aarhus Kommune,hrmanager,aarhuskommune_tr,Aarhus,aar,Offentlig,,,,,,,,https://aarhus.dk/job
-Odense Kommune,hrmanager,odense-kommune_tr,Odense,ode,Offentlig,,,,,,,,https://www.odense.dk/job
-Aalborg Kommune,emply,https://aalborg.career.emply.com,Aalborg,aal,Offentlig,,,,,,,,https://www.aalborg.dk/job-og-karriere/se-ledige-job/
-Frederiksberg Kommune,emply,https://frederiksberg.career.emply.com,Frederiksberg,cph,Offentlig,,,,,,,,https://www.frederiksberg.dk/job-og-ledighed/job-i-kommunen/ledige-stillinger
-Hvidovre Kommune,hrmanager,hvidovre,Hvidovre,cph,Offentlig,,,,,,,,https://www.hvidovre.dk/om-kommunen/job/ledige-stillinger
-Brøndby Kommune,emply,https://brondby.career.emply.com,Brøndby,cph,Offentlig,,,,,,,,https://www.brondby.dk/borger
-Næstved Kommune,emply,https://naestved.career.emply.com,Næstved,cph,Offentlig,,,,,,,,https://www.naestved.dk/
-Holbæk Kommune,emply,https://holbaek.career.emply.com,Holbæk,cph,Offentlig,,,,,,,,https://holbaek.dk/om-kommunen/job-i-kommunen
-Svendborg Kommune,emply,https://svendborg.career.emply.com,Svendborg,ode,Offentlig,,,,,,,,https://www.svendborg.dk/ledige-stillinger/
 Skatteforvaltningen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://toldst.dk/job-og-karriere
 Danmarks Statistik,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://www.dst.dk/da/OmDS/Job/ledige-job
 Digitaliseringsstyrelsen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://digst.dk/job/
@@ -78,7 +70,59 @@ VIA University College,emply,https://via.career.emply.com,Aarhus,aar,Uddannelse 
 UCN,emply,https://ucn.career.emply.com,Aalborg,aal,Uddannelse og forskning,,,,,,,,https://www.ucn.dk/job
 Erhvervsakademi København,emply,https://ek.career.emply.com,København,cph,Uddannelse og forskning,,,,,,,,https://www.ek.dk/om-os/job-og-karriere
 Erhvervsakademi Aarhus,hrmanager,statens_erekruttering,Aarhus,aar,Uddannelse og forskning,,,,,,,,https://www.eaaa.dk/job
+Novo Nordisk Fonden,workable,novonordiskfoundation,Hellerup,cph,Fonde,,,,,,,,https://novonordiskfonden.dk/karriere-og-jobs/
 Dansk Røde Kors,emply,https://rodekors.career.emply.com,København,cph,NGO,,,,,,,,https://www.rodekors.dk/
 Mellemfolkeligt Samvirke,hrmanager,MFS,København,cph,NGO,,,,,,,,https://ms.dk/job
 Kræftens Bekæmpelse,hrmanager,Cancer,København,cph,NGO,,,,,,,,https://www.cancer.dk/om-os/job-og-karriere/
 Redpill Linpro,teamtailor,https://careers.redpill-linpro.com,København,cph,IT og software,,,,,,,,https://careers.redpill-linpro.com/
+Albertslund Kommune,emply,https://albertslund.career.emply.com,Albertslund,cph,Offentlig,,,,,,,,https://albertslund.dk/job/job-i-albertslund/ledige-stillinger
+Billund Kommune,hrmanager,ofir_billund,Billund,ode,Offentlig,,,,,,,,https://www.billund.dk/job/
+Brøndby Kommune,emply,https://brondby.career.emply.com,Brøndby,cph,Offentlig,,,,,,,,https://www.brondby.dk/borger
+Faxe Kommune,hrmanager,ofir_faxekommune,Faxe,cph,Offentlig,,,,,,,,https://www.faxekommune.dk/da/borger/job-i-faxe-kommune
+Fredericia Kommune,emply,https://fredericia.career.emply.com,Fredericia,ode,Offentlig,,,,,,,,https://www.fredericia.dk/da/om-kommunen/karriere-i-kommunen/ledige-jobs
+Frederiksberg Kommune,emply,https://frederiksberg.career.emply.com,Frederiksberg,cph,Offentlig,,,,,,,,https://www.frederiksberg.dk/job-og-ledighed/job-i-kommunen/ledige-stillinger
+Frederikshavn Kommune,emply,https://frederikshavn.career.emply.com,Frederikshavn,aal,Offentlig,,,,,,,,https://frederikshavn.dk/om-kommunen/kommunen-som-arbejdsplads/ledige-stillinger
+Faaborg-Midtfyn Kommune,hrmanager,faaborg-midtfyn-kommune_tr,Faaborg-Midtfyn,ode,Offentlig,,,,,,,,https://www.fmk.dk/om-kommunen/job-hos-kommunen/ledige-job/
+Glostrup Kommune,emply,https://glostrup.career.emply.com,Glostrup,cph,Offentlig,,,,,,,,https://www.glostrup.dk/
+Greve Kommune,hrmanager,grevekommune,Greve,cph,Offentlig,,,,,,,,https://jobs.talentech.com/grevekommune
+Guldborgsund Kommune,emply,https://Guldborgsund.career.emply.com,Guldborgsund,cph,Offentlig,,,,,,,,https://www.guldborgsund.dk/om-kommunen/ledige-job
+Haderslev Kommune,emply,https://haderslev.career.emply.com,Haderslev,ode,Offentlig,,,,,,,,https://www.haderslev.dk/job-i-kommunen/ledige-stillinger
+Halsnæs Kommune,emply,https://halsnaes.career.emply.com,Halsnæs,cph,Offentlig,,,,,,,,https://halsnaes.dk/soeg-job-hos-os
+Hedensted Kommune,emply,https://hedensted.career.emply.com,Hedensted,aar,Offentlig,,,,,,,,https://www.hedensted.dk/
+Hjørring Kommune,hrmanager,hjorringkommune_tr,Hjørring,aal,Offentlig,,,,,,,,https://hjoerring.dk/job-og-karriere
+Holbæk Kommune,emply,https://holbaek.career.emply.com,Holbæk,cph,Offentlig,,,,,,,,https://holbaek.dk/om-kommunen/job-i-kommunen
+Hvidovre Kommune,hrmanager,hvidovre,Hvidovre,cph,Offentlig,,,,,,,,https://www.hvidovre.dk/om-kommunen/job/ledige-stillinger
+Ikast-Brande Kommune,emply,https://ikast-brande.career.emply.com,Ikast-Brande,aar,Offentlig,,,,,,,,https://ikast-brande.dk/
+Lemvig Kommune,emply,https://lemvig.career.emply.com,Lemvig,aar,Offentlig,,,,,,,,https://lemvig.dk/
+Mariagerfjord Kommune,emply,https://mariagerfjord.career.emply.com,Mariagerfjord,aal,Offentlig,,,,,,,,https://www.mariagerfjord.dk/om-os/job-og-elevpladser/ledige-stillinger
+Morsø Kommune,emply,https://mors.career.emply.com,Morsø,aal,Offentlig,,,,,,,,https://mors.dk/om-kommunen/job/ledige-job
+Nordfyns Kommune,emply,https://nordfynskommune.career.emply.com,Nordfyns,ode,Offentlig,,,,,,,,https://www.nordfynskommune.dk/vores-kommune/job-hos-os/ledige-stillinger/
+Nyborg Kommune,emply,https://nyborg.career.emply.com,Nyborg,ode,Offentlig,,,,,,,,https://www.nyborg.dk/da/
+Næstved Kommune,emply,https://naestved.career.emply.com,Næstved,cph,Offentlig,,,,,,,,https://www.naestved.dk/
+Odder Kommune,hrmanager,ofir_odder,Odder,aar,Offentlig,,,,,,,,https://odder.dk/borger/job-and-ledighed/ledige-kommunale-job
+Odense Kommune,hrmanager,odense-kommune_tr,Odense,ode,Offentlig,,,,,,,,https://www.odense.dk/job
+Ringkøbing-Skjern Kommune,emply,https://rksk-v2.career.emply.com,Ringkøbing-Skjern,aar,Offentlig,,,,,,,,https://www.rksk.dk/om-kommunen/ledige-jobs-uddannelse-og-kommunen-som-arbejdsplads
+Solrød Kommune,emply,https://solrod.career.emply.com,Solrød,cph,Offentlig,,,,,,,,https://solrod.dk/
+Stevns Kommune,emply,https://stevns.career.emply.com,Stevns,cph,Offentlig,,,,,,,,https://www.stevns.dk/ledige-stillinger
+Struer Kommune,emply,https://struerkommune.career.emply.com,Struer,aar,Offentlig,,,,,,,,https://www.struer.dk/
+Svendborg Kommune,emply,https://svendborg.career.emply.com,Svendborg,ode,Offentlig,,,,,,,,https://www.svendborg.dk/ledige-stillinger/
+Syddjurs Kommune,emply,https://syddjurs.career.emply.com,Syddjurs,aar,Offentlig,,,,,,,,https://www.syddjurs.dk/job-i-syddjurs/job
+Tønder Kommune,emply,https://toender.career.emply.com,Tønder,ode,Offentlig,,,,,,,,https://www.toender.dk/din-kommune/job-i-kommunen/ledige-stillinger/
+Varde Kommune,emply,https://varde.career.emply.com,Varde,ode,Offentlig,,,,,,,,https://vardekommune.dk/
+Aalborg Kommune,emply,https://aalborg.career.emply.com,Aalborg,aal,Offentlig,,,,,,,,https://www.aalborg.dk/job-og-karriere/se-ledige-job/
+Aarhus Kommune,hrmanager,aarhuskommune_tr,Aarhus,aar,Offentlig,,,,,,,,https://aarhus.dk/job
+Tandlægen.dk,hrmanager,tand,København,cph,Sundhed,,,,,,,,https://tandlaegen.dk:443/
+Colosseum Tandlægerne,teamtailor,https://colosseumklinikken.teamtailor.com,Hellerup,cph,Sundhed,,,,,,,,https://www.colosseumtand.dk/
+Capio Danmark,emply,https://capio.career.emply.com,Hellerup,cph,Sundhed,,,,,,,,https://capio.dk/bliv-en-del-af-capio/
+Aleris,hrmanager,aleris,København,cph,Sundhed,,,,,,,,https://www.aleris.dk/godt-at-vide/om-aleris-danmark/job-hos-aleris/
+Lidl Danmark,sitemap,https://karriere.lidl.dk,Køge,cph,Detailhandel,,,,,,,,https://karriere.lidl.dk/
+REMA 1000,hrmanager,rema1000,Odense,ode,Detailhandel,,,,,,,,https://rema1000.dk:443/
+Magasin,teamtailor,https://karriere.magasin.dk,København,cph,Detailhandel,,,,,,,,https://karriere.magasin.dk/
+7-Eleven Danmark,emply,https://7-eleven.career.emply.com,København,cph,Detailhandel,,,,,,,,https://7-eleven.dk/job
+Boozt,teamtailor,https://careers.booztgroup.com,København,cph,Detailhandel,,,,,,,,https://careers.booztgroup.com/
+Danske Spil,teamtailor,https://karriere.danskespil.dk,Brøndby,cph,Underholdning,,,,,,,,https://karriere.danskespil.dk/
+Topdanmark,workday,https://if.wd502.myworkdayjobs.com/Careers,Ballerup,cph,Pension og forsikring,,,,,,,,https://www.if.dk/om-if/karriere
+Accenture Danmark,workday,https://accenture.wd103.myworkdayjobs.com/AccentureCareers,København,cph,Rådgivning,,,,,,,,https://www.accenture.com/us-en/careers
+Kammeradvokaten,emply,https://poulschmith.career.emply.com,København,cph,Advokat,,,,,,,,https://jobs.poulschmith.dk/da/ledige-stillinger
+Bech-Bruun,emply,https://bechbruun.career.emply.com,København,cph,Advokat,,,,,,,,https://bechbruun.com/career/
+Accura,hrmanager,accura,København,cph,Advokat,,,,,,,,https://accura.dk/karriere/

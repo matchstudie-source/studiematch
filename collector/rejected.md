@@ -52,3 +52,4 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aarhus Kommune | Studiepraktik i Kommuneplanlægning: Vær med til at forme fremtidens Aarhus | ikke et studiejob |
 | Statslige arbejdsgivere | Studieadjunkt i Play Design til Designskolen Kolding | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
+| Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |

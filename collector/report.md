@@ -1,6 +1,6 @@
-# Jobindsamling 2026-10-26 20:05 UTC
+# Jobindsamling 2026-10-26 21:13 UTC
 
-142 studiejob gemt. AI-kald i denne kørsel: 0.
+152 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -107,3 +107,46 @@
 | DSV | rmk | 1 | 0 |  |
 | Coloplast | rmk | 8 | 7 |  |
 | Ascendis Pharma | workable | 22 | 1 |  |
+| Ballerup Kommune | emply | 0 | 0 |  |
+| Novo Nordisk Fonden | workable | 5 | 1 |  |
+| Albertslund Kommune | emply | 0 | 0 |  |
+| Billund Kommune | hrmanager | 19 | 0 |  |
+| Faxe Kommune | hrmanager | 32 | 0 |  |
+| Fredericia Kommune | emply | 0 | 0 |  |
+| Frederikshavn Kommune | emply | 0 | 0 |  |
+| Faaborg-Midtfyn Kommune | hrmanager | 38 | 1 |  |
+| Glostrup Kommune | emply | 0 | 0 |  |
+| Greve Kommune | hrmanager | 24 | 0 |  |
+| Guldborgsund Kommune | emply | 0 | 0 |  |
+| Haderslev Kommune | emply | 0 | 0 |  |
+| Halsnæs Kommune | emply | 0 | 0 |  |
+| Hedensted Kommune | emply | 0 | 0 |  |
+| Hjørring Kommune | hrmanager | 0 | 0 |  |
+| Ikast-Brande Kommune | emply | 0 | 0 |  |
+| Lemvig Kommune | emply | 0 | 0 |  |
+| Mariagerfjord Kommune | emply | 0 | 0 |  |
+| Morsø Kommune | emply | 0 | 0 |  |
+| Nordfyns Kommune | emply | 0 | 0 |  |
+| Nyborg Kommune | emply | 0 | 0 |  |
+| Odder Kommune | hrmanager | 23 | 0 |  |
+| Ringkøbing-Skjern Kommune | emply | 0 | 0 |  |
+| Solrød Kommune | emply | 0 | 0 |  |
+| Stevns Kommune | emply | 0 | 0 |  |
+| Struer Kommune | emply | 0 | 0 |  |
+| Syddjurs Kommune | emply | 0 | 0 |  |
+| Tønder Kommune | emply | 0 | 0 |  |
+| Varde Kommune | emply | 0 | 0 |  |
+| Tandlægen.dk | hrmanager | 12 | 0 |  |
+| Capio Danmark | emply | 0 | 0 |  |
+| Aleris | hrmanager | 1 | 0 |  |
+| Lidl Danmark | sitemap | 0 | 0 |  |
+| REMA 1000 | hrmanager | 73 | 0 |  |
+| Magasin | teamtailor | 17 | 3 |  |
+| 7-Eleven Danmark | emply | 0 | 0 |  |
+| Boozt | teamtailor | 10 | 0 |  |
+| Danske Spil | teamtailor | 5 | 3 |  |
+| Topdanmark | workday | 2 | 0 |  |
+| Accenture Danmark | workday | 1 | 0 |  |
+| Kammeradvokaten | emply | 0 | 0 |  |
+| Bech-Bruun | emply | 0 | 0 |  |
+| Accura | hrmanager | 5 | 2 |  |
