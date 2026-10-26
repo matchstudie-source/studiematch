@@ -349,5 +349,22 @@ class RmkTests(unittest.TestCase):
         self.assertEqual(fam, "engineering")
 
 
+class MatchQualityTests(unittest.TestCase):
+    def test_law_job_is_legal_and_requires_law(self):
+        title = "Vil du supplere dit jurastudie med et job hos Gjensidige Forsikring?"
+        text = "Gjensidige har sine rødder i Norge og en historie, der går tilbage til 1816. Du skal hjælpe vores juridiske afdeling med kontrakter og forskning i retspraksis."
+        fam, _ = enrich.classify_families(title, text)
+        self.assertEqual(fam, "legal")
+        self.assertEqual(enrich.detect_required_study(title), "jura")
+        self.assertTrue(enrich.make_blurb(text).startswith("Du skal hjælpe"))
+
+    def test_required_study_keys(self):
+        self.assertEqual(enrich.detect_required_study("Studerende til juridiske opgaver"), "jura")
+        self.assertEqual(enrich.detect_required_study("Stud.jur. til Retten i Esbjerg"), "jura")
+        self.assertEqual(enrich.detect_required_study("Fagligt relevant studiejob til sygeplejestuderende"), "sygepleje")
+        self.assertEqual(enrich.detect_required_study("Ingeniørpraktikant til geoteknik"), "ingenioer")
+        self.assertIsNone(enrich.detect_required_study("Studentermedhjælper til indkøbsanalyse"))
+
+
 if __name__ == "__main__":
     unittest.main()

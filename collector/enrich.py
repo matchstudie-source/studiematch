@@ -19,7 +19,7 @@ FAMILIES = [
     "research", "engineering", "health", "education", "social", "public",
 ]
 
-# Ord i titel og tekst, der peger på et felt. Titelord vægter 3, tekstord 1.
+# Ord i titel og tekst, der peger på et felt. Titelord vægter 5, tekstord 1.
 FAMILY_WORDS = {
     "supply": ["supply chain", "demand", "planning", "planlægning", "forsyningskæde", "lager", "inventory"],
     "procurement": ["procurement", "purchasing", "sourcing", "indkøb", "buyer", "leverandør"],
@@ -39,7 +39,7 @@ FAMILY_WORDS = {
     "sustain": ["esg", "bæredygtig", "sustainab", "klima", "climate", "miljø", "csrd"],
     "customer": ["customer", "kunde", "support", "service", "reception", "call"],
     "legal": ["legal", "jura", "juridisk", "jurist", "advokat", "kontrakt", "contract", "compliance", "erhvervsjura", "opholds"],
-    "research": ["research", "forskning", "laborator", "lab ", "videnskabelig", "studie "],
+    "research": ["research", "forskning", "laborator", "lab ", "videnskabelig"],
     "engineering": ["mekanisk", "mechanical", "konstruktion", "cad", "ingeniør", "engineer", "elektronik", "electronics", "maskinmester", "skibsfører", "skibsofficer", "el-installatør", "elektriker", "bygningskonstruktør", "arkitekt", "tekniker"],
     "health": ["sygepleje", "læge", "medicin", "patient", "hospital", "klinik", "sundhed", "pleje", "tandlæge", "tandpleje", "vagt"],
     "education": ["pædagog", "lærer", "lektie", "undervis", "sfo", "skole", "børn", "instruktor", "teaching"],
@@ -111,7 +111,7 @@ def classify_families(title: str, text: str) -> tuple[str, list[str]]:
     t, d = f" {title.lower()} ", f" {text.lower()} "
     scores = {}
     for fam, words in FAMILY_WORDS.items():
-        s = sum(3 for w in words if w in t) + sum(1 for w in words if w in d)
+        s = sum(5 for w in words if w in t) + sum(1 for w in words if w in d)
         if s:
             scores[fam] = s
     if not scores:
@@ -119,6 +119,12 @@ def classify_families(title: str, text: str) -> tuple[str, list[str]]:
     ranked = sorted(scores.items(), key=lambda kv: -kv[1])
     top = ranked[0][1]
     return ranked[0][0], [f for f, s in ranked[1:3] if s >= 0.4 * top]
+
+
+def family_confidence(title: str, fam: str) -> str:
+    """'title' når titlen selv peger på feltet, ellers 'text' (et gæt ud fra opslagets tekst)."""
+    t = f" {title.lower()} "
+    return "title" if any(w in t for w in FAMILY_WORDS.get(fam, [])) else "text"
 
 
 def detect_danish(text: str) -> str:
@@ -158,14 +164,50 @@ def detect_skills(text: str) -> list[str]:
     return found[:6]
 
 
+# Sætninger om virksomheden selv, ikke om jobbet
+BOILERPLATE_RE = re.compile(
+    r"har sine rødder|grundlagt|founded|i dag er vi|today we are|we are a |vi er en |vi er et |medarbejdere i|"
+    r"employees in|ansatte i|our mission|vores mission|is a leading|er en førende|er et førende|historie", re.I)
+ROLE_RE = re.compile(r"\b(du|dig|you|your|opgave|tasks?|ansvar|responsib|skal|will)\b", re.I)
+
+
 def make_blurb(text: str, limit: int = 220) -> str:
-    sentences = re.split(r"(?<=[.!?])\s+", text.strip())
+    sentences = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
+    # Start ved den første sætning, der handler om jobbet, og spring virksomhedsreklame over
+    start = next((i for i, x in enumerate(sentences) if ROLE_RE.search(x) and not BOILERPLATE_RE.search(x)), 0)
+    sentences = [x for x in sentences[start:] if not BOILERPLATE_RE.search(x)] or sentences
     blurb = ""
     for s in sentences:
         if len(blurb) + len(s) > limit:
             break
         blurb = f"{blurb} {s}".strip()
     return blurb or text[:limit].rsplit(" ", 1)[0] + "…" if text else ""
+
+
+# Job, der kun er for studerende på en bestemt uddannelse. Nøglen bruges af hjemmesiden.
+REQUIRED_STUDY = [
+    ("jura", r"studerende til juridisk|juridisk student|jurastud|stud\.?\s?jur|\bjurist|juridisk(?:e)? (?:student|studentermedhjælp)|law student|jurastudie"),
+    ("sygepleje", r"sygeplejestuderende|sygeplejerskestuderende|nursing student"),
+    ("medicin", r"medicinstuderende|stud\.?\s?med\b|lægestuderende|medical student"),
+    ("farmaci", r"farmaceutstuderende|farmacistuderende|stud\.?\s?pharm"),
+    ("psykologi", r"psykologistuderende|psykologstuderende|stud\.?\s?psych"),
+    ("paedagog", r"pædagogstuderende"),
+    ("socialraadgiver", r"socialrådgiverstuderende"),
+    ("tandpleje", r"tandplejerstuderende|tandlægestuderende"),
+    ("audiologopaedi", r"audiologopædi"),
+    ("arkitekt", r"arkitektstuderende|arkitektpraktikant"),
+    ("konstruktoer", r"bygningskonstruktør"),
+    ("ingenioer", r"ingeniørpraktikant|ingeniørstuderende|engineering student|engineering intern"),
+    ("maritim", r"skibsfører|skibsofficer|maskinmester"),
+    ("oekonomi", r"stud\.?\s?polit|økonomistuderende|economics student"),
+]
+
+
+def detect_required_study(title: str) -> str | None:
+    for key, rx in REQUIRED_STUDY:
+        if re.search(rx, title, re.I):
+            return key
+    return None
 
 
 def enrich_rules(raw: dict, employer: dict) -> dict | None:
@@ -182,13 +224,14 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
         "region": region,
         "hMin": h_min, "hMax": h_max,
         "danish": detect_danish(f"{title} {text}"),
-        "fam": fam, "sec": sec,
+        "fam": fam, "sec": sec, "famConf": family_confidence(title, fam),
         "skills": detect_skills(text),
         "industry": employer.get("industry") or "Andet",
         "postedAt": raw.get("posted_at"),
         "deadlineAt": raw.get("deadline_at"),
         "src": raw.get("source", "Virksomhedens karriereside"),
         "blurb": make_blurb(text),
+        "req": detect_required_study(title),
         "url": raw.get("url", ""),
         "enrichedBy": "regler",
     }

@@ -687,8 +687,24 @@ function setFreeText(text, uniKey, keepRegion){
 
 /* ============ MATCHING ============ */
 function ctxOf(c){ return c || {profile:S.profile, learned:S.learned, disabled:S.disabled}; }
+/* Job, der kun er for studerende på en bestemt uddannelse (sat af jobindsamleren) */
+const REQ_STUDY = {
+  jura:/jura|\bjur\b|\blaw\b|erhvervsjura|retsvidenskab/, sygepleje:/sygepleje|nursing/, medicin:/(^| )medicin( |$)|medicine|læge/,
+  farmaci:/farmaci|pharma/, psykologi:/psykolog/, paedagog:/pædagog/, socialraadgiver:/socialrådgiv|socialt arbejde/,
+  tandpleje:/tandpleje|odontologi|tandlæge/, audiologopaedi:/audiologopædi/, arkitekt:/arkitekt/, konstruktoer:/konstruktør|byggeri/,
+  ingenioer:/ingeniør|engineering|byggeri|bygning|konstruktion|maskin|elektro|anlæg|civil|kemiteknik|teknologi/,
+  maritim:/maskinmester|skibsfører|skibsofficer|maritim/, oekonomi:/økonomi|economics|polit/
+};
+function studyFits(req, p){
+  const rx = REQ_STUDY[req]; if(!rx) return true;
+  const prog = p.programId ? progById(p.programId) : null;
+  const hay = norm([p.programName, p.studyText, ...(prog ? prog.aliases : [])].join(" "));
+  if(req==="ingenioer" && /global business/.test(hay)) return false;  /* GBE er ikke en teknisk ingeniøruddannelse i denne forstand */
+  return rx.test(hay);
+}
 function evaluate(job, c){
   c=ctxOf(c); const p=c.profile, W=p.weights||{};
+  if(job.req && !studyFits(job.req, p)) return {out:"study"};
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
   if(job.hMin > p.hoursMax+2) return {out:"hours"};
@@ -696,7 +712,8 @@ function evaluate(job, c){
   const prim = W[job.fam]||0;
   let bestSec={f:null,w:0};
   for(const f of job.sec||[]){ const w=(W[f]||0)*.85; if(w>bestSec.w) bestSec={f,w}; }
-  const degree = Math.max(prim,bestSec.w);
+  /* Er feltet kun gættet ud fra opslagets tekst (ikke titlen), stoler vi mindre på det */
+  const degree = Math.max(prim,bestSec.w) * (job.famConf==="text" ? .7 : 1);
   const secs=job.sec||[];
   const learnedAdj = (c.learned[job.fam]||0) + (secs.length ? .4*secs.reduce((s,f)=>s+(c.learned[f]||0),0)/secs.length : 0);
   const affinity = clamp(degree+learnedAdj,0,1);
@@ -720,7 +737,8 @@ function evaluate(job, c){
   if(job.danish==="plus" && p.danish!=="fluent") score-=.05;
   if(job.hMax>p.hoursMax) score-=.04;
   score=clamp(score,0,1);
-  const level = score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
+  /* Uden reel faglig sammenhæng vises jobbet ikke, uanset timer og interesser */
+  const level = affinity<.35 ? null : score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
   const vocab=[]; for(const f in W){ if(W[f]>=.6) vocab.push(...(TITLE_KW[f]||[])); }
   const title=" "+job.title.toLowerCase()+" ";
   const obvious = vocab.some(k=>title.includes(k));
@@ -771,7 +789,7 @@ function feed(){
 }
 function hiddenFeed(){ return feed().filter(x=>x.ev.hidden); }
 function filteredCounts(){
-  const c={danish:0,hours:0,location:0,field:0};
+  const c={danish:0,hours:0,location:0,field:0,study:0};
   for(const x of allEvals()){ if(x.ev.out && !(S.fb[x.job.id]||{}).dismissed) c[x.ev.out]++; }
   return c;
 }
