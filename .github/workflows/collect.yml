@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "17 4,13 * * *"   # to gange i døgnet (UTC), så det holder sig inden for de gratis minutter
   workflow_dispatch: {}             # knap til at køre den manuelt under Actions
+  push:                             # kører også, når læserne eller kildelisten ændres
+    paths: ["collector/sources.py", "collector/enrich.py", "collector/collect.py", "collector/employers.csv", ".github/workflows/collect.yml"]
 
 permissions:
   contents: write
