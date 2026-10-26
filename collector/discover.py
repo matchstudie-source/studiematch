@@ -42,10 +42,11 @@ SIGNATURES = [
     ("hrmanager", re.compile(r"hr-manager\.net/jobportal\.svc/([\w-]+)", re.I), lambda m, page: m.group(1)),
     ("emply", re.compile(r"https?://([\w-]+)\.career\.emply\.com"), lambda m, page: m.group(0)),
     ("teamtailor", re.compile(r"https?://[\w-]+\.teamtailor\.com"), lambda m, page: m.group(0)),
+    ("workable", re.compile(r"apply\.workable\.com/([\w-]+)"), lambda m, page: m.group(1)),
     ("ashby", re.compile(r"jobs\.ashbyhq\.com/([\w.-]+)"), lambda m, page: m.group(1)),
 ]
 CAREER_PAGE = re.compile(r"job|career|karriere|stilling|ledige|vacanc", re.I)
-IGNORED_REFS = {"greenhouse": {"embed", "js"}, "lever": {"v0"}, "smartrecruiters": {"widget", "static"}}
+IGNORED_REFS = {"workable": {"api", "j"}, "greenhouse": {"embed", "js"}, "lever": {"v0"}, "smartrecruiters": {"widget", "static"}}
 
 
 def page_base(url: str) -> str:

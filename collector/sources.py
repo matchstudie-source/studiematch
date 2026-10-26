@@ -652,3 +652,35 @@ def fetch_rmk(site_url: str, company: str, source_label: str) -> list[dict]:
             seen.add(j["url"])
             jobs.append(j)
     return jobs
+
+
+# ---------- Workable (offentligt widget-API) ----------
+WORKABLE_URL = re.compile(r"apply\.workable\.com/([\w-]+)")
+
+
+def parse_workable_json(data: dict, company: str) -> list[dict]:
+    jobs = []
+    for j in data.get("jobs", []):
+        locs = j.get("locations") or []
+        city = j.get("city") or (locs[0].get("city") if locs else "") or ""
+        country = j.get("country") or (locs[0].get("country") if locs else "") or ""
+        location = ", ".join(x for x in (city, country) if x) or ("Remote" if j.get("telecommuting") else "")
+        jobs.append({
+            "title": (j.get("title") or "").strip(),
+            "company": company,
+            "location": location,
+            "description": html_to_text(j.get("description")),
+            "url": j.get("url") or j.get("shortlink") or j.get("application_url") or "",
+            "posted_at": _parse_any_date(j.get("published_on") or j.get("created_at")),
+            "deadline_at": None,
+            "source": "Virksomhedens rekrutteringssystem",
+            "commitment": j.get("employment_type") or "",
+        })
+    return [j for j in jobs if j["title"]]
+
+
+def fetch_workable(ref: str, company: str) -> list[dict]:
+    m = WORKABLE_URL.search(ref)
+    account = m.group(1) if m else ref.strip("/")
+    resp = _get(f"https://apply.workable.com/api/v1/widget/accounts/{account}", params={"details": "true"})
+    return [j for j in parse_workable_json(resp.json(), company) if in_denmark(j["location"])]

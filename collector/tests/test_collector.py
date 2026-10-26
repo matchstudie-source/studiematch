@@ -366,5 +366,21 @@ class MatchQualityTests(unittest.TestCase):
         self.assertIsNone(enrich.detect_required_study("Studentermedhjælper til indkøbsanalyse"))
 
 
+class WorkableTests(unittest.TestCase):
+    def test_parse(self):
+        data = {"name": "Ascendis Pharma", "jobs": [
+            {"title": "Student Assistant in Drug Substance Manufacturing", "shortcode": "AB1", "employment_type": "Part-time",
+             "url": "https://apply.workable.com/j/AB1", "published_on": "2026-10-20", "country": "Denmark", "city": "Hellerup",
+             "description": "<p>You will support our QA team 15 hours a week.</p>"},
+            {"title": "Senior Scientist", "country": "United States", "city": "Palo Alto", "description": ""}]}
+        jobs = sources.parse_workable_json(data, "Ascendis Pharma")
+        self.assertEqual(jobs[0]["location"], "Hellerup, Denmark")
+        self.assertEqual(jobs[0]["commitment"], "Part-time")
+        self.assertIn("QA team", jobs[0]["description"])
+        import discover
+        self.assertEqual(discover.detect('<a href="https://apply.workable.com/ascendis-pharma/">Jobs</a>', "https://ascendispharma.com/careers")[0],
+                         ("workable", "ascendis-pharma"))
+
+
 if __name__ == "__main__":
     unittest.main()
