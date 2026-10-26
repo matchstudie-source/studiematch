@@ -103,9 +103,10 @@ class EndToEndTest(unittest.TestCase):
                 "lever": lambda e: sources.parse_lever_json(json.loads(fixture("lever.json")), e["name"]),
                 "careerpage": lambda e: sources.parse_jobposting_jsonld(fixture("jobposting.html"), "https://eksempel.dk/job/1", e["name"], e["src_label"]),
             })
-            paths = {k: getattr(collect, k) for k in ("EMPLOYERS", "MANUAL", "CACHE", "REPORT", "OUT")}
+            paths = {k: getattr(collect, k) for k in ("EMPLOYERS", "MANUAL", "CACHE", "REPORT", "OUT", "REJECTED")}
             collect.EMPLOYERS, collect.MANUAL = emp, tmp / "none.csv"
             collect.CACHE, collect.REPORT, collect.OUT = tmp / "cache.json", tmp / "report.md", tmp / "jobs.json"
+            collect.REJECTED = tmp / "rejected.md"
             try:
                 collect.main()
             finally:

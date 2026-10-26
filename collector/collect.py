@@ -27,6 +27,7 @@ EMPLOYERS = HERE / "employers.csv"
 MANUAL = HERE / "manual_jobs.csv"
 CACHE = HERE / "cache.json"
 REPORT = HERE / "report.md"
+REJECTED = HERE / "rejected.md"
 OUT = ROOT / "site" / "data" / "jobs.json"
 
 FETCHERS = {
@@ -128,7 +129,7 @@ def main() -> int:
     employers = normalize_sources(read_csv(EMPLOYERS))
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    jobs, report_rows, ai_calls = [], [], 0
+    jobs, report_rows, ai_calls, rejected = [], [], 0, []
     max_ai_calls = int(os.environ.get("STUDIEMATCH_MAX_AI_CALLS", "200"))  # loft pr. kørsel, så regningen ikke løber løbsk
 
     for e in employers:
@@ -149,9 +150,11 @@ def main() -> int:
         kept = 0
         for raw in raw_jobs:
             if sources.clearly_abroad(raw.get("location", "")):
+                rejected.append((e["name"], raw.get("title", ""), "udlandet: " + raw.get("location", "")))
                 continue  # internationale virksomheder har også job i andre lande
             base = enrich.enrich_rules(raw, e)
             if base is None:
+                rejected.append((e["name"], raw.get("title", ""), "ikke et studiejob"))
                 continue
             key = hashlib.sha1(f"{raw.get('url')}|{raw['title']}|{len(raw.get('description', ''))}".encode()).hexdigest()
             if key in cache:
@@ -178,6 +181,11 @@ def main() -> int:
         if key in seen or is_expired(j):
             continue
         seen.add(key)
+        if j["co"] in ("Statslige arbejdsgivere",) or re.fullmatch(r"[A-ZÆØÅ][\w ,&-]{0,30}", j["co"] or "") and \
+                re.search(r"&| og |Stabe|Studieservice|Digitalisering|Udførelse|Planlægning|Ligebehandling", j["co"] or ""):
+            m = re.match(r"^(.{4,50}?) (?:søger|leder efter)\b", j["title"])
+            if m:
+                j["co"] = m.group(1).strip()
         j["id"] = job_id(j)
         j["live"] = True
         final.append(j)
@@ -191,6 +199,14 @@ def main() -> int:
              "| Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |", "| --- | --- | --- | --- | --- |"]
     lines += [f"| {n} | {s} | {a} | {k} | {note} |" for n, s, a, k, note in report_rows]
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    rej = ["# Job sorteret fra i seneste kørsel", "", "Bruges til at tjekke, om filteret er for strengt.", "",
+           "| Arbejdsgiver | Titel | Årsag |", "| --- | --- | --- |"]
+    rej += [f"| {n} | {t.replace('|', '/')} | {r} |" for n, t, r in rejected
+            if re.search(r"student|studie|praktik|intern", t, re.I)]  # kun dem, der ligner studiejob
+    try:
+        REJECTED.write_text("\n".join(rej) + "\n", encoding="utf-8")
+    except OSError:
+        pass
     print("\n".join(lines))
     return 0
 

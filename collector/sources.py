@@ -636,15 +636,19 @@ def fetch_rmk(site_url: str, company: str, source_label: str) -> list[dict]:
     jobs, seen = [], set()
     for locale in ("da_DK", "en_US"):
         for term in RMK_TERMS:
-            try:
-                resp = _get(f"{base}/services/rss/job/", params={"locale": locale, "keywords": f"({term})"})
-                found = parse_rmk_rss(resp.text, company, source_label)
-            except (requests.RequestException, ET.ParseError):
-                found = []
-            for j in found:
-                if j["url"] not in seen and in_denmark(j["location"]):
-                    seen.add(j["url"])
-                    jobs.append(j)
-        if jobs:
-            break
-    return jobs or fetch_sitemap(base, company, source_label)
+            for kw in (f"({term})", term):
+                try:
+                    resp = _get(f"{base}/services/rss/job/", params={"locale": locale, "keywords": kw})
+                    found = parse_rmk_rss(resp.text, company, source_label)
+                except (requests.RequestException, ET.ParseError):
+                    found = []
+                for j in found:
+                    if j["url"] not in seen and in_denmark(j["location"]):
+                        seen.add(j["url"])
+                        jobs.append(j)
+    # Feedet viser ofte kun de nyeste opslag, så sitemap læses også
+    for j in fetch_sitemap(base, company, source_label):
+        if j["url"] not in seen:
+            seen.add(j["url"])
+            jobs.append(j)
+    return jobs
