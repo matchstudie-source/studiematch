@@ -1,0 +1,30 @@
+name,source,ref,city,region,industry,title,fam,sec,danish,hours,blurb,src_label
+Dansk Industri,teamtailor,https://danskindustri.teamtailor.com,København,cph,Interesseorganisation,,,,,,,
+DFDS Denmark,teamtailor,https://dfdsdenmark.teamtailor.com,København,cph,Logistik og shipping,,,,,,,
+Again,teamtailor,https://again.teamtailor.com,København,cph,Biotek,,,,,,,
+Copenhagen Optimization,teamtailor,https://copenhagenoptimization.teamtailor.com,København,cph,Tech og software,,,,,,,
+Visma Public DK,teamtailor,https://vismapublictechnologies.teamtailor.com,,cph,Tech og software,,,,,,,
+Humac Denmark,teamtailor,https://humac.teamtailor.com,,cph,Detailhandel,,,,,,,
+Cepheo,teamtailor,https://cepheo.teamtailor.com,,cph,Tech og software,,,,,,,
+GML A/S,teamtailor,https://gmlhr.teamtailor.com,,cph,Andet,,,,,,,
+Colosseum Tandlægerne,teamtailor,https://colosseumklinikken.teamtailor.com,,cph,Sundhed,,,,,,,
+Lufthavnsvikar,teamtailor,https://lufthavnsvikar.teamtailor.com,Kastrup,cph,Transport,,,,,,,
+AutoProff,greenhouse,autoproff,København,cph,Tech og software,,,,,,,
+Worksome,greenhouse,worksomeaps,København,cph,Tech og software,,,,,,,
+Veo,lever,veo,København,cph,Tech og software,,,,,,,
+SEB,lever,seb,København,cph,Finans,,,,,,,
+Devoteam,smartrecruiters,Devoteam,København,cph,Rådgivning,,,,,,,
+Københavns Universitet,careerpage,https://jobportal.ku.dk/administrative-og-forskningsunderstoettende-stillinger/studenterjobs/,København,cph,Uddannelse,,,,,,,Universitetets jobside
+Danske Regioner,emply,https://regioner.career.emply.com/studentermedhjaelper,København,cph,Offentlig sektor,,,,,,,Arbejdsgiverens jobside
+Bird & Bird,careerpage,https://www.twobirds.com/da/careers/denmark/early-careers/students,København,cph,Rådgivning,,,,,,,Virksomhedens karriereside
+Region Syddanmark,evergreen,https://regionsyddanmark.dk/vagtordningen/overvejer-du-at-blive-vikar/studerende,Syddanmark,ode,Sundhed,Studerende i Vagtordningen,health,,required,,"Regionens vagtordning har vagter til studerende på sundhedsuddannelser. Du tilmelder dig én gang og tager vagter, når det passer.",Regionens vikarordning
+Region Sjælland,evergreen,https://www.regionsjaelland.dk/job-og-uddannelse/region-sjaellands-vikarkorps,Sjælland,cph,Sundhed,Vikar i Region Sjællands Vikarkorps,health,,required,,"Regionens vikarkorps dækker vagter på hospitalerne. Se på siden, hvilke faggrupper og studerende de søger.",Regionens vikarordning
+Region Midtjylland,evergreen,https://www.rm.dk/job/vikar-region-midt/bliv-vikar/,Midtjylland,aar,Sundhed,Vikar hos Vikar Region Midt,health,,required,,"Regionens eget vikarbureau tager vagter på hospitaler og i psykiatrien. Se på siden, hvilke faggrupper der søges.",Regionens vikarordning
+Region Nordjylland,evergreen,https://rn.dk/Job-og-uddannelse/Vikarservice,Nordjylland,aal,Sundhed,Vikar i Region Nordjyllands Vikarservice,health,,required,,"Regionens vikarservice dækker vagter på hospitalerne. Se på siden, hvilke faggrupper og studerende de søger.",Regionens vikarordning
+Københavns Kommune,evergreen,https://www.kk.dk/om-kommunen/job/vores-arbejdsplads/boern-og-unge/tilbud-til-paedagogstuderende,København,cph,Børn og unge,Studiejob i kommunens daginstitutioner,education,social,required,,"Daginstitutionerne ansætter løbende studerende med faste vagter og fast månedsløn. Du kan skrive dig op og få besked, når der er ledige studiejob.",Kommunens jobside
+Anklagemyndigheden,evergreen,https://anklagemyndigheden.dk/da/studenterjob,,cph,Offentlig sektor,Studenterjob i Anklagemyndigheden,legal,public,required,,"Anklagemyndigheden har studenterjob for jurastuderende. Se på siden, hvor og hvornår der er ledige stillinger.",Arbejdsgiverens jobside
+Carelink,evergreen,https://carelink.dk/vikar/bliv-vikar/faggrupper/sygeplejestuderende/,,cph,Sundhed,Vikar for sygeplejestuderende,health,,required,,"Vikarbureau, der formidler vagter til sygeplejestuderende. Se på siden, hvilke krav de stiller.",Vikarbureau
+Carelink,evergreen,https://carelink.dk/vikar/bliv-vikar/faggrupper/paedagog/,,cph,Børn og unge,Pædagogisk vikar,education,social,required,,"Vikarbureau, der formidler vagter i daginstitutioner og på bosteder. Se på siden, om de tager studerende.",Vikarbureau
+SundVikar,evergreen,https://sundvikar.dk/faggrupper/vikar-som-sygeplejestuderende/,,cph,Sundhed,Vikar som sygeplejestuderende,health,,required,,"Vikarbureau med vagter for sygeplejestuderende. Se på siden, hvor de har vagter.",Vikarbureau
+Redpill Linpro,teamtailor,https://careers.redpill-linpro.com,København,cph,IT og software,,,,,,,
+Region Syddanmark,hrmanager,regionsyddanmark,Vejle,ode,Sundhed og region,,,,,,,

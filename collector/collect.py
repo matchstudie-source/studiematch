@@ -1,0 +1,173 @@
+"""Studiematchs jobindsamler.
+
+Kør:  python collector/collect.py
+Læser collector/employers.csv og collector/manual_jobs.csv, henter job fra hver kilde,
+beriger dem (regler + evt. AI), fjerner dubletter og udløbne job og skriver site/data/jobs.json.
+En kort rapport skrives til collector/report.md.
+"""
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+import os
+import re
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(HERE))
+
+import enrich  # noqa: E402
+import sources  # noqa: E402
+
+EMPLOYERS = HERE / "employers.csv"
+MANUAL = HERE / "manual_jobs.csv"
+CACHE = HERE / "cache.json"
+REPORT = HERE / "report.md"
+OUT = ROOT / "site" / "data" / "jobs.json"
+
+FETCHERS = {
+    "teamtailor": lambda e: sources.fetch_teamtailor(e["ref"], e["name"]),
+    "greenhouse": lambda e: sources.fetch_greenhouse(e["ref"], e["name"]),
+    "lever": lambda e: sources.fetch_lever(e["ref"], e["name"]),
+    "smartrecruiters": lambda e: sources.fetch_smartrecruiters(e["ref"], e["name"]),
+    "careerpage": lambda e: sources.fetch_careerpage(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
+    "hrmanager": lambda e: sources.fetch_hrmanager(e["ref"], e["name"]),
+    "workday": lambda e: sources.fetch_workday(e["ref"], e["name"]),
+    "emply": lambda e: sources.fetch_emply(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
+    "sitemap": lambda e: sources.fetch_sitemap(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
+}
+
+
+def now() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def norm(s: str) -> str:
+    return re.sub(r"[^a-z0-9æøå]+", " ", (s or "").lower()).strip()
+
+
+def job_id(job: dict) -> str:
+    key = job.get("url") or f"{job['co']}|{job['title']}|{job.get('city', '')}"
+    return "x" + hashlib.sha1(key.encode()).hexdigest()[:12]
+
+
+def read_csv(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as f:
+        return [{k: (v or "").strip() for k, v in row.items()} for row in csv.DictReader(f)
+                if row.get("name") and not row["name"].startswith("#")]
+
+
+def evergreen_job(e: dict) -> dict:
+    """Løbende optag, fx regionernes vikarkorps: ingen frist, altid synlig."""
+    hours = [int(x) for x in re.findall(r"\d+", e.get("hours", ""))] or [0, 0]
+    return {
+        "title": e["title"], "co": e["name"], "city": e.get("city", ""), "region": e.get("region") or "cph",
+        "hMin": hours[0], "hMax": hours[-1], "danish": e.get("danish") or "required",
+        "fam": e.get("fam") or "health", "sec": [s for s in e.get("sec", "").split("|") if s],
+        "skills": [], "industry": e.get("industry") or "Andet",
+        "postedAt": None, "deadlineAt": None, "rolling": True,
+        "src": e.get("src_label") or "Løbende optag", "blurb": e.get("blurb", ""), "url": e["ref"],
+        "enrichedBy": "manuelt",
+    }
+
+
+def manual_job(m: dict) -> dict:
+    return {
+        "title": m["title"], "co": m["name"], "city": m.get("city", ""), "region": m.get("region") or "cph",
+        "hMin": int(m.get("h_min") or 0), "hMax": int(m.get("h_max") or 0), "danish": m.get("danish") or "required",
+        "fam": m.get("fam") or "operations", "sec": [s for s in m.get("sec", "").split("|") if s],
+        "skills": [s for s in m.get("skills", "").split("|") if s], "industry": m.get("industry") or "Andet",
+        "postedAt": m.get("posted_at") or now().isoformat(), "deadlineAt": m.get("deadline") or None,
+        "src": "Direkte opslag", "blurb": m.get("blurb", ""), "url": m.get("url", ""), "enrichedBy": "manuelt",
+    }
+
+
+def is_expired(job: dict) -> bool:
+    d = job.get("deadlineAt")
+    if not d:
+        return False
+    try:
+        return datetime.fromisoformat(d.replace("Z", "+00:00")) < now()
+    except ValueError:
+        return False
+
+
+def main() -> int:
+    employers = read_csv(EMPLOYERS)
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    jobs, report_rows, ai_calls = [], [], 0
+    max_ai_calls = int(os.environ.get("STUDIEMATCH_MAX_AI_CALLS", "200"))  # loft pr. kørsel, så regningen ikke løber løbsk
+
+    for e in employers:
+        src = e.get("source", "").lower()
+        if src == "evergreen":
+            jobs.append(evergreen_job(e))
+            report_rows.append((e["name"], src, 1, 1, ""))
+            continue
+        fetch = FETCHERS.get(src)
+        if not fetch:
+            report_rows.append((e["name"], src, 0, 0, "ukendt kildetype"))
+            continue
+        try:
+            raw_jobs = fetch(e)
+        except Exception as err:  # én kilde må ikke vælte hele kørslen
+            report_rows.append((e["name"], src, 0, 0, f"fejl: {type(err).__name__}"))
+            continue
+        kept = 0
+        for raw in raw_jobs:
+            if sources.clearly_abroad(raw.get("location", "")):
+                continue  # internationale virksomheder har også job i andre lande
+            base = enrich.enrich_rules(raw, e)
+            if base is None:
+                continue
+            key = hashlib.sha1(f"{raw.get('url')}|{raw['title']}|{len(raw.get('description', ''))}".encode()).hexdigest()
+            if key in cache:
+                job = {**base, **cache[key]}
+            elif api_key and ai_calls < max_ai_calls:
+                job = enrich.enrich_ai(raw, base, api_key)
+                ai_calls += 1
+                cache[key] = {k: job[k] for k in ("fam", "sec", "danish", "hMin", "hMax", "skills", "blurb", "deadlineAt", "enrichedBy", "skip") if k in job}
+            else:
+                job = base
+            if job.get("skip"):
+                continue
+            jobs.append(job)
+            kept += 1
+        report_rows.append((e["name"], src, len(raw_jobs), kept, ""))
+
+    for m in read_csv(MANUAL):
+        jobs.append(manual_job(m))
+
+    # dubletter og udløbne job
+    seen, final = set(), []
+    for j in jobs:
+        key = (norm(j["co"]), norm(j["title"]), norm(j.get("city", "")))
+        if key in seen or is_expired(j):
+            continue
+        seen.add(key)
+        j["id"] = job_id(j)
+        j["live"] = True
+        final.append(j)
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps(final, ensure_ascii=False, indent=1), encoding="utf-8")
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    lines = [f"# Jobindsamling {now().strftime('%Y-%m-%d %H:%M')} UTC", "",
+             f"{len(final)} studiejob gemt. AI-kald i denne kørsel: {ai_calls}.", "",
+             "| Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |", "| --- | --- | --- | --- | --- |"]
+    lines += [f"| {n} | {s} | {a} | {k} | {note} |" for n, s, a, k, note in report_rows]
+    REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("\n".join(lines))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,39 @@
+name: Hent job
+
+on:
+  schedule:
+    - cron: "17 4,13 * * *"   # to gange i døgnet (UTC), så det holder sig inden for de gratis minutter
+  workflow_dispatch: {}             # knap til at køre den manuelt under Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hent-job
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Installer
+        run: pip install -r collector/requirements.txt
+      - name: Test indsamleren
+        run: python -m unittest discover -s collector/tests -v
+      - name: Hent og berig job
+        run: python collector/collect.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Gem nye job
+        run: |
+          git config user.name "studiematch-bot"
+          git config user.email "studiematch-bot@users.noreply.github.com"
+          git add site/data/jobs.json collector/cache.json collector/report.md
+          git diff --cached --quiet || git commit -m "Opdater job"
+          git pull --rebase
+          git push

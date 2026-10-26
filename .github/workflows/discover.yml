@@ -1,0 +1,35 @@
+name: Find virksomheder
+
+on:
+  schedule:
+    - cron: "41 2 * * 1"   # hver mandag nat (UTC)
+  workflow_dispatch: {}    # knap til at køre den manuelt under Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hent-job          # kører aldrig samtidig med jobindsamlingen
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Installer
+        run: pip install -r collector/requirements.txt
+      - name: Find jobsystemer og tilføj nye kilder
+        run: python collector/discover.py --merge
+      - name: Gem resultatet
+        run: |
+          git config user.name "studiematch-bot"
+          git config user.email "studiematch-bot@users.noreply.github.com"
+          git add collector/employers.csv collector/discovered.csv collector/discover_report.md
+          git diff --cached --quiet || git commit -m "Nye kilder fra virksomhedsfinderen"
+          git pull --rebase
+          git push

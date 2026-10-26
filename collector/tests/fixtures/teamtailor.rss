@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:tt="https://teamtailor.com/locations">
+  <channel>
+    <title>Eksempel A/S</title>
+    <description>Ledige jobs</description>
+    <item>
+      <title>Studentermedhjælper til regnskab</title>
+      <description>&lt;p&gt;Vi søger en studerende til vores regnskabsafdeling. Du skal bogføre bilag og hjælpe med månedsafslutning. Jobbet er 15-20 timer om ugen. Du taler og skriver dansk flydende, og du kender Excel.&lt;/p&gt;</description>
+      <pubDate>Wed, 14 Oct 2026 08:00:00 +0200</pubDate>
+      <link>https://eksempel.teamtailor.com/jobs/1-studentermedhjaelper-til-regnskab</link>
+      <remoteStatus>none</remoteStatus>
+      <guid>tt-1</guid>
+      <tt:locations><tt:location><tt:name>Hovedkontor</tt:name><tt:city>København</tt:city><tt:country>Danmark</tt:country></tt:location></tt:locations>
+      <tt:department>Finance</tt:department>
+      <tt:role/>
+    </item>
+    <item>
+      <title>Senior Controller</title>
+      <description>&lt;p&gt;We are looking for an experienced controller.&lt;/p&gt;</description>
+      <pubDate>Wed, 14 Oct 2026 08:00:00 +0200</pubDate>
+      <link>https://eksempel.teamtailor.com/jobs/2-senior-controller</link>
+      <remoteStatus>none</remoteStatus>
+      <guid>tt-2</guid>
+      <tt:locations><tt:location><tt:city>Aarhus</tt:city></tt:location></tt:locations>
+    </item>
+  </channel>
+</rss>

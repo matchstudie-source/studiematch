@@ -1,0 +1,201 @@
+name,website,city,region,industry
+# Startliste til virksomhedsfinderen. Tilføj gerne flere. Finderen tjekker selv, hvilket jobsystem de bruger.
+Novo Nordisk,https://www.novonordisk.com,Bagsværd,cph,Medicinal
+Novonesis,https://www.novonesis.com,Lyngby,cph,Bioteknologi
+Lundbeck,https://www.lundbeck.com,Valby,cph,Medicinal
+Genmab,https://www.genmab.com,København,cph,Bioteknologi
+LEO Pharma,https://www.leo-pharma.com,Ballerup,cph,Medicinal
+Coloplast,https://www.coloplast.com,Humlebæk,cph,Medicinsk udstyr
+Ambu,https://www.ambu.com,Ballerup,cph,Medicinsk udstyr
+Demant,https://www.demant.com,Smørum,cph,Medicinsk udstyr
+GN Group,https://www.gn.com,Ballerup,cph,Elektronik
+Zealand Pharma,https://www.zealandpharma.com,Søborg,cph,Bioteknologi
+Bavarian Nordic,https://www.bavarian-nordic.com,Hellerup,cph,Bioteknologi
+ALK,https://www.alk.net,Hørsholm,cph,Medicinal
+Ascendis Pharma,https://ascendispharma.com,Hellerup,cph,Bioteknologi
+Ferring Danmark,https://www.ferring.com,København,cph,Medicinal
+A.P. Moller - Maersk,https://www.maersk.com,København,cph,Logistik og shipping
+DSV,https://www.dsv.com,Hedehusene,cph,Logistik og shipping
+DFDS,https://www.dfds.com,København,cph,Logistik og shipping
+Ørsted,https://orsted.com,Fredericia,cph,Energi
+Vestas,https://www.vestas.com,Aarhus,aar,Energi
+Energinet,https://energinet.dk,Fredericia,ode,Energi
+Norlys,https://norlys.dk,Silkeborg,aar,Energi
+Andel,https://andel.dk,Svinninge,cph,Energi
+HOFOR,https://www.hofor.dk,København,cph,Forsyning
+Carlsberg,https://www.carlsberggroup.com,København,cph,Fødevarer og drikkevarer
+Arla Foods,https://www.arla.com,Viby J,aar,Fødevarer og drikkevarer
+Danish Crown,https://www.danishcrown.com,Randers,aar,Fødevarer og drikkevarer
+Royal Unibrew,https://www.royalunibrew.com,Faxe,cph,Fødevarer og drikkevarer
+Danfoss,https://www.danfoss.com,Nordborg,ode,Industri
+Grundfos,https://www.grundfos.com,Bjerringbro,aar,Industri
+Rockwool,https://www.rockwool.com,Hedehusene,cph,Industri
+FLSmidth,https://www.flsmidth.com,Valby,cph,Industri
+NKT,https://www.nkt.com,Brøndby,cph,Industri
+Velux,https://www.velux.com,Hørsholm,cph,Industri
+LEGO,https://www.lego.com,Billund,ode,Legetøj
+Bang & Olufsen,https://www.bang-olufsen.com,Struer,aar,Elektronik
+Pandora,https://pandoragroup.com,København,cph,Detailhandel
+ECCO,https://www.ecco.com,Bredebro,ode,Detailhandel
+Bestseller,https://about.bestseller.com,Brande,aar,Detailhandel
+JYSK,https://jysk.com,Brabrand,aar,Detailhandel
+Salling Group,https://sallinggroup.com,Brabrand,aar,Detailhandel
+Coop Danmark,https://om.coop.dk,Albertslund,cph,Detailhandel
+Matas,https://www.matas.dk,Allerød,cph,Detailhandel
+Danske Bank,https://danskebank.com,København,cph,Finans
+Nordea Danmark,https://www.nordea.com,København,cph,Finans
+Jyske Bank,https://www.jyskebank.dk,Silkeborg,aar,Finans
+Sydbank,https://www.sydbank.dk,Aabenraa,ode,Finans
+Nykredit,https://www.nykredit.com,København,cph,Finans
+Arbejdernes Landsbank,https://www.al-bank.dk,København,cph,Finans
+Nationalbanken,https://www.nationalbanken.dk,København,cph,Finans
+Finanstilsynet,https://www.finanstilsynet.dk,København,cph,Offentlig
+Saxo Bank,https://www.home.saxo,Hellerup,cph,Finans
+Lunar,https://www.lunar.app,København,cph,Finans
+Pleo,https://www.pleo.io,København,cph,Tech
+PFA,https://pfa.dk,København,cph,Pension og forsikring
+ATP,https://www.atp.dk,Hillerød,cph,Pension og forsikring
+PensionDanmark,https://www.pensiondanmark.com,København,cph,Pension og forsikring
+Danica Pension,https://www.danica.dk,København,cph,Pension og forsikring
+Velliv,https://www.velliv.dk,Ballerup,cph,Pension og forsikring
+AkademikerPension,https://akademikerpension.dk,Hellerup,cph,Pension og forsikring
+Sampension,https://www.sampension.dk,Hellerup,cph,Pension og forsikring
+PKA,https://pka.dk,Hellerup,cph,Pension og forsikring
+Tryg,https://www.tryg.com,Ballerup,cph,Pension og forsikring
+Alka,https://www.alka.dk,Høje-Taastrup,cph,Pension og forsikring
+Codan,https://www.codan.dk,Frederiksberg,cph,Pension og forsikring
+Gjensidige,https://www.gjensidige.dk,København,cph,Pension og forsikring
+LB Forsikring,https://www.lb.dk,København,cph,Pension og forsikring
+Deloitte Danmark,https://www.deloitte.com/dk/da.html,København,cph,Revision og rådgivning
+PwC Danmark,https://www.pwc.dk,Hellerup,cph,Revision og rådgivning
+EY Danmark,https://www.ey.com/da_dk,Frederiksberg,cph,Revision og rådgivning
+KPMG Danmark,https://kpmg.com/dk/da/home.html,Frederiksberg,cph,Revision og rådgivning
+BDO Danmark,https://www.bdo.dk,København,cph,Revision og rådgivning
+Beierholm,https://www.beierholm.dk,København,cph,Revision og rådgivning
+Implement Consulting Group,https://implementconsultinggroup.com,København,cph,Rådgivning
+Valcon,https://valcon.com,København,cph,Rådgivning
+Netcompany,https://www.netcompany.com,København,cph,IT og software
+KMD,https://www.kmd.dk,Ballerup,cph,IT og software
+Systematic,https://systematic.com,Aarhus,aar,IT og software
+Trifork,https://trifork.com,Aarhus,aar,IT og software
+twoday,https://www.twoday.dk,København,cph,IT og software
+Columbus,https://www.columbusglobal.com,Ballerup,cph,IT og software
+Siteimprove,https://www.siteimprove.com,København,cph,Tech
+Templafy,https://www.templafy.com,København,cph,Tech
+Trustpilot,https://corporate.trustpilot.com,København,cph,Tech
+Too Good To Go,https://www.toogoodtogo.com,København,cph,Tech
+Queue-it,https://queue-it.com,København,cph,Tech
+Unity Danmark,https://unity.com,København,cph,Tech
+Rambøll,https://www.ramboll.com,København,cph,Ingeniørrådgivning
+COWI,https://www.cowi.com,Lyngby,cph,Ingeniørrådgivning
+NIRAS,https://www.niras.com,Allerød,cph,Ingeniørrådgivning
+Sweco Danmark,https://www.sweco.dk,København,cph,Ingeniørrådgivning
+MT Højgaard,https://mth.dk,Søborg,cph,Byggeri
+Per Aarsleff,https://www.aarsleff.com,Aarhus,aar,Byggeri
+Bravida Danmark,https://www.bravida.dk,Brøndby,cph,Byggeri
+DSB,https://www.dsb.dk,København,cph,Transport
+Københavns Lufthavne,https://www.cph.dk,Kastrup,cph,Transport
+PostNord Danmark,https://www.postnord.dk,København,cph,Logistik og shipping
+Movia,https://www.moviatrafik.dk,Valby,cph,Transport
+Metroselskabet,https://m.dk,København,cph,Transport
+DR,https://www.dr.dk,København,cph,Medier
+TV 2,https://omtv2.tv2.dk,Odense,ode,Medier
+Berlingske Media,https://www.berlingskemedia.dk,København,cph,Medier
+JP/Politikens Hus,https://jppol.dk,København,cph,Medier
+Egmont,https://www.egmont.com,København,cph,Medier
+TDC Net,https://tdcnet.dk,København,cph,Telekommunikation
+Nuuday,https://nuuday.dk,København,cph,Telekommunikation
+Telenor Danmark,https://www.telenor.dk,Aalborg,aal,Telekommunikation
+Telia Danmark,https://www.telia.dk,København,cph,Telekommunikation
+3 Danmark,https://www.3.dk,København,cph,Telekommunikation
+ISS,https://www.issworld.com,Søborg,cph,Service
+Falck,https://www.falck.com,København,cph,Service
+Dansk Erhverv,https://www.danskerhverv.dk,København,cph,Interesseorganisation
+Finans Danmark,https://finansdanmark.dk,København,cph,Interesseorganisation
+Landbrug & Fødevarer,https://lf.dk,Aarhus,aar,Interesseorganisation
+KL,https://www.kl.dk,København,cph,Interesseorganisation
+Danske Regioner,https://www.regioner.dk,København,cph,Offentlig
+Djøf,https://www.djoef.dk,København,cph,Interesseorganisation
+IDA,https://ida.dk,København,cph,Interesseorganisation
+HK,https://www.hk.dk,København,cph,Interesseorganisation
+Region Hovedstaden,https://www.regionh.dk,Hillerød,cph,Sundhed
+Region Sjælland,https://www.regionsjaelland.dk,Sorø,cph,Sundhed
+Region Syddanmark,https://regionsyddanmark.dk,Vejle,ode,Sundhed
+Region Midtjylland,https://www.rm.dk,Viborg,aar,Sundhed
+Region Nordjylland,https://rn.dk,Aalborg,aal,Sundhed
+Københavns Kommune,https://www.kk.dk,København,cph,Offentlig
+Aarhus Kommune,https://www.aarhus.dk,Aarhus,aar,Offentlig
+Odense Kommune,https://www.odense.dk,Odense,ode,Offentlig
+Aalborg Kommune,https://www.aalborg.dk,Aalborg,aal,Offentlig
+Frederiksberg Kommune,https://www.frederiksberg.dk,Frederiksberg,cph,Offentlig
+Gentofte Kommune,https://www.gentofte.dk,Gentofte,cph,Offentlig
+Gladsaxe Kommune,https://gladsaxe.dk,Søborg,cph,Offentlig
+Lyngby-Taarbæk Kommune,https://www.ltk.dk,Lyngby,cph,Offentlig
+Rudersdal Kommune,https://www.rudersdal.dk,Holte,cph,Offentlig
+Ballerup Kommune,https://ballerup.dk,Ballerup,cph,Offentlig
+Herlev Kommune,https://www.herlev.dk,Herlev,cph,Offentlig
+Hvidovre Kommune,https://www.hvidovre.dk,Hvidovre,cph,Offentlig
+Brøndby Kommune,https://www.brondby.dk,Brøndby,cph,Offentlig
+Tårnby Kommune,https://www.taarnby.dk,Kastrup,cph,Offentlig
+Høje-Taastrup Kommune,https://www.htk.dk,Taastrup,cph,Offentlig
+Roskilde Kommune,https://www.roskilde.dk,Roskilde,cph,Offentlig
+Køge Kommune,https://www.koege.dk,Køge,cph,Offentlig
+Hillerød Kommune,https://www.hillerod.dk,Hillerød,cph,Offentlig
+Helsingør Kommune,https://www.helsingor.dk,Helsingør,cph,Offentlig
+Furesø Kommune,https://www.furesoe.dk,Farum,cph,Offentlig
+Egedal Kommune,https://www.egedalkommune.dk,Ølstykke,cph,Offentlig
+Vejle Kommune,https://www.vejle.dk,Vejle,ode,Offentlig
+Kolding Kommune,https://www.kolding.dk,Kolding,ode,Offentlig
+Esbjerg Kommune,https://www.esbjerg.dk,Esbjerg,ode,Offentlig
+Horsens Kommune,https://horsens.dk,Horsens,aar,Offentlig
+Randers Kommune,https://www.randers.dk,Randers,aar,Offentlig
+Silkeborg Kommune,https://silkeborgkommune.dk,Silkeborg,aar,Offentlig
+Herning Kommune,https://www.herning.dk,Herning,aar,Offentlig
+Viborg Kommune,https://viborg.dk,Viborg,aar,Offentlig
+Næstved Kommune,https://www.naestved.dk,Næstved,cph,Offentlig
+Slagelse Kommune,https://www.slagelse.dk,Slagelse,cph,Offentlig
+Holbæk Kommune,https://holbaek.dk,Holbæk,cph,Offentlig
+Sønderborg Kommune,https://sonderborgkommune.dk,Sønderborg,ode,Offentlig
+Svendborg Kommune,https://www.svendborg.dk,Svendborg,ode,Offentlig
+Skatteforvaltningen,https://www.skat.dk,København,cph,Offentlig
+Folketinget,https://www.ft.dk,København,cph,Offentlig
+Danmarks Statistik,https://www.dst.dk,København,cph,Offentlig
+Digitaliseringsstyrelsen,https://digst.dk,København,cph,Offentlig
+Energistyrelsen,https://ens.dk,København,cph,Offentlig
+Sundhedsstyrelsen,https://www.sst.dk,København,cph,Offentlig
+Statens Serum Institut,https://www.ssi.dk,København,cph,Sundhed
+Udenrigsministeriet,https://um.dk,København,cph,Offentlig
+Finansministeriet,https://fm.dk,København,cph,Offentlig
+Erhvervsministeriet,https://em.dk,København,cph,Offentlig
+Uddannelses- og Forskningsministeriet,https://ufm.dk,København,cph,Offentlig
+Forsvaret,https://www.forsvaret.dk,København,cph,Offentlig
+Politiet,https://politi.dk,København,cph,Offentlig
+Kriminalforsorgen,https://www.kriminalforsorgen.dk,København,cph,Offentlig
+Domstolsstyrelsen,https://www.domstol.dk,København,cph,Offentlig
+Forbrugerrådet Tænk,https://taenk.dk,København,cph,Interesseorganisation
+DTU,https://www.dtu.dk,Lyngby,cph,Uddannelse og forskning
+Københavns Universitet,https://www.ku.dk,København,cph,Uddannelse og forskning
+CBS,https://www.cbs.dk,Frederiksberg,cph,Uddannelse og forskning
+Aarhus Universitet,https://www.au.dk,Aarhus,aar,Uddannelse og forskning
+Syddansk Universitet,https://www.sdu.dk,Odense,ode,Uddannelse og forskning
+Aalborg Universitet,https://www.aau.dk,Aalborg,aal,Uddannelse og forskning
+Roskilde Universitet,https://ruc.dk,Roskilde,cph,Uddannelse og forskning
+IT-Universitetet,https://www.itu.dk,København,cph,Uddannelse og forskning
+Københavns Professionshøjskole,https://www.kp.dk,København,cph,Uddannelse og forskning
+Professionshøjskolen Absalon,https://phabsalon.dk,Roskilde,cph,Uddannelse og forskning
+VIA University College,https://www.via.dk,Aarhus,aar,Uddannelse og forskning
+UCL Erhvervsakademi og Professionshøjskole,https://www.ucl.dk,Odense,ode,Uddannelse og forskning
+UC SYD,https://www.ucsyd.dk,Kolding,ode,Uddannelse og forskning
+UCN,https://www.ucn.dk,Aalborg,aal,Uddannelse og forskning
+Erhvervsakademi København,https://ek.dk,København,cph,Uddannelse og forskning
+Erhvervsakademi Aarhus,https://www.eaaa.dk,Aarhus,aar,Uddannelse og forskning
+Zealand,https://www.zealand.dk,Roskilde,cph,Uddannelse og forskning
+Rigshospitalet,https://www.rigshospitalet.dk,København,cph,Sundhed
+Novo Nordisk Fonden,https://novonordiskfonden.dk,Hellerup,cph,Fonde
+Carlsbergfondet,https://www.carlsbergfondet.dk,København,cph,Fonde
+Red Barnet,https://redbarnet.dk,København,cph,NGO
+Dansk Røde Kors,https://www.rodekors.dk,København,cph,NGO
+Mellemfolkeligt Samvirke,https://www.ms.dk,København,cph,NGO
+WWF Verdensnaturfonden,https://www.wwf.dk,København,cph,NGO
+Kræftens Bekæmpelse,https://www.cancer.dk,København,cph,NGO
+Redpill Linpro,https://careers.redpill-linpro.com,København,cph,IT og software

@@ -1,0 +1,1300 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Studiematch finder studiejob, der passer til din uddannelse. Gratis for studerende i Danmark.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B7D60'/%3E%3Cpath d='M9 22V10h7a4 4 0 0 1 0 8h-4' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>Studiematch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Nunito+Sans:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: luftig app-skal. Desktop = navigation til venstre + feed (maks. 680px) + læringspanel (>=1180px). Mobil = én kolonne + fanebjælke i bunden. Bevidst ét lyst udtryk. */
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF; --wash:#F2FAF6; --surface:#FFFFFF; --surface-2:#F4F7F6; --fg:#1F2C33; --muted:#64737B; --line:#E3EAE7;
+  --accent:#0B7D60; --accent-ink:#FFFFFF; --accent-soft:#E2F4EC;
+  --good:#235FC2; --good-soft:#E7EFFC; --worth:#8A5800; --worth-soft:#FFF3D3;
+  --hidden:#A23B78; --hidden-soft:#FBE9F3; --warn:#BF3A2B; --warn-soft:#FDECEA;
+  --sun:#FFE073; --toast-bg:#1F2C33; --toast-fg:#FFFFFF;
+  --scrim:rgba(31,44,51,.28); --shadow:0 1px 2px rgba(31,44,51,.04),0 10px 30px rgba(31,44,51,.06);
+  --mono-s:62%; --mono-bg-l:93%; --mono-fg-l:30%; --knob:#FFFFFF;
+  --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --font-body:"Nunito Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --r-md:16px; --r-lg:24px;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--bg)}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;text-wrap:balance;margin:0;letter-spacing:-.015em}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.hl{background:linear-gradient(transparent 60%,var(--sun) 60%,var(--sun) 90%,transparent 90%);padding:0 .05em}
+
+/* knapper og felter */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;border:1px solid transparent;font-weight:700;cursor:pointer;padding:10px 18px;font-size:15px;line-height:1.2;text-decoration:none;white-space:nowrap;transition:background .15s,border-color .15s,transform .1s}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.07)}
+.btn-primary:disabled{opacity:.35;cursor:not-allowed;filter:none}
+.btn-ghost{background:var(--surface);border-color:var(--line);color:var(--fg)}
+.btn-ghost:hover{background:var(--surface-2)}
+.btn-quiet{background:transparent;color:var(--accent);padding:8px 8px}
+.btn-sm{padding:7px 14px;font-size:14px}
+.btn-lg{padding:14px 24px;font-size:16px}
+.input,.select{width:100%;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:11px 15px;font-size:15.5px;min-width:0}
+.input:focus,.select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.input-lg{padding:15px 18px;font-size:16.5px;border-radius:999px}
+.label{display:block;font-weight:700;font-size:14.5px;margin-bottom:8px}
+.fine{font-size:13.5px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;font-weight:600;color:var(--fg)}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.chip .x{opacity:.6}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:8px}
+.seg .chip{justify-content:center;padding:10px 6px;text-align:center}
+
+/* topbjælke */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;align-items:center;gap:16px;min-height:64px}
+.logo{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-display);font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--fg);background:none;border:0;cursor:pointer;padding:0;flex:none}
+.logo-mark{width:28px;height:28px;border-radius:50%;background:var(--accent-soft);display:grid;place-items:center}
+.logo-mark svg{width:16px;height:16px;color:var(--accent)}
+.top-links{margin-left:auto;display:flex;align-items:center;gap:14px}
+.link-quiet{color:var(--muted);text-decoration:none;font-weight:600;font-size:14.5px}
+.link-quiet:hover{color:var(--accent)}
+.ctx{min-width:0;flex:1;font-size:14px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* forside */
+.hero{background:var(--wash);padding-block:56px 48px}
+.hero-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}.hero{padding-block:88px 80px}}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.display{font-size:clamp(40px,6vw,68px);line-height:1.04;font-weight:500;letter-spacing:-.025em}
+.lede{font-size:18.5px;color:var(--muted);margin-top:20px;max-width:32em}
+.hero-form{margin-top:34px;max-width:580px}
+.hero-input-row{display:flex;gap:10px;flex-wrap:wrap}
+.hero-input-row .input{flex:1 1 260px}
+.hero-input-row .btn{flex:0 0 auto}
+.hero-form .fine{margin-top:12px}
+.demo-cap{font-size:13.5px;color:var(--muted);margin-bottom:12px}
+.demo-stack{display:grid;gap:12px}
+.demo-stack .job{box-shadow:var(--shadow)}
+.demo-mini{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;background:var(--surface);border:1.5px dashed var(--hidden);border-radius:var(--r-md);padding:13px 15px;font-size:14.5px}
+.demo-mini b{font-weight:700}
+.band{padding-block:64px}
+.band h2{font-size:clamp(28px,3.6vw,40px);line-height:1.1}
+.band-sub{color:var(--muted);margin-top:12px;max-width:40em;font-size:16.5px}
+.steps{display:grid;gap:20px;margin-top:32px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.step{display:grid;gap:8px;align-content:start;background:var(--surface-2);border-radius:var(--r-lg);padding:22px}
+.step-n{width:32px;height:32px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-weight:800;color:var(--accent);font-size:14px}
+.step h3{font-size:21px}
+.step p{color:var(--muted)}
+.feat{display:grid;gap:16px;margin-top:32px}
+@media(min-width:760px){.feat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.feat-item{border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;display:grid;gap:8px;align-content:start}
+.feat-item h3{font-size:19px}
+.feat-item p{color:var(--muted);font-size:15px}
+.feat-item .tag{justify-self:start}
+.statement{padding-block:64px;background:var(--accent-soft)}
+.statement p.big{font-family:var(--font-display);font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:500;letter-spacing:-.02em;max-width:22em;text-wrap:balance}
+.statement p.big span{color:var(--accent)}
+.statement p.small{margin-top:18px;color:var(--muted);max-width:40em}
+.co-grid{display:grid;gap:28px}
+@media(min-width:900px){.co-grid{grid-template-columns:minmax(0,1fr) minmax(0,420px);align-items:start}}
+.co-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.co-list li{display:flex;gap:10px;align-items:flex-start}
+.co-list svg{width:18px;height:18px;color:var(--accent);flex:none;margin-top:4px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;display:grid;gap:14px;box-shadow:var(--shadow)}
+.panel h3{font-size:20px}
+.ok-note{background:var(--accent-soft);color:var(--fg);border-radius:12px;padding:11px 13px;font-size:14.5px}
+.foot{padding-block:28px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* onboarding */
+.ob{min-height:100%;background:var(--wash)}
+.ob-top{display:flex;align-items:center;gap:16px;min-height:68px}
+.ob-progress{margin-left:auto;display:flex;gap:6px}
+.ob-progress span{width:30px;height:6px;border-radius:3px;background:var(--line)}
+.ob-progress span.on{background:var(--accent)}
+.ob-main{max-width:640px;padding-block:28px 72px}
+.ob-step{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.ob-h{font-size:clamp(32px,5vw,46px);line-height:1.08;margin-top:10px}
+.ob-p{color:var(--muted);font-size:17px;margin-top:12px}
+.ob-body{margin-top:28px;display:grid;gap:26px}
+.sugg{list-style:none;margin:10px 0 0;padding:6px;border:1px solid var(--line);border-radius:18px;background:var(--surface);display:grid;gap:2px;box-shadow:var(--shadow)}
+.sugg:empty{display:none}
+.sugg button{width:100%;text-align:left;background:none;border:0;border-radius:12px;padding:10px 12px;cursor:pointer;display:flex;gap:10px;align-items:baseline;justify-content:space-between}
+.sugg button:hover,.sugg button:focus-visible{background:var(--wash)}
+.sugg .uni{font-size:12.5px;font-weight:700;color:var(--muted);flex:none}
+.sugg .free{color:var(--accent);font-weight:700}
+.ob-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fam-grid{display:grid;gap:8px}
+@media(min-width:560px){.fam-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fam{display:flex;align-items:center;gap:10px;text-align:left;border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 14px;cursor:pointer}
+.fam[aria-pressed="true"]{border-color:var(--accent)}
+.fam[aria-pressed="false"]{opacity:.5;background:transparent}
+.fam[aria-pressed="false"] .fam-name{text-decoration:line-through}
+.fam-name{font-weight:700;font-size:14.5px;min-width:0;flex:1}
+.fam-fit{font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap}
+.dots{display:flex;gap:3px;flex:none}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--accent)}
+.notice{background:var(--worth-soft);border-radius:14px;padding:12px 14px;font-size:14.5px}
+
+/* skolevalg og uddannelsesliste */
+.demo-more{display:grid;gap:8px}
+.demo-more-h{font-size:13px;font-weight:700;color:var(--muted)}
+.school-group{display:grid;gap:10px}
+.blurb{font-size:15px;color:var(--fg)}
+.src{font-size:12.5px;color:var(--muted);margin-top:-4px}
+.hero-schools{display:flex;flex-wrap:wrap;gap:8px}
+.school-chip{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:11px 18px;font-weight:800;font-size:15px;cursor:pointer;color:var(--fg)}
+.school-chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.school-chip.ghost{font-weight:600;color:var(--muted)}
+.school-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(min-width:640px){.school-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.school{display:grid;gap:3px;align-content:start;text-align:left;border:1.5px solid var(--line);background:var(--surface);border-radius:18px;padding:16px;cursor:pointer;min-width:0}
+.school:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.school-abbr{font-family:var(--font-display);font-size:28px;font-weight:500;line-height:1.1;color:var(--fg)}
+.school-full{font-size:13.5px;font-weight:700;color:var(--fg)}
+.school-n{font-size:12.5px;color:var(--muted)}
+.school-other .school-abbr{color:var(--accent)}
+.prog-list{list-style:none;margin:0;padding:6px;border:1px solid var(--line);border-radius:18px;background:var(--surface);display:grid;gap:2px;max-height:420px;overflow:auto}
+.prog-list button{width:100%;text-align:left;background:none;border:0;border-radius:12px;padding:10px 12px;cursor:pointer;display:flex;gap:12px;align-items:baseline;justify-content:space-between}
+.prog-list button:hover,.prog-list button:focus-visible{background:var(--wash)}
+.prog-list .pn{min-width:0;font-weight:600}
+.prog-list .pl{flex:none;font-size:12px;font-weight:700;color:var(--muted)}
+.prog-list .free{color:var(--accent)}
+.prog-list .none{padding:10px 12px;color:var(--muted)}
+
+/* app */
+.app{background:var(--surface-2);min-height:100%}
+.app-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding-block:20px 120px}
+@media(min-width:900px){.app-grid{grid-template-columns:200px minmax(0,1fr);padding-block:28px 64px}}
+@media(min-width:1180px){.app-grid{grid-template-columns:200px minmax(0,680px) minmax(0,1fr)}}
+.rail{display:none}
+@media(min-width:900px){.rail{display:grid;gap:4px;align-content:start;position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px)}}
+.rail button{display:flex;align-items:center;gap:10px;background:none;border:0;border-radius:999px;padding:10px 14px;cursor:pointer;font-weight:700;color:var(--muted);text-align:left}
+.rail button:hover{background:var(--surface);color:var(--fg)}
+.rail button[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
+.rail svg{width:18px;height:18px;flex:none}
+.rail .count{margin-left:auto;font-family:var(--font-mono);font-size:12px;font-weight:500}
+.side{display:none}
+@media(min-width:1180px){.side{display:grid;gap:16px;align-content:start;position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px)}}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(8px,env(safe-area-inset-left,0px));padding-right:max(8px,env(safe-area-inset-right,0px))}
+@media(min-width:900px){.tabbar{display:none}}
+.tabbar button{background:none;border:0;display:grid;justify-items:center;gap:3px;padding:9px 2px 8px;font-size:11.5px;font-weight:700;color:var(--muted);cursor:pointer;position:relative}
+.tabbar button[aria-current="page"]{color:var(--accent)}
+.tabbar svg{width:22px;height:22px}
+.tabbar .badge{position:absolute;top:5px;left:calc(50% + 8px);font-size:10px;font-weight:800;background:var(--hidden);color:var(--accent-ink);border-radius:999px;padding:0 5px;line-height:16px}
+.hide-mobile{display:none}
+@media(min-width:900px){.hide-mobile{display:inline-flex}}
+@media(min-width:1180px){.only-narrow{display:none}}
+@media(max-width:480px){.top-links .link-quiet{display:none}}
+@media(max-width:440px){.why-long{display:none}.actions{gap:6px}.actions .icon-btn{width:40px;height:40px}}
+
+.feed-col{min-width:0;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-content:start}
+.h-feed{font-size:clamp(30px,4vw,38px);line-height:1.08}
+.sub{color:var(--muted);margin-top:6px;font-size:15px}
+.filter-note{display:flex;gap:6px 10px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px 16px;font-size:14.5px;color:var(--muted)}
+.filter-note b{color:var(--fg);font-weight:700}
+.cards{display:grid;gap:14px}
+
+/* jobkort */
+.job{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 20px 14px;display:grid;gap:14px;transition:opacity .25s,transform .25s}
+.job.leaving{opacity:0;transform:translateX(24px)}
+.job-top{display:flex;gap:13px;align-items:flex-start}
+.monogram{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:14.5px;background:hsl(var(--h) var(--mono-s) var(--mono-bg-l));color:hsl(var(--h) var(--mono-s) var(--mono-fg-l));flex:none}
+.job-head{min-width:0;flex:1}
+.job-co{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.job-title{font-family:var(--font-display);font-size:21px;line-height:1.2;font-weight:500;letter-spacing:-.01em;margin-top:3px;text-wrap:balance}
+.lvl{flex:none;display:grid;justify-items:end;gap:6px}
+.lvl-pill{font-size:12.5px;font-weight:800;padding:5px 11px;border-radius:999px;white-space:nowrap}
+.lvl-strong .lvl-pill{background:var(--accent-soft);color:var(--accent)}
+.lvl-good .lvl-pill{background:var(--good-soft);color:var(--good)}
+.lvl-worth .lvl-pill{background:var(--worth-soft);color:var(--worth)}
+.meter{display:flex;gap:4px}
+.meter i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.lvl-strong .meter i{background:var(--accent)}
+.lvl-good .meter i:nth-child(-n+2){background:var(--good)}
+.lvl-worth .meter i:nth-child(1){background:var(--worth)}
+@media(max-width:560px){.job-top{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"mono lvl" "head head";row-gap:10px}.job-top .monogram{grid-area:mono}.job-top .lvl{grid-area:lvl;align-self:center}.job-top .job-head{grid-area:head}}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--surface-2);color:var(--muted);white-space:nowrap}
+.tag-new{background:var(--good-soft);color:var(--good)}
+.tag-hidden{background:var(--hidden-soft);color:var(--hidden)}
+.tag-soon{background:var(--worth-soft);color:var(--worth)}
+.sponsored{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+.reasons{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.reasons li{display:flex;gap:9px;align-items:flex-start;font-size:15px}
+.reasons svg{flex:none;width:17px;height:17px;margin-top:3px}
+.r-pos svg{color:var(--accent)}
+.r-neg{color:var(--muted)}
+.r-neg svg{color:var(--worth)}
+.callout-hidden{background:var(--hidden-soft);border-radius:16px;padding:12px 14px;font-size:14.5px;display:grid;gap:3px}
+.callout-hidden b{color:var(--hidden);font-size:12px;letter-spacing:.07em;text-transform:uppercase;font-weight:800}
+.actions{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);padding-top:12px;flex-wrap:wrap}
+.icon-btn{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);display:grid;place-items:center;cursor:pointer;flex:none}
+.icon-btn:hover{border-color:var(--fg);color:var(--fg)}
+.icon-btn svg{width:19px;height:19px}
+.icon-btn[aria-pressed="true"].b-like{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.icon-btn[aria-pressed="true"].b-save{background:var(--good-soft);border-color:var(--good);color:var(--good)}
+.icon-btn.b-pass:hover{color:var(--warn);border-color:var(--warn)}
+.why-btn{background:none;border:0;color:var(--accent);font-weight:700;font-size:14.5px;cursor:pointer;display:inline-flex;gap:4px;align-items:center;padding:8px 6px}
+.why-btn svg{width:16px;height:16px;transition:transform .2s}
+.why-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.act-spacer{flex:1}
+.why-panel{background:var(--wash);border-radius:18px;padding:15px;display:grid;gap:11px;font-size:14px}
+.bar-row{display:grid;grid-template-columns:minmax(0,100px) minmax(0,1fr) auto;gap:10px;align-items:center}
+.bar{height:7px;border-radius:4px;background:var(--line);overflow:hidden;display:block}
+.bar span{display:block;height:100%;background:var(--accent);border-radius:4px}
+.bar-row .v{white-space:nowrap;min-width:38px;text-align:right;font-family:var(--font-mono);font-size:12px;color:var(--muted)}
+.bar-row.na{opacity:.55}
+.filters-ok{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--muted)}
+.filters-ok span{display:inline-flex;gap:5px;align-items:center}
+.filters-ok svg{width:14px;height:14px;color:var(--accent)}
+
+.empty{background:var(--surface);border:1.5px dashed var(--line);border-radius:var(--r-lg);padding:28px 24px;display:grid;gap:12px;justify-items:start}
+.empty h2{font-size:23px}
+.empty p{color:var(--muted)}
+.toggle-row{display:flex;align-items:center;gap:12px}
+.switch{position:relative;width:46px;height:28px;border-radius:999px;background:var(--line);border:0;cursor:pointer;flex:none;transition:background .2s}
+.switch::after{content:"";position:absolute;top:4px;left:4px;width:20px;height:20px;border-radius:50%;background:var(--knob);transition:transform .2s;box-shadow:0 1px 3px rgba(31,44,51,.25)}
+.switch[aria-checked="true"]{background:var(--accent)}
+.switch[aria-checked="true"]::after{transform:translateX(18px)}
+
+/* gemt */
+.row-list{display:grid;gap:8px}
+.srow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:12px 14px}
+.srow .monogram{width:38px;height:38px;font-size:13px;border-radius:12px}
+.srow-main{min-width:0;flex:1 1 180px}
+.srow-title{font-weight:700;line-height:1.3}
+.srow-sub{font-size:13.5px;color:var(--muted)}
+.status{font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.st-applied{background:var(--accent-soft);color:var(--accent)}
+.st-saved{background:var(--good-soft);color:var(--good)}
+.group-h{font-family:var(--font-body);font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:8px}
+
+/* profil */
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;display:grid;gap:16px}
+.pcard h2{font-size:21px}
+.pcard .hint{color:var(--muted);font-size:14.5px;margin-top:-10px}
+.field{display:grid;gap:8px}
+.field-row{display:grid;gap:14px}
+@media(min-width:600px){.field-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.inline-form{display:flex;gap:8px}
+.inline-form .input{flex:1}
+.list-items{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.list-items:empty{display:none}
+.list-items li{display:flex;align-items:center;gap:10px;background:var(--surface-2);border-radius:12px;padding:8px 8px 8px 14px;font-size:14.5px}
+.list-items li span{flex:1;min-width:0}
+.mini-x{background:none;border:0;color:var(--muted);cursor:pointer;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;flex:none}
+.mini-x:hover{background:var(--warn-soft);color:var(--warn)}
+.mini-x svg{width:15px;height:15px}
+.strength{display:grid;gap:10px}
+.strength-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.strength-top b{font-family:var(--font-display);font-size:28px;font-weight:500}
+.strength .bar{height:9px;border-radius:5px}
+.danger{color:var(--warn)}
+.btn-danger{background:var(--warn);color:var(--accent-ink)}
+.file-drop{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1.5px dashed var(--line);border-radius:14px;padding:14px}
+.file-drop input{max-width:100%;min-width:0;font-size:14px}
+
+/* læringspanel */
+.taste{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px;display:grid;gap:12px}
+.taste h3{font-size:18px}
+.taste .fine{margin-top:-6px}
+.trow{display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:5px 8px;align-items:center;font-size:13.5px}
+.trow .tname{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
+.trow .delta{text-align:right;font-family:var(--font-mono);font-size:11.5px}
+.trow .bar{grid-column:1 / -1;height:6px}
+.trow.off{opacity:.45}
+.up{color:var(--accent)} .down{color:var(--warn)}
+.side-note{font-size:13px;color:var(--muted);padding-inline:6px}
+
+/* ark og dialog */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:700px){.scrim{align-items:center}}
+.sheet{background:var(--surface);width:100%;max-width:480px;border-radius:26px 26px 0 0;padding:24px max(20px,env(safe-area-inset-right,0px)) calc(22px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));display:grid;gap:14px;box-shadow:var(--shadow);max-height:90vh;overflow:auto}
+@media(min-width:700px){.sheet{border-radius:26px;padding:26px}}
+.sheet h2{font-size:24px}
+.sheet p{color:var(--muted)}
+.reason-list{display:grid;gap:8px}
+.reason-list button{text-align:left;background:var(--surface-2);border:1.5px solid transparent;border-radius:14px;padding:12px 15px;cursor:pointer;font-weight:700}
+.reason-list button:hover{border-color:var(--accent)}
+.reason-list small{display:block;color:var(--muted);font-weight:400;font-size:13.5px}
+.sheet-actions{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);z-index:60;background:var(--toast-bg);color:var(--toast-fg);border-radius:999px;padding:11px 16px 11px 20px;font-size:14.5px;display:flex;gap:14px;align-items:center;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;width:max-content;max-width:calc(100vw - 32px);box-shadow:var(--shadow)}
+#toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+#toast button{background:none;border:0;color:inherit;font-weight:800;text-decoration:underline;cursor:pointer;padding:2px}
+@media(min-width:900px){#toast{bottom:calc(28px + env(safe-area-inset-bottom,0px))}}
+
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ============ DATA ============ */
+/* label = navn på feltet, n = samme ord midt i en sætning */
+const FAM = {
+  supply:{label:"Supply Chain",n:"supply chain"}, procurement:{label:"Indkøb",n:"indkøb"}, pmo:{label:"Projektledelse / PMO",n:"projektledelse"},
+  bizdev:{label:"Forretningsudvikling",n:"forretningsudvikling"}, strategy:{label:"Strategi og rådgivning",n:"strategi og rådgivning"}, salesops:{label:"Salgsoperationer",n:"salgsoperationer"},
+  logistics:{label:"Logistik",n:"logistik"}, operations:{label:"Drift og processer",n:"drift og processer"}, bi:{label:"BI og dataanalyse",n:"BI og dataanalyse"},
+  finance:{label:"Økonomi, regnskab og revision",n:"økonomi og regnskab"}, marketing:{label:"Marketing og kommunikation",n:"marketing og kommunikation"}, product:{label:"Produkt og UX",n:"produkt og UX"},
+  software:{label:"Softwareudvikling",n:"softwareudvikling"}, datasci:{label:"Data science",n:"data science"}, hr:{label:"HR og rekruttering",n:"HR og rekruttering"},
+  sustain:{label:"Bæredygtighed og ESG",n:"bæredygtighed og ESG"}, customer:{label:"Kundesucces",n:"kundesucces"}, legal:{label:"Jura og compliance",n:"jura og compliance"},
+  research:{label:"Forskning",n:"forskning"}, engineering:{label:"Ingeniørarbejde",n:"ingeniørarbejde"},
+  health:{label:"Sundhed og pleje",n:"sundhed og pleje"}, education:{label:"Pædagogik og undervisning",n:"pædagogik og undervisning"},
+  social:{label:"Socialt arbejde",n:"socialt arbejde"}, public:{label:"Offentlig forvaltning",n:"offentlig forvaltning"}
+};
+/* ord, en studerende ville skrive i et søgefelt for hvert felt (dansk og engelsk) */
+const TITLE_KW = {
+  supply:["supply","demand","planning","planlægning","forsyning"], procurement:["procurement","purchasing","sourcing","buyer","indkøb"],
+  pmo:["project","projekt","pmo"], bizdev:["business development","forretningsudvikling","partnership","growth"], strategy:["strategy","strategi","consult","konsulent"],
+  salesops:["sales","salg"], logistics:["logistics","logistik","transport","freight","fragt","shipping"], operations:["operations","drift","process","proces","production","produktion"],
+  bi:["business intelligence","data analyst","dataanalytiker","business analyst","analytics","bi "], finance:["finance","økonomi","controlling","accounting","regnskab","revision","bogholder","skat","løn"],
+  marketing:["marketing","kommunikation","communication","content","brand"], product:["product","produkt"," ux","ux-","design"],
+  software:["software","developer","udvikler","frontend","backend"], datasci:["data scien","machine learning"], hr:["hr ","rekrut","recruit"],
+  sustain:["esg","bæredygtig","sustainab","klima"], customer:["customer","kunde","support"], legal:["legal","jura","kontrakt","contract","compliance"],
+  research:["research","forskning","laborator"], engineering:["maskin","mechanical","konstruktion","cad","ingeniør"],
+  health:["sygepleje","læge","medicin","vagt","klinik","hospital","patient","sundhed","pleje","genoptræning","blodprøve"],
+  education:["pædagog","lærer","lektie","undervis","sfo","skole","børn","instruktor","vuggestue","børnehave"],
+  social:["social","bosted","støtte","familie"], public:["kommune","styrelse","ministerium","borgerservice","offentlig","sagsbehandl"]
+};
+/* Uddannelser pr. skole. Lister med kilde er hentet fra skolernes egne sider i oktober 2026; AU og AAU er et udvalg. */
+const SCHOOLS = [
+  {key:"dtu",name:"DTU",full:"Danmarks Tekniske Universitet",region:"cph",src:"DTU's hjemmeside",lists:{
+    bachelor:["Anvendt Matematik","Bioteknologi","Byggeteknologi","Bygningsdesign","Bæredygtigt Energidesign","Computer Engineering","Cyberteknologi","Data Science og Management","Design og Innovation","Elektroteknologi","Fysik og Ingeniørvidenskab","General Engineering","Geofysik og Rumteknologi","Kemi og Teknologi","Kunstig Intelligens og Data","Medicin og Teknologi","Mekanisk design og Teknologi","Miljøteknologi","Softwareteknologi","Teknisk Biomedicin","Teknologi (digital uddannelse)"],
+    diplom:["Arktisk Byggeri og Infrastruktur","Byggeri og Infrastruktur","Bygningsdesign","Computer Engineering","Elektrisk Energiteknologi","Elektroteknologi","Fiskeriteknologi","Fødevaresikkerhed og -kvalitet","Global Business og Teknologi","Industriel Teknologi","IT og Økonomi","Kemi- og Bioteknik","Kemiteknik og International Business","Maskinteknik","Maskinteknik (digital uddannelse)","Mobilitet, Transport og Logistik","Proces og Innovation","Produktion","Skibsteknik og Maritimt Design","Softwareteknologi","Sundhedsteknologi"],
+    kandidat:["Anvendt Kemi","Autonome Systemer","Bioinformatik","Biomaterialeteknologier til Medicin","Bioteknologi","Business Analytics","Byggeteknologi","Bygningsdesign","Bæredygtige Energisystemer","Bæredygtige Energiteknologier","Bæredygtigt Fiskeri og Akvakultur","Design og Innovation","Elektroteknologi","Farmateknologi","Fødevareteknologi","Fysik og Teknologi","Geofysik og Rumteknologi","Industriel Økonomi og Teknologiledelse","Informationsteknologi","Kemisk og Biokemisk Teknologi","Kommunikationsteknologier og Systemdesign","Konstruktion og Mekanik","Lyd og Akustisk Teknologi","Lys og Teknologi","Marin Ingeniørvidenskab","Matematisk Modellering og Computing","Materiale- og Procesteknologi","Medicin og Teknologi","Menneskeorienteret Kunstig Intelligens","Miljøteknologi","Teknologisk Entreprenørskab","Vindenergi"]}},
+  {key:"cbs",name:"CBS",full:"Copenhagen Business School",region:"cph",src:"CBS' hjemmeside",lists:{
+    bachelor:["BSc in Business Administration and Digital Management","BSc in Business Administration and Service Management","BSc in Business Administration and Sociology","BSc in International Business","BSc in International Business and Politics","BSc in International Shipping and Trade","HA i erhvervsøkonomi","HA i markeds- og kulturanalyse","HA i projektledelse","HA(fil.) - erhvervsøkonomi og filosofi","HA(it.) - erhvervsøkonomi og informationsteknologi","HA(jur.) - erhvervsøkonomi og erhvervsjura","HA(kom.) - erhvervsøkonomi og virksomhedskommunikation","HA(mat.) - erhvervsøkonomi og matematik","HA(psyk.) - erhvervsøkonomi og psykologi"],
+    kandidat:["Cand.merc. i finansiering og regnskab","Cand.merc. i økonomisk markedsføring","Cand.merc.(jur.) - erhvervsøkonomi og erhvervsjura","Cand.merc.(kom.) - erhvervsøkonomi og virksomhedskommunikation","Cand.merc.(mat.) - erhvervsøkonomi og matematik","Cand.merc.(psyk.) - erhvervsøkonomi og psykologi","Cand.merc.aud. - revision","Cand.soc. i Human Resource Management","MSc in Business Administration and Bioentrepreneurship","MSc in Business Administration and Data Science","MSc in Business Administration and Digital Business","MSc in Business Administration and Information Systems","MSc in Business Administration and Innovation in Health Care","MSc in Business, Language and Culture","MSc in Economics and Business Administration in Accounting, Strategy and Control","MSc in Economics and Business Administration in Finance and Investments","MSc in Economics and Business Administration in Finance and Strategic Management","MSc in Economics and Business Administration in General Management and Analytics","MSc in Economics and Business Administration in Management of Innovation and Business Development","MSc in Economics and Business Administration in Sales Management","MSc in Economics and Business Administration in Strategy, Organisation and Leadership","MSc in Economics and Business Administration in Supply Chain Management","MSc in Economics and Finance - Advanced Economics and Finance","MSc in Economics and Finance - Applied Economics and Finance","MSc in International Business and Politics","MSSc in Organisational Innovation and Entrepreneurship","MSSc in Public Management and Social Development","MSSc in Strategic Design and Entrepreneurship"]}},
+  {key:"ku",name:"KU",full:"Københavns Universitet",region:"cph",src:"KU's hjemmeside (bacheloruddannelser)",lists:{
+    bachelor:["Antropologi","Asienstudier (Indien- og Sydasienstudier)","Asienstudier (Japanstudier)","Asienstudier (Kinastudier)","Asienstudier (Koreastudier)","Audiologopædi","Bioinformatik","Biokemi","Biologi","Bioteknologi","Dansk","Datalogi","Datalogi-økonomi","Engelsk","Europæisk etnologi","Farmaci","Film- og medievidenskab","Filosofi","Folkesundhedsvidenskab","Forhistorisk arkæologi","Forsikringsmatematik","Fransk sprog og kultur","Fysik","Fødevarer og ernæring","Geografi og geoinformatik","Geologi-geoscience","Græsk, klassisk","Grønlandske og arktiske studier","Historie","Idræt og fysisk aktivitet","Informationsstudier","Italiensk sprog og kultur","Jura","Kemi","Klassisk arkæologi","Kognitions- og datavidenskab","Kommunikation og it","Kunsthistorie","Landskabsarkitektur","Latin","Lingvistik","Litteraturvidenskab","Machine learning og datavidenskab","Matematik","Matematik-økonomi","Medicin (København)","Medicin (Køge)","Medicinalkemi","Mellemøstens sprog og samfund","Mesoamerikastudier","Miljø- og fødevareøkonomi","Molekylær biomedicin","Musikvidenskab","Nanoscience","Naturressourcer","Odontologi","Psykologi","Pædagogik","Religionsvidenskab","Retorik","Samfundsfag","Skov- og landskabsingeniør (Djursland)","Skov- og landskabsingeniør (Nødebo)","Sociologi","Spansk og latinamerikansk sprog og kultur","Statskundskab","Sundhed og informatik","Tandpleje","Teater- og performancestudier","Teologi","Tysk sprog og kultur","Urban landskabsingeniør","Veterinærmedicin","Økonomi","Østeuropastudier"]}},
+  {key:"itu",name:"ITU",full:"IT-Universitetet i København",region:"cph",src:"ITU's hjemmeside",lists:{
+    bachelor:["BSc in Data Science","BSc in Digital Design and Interactive Technologies","BSc in Global Business Informatics","BSc in Software Development"],
+    kandidat:["MSc in Advanced Software Engineering","MSc in Business Analytics & Artificial Intelligence","MSc in Computer Science","MSc in Data Science","MSc in Digital Design and Interactive Technologies","MSc in Digital Innovation & Management","MSc in Games","MSc in Software Design"]}},
+  {key:"ruc",name:"RUC",full:"Roskilde Universitet",region:"cph",src:"RUC's hjemmeside",lists:{
+    bachelor:["Humanistisk Bachelor","Humanistisk-Teknologisk Bachelor","Naturvidenskabelig Bachelor","Samfundsvidenskabelig Bachelor","Bachelor in Global Humanities","International Bachelor in Natural Sciences","International Bachelor in Social Sciences"],
+    fag:["Arbejdsliv","Bioprocess Science","Bæredygtig Omstilling","Business Administration","Business Studies","Chemistry","Communication Studies","Computer Science","Cultural Encounters","Datalogi","Dansk","Environmental Biology","Erhvervsøkonomi (HA)","Filosofi og Videnskabsteori","Geografi","Historie","Informatik","International Studies","Journalistik","Kommunikation","Kulturmødestudier","Mathematics","Medicinalbiologi","Molecular Biology","Performance Design","Physics","Plan, By og Proces","Politik og Forvaltning","Psykologi","Pædagogik og Uddannelsesstudier","Samfundsøkonomi","Social Psychology of Everyday Life","Socialvidenskab","Sundhedsfremme og Sundhedsstrategier","Virksomhedsstudier"]}},
+  {key:"au",name:"AU",full:"Aarhus Universitet",region:"aar",src:null,lists:{
+    bachelor:["Erhvervsøkonomi (HA)","Økonomi","Jura","Statskundskab","Psykologi","Medicin","Odontologi","Folkesundhedsvidenskab","Datalogi","IT-produktudvikling","Data Science","Matematik","Fysik","Kemi","Biologi","Molekylærbiologi","Nanoscience","Geoscience","Informationsvidenskab","Digital design","Kognitionsvidenskab","Medievidenskab","Dansk","Engelsk","Historie","Filosofi","Antropologi","Teologi","Idræt","Uddannelsesvidenskab (Emdrup)","Marketing and Management Communication","Business Development Engineering (Herning)","Global Management and Manufacturing (Herning)","Maskinteknik","Elektroteknologi","Bygningsdesign","Kemi- og bioteknologi","Softwareteknologi"]}},
+  {key:"aau",name:"AAU",full:"Aalborg Universitet",region:"aal",src:null,lists:{
+    bachelor:["Erhvervsøkonomi (HA)","Økonomi","International Business","Jura","Psykologi","Sociologi","Socialvidenskab","Politik og administration","Samfundsfag","Kommunikation og digitale medier","Dansk","Engelsk","Historie","Medicin","Medicin med industriel specialisering","Sundhedsteknologi","Idræt","Matematik","Fysik","Nanoteknologi","Datalogi","Software","Informationsteknologi","Interaktionsdesign","Medialogi","Elektronik og IT","Maskin og produktion","Byggeri og anlæg","Arkitektur og design","Kemiteknologi","Bioteknologi","Energi","Robotteknologi","Produktion","Teknoantropologi (København)","Bæredygtigt design (København)"]}},
+  {key:"sdu",name:"SDU",full:"Syddansk Universitet",region:"ode",src:"SDU's hjemmeside",lists:{
+    bachelor:["Amerikanske studier (Odense)","Anvendt matematik (Odense)","Artificial Intelligence (Vejle)","Audiologi (Odense)","Audiologopædi (Odense)","Biblioteksvidenskab, IT og kommunikation (Kolding)","Biokemi og molekylær biologi (Odense)","Biologi (Odense)","Biomedicin (Odense)","Bygningsteknik og -design (Odense)","Computer Science (Vejle)","Dansk (Odense)","Datalogi (Odense)","Designkultur med mode og erhvervsøkonomi (Kolding)","Designkultur med rum og æstetik (Kolding)","Digital design med interaktionsstudier og IT (Kolding)","Electronics (Sønderborg)","Elektronik (Odense)","Energisystemer (Odense)","Engelsk (Odense)","Engineering, innovation and business (Sønderborg)","Erhvervsøkonomi, HA (Esbjerg)","Erhvervsøkonomi, HA (Kolding)","Erhvervsøkonomi, HA (Odense)","Erhvervsøkonomi, HA (Sønderborg)","Europæiske studier (Sønderborg)","Farmaci (Odense)","Filosofi (Odense)","Folkesundhedsvidenskab (Odense)","Fysik (Odense)","Fysik og teknologi (Odense)","Global ledelse og design af produktionsnetværk (GMM) (Odense)","HA (jur.) (Odense)","Historie (Odense)","Idræt og sundhed (Odense)","Integreret design (Odense)","Interactive Technology Engineering (Vejle)","International erhvervsøkonomi, sprog og kultur (Sønderborg)","International virksomhedskommunikation – engelsk og kommunikation, medier eller marketing (Odense)","International virksomhedskommunikation – engelsk og sociale medier (Kolding)","International virksomhedskommunikation – to fremmedsprog (Odense)","International virksomhedskommunikation – tysk og kommunikation, medier eller marketing (Odense)","Journalistik (Odense)","Jura (Esbjerg)","Jura (Odense)","Kemi (Odense)","Kemi- og bioteknologi (Odense)","Klinisk biomekanik / kiropraktor (Odense)","Kunstig intelligens (Odense)","Litteraturvidenskab (Odense)","Market and Management Anthropology (Odense)","Maskinteknik (Odense)","Matematik (Odense)","Matematik-økonomi (Odense)","Mechanical Engineering (Sønderborg)","Mechatronics (Sønderborg)","Medicin (Odense)","Medicin (Esbjerg)","Medicinalkemi (Odense)","Medievidenskab (Odense)","Mekanik (Odense)","Negot - erhvervsøkonomi og erhvervssprog (Odense)","Odontologi (Odense)","Oldtidskundskab (Odense)","Produktion (Odense)","Produktudvikling og innovation (Odense)","Psykologi (Esbjerg)","Psykologi (Odense)","Religionsstudier (Odense)","Robotteknologi (Odense)","Samfundsfag (Odense)","Software Engineering (Odense)","Software Engineering (Sønderborg)","Software Engineering (Vejle)","Softwareteknologi (Odense)","Spiludvikling og læringsteknologi (Odense)","Statskundskab (Odense)","Sundheds- og velfærdsteknologi (Odense)","Tandpleje (Odense)","Tysk (Odense)","Økonomi (Odense)"],
+    diplom:["Bygningsteknik (Odense)","Electronics (Sønderborg)","Elektronik (Odense)","Kemi- og bioteknologi (Odense)","Mechanical Engineering (Sønderborg)","Mechatronics (Sønderborg)","Robotteknologi (Odense)"]}},
+  {key:"kp",type:"prof",name:"KP",full:"Københavns Professionshøjskole",region:"cph",src:null,lists:{
+    prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder","Psykomotorik","Ernæring og sundhed","Global Nutrition and Health","Tandplejer","Offentlig administration","Kristendom, kultur og kommunikation","Natur- og kulturformidling","Tekstildesign, -håndværk og formidling","Laboratorie- og fødevareteknologi"],
+    ea:["Administrationsøkonom"]}},
+  {key:"absalon",type:"prof",name:"Absalon",full:"Professionshøjskolen Absalon",region:"cph",src:null,lists:{
+    prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Ernæring og sundhed"]}},
+  {key:"ucl",type:"prof",name:"UCL",full:"UCL Erhvervsakademi og Professionshøjskole",region:"ode",src:null,lists:{
+    prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder","Offentlig administration"],
+    ea:["Markedsføringsøkonom","Finansøkonom","Datamatiker","Multimediedesigner","Serviceøkonom","Logistikøkonom"]}},
+  {key:"ucsyd",type:"prof",name:"UC SYD",full:"Professionshøjskolen UC SYD",region:"ode",src:null,lists:{
+    prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder"]}},
+  {key:"via",type:"prof",name:"VIA",full:"VIA University College",region:"aar",src:null,lists:{
+    prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder","Psykomotorik","Ernæring og sundhed","Offentlig administration","Bygningskonstruktør"],
+    diplom:["Global Business Engineering (Horsens)","Maskiningeniør (Horsens)","Bygningsingeniør (Horsens)"]}},
+  {key:"ucn",type:"prof",name:"UCN",full:"Professionshøjskolen UCN",region:"aal",src:null,lists:{
+    prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Offentlig administration"],
+    ea:["Datamatiker","Markedsføringsøkonom","Finansøkonom","Multimediedesigner","Serviceøkonom","Logistikøkonom"]}},
+  {key:"ek",type:"ea",name:"EK",chip:"EK (KEA, Cphbusiness)",full:"Erhvervsakademi København (tidligere KEA og Cphbusiness)",region:"cph",src:null,lists:{
+    ea:["Datamatiker","Miljøteknolog","Multimediedesigner","Byggekoordinator","Designteknolog","Entreprenørskab og design","Energiteknolog","IT-teknolog","Markedsføringsøkonom","Finansøkonom","Serviceøkonom","Logistikøkonom","Handelsøkonom"],
+    prof:["Innovation og entrepreneurship","International handel og markedsføring","International hospitality management","Sportsmanagement","Webudvikling","Web Development","Design og business","Digital konceptudvikling","Produktudvikling og teknisk integration","Smykker, teknologi og business","Softwareudvikling","Finans"]}},
+  {key:"eaaa",type:"ea",name:"EAAA",full:"Erhvervsakademi Aarhus",region:"aar",src:null,lists:{
+    ea:["Datamatiker","Markedsføringsøkonom","Finansøkonom","Multimediedesigner","Logistikøkonom","Serviceøkonom","IT-teknolog","Produktionsteknolog"],
+    prof:["Softwareudvikling","Webudvikling","International handel og markedsføring","Finans","Innovation og entrepreneurship"]}},
+  {key:"zealand",type:"ea",name:"Zealand",full:"Zealand – Sjællands Erhvervsakademi",region:"cph",src:null,lists:{
+    ea:["Datamatiker","Markedsføringsøkonom","Finansøkonom","Logistikøkonom","Serviceøkonom","Multimediedesigner","Produktionsteknolog"],
+    prof:["International handel og markedsføring","Softwareudvikling","Innovation og entrepreneurship"]}},
+  {key:"iba",type:"ea",name:"IBA",full:"IBA Erhvervsakademi Kolding",region:"ode",src:null,lists:{
+    ea:["Markedsføringsøkonom","Finansøkonom","Logistikøkonom","Multimediedesigner","Designteknolog","E-designer","Datamatiker"],
+    prof:["International handel og markedsføring","E-handel","Design og business","Softwareudvikling"]}}
+];
+const LEVELS = {bachelor:"Bachelor",kandidat:"Kandidat",diplom:"Diplomingeniør",fag:"Bachelorfag",prof:"Professionsbachelor",ea:"Erhvervsakademi"};
+/* Håndsatte felt-vægte for uddannelser, hvor reglerne nedenfor ikke rammer præcist nok */
+const W_GBE = {supply:.95,procurement:.9,pmo:.85,operations:.85,logistics:.8,bizdev:.75,bi:.7,strategy:.7,salesops:.65,sustain:.5,finance:.45,product:.35,customer:.3,marketing:.25,legal:.2};
+const W_HA = {finance:.9,bizdev:.8,marketing:.75,strategy:.75,salesops:.7,bi:.6,customer:.5,hr:.5,procurement:.5,supply:.5,pmo:.5,operations:.45};
+const W_DI = {product:.9,pmo:.8,engineering:.7,bizdev:.65,strategy:.6,sustain:.6,operations:.55,research:.5,marketing:.4,customer:.3};
+const OVERRIDE = {
+  "dtu|Global Business og Teknologi":W_GBE, "sdu|Engineering, innovation and business (Sønderborg)":W_GBE, "sdu|Global ledelse og design af produktionsnetværk (GMM) (Odense)":W_GBE,
+  "au|Business Development Engineering (Herning)":W_GBE, "au|Global Management and Manufacturing (Herning)":W_GBE,
+  "dtu|Design og Innovation":W_DI,
+  "dtu|IT og Økonomi":{bi:.9,software:.7,pmo:.7,finance:.6,operations:.6,bizdev:.55,datasci:.55,product:.5},
+  "dtu|Data Science og Management":{bi:.9,datasci:.85,strategy:.65,pmo:.6,operations:.6,bizdev:.55,supply:.5,software:.5},
+  "dtu|Industriel Økonomi og Teknologiledelse":{pmo:.85,operations:.85,strategy:.8,supply:.8,bi:.7,procurement:.65,finance:.6,bizdev:.6},
+  "dtu|Mobilitet, Transport og Logistik":{logistics:.95,supply:.85,operations:.8,bi:.6,pmo:.6,sustain:.5,engineering:.5},
+  "dtu|Produktion":{operations:.95,supply:.85,pmo:.8,procurement:.7,engineering:.65,logistics:.6,bi:.55},
+  "dtu|Business Analytics":{bi:.95,datasci:.85,strategy:.6,operations:.55,supply:.5,finance:.5},
+  "dtu|Teknologisk Entreprenørskab":{bizdev:.85,product:.75,strategy:.7,pmo:.65,engineering:.5},
+  "dtu|Kemiteknik og International Business":{bizdev:.75,research:.65,engineering:.65,salesops:.6,supply:.55,procurement:.5},
+  "cbs|HA i erhvervsøkonomi":W_HA, "au|Erhvervsøkonomi (HA)":W_HA, "aau|Erhvervsøkonomi (HA)":W_HA,
+  "cbs|HA(it.) - erhvervsøkonomi og informationsteknologi":{bi:.9,pmo:.75,operations:.65,product:.6,bizdev:.6,salesops:.6,software:.55,datasci:.55,finance:.5,customer:.4},
+  "cbs|BSc in International Business":{bizdev:.85,strategy:.8,salesops:.7,supply:.65,marketing:.65,procurement:.6,finance:.6,pmo:.55,logistics:.5,customer:.45},
+  "cbs|BSc in International Shipping and Trade":{logistics:.95,supply:.85,procurement:.7,salesops:.6,finance:.55,operations:.6,bizdev:.55},
+  "cbs|MSc in Economics and Business Administration in Supply Chain Management":{supply:.95,procurement:.9,logistics:.85,operations:.8,bi:.65,pmo:.6,strategy:.55},
+  "ku|Økonomi":{finance:.9,research:.8,bi:.75,strategy:.7,datasci:.55,sustain:.4,legal:.3},
+  "ku|Datalogi":{software:.95,datasci:.8,research:.7,bi:.5,product:.4},
+  "ku|Jura":{legal:.95,hr:.5,research:.5,procurement:.4,strategy:.3,sustain:.3},
+  "ku|Psykologi":{hr:.8,research:.8,social:.6,product:.55,customer:.55,health:.45,marketing:.5},
+  "itu|BSc in Global Business Informatics":{bi:.85,pmo:.8,product:.7,operations:.6,software:.55,bizdev:.55,customer:.45}
+};
+/* Samme navn på flere skoler får samme vægte */
+const NAME_OVERRIDE = {
+  "Pædagog":{education:.95,social:.7,health:.3,hr:.3},
+  "Socialrådgiver":{social:.95,public:.75,education:.5,legal:.4,health:.35},
+  "Offentlig administration":{public:.95,strategy:.6,finance:.55,legal:.5,hr:.5,customer:.5},
+  "Administrationsøkonom":{public:.85,finance:.7,customer:.55,hr:.5,legal:.4},
+  "Datamatiker":{software:.95,customer:.55,bi:.5,product:.5,datasci:.45},
+  "Markedsføringsøkonom":{marketing:.95,salesops:.75,customer:.7,bizdev:.6},
+  "Finansøkonom":{finance:.95,customer:.6,salesops:.5,bi:.5},
+  "Serviceøkonom":{customer:.9,operations:.7,marketing:.6,hr:.45},
+  "Logistikøkonom":{logistics:.95,supply:.9,operations:.75,procurement:.7},
+  "Handelsøkonom":{salesops:.9,customer:.8,bizdev:.6,marketing:.6},
+  "Psykomotorik":{health:.95,education:.6,social:.5},
+  "International handel og markedsføring":{salesops:.85,marketing:.85,bizdev:.8,supply:.55,logistics:.5},
+  "Global Business Engineering (Horsens)":W_GBE
+};
+const ALIASES = {
+  "dtu|Global Business og Teknologi":["gbe","global business engineering","global business"],
+  "dtu|Softwareteknologi":["software technology"], "dtu|Kunstig Intelligens og Data":["ai","artificial intelligence"],
+  "cbs|HA i erhvervsøkonomi":["ha","ha alm","erhvervsøkonomi"], "cbs|HA(it.) - erhvervsøkonomi og informationsteknologi":["hait","ha it"],
+  "ku|Datalogi":["computer science"], "ku|Økonomi":["oecon","polit","economics"], "ku|Jura":["law"],
+  "itu|BSc in Global Business Informatics":["gbi"], "itu|BSc in Software Development":["softwareudvikling"],
+  "kp|Pædagog":["pædagoguddannelsen"], "kp|Lærer":["læreruddannelsen","folkeskolelærer"], "kp|Sygeplejerske":["sygepleje"],
+  "ek|Datamatiker":["kea","datamatikeruddannelsen"], "ek|Multimediedesigner":["kea","mmd"], "ek|Markedsføringsøkonom":["cphbusiness","markedsføring"]
+};
+/* Regler: ord i uddannelsens navn → hvilke felter den typisk fører til (0–1) */
+const RULES = [
+  [/business|erhvervs|\bha\b|merc|management|ledelse|virksomhed|negot|administration/,{bizdev:.75,finance:.7,strategy:.7,salesops:.65,marketing:.6,pmo:.55,bi:.55,supply:.5,procurement:.5,operations:.5,hr:.45,customer:.45}],
+  [/økonomi|economics|oecon/,{finance:.9,bi:.75,strategy:.7,research:.6,datasci:.5}],
+  [/regnskab|revision|\baud\b|accounting|finans|finance|investment/,{finance:.95,bi:.65,strategy:.55}],
+  [/supply chain|logistik|transport|mobilitet|shipping|trade|maritim|skib/,{supply:.9,logistics:.9,procurement:.75,operations:.75}],
+  [/produktion|production|manufactur|industriel|proces|process/,{operations:.9,supply:.8,pmo:.7,engineering:.65,procurement:.6}],
+  [/innovation|entrepren|iværksæt|business development/,{bizdev:.85,strategy:.75,product:.65,pmo:.65}],
+  [/projekt|project/,{pmo:.95,operations:.6,bizdev:.55}],
+  [/sales|salg|handel/,{salesops:.9,bizdev:.8,customer:.6}],
+  [/service|hospitality|turisme/,{customer:.85,operations:.7,marketing:.6}],
+  [/marketing|markedsføring|markeds|kommunikation|communication|medie|media|journalist|retorik|film/,{marketing:.9,customer:.6}],
+  [/data|analytics|statisti|machine learning|kunstig intelligens|artificial|\bai\b|kognition/,{datasci:.9,bi:.85,software:.6,research:.55}],
+  [/software|datalogi|datamatiker|computer|\bit\b|informat|cyber|digital|information systems|\bweb/,{software:.9,datasci:.6,bi:.6,product:.5}],
+  [/design|interakti|interactive|\bux\b|games|spil|medialogi|arkitektur|produktudvikling/,{product:.9,software:.45,marketing:.45}],
+  [/jura|\bjur\b|\blaw\b/,{legal:.95,public:.55,hr:.4}],
+  [/psyk|psych/,{hr:.8,research:.7,social:.6,health:.45,product:.45}],
+  [/human resource|organisation|organization|leadership|arbejdsliv/,{hr:.8,research:.55,strategy:.5}],
+  [/sociolog|social|samfund|antropolog|anthropolog|velfærd/,{social:.75,hr:.6,strategy:.55,research:.5,product:.45,public:.5}],
+  [/politi|statskundskab|forvaltning|offentlig|public|international studies|europæ|global humanities/,{public:.9,strategy:.7,research:.55,legal:.45,sustain:.4}],
+  [/miljø|bæredygtig|energi|sustain|klima|vind|environment|naturressource|fiskeri|akvakultur|geograf/,{sustain:.9,engineering:.65,research:.55}],
+  [/bio|kemi|chem|farma|pharm|medicinal|biomedicin|molekyl|life science|fødevare|nanosc|laboratori/,{research:.9,engineering:.5,legal:.3,operations:.35}],
+  [/\bmedicin\b|læge|sygepleje|jordemoder|radiograf|bioanalyt|fysioterap|ergoterap|psykomotor|tandpleje|odonto|kiropraktor|folkesundhed|sundhed|health|ernæring|nutrition|audiolog|veterinær/,{health:.95,research:.6,education:.3}],
+  [/pædagog|lærer|uddannelsesvidenskab|uddannelsesstudier|undervis|didaktik|formidling/,{education:.95,social:.6,hr:.35}],
+  [/matematik|fysik|physics|math|geofysik|rum|modellering/,{datasci:.75,research:.8,bi:.65,engineering:.5,finance:.45,education:.5}],
+  [/maskin|mekani|mechan|elektro|electron|bygning|bygge|konstruktion|robot|mechatron|teknik|teknolog|engineering|ingeniør|infrastruktur|akustik|anlæg/,{engineering:.9,operations:.6,pmo:.55,research:.45}],
+  [/humanist|historie|filosofi|dansk|engelsk|tysk|fransk|spansk|italiensk|latin|græsk|litteratur|kunst|teater|musik|religion|teologi|kristendom|etnolog|arkæolog|kultur|studier|lingvistik|sprog|oldtid/,{marketing:.6,customer:.55,education:.55,research:.5,hr:.45}],
+  [/plan|urban|landskab/,{sustain:.7,pmo:.55,research:.55,engineering:.5}],
+  [/idræt|sport/,{education:.6,customer:.55,health:.5,hr:.5,marketing:.45}]
+];
+const CAMPUS = [[/\((københavn|køge|emdrup|ballerup|lyngby)\)$/,"cph"],[/\((herning|aarhus|djursland|horsens)\)$/,"aar"],[/\((odense|kolding|esbjerg|sønderborg|vejle|slagelse)\)$/,"ode"],[/\((aalborg)\)$/,"aal"]];
+const KEYWORDS = [
+  [/engineer|ingeniør|polyt/,{engineering:.6,operations:.6,pmo:.55,research:.4}],
+  [/business|økonomi|erhverv|management|ledelse|handel/,{bizdev:.7,finance:.6,strategy:.6,pmo:.5,salesops:.55,marketing:.5}],
+  [/supply|logist|operation|produktion|production/,{supply:.85,logistics:.75,operations:.85,procurement:.6}],
+  [/data|statisti|analytic|matematik|math/,{bi:.85,datasci:.75,research:.5}],
+  [/software|computer|datalogi|\bit\b|informat|programm/,{software:.9,datasci:.6,bi:.5,product:.45}],
+  [/design|\bux\b|interaction/,{product:.85,marketing:.5}],
+  [/\blaw\b|jura|legal/,{legal:.9,hr:.4}],
+  [/psych|psykolog|sociolog|antropolog|anthropolog/,{hr:.75,research:.75,product:.5,customer:.5}],
+  [/kommunikation|communication|medie|media|journal|marketing/,{marketing:.9,customer:.5}],
+  [/bio|chem|kemi|pharma|medicin|molekyl/,{research:.9,engineering:.4,legal:.3}],
+  [/sustain|bæredygtig|miljø|environment|energy|energi|climate|klima/,{sustain:.9,engineering:.5,strategy:.4}],
+  [/financ|finans|account|revision|regnskab/,{finance:.95,bi:.55}],
+  [/language|sprog|english|engelsk|tysk|german|fransk|french|spansk/,{customer:.7,marketing:.6}]
+];
+const REGIONS = [{v:"cph",l:"Storkøbenhavn"},{v:"aar",l:"Aarhus"},{v:"ode",l:"Odense"},{v:"aal",l:"Aalborg"},{v:"any",l:"Hele landet"}];
+const HOURS = [{v:10,l:"Op til 10 t"},{v:15,l:"10–15 t"},{v:20,l:"15–20 t"},{v:25,l:"20+ t"}];
+const DANISH = [{v:"fluent",l:"Flydende dansk"},{v:"some",l:"Lidt dansk"},{v:"none",l:"Intet dansk"}];
+const SKILLS_COMMON = ["Excel","Bogføring","Regnskab","Løn","Power BI","SQL","Python","SAP","Salesforce","Tableau","Lean","Procesforbedring","Projektkoordinering","Stakeholder management","Dataanalyse","Forhandling","Forecasting","Figma","JavaScript","React","Statistik","R","Skriftlig formidling","Sociale medier","Copywriting","Kundeservice","Rekruttering","Kontraktret","ESG-rapportering","LCA","CAD","Laboratoriearbejde","Dokumentation","PowerPoint","CRM","Brugerundersøgelser","Optimering","Eventplanlægning","Prototyping"];
+
+/* Eksempeljob. Alle arbejdsgivere er opdigtede. src = den type kilde, jobbet i den rigtige version ville komme fra. */
+const JOBS = [
+  {id:"j1",title:"Studentermedhjælper – Supply Chain Planning",co:"Nordkaj Logistics",city:"København Ø",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"supply",sec:["bi","logistics"],skills:["Excel","Power BI","SAP"],industry:"Logistik og shipping",postedH:3,deadline:9,src:"Virksomhedens rekrutteringssystem",blurb:"Hjælp planlæggerne med at fordele varer mellem tre nordiske lagre, og hold de ugentlige tal for udbud og efterspørgsel ajour."},
+  {id:"j2",title:"Studentermedhjælper i indkøb",co:"Skærgaard Wind",city:"Ballerup",region:"cph",hMin:12,hMax:15,danish:"no",fam:"procurement",sec:["supply"],skills:["Excel","Forhandling","SAP"],industry:"Energi",postedH:20,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Støt indkøberne, der køber komponenter til havvindprojekter: tilbud, leverandøropfølgning og prisanalyser. Arbejdssproget er engelsk."},
+  {id:"j3",title:"PMO-studentermedhjælper",co:"Fjordlys Pharma",city:"Søborg",region:"cph",hMin:15,hMax:15,danish:"no",fam:"pmo",sec:["operations"],skills:["Projektkoordinering","Excel","Stakeholder management"],industry:"Pharma og medtech",postedH:5,deadline:6,src:"Virksomhedens rekrutteringssystem",blurb:"Hold styr på 14 byggeprojekter på fabrikken: statusrapporter, risikolister og forberedelse af styregruppemøder."},
+  {id:"j4",title:"Business Intelligence-studerende",co:"Lindholm Retail Group",city:"København V",region:"cph",hMin:10,hMax:15,danish:"plus",fam:"bi",sec:["finance"],skills:["Power BI","SQL","Excel"],industry:"Detailhandel",postedH:30,deadline:12,src:"Virksomhedens karriereside",blurb:"Byg og vedligehold de Power BI-rapporter, som 40 butikschefer bruger hver mandag."},
+  {id:"j5",title:"Studentermedhjælper – Forretningsudvikling",co:"Amagerbro Pay",city:"København S",region:"cph",hMin:15,hMax:20,danish:"required",fam:"bizdev",sec:["salesops","strategy"],skills:["Salesforce","Excel","Stakeholder management"],industry:"Finans",postedH:8,deadline:10,src:"Startup-jobbørs",blurb:"Find og kvalificér små og mellemstore danske virksomheder som kunder, og forbered materiale til partnermøder."},
+  {id:"j6",title:"Logistikkoordinator (student)",co:"Tårnby Air Cargo",city:"Kastrup",region:"cph",hMin:15,hMax:20,danish:"required",fam:"logistics",sec:["operations","customer"],skills:["SAP","Excel","Kundeservice"],industry:"Logistik og shipping",postedH:26,deadline:4,src:"Virksomhedens karriereside",blurb:"Koordinér luftfragt mellem fragtfirmaer og kunder. Enkelte tidlige morgenvagter."},
+  {id:"j7",title:"Studentermedhjælper – Drift og procesforbedring",co:"Humlegaard Bryghus",city:"Valby",region:"cph",hMin:12,hMax:16,danish:"plus",fam:"operations",sec:["supply"],skills:["Lean","Procesforbedring","Excel"],industry:"Fødevarer og drikke",postedH:48,deadline:15,src:"Virksomhedens karriereside",blurb:"Find flaskehalsene på tappelinjen, og hjælp med at køre korte forbedringsforløb sammen med produktionen."},
+  {id:"j8",title:"Studentermedhjælper – Strategi og analyse",co:"Holmen Advisory",city:"København K",region:"cph",hMin:15,hMax:20,danish:"no",fam:"strategy",sec:["bi","bizdev"],skills:["Excel","PowerPoint","Dataanalyse"],industry:"Rådgivning",postedH:12,deadline:7,src:"Virksomhedens rekrutteringssystem",blurb:"Markedsanalyser, konkurrentoverblik og slides til strategiprojekter for nordiske kunder."},
+  {id:"j9",title:"Sales Operations Student",co:"Nordlicht Software",city:"København N",region:"cph",hMin:12,hMax:15,danish:"no",fam:"salesops",sec:["bi","customer"],skills:["Salesforce","Excel","CRM"],industry:"Tech og software",postedH:2,deadline:18,src:"Startup-jobbørs",blurb:"Ryd op i salgsdata, byg salgsrapporter, og hjælp salgsteamet over i et nyt CRM-system."},
+  {id:"j10",title:"Dataanalytiker (student)",co:"Sundby Mobility",city:"København SV",region:"cph",hMin:15,hMax:15,danish:"no",fam:"bi",sec:["datasci"],skills:["Python","SQL","Tableau"],industry:"Transport",postedH:40,deadline:11,src:"Startup-jobbørs",blurb:"Analysér turdata fra 2.000 delecykler, og lav en ugentlig rapport om, hvor og hvornår de bruges."},
+  {id:"j11",title:"Studentermedhjælper – ESG-rapportering",co:"Bølge Energi",city:"Aarhus C",region:"aar",hMin:12,hMax:15,danish:"plus",fam:"sustain",sec:["finance"],skills:["ESG-rapportering","Excel","LCA"],industry:"Energi",postedH:18,deadline:9,src:"Virksomhedens rekrutteringssystem",blurb:"Indsaml og kvalitetstjek tal til virksomhedens årlige bæredygtighedsrapport."},
+  {id:"j12",title:"Student Software Developer",co:"Mølleå Robotics",city:"Kgs. Lyngby",region:"cph",hMin:15,hMax:20,danish:"no",fam:"software",sec:["engineering"],skills:["Python","JavaScript","React"],industry:"Tech og software",postedH:6,deadline:21,sponsored:true,src:"Virksomhedens rekrutteringssystem",blurb:"Byg interne værktøjer, der overvåger virksomhedens robotter, i et team på 8 udviklere."},
+  {id:"j13",title:"Studentermedhjælper i marketing",co:"Fjordlys Pharma",city:"Søborg",region:"cph",hMin:12,hMax:15,danish:"required",fam:"marketing",sec:["customer"],skills:["Copywriting","Sociale medier"],industry:"Pharma og medtech",postedH:10,deadline:8,src:"Virksomhedens rekrutteringssystem",blurb:"Skriv danske tekster til nyhedsbreve, LinkedIn og karrieresiden."},
+  {id:"j14",title:"Junior Data Scientist (student)",co:"Grenen Analytics",city:"Aarhus N",region:"aar",hMin:15,hMax:20,danish:"no",fam:"datasci",sec:["bi","software"],skills:["Python","Statistik","SQL"],industry:"Tech og software",postedH:30,deadline:16,src:"Startup-jobbørs",blurb:"Byg prototyper på modeller, der forudsiger salg for detailkunder, og præsentér resultaterne for konsulenterne."},
+  {id:"j15",title:"Studentermedhjælper – Kontraktstyring",co:"Skærgaard Wind",city:"Ballerup",region:"cph",hMin:15,hMax:15,danish:"required",fam:"legal",sec:["procurement"],skills:["Kontraktret","Forhandling","Excel"],industry:"Energi",postedH:50,deadline:12,src:"Virksomhedens rekrutteringssystem",blurb:"Hold styr på leverandørkontrakter, fornyelsesdatoer og forpligtelser på tværs af projekterne."},
+  {id:"j16",title:"Studentermedhjælper i HR og rekruttering",co:"Lindholm Retail Group",city:"København V",region:"cph",hMin:10,hMax:15,danish:"required",fam:"hr",sec:[],skills:["Rekruttering","Excel"],industry:"Detailhandel",postedH:22,deadline:13,src:"Virksomhedens karriereside",blurb:"Gennemgå ansøgninger, book samtaler, og hjælp nye butiksmedarbejdere godt i gang."},
+  {id:"j17",title:"Customer Success Student (English)",co:"Nordlicht Software",city:"København N",region:"cph",hMin:12,hMax:15,danish:"no",fam:"customer",sec:["salesops"],skills:["Kundeservice","CRM","Salesforce"],industry:"Tech og software",postedH:9,deadline:20,src:"Startup-jobbørs",blurb:"Hjælp internationale kunder i gang med produktet via chat, mail og korte opkald."},
+  {id:"j18",title:"Forskningsassistent – Adfærdsøkonomi",co:"Center for Anvendt Adfærd",city:"København K",region:"cph",hMin:8,hMax:12,danish:"no",fam:"research",sec:["datasci"],skills:["Statistik","R","Dataanalyse"],industry:"Forskning",postedH:72,deadline:25,src:"Universitetets jobside",blurb:"Rens spørgeskemadata og lav statistiske analyser for et forskerhold, der laver felteksperimenter om energibesparende adfærd."},
+  {id:"j19",title:"Studentermedhjælper – Demand Planning",co:"Humlegaard Bryghus",city:"Valby",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"supply",sec:["bi"],skills:["Excel","Power BI","Forecasting"],industry:"Fødevarer og drikke",postedH:4,deadline:5,src:"Virksomhedens karriereside",blurb:"Stå for den ugentlige salgsprognose for 120 produkter, og sig til, før afvigelser rammer produktionen."},
+  {id:"j20",title:"Studentermedhjælper i økonomi og controlling",co:"Amagerbro Pay",city:"København S",region:"cph",hMin:15,hMax:15,danish:"plus",fam:"finance",sec:["bi"],skills:["Excel","SAP","Dataanalyse"],industry:"Finans",postedH:14,deadline:9,src:"Startup-jobbørs",blurb:"Hjælp med månedsafslutning, omkostningsrapporter og opfølgning på budgettet."},
+  {id:"j21",title:"Studentermedhjælper – Tilbuds- og udbudsstyring",co:"Holmen Infrastruktur",city:"Glostrup",region:"cph",hMin:12,hMax:15,danish:"no",fam:"pmo",sec:["procurement","bizdev"],skills:["Projektkoordinering","Skriftlig formidling","Excel"],industry:"Byggeri",postedH:16,deadline:10,src:"Virksomhedens rekrutteringssystem",blurb:"Saml input fra ingeniører, jurister og økonomer til tilbud på offentlige opgaver med faste frister."},
+  {id:"j22",title:"Prisanalytiker (student)",co:"Nordkaj Logistics",city:"København Ø",region:"cph",hMin:12,hMax:15,danish:"no",fam:"bi",sec:["strategy","salesops"],skills:["Excel","Dataanalyse","SQL"],industry:"Logistik og shipping",postedH:28,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Beregn fragtpriser og avancer til kundetilbud, og følg med i, hvilke tilbud der bliver vundet."},
+  {id:"j23",title:"Studentermedhjælper – Produktcompliance",co:"Avedøre Medtech",city:"Hvidovre",region:"cph",hMin:12,hMax:15,danish:"no",fam:"legal",sec:["operations","pmo"],skills:["Dokumentation","Procesforbedring","Excel"],industry:"Pharma og medtech",postedH:34,deadline:12,src:"Virksomhedens rekrutteringssystem",blurb:"Hold teknisk dokumentation og ændringer i orden, så produkterne fortsat er godkendt til salg i EU."},
+  {id:"j24",title:"Studentermedhjælper – Energihandel og drift",co:"Vestkyst Energihandel",city:"Aarhus C",region:"aar",hMin:15,hMax:20,danish:"no",fam:"operations",sec:["bi","finance"],skills:["Excel","Python","Dataanalyse"],industry:"Energi",postedH:7,deadline:8,src:"Virksomhedens rekrutteringssystem",blurb:"Lav daglige rapporter til strømhandlerne, og automatisér manuelle tjek i Excel."},
+  {id:"j25",title:"Studentermedhjælper – Maskinkonstruktion",co:"Mølleå Robotics",city:"Kgs. Lyngby",region:"cph",hMin:15,hMax:15,danish:"no",fam:"engineering",sec:[],skills:["CAD","Prototyping"],industry:"Tech og software",postedH:11,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Tegn og 3D-print gribedele til robotterne, og test dem på produktionslinjen."},
+  {id:"j26",title:"Laboratoriestuderende",co:"Kløver Bio",city:"København S",region:"cph",hMin:10,hMax:15,danish:"no",fam:"research",sec:["engineering"],skills:["Laboratoriearbejde","Dokumentation"],industry:"Pharma og medtech",postedH:19,deadline:10,src:"Startup-jobbørs",blurb:"Klargør prøver og kør faste analyser i et lille forskningsteam, der arbejder med enzymer."},
+  {id:"j27",title:"Studentermedhjælper – Flåde- og ruteoptimering",co:"Sundby Mobility",city:"København SV",region:"cph",hMin:12,hMax:15,danish:"no",fam:"logistics",sec:["datasci","bi"],skills:["Python","Excel","Optimering"],industry:"Transport",postedH:3,deadline:12,src:"Startup-jobbørs",blurb:"Beregn, hvor delecyklerne skal flyttes hen om natten, ud fra data om efterspørgsel."},
+  {id:"j28",title:"UX- og produktstuderende",co:"Nordlicht Software",city:"København N",region:"cph",hMin:12,hMax:15,danish:"no",fam:"product",sec:["research"],skills:["Figma","Brugerundersøgelser"],industry:"Tech og software",postedH:15,deadline:17,src:"Startup-jobbørs",blurb:"Interview brugere, og gør det, du lærer, til skitser og prototyper i Figma sammen med produktteamet."},
+  {id:"j29",title:"Indkøbsstudent – Fødevarer",co:"Lindholm Retail Group",city:"Odense C",region:"ode",hMin:15,hMax:15,danish:"required",fam:"procurement",sec:["supply"],skills:["Excel","Forhandling"],industry:"Detailhandel",postedH:44,deadline:9,src:"Virksomhedens karriereside",blurb:"Støt indkøberne i fødevareafdelingen med opfølgning på leverandører og prisforhandlinger."},
+  {id:"j30",title:"Bæredygtighedsstudent – Emballage",co:"Fynbo Emballage",city:"Odense SØ",region:"ode",hMin:12,hMax:15,danish:"plus",fam:"sustain",sec:["supply","engineering"],skills:["LCA","Excel","ESG-rapportering"],industry:"Produktion",postedH:25,deadline:11,src:"Virksomhedens karriereside",blurb:"Beregn CO₂-aftrykket af emballage, og foreslå materialer, der belaster miljøet mindre."},
+  {id:"j31",title:"Business Analyst-studerende",co:"Tryghavn Forsikring",city:"Ballerup",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"bi",sec:["pmo","operations"],skills:["SQL","Excel","Procesforbedring"],industry:"Finans",postedH:13,deadline:15,sponsored:true,src:"Virksomhedens rekrutteringssystem",blurb:"Beskriv, hvordan skader bliver behandlet i dag, og skriv krav til et nyt sagssystem."},
+  {id:"j32",title:"Studentermedhjælper – Employer branding og events",co:"Holmen Advisory",city:"København K",region:"cph",hMin:8,hMax:12,danish:"required",fam:"marketing",sec:["hr"],skills:["Sociale medier","Eventplanlægning"],industry:"Rådgivning",postedH:36,deadline:7,src:"Virksomhedens rekrutteringssystem",blurb:"Planlæg arrangementer på universiteterne, og drift virksomhedens sociale medier rettet mod studerende."},
+  {id:"j33",title:"Markedsanalyse-student (remote)",co:"Northbound Insights",city:"Remote",region:"remote",hMin:8,hMax:12,danish:"no",fam:"strategy",sec:["research","bizdev"],skills:["Dataanalyse","Excel","Skriftlig formidling"],industry:"Rådgivning",postedH:15,deadline:16,src:"Startup-jobbørs",blurb:"Research og korte rapporter om nordiske markeder. Du arbejder hjemmefra med fleksible timer."},
+  {id:"j34",title:"Studentermedhjælper – Produktionsplanlægning",co:"Limfjord Manufacturing",city:"Aalborg Øst",region:"aal",hMin:15,hMax:20,danish:"plus",fam:"operations",sec:["supply"],skills:["SAP","Excel","Lean"],industry:"Produktion",postedH:21,deadline:10,src:"Virksomhedens karriereside",blurb:"Planlæg produktionsordrer, følg op på manglende materialer, og opdatér kapacitetsplanerne i SAP."},
+  /* Sundhed */
+  {id:"h1",title:"Medicinstuderende til lægepraksis",co:"Lægehuset ved Stranden",city:"Kastrup",region:"cph",hMin:8,hMax:12,danish:"required",fam:"health",sec:["research"],skills:["Blodprøvetagning","Patientkontakt","Journalføring"],industry:"Sundhed",postedH:6,deadline:12,src:"Lægeforeningernes jobopslag",blurb:"Tag selv konsultationer med blodprøver, EKG og vaccinationer på et hold med fire andre medicinstuderende. Cirka 4–5 vagter om måneden."},
+  {id:"h2",title:"Sygeplejevikar (medicin- eller sygeplejestuderende)",co:"Kittel Vagtservice",city:"Hele Storkøbenhavn",region:"cph",hMin:8,hMax:20,danish:"required",fam:"health",sec:[],skills:["Patientpleje","Hygiejne","Patientkontakt"],industry:"Sundhed",postedH:2,deadline:30,src:"Vagtbureau",blurb:"Tag vagter på hospitalsafdelinger og plejecentre, når det passer med dit skema. Du vælger selv, hvilke vagter du tager."},
+  {id:"h3",title:"Studentermedhjælper – Kliniske forsøg",co:"Fjordlys Pharma",city:"Søborg",region:"cph",hMin:12,hMax:15,danish:"no",fam:"research",sec:["health"],skills:["Dokumentation","Excel"],industry:"Pharma og medtech",postedH:20,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Hjælp med dokumentation og opfølgning på kliniske forsøg. Passer til medicin-, farmaci- og sundhedsstuderende."},
+  {id:"h4",title:"Forskningsassistent – Hjerteafdelingen",co:"Østbro Hospital",city:"København Ø",region:"cph",hMin:8,hMax:12,danish:"plus",fam:"research",sec:["health"],skills:["Statistik","Patientkontakt","Dokumentation"],industry:"Sundhed",postedH:30,deadline:18,src:"Regionens jobportal",blurb:"Indsaml data fra patienter, og hjælp forskerne med et studie om hjertesvigt. Kan føre til et forskningsår."},
+  {id:"h5",title:"Instruktør i genoptræning (studerende)",co:"Kraftværket Træning",city:"Aarhus C",region:"aar",hMin:8,hMax:12,danish:"required",fam:"health",sec:["customer"],skills:["Genoptræning","Kundeservice"],industry:"Sundhed",postedH:40,deadline:10,src:"Virksomhedens karriereside",blurb:"Instruér medlemmer i træning, og hjælp fysioterapeuterne med hold for folk, der er i genoptræning."},
+  {id:"h6",title:"Afløser i hjemmeplejen",co:"Hjemmeplejen Nord",city:"Aalborg",region:"aal",hMin:8,hMax:16,danish:"required",fam:"health",sec:["social"],skills:["Patientpleje","Kørekort"],industry:"Sundhed",postedH:12,deadline:9,src:"Kommunens jobportal",blurb:"Hjælp ældre borgere i eget hjem med personlig pleje og praktiske opgaver i weekender og ferier."},
+  {id:"h7",title:"Laboratoriestuderende – Blodprøver",co:"Fynsk Diagnostik",city:"Odense",region:"ode",hMin:10,hMax:15,danish:"plus",fam:"health",sec:["research"],skills:["Laboratoriearbejde","Blodprøvetagning"],industry:"Sundhed",postedH:22,deadline:11,src:"Regionens jobportal",blurb:"Analysér blodprøver og pas udstyret i et klinisk laboratorium. Godt for bioanalytiker- og naturvidenskabsstuderende."},
+  /* Pædagogik og undervisning */
+  {id:"e1",title:"Pædagogmedhjælper (studerende)",co:"Børnehuset Solsikken",city:"København NV",region:"cph",hMin:15,hMax:20,danish:"required",fam:"education",sec:["social"],skills:["Arbejde med børn","Samarbejde"],industry:"Børn og unge",postedH:5,deadline:10,src:"Kommunens jobportal",blurb:"Faste vagter i en børnehave med 60 børn. Fast månedsløn, og du er en del af personalegruppen."},
+  {id:"e2",title:"Vikar i vuggestuer og børnehaver",co:"Børnevikaren",city:"Hele Storkøbenhavn",region:"cph",hMin:8,hMax:20,danish:"required",fam:"education",sec:["social"],skills:["Arbejde med børn","Fleksibilitet"],industry:"Børn og unge",postedH:9,deadline:30,src:"Vikarbureau",blurb:"Tag vikarvagter i daginstitutioner i hele Storkøbenhavn, når det passer dig. Ofte med kort varsel om morgenen."},
+  {id:"e3",title:"SFO-medarbejder (studerende)",co:"Bakkeskolens SFO",city:"Aarhus V",region:"aar",hMin:12,hMax:16,danish:"required",fam:"education",sec:["social"],skills:["Arbejde med børn","Aktiviteter"],industry:"Børn og unge",postedH:26,deadline:8,src:"Kommunens jobportal",blurb:"Eftermiddage med børn fra 0. til 3. klasse: leg, udeaktiviteter og lektiecafé."},
+  {id:"e4",title:"Lektiehjælper i matematik og dansk",co:"Lektiekompagniet",city:"København",region:"cph",hMin:4,hMax:8,danish:"required",fam:"education",sec:["research"],skills:["Formidling","Matematik"],industry:"Uddannelse",postedH:14,deadline:20,src:"Virksomhedens karriereside",blurb:"Hjælp elever i 7.–10. klasse med lektierne. Passer til lærer-, pædagog- og naturvidenskabsstuderende."},
+  {id:"e5",title:"Instruktor i statistik",co:"Institut for Samfundsvidenskab",city:"København K",region:"cph",hMin:6,hMax:10,danish:"no",fam:"research",sec:["datasci"],skills:["Statistik","Formidling"],industry:"Uddannelse",postedH:48,deadline:15,src:"Universitetets jobside",blurb:"Undervis to hold på første år i statistik, og ret deres opgaver. Du skal selv have bestået faget godt."},
+  {id:"e6",title:"Lærervikar i folkeskolen",co:"Rosenhøj Skole",city:"Odense",region:"ode",hMin:8,hMax:15,danish:"required",fam:"education",sec:[],skills:["Undervisning","Klasseledelse"],industry:"Uddannelse",postedH:18,deadline:12,src:"Kommunens jobportal",blurb:"Dæk timer ved sygdom i alle fag på mellemtrinnet. Du får tit besked samme morgen."},
+  /* Socialt arbejde og offentlig sektor */
+  {id:"s1",title:"Vikar på bosted for unge",co:"Bostedet Lindely",city:"Roskilde",region:"cph",hMin:8,hMax:16,danish:"required",fam:"social",sec:["education"],skills:["Socialt arbejde","Konflikthåndtering"],industry:"Socialt arbejde",postedH:11,deadline:14,src:"Vikarbureau",blurb:"Aften- og weekendvagter på et bosted for unge med sociale problemer. Du får oplæring, før du tager vagter alene."},
+  {id:"s2",title:"Studentermedhjælper – Børne- og familieområdet",co:"Sundby Kommune",city:"København S",region:"cph",hMin:12,hMax:15,danish:"required",fam:"public",sec:["social"],skills:["Sagsbehandling","Dokumentation","Excel"],industry:"Offentlig sektor",postedH:16,deadline:9,src:"Kommunens jobportal",blurb:"Hjælp sagsbehandlerne med journaler, opfølgning og statistik på børne- og familieområdet."},
+  {id:"s3",title:"Studentermedhjælper i en styrelse",co:"Styrelsen for Grønne Byer",city:"København K",region:"cph",hMin:15,hMax:15,danish:"required",fam:"public",sec:["legal","strategy"],skills:["Skriftlig formidling","Dataanalyse"],industry:"Offentlig sektor",postedH:20,deadline:11,src:"Statens jobportal",blurb:"Skriv notater, lav research, og hjælp med høringssvar i et kontor, der arbejder med byudvikling."},
+  {id:"s4",title:"Studentermedhjælper – Borgerservice",co:"Aarhus Øst Kommune",city:"Aarhus",region:"aar",hMin:10,hMax:15,danish:"required",fam:"public",sec:["customer"],skills:["Kundeservice","Sagsbehandling"],industry:"Offentlig sektor",postedH:30,deadline:10,src:"Kommunens jobportal",blurb:"Hjælp borgere med pas, kørekort og digital post ved skranken og i telefonen."},
+  /* Jura */
+  {id:"l1",title:"Juridisk studentermedhjælper",co:"Holm & Kjær Advokater",city:"København K",region:"cph",hMin:15,hMax:20,danish:"required",fam:"legal",sec:[],skills:["Kontraktret","Juridisk research"],industry:"Rådgivning",postedH:7,deadline:12,src:"Virksomhedens karriereside",blurb:"Lav juridisk research og udkast til notater for advokaterne i selskabsret og opkøb."},
+  {id:"l2",title:"Juridisk studentermedhjælper – Forsikring",co:"Tryghavn Forsikring",city:"Ballerup",region:"cph",hMin:12,hMax:15,danish:"required",fam:"legal",sec:["customer"],skills:["Juridisk research","Skriftlig formidling"],industry:"Finans",postedH:22,deadline:16,src:"Virksomhedens rekrutteringssystem",blurb:"Vurdér klager og erstatningssager, og skriv svar til kunderne sammen med virksomhedens jurister."},
+  /* Kommunikation og humaniora */
+  {id:"c1",title:"Kommunikationsstudent – Museum",co:"Museet for Byens Historie",city:"København K",region:"cph",hMin:10,hMax:15,danish:"required",fam:"marketing",sec:[],skills:["Copywriting","Sociale medier","Formidling"],industry:"Kultur",postedH:15,deadline:13,src:"Virksomhedens karriereside",blurb:"Skriv tekster til udstillinger og sociale medier, og hjælp med arrangementer for skoleklasser."},
+  {id:"c2",title:"Korrekturlæser og tekstforfatter",co:"Ordværket",city:"Remote",region:"remote",hMin:4,hMax:10,danish:"required",fam:"marketing",sec:[],skills:["Skriftlig formidling","Copywriting"],industry:"Kultur",postedH:28,deadline:20,src:"Virksomhedens karriereside",blurb:"Læs korrektur, og skriv tekster til hjemmesider. Du arbejder hjemmefra, når det passer dig."},
+  /* IT og natur */
+  {id:"t1",title:"Frontend-udvikler (student)",co:"Pixelbro",city:"København N",region:"cph",hMin:12,hMax:20,danish:"no",fam:"software",sec:["product"],skills:["JavaScript","React","Figma"],industry:"Tech og software",postedH:4,deadline:14,src:"Startup-jobbørs",blurb:"Byg nye funktioner i en app med 20.000 brugere i et team på seks. Fleksible timer omkring eksamen."},
+  {id:"t2",title:"IT-supporter (studerende)",co:"Sundby Kommune",city:"København S",region:"cph",hMin:12,hMax:15,danish:"plus",fam:"customer",sec:["software"],skills:["IT-support","Kundeservice"],industry:"Offentlig sektor",postedH:19,deadline:10,src:"Kommunens jobportal",blurb:"Hjælp medarbejdere med computere, telefoner og adgange på kommunens IT-servicedesk."},
+  {id:"t3",title:"Miljøstuderende – Vandprøver",co:"Fjordvand Miljø",city:"Aarhus N",region:"aar",hMin:10,hMax:15,danish:"plus",fam:"sustain",sec:["research","engineering"],skills:["Laboratoriearbejde","Feltarbejde"],industry:"Energi",postedH:33,deadline:12,src:"Virksomhedens karriereside",blurb:"Tag vandprøver ude i naturen, og analysér dem i laboratoriet."},
+  /* Regnskab og revision */
+  {id:"r1",title:"Studentermedhjælper i revision",co:"Nørregaard Revision",city:"Roskilde",region:"cph",hMin:12,hMax:15,danish:"required",fam:"finance",sec:["bi"],skills:["Excel","Bogføring","Regnskab"],industry:"Revision og rådgivning",postedH:4,deadline:11,src:"Virksomhedens karriereside",blurb:"Hjælp revisorerne med årsregnskaber for små og mellemstore virksomheder, og tag med ud til kunderne i højsæsonen fra januar til maj."},
+  {id:"r2",title:"Bogholder (studerende)",co:"Fjordby Byggeservice",city:"Roskilde",region:"cph",hMin:10,hMax:15,danish:"required",fam:"finance",sec:[],skills:["Bogføring","Excel"],industry:"Byggeri",postedH:20,deadline:14,src:"Virksomhedens karriereside",blurb:"Bogfør bilag, afstem banken, og hjælp med moms og månedsafslutning i en virksomhed med 25 ansatte."},
+  {id:"r3",title:"Studentermedhjælper i skatteafdelingen",co:"Bøgh & Partnere Revision",city:"København K",region:"cph",hMin:12,hMax:15,danish:"required",fam:"finance",sec:["legal"],skills:["Regnskab","Skriftlig formidling"],industry:"Revision og rådgivning",postedH:9,deadline:9,src:"Virksomhedens rekrutteringssystem",blurb:"Hjælp med selvangivelser og skatteberegninger for private kunder og ejere af små virksomheder."},
+  {id:"r4",title:"Lønbogholder (studerende)",co:"Sundby Kommune",city:"København S",region:"cph",hMin:12,hMax:15,danish:"required",fam:"finance",sec:["public"],skills:["Excel","Løn"],industry:"Offentlig sektor",postedH:30,deadline:12,src:"Kommunens jobportal",blurb:"Kontrollér timesedler og lønændringer for kommunens ansatte, og svar på spørgsmål om løn."},
+  {id:"r5",title:"Studentermedhjælper – Bæredygtighedsrapportering",co:"Køge Bugt Forsyning",city:"Køge",region:"cph",hMin:12,hMax:15,danish:"plus",fam:"sustain",sec:["finance"],skills:["Excel","ESG-rapportering","Dataanalyse"],industry:"Energi",postedH:14,deadline:13,src:"Virksomhedens rekrutteringssystem",blurb:"Saml tal ind fra hele forsyningen til bæredygtighedsrapporten, som skal kontrolleres og revideres ligesom årsregnskabet."}
+];
+
+const INDUSTRIES = [...new Set(JOBS.map(j=>j.industry))].sort((a,b)=>a.localeCompare(b,"da"));
+const EXAMPLE_JOBS = JOBS.slice();
+let LIVE = false;
+
+/* ============ HJÆLPERE ============ */
+const norm = s => String(s||"").toLowerCase().replace(/[^a-z0-9æøåéü]+/g," ").trim();
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
+const hasPhrase = (t,p) => (" "+t+" ").includes(" "+p+" ");
+const byId = id => JOBS.find(j=>j.id===id);
+const listJoin = a => a.length<=1 ? (a[0]||"") : a.slice(0,-1).join(", ")+" og "+a[a.length-1];
+const ago = h => h<1 ? "lige nu" : h<24 ? `for ${h} timer siden` : `for ${Math.round(h/24)} dage siden`;
+const agoShort = h => h<1 ? "nu" : h<24 ? `${h} t. siden` : `${Math.round(h/24)} d. siden`;
+const hoursText = v => (HOURS.find(x=>x.v===v)||HOURS[1]).l;
+const danishLabel = v => v==="fluent" ? "Dansk OK" : v==="some" ? "Lidt dansk" : "Kun engelsk";
+const deadlineDate = d => new Date(Date.now()+d*864e5).toLocaleDateString("da-DK",{day:"numeric",month:"short"});
+function hue(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))%360; return h; }
+function initials(s){ return s.split(/\s+/).filter(w=>/^[A-ZÆØÅ]/.test(w)).slice(0,2).map(w=>w[0]).join(""); }
+
+/* ============ TILSTAND ============ */
+const KEY = "pathfit-proto-v3";
+function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["cph"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",alerts:true,alertFreq:"daily",email:""}; }
+function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{}}; }
+function load(){
+  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); return Object.assign(f,s,{profile:Object.assign(freshProfile(),s.profile||{})}); } }catch(e){}
+  return fresh();
+}
+let S = load();
+const UI = {sheet:null,expanded:{},heroText:"",obText:"",obUni:"",obLevel:"all",pfUni:null,waitlistDone:false,confirmDelete:false,focus:null};
+let snapshot = null;
+function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+
+/* ============ FORSTÅ UDDANNELSEN ============ */
+function derive(name){
+  const t=norm(name); const w={};
+  for(const [re,map] of RULES){ if(re.test(t)) for(const f in map) w[f]=Math.max(w[f]||0,map[f]); }
+  if(!Object.keys(w).length) return {customer:.6,operations:.55,salesops:.5,marketing:.5,bizdev:.45,hr:.45,pmo:.4};
+  return w;
+}
+const PROGRAMS = [];
+for(const s of SCHOOLS){ for(const lv in s.lists){ for(const name of s.lists[lv]){
+  const k=s.key+"|"+name; const ln=name.toLowerCase(); let region=s.region;
+  for(const [re,r] of CAMPUS){ if(re.test(ln)) region=r; }
+  PROGRAMS.push({id:s.key+"-"+lv+"-"+norm(name).replace(/ /g,"-"),name,uni:s.key,level:lv,region,aliases:ALIASES[k]||[],w:OVERRIDE[k]||NAME_OVERRIDE[name]||derive(name)});
+} } }
+const progById = id => PROGRAMS.find(p=>p.id===id);
+const schoolOf = k => SCHOOLS.find(s=>s.key===k);
+function shortName(n){ return n.replace(/^(BSc|MSc|MSSc) in /,"").replace(/^Cand\.merc\.\s*i\s+/i,"").replace(/\s*\((København|Køge|Emdrup|Ballerup|Lyngby|Herning|Aarhus|Djursland|Nødebo|Odense|Kolding|Esbjerg|Sønderborg|Vejle|Slagelse|Aalborg)\)$/,"").trim(); }
+function programsFor(uni, level, q){
+  const toks=norm(q).split(" ").filter(Boolean);
+  let list=PROGRAMS.filter(p=>(uni==="other"||p.uni===uni) && (level==="all"||p.level===level));
+  if(toks.length) list=list.filter(p=>{ const hay=norm([p.name,...p.aliases,uni==="other"?p.uni:""].join(" ")); return toks.every(t=>hay.includes(t)); });
+  const nq=norm(q);
+  return list.sort((a,b)=>{ const as=nq&&norm(a.name).startsWith(nq)?0:1, bs=nq&&norm(b.name).startsWith(nq)?0:1; return (as-bs) || a.name.localeCompare(b.name,"da"); });
+}
+function findProgram(text, uni){
+  const t=norm(text); if(!t) return null;
+  const u=uni||"other";
+  const pool=PROGRAMS.filter(p=>u==="other"||p.uni===u);
+  const exact=pool.find(p=>norm(p.name)===t || norm(shortName(p.name))===t || p.aliases.some(a=>norm(a)===t));
+  if(exact) return exact;
+  const hits=programsFor(u,"all",text);
+  return hits.length===1 ? hits[0] : null;
+}
+function setProgram(p, keepRegion){
+  const pr=S.profile, s=schoolOf(p.uni);
+  pr.programId=p.id; pr.programName=p.name; pr.programShort=shortName(p.name); pr.weights={...p.w}; pr.guessed=false;
+  pr.uni=s.name; pr.uniKey=s.key; pr.level=p.level; if(!keepRegion) pr.regions=[p.region];
+  pr.studyText=p.name; S.disabled=[];
+}
+function setFreeText(text, uniKey, keepRegion){
+  const pr=S.profile; const s=uniKey && uniKey!=="other" ? schoolOf(uniKey) : null;
+  let name=text.trim(); name=name.charAt(0).toUpperCase()+name.slice(1);
+  pr.programId=null; pr.programName=name||"Din uddannelse"; pr.programShort=pr.programName; pr.weights=derive(name); pr.guessed=true;
+  pr.uni=s?s.name:""; pr.uniKey=s?s.key:""; pr.level=""; if(!keepRegion) pr.regions=[s?s.region:"cph"]; pr.studyText=name; S.disabled=[];
+}
+
+/* ============ MATCHING ============ */
+function ctxOf(c){ return c || {profile:S.profile, learned:S.learned, disabled:S.disabled}; }
+function evaluate(job, c){
+  c=ctxOf(c); const p=c.profile, W=p.weights||{};
+  if(c.disabled.includes(job.fam)) return {out:"field"};
+  if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
+  if(job.hMin > p.hoursMax+2) return {out:"hours"};
+  if(!p.regions.includes("any") && job.region!=="remote" && !p.regions.includes(job.region)) return {out:"location"};
+  const prim = W[job.fam]||0;
+  let bestSec={f:null,w:0};
+  for(const f of job.sec||[]){ const w=(W[f]||0)*.85; if(w>bestSec.w) bestSec={f,w}; }
+  const degree = Math.max(prim,bestSec.w);
+  const secs=job.sec||[];
+  const learnedAdj = (c.learned[job.fam]||0) + (secs.length ? .4*secs.reduce((s,f)=>s+(c.learned[f]||0),0)/secs.length : 0);
+  const affinity = clamp(degree+learnedAdj,0,1);
+  const comps=[{k:"degree",label:"Uddannelse",v:affinity,w:.55}];
+  let skillHits=[];
+  if(p.skills.length){
+    skillHits = job.skills.filter(s=>p.skills.some(u=>norm(u)===norm(s)));
+    comps.push({k:"skills",label:"Kompetencer",v:.35+.65*Math.min(1,skillHits.length/Math.min(3,job.skills.length)),w:.25});
+  } else comps.push({k:"skills",label:"Kompetencer",v:null,w:.25});
+  let interestHit=null;
+  if(p.interests.length || p.industries.length){
+    let v=.5;
+    if(p.interests.includes(job.fam)){ v=1; interestHit=job.fam; }
+    else { const s=secs.find(f=>p.interests.includes(f)); if(s){ v=.6; interestHit=s; } }
+    if(p.industries.includes(job.industry)){ v=Math.max(v,.8); if(!interestHit) interestHit="ind:"+job.industry; }
+    comps.push({k:"interest",label:"Interesser",v,w:.2});
+  } else comps.push({k:"interest",label:"Interesser",v:null,w:.2});
+  const live=comps.filter(x=>x.v!==null); const wsum=live.reduce((s,x)=>s+x.w,0);
+  let score = live.reduce((s,x)=>s+x.v*x.w,0)/wsum;
+  if(job.postedH<12) score+=.03;
+  if(job.danish==="plus" && p.danish!=="fluent") score-=.05;
+  if(job.hMax>p.hoursMax) score-=.04;
+  score=clamp(score,0,1);
+  const level = score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
+  const vocab=[]; for(const f in W){ if(W[f]>=.6) vocab.push(...(TITLE_KW[f]||[])); }
+  const title=" "+job.title.toLowerCase()+" ";
+  const obvious = vocab.some(k=>title.includes(k));
+  const hidden = !obvious && affinity>=.55 && score>=.5;
+  return {score,level,prim,bestSec,affinity,learnedAdj,skillHits,interestHit,comps,hidden};
+}
+function reasonsFor(job, ev, c){
+  c=ctxOf(c); const p=c.profile; const pos=[], neg=[]; const pname=p.programShort||p.programName||"din uddannelse";
+  if(ev.prim>=.6) pos.push(p.guessed ? `${FAM[job.fam].label} passer til det, du har fortalt om dit studie` : `${FAM[job.fam].label} er et oplagt felt for ${pname}`);
+  else if(ev.bestSec.f && ev.bestSec.w>=.45) pos.push(`Arbejdet er i høj grad ${FAM[ev.bestSec.f].n}, som passer til ${pname}`);
+  else if(ev.prim>=.4) pos.push(`Beslægtet med ${pname}`);
+  if(ev.skillHits.length) pos.push(`Du har ${listJoin(ev.skillHits)}`);
+  if(ev.interestHit){ pos.push(ev.interestHit.startsWith("ind:") ? `Inden for ${ev.interestHit.slice(4).toLowerCase()}, en branche du har valgt` : `Matcher din interesse for ${FAM[ev.interestHit].n}`); }
+  const l=c.learned[job.fam]||0;
+  if(l>=.1) pos.push(`Du har tidligere vist interesse for ${FAM[job.fam].n}`);
+  if(job.danish==="no" && p.danish!=="fluent") pos.push("Arbejdssproget er engelsk");
+  if(job.postedH<12) pos.push(`Slået op ${ago(job.postedH)}, så du er tidligt ude`);
+  if(job.danish==="plus" && p.danish!=="fluent") neg.push("Dansk er et plus her");
+  if(job.hMax>p.hoursMax) neg.push(`Op til ${job.hMax} timer om ugen, mere end dine ${hoursText(p.hoursMax).replace(" t"," timer")}`);
+  if(job.deadline!=null && job.deadline<=5) neg.push(`Ansøgningsfrist om ${job.deadline} dage`);
+  if(p.skills.length && !ev.skillHits.length) neg.push(`Efterspørger ${job.skills[0]}, som ikke står på din profil`);
+  if(l<=-.1) neg.push(`Du har tidligere fravalgt ${FAM[job.fam].n}`);
+  return {pos:pos.slice(0,3),neg:neg.slice(0,2)};
+}
+function hiddenWhy(job, ev, c){
+  c=ctxOf(c); const pname=c.profile.programShort||"din uddannelse";
+  const work=[job.fam,...(job.sec||[])].filter(f=>(c.profile.weights[f]||0)>=.5).slice(0,2).map(f=>FAM[f].n);
+  const t=job.title.replace(/^Studentermedhjælper – /,"");
+  return `“${t}” bruger ikke de ord, du ville søge på som ${pname}-studerende, men arbejdet er i praksis ${work.length?listJoin(work):"tæt på dit felt"}.`;
+}
+function allEvals(){ return JOBS.map(j=>({job:j,ev:evaluate(j)})); }
+function fbOf(id){ return S.fb[id] || (S.fb[id]={}); }
+function feed(){
+  let items = allEvals().filter(x=>!x.ev.out && x.ev.level && !(S.fb[x.job.id]||{}).dismissed && !(S.fb[x.job.id]||{}).applied);
+  items = items.filter(x=>!x.job.sponsored || x.ev.score>=.55);
+  items.sort((a,b)=>b.ev.score-a.ev.score);
+  const out=[];
+  while(items.length){
+    const recent=out.slice(-2).map(x=>x.job.fam);
+    let idx=0;
+    if(recent.length===2 && recent[0]===recent[1]){
+      const alt=items.findIndex(x=>x.job.fam!==recent[0] && x.ev.score>=items[0].ev.score-.08);
+      if(alt>0) idx=alt;
+    }
+    out.push(items.splice(idx,1)[0]);
+  }
+  return out;
+}
+function hiddenFeed(){ return feed().filter(x=>x.ev.hidden); }
+function filteredCounts(){
+  const c={danish:0,hours:0,location:0,field:0};
+  for(const x of allEvals()){ if(x.ev.out && !(S.fb[x.job.id]||{}).dismissed) c[x.ev.out]++; }
+  return c;
+}
+
+/* ============ IKONER ============ */
+const I = {
+  mark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V9a4 4 0 0 1 4-4h6a4 4 0 0 1 0 8H9"/><path d="M14 17l4 2"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>',
+  warn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5"/><path d="M12 16.3v.1"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  bookmark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 4h10v16l-5-3.5L7 20z"/></svg>',
+  bookmarkOn:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 4h10v16l-5-3.5L7 20z"/></svg>',
+  thumb:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v9H4v-9z"/><path d="M7 11l4-7c1.4 0 2.4 1.1 2.1 2.6L12.6 10H18a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 16.8 20H7"/></svg>',
+  out:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16L16 8M9.5 8H16v6.5"/></svg>',
+  chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>',
+  spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18.5 16.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg>',
+  compass:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>',
+  user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>'
+};
+
+/* ============ VISNINGER ============ */
+function logo(){ return `<button class="logo" data-act="home" aria-label="Studiematch forside"><span class="logo-mark">${I.mark}</span>Studiematch</button>`; }
+function levelLabel(l){ return l==="strong"?"Stærkt match":l==="good"?"Godt match":"Værd at se"; }
+function cardHTML(job, ev, opts){
+  opts=opts||{}; const c=opts.ctx; const r=reasonsFor(job,ev,c); const fb=opts.demo?{}:(S.fb[job.id]||{});
+  const open=!!UI.expanded[job.id]; const p=ctxOf(c).profile;
+  const danishTag = job.danish==="required" ? "Kræver dansk" : job.danish==="plus" ? "Dansk er et plus" : "Engelsk OK";
+  const da = opts.demo ? 'data-act="start"' : '';
+  return `<article class="job" id="card-${job.id}" aria-label="${esc(job.title)} hos ${esc(job.co)}">
+    <div class="job-top">
+      <div class="monogram" style="--h:${hue(job.co)}" aria-hidden="true">${esc(initials(job.co))}</div>
+      <div class="job-head">
+        <div class="job-co"><span>${esc(job.co)}</span><span aria-hidden="true">·</span><span>${esc(job.city)}</span>${job.sponsored?'<span class="sponsored">Sponsoreret</span>':''}</div>
+        <h3 class="job-title">${esc(job.title)}</h3>
+      </div>
+      <div class="lvl lvl-${ev.level}"><span class="lvl-pill">${levelLabel(ev.level)}</span><span class="meter" aria-hidden="true"><i></i><i></i><i></i></span></div>
+    </div>
+    <div class="meta">
+      <span class="tag">${!job.hMin?"Timer: se opslag":job.hMin===job.hMax?job.hMin+" t/uge":job.hMin+"–"+job.hMax+" t/uge"}</span>
+      <span class="tag">${danishTag}</span>
+      ${job.rolling?'<span class="tag">Løbende optag</span>':job.deadline==null?"":`<span class="tag ${job.deadline<=5?"tag-soon":""}">Frist ${deadlineDate(job.deadline)}</span>`}
+      ${job.postedH<12?`<span class="tag tag-new">Ny · ${agoShort(job.postedH)}</span>`:""}
+      ${ev.hidden && !opts.hiddenMode?'<span class="tag tag-hidden">Skjult match</span>':""}
+    </div>
+    ${job.blurb?`<p class="blurb">${esc(job.blurb)}</p>`:""}
+    ${opts.hiddenMode?`<div class="callout-hidden"><b>Derfor ville du overse det</b><span>${esc(hiddenWhy(job,ev,c))}</span></div>`:""}
+    <ul class="reasons" aria-label="Derfor passer det til dig">
+      ${r.pos.map(t=>`<li class="r-pos">${I.check}<span>${esc(t)}</span></li>`).join("")}
+      ${r.neg.map(t=>`<li class="r-neg">${I.warn}<span>${esc(t)}</span></li>`).join("")}
+    </ul>
+    <p class="src">${job.live?"Fundet via":"Kilde i den rigtige version:"} ${esc(job.src||"Virksomhedens karriereside")}</p>
+    ${open?whyPanel(job,ev,p):""}
+    <div class="actions">
+      <button class="icon-btn b-pass" ${da||`data-act="dismiss" data-id="${job.id}"`} aria-label="Ikke interesseret" title="Ikke interesseret">${I.x}</button>
+      <button class="icon-btn b-save" ${da||`data-act="save" data-id="${job.id}"`} aria-pressed="${!!fb.saved}" aria-label="${fb.saved?"Gemt":"Gem"}" title="Gem">${fb.saved?I.bookmarkOn:I.bookmark}</button>
+      <button class="icon-btn b-like" ${da||`data-act="like" data-id="${job.id}"`} aria-pressed="${!!fb.liked}" aria-label="Interesseret" title="Interesseret">${I.thumb}</button>
+      <button class="why-btn" ${da||`data-act="why" data-id="${job.id}"`} aria-expanded="${open}"><span>Hvorfor<span class="why-long"> dette match</span></span>${I.chev}</button>
+      <span class="act-spacer"></span>
+      <button class="btn btn-primary btn-sm" ${da||`data-act="apply" data-id="${job.id}"`}>Søg ${I.out}</button>
+    </div>
+  </article>`;
+}
+function whyPanel(job, ev, p){
+  const rows = ev.comps.map(x=>{
+    const na=x.v===null; const pct=na?0:Math.round(x.v*100);
+    const note = na ? (x.k==="skills"?"Tilføj kompetencer":"Tilføj interesser") : pct+" %";
+    return `<div class="bar-row ${na?"na":""}"><span>${x.label}</span><span class="bar"><span style="width:${pct}%"></span></span><span class="v">${note}</span></div>`;
+  }).join("");
+  const l=ev.learnedAdj; const lt = Math.abs(l)>=.03 ? `<p>Din feedback har flyttet uddannelses-pasformen ${l>0?"op":"ned"} med ${Math.round(Math.abs(l)*100)} point.</p>` : "";
+  return `<div class="why-panel">
+    <p><b>Sådan er det scoret.</b> Uddannelse tæller 55 %, kompetencer 25 % og interesser 20 %. Det, du ikke har udfyldt, trækker ikke ned, og interesser kan kun løfte et job.</p>
+    ${rows}${lt}
+    <div class="filters-ok"><span>${I.check}Sprog</span><span>${I.check}Timer</span><span>${I.check}Område</span><span>${I.check}Felt ikke fravalgt</span></div>
+  </div>`;
+}
+function demoCtx(){
+  const p=progById("ruc-fag-erhvervsøkonomi-ha");
+  return {profile:Object.assign(freshProfile(),{programName:p.name,programShort:shortName(p.name),uni:"RUC",uniKey:"ruc",weights:p.w,danish:"fluent",hoursMax:15,regions:["cph"],skills:["Excel","Bogføring","Regnskab"],interests:["finance"]}),learned:{},disabled:[]};
+}
+function vLanding(){
+  const c=demoCtx(); const df=EXAMPLE_JOBS.map(j=>({job:j,ev:evaluate(j,c)})).filter(x=>!x.ev.out&&x.ev.level).sort((a,b)=>b.ev.score-a.ev.score); const top=df.filter(x=>!x.ev.hidden).slice(0,4); const hid=df.find(x=>x.ev.hidden);
+  return `
+  <header class="topbar"><div class="wrap topbar-in">${logo()}
+    <nav class="top-links"><a href="#virksomheder" class="link-quiet">For virksomheder</a><button class="btn btn-primary btn-sm" data-act="start">${S.onboarded?"Åbn mit feed":"Find mine matches"}</button></nav>
+  </div></header>
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Studiejob i Danmark · gratis for studerende</p>
+        <h1 class="display">Stop med at lede efter <span class="hl">studiejob</span>.</h1>
+        <p class="lede">Lad AI finde de job, der passer til dig. Skriv hvad du læser, og få et personligt feed med studiejob, også dem du aldrig selv ville have søgt på.</p>
+        <div class="hero-form">
+          <p class="label">Hvor læser du?</p>
+          <div class="hero-schools">${SCHOOLS.map(s=>`<button class="school-chip" data-act="school" data-v="${s.key}">${esc(s.chip||s.name)}</button>`).join("")}<button class="school-chip ghost" data-act="school" data-v="other">Andet sted</button></div>
+          <p class="fine">Vælg din skole, og find din uddannelse på listen. Ingen konto eller CV.</p>
+        </div>
+      </div>
+      <div>
+        <p class="demo-cap">Eksempel: en dansktalende studerende på Erhvervsøkonomi (HA) på RUC, der gerne vil arbejde med regnskab og revision</p>
+        <div class="demo-stack">
+          ${cardHTML(top[0].job,top[0].ev,{demo:true,ctx:c})}
+          <div class="demo-more"><p class="demo-more-h">Flere matches til hende</p>${top.slice(1).map(x=>`<div class="srow"><div class="monogram" style="--h:${hue(x.job.co)}" aria-hidden="true">${esc(initials(x.job.co))}</div><div class="srow-main"><div class="srow-title">${esc(x.job.title)}</div><div class="srow-sub">${esc(x.job.co)} · ${esc(x.job.city)}</div></div><span class="status ${x.ev.level==="strong"?"st-applied":"st-saved"}">${levelLabel(x.ev.level)}</span></div>`).join("")}</div>
+          ${hid?`<div class="demo-mini"><span class="tag tag-hidden">Skjult match</span><span>${esc(hiddenWhy(hid.job,hid.ev,c))} Jobbet er hos ${esc(hid.job.co)}.</span></div>`:""}
+        </div>
+      </div>
+    </div></section>
+
+    <section class="band"><div class="wrap">
+      <h2>Fra uddannelse til jobfeed på under et minut</h2>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span><h3>Vælg skole og uddannelse</h3><p>Find din uddannelse på skolens liste. Vi ved, hvilke felter den fører til, fx supply chain, indkøb, PMO og BI.</p></div>
+        <div class="step"><span class="step-n">2</span><h3>Sæt to filtre</h3><p>Dit dansk-niveau og dine timer om ugen. Job, du ikke kan tage, når aldrig dit feed.</p></div>
+        <div class="step"><span class="step-n">3</span><h3>Reagér, og den lærer</h3><p>Interesseret, gem eller fravælg. Hver reaktion former det, du ser bagefter. Jo mere du tilføjer, jo skarpere bliver det.</p></div>
+      </div>
+    </div></section>
+
+    <section class="band" style="padding-top:0"><div class="wrap">
+      <h2>Bygget til studiejob i Danmark</h2>
+      <p class="band-sub">De fleste jobsider forventer, at du kender de rigtige jobtitler. Det gør de fleste studerende ikke, og det skal de heller ikke.</p>
+      <div class="feat">
+        <div class="feat-item"><span class="tag">Kræver dansk?</span><h3>Sprog er et hårdt filter</h3><p>Kræver et job flydende dansk, og taler du det ikke, ser du det ikke. Internationale studerende får et feed med reelle muligheder.</p></div>
+        <div class="feat-item"><span class="tag">10–15 t/uge</span><h3>Passer til dine studietimer</h3><p>Fortæl hvor mange timer du kan arbejde. Et job på 30 timer dukker ikke op som topmatch.</p></div>
+        <div class="feat-item"><span class="tag tag-hidden">Skjult match</span><h3>Job du aldrig ville søge på</h3><p>“Udbudsstyring” eller “Prisanalytiker” nævner sjældent din uddannelse, men arbejdet kan passe perfekt.</p></div>
+        <div class="feat-item"><span class="tag">Hvorfor dette match</span><h3>Ærlige grunde, også ulemperne</h3><p>Hvert job viser, hvorfor det passer, og hvad der ikke gør: flere timer end du ønsker, krav om dansk, en frist om tre dage.</p></div>
+      </div>
+    </div></section>
+
+    <section class="statement"><div class="wrap">
+      <p class="big">Ikke en jobsøgemaskine. <span>En karriereagent, der lærer, hvad der passer til dig.</span></p>
+      <p class="small">Sponsorerede job er altid markeret, og de vises kun, når de mindst er et godt match for dig. Ingen bannerreklamer.</p>
+    </div></section>
+
+    <section class="band" id="virksomheder"><div class="wrap co-grid">
+      <div>
+        <h2>Ansætter I studerende?</h2>
+        <p class="band-sub">Slå et studiejob op, så viser vi det til de studerende, det passer til, også dem der ikke selv leder aktivt.</p>
+        <ul class="co-list">
+          <li>${I.check}<span>Jobbet lander direkte i feedet hos studerende med et stærkt match</span></li>
+          <li>${I.check}<span>Færre irrelevante ansøgninger at læse igennem</span></li>
+          <li>${I.check}<span>Nå passive kandidater, der aldrig selv havde fundet opslaget</span></li>
+        </ul>
+      </div>
+      <form class="panel" data-form="waitlist">
+        <h3>Kom på ventelisten for virksomheder</h3>
+        ${UI.waitlistDone?`<p class="ok-note">Tak, du er skrevet op. (I prototypen bliver intet sendt.)</p>`:`
+        <div class="field"><label class="label" for="wl-co">Virksomhed</label><input id="wl-co" class="input" required placeholder="Virksomhedens navn"></div>
+        <div class="field"><label class="label" for="wl-mail">Arbejdsmail</label><input id="wl-mail" class="input" type="email" required placeholder="navn@virksomhed.dk"></div>
+        <button class="btn btn-primary" type="submit">Skriv mig op</button>`}
+      </form>
+    </div></section>
+  </main>
+  <footer class="foot"><div class="wrap"><span>Studiematch · studiematch.dk</span><span>${LIVE?"Job hentes fra arbejdsgivernes egne sider. Din profil bliver i din browser.":"Eksempeljob fra opdigtede virksomheder. Intet af det, du skriver, forlader din browser."}</span></div></footer>`;
+}
+
+function vOnboard(){
+  if(!UI.obUni) UI.obUni=S.profile.uniKey||"other";
+  const st=S.step; const body = st===1?obSchool():st===2?obProgram():st===3?obFilters():obFields();
+  return `<div class="ob">
+    <header class="wrap ob-top">${logo()}<div class="ob-progress" role="img" aria-label="Trin ${st} af 4">${[1,2,3,4].map(i=>`<span class="${i<=st?"on":""}"></span>`).join("")}</div></header>
+    <main class="wrap"><div class="ob-main">${body}</div></main>
+  </div>`;
+}
+function obSchool(){
+  return `<p class="ob-step">Trin 1 af 4</p>
+  <h1 class="ob-h">Hvor læser du?</h1>
+  <p class="ob-p">Vælg din skole. Bagefter kan du søge i alle dens uddannelser.</p>
+  <div class="ob-body">${[["uni","Universiteter"],["prof","Professionshøjskoler"],["ea","Erhvervsakademier"]].map(([t,l])=>`<section class="school-group"><h2 class="group-h">${l}</h2><div class="school-grid">${SCHOOLS.filter(s=>(s.type||"uni")===t).map(schoolBtn).join("")}</div></section>`).join("")}
+    <section class="school-group"><h2 class="group-h">Andet</h2><div class="school-grid"><button class="school school-other" data-act="school" data-v="other"><span class="school-abbr">Andet</span><span class="school-full">En anden skole, eller søg på tværs</span></button></div></section>
+  </div>`;
+}
+const schoolBtn = s => `<button class="school" data-act="school" data-v="${s.key}"><span class="school-abbr">${s.name}</span><span class="school-full">${esc(s.full)}</span><span class="school-n">${PROGRAMS.filter(p=>p.uni===s.key).length} uddannelser</span></button>`;
+function progListHTML(){
+  const list=programsFor(UI.obUni, UI.obLevel, UI.obText); const q=UI.obText.trim();
+  let h=list.map(p=>`<li><button type="button" data-act="pick" data-id="${p.id}"><span class="pn">${esc(p.name)}</span><span class="pl">${UI.obUni==="other"?schoolOf(p.uni).name+" · ":""}${LEVELS[p.level]}</span></button></li>`).join("");
+  if(q) h+=`<li><button type="button" data-act="use-text"><span class="pn free">Brug “${esc(q)}”</span><span class="pl">vi tolker det</span></button></li>`;
+  return h || `<li class="none">Ingen uddannelser på dette niveau.</li>`;
+}
+function progCount(){ const n=programsFor(UI.obUni, UI.obLevel, UI.obText).length; return `${n} ${n===1?"uddannelse":"uddannelser"}`; }
+function obProgram(){
+  const s = UI.obUni==="other" ? null : schoolOf(UI.obUni);
+  const levels=["all",...new Set(PROGRAMS.filter(p=>UI.obUni==="other"||p.uni===UI.obUni).map(p=>p.level))];
+  const src = s ? (s.src ? `Listen er hentet fra ${s.src} i oktober 2026.` : `Et udvalg af uddannelserne på ${s.name}; listen er ikke komplet endnu.`) : "Søg på tværs af alle skoler.";
+  return `<p class="ob-step">Trin 2 af 4</p>
+  <h1 class="ob-h">${s?`Hvad læser du på ${s.name}?`:"Hvad læser du?"}</h1>
+  <p class="ob-p">${src} Kan du ikke finde din, så skriv navnet og tryk Fortsæt.</p>
+  <form class="ob-body" data-form="ob-prog">
+    <div class="field">
+      <label class="sr" for="ob-study">Søg efter din uddannelse</label>
+      <input id="ob-study" class="input input-lg" placeholder="${s?`Søg blandt ${s.name}s uddannelser`:"Søg efter uddannelse"}" autocomplete="off" value="${esc(UI.obText)}">
+      ${levels.length>2?`<div class="chips" role="group" aria-label="Niveau">${levels.map(l=>`<button type="button" class="chip" data-act="level" data-v="${l}" aria-pressed="${UI.obLevel===l}">${l==="all"?"Alle":LEVELS[l]}</button>`).join("")}</div>`:""}
+      <p class="fine" id="prog-count">${progCount()}</p>
+      <ul class="prog-list" id="prog-list" aria-label="Uddannelser">${progListHTML()}</ul>
+    </div>
+    <div class="ob-actions"><button class="btn btn-primary btn-lg" type="submit" id="ob-go" ${norm(UI.obText)?"":"disabled"}>Fortsæt</button><button type="button" class="btn btn-quiet" data-act="ob-back">Skift skole</button></div>
+  </form>`;
+}
+function obFilters(){
+  const p=S.profile;
+  return `<p class="ob-step">Trin 3 af 4</p>
+  <h1 class="ob-h">To hurtige filtre</h1>
+  <p class="ob-p">De fjerner job, du ikke kan tage, så dit feed kun viser reelle muligheder.</p>
+  <div class="ob-body">
+    <div class="field"><span class="label" id="lb-da">Hvor meget dansk taler du?</span>
+      <div class="seg" role="group" aria-labelledby="lb-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div>
+      <p class="fine">Mange danske studiejob kræver flydende dansk. Hvis du ikke taler det, skjuler vi dem.</p></div>
+    <div class="field"><span class="label" id="lb-h">Timer om ugen</span>
+      <div class="seg" role="group" aria-labelledby="lb-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="lb-r">Hvor kan du arbejde?</span>
+      <div class="chips" role="group" aria-labelledby="lb-r">${REGIONS.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div>
+      <p class="fine">Remote-job er altid med.</p></div>
+    <div class="ob-actions"><button class="btn btn-primary btn-lg" data-act="ob-next" ${p.danish?"":"disabled"}>Fortsæt</button><button class="btn btn-quiet" data-act="ob-back">Tilbage</button></div>
+  </div>`;
+}
+function obFields(){
+  const p=S.profile; const W=p.weights;
+  const fams=Object.keys(W).filter(f=>W[f]>=.3).sort((a,b)=>W[b]-W[a]);
+  const n=feed().length;
+  return `<p class="ob-step">Trin 4 af 4</p>
+  <h1 class="ob-h">Her kigger vi</h1>
+  <p class="ob-p">Baseret på ${esc(p.programShort||p.programName)}${p.uni?" på "+esc(p.uni):""}. Slå det fra, der ikke er noget for dig. Du kan ændre det senere.</p>
+  <div class="ob-body">
+    ${p.guessed?`<p class="notice">Vi har læst det ud fra navnet, du skrev, så det er et groft gæt. Justér herunder, så rammer vi bedre.</p>`:""}
+    <div class="fam-grid">${fams.map(f=>{ const w=W[f]; const d=w>=.8?3:w>=.6?2:1; const off=S.disabled.includes(f);
+      return `<button class="fam" data-act="fam-toggle" data-v="${f}" aria-pressed="${!off}"><span class="dots" aria-hidden="true">${[1,2,3].map(i=>`<i class="${i<=d?"on":""}"></i>`).join("")}</span><span class="fam-name">${FAM[f].label}</span><span class="fam-fit">${d===3?"Kerne":d===2?"God pasform":"Mulig"}</span></button>`; }).join("")}</div>
+    <div class="ob-actions"><button class="btn btn-primary btn-lg" data-act="finish">Vis mine ${n} matches</button><button class="btn btn-quiet" data-act="ob-back">Tilbage</button></div>
+  </div>`;
+}
+
+const TABS=[{id:"foryou",l:"Til dig",short:"Til dig",icon:"spark"},{id:"hidden",l:"Skjulte matches",short:"Skjulte",icon:"compass"},{id:"saved",l:"Gemt",short:"Gemt",icon:"bookmark"},{id:"profile",l:"Profil",short:"Profil",icon:"user"}];
+function tabCounts(){ const f=feed(); return {foryou:f.length,hidden:f.filter(x=>x.ev.hidden).length,saved:Object.keys(S.fb).filter(id=>byId(id) && (S.fb[id].saved||S.fb[id].applied)).length,profile:null}; }
+function tabsHTML(kind){
+  const c=tabCounts();
+  return TABS.map(t=>{ const cur=S.tab===t.id?'aria-current="page"':"";
+    if(kind==="rail") return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.l}</span>${c[t.id]!=null?`<span class="count">${c[t.id]}</span>`:""}</button>`;
+    return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.short}</span>${t.id==="hidden"&&c.hidden?`<span class="badge">${c.hidden}</span>`:""}</button>`;
+  }).join("");
+}
+function ctxLine(){ const p=S.profile; return esc([p.programShort+(p.uni?" · "+p.uni:""),hoursText(p.hoursMax)+"/uge",danishLabel(p.danish)].join(" · ")); }
+function vApp(){
+  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<p class="ctx">${ctxLine()}</p><button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button></div></header>
+  <div class="wrap app-grid">
+    <nav class="rail" aria-label="Sektioner">${tabsHTML("rail")}</nav>
+    <main class="feed-col" id="main">${S.tab==="foryou"?tForYou():S.tab==="hidden"?tHidden():S.tab==="saved"?tSaved():tProfile()}</main>
+    <aside class="side" aria-label="Det har vi lært">${tasteHTML()}<p class="side-note">${LIVE?"Job hentes automatisk fra arbejdsgivernes egne sider flere gange om dagen. Tjek altid detaljerne i det originale opslag. Din profil bliver i denne browser.":"Prototype: eksempeljob fra opdigtede virksomheder. Alt bliver i denne browser."}</p></aside>
+  </div>
+  <nav class="tabbar" aria-label="Sektioner">${tabsHTML("bar")}</nav>
+  ${sheetHTML()}</div>`;
+}
+function filterNote(){
+  const c=filteredCounts(); const parts=[];
+  if(c.danish) parts.push(`${c.danish} kræver flydende dansk`); if(c.location) parts.push(`${c.location} uden for dit område`);
+  if(c.hours) parts.push(`${c.hours} kræver flere timer`); if(c.field) parts.push(`${c.field} i felter, du har fravalgt`);
+  const total=c.danish+c.location+c.hours+c.field;
+  if(!total) return "";
+  return `<div class="filter-note"><span><b>${total} job frasorteret:</b> ${parts.join(", ")}.</span><button class="btn btn-quiet" data-act="tab" data-tab="profile">Ret filtre</button></div>`;
+}
+function tForYou(){
+  const f=feed(); const now=new Date().toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"});
+  const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} job rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} studiejob gennemgået.</p></div>`;
+  if(!f.length) return head+filterNote()+emptyFeed();
+  return head+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
+}
+function emptyFeed(){
+  const p=S.profile;
+  return `<div class="empty"><h2>Du har set alle matches lige nu</h2>
+    <p>Der kommer nye studiejob hver dag. Vi giver besked, når et stærkt match dukker op, typisk få timer efter det er slået op.</p>
+    <div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Mail mig nye stærke matches"></button><span>Mail mig nye stærke matches</span></div>
+    <div class="chips"><button class="btn btn-ghost btn-sm" data-act="widen">Søg i hele landet</button><button class="btn btn-ghost btn-sm" data-act="tab" data-tab="hidden">Se skjulte matches</button></div></div>`;
+}
+function tHidden(){
+  const f=hiddenFeed();
+  const head=`<div><h1 class="h-feed">Skjulte matches</h1><p class="sub">Job med titler, du nok ikke ville søge på, men hvor din profil stadig passer.</p></div>`;
+  if(!f.length) return head+`<div class="empty"><h2>Ingen skjulte matches lige nu</h2><p>Tilføj kompetencer og interesser på din profil. Så kan vi finde job, hvis titel ikke nævner dit felt.</p><button class="btn btn-primary btn-sm" data-act="tab" data-tab="profile">Tilføj kompetencer</button></div>`;
+  return head+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev,{hiddenMode:true})).join("")}</div>`;
+}
+function tSaved(){
+  const ids=Object.keys(S.fb).filter(id=>byId(id) && (S.fb[id].saved||S.fb[id].applied));
+  const head=`<div><h1 class="h-feed">Gemt</h1><p class="sub">Job du har gemt eller søgt.</p></div>`;
+  if(!ids.length) return head+`<div class="empty"><h2>Intet gemt endnu</h2><p>Tryk på bogmærket på et job for at gemme det her. Job, du søger, havner her også, så du kan holde styr på dem.</p><button class="btn btn-primary btn-sm" data-act="tab" data-tab="foryou">Tilbage til Til dig</button></div>`;
+  const row=id=>{ const j=byId(id); const fb=S.fb[id]; const ev=evaluate(j);
+    return `<div class="srow"><div class="monogram" style="--h:${hue(j.co)}" aria-hidden="true">${esc(initials(j.co))}</div>
+      <div class="srow-main"><div class="srow-title">${esc(j.title)}</div><div class="srow-sub">${esc(j.co)} · ${j.rolling?"Løbende optag":j.deadline==null?"Ingen frist angivet":"Frist "+deadlineDate(j.deadline)}${ev.level?" · "+levelLabel(ev.level):""}</div></div>
+      <span class="status ${fb.applied?"st-applied":"st-saved"}">${fb.applied?"Søgt":"Gemt"}</span>
+      ${fb.applied?"":`<button class="btn btn-primary btn-sm" data-act="apply" data-id="${id}">Søg</button>`}
+      <button class="mini-x" data-act="unsave" data-id="${id}" aria-label="Fjern ${esc(j.title)}">${I.x}</button></div>`; };
+  const applied=ids.filter(id=>S.fb[id].applied), saved=ids.filter(id=>!S.fb[id].applied);
+  return head+(applied.length?`<h2 class="group-h">Søgt · ${applied.length}</h2><div class="row-list">${applied.map(row).join("")}</div>`:"")+(saved.length?`<h2 class="group-h">Gemt · ${saved.length}</h2><div class="row-list">${saved.map(row).join("")}</div>`:"");
+}
+function completeness(){
+  const p=S.profile; const checks=[!!p.programName,!!p.semester,!!p.danish,!!p.hoursMax,p.regions.length>0,p.skills.length>=3,p.interests.length>0,p.industries.length>0,p.pastJobs.length>0,p.courses.length>0,!!p.cvName];
+  return Math.round(100*checks.filter(Boolean).length/checks.length);
+}
+function nextTip(){
+  const p=S.profile;
+  if(p.skills.length<3) return "Tilføj mindst 3 kompetencer. Kompetencer tæller 25 % af hvert match.";
+  if(!p.interests.length) return "Vælg de felter, du er nysgerrig på. Interesser tæller 20 %.";
+  if(!p.industries.length) return "Vælg brancher, du gerne vil arbejde i.";
+  if(!p.semester) return "Tilføj dit semester, så vi kan foreslå praktik på det rigtige tidspunkt.";
+  if(!p.pastJobs.length) return "Tilføj et tidligere job. Selv et cafejob viser erfaring med kunder og vagter.";
+  return "Din profil ser godt ud.";
+}
+function tProfile(){
+  const p=S.profile; const pct=completeness(); const pfUni=UI.pfUni||p.uniKey||"other";
+  const topFams=Object.keys(p.weights).sort((a,b)=>p.weights[b]-p.weights[a]).slice(0,6);
+  const sugSkills=[...new Set(JOBS.filter(j=>topFams.includes(j.fam)).flatMap(j=>j.skills))].filter(s=>!p.skills.includes(s)).slice(0,10);
+  const famOpts=Object.keys(FAM).sort((a,b)=>(p.weights[b]||0)-(p.weights[a]||0));
+  const sems=["1. semester","2. semester","3. semester","4. semester","5. semester","6. semester","7. semester (kandidat 1.)","8. semester (kandidat 2.)","9. semester (kandidat 3.)","10. semester (speciale)"];
+  return `<div><h1 class="h-feed">Profil</h1><p class="sub">Jo mere du tilføjer, jo skarpere bliver dine matches. Alt er valgfrit.</p></div>
+  <section class="pcard strength"><div class="strength-top"><h2>Profilstyrke</h2><b class="num">${pct} %</b></div><span class="bar"><span style="width:${pct}%"></span></span><p class="fine">${esc(nextTip())}</p></section>
+
+  <section class="pcard"><h2>Dit studie</h2>
+    <div class="field-row">
+      <div class="field"><label class="label" for="pf-uni">Skole</label><select id="pf-uni" class="select" data-change="pf-uni">${SCHOOLS.map(s=>`<option value="${s.key}" ${pfUni===s.key?"selected":""}>${s.name} · ${esc(s.full)}</option>`).join("")}<option value="other" ${pfUni==="other"?"selected":""}>Andet sted</option></select></div>
+      <div class="field"><label class="label" for="pf-sem">Semester</label><select id="pf-sem" class="select" data-change="semester"><option value="">Ikke angivet</option>${sems.map((s,i)=>`<option value="${i+1}" ${String(p.semester)===String(i+1)?"selected":""}>${s}</option>`).join("")}</select></div>
+    </div>
+    <form class="field" data-form="study"><label class="label" for="pf-study">Uddannelse</label>
+      <div class="inline-form"><input id="pf-study" class="input" list="pf-prog-list" value="${esc(pfUni===(p.uniKey||"other")?(p.studyText||p.programName):"")}" placeholder="Søg i ${pfUni==="other"?"alle skolers":esc(schoolOf(pfUni).name)+"s"} uddannelser" autocomplete="off"><button class="btn btn-ghost" type="submit">Opdater</button></div>
+      <datalist id="pf-prog-list">${programsFor(pfUni,"all","").map(x=>`<option value="${esc(x.name)}">`).join("")}</datalist>
+      <p class="fine">Matcher lige nu som: <b>${esc(p.programName)}${p.uni?" ("+esc(p.uni)+")":""}</b>${p.level?" · "+LEVELS[p.level]:""}${p.guessed?" · tolket ud fra din tekst":""}</p></form>
+  </section>
+
+  <section class="pcard"><h2>Filtre</h2><p class="hint">Job, der ikke består dem, kommer aldrig i dit feed.</p>
+    <div class="field"><span class="label" id="pl-da">Dansk-niveau</span><div class="seg" role="group" aria-labelledby="pl-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="pl-h">Timer om ugen</span><div class="seg" role="group" aria-labelledby="pl-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="pl-r">Område</span><div class="chips" role="group" aria-labelledby="pl-r">${REGIONS.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="pl-f">Felter, der er med</span><div class="chips" role="group" aria-labelledby="pl-f">${Object.keys(p.weights).filter(f=>p.weights[f]>=.3).sort((a,b)=>p.weights[b]-p.weights[a]).map(f=>`<button class="chip" data-act="fam-toggle" data-v="${f}" aria-pressed="${!S.disabled.includes(f)}">${FAM[f].label}</button>`).join("")}</div></div>
+  </section>
+
+  <section class="pcard"><h2>Kompetencer</h2><p class="hint">Værktøjer og metoder, du har brugt i fag, projekter eller job.</p>
+    <div class="chips">${p.skills.map((s,i)=>`<button class="chip" aria-pressed="true" data-act="list-remove" data-list="skills" data-i="${i}" aria-label="Fjern ${esc(s)}">${esc(s)}<span class="x" aria-hidden="true">×</span></button>`).join("")||'<span class="fine">Ingen kompetencer endnu.</span>'}</div>
+    <form class="inline-form" data-form="skill"><label class="sr" for="pf-skill">Tilføj en kompetence</label><input id="pf-skill" class="input" list="skill-list" placeholder="fx Power BI"><datalist id="skill-list">${SKILLS_COMMON.map(s=>`<option value="${esc(s)}">`).join("")}</datalist><button class="btn btn-ghost" type="submit">Tilføj</button></form>
+    ${sugSkills.length?`<div class="field"><span class="fine">Ofte efterspurgt i dine felter:</span><div class="chips">${sugSkills.map(s=>`<button class="chip" data-act="skill-add" data-v="${esc(s)}">+ ${esc(s)}</button>`).join("")}</div></div>`:""}
+  </section>
+
+  <section class="pcard"><h2>Interesser</h2><p class="hint">Felter og brancher, du gerne vil prøve. Et match her løfter et job.</p>
+    <div class="chips">${famOpts.map(f=>`<button class="chip" data-act="interest" data-v="${f}" aria-pressed="${p.interests.includes(f)}">${FAM[f].label}</button>`).join("")}</div>
+    <span class="label" style="margin:6px 0 0">Brancher</span>
+    <div class="chips">${INDUSTRIES.map(x=>`<button class="chip" data-act="industry" data-v="${esc(x)}" aria-pressed="${p.industries.includes(x)}">${esc(x)}</button>`).join("")}</div>
+  </section>
+
+  <section class="pcard"><h2>Erfaring</h2>
+    <div class="field"><span class="label">Tidligere job</span>
+      <ul class="list-items">${p.pastJobs.map((s,i)=>`<li><span>${esc(s)}</span><button class="mini-x" data-act="list-remove" data-list="pastJobs" data-i="${i}" aria-label="Fjern">${I.x}</button></li>`).join("")}</ul>
+      <form class="inline-form" data-form="pastJobs"><label class="sr" for="pf-job">Tilføj et tidligere job</label><input id="pf-job" class="input" placeholder="fx Barista, 2 år"><button class="btn btn-ghost" type="submit">Tilføj</button></form></div>
+    <div class="field"><span class="label">Relevante fag</span>
+      <ul class="list-items">${p.courses.map((s,i)=>`<li><span>${esc(s)}</span><button class="mini-x" data-act="list-remove" data-list="courses" data-i="${i}" aria-label="Fjern">${I.x}</button></li>`).join("")}</ul>
+      <form class="inline-form" data-form="courses"><label class="sr" for="pf-course">Tilføj et fag</label><input id="pf-course" class="input" placeholder="fx Supply Chain Management (5 ECTS)"><button class="btn btn-ghost" type="submit">Tilføj</button></form></div>
+    <div class="field"><label class="label" for="pf-cv">CV</label>
+      <div class="file-drop"><input id="pf-cv" type="file" accept=".pdf,.doc,.docx" data-change="cv">${p.cvName?`<span class="fine">Tilføjet: ${esc(p.cvName)}</span>`:""}</div>
+      <p class="fine">I den rigtige version læser vi dit CV for at foreslå kompetencer, og du godkender hver enkelt. Prototypen gemmer kun filnavnet.</p></div>
+  </section>
+
+  <section class="pcard"><h2>Jobalarmer</h2>
+    <div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Mail mig nye stærke matches"></button><span>Mail mig nye stærke matches</span></div>
+    ${p.alerts?`<div class="seg" role="group" aria-label="Hvor ofte">${[["instant","Med det samme"],["daily","Dagligt"],["weekly","Ugentligt"]].map(([v,l])=>`<button class="chip" data-act="freq" data-v="${v}" aria-pressed="${p.alertFreq===v}">${l}</button>`).join("")}</div>
+    <div class="field"><label class="label" for="pf-mail">E-mail</label><input id="pf-mail" class="input" type="email" value="${esc(p.email)}" placeholder="dig@student.dtu.dk" data-change="email"></div>`:""}
+  </section>
+
+  <div class="only-narrow">${tasteHTML()}</div>
+
+  <section class="pcard"><h2>Dine data</h2><p class="hint">Alt her gemmes kun i denne browser.</p>
+    ${UI.confirmDelete?`<p>Slet din profil, din feedback og dine gemte job? Det kan ikke fortrydes.</p><div class="chips"><button class="btn btn-danger btn-sm" data-act="delete-yes">Slet alt</button><button class="btn btn-ghost btn-sm" data-act="delete-no">Annuller</button></div>`:`<div><button class="btn btn-ghost btn-sm danger" data-act="delete-ask">Slet mine data og start forfra</button></div>`}
+  </section>`;
+}
+function tasteHTML(){
+  const p=S.profile; const W=p.weights;
+  const rows=Object.keys(FAM).filter(f=>(W[f]||0)>=.3 || Math.abs(S.learned[f]||0)>=.05)
+    .map(f=>({f,l:S.learned[f]||0,v:clamp((W[f]||0)+(S.learned[f]||0),0,1),off:S.disabled.includes(f)}))
+    .sort((a,b)=>(a.off-b.off)||(b.v-a.v)).slice(0,8);
+  const any=Object.values(S.learned).some(v=>Math.abs(v)>=.01);
+  return `<section class="taste"><h3>Det har vi lært</h3><p class="fine">Starter fra din uddannelse. Hver gang du siger interesseret, gemmer eller fravælger, flytter søjlerne sig.</p>
+    ${rows.map(r=>`<div class="trow ${r.off?"off":""}"><span class="tname">${FAM[r.f].label}</span><span class="delta ${r.l>0?"up":r.l<0?"down":""}">${r.off?"fra":Math.abs(r.l)>=.05?(r.l>0?"+":"−")+Math.round(Math.abs(r.l)*100):""}</span><span class="bar"><span style="width:${Math.round(r.v*100)}%"></span></span></div>`).join("")}
+    ${any?`<button class="btn btn-quiet" data-act="reset-learning">Nulstil det, vi har lært</button>`:""}
+  </section>`;
+}
+function sheetHTML(){
+  if(!UI.sheet) return "";
+  const j=byId(UI.sheet.id);
+  if(UI.sheet.type==="dismiss"){
+    const opts=[["field","Ikke mit felt",`Vis færre job inden for ${FAM[j.fam].n}`],["hours","Forkerte timer",""],["danish","Sproget passer ikke",""],["location","For langt væk",""],["company","Ikke denne virksomhed",""],["other","Noget andet",""]];
+    return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+      <h2 id="sh-t">Hvorfor ikke dette job?</h2><p>Valgfrit, men det lærer dit feed meget hurtigere.</p>
+      <div class="reason-list">${opts.map(([v,l,s])=>`<button data-act="reason" data-v="${v}">${l}${s?`<small>${esc(s)}</small>`:""}</button>`).join("")}</div>
+      <div class="sheet-actions"><button class="btn btn-quiet" data-act="reason" data-v="skip">Skjul bare jobbet</button></div></div></div>`;
+  }
+  return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">Søg hos ${esc(j.co)}</h2>
+    <p>${j.url?`Du søger direkte hos ${esc(j.co)} på deres egen side.`:"I den rigtige version åbner dette det originale jobopslag på virksomhedens egen side."} Vi søger aldrig på dine vegne.</p>
+    <p>${j.rolling?"Løbende optag, så du kan tilmelde dig når som helst.":j.deadline==null?"Fristen står i opslaget.":`Ansøgningsfrist: <b>${deadlineDate(j.deadline)}</b>.`} Markér jobbet som søgt for at holde styr på det under Gemt.</p>
+    <div class="sheet-actions">${j.url?`<a class="btn btn-ghost" href="${esc(j.url)}" target="_blank" rel="noopener">Åbn jobopslaget</a>`:`<button class="btn btn-ghost" data-act="close-sheet">Annuller</button>`}<button class="btn btn-primary" data-act="apply-go">Markér som søgt</button></div></div></div>`;
+}
+
+/* ============ TEGN ============ */
+const root=typeof document!=="undefined" ? document.getElementById("root") : null;
+function render(){
+  if(S.view==="app" && !S.onboarded) S.view="landing";
+  root.innerHTML = S.view==="landing" ? vLanding() : S.view==="onboard" ? vOnboard() : vApp();
+  if(UI.focus){ const el=document.getElementById(UI.focus); if(el){ el.focus(); if(el.setSelectionRange && el.value!=null){ const n=el.value.length; try{el.setSelectionRange(n,n);}catch(e){} } } UI.focus=null; }
+}
+function commit(){ persist(); render(); }
+let toastTimer=null;
+function toast(msg, undo){
+  const t=document.getElementById("toast");
+  t.innerHTML=`<span>${esc(msg)}</span>${undo?'<button data-act="undo">Fortryd</button>':""}`;
+  t.classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),4200);
+}
+function snap(){ snapshot=JSON.stringify({learned:S.learned,fb:S.fb}); }
+function bump(f,d){ S.learned[f]=Math.round(clamp((S.learned[f]||0)+d,-.6,.4)*100)/100; }
+
+/* ============ HANDLINGER ============ */
+function act(a, el){
+  const id=el.dataset.id, v=el.dataset.v, p=S.profile;
+  switch(a){
+    case "home": S.view="landing"; window.scrollTo(0,0); return commit();
+    case "start":
+      if(S.onboarded){ S.view="app"; S.tab="foryou"; }
+      else { S.view="onboard"; S.step=1; }
+      window.scrollTo(0,0); return commit();
+    case "school": S.view="onboard"; S.step=2; UI.obUni=v; UI.obLevel="all"; UI.obText=""; UI.focus="ob-study"; window.scrollTo(0,0); return commit();
+    case "level": UI.obLevel=v; return render();
+    case "pick": setProgram(progById(id)); S.step=3; window.scrollTo(0,0); return commit();
+    case "use-text": setFreeText(UI.obText, UI.obUni); S.step=3; window.scrollTo(0,0); return commit();
+    case "danish": p.danish=v; return commit();
+    case "hours": p.hoursMax=Number(v); return commit();
+    case "region":
+      if(v==="any") p.regions=["any"];
+      else { p.regions=p.regions.filter(r=>r!=="any"); p.regions = p.regions.includes(v) ? p.regions.filter(r=>r!==v) : [...p.regions,v]; if(!p.regions.length) p.regions=[v]; }
+      return commit();
+    case "ob-next": S.step=Math.min(4,S.step+1); window.scrollTo(0,0); return commit();
+    case "ob-back": S.step=Math.max(1,S.step-1); if(S.step===2){ UI.obUni=p.uniKey||UI.obUni||"other"; UI.obText=""; UI.obLevel="all"; } window.scrollTo(0,0); return commit();
+    case "fam-toggle": S.disabled = S.disabled.includes(v) ? S.disabled.filter(f=>f!==v) : [...S.disabled,v]; return commit();
+    case "finish": S.onboarded=true; S.view="app"; S.tab="foryou"; window.scrollTo(0,0); return commit();
+    case "tab": S.tab=el.dataset.tab; UI.confirmDelete=false; window.scrollTo(0,0); return commit();
+    case "why": UI.expanded[id]=!UI.expanded[id]; return render();
+    case "like": { const j=byId(id), fb=fbOf(id); snap();
+      if(fb.liked){ fb.liked=false; bump(j.fam,-.12); (j.sec||[]).forEach(f=>bump(f,-.04)); commit(); return toast("Fjernet fra interesseret"); }
+      fb.liked=true; bump(j.fam,.12); (j.sec||[]).forEach(f=>bump(f,.04)); commit(); return toast(`Noteret. Flere job inden for ${FAM[j.fam].n} fremover.`,true); }
+    case "save": { const j=byId(id), fb=fbOf(id); snap();
+      if(fb.saved){ fb.saved=false; bump(j.fam,-.05); commit(); return toast("Fjernet fra Gemt",true); }
+      fb.saved=true; bump(j.fam,.05); commit(); return toast("Gemt. Du finder det under Gemt.",true); }
+    case "unsave": { const fb=fbOf(id); snap(); fb.saved=false; fb.applied=false; commit(); return toast("Fjernet",true); }
+    case "dismiss": UI.sheet={type:"dismiss",id}; return render();
+    case "apply": UI.sheet={type:"apply",id}; return render();
+    case "close-sheet": UI.sheet=null; return render();
+    case "reason": { const jid=UI.sheet.id; const j=byId(jid); snap(); UI.sheet=null;
+      const fb=fbOf(jid); fb.dismissed=v;
+      let msg="Skjult.";
+      if(v==="field"){ bump(j.fam,-.2); (j.sec||[]).forEach(f=>bump(f,-.05)); msg=`Skjult. Færre job inden for ${FAM[j.fam].n} fremover.`; }
+      else if(v==="hours") msg="Skjult. Tip: angiv dine timer under Profil, så frasorterer vi dem.";
+      else if(v==="danish") msg="Skjult. Tip: angiv dit dansk-niveau under Profil.";
+      else if(v==="location") msg="Skjult. Tip: ret dit område under Profil.";
+      else if(v==="other") bump(j.fam,-.05);
+      const card=document.getElementById("card-"+jid);
+      if(card){ card.classList.add("leaving"); setTimeout(commit,220); } else commit();
+      return toast(msg,true); }
+    case "apply-go": { const jid=UI.sheet.id; const j=byId(jid); snap(); const fb=fbOf(jid); fb.applied=true; bump(j.fam,.15); UI.sheet=null; commit(); return toast("Markeret som søgt. Du finder det under Gemt.",true); }
+    case "undo": if(snapshot){ const s=JSON.parse(snapshot); S.learned=s.learned; S.fb=s.fb; snapshot=null; commit(); document.getElementById("toast").classList.remove("show"); } return;
+    case "reset-learning": snap(); S.learned={}; commit(); return toast("Læringen er nulstillet til din uddannelses udgangspunkt.",true);
+    case "widen": p.regions=["any"]; commit(); return toast("Viser nu job fra hele landet.");
+    case "alerts": p.alerts=!p.alerts; return commit();
+    case "freq": p.alertFreq=v; return commit();
+    case "interest": p.interests = p.interests.includes(v) ? p.interests.filter(x=>x!==v) : [...p.interests,v]; return commit();
+    case "industry": p.industries = p.industries.includes(v) ? p.industries.filter(x=>x!==v) : [...p.industries,v]; return commit();
+    case "skill-add": if(!p.skills.includes(v)) p.skills.push(v); return commit();
+    case "list-remove": p[el.dataset.list].splice(Number(el.dataset.i),1); return commit();
+    case "delete-ask": UI.confirmDelete=true; return render();
+    case "delete-no": UI.confirmDelete=false; return render();
+    case "delete-yes": S=fresh(); UI.confirmDelete=false; UI.expanded={}; try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); return toast("Dine data er slettet.");
+  }
+}
+function canonicalSkill(s){ const t=s.trim(); const hit=SKILLS_COMMON.find(x=>norm(x)===norm(t)); return hit||t; }
+function onSubmit(form){
+  const k=form.dataset.form, p=S.profile;
+  if(k==="ob-prog"){ const t=UI.obText.trim(); if(!t) return; const m=findProgram(t, UI.obUni)||programsFor(UI.obUni, UI.obLevel, t)[0]; if(m) setProgram(m); else setFreeText(t, UI.obUni); S.step=3; window.scrollTo(0,0); return commit(); }
+  if(k==="waitlist"){ UI.waitlistDone=true; return render(); }
+  if(k==="study"){ const t=form.querySelector("#pf-study").value.trim(); if(!t) return; const uni=(document.getElementById("pf-uni")||{}).value||"other"; const m=findProgram(t, uni)||programsFor(uni,"all",t)[0]; if(m) setProgram(m,true); else setFreeText(t, uni, true); UI.pfUni=null; commit(); return toast(`Matcher nu som ${p.programName}${p.uni?" ("+p.uni+")":""}.`); }
+  if(k==="skill"){ const inp=form.querySelector("input"); const t=canonicalSkill(inp.value); if(t && !p.skills.some(s=>norm(s)===norm(t))) p.skills.push(t); UI.focus="pf-skill"; return commit(); }
+  if(k==="pastJobs"||k==="courses"){ const inp=form.querySelector("input"); const t=inp.value.trim(); if(t) p[k].push(t); UI.focus=inp.id; return commit(); }
+}
+if(typeof document!=="undefined"){
+  document.addEventListener("click",e=>{
+    const el=e.target.closest("[data-act]");
+    if(!el) return;
+    if(el.dataset.act==="close-sheet" && e.target.closest("[data-stop]") && el.classList.contains("scrim")) return;
+    if(el.tagName==="A") return;
+    e.preventDefault(); act(el.dataset.act, el);
+  });
+  document.addEventListener("submit",e=>{ e.preventDefault(); onSubmit(e.target); });
+  document.addEventListener("input",e=>{
+    if(e.target.id==="hero-study") UI.heroText=e.target.value;
+    if(e.target.id==="ob-study"){ UI.obText=e.target.value; const l=document.getElementById("prog-list"); if(l) l.innerHTML=progListHTML(); const c=document.getElementById("prog-count"); if(c) c.textContent=progCount(); const b=document.getElementById("ob-go"); if(b) b.disabled=!norm(UI.obText); }
+  });
+  document.addEventListener("change",e=>{
+    const k=e.target.dataset.change; if(!k) return; const p=S.profile;
+    if(k==="pf-uni"){ UI.pfUni=e.target.value; return render(); }
+    if(k==="semester") p.semester=e.target.value;
+    if(k==="email") p.email=e.target.value.trim();
+    if(k==="cv"){ const f=e.target.files&&e.target.files[0]; p.cvName=f?f.name:""; }
+    commit();
+  });
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape" && UI.sheet){ UI.sheet=null; render(); } });
+  render();
+  loadLiveJobs();
+}
+/* Henter rigtige job fra data/jobs.json, som jobindsamleren skriver. Findes filen ikke, vises eksempeljob. */
+async function loadLiveJobs(){
+  try{
+    const res = await fetch("data/jobs.json",{cache:"no-store"});
+    if(!res.ok) return;
+    const data = await res.json();
+    if(!Array.isArray(data) || !data.length) return;
+    const t = Date.now();
+    const live = data.filter(j=>j && j.title && j.id && FAM[j.fam]).map(j=>({...j,
+      sec:(j.sec||[]).filter(f=>FAM[f]), skills:j.skills||[], hMin:j.hMin||0, hMax:j.hMax||0,
+      postedH: j.postedAt ? Math.max(0,Math.round((t-Date.parse(j.postedAt))/36e5)) : 999,
+      deadline: j.rolling ? null : j.deadlineAt ? Math.max(0,Math.ceil((Date.parse(j.deadlineAt)-t)/864e5)) : null,
+      industry: j.industry||"Andet", live:true}));
+    if(!live.length) return;
+    JOBS.length=0; JOBS.push(...live);
+    INDUSTRIES.length=0; INDUSTRIES.push(...[...new Set(JOBS.map(j=>j.industry))].sort((a,b)=>a.localeCompare(b,"da")));
+    LIVE=true; render();
+  }catch(e){}
+}
+</script>
+</body>
+</html>
