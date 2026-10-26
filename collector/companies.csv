@@ -123,40 +123,6 @@ Region Sjælland,https://www.regionsjaelland.dk,Sorø,cph,Sundhed
 Region Syddanmark,https://regionsyddanmark.dk,Vejle,ode,Sundhed
 Region Midtjylland,https://www.rm.dk,Viborg,aar,Sundhed
 Region Nordjylland,https://rn.dk,Aalborg,aal,Sundhed
-Københavns Kommune,https://www.kk.dk,København,cph,Offentlig
-Aarhus Kommune,https://www.aarhus.dk,Aarhus,aar,Offentlig
-Odense Kommune,https://www.odense.dk,Odense,ode,Offentlig
-Aalborg Kommune,https://www.aalborg.dk,Aalborg,aal,Offentlig
-Frederiksberg Kommune,https://www.frederiksberg.dk,Frederiksberg,cph,Offentlig
-Gentofte Kommune,https://www.gentofte.dk,Gentofte,cph,Offentlig
-Gladsaxe Kommune,https://gladsaxe.dk,Søborg,cph,Offentlig
-Lyngby-Taarbæk Kommune,https://www.ltk.dk,Lyngby,cph,Offentlig
-Rudersdal Kommune,https://www.rudersdal.dk,Holte,cph,Offentlig
-Ballerup Kommune,https://ballerup.dk,Ballerup,cph,Offentlig
-Herlev Kommune,https://www.herlev.dk,Herlev,cph,Offentlig
-Hvidovre Kommune,https://www.hvidovre.dk,Hvidovre,cph,Offentlig
-Brøndby Kommune,https://www.brondby.dk,Brøndby,cph,Offentlig
-Tårnby Kommune,https://www.taarnby.dk,Kastrup,cph,Offentlig
-Høje-Taastrup Kommune,https://www.htk.dk,Taastrup,cph,Offentlig
-Roskilde Kommune,https://www.roskilde.dk,Roskilde,cph,Offentlig
-Køge Kommune,https://www.koege.dk,Køge,cph,Offentlig
-Hillerød Kommune,https://www.hillerod.dk,Hillerød,cph,Offentlig
-Helsingør Kommune,https://www.helsingor.dk,Helsingør,cph,Offentlig
-Furesø Kommune,https://www.furesoe.dk,Farum,cph,Offentlig
-Egedal Kommune,https://www.egedalkommune.dk,Ølstykke,cph,Offentlig
-Vejle Kommune,https://www.vejle.dk,Vejle,ode,Offentlig
-Kolding Kommune,https://www.kolding.dk,Kolding,ode,Offentlig
-Esbjerg Kommune,https://www.esbjerg.dk,Esbjerg,ode,Offentlig
-Horsens Kommune,https://horsens.dk,Horsens,aar,Offentlig
-Randers Kommune,https://www.randers.dk,Randers,aar,Offentlig
-Silkeborg Kommune,https://silkeborgkommune.dk,Silkeborg,aar,Offentlig
-Herning Kommune,https://www.herning.dk,Herning,aar,Offentlig
-Viborg Kommune,https://viborg.dk,Viborg,aar,Offentlig
-Næstved Kommune,https://www.naestved.dk,Næstved,cph,Offentlig
-Slagelse Kommune,https://www.slagelse.dk,Slagelse,cph,Offentlig
-Holbæk Kommune,https://holbaek.dk,Holbæk,cph,Offentlig
-Sønderborg Kommune,https://sonderborgkommune.dk,Sønderborg,ode,Offentlig
-Svendborg Kommune,https://www.svendborg.dk,Svendborg,ode,Offentlig
 Skatteforvaltningen,https://www.skat.dk,København,cph,Offentlig
 Folketinget,https://www.ft.dk,København,cph,Offentlig
 Danmarks Statistik,https://www.dst.dk,København,cph,Offentlig
@@ -199,3 +165,157 @@ Mellemfolkeligt Samvirke,https://www.ms.dk,København,cph,NGO
 WWF Verdensnaturfonden,https://www.wwf.dk,København,cph,NGO
 Kræftens Bekæmpelse,https://www.cancer.dk,København,cph,NGO
 Redpill Linpro,https://careers.redpill-linpro.com,København,cph,IT og software
+Albertslund Kommune,https://www.albertslund.dk,Albertslund,cph,Offentlig
+Allerød Kommune,https://www.alleroed.dk,Allerød,cph,Offentlig
+Assens Kommune,https://www.assens.dk,Assens,ode,Offentlig
+Ballerup Kommune,https://www.ballerup.dk,Ballerup,cph,Offentlig
+Billund Kommune,https://www.billund.dk,Billund,ode,Offentlig
+Bornholm Kommune,https://www.brk.dk,Bornholm,cph,Offentlig
+Brøndby Kommune,https://www.brondby.dk,Brøndby,cph,Offentlig
+Brønderslev Kommune,https://www.bronderslev.dk,Brønderslev,aal,Offentlig
+Dragør Kommune,https://www.dragoer.dk,Dragør,cph,Offentlig
+Egedal Kommune,https://www.egedalkommune.dk,Egedal,cph,Offentlig
+Esbjerg Kommune,https://www.esbjerg.dk,Esbjerg,ode,Offentlig
+Fanø Kommune,https://www.fanoe.dk,Fanø,ode,Offentlig
+Favrskov Kommune,https://www.favrskov.dk,Favrskov,aar,Offentlig
+Faxe Kommune,https://www.faxekommune.dk,Faxe,cph,Offentlig
+Fredensborg Kommune,https://www.fredensborg.dk,Fredensborg,cph,Offentlig
+Fredericia Kommune,https://www.fredericia.dk,Fredericia,ode,Offentlig
+Frederiksberg Kommune,https://www.frederiksberg.dk,Frederiksberg,cph,Offentlig
+Frederikshavn Kommune,https://www.frederikshavn.dk,Frederikshavn,aal,Offentlig
+Frederikssund Kommune,https://www.frederikssund.dk,Frederikssund,cph,Offentlig
+Furesø Kommune,https://www.furesoe.dk,Furesø,cph,Offentlig
+Faaborg-Midtfyn Kommune,https://www.fmk.dk,Faaborg-Midtfyn,ode,Offentlig
+Gentofte Kommune,https://www.gentofte.dk,Gentofte,cph,Offentlig
+Gladsaxe Kommune,https://www.gladsaxe.dk,Gladsaxe,cph,Offentlig
+Glostrup Kommune,https://www.glostrup.dk,Glostrup,cph,Offentlig
+Greve Kommune,https://www.greve.dk,Greve,cph,Offentlig
+Gribskov Kommune,https://www.gribskov.dk,Gribskov,cph,Offentlig
+Guldborgsund Kommune,https://www.guldborgsund.dk,Guldborgsund,cph,Offentlig
+Haderslev Kommune,https://www.haderslev.dk,Haderslev,ode,Offentlig
+Halsnæs Kommune,https://www.halsnaes.dk,Halsnæs,cph,Offentlig
+Hedensted Kommune,https://www.hedensted.dk,Hedensted,aar,Offentlig
+Helsingør Kommune,https://www.helsingor.dk,Helsingør,cph,Offentlig
+Herlev Kommune,https://www.herlev.dk,Herlev,cph,Offentlig
+Herning Kommune,https://www.herning.dk,Herning,aar,Offentlig
+Hillerød Kommune,https://www.hillerod.dk,Hillerød,cph,Offentlig
+Hjørring Kommune,https://www.hjoerring.dk,Hjørring,aal,Offentlig
+Holbæk Kommune,https://www.holbaek.dk,Holbæk,cph,Offentlig
+Holstebro Kommune,https://www.holstebro.dk,Holstebro,aar,Offentlig
+Horsens Kommune,https://www.horsens.dk,Horsens,aar,Offentlig
+Hvidovre Kommune,https://www.hvidovre.dk,Hvidovre,cph,Offentlig
+Høje-Taastrup Kommune,https://www.htk.dk,Høje-Taastrup,cph,Offentlig
+Hørsholm Kommune,https://www.horsholm.dk,Hørsholm,cph,Offentlig
+Ikast-Brande Kommune,https://www.ikast-brande.dk,Ikast-Brande,aar,Offentlig
+Ishøj Kommune,https://www.ishoj.dk,Ishøj,cph,Offentlig
+Jammerbugt Kommune,https://www.jammerbugt.dk,Jammerbugt,aal,Offentlig
+Kalundborg Kommune,https://www.kalundborg.dk,Kalundborg,cph,Offentlig
+Kerteminde Kommune,https://www.kerteminde.dk,Kerteminde,ode,Offentlig
+Kolding Kommune,https://www.kolding.dk,Kolding,ode,Offentlig
+Københavns Kommune,https://www.kk.dk,København,cph,Offentlig
+Køge Kommune,https://www.koege.dk,Køge,cph,Offentlig
+Langeland Kommune,https://www.langelandkommune.dk,Langeland,ode,Offentlig
+Lejre Kommune,https://www.lejre.dk,Lejre,cph,Offentlig
+Lemvig Kommune,https://www.lemvig.dk,Lemvig,aar,Offentlig
+Lolland Kommune,https://www.lolland.dk,Lolland,cph,Offentlig
+Lyngby-Taarbæk Kommune,https://www.ltk.dk,Lyngby-Taarbæk,cph,Offentlig
+Læsø Kommune,https://www.laesoe.dk,Læsø,aal,Offentlig
+Mariagerfjord Kommune,https://www.mariagerfjord.dk,Mariagerfjord,aal,Offentlig
+Middelfart Kommune,https://www.middelfart.dk,Middelfart,ode,Offentlig
+Morsø Kommune,https://www.mors.dk,Morsø,aal,Offentlig
+Norddjurs Kommune,https://www.norddjurs.dk,Norddjurs,aar,Offentlig
+Nordfyns Kommune,https://www.nordfynskommune.dk,Nordfyns,ode,Offentlig
+Nyborg Kommune,https://www.nyborg.dk,Nyborg,ode,Offentlig
+Næstved Kommune,https://www.naestved.dk,Næstved,cph,Offentlig
+Odder Kommune,https://www.odder.dk,Odder,aar,Offentlig
+Odense Kommune,https://www.odense.dk,Odense,ode,Offentlig
+Odsherred Kommune,https://www.odsherred.dk,Odsherred,cph,Offentlig
+Randers Kommune,https://www.randers.dk,Randers,aar,Offentlig
+Rebild Kommune,https://www.rebild.dk,Rebild,aal,Offentlig
+Ringkøbing-Skjern Kommune,https://www.rksk.dk,Ringkøbing-Skjern,aar,Offentlig
+Ringsted Kommune,https://www.ringsted.dk,Ringsted,cph,Offentlig
+Roskilde Kommune,https://www.roskilde.dk,Roskilde,cph,Offentlig
+Rudersdal Kommune,https://www.rudersdal.dk,Rudersdal,cph,Offentlig
+Rødovre Kommune,https://www.rk.dk,Rødovre,cph,Offentlig
+Samsø Kommune,https://www.samsoe.dk,Samsø,aar,Offentlig
+Silkeborg Kommune,https://www.silkeborg.dk,Silkeborg,aar,Offentlig
+Skanderborg Kommune,https://www.skanderborg.dk,Skanderborg,aar,Offentlig
+Skive Kommune,https://www.skive.dk,Skive,aar,Offentlig
+Slagelse Kommune,https://www.slagelse.dk,Slagelse,cph,Offentlig
+Solrød Kommune,https://www.solrod.dk,Solrød,cph,Offentlig
+Sorø Kommune,https://www.soroe.dk,Sorø,cph,Offentlig
+Stevns Kommune,https://www.stevns.dk,Stevns,cph,Offentlig
+Struer Kommune,https://www.struer.dk,Struer,aar,Offentlig
+Svendborg Kommune,https://www.svendborg.dk,Svendborg,ode,Offentlig
+Syddjurs Kommune,https://www.syddjurs.dk,Syddjurs,aar,Offentlig
+Sønderborg Kommune,https://www.sonderborgkommune.dk,Sønderborg,ode,Offentlig
+Thisted Kommune,https://www.thisted.dk,Thisted,aal,Offentlig
+Tønder Kommune,https://www.toender.dk,Tønder,ode,Offentlig
+Tårnby Kommune,https://www.taarnby.dk,Tårnby,cph,Offentlig
+Vallensbæk Kommune,https://www.vallensbaek.dk,Vallensbæk,cph,Offentlig
+Varde Kommune,https://www.vardekommune.dk,Varde,ode,Offentlig
+Vejen Kommune,https://www.vejen.dk,Vejen,ode,Offentlig
+Vejle Kommune,https://www.vejle.dk,Vejle,ode,Offentlig
+Vesthimmerlands Kommune,https://www.vesthimmerland.dk,Vesthimmerlands,aal,Offentlig
+Viborg Kommune,https://www.viborg.dk,Viborg,aar,Offentlig
+Vordingborg Kommune,https://www.vordingborg.dk,Vordingborg,cph,Offentlig
+Ærø Kommune,https://www.aeroekommune.dk,Ærø,ode,Offentlig
+Aabenraa Kommune,https://www.aabenraa.dk,Aabenraa,ode,Offentlig
+Aalborg Kommune,https://www.aalborg.dk,Aalborg,aal,Offentlig
+Aarhus Kommune,https://www.aarhus.dk,Aarhus,aar,Offentlig
+Godt Smil Tandlægerne,https://www.godtsmil.dk,København,cph,Sundhed
+ORIS Tandlægerne,https://www.oris.dk,København,cph,Sundhed
+Tandlægen.dk,https://www.tandlaegen.dk,København,cph,Sundhed
+Colosseum Tandlægerne,https://www.colosseumklinikken.dk,Hellerup,cph,Sundhed
+Capio Danmark,https://www.capio.dk,Hellerup,cph,Sundhed
+Aleris,https://www.aleris.dk,København,cph,Sundhed
+Privathospitalet Kollund,https://www.kollund.dk,Kollund,ode,Sundhed
+Apotekerforeningen,https://www.apotekerforeningen.dk,København,cph,Sundhed
+Pharmadanmark,https://www.pharmadanmark.dk,København,cph,Interesseorganisation
+Lægeforeningen,https://www.laeger.dk,København,cph,Interesseorganisation
+Dansk Sygeplejeråd,https://dsr.dk,København,cph,Interesseorganisation
+BUPL,https://bupl.dk,København,cph,Interesseorganisation
+FOA,https://www.foa.dk,København,cph,Interesseorganisation
+Akademikerne,https://www.ac.dk,København,cph,Interesseorganisation
+Prosa,https://www.prosa.dk,København,cph,Interesseorganisation
+Lidl Danmark,https://www.lidl.dk,Køge,cph,Detailhandel
+REMA 1000,https://www.rema1000.dk,Odense,ode,Detailhandel
+Normal,https://www.normal.dk,Aarhus,aar,Detailhandel
+Søstrene Grene,https://sostrenegrene.com,Aarhus,aar,Detailhandel
+Magasin,https://www.magasin.dk,København,cph,Detailhandel
+Elgiganten,https://www.elgiganten.dk,Glostrup,cph,Detailhandel
+Power,https://www.power.dk,Brøndby,cph,Detailhandel
+IKEA Danmark,https://www.ikea.com/dk/da/,Taastrup,cph,Detailhandel
+7-Eleven Danmark,https://www.7-eleven.dk,København,cph,Detailhandel
+Joe & The Juice,https://www.joejuice.com,København,cph,Service
+Tivoli,https://www.tivoli.dk,København,cph,Oplevelser
+Zalando Danmark,https://jobs.zalando.com,København,cph,Detailhandel
+Boozt,https://www.booztgroup.com,København,cph,Detailhandel
+Nemlig.com,https://www.nemlig.com,Brøndby,cph,Detailhandel
+Wolt Danmark,https://careers.wolt.com,København,cph,Tech
+Just Eat,https://www.just-eat.dk,København,cph,Tech
+Vivino,https://www.vivino.com,København,cph,Tech
+Unwrapped,https://unwrapped.dk,København,cph,Tech
+Kahoot,https://kahoot.com,København,cph,Tech
+Danske Spil,https://danskespil.dk,Brøndby,cph,Underholdning
+Dansk Supermarked,https://sallinggroup.com,Aarhus,aar,Detailhandel
+Spar Nord,https://www.sparnord.dk,Aalborg,aal,Finans
+Ringkjøbing Landbobank,https://www.landbobanken.dk,Ringkøbing,aar,Finans
+Vestjysk Bank,https://www.vestjyskbank.dk,Lemvig,aar,Finans
+Lån & Spar Bank,https://www.lsb.dk,København,cph,Finans
+Topdanmark,https://www.topdanmark.dk,Ballerup,cph,Pension og forsikring
+Willis Towers Watson Danmark,https://www.wtwco.com/da-dk,København,cph,Rådgivning
+Accenture Danmark,https://www.accenture.com/dk-en,København,cph,Rådgivning
+McKinsey København,https://www.mckinsey.com/dk,København,cph,Rådgivning
+Boston Consulting Group,https://careers.bcg.com,København,cph,Rådgivning
+Bain & Company,https://www.bain.com,København,cph,Rådgivning
+Kammeradvokaten,https://www.kammeradvokaten.dk,København,cph,Advokat
+Kromann Reumert,https://www.kromannreumert.com,København,cph,Advokat
+Gorrissen Federspiel,https://gorrissenfederspiel.com,København,cph,Advokat
+Bech-Bruun,https://www.bechbruun.com,København,cph,Advokat
+Plesner,https://www.plesner.com,København,cph,Advokat
+Accura,https://www.accura.dk,København,cph,Advokat
+DLA Piper Danmark,https://www.dlapiper.com,København,cph,Advokat
+Mazanti-Andersen,https://www.mazanti.dk,København,cph,Advokat
+Lundgrens,https://www.lundgrens.dk,Hellerup,cph,Advokat
+Horten,https://www.horten.dk,Hellerup,cph,Advokat
