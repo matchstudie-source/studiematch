@@ -1,6 +1,6 @@
-# Jobindsamling 2026-10-26 21:13 UTC
+# Jobindsamling 2026-10-26 21:47 UTC
 
-152 studiejob gemt. AI-kald i denne kørsel: 0.
+160 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -64,7 +64,7 @@
 | PKA | hrmanager | 0 | 0 |  |
 | Alka | rmk | 8 | 5 |  |
 | Gjensidige | rmk | 3 | 2 |  |
-| LB Forsikring | emply | 0 | 0 |  |
+| LB Forsikring | emply | 1 | 1 |  |
 | KPMG Danmark | hrmanager | 18 | 1 |  |
 | BDO Danmark | emply | 0 | 0 |  |
 | twoday | teamtailor | 12 | 0 |  |
@@ -84,19 +84,19 @@
 | Aalborg Kommune | emply | 0 | 0 |  |
 | Frederiksberg Kommune | emply | 0 | 0 |  |
 | Hvidovre Kommune | hrmanager | 30 | 0 |  |
-| Brøndby Kommune | emply | 0 | 0 |  |
-| Næstved Kommune | emply | 0 | 0 |  |
+| Brøndby Kommune | emply | 1 | 1 |  |
+| Næstved Kommune | emply | 1 | 1 |  |
 | Holbæk Kommune | emply | 0 | 0 |  |
 | Svendborg Kommune | emply | 0 | 0 |  |
 | Politiet | rmk | 12 | 8 |  |
 | Forbrugerrådet Tænk | hrmanager | 2 | 0 |  |
 | Roskilde Universitet | hrmanager | 6 | 1 |  |
 | IT-Universitetet | hrmanager | 5 | 2 |  |
-| Københavns Professionshøjskole | emply | 0 | 0 |  |
+| Københavns Professionshøjskole | emply | 3 | 0 |  |
 | Statslige arbejdsgivere | hrmanager | 78 | 5 |  |
-| VIA University College | emply | 0 | 0 |  |
+| VIA University College | emply | 1 | 1 |  |
 | UCN | emply | 0 | 0 |  |
-| Erhvervsakademi København | emply | 0 | 0 |  |
+| Erhvervsakademi København | emply | 2 | 1 |  |
 | Dansk Røde Kors | emply | 0 | 0 |  |
 | Mellemfolkeligt Samvirke | hrmanager | 0 | 0 | fejl: HTTPError |
 | Kræftens Bekæmpelse | hrmanager | 6 | 2 |  |
@@ -129,15 +129,15 @@
 | Nordfyns Kommune | emply | 0 | 0 |  |
 | Nyborg Kommune | emply | 0 | 0 |  |
 | Odder Kommune | hrmanager | 23 | 0 |  |
-| Ringkøbing-Skjern Kommune | emply | 0 | 0 |  |
+| Ringkøbing-Skjern Kommune | emply | 2 | 1 |  |
 | Solrød Kommune | emply | 0 | 0 |  |
 | Stevns Kommune | emply | 0 | 0 |  |
 | Struer Kommune | emply | 0 | 0 |  |
 | Syddjurs Kommune | emply | 0 | 0 |  |
 | Tønder Kommune | emply | 0 | 0 |  |
-| Varde Kommune | emply | 0 | 0 |  |
+| Varde Kommune | emply | 1 | 1 |  |
 | Tandlægen.dk | hrmanager | 12 | 0 |  |
-| Capio Danmark | emply | 0 | 0 |  |
+| Capio Danmark | emply | 1 | 1 |  |
 | Aleris | hrmanager | 1 | 0 |  |
 | Lidl Danmark | sitemap | 0 | 0 |  |
 | REMA 1000 | hrmanager | 73 | 0 |  |

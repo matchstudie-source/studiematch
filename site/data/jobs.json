@@ -2641,6 +2641,37 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Data Governance",
+  "co": "LB Forsikring",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "education",
+   "operations"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "R",
+   "PowerPoint",
+   "Dokumentation"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Rekrutteringsprocessen Din ansøgning Samtaler Log ind Min profil Min profil Studentermedhjælper til Data Governance Vil du gerne forandre og være noget særligt for andre?",
+  "req": null,
+  "url": "https://lbforsikring.career.emply.com/da/ad/studentermedhjaelper-til-data-governance/jmqin4",
+  "enrichedBy": "regler",
+  "id": "xd3bc1a4a264a",
+  "live": true
+ },
+ {
   "title": "Audit Internship 2027 - Copenhagen",
   "co": "KPMG Danmark",
   "city": "Copenhagen",
@@ -3053,6 +3084,62 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144661&DepartmentId=22761&MediaId=5",
   "enrichedBy": "regler",
   "id": "x3f053d2292b8",
+  "live": true
+ },
+ {
+  "title": "Stilling som studentermedhjælper i Kultur, idræt og fritidsforvaltning Brøndby kommune",
+  "co": "Brøndby Kommune",
+  "city": "Brøndby",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Statistik",
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vælg hvilke cookies du vil sætte. Nødvendige Disse cookies er nødvendige for, at hjemmesiden fungerer korrekt, og de kan ikke deaktiveres. Fra Til Statistik Statistikken er anonym og uden persondata.",
+  "req": null,
+  "url": "https://brondby.career.emply.com/ad/stilling-som-studentermedhjaelper-i-kultur-idraet-og-fritidsforvaltning-brondby-ko/ighuvb",
+  "enrichedBy": "regler",
+  "id": "x3ba0ba81a7ae",
+  "live": true
+ },
+ {
+  "title": "Sygeplejestuderende søges som afløser til Akutpladserne",
+  "co": "Næstved Kommune",
+  "city": "Næstved",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "health",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger https://www.naestved.dk/kommunen/vejledning-om/cookiepolitik Jobagent Log ind Min profil Min profil Sygeplejestuderende søges som afløser til Akutpladserne Har du lyst til et spændende og…",
+  "req": "sygepleje",
+  "url": "https://naestved.career.emply.com/ad/sygeplejestuderende-soges-som-afloser-til-akutpladserne/c95u2c",
+  "enrichedBy": "regler",
+  "id": "x489407ada2fd",
   "live": true
  },
  {
@@ -3493,6 +3580,64 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til HR, VIA University College",
+  "co": "VIA University College",
+  "city": "Aarhus",
+  "region": "aar",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "education",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "Løn",
+   "Rekruttering"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Persondatapolitik Log ind Min profil Min profil Studentermedhjælper til HR, VIA University College Har du lyst til at blive en del af en HR-afdeling, hvor der er mulighed for at bringe dit studie i…",
+  "req": null,
+  "url": "https://via.career.emply.com/ad/studentermedhjaelper-til-hr-via-university-college/mnh4i0",
+  "enrichedBy": "regler",
+  "id": "x6960129e504c",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til økonomiafdelingen",
+  "co": "Erhvervsakademi København",
+  "city": "København",
+  "region": "cph",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Regnskab"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Tilmeld dig JobAgent ledige stillinger Dansk English Log ind Min profil Min profil Studentermedhjælper til økonomiafdelingen Få praktisk erfaring med økonomi og regnskab i et fleksibelt studiejob, hvor du får ansvar for…",
+  "req": null,
+  "url": "https://ek.career.emply.com/da/ad/studentermedhjaelper-til-okonomiafdelingen/pxybc1",
+  "enrichedBy": "regler",
+  "id": "xa6bfa322b85d",
+  "live": true
+ },
+ {
   "title": "Praktikanter til forebyggelsesopgaver i Kræftens Bekæmpelse",
   "co": "Kræftens Bekæmpelse",
   "city": "Hovedstaden",
@@ -3824,6 +3969,88 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3319&ProjectId=143971&DepartmentId=18999&MediaId=5",
   "enrichedBy": "regler",
   "id": "x44d904edd1c6",
+  "live": true
+ },
+ {
+  "title": "uddannet SOSU, ufaglært, efterlønner eller studerende",
+  "co": "Ringkøbing-Skjern Kommune",
+  "city": "Ringkøbing-Skjern",
+  "region": "aar",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "health"
+  ],
+  "famConf": "title",
+  "skills": [
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Jobagent Log ind Min profil Min profil uddannet SOSU, ufaglært, efterlønner eller studerende Gør en forskel, når det passer dig: Bliv vikar på Centerparken Leder du efter et studiejob med mening?",
+  "req": null,
+  "url": "https://rksk-v2.career.emply.com/ad/uddannet-sosu-ufaglaert-efterlonner-eller-studerende/02058v",
+  "enrichedBy": "regler",
+  "id": "x6d11cf6e94d0",
+  "live": true
+ },
+ {
+  "title": "Praktik og opgaveskrivning for studerende ved universiteterne",
+  "co": "Varde Kommune",
+  "city": "Varde",
+  "region": "ode",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "procurement",
+   "finance"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Jobagent Log ind Min profil Min profil Praktik og opgaveskrivning for studerende ved universiteterne Som studerende på universitetet, administrationsbachelor mv., har du mulighed for et samarbejde med…",
+  "req": null,
+  "url": "https://varde.career.emply.com/ad/praktik-og-opgaveskrivning-for-studerende-ved-universiteterne/ablgx7",
+  "enrichedBy": "regler",
+  "id": "xf99310ad50d8",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Marketing & Kommunikation hos Capio Privathospital",
+  "co": "Capio Danmark",
+  "city": "Hellerup",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "health"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Sociale medier"
+  ],
+  "industry": "Sundhed",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Upload CV & Jobagent Dansk English Log ind Min profil Min profil Studentermedhjælper til Marketing & Kommunikation hos Capio Privathospital Har du flair for WordPress, et godt grafisk øje og lyst til…",
+  "req": null,
+  "url": "https://capio.career.emply.com/da/ad/studentermedhjaelper-til-marketing-kommunikation-hos-capio-privathospital/467cos",
+  "enrichedBy": "regler",
+  "id": "x6d9f6ec9cb71",
   "live": true
  },
  {

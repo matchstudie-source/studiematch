@@ -50,6 +50,10 @@ Bruges til at tjekke, om filteret er for strengt.
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |
 | Aarhus Kommune | Studiepraktik i Kommuneplanlægning: Vær med til at forme fremtidens Aarhus | ikke et studiejob |
+| Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
+| Københavns Professionshøjskole | Studievejleder til Studie- og karrierevejledningen på Københavns Professionshøjskole | ikke et studiejob |
+| Københavns Professionshøjskole | Studenterundervisere til psykomotorikuddannelsen | ikke et studiejob |
 | Statslige arbejdsgivere | Studieadjunkt i Play Design til Designskolen Kolding | ikke et studiejob |
+| Erhvervsakademi København | Specialkonsulent til Erhvervsakademi Københavns Studieadministration | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
