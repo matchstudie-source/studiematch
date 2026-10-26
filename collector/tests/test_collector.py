@@ -310,5 +310,20 @@ class FixTests(unittest.TestCase):
                          [("Statslige arbejdsgivere", "hrmanager"), ("Pleo", "ashby"), ("ALK", "teamtailor")])
 
 
+class EmplyTests(unittest.TestCase):
+    def test_links_and_ad(self):
+        listing = ('<a href="/ad/studentermedhjaelper-til-kommunikation/wwi4fe/da">Job</a>'
+                   '<a href="/da/jobagent">Jobagent</a><a href="https://andet.dk/ad/x/y">Ude</a>')
+        self.assertEqual(sources.emply_ad_links(listing, "https://fh.career.emply.com/da/ledige-stillinger"),
+                         ["https://fh.career.emply.com/ad/studentermedhjaelper-til-kommunikation/wwi4fe/da"])
+        ad = ('<html><head><meta property="og:title" content="Studentermedhjælper til kommunikation I Career Site"></head>'
+              '<body><main><h1>Studentermedhjælper til kommunikation</h1><p>10-15 timer om ugen ved siden af dit studie.</p></main></body></html>')
+        jobs = sources.parse_emply_ad(ad, "https://fh.career.emply.com/ad/x/y/da", "Forsyning Helsingør", "Karriereside")
+        self.assertEqual(jobs[0]["title"], "Studentermedhjælper til kommunikation")
+        self.assertIn("10-15 timer", jobs[0]["description"])
+        expired = '<html><body><main>Ansøgningsfristen på det pågældende job kan være udløbet eller linket kan være i stykker..</main></body></html>'
+        self.assertEqual(sources.parse_emply_ad(expired, "u", "c", "l"), [])
+
+
 if __name__ == "__main__":
     unittest.main()

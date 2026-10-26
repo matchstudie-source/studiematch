@@ -498,10 +498,60 @@ def fetch_sitemap(site_url: str, company: str, source_label: str, limit: int = 4
 
 
 # ---------- Emply (karrieresider på <kunde>.career.emply.com eller eget domæne) ----------
-def fetch_emply(listing_url: str, company: str, source_label: str) -> list[dict]:
-    """Emply-jobopslag ligger under /ad/ og har strukturerede jobdata. Virker listen ikke, prøves sitemap."""
+EMPLY_LISTINGS = ("/da/ledige-stillinger", "/ledige-stillinger", "/da/hjem", "/en/vacancies", "/vacancies", "")
+EMPLY_AD = re.compile(r"/ad/[^/?#]+/[^/?#]+")
+EMPLY_EXPIRED = re.compile(r"ansøgningsfristen på det pågældende job kan være udløbet|linket kan være i stykker", re.I)
+
+
+def emply_ad_links(listing_html: str, listing_url: str) -> list[str]:
+    host = urlparse(listing_url).netloc
+    links = []
+    for a in BeautifulSoup(listing_html, "html.parser").find_all("a", href=True):
+        url = urljoin(listing_url, a["href"]).split("#")[0]
+        if urlparse(url).netloc == host and EMPLY_AD.search(urlparse(url).path) and url not in links:
+            links.append(url)
+    return links
+
+
+def parse_emply_ad(page_html: str, url: str, company: str, source_label: str) -> list[dict]:
+    """Strukturerede data hvis de findes, ellers sidens titel og tekst."""
+    jobs = parse_jobposting_jsonld(page_html, url, company, source_label)
+    if jobs:
+        return jobs
+    soup = BeautifulSoup(page_html, "html.parser")
+    text = re.sub(r"\s+", " ", (soup.find("main") or soup.body or soup).get_text(" ")).strip()
+    if EMPLY_EXPIRED.search(text):
+        return []
+    og = soup.find("meta", attrs={"property": "og:title"}) or soup.find("meta", attrs={"name": "og:title"})
+    title = (og.get("content") if og else "") or (soup.h1.get_text(" ", strip=True) if soup.h1 else "")
+    title = re.sub(r"\s*[|I]\s*Career Site\s*$", "", title).strip()
+    if not title or title.lower() in ("career site", "ledige stillinger"):
+        return []
+    return [{"title": title, "company": company, "location": "", "description": text[:5000], "url": url,
+             "posted_at": None, "deadline_at": None, "source": source_label}]
+
+
+def fetch_emply(listing_url: str, company: str, source_label: str, limit: int = 40) -> list[dict]:
+    """Finder /ad/-links på Emplys joblister og læser hvert opslag. Virker det ikke, prøves sitemap."""
     url = listing_url if "://" in listing_url else f"https://{listing_url}.career.emply.com"
-    jobs = fetch_careerpage(url, company, source_label)
+    base = "{0.scheme}://{0.netloc}".format(urlparse(url))
+    pages = [url] + [base + p for p in EMPLY_LISTINGS if base + p != url]
+    links = []
+    for page in pages:
+        if not allowed_by_robots(page):
+            continue
+        try:
+            links += [l for l in emply_ad_links(_get(page).text, page) if l not in links]
+        except requests.RequestException:
+            continue
+        if len(links) >= limit:
+            break
+    jobs = []
+    for link in links[:limit]:
+        try:
+            jobs += parse_emply_ad(_get(link).text, link, company, source_label)
+        except requests.RequestException:
+            continue
     return jobs or fetch_sitemap(url, company, source_label)
 
 
