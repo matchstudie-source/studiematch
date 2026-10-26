@@ -107,6 +107,10 @@ Når en virksomhed mailer dig et studiejob, skriver du det ind her. Det kommer m
 
 ---
 
+## Test af matchningen
+
+`tests/match.test.mjs` tjekker feedet for 12 uddannelser (bl.a. Jura, Farmaci, GBE, Sygeplejerske, Pædagog, HA og Software) mod et frosset sæt rigtige job i `tests/fixtures/match_jobs.json`. Den kører automatisk på GitHub ved hver ændring (fanen Actions → Test). Bliver den rød, har en ændring gjort matchningen dårligere.
+
 ## Reglerne vi følger, når vi henter job
 
 - Vi bruger kun åbne feeds og API'er, som virksomhederne selv udgiver, og sider med strukturerede jobdata.
@@ -125,6 +129,7 @@ Profilen (uddannelse, timer, sprog, gemte job) ligger kun i den studerendes egen
 ```bash
 pip install -r collector/requirements.txt
 python -m unittest discover -s collector/tests -v   # test uden internet
+node tests/match.test.mjs                             # test matchningen med 12 uddannelser
 python collector/discover.py                         # finder jobsystemer (tilføj --merge for at gemme dem)
 python collector/collect.py                          # henter rigtige job
 cd site && python -m http.server 8000                 # åbn http://localhost:8000

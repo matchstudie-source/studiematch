@@ -25,6 +25,8 @@ jobs:
         run: pip install -r collector/requirements.txt
       - name: Test indsamleren
         run: python -m unittest discover -s collector/tests -v
+      - name: Test matchningen
+        run: node tests/match.test.mjs
       - name: Hent og berig job
         run: python collector/collect.py
         env:

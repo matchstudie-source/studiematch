@@ -738,7 +738,7 @@ function evaluate(job, c){
   if(job.hMax>p.hoursMax) score-=.04;
   score=clamp(score,0,1);
   /* Uden reel faglig sammenhæng vises jobbet ikke, uanset timer og interesser */
-  const level = affinity<.35 ? null : score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
+  const level = affinity<.45 ? null : score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
   const vocab=[]; for(const f in W){ if(W[f]>=.6) vocab.push(...(TITLE_KW[f]||[])); }
   const title=" "+job.title.toLowerCase()+" ";
   const obvious = vocab.some(k=>title.includes(k));

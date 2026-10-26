@@ -40,9 +40,9 @@ FAMILY_WORDS = {
     "customer": ["customer", "kunde", "support", "service", "reception", "call"],
     "legal": ["legal", "jura", "juridisk", "jurist", "advokat", "kontrakt", "contract", "compliance", "erhvervsjura", "opholds"],
     "research": ["research", "forskning", "laborator", "lab ", "videnskabelig"],
-    "engineering": ["mekanisk", "mechanical", "konstruktion", "cad", "ingeniør", "engineer", "elektronik", "electronics", "maskinmester", "skibsfører", "skibsofficer", "el-installatør", "elektriker", "bygningskonstruktør", "arkitekt", "tekniker"],
+    "engineering": ["mekanisk", "mechanical", "konstruktion", "cad", "ingeniør", "engineer", "elektronik", "electronics", "maskinmester", "skibsfører", "skibsofficer", "el-installatør", "elektriker", "bygningskonstruktør", "tekniker"],
     "health": ["sygepleje", "læge", "medicin", "patient", "hospital", "klinik", "sundhed", "pleje", "tandlæge", "tandpleje", "vagt"],
-    "education": ["pædagog", "lærer", "lektie", "undervis", "sfo", "skole", "børn", "instruktor", "teaching"],
+    "education": ["pædagog", "lærer", "lektie", "undervis", "sfo", "skole", "børn", "instruktor", "teaching", "tutor", "værksted"],
     "social": ["social", "bosted", "rådgiv", "familie", "udsatte"],
     "public": ["kommune", "styrelse", "ministeri", "region ", "offentlig", "forvaltning", "borgerservice", "sagsbehandl"],
 }
