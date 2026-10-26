@@ -94,7 +94,7 @@ FOREIGN_NORDIC_RE = re.compile(r"medarbetare|vi söker|tjänst|ansökan|söknad|
 def is_student_job(title: str, text: str, commitment: str = "") -> bool:
     if FOREIGN_NORDIC_RE.search(title) or len(FOREIGN_NORDIC_RE.findall(text[:2000])) >= 2:
         return False
-    if NOT_STUDENT_RE.search(title):
+    if NOT_STUDENT_RE.search(title) and not re.search(r"studenter|studentermedhjælp|student assistant|student worker", title, re.I):
         return False
     hours = detect_hours(text)
     if hours[0] >= 30 and not re.search(r"praktik|intern", title, re.I):

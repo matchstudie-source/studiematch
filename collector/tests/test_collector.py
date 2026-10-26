@@ -58,6 +58,7 @@ class EnrichTests(unittest.TestCase):
         self.assertFalse(enrich.is_student_job("Medarbejder til tværgående opgaver", "Vi samarbejder med mange studerende."))
         self.assertTrue(enrich.is_student_job("Medarbejder til kundeservice", "Et studiejob på 10-15 timer om ugen."))
         self.assertFalse(enrich.is_student_job("HR-studentmedarbetare, deltid", ""))
+        self.assertTrue(enrich.is_student_job("Studenterundervisere til psykomotorikuddannelsen", ""))
         self.assertFalse(enrich.is_student_job("Bæredygtighedskonsulent til klimaanalyse", "et studiejob for dig"))
         self.assertFalse(enrich.is_student_job("Fast weekend medarbejder søges", "studiejob ved siden af dit studie"))
         self.assertTrue(enrich.is_student_job("Studentermedarbejdere med viden om EU", ""))

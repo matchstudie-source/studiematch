@@ -526,7 +526,10 @@ _browser = None
 LAST_NOTE = {}  # kildens ref -> kort note til rapporten (fx "40 opslag, 2 ligner studiejob")
 
 
-def _render(url: str, wait_ms: int = 2500) -> str | None:
+LOAD_MORE = re.compile(r"vis flere|se flere|indlæs flere|hent flere|flere job|flere stillinger|load more|show more|see more|view more", re.I)
+
+
+def _render(url: str, wait_ms: int = 2500, load_more: bool = False) -> str | None:
     """Returnerer sidens HTML, efter JavaScript har kørt. None, hvis Playwright ikke er installeret."""
     global _browser
     try:
@@ -540,6 +543,24 @@ def _render(url: str, wait_ms: int = 2500) -> str | None:
         try:
             page.goto(url, wait_until="networkidle", timeout=30000)
             page.wait_for_timeout(wait_ms)
+            if load_more:
+                # Joblister viser ofte kun de første opslag; tryk "Vis flere" og rul, til der ikke kommer flere
+                last = -1
+                for _ in range(25):
+                    count = page.locator("a[href*='/ad/']").count()
+                    if count == last:
+                        break
+                    last = count
+                    page.mouse.wheel(0, 20000)
+                    button = page.get_by_role("button", name=LOAD_MORE)
+                    link = page.get_by_role("link", name=LOAD_MORE)
+                    for target in (button, link):
+                        if target.count():
+                            try:
+                                target.first.click(timeout=3000)
+                            except Exception:
+                                pass
+                    page.wait_for_timeout(1500)
             return page.content()
         finally:
             page.close()
@@ -547,8 +568,8 @@ def _render(url: str, wait_ms: int = 2500) -> str | None:
         return None
 
 
-def _page_html(url: str) -> str:
-    html_text = _render(url)
+def _page_html(url: str, load_more: bool = False) -> str:
+    html_text = _render(url, load_more=load_more)
     if html_text is None:
         html_text = _get(url).text
     else:
@@ -596,7 +617,7 @@ def fetch_emply(listing_url: str, company: str, source_label: str, limit: int = 
         if not allowed_by_robots(page):
             continue
         try:
-            found = emply_ad_links(_page_html(page), page)
+            found = emply_ad_links(_page_html(page, load_more=True), page)
         except requests.RequestException:
             continue
         links += [l for l in found if l not in links]
