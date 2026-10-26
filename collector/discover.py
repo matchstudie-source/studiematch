@@ -42,7 +42,9 @@ SIGNATURES = [
     ("hrmanager", re.compile(r"hr-manager\.net/jobportal\.svc/([\w-]+)", re.I), lambda m, page: m.group(1)),
     ("emply", re.compile(r"https?://([\w-]+)\.career\.emply\.com"), lambda m, page: m.group(0)),
     ("teamtailor", re.compile(r"https?://[\w-]+\.teamtailor\.com"), lambda m, page: m.group(0)),
+    ("ashby", re.compile(r"jobs\.ashbyhq\.com/([\w.-]+)"), lambda m, page: m.group(1)),
 ]
+CAREER_PAGE = re.compile(r"job|career|karriere|stilling|ledige|vacanc", re.I)
 IGNORED_REFS = {"greenhouse": {"embed", "js"}, "lever": {"v0"}, "smartrecruiters": {"widget", "static"}}
 
 
@@ -66,7 +68,8 @@ def detect(html: str, page_url: str) -> list[tuple[str, str]]:
             found.append((kind, r))
     low = html.lower()
     # Teamtailor på eget domæne (fx career.firma.dk): siden selv er karrieresiden
-    if not any(k == "teamtailor" for k, _ in found) and ("teamtailor-cdn" in low or "teamtailor.com/assets" in low):
+    if (not any(k == "teamtailor" for k, _ in found) and ("teamtailor-cdn" in low or "teamtailor.com/assets" in low)
+            and CAREER_PAGE.search(page_url)):
         found.append(("teamtailor", page_base(page_url)))
     # SAP SuccessFactors-karrieresider læses via sitemap
     if "rmkcdn.successfactors.com" in low or "successfactors.eu/career" in low or "successfactors.com/career" in low:
@@ -164,6 +167,7 @@ def main(argv: list[str]) -> int:
             continue
         kind, ref = found[0]  # første fund er det mest specifikke
         status = "kendt" if (kind, ref.lower()) in known or c["name"].lower() in known_names else "ny"
+        known.add((kind, ref.lower()))  # samme kilde må kun tilføjes én gang
         report.append((c["name"], f"{kind}: {ref}", status))
         rows.append({"name": c["name"], "source": kind, "ref": ref, "city": c.get("city", ""), "region": c.get("region", "") or "cph",
                      "industry": c.get("industry", ""), "src_label": "", "_status": status, "_found_on": where})

@@ -39,7 +39,29 @@ FETCHERS = {
     "workday": lambda e: sources.fetch_workday(e["ref"], e["name"]),
     "emply": lambda e: sources.fetch_emply(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
     "sitemap": lambda e: sources.fetch_sitemap(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
+    "ashby": lambda e: sources.fetch_ashby(e["ref"], e["name"]),
 }
+
+
+def normalize_sources(employers: list[dict]) -> list[dict]:
+    """Retter kendte fejl fra virksomhedsfinderen og fjerner kilder, der står flere gange."""
+    seen, out = set(), []
+    for e in employers:
+        e = dict(e)
+        src, ref = e.get("source", "").lower(), e.get("ref", "")
+        if src == "careerpage" and "jobs.ashbyhq.com" in ref:
+            e["source"], src = "ashby", "ashby"
+        if src == "hrmanager" and ref.lower() in sources.HRM_SHARED:
+            e["name"] = "Statslige arbejdsgivere"  # jobbene får den rigtige institution som navn
+            e["industry"] = e.get("industry") or "Offentlig"
+        if src == "teamtailor" and not re.search(r"teamtailor|career|job|karriere", ref, re.I):
+            continue  # fundet på forsiden i stedet for jobsiden (fx www.telenor.dk)
+        key = (src, ref.rstrip("/").lower())
+        if src != "evergreen" and key in seen:
+            continue
+        seen.add(key)
+        out.append(e)
+    return out
 
 
 def now() -> datetime:
@@ -99,7 +121,7 @@ def is_expired(job: dict) -> bool:
 
 
 def main() -> int:
-    employers = read_csv(EMPLOYERS)
+    employers = normalize_sources(read_csv(EMPLOYERS))
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     jobs, report_rows, ai_calls = [], [], 0

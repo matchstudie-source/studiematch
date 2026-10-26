@@ -75,12 +75,12 @@ class EndToEndTest(unittest.TestCase):
             emp = tmp / "employers.csv"
             emp.write_text(
                 "name,source,ref,city,region,industry,title,fam,sec,danish,hours,blurb,src_label\n"
-                "Eksempel A/S,teamtailor,x,,cph,Finans,,,,,,,\n"
+                "Eksempel A/S,teamtailor,https://eksempel.teamtailor.com,,cph,Finans,,,,,,,\n"
                 "Eksempel ApS,greenhouse,x,,cph,Tech,,,,,,,\n"
                 "Eksempel Lever,lever,x,,cph,Tech,,,,,,,\n"
                 "Børnehuset Eksempel,careerpage,x,,cph,Børn og unge,,,,,,,Kommunens jobportal\n"
                 "Region Test,evergreen,https://eksempel.dk/vikar,,ode,Sundhed,Vikar for studerende,health,,required,,Tag vagter.,Regionens vikarordning\n"
-                "Ødelagt kilde,teamtailor,x,,cph,Andet,,,,,,,\n",
+                "Ødelagt kilde,teamtailor,https://oedelagt.teamtailor.com,,cph,Andet,,,,,,,\n",
                 encoding="utf-8")
             originals = dict(collect.FETCHERS)
 
@@ -271,6 +271,36 @@ class DiscoverTests(unittest.TestCase):
             rows = collect.read_csv(tmp / "employers.csv")
             self.assertEqual([(r["name"], r["source"], r["ref"]) for r in rows], [("Eksempel", "lever", "eksempel")])
             self.assertIn("intet jobsystem fundet", (tmp / "report.md").read_text(encoding="utf-8"))
+
+
+class FixTests(unittest.TestCase):
+    def test_ashby(self):
+        data = {"jobs": [
+            {"title": "Finance Student Assistant", "location": "Copenhagen", "isListed": True, "employmentType": "PartTime",
+             "descriptionPlain": "Help our finance team 15 hours a week.", "jobUrl": "https://jobs.ashbyhq.com/eksempel/1",
+             "publishedAt": "2026-10-20T08:00:00.000+00:00"},
+            {"title": "Hidden", "isListed": False}]}
+        jobs = sources.parse_ashby_json(data, "Eksempel")
+        self.assertEqual([j["title"] for j in jobs], ["Finance Student Assistant"])
+        self.assertEqual(jobs[0]["commitment"], "PartTime")
+        self.assertTrue(jobs[0]["posted_at"].startswith("2026-10-20"))
+
+    def test_shared_hrmanager_uses_department(self):
+        xml = fixture("hrmanager.xml")
+        self.assertEqual(sources.parse_hrmanager_xml(xml, "Portal", shared=True)[0]["company"], "Økonomi")
+        self.assertEqual(sources.parse_hrmanager_xml(xml, "Portal")[0]["company"], "Portal")
+
+    def test_normalize_sources(self):
+        rows = [
+            {"name": "Skatteforvaltningen", "source": "hrmanager", "ref": "statensrekrutteringsloesning_tr"},
+            {"name": "Finansministeriet", "source": "hrmanager", "ref": "statensrekrutteringsloesning_tr"},
+            {"name": "Pleo", "source": "careerpage", "ref": "https://jobs.ashbyhq.com/pleo/abc"},
+            {"name": "Telenor", "source": "teamtailor", "ref": "https://www.telenor.dk"},
+            {"name": "ALK", "source": "teamtailor", "ref": "https://careers.alk.net"},
+        ]
+        out = collect.normalize_sources(rows)
+        self.assertEqual([(r["name"], r["source"]) for r in out],
+                         [("Statslige arbejdsgivere", "hrmanager"), ("Pleo", "ashby"), ("ALK", "teamtailor")])
 
 
 if __name__ == "__main__":

@@ -354,7 +354,12 @@ def _real_date(value: str | None) -> str | None:
     return d if d and not d.startswith("0001") else None
 
 
-def parse_hrmanager_xml(xml_text: str, company: str) -> list[dict]:
+# Fælles jobportaler, hvor mange arbejdsgivere slår op (fx alle statslige institutioner).
+# Her bruges afdelingens navn som arbejdsgiver i stedet for portalens navn.
+HRM_SHARED = {"statensrekrutteringsloesning_tr", "statens_erekruttering"}
+
+
+def parse_hrmanager_xml(xml_text: str, company: str, shared: bool = False) -> list[dict]:
     """Bemærk: listen indeholder også kontaktpersoner. Dem læser vi bevidst ikke."""
     root = ET.fromstring(xml_text)
     jobs = []
@@ -369,7 +374,7 @@ def parse_hrmanager_xml(xml_text: str, company: str) -> list[dict]:
         ad_text = " ".join(html_to_text(el.text) for el in ads.iter() if el.text and el.text.strip()) if ads is not None else ""
         jobs.append({
             "title": text("Name"),
-            "company": company,
+            "company": (text("Name", dept) or text("CustomerName") or company) if shared else company,
             "location": location,
             "description": " ".join(x for x in (html_to_text(text("ShortDescription")), ad_text) if x),
             "url": text("AdvertisementUrlSecure") or text("AdvertisementUrl"),
@@ -384,8 +389,10 @@ def fetch_hrmanager(customer: str, company: str) -> list[dict]:
     last_err = None
     for host in ("https://recruiter-api.hr-manager.net", "http://api.hr-manager.net"):
         try:
-            resp = _get(f"{host}/jobportal.svc/{customer}/positionlist/", params={"incads": 1})
-            return parse_hrmanager_xml(resp.text, company)
+            # Listen viser som standard kun 25 stillinger. Vi beder om flere; ukendte parametre ignoreres.
+            resp = _get(f"{host}/jobportal.svc/{customer}/positionlist/",
+                        params={"incads": 1, "pageSize": 500, "take": 500, "count": 500})
+            return parse_hrmanager_xml(resp.text, company, shared=customer.lower() in HRM_SHARED)
         except (requests.RequestException, ET.ParseError) as err:
             last_err = err
     raise last_err
@@ -402,7 +409,7 @@ def parse_workday_job(data: dict, public_url: str, company: str) -> dict:
     location = ", ".join(x for x in (info.get("location") or "", country) if x)
     return {
         "title": (info.get("title") or "").strip(),
-        "company": (data.get("hiringOrganization") or {}).get("name") or company,
+        "company": re.sub(r"^\d+\s+", "", (data.get("hiringOrganization") or {}).get("name") or "") or company,
         "location": location,
         "description": html_to_text(info.get("jobDescription")),
         "url": info.get("externalUrl") or public_url,
@@ -496,3 +503,37 @@ def fetch_emply(listing_url: str, company: str, source_label: str) -> list[dict]
     url = listing_url if "://" in listing_url else f"https://{listing_url}.career.emply.com"
     jobs = fetch_careerpage(url, company, source_label)
     return jobs or fetch_sitemap(url, company, source_label)
+
+
+# ---------- Ashby (offentligt job board-API) ----------
+ASHBY_URL = re.compile(r"jobs\.ashbyhq\.com/([\w.-]+)")
+
+
+def parse_ashby_json(data: dict, company: str) -> list[dict]:
+    jobs = []
+    for j in data.get("jobs", []):
+        if j.get("isListed") is False:
+            continue
+        addr = ((j.get("address") or {}).get("postalAddress") or {})
+        location = ", ".join(x for x in (j.get("location") or addr.get("addressLocality"), addr.get("addressCountry")) if x)
+        if not location and j.get("isRemote"):
+            location = "Remote"
+        jobs.append({
+            "title": (j.get("title") or "").strip(),
+            "company": company,
+            "location": location,
+            "description": (j.get("descriptionPlain") or html_to_text(j.get("descriptionHtml")) or "").strip(),
+            "url": j.get("jobUrl") or j.get("applyUrl") or "",
+            "posted_at": _parse_any_date(j.get("publishedAt")),
+            "deadline_at": None,
+            "source": "Virksomhedens rekrutteringssystem",
+            "commitment": j.get("employmentType") or "",
+        })
+    return jobs
+
+
+def fetch_ashby(ref: str, company: str) -> list[dict]:
+    m = ASHBY_URL.search(ref)
+    org = m.group(1) if m else ref.strip("/")
+    resp = _get(f"https://api.ashbyhq.com/posting-api/job-board/{org}", params={"includeCompensation": "false"})
+    return parse_ashby_json(resp.json(), company)
