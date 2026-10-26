@@ -516,16 +516,50 @@ def fetch_sitemap(site_url: str, company: str, source_label: str, limit: int = 4
 
 
 # ---------- Emply (karrieresider på <kunde>.career.emply.com eller eget domæne) ----------
-EMPLY_LISTINGS = ("/da/ledige-stillinger", "/ledige-stillinger", "/da/hjem", "/en/vacancies", "/vacancies", "")
+# Emply sætter jobbene ind med JavaScript, så siderne åbnes i en rigtig browser (Playwright),
+# når den er installeret. Ellers bruges almindelige kald som reserve.
+EMPLY_LISTINGS = ("", "/ledige-jobs", "/ledige-stillinger", "/da/ledige-stillinger", "/jobs", "/en/vacancies", "/da/hjem")
 EMPLY_AD = re.compile(r"/ad/[^/?#]+/[^/?#]+")
 EMPLY_EXPIRED = re.compile(r"ansøgningsfristen på det pågældende job kan være udløbet|linket kan være i stykker", re.I)
+STUDENT_SLUG = re.compile(r"student|studie|studerende|praktik|intern|ph-?d-?studerende", re.I)
+_browser = None
+
+
+def _render(url: str, wait_ms: int = 2500) -> str | None:
+    """Returnerer sidens HTML, efter JavaScript har kørt. None, hvis Playwright ikke er installeret."""
+    global _browser
+    try:
+        if _browser is None:
+            from playwright.sync_api import sync_playwright
+            import atexit
+            pw = sync_playwright().start()
+            _browser = pw.chromium.launch()
+            atexit.register(lambda: (_browser.close(), pw.stop()))
+        page = _browser.new_page(user_agent=USER_AGENT)
+        try:
+            page.goto(url, wait_until="networkidle", timeout=30000)
+            page.wait_for_timeout(wait_ms)
+            return page.content()
+        finally:
+            page.close()
+    except Exception:
+        return None
+
+
+def _page_html(url: str) -> str:
+    html_text = _render(url)
+    if html_text is None:
+        html_text = _get(url).text
+    else:
+        time.sleep(PAUSE_SECONDS)
+    return html_text
 
 
 def emply_ad_links(listing_html: str, listing_url: str) -> list[str]:
     host = urlparse(listing_url).netloc
     links = []
     for a in BeautifulSoup(listing_html, "html.parser").find_all("a", href=True):
-        url = urljoin(listing_url, a["href"]).split("#")[0]
+        url = urljoin(listing_url, a["href"]).split("#")[0].split("?")[0]
         if urlparse(url).netloc == host and EMPLY_AD.search(urlparse(url).path) and url not in links:
             links.append(url)
     return links
@@ -537,40 +571,44 @@ def parse_emply_ad(page_html: str, url: str, company: str, source_label: str) ->
     if jobs:
         return jobs
     soup = BeautifulSoup(page_html, "html.parser")
+    for tag in soup(["script", "style", "noscript", "header", "footer", "nav"]):
+        tag.decompose()
     text = re.sub(r"\s+", " ", (soup.find("main") or soup.body or soup).get_text(" ")).strip()
     if EMPLY_EXPIRED.search(text):
         return []
     og = soup.find("meta", attrs={"property": "og:title"}) or soup.find("meta", attrs={"name": "og:title"})
-    title = (og.get("content") if og else "") or (soup.h1.get_text(" ", strip=True) if soup.h1 else "")
+    title = (soup.h1.get_text(" ", strip=True) if soup.h1 else "") or (og.get("content") if og else "")
     title = re.sub(r"\s*[|I]\s*Career Site\s*$", "", title).strip()
-    if not title or title.lower() in ("career site", "ledige stillinger"):
+    if not title or title.lower() in ("career site", "ledige stillinger", "ledige jobs"):
         return []
     return [{"title": title, "company": company, "location": "", "description": text[:5000], "url": url,
              "posted_at": None, "deadline_at": None, "source": source_label}]
 
 
-def fetch_emply(listing_url: str, company: str, source_label: str, limit: int = 40) -> list[dict]:
-    """Finder /ad/-links på Emplys joblister og læser hvert opslag. Virker det ikke, prøves sitemap."""
+def fetch_emply(listing_url: str, company: str, source_label: str, limit: int = 25) -> list[dict]:
+    """Finder /ad/-links på Emplys jobliste og læser de opslag, hvis adresse ligner et studiejob."""
     url = listing_url if "://" in listing_url else f"https://{listing_url}.career.emply.com"
     base = "{0.scheme}://{0.netloc}".format(urlparse(url))
-    pages = [url] + [base + p for p in EMPLY_LISTINGS if base + p != url]
+    pages = [url] + [base + p for p in EMPLY_LISTINGS if base + p not in (url, url.rstrip("/"))]
     links = []
     for page in pages:
         if not allowed_by_robots(page):
             continue
         try:
-            links += [l for l in emply_ad_links(_get(page).text, page) if l not in links]
+            found = emply_ad_links(_page_html(page), page)
         except requests.RequestException:
             continue
-        if len(links) >= limit:
-            break
+        links += [l for l in found if l not in links]
+        if found:
+            break  # første jobliste med opslag er nok
+    student_links = [l for l in links if STUDENT_SLUG.search(urlparse(l).path)][:limit]
     jobs = []
-    for link in links[:limit]:
+    for link in student_links:
         try:
-            jobs += parse_emply_ad(_get(link).text, link, company, source_label)
+            jobs += parse_emply_ad(_page_html(link), link, company, source_label)
         except requests.RequestException:
             continue
-    return jobs or fetch_sitemap(url, company, source_label)
+    return jobs
 
 
 # ---------- Ashby (offentligt job board-API) ----------

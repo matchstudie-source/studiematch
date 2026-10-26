@@ -327,6 +327,8 @@ class EmplyTests(unittest.TestCase):
         jobs = sources.parse_emply_ad(ad, "https://fh.career.emply.com/ad/x/y/da", "Forsyning Helsingør", "Karriereside")
         self.assertEqual(jobs[0]["title"], "Studentermedhjælper til kommunikation")
         self.assertIn("10-15 timer", jobs[0]["description"])
+        self.assertTrue(sources.STUDENT_SLUG.search("/ad/studentermedhjaelper-til-center-for-okonomi/w9w3ey"))
+        self.assertFalse(sources.STUDENT_SLUG.search("/ad/bliv-dagplejer-verdens-vigtigste-job/hzb3qx"))
         expired = '<html><body><main>Ansøgningsfristen på det pågældende job kan være udløbet eller linket kan være i stykker..</main></body></html>'
         self.assertEqual(sources.parse_emply_ad(expired, "u", "c", "l"), [])
 
