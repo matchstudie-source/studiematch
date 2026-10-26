@@ -523,6 +523,7 @@ EMPLY_AD = re.compile(r"/ad/[^/?#]+/[^/?#]+")
 EMPLY_EXPIRED = re.compile(r"ansøgningsfristen på det pågældende job kan være udløbet|linket kan være i stykker", re.I)
 STUDENT_SLUG = re.compile(r"student|studie|studerende|praktik|intern|ph-?d-?studerende", re.I)
 _browser = None
+LAST_NOTE = {}  # kildens ref -> kort note til rapporten (fx "40 opslag, 2 ligner studiejob")
 
 
 def _render(url: str, wait_ms: int = 2500) -> str | None:
@@ -602,6 +603,8 @@ def fetch_emply(listing_url: str, company: str, source_label: str, limit: int = 
         if found:
             break  # første jobliste med opslag er nok
     student_links = [l for l in links if STUDENT_SLUG.search(urlparse(l).path)][:limit]
+    LAST_NOTE[listing_url] = (f"{len(links)} opslag på joblisten, {len(student_links)} ligner studiejob"
+                              if links else "ingen jobliste fundet")
     jobs = []
     for link in student_links:
         try:

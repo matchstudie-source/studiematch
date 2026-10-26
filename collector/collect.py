@@ -170,7 +170,7 @@ def main() -> int:
                 continue
             jobs.append(job)
             kept += 1
-        report_rows.append((e["name"], src, len(raw_jobs), kept, ""))
+        report_rows.append((e["name"], src, len(raw_jobs), kept, sources.LAST_NOTE.get(e["ref"], "")))
 
     for m in read_csv(MANUAL):
         jobs.append(manual_job(m))
