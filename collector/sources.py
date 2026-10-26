@@ -587,3 +587,46 @@ def fetch_ashby(ref: str, company: str) -> list[dict]:
     org = m.group(1) if m else ref.strip("/")
     resp = _get(f"https://api.ashbyhq.com/posting-api/job-board/{org}", params={"includeCompensation": "false"})
     return parse_ashby_json(resp.json(), company)
+
+
+# ---------- SAP SuccessFactors-karrieresider (fx careers.novonordisk.com, jobs.dsv.com) ----------
+RMK_TERMS = ("student", "studerende", "studentermedhjælper")
+
+
+def parse_rmk_rss(xml_text: str, company: str, source_label: str) -> list[dict]:
+    root = ET.fromstring(xml_text)
+    jobs = []
+    for item in root.iter("item"):
+        title = html_to_text(item.findtext("title") or "")
+        m = re.search(r"\(([^()]*)\)\s*$", title)  # "Student Assistant (Bagsværd, DK, 2880)"
+        location = m.group(1) if m else ""
+        if m:
+            title = title[:m.start()].strip()
+        jobs.append({
+            "title": title, "company": company, "location": location,
+            "description": html_to_text(item.findtext("description")),
+            "url": (item.findtext("link") or "").strip(),
+            "posted_at": _parse_any_date(item.findtext("pubDate")),
+            "deadline_at": None, "source": source_label,
+        })
+    return [j for j in jobs if j["title"]]
+
+
+def fetch_rmk(site_url: str, company: str, source_label: str) -> list[dict]:
+    """Søger i karrierestedets RSS-feed efter studiejob. Virker feedet ikke, læses sitemap."""
+    base = "{0.scheme}://{0.netloc}".format(urlparse(site_url if "://" in site_url else "https://" + site_url))
+    jobs, seen = [], set()
+    for locale in ("da_DK", "en_US"):
+        for term in RMK_TERMS:
+            try:
+                resp = _get(f"{base}/services/rss/job/", params={"locale": locale, "keywords": f"({term})"})
+                found = parse_rmk_rss(resp.text, company, source_label)
+            except (requests.RequestException, ET.ParseError):
+                found = []
+            for j in found:
+                if j["url"] not in seen and in_denmark(j["location"]):
+                    seen.add(j["url"])
+                    jobs.append(j)
+        if jobs:
+            break
+    return jobs or fetch_sitemap(base, company, source_label)

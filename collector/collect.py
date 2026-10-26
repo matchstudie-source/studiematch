@@ -40,7 +40,9 @@ FETCHERS = {
     "emply": lambda e: sources.fetch_emply(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
     "sitemap": lambda e: sources.fetch_sitemap(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
     "ashby": lambda e: sources.fetch_ashby(e["ref"], e["name"]),
+    "rmk": lambda e: sources.fetch_rmk(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
 }
+CAREER_HOST = re.compile(r"^https?://(careers?|jobs?|applyforjob)\.", re.I)
 
 
 def normalize_sources(employers: list[dict]) -> list[dict]:
@@ -49,6 +51,8 @@ def normalize_sources(employers: list[dict]) -> list[dict]:
     for e in employers:
         e = dict(e)
         src, ref = e.get("source", "").lower(), e.get("ref", "")
+        if src == "sitemap" and CAREER_HOST.match(ref):
+            e["source"], src = "rmk", "rmk"  # karrieresider på eget underdomæne har typisk RSS-søgning
         if src == "careerpage" and "jobs.ashbyhq.com" in ref:
             e["source"], src = "ashby", "ashby"
         if src == "hrmanager" and ref.lower() in sources.HRM_SHARED:

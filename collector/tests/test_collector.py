@@ -325,5 +325,23 @@ class EmplyTests(unittest.TestCase):
         self.assertEqual(sources.parse_emply_ad(expired, "u", "c", "l"), [])
 
 
+class RmkTests(unittest.TestCase):
+    def test_rss(self):
+        rss = ('<rss><channel><item><title>Supply Chain Student (Bagsværd, DK, 2880)</title>'
+               '<description>&lt;p&gt;10-15 hours per week&lt;/p&gt;</description>'
+               '<link>https://careers.novonordisk.com/job/Bagsvaerd-Supply-Chain-Student/1/</link>'
+               '<pubDate>Mon, 20 Oct 2026 08:00:00 GMT</pubDate></item></channel></rss>')
+        jobs = sources.parse_rmk_rss(rss, "Novo Nordisk", "Karriereside")
+        self.assertEqual((jobs[0]["title"], jobs[0]["location"]), ("Supply Chain Student", "Bagsværd, DK, 2880"))
+        self.assertIn("10-15 hours", jobs[0]["description"])
+
+    def test_route_career_sitemaps(self):
+        out = collect.normalize_sources([{"name": "Vestas", "source": "sitemap", "ref": "https://careers.vestas.com"},
+                                         {"name": "DSB", "source": "sitemap", "ref": "https://www.dsb.dk"}])
+        self.assertEqual([r["source"] for r in out], ["rmk", "sitemap"])
+        fam, _ = enrich.classify_families("Skibsofficersstuderende - Åben ansøgning", "shipping og logistik om bord")
+        self.assertEqual(fam, "engineering")
+
+
 if __name__ == "__main__":
     unittest.main()
