@@ -11,19 +11,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | SEB | Product Owner with focus on Privileged Access Management in Internal Identity and Access Management area / SEB, Stockholm | ikke et studiejob |
 | SEB | Product Owner with focus on Privileged Access Management in Internal Identity and Access Management area / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Student to Prime Collateral Services / SEB Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Client Lifecycle Management / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Data Analyst / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Data management intern / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Digital Channels & Customer Insights / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Growth & Market Insight Intern / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Wealth & Asset Management Internship 2027: Growth and Market Intelligence / SEB, Gothenburg | udlandet: Göteborg |
-| SEB | Wealth & Asset Management Internship 2027: Junior Investment analyst / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Junior specialist support / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Junior Structured Lending Specialist – Financing Solutions / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Private Equity / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Product Specialist - Cash & Securities Services / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Risk Analyst Intern / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Wealth & Asset Management Internship 2027: Sustainability Specialist / SEB, Stockholm | udlandet: Stockholm |
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
 | Devoteam | Werkstudent Recruiting (m/w/d) | udlandet: München |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
@@ -41,7 +29,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Studielektor i repetition for sangere, akkompagnement for pianister og som akkompagnatør for sang og orkesterinstrumenter | ikke et studiejob |
 | Statslige arbejdsgivere | Udenrigsministeriet søger en ekspert i kunstig intelligens med interesse for international politik | ikke et studiejob |
 | Statslige arbejdsgivere | Undervisningsministeriet søger sekretariatschef til Internationalt Sekretariat | ikke et studiejob |
-| Statslige arbejdsgivere | Vil du være sagsbehandler i Styrelsen for International Rekruttering og Integrations enhed i Nuuk, Grønland? | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | Statslige arbejdsgivere | Økonom til International Skattepolitik i Skatte- og Vækstministeriet | ikke et studiejob |
 | Lunar | International Payment Specialist | ikke et studiejob |
@@ -51,10 +38,10 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |
 | Aarhus Kommune | Studiepraktik i Kommuneplanlægning: Vær med til at forme fremtidens Aarhus | ikke et studiejob |
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
+| Aalborg Kommune | Ansvarsfulde og engagerende pædagoger søges til Botilbuddet Studievej 15 i Nørresundby | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studievejleder til Studie- og karrierevejledningen på Københavns Professionshøjskole | ikke et studiejob |
 | Statslige arbejdsgivere | Studieadjunkt i Play Design til Designskolen Kolding | ikke et studiejob |
 | VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
-| Erhvervsakademi København | Specialkonsulent til Erhvervsakademi Københavns Studieadministration | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |

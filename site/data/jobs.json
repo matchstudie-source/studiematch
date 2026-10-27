@@ -1311,34 +1311,6 @@
   "live": true
  },
  {
-  "title": "Praktikant til kommunikation og formidling i De Økonomiske Råds Sekretariat",
-  "co": "De Økonomiske Råd",
-  "city": "Horsens",
-  "region": "aar",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "finance"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Dokumentation",
-   "Sociale medier"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-02T14:15:23+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du arbejde i krydsfeltet mellem kommunikation, formidling, politik og analyse?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169964&DepartmentId=19000&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xffcee1b75b3a",
-  "live": true
- },
- {
   "title": "Praktikant til Litteratur & Talks i Den Sorte Diamant",
   "co": "Det Kgl. Bibliotek",
   "city": "København",
@@ -1495,34 +1467,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171434&DepartmentId=19817&MediaId=5",
   "enrichedBy": "regler",
   "id": "x2f2c85f29b36",
-  "live": true
- },
- {
-  "title": "Stud.jur. til et spændende og selvstændigt studiejob ved Retten i Esbjerg",
-  "co": "Retten i Esbjerg",
-  "city": "Retten i Esbjerg",
-  "region": "ode",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "hr",
-   "legal"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-12T09:16:08+00:00",
-  "deadlineAt": "2026-10-26T23:59:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du have et juridisk relevant studiejob, hvor du får ansvar, møder borgere og får et tæt indblik i arbejdet ved Danmarks Domstole? Så er du måske en af vores to nye studentermedhjælpere.",
-  "req": "jura",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170948&DepartmentId=20146&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xe624ed890c5f",
   "live": true
  },
  {
@@ -1822,33 +1766,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til AI og digitalisering i Finansministeriet",
-  "co": "Finansministeriets departement",
-  "city": "København",
-  "region": "cph",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "datasci"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-09T14:36:17+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Om stillingen I stillingen kommer du tæt på organisationen i Finansministeriet og får indblik i, hvordan et departement arbejder.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170860&DepartmentId=18978&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xc19092f2008e",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til arresthuse i Østjylland",
   "co": "Danmarks Fængsler - Fængselskreds Vest",
   "city": "Region Hovedstaden",
@@ -1874,63 +1791,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=165454&DepartmentId=19152&MediaId=5",
   "enrichedBy": "regler",
   "id": "x6a94858ca9a4",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til arresthuse i Østjylland",
-  "co": "Danmarks Fængsler - Fængselskreds Vest",
-  "city": "Region Midtjylland",
-  "region": "cph",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "hr",
-   "health"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Dokumentation"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-12T14:41:22+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du have et spændende og relevant job, hvor du har mulighed for at gøre en forskel for indsatte i Østjyllands arrester? Vi søger en studerende til administrativ understøttelse i Aarhus, Randers og Silkeborg arrester.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170793&DepartmentId=19152&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x8de7498b89d0",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Cinematekets programredaktion",
-  "co": "Det Danske Filminstitut",
-  "city": "Gothersgade 55, 1123 København K",
-  "region": "cph",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "supply",
-   "operations"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-05T10:49:07+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Brænder du for film og filmformidling – og er du god til at skrive? Så er dette måske studiejobbet for dig.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170400&DepartmentId=19910&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x8b9f44bf7257",
   "live": true
  },
  {
@@ -1983,29 +1843,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=5",
   "enrichedBy": "regler",
   "id": "xf7a9c804a726",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Ministeriet for Samfundssikkerhed og Beredskab",
-  "co": "Ministeriet for Samfundssikkerhed og Beredskabs departement",
-  "city": "København K",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "public",
-  "sec": [],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-12T13:24:12+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170969&DepartmentId=19926&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x2c8db860b6fb",
   "live": true
  },
  {
@@ -2087,63 +1924,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170766&DepartmentId=18996&MediaId=5",
   "enrichedBy": "regler",
   "id": "x05ce412db5df",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere til it-udviklingsopgaver i stort digitaliseringsprogram",
-  "co": "Domstolsstyrelsen",
-  "city": "Domstolsstyrelsen",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "software",
-  "sec": [
-   "public",
-   "operations"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-30T13:14:31+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med udvikling og test i et stort digitaliseringsprogram? Og vil du være med til at udvikle den offentlige it-infrastruktur på Færøerne og i Grønland? Så er du måske vores nye studentermedhjælper.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170143&DepartmentId=19239&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xe721c934d379",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere til projektunderstøttelse i stort digitaliseringsprogram",
-  "co": "Domstolsstyrelsen",
-  "city": "Domstolsstyrelsen",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [
-   "public",
-   "operations"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "Dokumentation"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-30T11:51:43+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du prøve kræfter med opgaver inden for projektstyring- og understøttelse i et stort digitaliseringsprogram? Og vil du være med til at udvikle den offentlige it-infrastruktur på Færøerne og i Grønland?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170126&DepartmentId=19239&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x8a0766cab505",
   "live": true
  },
  {
@@ -2537,35 +2317,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "cph",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "pmo",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
-  "enrichedBy": "regler",
-  "id": "xddff3f97d777",
-  "live": true
- },
- {
   "title": "Mødebooker (studiejob), Tryg Privat",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2592,6 +2343,35 @@
   "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
   "enrichedBy": "regler",
   "id": "xc7e71abcfd04",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "cph",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "pmo",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
+  "enrichedBy": "regler",
+  "id": "xddff3f97d777",
   "live": true
  },
  {
@@ -3085,34 +2865,6 @@
   "live": true
  },
  {
-  "title": "Praktikant til Staben for Sundhed og Forebyggelse i Sundhed og Omsorg",
-  "co": "Aarhus Kommune",
-  "city": "Grøndalsvej 2",
-  "region": "aar",
-  "hMin": 30,
-  "hMax": 30,
-  "danish": "required",
-  "fam": "health",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Løn",
-   "SQL",
-   "PowerPoint"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-06T12:49:33+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Som praktikant i Staben for Sundhed og Forebyggelse får du et unikt indblik i arbejdet i en sundhedsforvaltning i landets andenstørste kommune. Staben arbejder bl.a.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144463&DepartmentId=22295&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x09dd1360b26d",
-  "live": true
- },
- {
   "title": "Projektmedarbejder til FrirumAarhus",
   "co": "Aarhus Kommune",
   "city": "Carl Blochs Gade 28 8000 Aarhus",
@@ -3138,33 +2890,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144379&DepartmentId=22315&MediaId=5",
   "enrichedBy": "regler",
   "id": "x28c431ef2e73",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper med kommunikationsprofil, stærke formidlingsevner og interesse for udviklingen af byens udsatte boligområder",
-  "co": "Aarhus Kommune",
-  "city": "Rådhuset, Rådhuspladsen 2, 8000 Aarhus C",
-  "region": "aar",
-  "hMin": 12,
-  "hMax": 12,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "social"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-12T11:12:44+00:00",
-  "deadlineAt": "2026-10-26T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Om jobbet: I Bydelsudvikling og Boliger i Magistraten for Sociale Forhold og Beskæftigelse søger vi en studentermedhjælper til et barselsvikariat med opstart senest d. 1. december 2026 og gerne hurtigst muligt. Vores…",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144541&DepartmentId=22140&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x062b8877ec36",
   "live": true
  },
  {
@@ -3307,34 +3032,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til belysning",
-  "co": "Frederiksberg Kommune",
-  "city": "Frederiksberg",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "product",
-  "sec": [
-   "engineering",
-   "education"
-  ],
-  "famConf": "text",
-  "skills": [
-   "R"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
-  "req": null,
-  "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-belysning/1su2ap",
-  "enrichedBy": "regler",
-  "id": "x885c92b4081d",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til grønne events, kommunikation og koordinering",
   "co": "Frederiksberg Kommune",
   "city": "Frederiksberg",
@@ -3360,6 +3057,34 @@
   "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-gronne-events-kommunikation-og-koordinering/dvdqw0",
   "enrichedBy": "regler",
   "id": "x4bfabffdb220",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til belysning",
+  "co": "Frederiksberg Kommune",
+  "city": "Frederiksberg",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "product",
+  "sec": [
+   "engineering",
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "req": null,
+  "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-belysning/1su2ap",
+  "enrichedBy": "regler",
+  "id": "x885c92b4081d",
   "live": true
  },
  {
@@ -3743,33 +3468,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181917&DepartmentId=3439&MediaId=5",
   "enrichedBy": "regler",
   "id": "x82a761a3b526",
-  "live": true
- },
- {
-  "title": "Studenterundervisere til psykomotorikuddannelsen",
-  "co": "Københavns Professionshøjskole",
-  "city": "København",
-  "region": "cph",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "education",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "R",
-   "Rekruttering"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Login My profile My profile Studenterundervisere til psykomotorikuddannelsen Brænder du for din profession?",
-  "req": null,
-  "url": "https://kp.career.emply.com/en/ad/studenterundervisere-til-psykomotorikuddannelsen/yi487t",
-  "enrichedBy": "regler",
-  "id": "x59e1cdb865c3",
   "live": true
  },
  {

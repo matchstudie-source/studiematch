@@ -1,6 +1,6 @@
-# Jobindsamling 2026-10-26 22:52 UTC
+# Jobindsamling 2026-10-27 05:18 UTC
 
-177 studiejob gemt. AI-kald i denne kørsel: 0.
+166 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -17,7 +17,7 @@
 | AutoProff | greenhouse | 13 | 0 |  |
 | Worksome | greenhouse | 0 | 0 | fejl: ConnectionError |
 | Veo | lever | 19 | 1 |  |
-| SEB | lever | 118 | 0 |  |
+| SEB | lever | 100 | 0 |  |
 | Devoteam | smartrecruiters | 100 | 0 |  |
 | Københavns Universitet | careerpage | 0 | 0 | fejl: ConnectTimeout |
 | Danske Regioner | emply | 0 | 0 | ingen jobliste fundet |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 8 | 0 |  |
-| Region Syddanmark | hrmanager | 252 | 5 |  |
+| Region Syddanmark | hrmanager | 238 | 5 |  |
 | Novo Nordisk | rmk | 3 | 1 |  |
 | Novonesis | workday | 5 | 2 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -41,10 +41,10 @@
 | Bavarian Nordic | workday | 3 | 2 |  |
 | ALK | teamtailor | 12 | 0 |  |
 | Vestas | rmk | 2 | 1 |  |
-| Energinet | hrmanager | 42 | 1 |  |
+| Energinet | hrmanager | 38 | 1 |  |
 | Norlys | sitemap | 2 | 2 |  |
 | Andel | hrmanager | 8 | 0 |  |
-| HOFOR | hrmanager | 22 | 0 |  |
+| HOFOR | hrmanager | 21 | 0 |  |
 | Carlsberg | rmk | 4 | 2 |  |
 | Danish Crown | rmk | 1 | 0 |  |
 | Royal Unibrew | sitemap | 0 | 0 |  |
@@ -53,9 +53,9 @@
 | NKT | sitemap | 0 | 0 |  |
 | Velux | workday | 0 | 0 |  |
 | Bang & Olufsen | sitemap | 0 | 0 |  |
-| Matas | emply | 0 | 0 | 14 opslag på joblisten, 0 ligner studiejob |
+| Matas | emply | 0 | 0 | 12 opslag på joblisten, 0 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 |  |
-| Statslige arbejdsgivere | hrmanager | 421 | 58 |  |
+| Statslige arbejdsgivere | hrmanager | 390 | 50 |  |
 | Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 22 | 0 |  |
 | Pleo | ashby | 33 | 0 |  |
@@ -79,24 +79,24 @@
 | 3 Danmark | teamtailor | 19 | 1 |  |
 | ISS | rmk | 4 | 4 |  |
 | HK | hrmanager | 3 | 0 |  |
-| Aarhus Kommune | hrmanager | 166 | 4 |  |
+| Aarhus Kommune | hrmanager | 155 | 2 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 5 | 4 | 24 opslag på joblisten, 5 ligner studiejob |
-| Frederiksberg Kommune | emply | 3 | 3 | 50 opslag på joblisten, 3 ligner studiejob |
-| Hvidovre Kommune | hrmanager | 30 | 0 |  |
+| Aalborg Kommune | emply | 6 | 4 | 100 opslag på joblisten, 6 ligner studiejob |
+| Frederiksberg Kommune | emply | 3 | 3 | 47 opslag på joblisten, 3 ligner studiejob |
+| Hvidovre Kommune | hrmanager | 27 | 0 |  |
 | Brøndby Kommune | emply | 1 | 1 | 33 opslag på joblisten, 1 ligner studiejob |
-| Næstved Kommune | emply | 1 | 1 | 43 opslag på joblisten, 1 ligner studiejob |
+| Næstved Kommune | emply | 1 | 1 | 36 opslag på joblisten, 1 ligner studiejob |
 | Holbæk Kommune | emply | 0 | 0 | ingen jobliste fundet |
-| Svendborg Kommune | emply | 0 | 0 | 27 opslag på joblisten, 0 ligner studiejob |
-| Politiet | rmk | 12 | 8 |  |
+| Svendborg Kommune | emply | 0 | 0 | 26 opslag på joblisten, 0 ligner studiejob |
+| Politiet | rmk | 11 | 8 |  |
 | Forbrugerrådet Tænk | hrmanager | 2 | 0 |  |
 | Roskilde Universitet | hrmanager | 6 | 1 |  |
-| IT-Universitetet | hrmanager | 5 | 2 |  |
-| Københavns Professionshøjskole | emply | 4 | 2 | 13 opslag på joblisten, 4 ligner studiejob |
-| Statslige arbejdsgivere | hrmanager | 78 | 5 |  |
+| IT-Universitetet | hrmanager | 4 | 2 |  |
+| Københavns Professionshøjskole | emply | 3 | 1 | 10 opslag på joblisten, 3 ligner studiejob |
+| Statslige arbejdsgivere | hrmanager | 77 | 5 |  |
 | VIA University College | emply | 2 | 1 | 22 opslag på joblisten, 2 ligner studiejob |
 | UCN | emply | 0 | 0 | 5 opslag på joblisten, 0 ligner studiejob |
-| Erhvervsakademi København | emply | 3 | 2 | 13 opslag på joblisten, 3 ligner studiejob |
+| Erhvervsakademi København | emply | 2 | 2 | 12 opslag på joblisten, 2 ligner studiejob |
 | Dansk Røde Kors | emply | 0 | 0 | ingen jobliste fundet |
 | Mellemfolkeligt Samvirke | hrmanager | 0 | 0 | fejl: HTTPError |
 | Kræftens Bekæmpelse | hrmanager | 6 | 2 |  |
@@ -107,35 +107,35 @@
 | DSV | rmk | 1 | 0 |  |
 | Coloplast | rmk | 8 | 7 |  |
 | Ascendis Pharma | workable | 22 | 1 |  |
-| Ballerup Kommune | emply | 2 | 2 | 58 opslag på joblisten, 2 ligner studiejob |
+| Ballerup Kommune | emply | 2 | 2 | 55 opslag på joblisten, 2 ligner studiejob |
 | Novo Nordisk Fonden | workable | 5 | 1 |  |
-| Albertslund Kommune | emply | 0 | 0 | 16 opslag på joblisten, 0 ligner studiejob |
-| Billund Kommune | hrmanager | 19 | 0 |  |
-| Faxe Kommune | hrmanager | 32 | 0 |  |
+| Albertslund Kommune | emply | 0 | 0 | 14 opslag på joblisten, 0 ligner studiejob |
+| Billund Kommune | hrmanager | 17 | 0 |  |
+| Faxe Kommune | hrmanager | 28 | 0 |  |
 | Fredericia Kommune | emply | 0 | 0 | 26 opslag på joblisten, 0 ligner studiejob |
-| Frederikshavn Kommune | emply | 0 | 0 | 37 opslag på joblisten, 0 ligner studiejob |
+| Frederikshavn Kommune | emply | 0 | 0 | 34 opslag på joblisten, 0 ligner studiejob |
 | Faaborg-Midtfyn Kommune | hrmanager | 38 | 1 |  |
-| Glostrup Kommune | emply | 0 | 0 | 29 opslag på joblisten, 0 ligner studiejob |
-| Greve Kommune | hrmanager | 24 | 0 |  |
-| Guldborgsund Kommune | emply | 0 | 0 | 35 opslag på joblisten, 0 ligner studiejob |
-| Haderslev Kommune | emply | 0 | 0 | 29 opslag på joblisten, 0 ligner studiejob |
-| Halsnæs Kommune | emply | 0 | 0 | 20 opslag på joblisten, 0 ligner studiejob |
-| Hedensted Kommune | emply | 0 | 0 | 25 opslag på joblisten, 0 ligner studiejob |
+| Glostrup Kommune | emply | 0 | 0 | 27 opslag på joblisten, 0 ligner studiejob |
+| Greve Kommune | hrmanager | 23 | 0 |  |
+| Guldborgsund Kommune | emply | 0 | 0 | 34 opslag på joblisten, 0 ligner studiejob |
+| Haderslev Kommune | emply | 0 | 0 | 28 opslag på joblisten, 0 ligner studiejob |
+| Halsnæs Kommune | emply | 0 | 0 | 18 opslag på joblisten, 0 ligner studiejob |
+| Hedensted Kommune | emply | 0 | 0 | 17 opslag på joblisten, 0 ligner studiejob |
 | Hjørring Kommune | hrmanager | 0 | 0 |  |
 | Ikast-Brande Kommune | emply | 0 | 0 | 40 opslag på joblisten, 0 ligner studiejob |
-| Lemvig Kommune | emply | 0 | 0 | 10 opslag på joblisten, 0 ligner studiejob |
+| Lemvig Kommune | emply | 0 | 0 | 9 opslag på joblisten, 0 ligner studiejob |
 | Mariagerfjord Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
-| Morsø Kommune | emply | 0 | 0 | 13 opslag på joblisten, 0 ligner studiejob |
-| Nordfyns Kommune | emply | 0 | 0 | 20 opslag på joblisten, 0 ligner studiejob |
+| Morsø Kommune | emply | 0 | 0 | 12 opslag på joblisten, 0 ligner studiejob |
+| Nordfyns Kommune | emply | 0 | 0 | 19 opslag på joblisten, 0 ligner studiejob |
 | Nyborg Kommune | emply | 0 | 0 | 12 opslag på joblisten, 0 ligner studiejob |
-| Odder Kommune | hrmanager | 23 | 0 |  |
-| Ringkøbing-Skjern Kommune | emply | 2 | 1 | 37 opslag på joblisten, 2 ligner studiejob |
+| Odder Kommune | hrmanager | 21 | 0 |  |
+| Ringkøbing-Skjern Kommune | emply | 2 | 1 | 35 opslag på joblisten, 2 ligner studiejob |
 | Solrød Kommune | emply | 0 | 0 | 14 opslag på joblisten, 0 ligner studiejob |
 | Stevns Kommune | emply | 0 | 0 | 21 opslag på joblisten, 0 ligner studiejob |
 | Struer Kommune | emply | 0 | 0 | 19 opslag på joblisten, 0 ligner studiejob |
 | Syddjurs Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Tønder Kommune | emply | 1 | 1 | 29 opslag på joblisten, 1 ligner studiejob |
-| Varde Kommune | emply | 1 | 1 | 43 opslag på joblisten, 1 ligner studiejob |
+| Varde Kommune | emply | 1 | 1 | 38 opslag på joblisten, 1 ligner studiejob |
 | Tandlægen.dk | hrmanager | 12 | 0 |  |
 | Capio Danmark | emply | 1 | 1 | 6 opslag på joblisten, 1 ligner studiejob |
 | Aleris | hrmanager | 1 | 0 |  |
@@ -146,7 +146,7 @@
 | Boozt | teamtailor | 10 | 0 |  |
 | Danske Spil | teamtailor | 5 | 3 |  |
 | Topdanmark | workday | 2 | 0 |  |
-| Accenture Danmark | workday | 1 | 0 |  |
+| Accenture Danmark | workday | 0 | 0 |  |
 | Kammeradvokaten | emply | 0 | 0 | 2 opslag på joblisten, 0 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |
 | Accura | hrmanager | 5 | 2 |  |
