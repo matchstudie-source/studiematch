@@ -21,12 +21,14 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger to projektmedarbejdere (barselsvikariater) til internationale projekter | ikke et studiejob |
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
+| Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | To maskinmestre til bachelorpraktik på Amagerværket | ikke et studiejob |
 | Carlsberg | Product Development Placement Student | ikke et studiejob |
 | Statslige arbejdsgivere | Akademisk medarbejder til Energistyrelsens Kontor for Internationalt Affald og Klassificering | ikke et studiejob |
 | Statslige arbejdsgivere | Erfaren kontorchef til International Mobilitet i Uddannelses- og Forskningsstyrelsen | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Studielektor i repetition for sangere, akkompagnement for pianister og som akkompagnatør for sang og orkesterinstrumenter | ikke et studiejob |
+| Statslige arbejdsgivere | Studieservicechef til SIMAC | ikke et studiejob |
 | Statslige arbejdsgivere | Udenrigsministeriet søger en ekspert i kunstig intelligens med interesse for international politik | ikke et studiejob |
 | Statslige arbejdsgivere | Undervisningsministeriet søger sekretariatschef til Internationalt Sekretariat | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
@@ -42,6 +44,5 @@ Bruges til at tjekke, om filteret er for strengt.
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studievejleder til Studie- og karrierevejledningen på Københavns Professionshøjskole | ikke et studiejob |
 | Statslige arbejdsgivere | Studieadjunkt i Play Design til Designskolen Kolding | ikke et studiejob |
-| VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
