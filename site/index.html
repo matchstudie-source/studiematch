@@ -54,6 +54,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .input-lg{padding:15px 18px;font-size:16.5px;border-radius:999px}
 .label{display:block;font-weight:700;font-size:14.5px;margin-bottom:8px}
 .fine{font-size:13.5px;color:var(--muted)}
+.region-group{margin:10px 0 6px;font-weight:600}
+.region-any{margin-top:10px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;font-weight:600;color:var(--fg)}
 .chip:hover{border-color:var(--accent)}
@@ -379,54 +381,54 @@ const TITLE_KW = {
 };
 /* Uddannelser pr. skole. Lister med kilde er hentet fra skolernes egne sider i oktober 2026; AU og AAU er et udvalg. */
 const SCHOOLS = [
-  {key:"dtu",name:"DTU",full:"Danmarks Tekniske Universitet",region:"cph",src:"DTU's hjemmeside",lists:{
+  {key:"dtu",name:"DTU",full:"Danmarks Tekniske Universitet",region:"kbh",src:"DTU's hjemmeside",lists:{
     bachelor:["Anvendt Matematik","Bioteknologi","Byggeteknologi","Bygningsdesign","Bæredygtigt Energidesign","Computer Engineering","Cyberteknologi","Data Science og Management","Design og Innovation","Elektroteknologi","Fysik og Ingeniørvidenskab","General Engineering","Geofysik og Rumteknologi","Kemi og Teknologi","Kunstig Intelligens og Data","Medicin og Teknologi","Mekanisk design og Teknologi","Miljøteknologi","Softwareteknologi","Teknisk Biomedicin","Teknologi (digital uddannelse)"],
     diplom:["Arktisk Byggeri og Infrastruktur","Byggeri og Infrastruktur","Bygningsdesign","Computer Engineering","Elektrisk Energiteknologi","Elektroteknologi","Fiskeriteknologi","Fødevaresikkerhed og -kvalitet","Global Business og Teknologi","Industriel Teknologi","IT og Økonomi","Kemi- og Bioteknik","Kemiteknik og International Business","Maskinteknik","Maskinteknik (digital uddannelse)","Mobilitet, Transport og Logistik","Proces og Innovation","Produktion","Skibsteknik og Maritimt Design","Softwareteknologi","Sundhedsteknologi"],
     kandidat:["Anvendt Kemi","Autonome Systemer","Bioinformatik","Biomaterialeteknologier til Medicin","Bioteknologi","Business Analytics","Byggeteknologi","Bygningsdesign","Bæredygtige Energisystemer","Bæredygtige Energiteknologier","Bæredygtigt Fiskeri og Akvakultur","Design og Innovation","Elektroteknologi","Farmateknologi","Fødevareteknologi","Fysik og Teknologi","Geofysik og Rumteknologi","Industriel Økonomi og Teknologiledelse","Informationsteknologi","Kemisk og Biokemisk Teknologi","Kommunikationsteknologier og Systemdesign","Konstruktion og Mekanik","Lyd og Akustisk Teknologi","Lys og Teknologi","Marin Ingeniørvidenskab","Matematisk Modellering og Computing","Materiale- og Procesteknologi","Medicin og Teknologi","Menneskeorienteret Kunstig Intelligens","Miljøteknologi","Teknologisk Entreprenørskab","Vindenergi"]}},
-  {key:"cbs",name:"CBS",full:"Copenhagen Business School",region:"cph",src:"CBS' hjemmeside",lists:{
+  {key:"cbs",name:"CBS",full:"Copenhagen Business School",region:"kbh",src:"CBS' hjemmeside",lists:{
     bachelor:["BSc in Business Administration and Digital Management","BSc in Business Administration and Service Management","BSc in Business Administration and Sociology","BSc in International Business","BSc in International Business and Politics","BSc in International Shipping and Trade","HA i erhvervsøkonomi","HA i markeds- og kulturanalyse","HA i projektledelse","HA(fil.) - erhvervsøkonomi og filosofi","HA(it.) - erhvervsøkonomi og informationsteknologi","HA(jur.) - erhvervsøkonomi og erhvervsjura","HA(kom.) - erhvervsøkonomi og virksomhedskommunikation","HA(mat.) - erhvervsøkonomi og matematik","HA(psyk.) - erhvervsøkonomi og psykologi"],
     kandidat:["Cand.merc. i finansiering og regnskab","Cand.merc. i økonomisk markedsføring","Cand.merc.(jur.) - erhvervsøkonomi og erhvervsjura","Cand.merc.(kom.) - erhvervsøkonomi og virksomhedskommunikation","Cand.merc.(mat.) - erhvervsøkonomi og matematik","Cand.merc.(psyk.) - erhvervsøkonomi og psykologi","Cand.merc.aud. - revision","Cand.soc. i Human Resource Management","MSc in Business Administration and Bioentrepreneurship","MSc in Business Administration and Data Science","MSc in Business Administration and Digital Business","MSc in Business Administration and Information Systems","MSc in Business Administration and Innovation in Health Care","MSc in Business, Language and Culture","MSc in Economics and Business Administration in Accounting, Strategy and Control","MSc in Economics and Business Administration in Finance and Investments","MSc in Economics and Business Administration in Finance and Strategic Management","MSc in Economics and Business Administration in General Management and Analytics","MSc in Economics and Business Administration in Management of Innovation and Business Development","MSc in Economics and Business Administration in Sales Management","MSc in Economics and Business Administration in Strategy, Organisation and Leadership","MSc in Economics and Business Administration in Supply Chain Management","MSc in Economics and Finance - Advanced Economics and Finance","MSc in Economics and Finance - Applied Economics and Finance","MSc in International Business and Politics","MSSc in Organisational Innovation and Entrepreneurship","MSSc in Public Management and Social Development","MSSc in Strategic Design and Entrepreneurship"]}},
-  {key:"ku",name:"KU",full:"Københavns Universitet",region:"cph",src:"KU's hjemmeside (bacheloruddannelser)",lists:{
+  {key:"ku",name:"KU",full:"Københavns Universitet",region:"kbh",src:"KU's hjemmeside (bacheloruddannelser)",lists:{
     bachelor:["Antropologi","Asienstudier (Indien- og Sydasienstudier)","Asienstudier (Japanstudier)","Asienstudier (Kinastudier)","Asienstudier (Koreastudier)","Audiologopædi","Bioinformatik","Biokemi","Biologi","Bioteknologi","Dansk","Datalogi","Datalogi-økonomi","Engelsk","Europæisk etnologi","Farmaci","Film- og medievidenskab","Filosofi","Folkesundhedsvidenskab","Forhistorisk arkæologi","Forsikringsmatematik","Fransk sprog og kultur","Fysik","Fødevarer og ernæring","Geografi og geoinformatik","Geologi-geoscience","Græsk, klassisk","Grønlandske og arktiske studier","Historie","Idræt og fysisk aktivitet","Informationsstudier","Italiensk sprog og kultur","Jura","Kemi","Klassisk arkæologi","Kognitions- og datavidenskab","Kommunikation og it","Kunsthistorie","Landskabsarkitektur","Latin","Lingvistik","Litteraturvidenskab","Machine learning og datavidenskab","Matematik","Matematik-økonomi","Medicin (København)","Medicin (Køge)","Medicinalkemi","Mellemøstens sprog og samfund","Mesoamerikastudier","Miljø- og fødevareøkonomi","Molekylær biomedicin","Musikvidenskab","Nanoscience","Naturressourcer","Odontologi","Psykologi","Pædagogik","Religionsvidenskab","Retorik","Samfundsfag","Skov- og landskabsingeniør (Djursland)","Skov- og landskabsingeniør (Nødebo)","Sociologi","Spansk og latinamerikansk sprog og kultur","Statskundskab","Sundhed og informatik","Tandpleje","Teater- og performancestudier","Teologi","Tysk sprog og kultur","Urban landskabsingeniør","Veterinærmedicin","Økonomi","Østeuropastudier"]}},
-  {key:"itu",name:"ITU",full:"IT-Universitetet i København",region:"cph",src:"ITU's hjemmeside",lists:{
+  {key:"itu",name:"ITU",full:"IT-Universitetet i København",region:"kbh",src:"ITU's hjemmeside",lists:{
     bachelor:["BSc in Data Science","BSc in Digital Design and Interactive Technologies","BSc in Global Business Informatics","BSc in Software Development"],
     kandidat:["MSc in Advanced Software Engineering","MSc in Business Analytics & Artificial Intelligence","MSc in Computer Science","MSc in Data Science","MSc in Digital Design and Interactive Technologies","MSc in Digital Innovation & Management","MSc in Games","MSc in Software Design"]}},
-  {key:"ruc",name:"RUC",full:"Roskilde Universitet",region:"cph",src:"RUC's hjemmeside",lists:{
+  {key:"ruc",name:"RUC",full:"Roskilde Universitet",region:"sj",src:"RUC's hjemmeside",lists:{
     bachelor:["Humanistisk Bachelor","Humanistisk-Teknologisk Bachelor","Naturvidenskabelig Bachelor","Samfundsvidenskabelig Bachelor","Bachelor in Global Humanities","International Bachelor in Natural Sciences","International Bachelor in Social Sciences"],
     fag:["Arbejdsliv","Bioprocess Science","Bæredygtig Omstilling","Business Administration","Business Studies","Chemistry","Communication Studies","Computer Science","Cultural Encounters","Datalogi","Dansk","Environmental Biology","Erhvervsøkonomi (HA)","Filosofi og Videnskabsteori","Geografi","Historie","Informatik","International Studies","Journalistik","Kommunikation","Kulturmødestudier","Mathematics","Medicinalbiologi","Molecular Biology","Performance Design","Physics","Plan, By og Proces","Politik og Forvaltning","Psykologi","Pædagogik og Uddannelsesstudier","Samfundsøkonomi","Social Psychology of Everyday Life","Socialvidenskab","Sundhedsfremme og Sundhedsstrategier","Virksomhedsstudier"]}},
-  {key:"au",name:"AU",full:"Aarhus Universitet",region:"aar",src:null,lists:{
+  {key:"au",name:"AU",full:"Aarhus Universitet",region:"oj",src:null,lists:{
     bachelor:["Erhvervsøkonomi (HA)","Økonomi","Jura","Statskundskab","Psykologi","Medicin","Odontologi","Folkesundhedsvidenskab","Datalogi","IT-produktudvikling","Data Science","Matematik","Fysik","Kemi","Biologi","Molekylærbiologi","Nanoscience","Geoscience","Informationsvidenskab","Digital design","Kognitionsvidenskab","Medievidenskab","Dansk","Engelsk","Historie","Filosofi","Antropologi","Teologi","Idræt","Uddannelsesvidenskab (Emdrup)","Marketing and Management Communication","Business Development Engineering (Herning)","Global Management and Manufacturing (Herning)","Maskinteknik","Elektroteknologi","Bygningsdesign","Kemi- og bioteknologi","Softwareteknologi"]}},
-  {key:"aau",name:"AAU",full:"Aalborg Universitet",region:"aal",src:null,lists:{
+  {key:"aau",name:"AAU",full:"Aalborg Universitet",region:"nj",src:null,lists:{
     bachelor:["Erhvervsøkonomi (HA)","Økonomi","International Business","Jura","Psykologi","Sociologi","Socialvidenskab","Politik og administration","Samfundsfag","Kommunikation og digitale medier","Dansk","Engelsk","Historie","Medicin","Medicin med industriel specialisering","Sundhedsteknologi","Idræt","Matematik","Fysik","Nanoteknologi","Datalogi","Software","Informationsteknologi","Interaktionsdesign","Medialogi","Elektronik og IT","Maskin og produktion","Byggeri og anlæg","Arkitektur og design","Kemiteknologi","Bioteknologi","Energi","Robotteknologi","Produktion","Teknoantropologi (København)","Bæredygtigt design (København)"]}},
-  {key:"sdu",name:"SDU",full:"Syddansk Universitet",region:"ode",src:"SDU's hjemmeside",lists:{
+  {key:"sdu",name:"SDU",full:"Syddansk Universitet",region:"fyn",src:"SDU's hjemmeside",lists:{
     bachelor:["Amerikanske studier (Odense)","Anvendt matematik (Odense)","Artificial Intelligence (Vejle)","Audiologi (Odense)","Audiologopædi (Odense)","Biblioteksvidenskab, IT og kommunikation (Kolding)","Biokemi og molekylær biologi (Odense)","Biologi (Odense)","Biomedicin (Odense)","Bygningsteknik og -design (Odense)","Computer Science (Vejle)","Dansk (Odense)","Datalogi (Odense)","Designkultur med mode og erhvervsøkonomi (Kolding)","Designkultur med rum og æstetik (Kolding)","Digital design med interaktionsstudier og IT (Kolding)","Electronics (Sønderborg)","Elektronik (Odense)","Energisystemer (Odense)","Engelsk (Odense)","Engineering, innovation and business (Sønderborg)","Erhvervsøkonomi, HA (Esbjerg)","Erhvervsøkonomi, HA (Kolding)","Erhvervsøkonomi, HA (Odense)","Erhvervsøkonomi, HA (Sønderborg)","Europæiske studier (Sønderborg)","Farmaci (Odense)","Filosofi (Odense)","Folkesundhedsvidenskab (Odense)","Fysik (Odense)","Fysik og teknologi (Odense)","Global ledelse og design af produktionsnetværk (GMM) (Odense)","HA (jur.) (Odense)","Historie (Odense)","Idræt og sundhed (Odense)","Integreret design (Odense)","Interactive Technology Engineering (Vejle)","International erhvervsøkonomi, sprog og kultur (Sønderborg)","International virksomhedskommunikation – engelsk og kommunikation, medier eller marketing (Odense)","International virksomhedskommunikation – engelsk og sociale medier (Kolding)","International virksomhedskommunikation – to fremmedsprog (Odense)","International virksomhedskommunikation – tysk og kommunikation, medier eller marketing (Odense)","Journalistik (Odense)","Jura (Esbjerg)","Jura (Odense)","Kemi (Odense)","Kemi- og bioteknologi (Odense)","Klinisk biomekanik / kiropraktor (Odense)","Kunstig intelligens (Odense)","Litteraturvidenskab (Odense)","Market and Management Anthropology (Odense)","Maskinteknik (Odense)","Matematik (Odense)","Matematik-økonomi (Odense)","Mechanical Engineering (Sønderborg)","Mechatronics (Sønderborg)","Medicin (Odense)","Medicin (Esbjerg)","Medicinalkemi (Odense)","Medievidenskab (Odense)","Mekanik (Odense)","Negot - erhvervsøkonomi og erhvervssprog (Odense)","Odontologi (Odense)","Oldtidskundskab (Odense)","Produktion (Odense)","Produktudvikling og innovation (Odense)","Psykologi (Esbjerg)","Psykologi (Odense)","Religionsstudier (Odense)","Robotteknologi (Odense)","Samfundsfag (Odense)","Software Engineering (Odense)","Software Engineering (Sønderborg)","Software Engineering (Vejle)","Softwareteknologi (Odense)","Spiludvikling og læringsteknologi (Odense)","Statskundskab (Odense)","Sundheds- og velfærdsteknologi (Odense)","Tandpleje (Odense)","Tysk (Odense)","Økonomi (Odense)"],
     diplom:["Bygningsteknik (Odense)","Electronics (Sønderborg)","Elektronik (Odense)","Kemi- og bioteknologi (Odense)","Mechanical Engineering (Sønderborg)","Mechatronics (Sønderborg)","Robotteknologi (Odense)"]}},
-  {key:"kp",type:"prof",name:"KP",full:"Københavns Professionshøjskole",region:"cph",src:null,lists:{
+  {key:"kp",type:"prof",name:"KP",full:"Københavns Professionshøjskole",region:"kbh",src:null,lists:{
     prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder","Psykomotorik","Ernæring og sundhed","Global Nutrition and Health","Tandplejer","Offentlig administration","Kristendom, kultur og kommunikation","Natur- og kulturformidling","Tekstildesign, -håndværk og formidling","Laboratorie- og fødevareteknologi"],
     ea:["Administrationsøkonom"]}},
-  {key:"absalon",type:"prof",name:"Absalon",full:"Professionshøjskolen Absalon",region:"cph",src:null,lists:{
+  {key:"absalon",type:"prof",name:"Absalon",full:"Professionshøjskolen Absalon",region:"sj",src:null,lists:{
     prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Ernæring og sundhed"]}},
-  {key:"ucl",type:"prof",name:"UCL",full:"UCL Erhvervsakademi og Professionshøjskole",region:"ode",src:null,lists:{
+  {key:"ucl",type:"prof",name:"UCL",full:"UCL Erhvervsakademi og Professionshøjskole",region:"fyn",src:null,lists:{
     prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder","Offentlig administration"],
     ea:["Markedsføringsøkonom","Finansøkonom","Datamatiker","Multimediedesigner","Serviceøkonom","Logistikøkonom"]}},
-  {key:"ucsyd",type:"prof",name:"UC SYD",full:"Professionshøjskolen UC SYD",region:"ode",src:null,lists:{
+  {key:"ucsyd",type:"prof",name:"UC SYD",full:"Professionshøjskolen UC SYD",region:"sjy",src:null,lists:{
     prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder"]}},
-  {key:"via",type:"prof",name:"VIA",full:"VIA University College",region:"aar",src:null,lists:{
+  {key:"via",type:"prof",name:"VIA",full:"VIA University College",region:"oj",src:null,lists:{
     prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Jordemoder","Psykomotorik","Ernæring og sundhed","Offentlig administration","Bygningskonstruktør"],
     diplom:["Global Business Engineering (Horsens)","Maskiningeniør (Horsens)","Bygningsingeniør (Horsens)"]}},
-  {key:"ucn",type:"prof",name:"UCN",full:"Professionshøjskolen UCN",region:"aal",src:null,lists:{
+  {key:"ucn",type:"prof",name:"UCN",full:"Professionshøjskolen UCN",region:"nj",src:null,lists:{
     prof:["Pædagog","Lærer","Sygeplejerske","Socialrådgiver","Fysioterapeut","Ergoterapeut","Bioanalytiker","Radiograf","Offentlig administration"],
     ea:["Datamatiker","Markedsføringsøkonom","Finansøkonom","Multimediedesigner","Serviceøkonom","Logistikøkonom"]}},
-  {key:"ek",type:"ea",name:"EK",chip:"EK (KEA, Cphbusiness)",full:"Erhvervsakademi København (tidligere KEA og Cphbusiness)",region:"cph",src:null,lists:{
+  {key:"ek",type:"ea",name:"EK",chip:"EK (KEA, Cphbusiness)",full:"Erhvervsakademi København (tidligere KEA og Cphbusiness)",region:"kbh",src:null,lists:{
     ea:["Datamatiker","Miljøteknolog","Multimediedesigner","Byggekoordinator","Designteknolog","Entreprenørskab og design","Energiteknolog","IT-teknolog","Markedsføringsøkonom","Finansøkonom","Serviceøkonom","Logistikøkonom","Handelsøkonom"],
     prof:["Innovation og entrepreneurship","International handel og markedsføring","International hospitality management","Sportsmanagement","Webudvikling","Web Development","Design og business","Digital konceptudvikling","Produktudvikling og teknisk integration","Smykker, teknologi og business","Softwareudvikling","Finans"]}},
-  {key:"eaaa",type:"ea",name:"EAAA",full:"Erhvervsakademi Aarhus",region:"aar",src:null,lists:{
+  {key:"eaaa",type:"ea",name:"EAAA",full:"Erhvervsakademi Aarhus",region:"oj",src:null,lists:{
     ea:["Datamatiker","Markedsføringsøkonom","Finansøkonom","Multimediedesigner","Logistikøkonom","Serviceøkonom","IT-teknolog","Produktionsteknolog"],
     prof:["Softwareudvikling","Webudvikling","International handel og markedsføring","Finans","Innovation og entrepreneurship"]}},
-  {key:"zealand",type:"ea",name:"Zealand",full:"Zealand – Sjællands Erhvervsakademi",region:"cph",src:null,lists:{
+  {key:"zealand",type:"ea",name:"Zealand",full:"Zealand – Sjællands Erhvervsakademi",region:"sj",src:null,lists:{
     ea:["Datamatiker","Markedsføringsøkonom","Finansøkonom","Logistikøkonom","Serviceøkonom","Multimediedesigner","Produktionsteknolog"],
     prof:["International handel og markedsføring","Softwareudvikling","Innovation og entrepreneurship"]}},
-  {key:"iba",type:"ea",name:"IBA",full:"IBA Erhvervsakademi Kolding",region:"ode",src:null,lists:{
+  {key:"iba",type:"ea",name:"IBA",full:"IBA Erhvervsakademi Kolding",region:"tre",src:null,lists:{
     ea:["Markedsføringsøkonom","Finansøkonom","Logistikøkonom","Multimediedesigner","Designteknolog","E-designer","Datamatiker"],
     prof:["International handel og markedsføring","E-handel","Design og business","Softwareudvikling"]}}
 ];
@@ -514,7 +516,7 @@ const RULES = [
   [/plan|urban|landskab/,{sustain:.7,pmo:.55,research:.55,engineering:.5}],
   [/idræt|sport/,{education:.6,customer:.55,health:.5,hr:.5,marketing:.45}]
 ];
-const CAMPUS = [[/\((københavn|køge|emdrup|ballerup|lyngby)\)$/,"cph"],[/\((herning|aarhus|djursland|horsens)\)$/,"aar"],[/\((odense|kolding|esbjerg|sønderborg|vejle|slagelse)\)$/,"ode"],[/\((aalborg)\)$/,"aal"]];
+const CAMPUS = [[/\((københavn|emdrup|ballerup|lyngby)\)$/,"kbh"],[/\((køge|slagelse|roskilde)\)$/,"sj"],[/\((nødebo|hillerød)\)$/,"nsj"],[/\((aarhus|djursland|horsens)\)$/,"oj"],[/\((herning|viborg|holstebro)\)$/,"mvj"],[/\((odense)\)$/,"fyn"],[/\((kolding|vejle)\)$/,"tre"],[/\((esbjerg)\)$/,"svj"],[/\((sønderborg)\)$/,"sjy"],[/\((aalborg)\)$/,"nj"]];
 const KEYWORDS = [
   [/engineer|ingeniør|polyt/,{engineering:.6,operations:.6,pmo:.55,research:.4}],
   [/business|økonomi|erhverv|management|ledelse|handel/,{bizdev:.7,finance:.6,strategy:.6,pmo:.5,salesops:.55,marketing:.5}],
@@ -530,7 +532,23 @@ const KEYWORDS = [
   [/financ|finans|account|revision|regnskab/,{finance:.95,bi:.55}],
   [/language|sprog|english|engelsk|tysk|german|fransk|french|spansk/,{customer:.7,marketing:.6}]
 ];
-const REGIONS = [{v:"cph",l:"Storkøbenhavn"},{v:"aar",l:"Aarhus"},{v:"ode",l:"Odense"},{v:"aal",l:"Aalborg"},{v:"any",l:"Hele landet"}];
+/* Landsdele. Tilsammen dækker de hele Danmark. */
+const REGION_GROUPS = [
+  {l:"Sjælland og øerne", r:[{v:"kbh",l:"Storkøbenhavn"},{v:"nsj",l:"Nordsjælland"},{v:"sj",l:"Midt- og Vestsjælland"},{v:"ssj",l:"Sydsjælland og Lolland-Falster"},{v:"bh",l:"Bornholm"}]},
+  {l:"Fyn", r:[{v:"fyn",l:"Fyn og øerne"}]},
+  {l:"Jylland", r:[{v:"sjy",l:"Sønderjylland"},{v:"svj",l:"Sydvestjylland (Esbjerg)"},{v:"tre",l:"Trekantområdet"},{v:"oj",l:"Østjylland (Aarhus)"},{v:"mvj",l:"Midt- og Vestjylland"},{v:"nj",l:"Nordjylland"}]}
+];
+const REGIONS = [...REGION_GROUPS.flatMap(g=>g.r),{v:"any",l:"Hele landet"}];
+/* Gamle koder (fra før landsdelene) oversættes */
+const OLD_AREA = {cph:"kbh",aar:"oj",ode:"fyn",aal:"nj"};
+const area = r => OLD_AREA[r] || r;
+/* Det område, man starter med: ens egen landsdel plus den nærmeste nabo, hvor mange pendler */
+const NEAR = {kbh:["kbh","nsj"],nsj:["nsj","kbh"],sj:["sj","kbh"],ssj:["ssj","sj"],bh:["bh"],fyn:["fyn"],sjy:["sjy","tre"],svj:["svj","tre"],tre:["tre","fyn"],oj:["oj","mvj"],mvj:["mvj","oj"],nj:["nj"]};
+const nearAreas = r => NEAR[area(r)] || [area(r)];
+function regionChips(p, labelId){
+  return REGION_GROUPS.map(g=>`<p class="fine region-group">${g.l}</p><div class="chips" role="group" aria-label="${g.l}">${g.r.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div>`).join("")
+    + `<div class="chips region-any"><button class="chip" data-act="region" data-v="any" aria-pressed="${p.regions.includes("any")}">Hele landet</button></div>`;
+}
 const HOURS = [{v:10,l:"Op til 10 t"},{v:15,l:"10–15 t"},{v:20,l:"15–20 t"},{v:25,l:"20+ t"}];
 const DANISH = [{v:"fluent",l:"Flydende dansk"},{v:"some",l:"Lidt dansk"},{v:"none",l:"Intet dansk"}];
 const SKILLS_COMMON = ["Excel","Bogføring","Regnskab","Løn","Power BI","SQL","Python","SAP","Salesforce","Tableau","Lean","Procesforbedring","Projektkoordinering","Stakeholder management","Dataanalyse","Forhandling","Forecasting","Figma","JavaScript","React","Statistik","R","Skriftlig formidling","Sociale medier","Copywriting","Kundeservice","Rekruttering","Kontraktret","ESG-rapportering","LCA","CAD","Laboratoriearbejde","Dokumentation","PowerPoint","CRM","Brugerundersøgelser","Optimering","Eventplanlægning","Prototyping"];
@@ -630,10 +648,10 @@ function initials(s){ return s.split(/\s+/).filter(w=>/^[A-ZÆØÅ]/.test(w)).sl
 
 /* ============ TILSTAND ============ */
 const KEY = "pathfit-proto-v3";
-function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["cph"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",alerts:true,alertFreq:"daily",email:""}; }
+function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",alerts:true,alertFreq:"daily",email:""}; }
 function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{}}; }
 function load(){
-  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); return Object.assign(f,s,{profile:Object.assign(freshProfile(),s.profile||{})}); } }catch(e){}
+  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
   return fresh();
 }
 let S = load();
@@ -676,14 +694,14 @@ function findProgram(text, uni){
 function setProgram(p, keepRegion){
   const pr=S.profile, s=schoolOf(p.uni);
   pr.programId=p.id; pr.programName=p.name; pr.programShort=shortName(p.name); pr.weights={...p.w}; pr.guessed=false;
-  pr.uni=s.name; pr.uniKey=s.key; pr.level=p.level; if(!keepRegion) pr.regions=[p.region];
+  pr.uni=s.name; pr.uniKey=s.key; pr.level=p.level; if(!keepRegion) pr.regions=nearAreas(p.region);
   pr.studyText=p.name; S.disabled=[];
 }
 function setFreeText(text, uniKey, keepRegion){
   const pr=S.profile; const s=uniKey && uniKey!=="other" ? schoolOf(uniKey) : null;
   let name=text.trim(); name=name.charAt(0).toUpperCase()+name.slice(1);
   pr.programId=null; pr.programName=name||"Din uddannelse"; pr.programShort=pr.programName; pr.weights=derive(name); pr.guessed=true;
-  pr.uni=s?s.name:""; pr.uniKey=s?s.key:""; pr.level=""; if(!keepRegion) pr.regions=[s?s.region:"cph"]; pr.studyText=name; S.disabled=[];
+  pr.uni=s?s.name:""; pr.uniKey=s?s.key:""; pr.level=""; if(!keepRegion) pr.regions=nearAreas(s?s.region:"kbh"); pr.studyText=name; S.disabled=[];
 }
 
 /* ============ MATCHING ============ */
@@ -709,7 +727,7 @@ function evaluate(job, c){
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
   if(job.hMin > p.hoursMax+2) return {out:"hours"};
-  if(!p.regions.includes("any") && job.region!=="remote" && !p.regions.includes(job.region)) return {out:"location"};
+  const jr=area(job.region); if(!p.regions.includes("any") && jr!=="remote" && jr!=="dk" && !p.regions.map(area).includes(jr)) return {out:"location"};
   const prim = W[job.fam]||0;
   let bestSec={f:null,w:0};
   for(const f of job.sec||[]){ const w=(W[f]||0)*.85; if(w>bestSec.w) bestSec={f,w}; }
@@ -999,8 +1017,8 @@ function obFilters(){
     <div class="field"><span class="label" id="lb-h">Timer om ugen</span>
       <div class="seg" role="group" aria-labelledby="lb-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
     <div class="field"><span class="label" id="lb-r">Hvor kan du arbejde?</span>
-      <div class="chips" role="group" aria-labelledby="lb-r">${REGIONS.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div>
-      <p class="fine">Remote-job er altid med.</p></div>
+      ${regionChips(p,"lb-r")}
+      <p class="fine">Vælg alle de landsdele, du kan arbejde i. Remote-job og landsdækkende job er altid med.</p></div>
     <div class="ob-actions"><button class="btn btn-primary btn-lg" data-act="ob-next" ${p.danish?"":"disabled"}>Fortsæt</button><button class="btn btn-quiet" data-act="ob-back">Tilbage</button></div>
   </div>`;
 }
@@ -1115,7 +1133,7 @@ function tProfile(){
   <section class="pcard"><h2>Filtre</h2><p class="hint">Job, der ikke består dem, kommer aldrig i dit feed.</p>
     <div class="field"><span class="label" id="pl-da">Dansk-niveau</span><div class="seg" role="group" aria-labelledby="pl-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div></div>
     <div class="field"><span class="label" id="pl-h">Timer om ugen</span><div class="seg" role="group" aria-labelledby="pl-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
-    <div class="field"><span class="label" id="pl-r">Område</span><div class="chips" role="group" aria-labelledby="pl-r">${REGIONS.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="pl-r">Område</span>${regionChips(p,"pl-r")}</div>
     <div class="field"><span class="label" id="pl-f">Felter, der er med</span><div class="chips" role="group" aria-labelledby="pl-f">${Object.keys(p.weights).filter(f=>p.weights[f]>=.3).sort((a,b)=>p.weights[b]-p.weights[a]).map(f=>`<button class="chip" data-act="fam-toggle" data-v="${f}" aria-pressed="${!S.disabled.includes(f)}">${FAM[f].label}</button>`).join("")}</div></div>
   </section>
 

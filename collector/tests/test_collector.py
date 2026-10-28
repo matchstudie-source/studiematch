@@ -72,7 +72,7 @@ class EnrichTests(unittest.TestCase):
     def test_hours_region_family(self):
         self.assertEqual(enrich.detect_hours("Jobbet er 15-20 timer om ugen"), (15, 20))
         self.assertEqual(enrich.detect_hours("15 hours per week"), (15, 15))
-        self.assertEqual(enrich.detect_region("Copenhagen, Denmark", "aar")[0], "cph")
+        self.assertEqual(enrich.detect_region("Copenhagen, Denmark", "aar")[0], "kbh")
         fam, _ = enrich.classify_families("Studentermedhjælper til regnskab", "bogføre bilag og månedsafslutning")
         self.assertEqual(fam, "finance")
         fam, _ = enrich.classify_families("Pædagogmedhjælper (studerende)", "faste vagter i vores børnehave")

@@ -94,7 +94,7 @@ Står der "intet jobsystem fundet" i `collector/discover_report.md`, bruger virk
 
 Sådan finder du ud af, hvilket system en virksomhed bruger: åbn et af deres jobopslag, og se på adressen. Står der fx `teamtailor`, `greenhouse`, `lever`, `smartrecruiters`, `hr-manager`, `emply` eller `myworkdayjobs`, kan du tilføje dem.
 
-`region` er en af `cph` (Storkøbenhavn og Sjælland), `aar`, `ode`, `aal` eller `remote`.
+`region` er landsdelen: `kbh` (Storkøbenhavn), `nsj` (Nordsjælland), `sj` (Midt- og Vestsjælland), `ssj` (Sydsjælland og Lolland-Falster), `bh` (Bornholm), `fyn`, `sjy` (Sønderjylland), `svj` (Sydvestjylland), `tre` (Trekantområdet), `oj` (Østjylland), `mvj` (Midt- og Vestjylland), `nj` (Nordjylland) eller `remote`. De gamle koder `cph`, `aar`, `ode` og `aal` virker stadig. Udfylder du `city`, finder indsamleren selv landsdelen.
 `fam` er et af felterne i `collector/enrich.py` (fx `finance`, `health`, `education`, `marketing`, `software`).
 
 ### Job, som en virksomhed sender direkte: `collector/manual_jobs.csv`

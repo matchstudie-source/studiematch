@@ -64,16 +64,78 @@ DANISH_PLUS = ["dansk er en fordel", "danish is a plus", "danish is an advantage
                "danish is nice to have", "kendskab til dansk"]
 DANISH_STOPWORDS = [" og ", " at ", " du ", " vi ", " er ", " til ", " med ", " på ", " har ", " som ", " kan "]
 
-CITY_REGION = {
-    "københavn": "cph", "copenhagen": "cph", "frederiksberg": "cph", "lyngby": "cph", "ballerup": "cph",
-    "søborg": "cph", "hvidovre": "cph", "glostrup": "cph", "kastrup": "cph", "valby": "cph", "herlev": "cph",
-    "hellerup": "cph", "gentofte": "cph", "taastrup": "cph", "brøndby": "cph", "rødovre": "cph", "albertslund": "cph",
-    "roskilde": "cph", "køge": "cph", "hillerød": "cph", "ishøj": "cph", "amager": "cph", "ørestad": "cph",
-    "aarhus": "aar", "århus": "aar", "horsens": "aar", "herning": "aar", "randers": "aar", "silkeborg": "aar", "viby": "aar",
-    "odense": "ode", "kolding": "ode", "vejle": "ode", "svendborg": "ode", "esbjerg": "ode", "sønderborg": "ode", "fredericia": "ode",
-    "aalborg": "aal", "hjørring": "aal", "nørresundby": "aal",
-    "remote": "remote", "hjemmefra": "remote", "fjernarbejde": "remote",
+# Landsdele. Hele Danmark er dækket: hver by og kommune hører til netop én landsdel.
+AREA_TOWNS = {
+    "kbh": "københavn copenhagen frederiksberg amager ørestad valby vanløse brønshøj nørrebro østerbro vesterbro sydhavn "
+           "nordhavn kastrup tårnby dragør hvidovre avedøre rødovre glostrup brøndby albertslund ishøj vallensbæk "
+           "høje-taastrup taastrup hedehusene ballerup måløv skovlunde herlev gladsaxe søborg bagsværd buddinge "
+           "gentofte hellerup charlottenlund ordrup klampenborg lyngby lyngby-taarbæk virum furesø farum værløse "
+           "rudersdal holte nærum birkerød greve solrød smørum egedal ølstykke stenløse storkøbenhavn hovedstaden "
+           "hovedstadsområdet",
+    "nsj": "nordsjælland hillerød helsingør fredensborg hørsholm allerød lillerød humlebæk espergærde snekkersten "
+           "gribskov helsinge gilleleje frederikssund slangerup halsnæs frederiksværk hundested kokkedal nivå",
+    "sj": "sjælland roskilde lejre køge stevns ringsted sorø slagelse korsør skælskør holbæk kalundborg odsherred "
+          "faxe haslev midtsjælland vestsjælland",
+    "ssj": "sydsjælland næstved vordingborg møn stege guldborgsund falster lolland nakskov maribo lolland-falster",
+    "bh": "bornholm rønne nexø aakirkeby hasle",
+    "fyn": "fyn odense svendborg nyborg middelfart assens faaborg faaborg-midtfyn ringe kerteminde nordfyn bogense "
+           "langeland rudkøbing ærø ærøskøbing broby otterup munkebo",
+    "sjy": "sønderjylland sønderborg aabenraa åbenrå haderslev tønder vojens gråsten padborg nordborg augustenborg toftlund",
+    "svj": "sydvestjylland esbjerg varde vejen ribe fanø grindsted brørup rødding",
+    "tre": "trekantområdet kolding fredericia vejle børkop christiansfeld give jelling billund hedensted",
+    "oj": "østjylland aarhus århus viby højbjerg brabrand risskov tilst lystrup skejby åbyhøj hasselager odder "
+          "skanderborg horsens juelsminde randers syddjurs ebeltoft norddjurs grenaa djursland favrskov hinnerup "
+          "hadsten silkeborg samsø",
+    "mvj": "midtjylland vestjylland herning ikast ikast-brande brande holstebro struer lemvig ringkøbing "
+           "ringkøbing-skjern skjern viborg skive bjerringbro kjellerup karup",
+    "nj": "nordjylland aalborg nørresundby hjørring frederikshavn skagen sæby brønderslev jammerbugt aabybro "
+          "vesthimmerland aars rebild støvring mariagerfjord hobro thisted thy morsø læsø himmerland vendsyssel",
+    "remote": "remote hjemmefra fjernarbejde",
 }
+# Flerordsnavne og navne, der ellers ville ramme forkert
+AREA_PHRASES = {
+    "region hovedstaden": "kbh", "capital region": "kbh", "region sjælland": "sj", "region zealand": "sj",
+    "region syddanmark": "fyn", "region midtjylland": "oj", "central jutland": "oj", "region nordjylland": "nj",
+    "north denmark": "nj", "midt- og vestjylland": "mvj", "nykøbing falster": "ssj", "nykøbing f": "ssj",
+    "nykøbing sjælland": "sj", "nykøbing sj": "sj", "nykøbing mors": "nj", "kongens lyngby": "kbh", "kgs. lyngby": "kbh",
+    "store heddinge": "sj", "work from home": "remote",
+}
+_TOWN_AREA = {t: a for a, towns in AREA_TOWNS.items() for t in towns.split()}
+_TOWN_AREA.update(AREA_PHRASES)
+_TOWN_RE = re.compile(r"(?<![a-zæøå])(" + "|".join(sorted(map(re.escape, _TOWN_AREA), key=len, reverse=True)) + r")(?![a-zæøå])")
+OLD_REGION = {"cph": "kbh", "aar": "oj", "ode": "fyn", "aal": "nj"}
+AREAS = set(AREA_TOWNS) | {"dk"}
+
+
+def area_from_postcode(code: int) -> str | None:
+    ranges = [(1000, 2969, "kbh"), (2970, 3699, "nsj"), (3700, 3799, "bh"), (4000, 4699, "sj"), (4700, 4999, "ssj"),
+              (5000, 5999, "fyn"), (6000, 6099, "tre"), (6100, 6599, "sjy"), (6600, 6899, "svj"), (6900, 6999, "mvj"),
+              (7000, 7199, "tre"), (7200, 7299, "svj"), (7300, 7399, "tre"), (7400, 7899, "mvj"), (7700, 7799, "nj"),
+              (7900, 7999, "nj"), (8000, 8799, "oj"), (8800, 8899, "mvj"), (8900, 8999, "oj"), (9000, 9999, "nj")]
+    hit = None
+    for lo, hi, area in ranges:  # senere, smallere intervaller vinder (fx Thy 77xx)
+        if lo <= code <= hi:
+            hit = area
+    return hit
+
+
+def areas_in(text: str) -> list[str]:
+    """Alle landsdele nævnt i en tekst, i den rækkefølge de står."""
+    low = (text or "").lower()
+    found = [_TOWN_AREA[m.group(1)] for m in _TOWN_RE.finditer(low)]
+    if not found:
+        for m in re.finditer(r"(?<!\d)(\d{4})(?=\s+[a-zæøå])", low):
+            if (a := area_from_postcode(int(m.group(1)))):
+                found.append(a)
+    return list(dict.fromkeys(found))
+
+
+def employer_area(employer: dict) -> str:
+    found = [a for a in areas_in(employer.get("city", "")) if a != "remote"]
+    if found:
+        return found[0]
+    r = (employer.get("region") or "").strip()
+    return OLD_REGION.get(r, r if r in AREAS else "kbh")
 
 
 # Stillinger, der aldrig er studiejob, selvom "studerende" står i teksten
@@ -151,11 +213,15 @@ def detect_hours(text: str) -> tuple[int, int]:
 
 
 def detect_region(location: str, fallback: str) -> tuple[str, str]:
-    low = (location or "").lower()
-    for city, region in CITY_REGION.items():
-        if city in low:
-            return region, location or city.title()
-    return fallback, location or ""
+    """Landsdel ud fra opslagets arbejdssted. Nævner opslaget tre eller flere landsdele, er det landsdækkende ("dk")."""
+    found = areas_in(location)
+    if "remote" in found:
+        return "remote", location
+    if len(found) >= 3:
+        return "dk", location
+    if found:
+        return found[0], location
+    return OLD_REGION.get(fallback, fallback if fallback in AREAS else "kbh"), location or ""
 
 
 def detect_skills(text: str) -> list[str]:
@@ -216,7 +282,7 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
         return None
     fam, sec = classify_families(title, text)
     h_min, h_max = detect_hours(text)
-    region, city = detect_region(raw.get("location", ""), employer.get("region") or "cph")
+    region, city = detect_region(raw.get("location", ""), employer_area(employer))
     return {
         "title": title,
         "co": raw.get("company") or employer["name"],
