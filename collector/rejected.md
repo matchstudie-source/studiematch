@@ -19,6 +19,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin på Svendborg Sygehus | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
+| Region Syddanmark | Læge eller speciallæge i psykiatri, intern medicin eller almen medicin til Lokalpsykiatri Kolding | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger to projektmedarbejdere (barselsvikariater) til internationale projekter | ikke et studiejob |
 | Novo Nordisk | PhD Student in Aptamer-Enabled, Animal-Free Bioanalysis | ikke et studiejob |
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
@@ -41,9 +42,9 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |
 | Aarhus Kommune | Studiepraktik i Kommuneplanlægning: Vær med til at forme fremtidens Aarhus | ikke et studiejob |
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
-| Aalborg Kommune | Ansvarsfulde og engagerende pædagoger søges til Botilbuddet Studievej 15 i Nørresundby | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studievejleder til Studie- og karrierevejledningen på Københavns Professionshøjskole | ikke et studiejob |
+| Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | Statslige arbejdsgivere | Studieadjunkt i Play Design til Designskolen Kolding | ikke et studiejob |
 | VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
