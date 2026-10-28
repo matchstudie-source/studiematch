@@ -1,6 +1,6 @@
-# Jobindsamling 2026-10-28 14:44 UTC
+# Jobindsamling 2026-10-28 22:37 UTC
 
-171 studiejob gemt. AI-kald i denne kørsel: 0.
+175 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -11,7 +11,7 @@
 | Visma Public DK | teamtailor | 2 | 1 |  |
 | Humac Denmark | teamtailor | 3 | 0 |  |
 | Cepheo | teamtailor | 16 | 0 |  |
-| GML A/S | teamtailor | 42 | 1 |  |
+| GML A/S | teamtailor | 41 | 1 |  |
 | Colosseum Tandlægerne | teamtailor | 18 | 1 |  |
 | Lufthavnsvikar | teamtailor | 2 | 0 |  |
 | AutoProff | greenhouse | 12 | 0 |  |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 8 | 0 |  |
-| Region Syddanmark | hrmanager | 268 | 5 |  |
+| Region Syddanmark | hrmanager | 269 | 5 |  |
 | Novo Nordisk | rmk | 5 | 2 |  |
 | Novonesis | workday | 5 | 2 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -55,10 +55,10 @@
 | Bang & Olufsen | sitemap | 0 | 0 |  |
 | Matas | emply | 0 | 0 | 14 opslag på joblisten, 0 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 |  |
-| Statslige arbejdsgivere | hrmanager | 429 | 54 |  |
+| Statslige arbejdsgivere | hrmanager | 436 | 54 |  |
 | Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 17 | 0 |  |
-| Pleo | ashby | 36 | 0 |  |
+| Pleo | ashby | 35 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
 | ATP | hrmanager | 23 | 0 |  |
 | PKA | hrmanager | 0 | 0 |  |
@@ -66,12 +66,12 @@
 | Gjensidige | rmk | 1 | 0 |  |
 | LB Forsikring | emply | 1 | 1 | 11 opslag på joblisten, 1 ligner studiejob |
 | KPMG Danmark | hrmanager | 18 | 1 |  |
-| BDO Danmark | emply | 1 | 1 | 12 opslag på joblisten, 1 ligner studiejob |
+| BDO Danmark | emply | 4 | 4 | 29 opslag på joblisten, 4 ligner studiejob |
 | twoday | teamtailor | 12 | 0 |  |
 | Columbus | teamtailor | 88 | 0 |  |
 | Templafy | teamtailor | 5 | 1 |  |
 | Queue-it | teamtailor | 2 | 0 |  |
-| NIRAS | hrmanager | 14 | 1 |  |
+| NIRAS | hrmanager | 16 | 1 |  |
 | Sweco Danmark | hrmanager | 62 | 3 |  |
 | Per Aarsleff | hrmanager | 7 | 1 |  |
 | DSB | sitemap | 0 | 0 |  |
@@ -79,9 +79,9 @@
 | 3 Danmark | teamtailor | 19 | 1 |  |
 | ISS | rmk | 3 | 2 |  |
 | HK | hrmanager | 4 | 0 |  |
-| Aarhus Kommune | hrmanager | 182 | 3 |  |
+| Aarhus Kommune | hrmanager | 183 | 3 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 4 | 3 | 66 opslag på joblisten, 4 ligner studiejob |
+| Aalborg Kommune | emply | 5 | 3 | 119 opslag på joblisten, 5 ligner studiejob |
 | Frederiksberg Kommune | emply | 3 | 3 | 50 opslag på joblisten, 3 ligner studiejob |
 | Hvidovre Kommune | hrmanager | 35 | 0 |  |
 | Brøndby Kommune | emply | 1 | 1 | 38 opslag på joblisten, 1 ligner studiejob |
@@ -93,7 +93,7 @@
 | Roskilde Universitet | hrmanager | 6 | 1 |  |
 | IT-Universitetet | hrmanager | 6 | 2 |  |
 | Københavns Professionshøjskole | emply | 4 | 2 | 13 opslag på joblisten, 4 ligner studiejob |
-| Statslige arbejdsgivere | hrmanager | 80 | 3 |  |
+| Statslige arbejdsgivere | hrmanager | 81 | 3 |  |
 | VIA University College | emply | 2 | 1 | 27 opslag på joblisten, 2 ligner studiejob |
 | UCN | emply | 0 | 0 | 5 opslag på joblisten, 0 ligner studiejob |
 | Erhvervsakademi København | emply | 2 | 2 | 13 opslag på joblisten, 2 ligner studiejob |
@@ -107,14 +107,14 @@
 | DSV | rmk | 1 | 0 |  |
 | Coloplast | rmk | 8 | 7 |  |
 | Ascendis Pharma | workable | 23 | 1 |  |
-| Ballerup Kommune | emply | 1 | 1 | 36 opslag på joblisten, 1 ligner studiejob |
+| Ballerup Kommune | emply | 2 | 2 | 55 opslag på joblisten, 2 ligner studiejob |
 | Novo Nordisk Fonden | workable | 3 | 1 |  |
 | Albertslund Kommune | emply | 0 | 0 | 17 opslag på joblisten, 0 ligner studiejob |
 | Billund Kommune | hrmanager | 19 | 0 |  |
 | Faxe Kommune | hrmanager | 29 | 0 |  |
 | Fredericia Kommune | emply | 0 | 0 | 28 opslag på joblisten, 0 ligner studiejob |
 | Frederikshavn Kommune | emply | 0 | 0 | 39 opslag på joblisten, 0 ligner studiejob |
-| Faaborg-Midtfyn Kommune | hrmanager | 45 | 1 |  |
+| Faaborg-Midtfyn Kommune | hrmanager | 46 | 1 |  |
 | Glostrup Kommune | emply | 0 | 0 | 32 opslag på joblisten, 0 ligner studiejob |
 | Greve Kommune | hrmanager | 22 | 0 |  |
 | Guldborgsund Kommune | emply | 0 | 0 | 34 opslag på joblisten, 0 ligner studiejob |
