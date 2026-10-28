@@ -20,6 +20,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Introduktionsstillinger i intern medicin på Svendborg Sygehus | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger to projektmedarbejdere (barselsvikariater) til internationale projekter | ikke et studiejob |
+| Novo Nordisk | PhD Student in Aptamer-Enabled, Animal-Free Bioanalysis | ikke et studiejob |
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | To maskinmestre til bachelorpraktik på Amagerværket | ikke et studiejob |
@@ -44,5 +45,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studievejleder til Studie- og karrierevejledningen på Københavns Professionshøjskole | ikke et studiejob |
 | Statslige arbejdsgivere | Studieadjunkt i Play Design til Designskolen Kolding | ikke et studiejob |
+| VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |

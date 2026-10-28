@@ -1,5 +1,63 @@
 [
  {
+  "title": "Internship: Freight Digital Customer Journey",
+  "co": "DFDS Denmark",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "logistics",
+  "sec": [
+   "customer"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Logistik og shipping",
+  "postedAt": "2026-10-27T17:42:48+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Do you study International Shipping & Trade at Copenhagen Business School, and are you looking for an internship where you can set direction and create valuable impact?",
+  "req": null,
+  "url": "https://dfdsdenmark.teamtailor.com/jobs/8626811-internship-freight-digital-customer-journey",
+  "enrichedBy": "regler",
+  "id": "xba6c1e187515",
+  "live": true
+ },
+ {
+  "title": "Internship: Procurement Technology, Sustainability & Operations",
+  "co": "DFDS Denmark",
+  "city": "København",
+  "region": "cph",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "procurement",
+  "sec": [
+   "operations",
+   "sustain"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "industry": "Logistik og shipping",
+  "postedAt": "2026-10-27T13:32:58+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Do you study International Shipping & Trade at Copenhagen Business School, and are you looking for an internship where you can set direction and create valuable impact?",
+  "req": null,
+  "url": "https://dfdsdenmark.teamtailor.com/jobs/8624860-internship-procurement-technology-sustainability-operations",
+  "enrichedBy": "regler",
+  "id": "x619b3d17d119",
+  "live": true
+ },
+ {
   "title": "Skibsførerstuderende - Åben ansøgning - Praktik 2026",
   "co": "DFDS Denmark",
   "city": "København",
@@ -711,32 +769,6 @@
   "live": true
  },
  {
-  "title": "Student Assistant for SEO",
-  "co": "Bavarian Nordic A/S",
-  "city": "Hellerup, Denmark",
-  "region": "cph",
-  "hMin": 10,
-  "hMax": 20,
-  "danish": "no",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Bioteknologi",
-  "postedAt": "2026-10-16T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Role and responsibilities In this role, you’ll provide essential administrative and project support, while taking ownership of key tasks.",
-  "req": null,
-  "url": "https://bavariannordic.wd103.myworkdayjobs.com/BavarianNordic/job/Hellerup/Student-Assistant-for-PMO--Strategy-Execution-Office_JR101604",
-  "enrichedBy": "regler",
-  "id": "x1657555cde39",
-  "live": true
- },
- {
   "title": "Procurement Intern",
   "co": "Vestas",
   "city": "Aarhus N, Region Central Jutland, DK, 8200",
@@ -954,6 +986,31 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170868&DepartmentId=19910&MediaId=5",
   "enrichedBy": "regler",
   "id": "x6861343ce7ae",
+  "live": true
+ },
+ {
+  "title": "Det Kongelige Teater søger en marketing- og projektledelsespraktikant til forårssemesteret 2027",
+  "co": "Det Kongelige Teater",
+  "city": "Skuespilhuset",
+  "region": "cph",
+  "hMin": 25,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "pmo"
+  ],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-10-27T16:18:25+00:00",
+  "deadlineAt": "2026-11-10T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du studerende, kulturinteresseret, kompetent kommunikerende og klar til at gøre dig professionelle erfaringer med marketing og kulturkommunikation i et inspirerende og sjovt arbejdsmiljø?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171888&DepartmentId=20375&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x3d4901f80496",
   "live": true
  },
  {
@@ -2011,35 +2068,6 @@
   "live": true
  },
  {
-  "title": "Studiejob i SIRI: Kan du finde nålen i høstakken?",
-  "co": "Statslige arbejdsgivere",
-  "city": "Valby",
-  "region": "cph",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "finance",
-   "hr"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Rekruttering"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-13T15:10:23+00:00",
-  "deadlineAt": "2026-10-27T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Interesserer du dig for sagsbehandling og offentlig administration, og er du nysgerrig på, hvordan data kan bruges til at finde mønstre og forbedre arbejdsgange?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170221&DepartmentId=19029&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x4476aa74bce2",
-  "live": true
- },
- {
   "title": "Studiejob til dig med interesse for økonomi, regnskab og offentlig administration, samt blik for detaljen",
   "co": "Statslige arbejdsgivere",
   "city": "Valby",
@@ -2404,35 +2432,6 @@
   "live": true
  },
  {
-  "title": "Mødebooker (studiejob), Tryg Privat",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "cph",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "customer",
-   "social"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Kundeservice"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
-  "enrichedBy": "regler",
-  "id": "xc7e71abcfd04",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2459,6 +2458,35 @@
   "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
   "enrichedBy": "regler",
   "id": "xddff3f97d777",
+  "live": true
+ },
+ {
+  "title": "Mødebooker (studiejob), Tryg Privat",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "cph",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Kundeservice"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
+  "enrichedBy": "regler",
+  "id": "xc7e71abcfd04",
   "live": true
  },
  {
@@ -2964,33 +2992,6 @@
   "url": "https://aalborg.career.emply.com/ad/studiejob-som-fast-afloser-ved-bofaellesskaber-bostotte-og-vaerested/hy6x66",
   "enrichedBy": "regler",
   "id": "xc7d7908ffe24",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til kommunikation, web og administration",
-  "co": "Aalborg Kommune",
-  "city": "Aalborg",
-  "region": "aal",
-  "hMin": 10,
-  "hMax": 10,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "R",
-   "Sociale medier"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Log ind Min profil Min profil Studentermedhjælper til kommunikation, web og administration Vil du være med til at styrke kunsten og kulturen i hele Nordjylland? Kulturkanten søger en engageret studentermedhjælper ca.",
-  "req": null,
-  "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-til-kommunikation-web-og-administration/52bbs6",
-  "enrichedBy": "regler",
-  "id": "x4d0b5a823a7b",
   "live": true
  },
  {
@@ -3593,35 +3594,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194482&DepartmentId=8336&MediaId=5",
   "enrichedBy": "regler",
   "id": "x8a6d867d5edb",
-  "live": true
- },
- {
-  "title": "To studentermedhjælpere til Kommunikation på TEC",
-  "co": "Technical Education Copenhagen",
-  "city": "Stæhr Johansens Vej 7, 2000 Frederiksberg",
-  "region": "cph",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "Dokumentation",
-   "Sociale medier"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-06T10:24:50+00:00",
-  "deadlineAt": "2026-10-27T23:59:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Eller er du typen, der både kan skrive den gode invitation og få 300 gæster sikkert gennem døren? Så er det måske dig, vi leder efter.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194421&DepartmentId=8478&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x05d9f61924f9",
   "live": true
  },
  {
