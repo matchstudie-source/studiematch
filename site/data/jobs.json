@@ -1696,31 +1696,6 @@
   "live": true
  },
  {
-  "title": "Student til Finanstilsynets juridiske kontor",
-  "co": "Finanstilsynet",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "legal",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-12T08:25:33+00:00",
-  "deadlineAt": "2026-10-28T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du på udkig efter et spændende studiejob i et godt arbejdsmiljø og med gode udviklingsmuligheder? Så er det måske netop dig, vi søger lige nu. Finanstilsynet søger en ny dygtig stud.jur.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170944&DepartmentId=18985&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xf94b08e1da77",
-  "live": true
- },
- {
   "title": "Student til Grønt Politisk Center (GPC) i Finansministeriet",
   "co": "Finansministeriets departement",
   "city": "København K",
@@ -2070,34 +2045,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=5",
   "enrichedBy": "regler",
   "id": "xf7a9c804a726",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til selskabsomstrukturering og kontrol af hovedaktionærer i Aalborg",
-  "co": "Skattestyrelsen",
-  "city": "Region Nordjylland",
-  "region": "nj",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "finance",
-   "hr"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-14T13:59:24+00:00",
-  "deadlineAt": "2026-10-28T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du på udkig efter et studiejob på ca. 15 timer om ugen med mulighed for fleksibilitet i eksamensperioder, som giver dig relevant erhvervserfaring?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171176&DepartmentId=19143&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xf49e4faf2fcb",
   "live": true
  },
  {
@@ -2573,35 +2520,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "pmo",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
-  "enrichedBy": "regler",
-  "id": "xddff3f97d777",
-  "live": true
- },
- {
   "title": "Mødebooker (studiejob), Tryg Privat",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2628,6 +2546,35 @@
   "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
   "enrichedBy": "regler",
   "id": "xc7e71abcfd04",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "pmo",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
+  "enrichedBy": "regler",
+  "id": "xddff3f97d777",
   "live": true
  },
  {
@@ -4589,63 +4536,6 @@
   "url": "https://karriere.danskespil.dk/jobs/8582927-senior-intern-kommunikationsraadgiver",
   "enrichedBy": "regler",
   "id": "x31da9bab7147",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til grafisk produktion",
-  "co": "Danske Spil",
-  "city": "Brøndby",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "product",
-   "marketing"
-  ],
-  "famConf": "title",
-  "skills": [
-   "CRM",
-   "Sociale medier"
-  ],
-  "industry": "Underholdning",
-  "postedAt": "2026-10-07T14:06:10+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Hos os kommer du til at arbejde med grafisk produktion på tværs af nogle af Danmarks mest kendte brands og får mulighed for gradvist at tage mere ansvar for dine egne leverancer.",
-  "req": null,
-  "url": "https://karriere.danskespil.dk/jobs/8512899-studentermedhjaelper-til-grafisk-produktion",
-  "enrichedBy": "regler",
-  "id": "x92cdb78ec545",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til CRM",
-  "co": "Danske Spil",
-  "city": "Brøndby",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "salesops",
-  "sec": [
-   "marketing"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Salesforce",
-   "CRM"
-  ],
-  "industry": "Underholdning",
-  "postedAt": "2026-10-07T13:52:32+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Hos os bliver du ikke bare \"studentermedhjælperen\", som får alle de kedelige opgaver.",
-  "req": null,
-  "url": "https://karriere.danskespil.dk/jobs/8512771-studentermedhjaelper-til-crm",
-  "enrichedBy": "regler",
-  "id": "x8079a946dda1",
   "live": true
  },
  {
