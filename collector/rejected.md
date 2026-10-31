@@ -4,11 +4,8 @@ Bruges til at tjekke, om filteret er for strengt.
 
 | Arbejdsgiver | Titel | Årsag |
 | --- | --- | --- |
-| GML A/S | Financial Controller til international virksomhed | ikke et studiejob |
 | SEB | Corporate & Investment Banking Summer Internship 2027: Client Analyst / SEB, Helsinki | udlandet: Helsinki |
 | SEB | Internship in Trade Finance Operations Team / SEB Group, Vilnius | udlandet: Vilnius |
-| SEB | Product Owner with focus on Privileged Access Management in Internal Identity and Access Management area / SEB, Stockholm | ikke et studiejob |
-| SEB | Product Owner with focus on Privileged Access Management in Internal Identity and Access Management area / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Student to Prime Collateral Services / SEB Stockholm | udlandet: Stockholm |
 | SEB | Wealth & Asset Management Internship 2027: Growth and Market Intelligence / SEB, Gothenburg | udlandet: Göteborg |
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
@@ -35,13 +32,11 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Udenrigsministeriet søger en ekspert i kunstig intelligens med interesse for international politik | ikke et studiejob |
 | Statslige arbejdsgivere | Undervisningsministeriet søger sekretariatschef til Internationalt Sekretariat | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
-| Statslige arbejdsgivere | Økonom til International Skattepolitik i Skatte- og Vækstministeriet | ikke et studiejob |
 | Lunar | International Payment Specialist | ikke et studiejob |
 | Alka | HR-studentmedarbetare, deltid | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |
-| Aarhus Kommune | Studiepraktik i Kommuneplanlægning: Vær med til at forme fremtidens Aarhus | ikke et studiejob |
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studievejleder til Studie- og karrierevejledningen på Københavns Professionshøjskole | ikke et studiejob |
