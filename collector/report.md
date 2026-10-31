@@ -1,6 +1,6 @@
-# Jobindsamling 2026-10-31 05:26 UTC
+# Jobindsamling 2026-10-31 14:27 UTC
 
-181 studiejob gemt. AI-kald i denne kørsel: 0.
+185 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 8 | 0 |  |
-| Region Syddanmark | hrmanager | 290 | 6 |  |
+| Region Syddanmark | hrmanager | 289 | 6 |  |
 | Novo Nordisk | rmk | 5 | 1 |  |
 | Novonesis | workday | 5 | 3 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -79,9 +79,9 @@
 | 3 Danmark | teamtailor | 19 | 1 |  |
 | ISS | rmk | 3 | 2 |  |
 | HK | hrmanager | 7 | 1 |  |
-| Aarhus Kommune | hrmanager | 197 | 3 |  |
+| Aarhus Kommune | hrmanager | 196 | 3 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 1 | 0 | 18 opslag på joblisten, 1 ligner studiejob |
+| Aalborg Kommune | emply | 6 | 4 | 121 opslag på joblisten, 6 ligner studiejob |
 | Frederiksberg Kommune | emply | 4 | 4 | 57 opslag på joblisten, 4 ligner studiejob |
 | Hvidovre Kommune | hrmanager | 37 | 0 |  |
 | Brøndby Kommune | emply | 1 | 1 | 47 opslag på joblisten, 1 ligner studiejob |
@@ -92,7 +92,7 @@
 | Forbrugerrådet Tænk | hrmanager | 3 | 0 |  |
 | Roskilde Universitet | hrmanager | 11 | 1 |  |
 | IT-Universitetet | hrmanager | 7 | 2 |  |
-| Københavns Professionshøjskole | emply | 5 | 3 | 15 opslag på joblisten, 5 ligner studiejob |
+| Københavns Professionshøjskole | emply | 5 | 3 | 16 opslag på joblisten, 5 ligner studiejob |
 | Statslige arbejdsgivere | hrmanager | 78 | 3 |  |
 | VIA University College | emply | 2 | 1 | 28 opslag på joblisten, 2 ligner studiejob |
 | UCN | emply | 0 | 0 | 5 opslag på joblisten, 0 ligner studiejob |

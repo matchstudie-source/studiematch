@@ -989,31 +989,6 @@
   "live": true
  },
  {
-  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-10-15T00:00:00+00:00",
-  "deadlineAt": "2026-11-08T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
-  "enrichedBy": "regler",
-  "id": "x63d77aa5ca60",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Group ESG",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1037,6 +1012,31 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Group-ESG-8600/1447253433/",
   "enrichedBy": "regler",
   "id": "x9c8b1be5861f",
+  "live": true
+ },
+ {
+  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-10-15T00:00:00+00:00",
+  "deadlineAt": "2026-11-08T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
+  "enrichedBy": "regler",
+  "id": "x63d77aa5ca60",
   "live": true
  },
  {
@@ -2853,6 +2853,60 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "pmo",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
+  "enrichedBy": "regler",
+  "id": "xddff3f97d777",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til rådgivning og salg",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "salesops",
+  "sec": [
+   "social"
+  ],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Er du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-r%C3%A5dgivning-og-salg/1452951533/",
+  "enrichedBy": "regler",
+  "id": "x7cd5ddee9cbb",
+  "live": true
+ },
+ {
   "title": "Student assistant interested in turning data and insights into actions",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2883,31 +2937,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til rådgivning og salg",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "salesops",
-  "sec": [
-   "social"
-  ],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-r%C3%A5dgivning-og-salg/1452951533/",
-  "enrichedBy": "regler",
-  "id": "x7cd5ddee9cbb",
-  "live": true
- },
- {
   "title": "Mødebooker (studiejob), Tryg Privat",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2934,35 +2963,6 @@
   "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
   "enrichedBy": "regler",
   "id": "xc7e71abcfd04",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "pmo",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
-  "enrichedBy": "regler",
-  "id": "xddff3f97d777",
   "live": true
  },
  {
@@ -3441,6 +3441,116 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144661&DepartmentId=22761&MediaId=5",
   "enrichedBy": "regler",
   "id": "x3f053d2292b8",
+  "live": true
+ },
+ {
+  "title": "Studiejob som fast afløser ved Bofællesskaber, Bostøtte og Værested",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "health"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Bemærk: Ansættelsen er fast og forudsætter, at du er aktivt indskrevet ved en uddannelsesinstitution.",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studiejob-som-fast-afloser-ved-bofaellesskaber-bostotte-og-vaerested/hy6x66",
+  "enrichedBy": "regler",
+  "id": "xc7d7908ffe24",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper søges til myndighedsopgaver i Team Vejforvaltningen",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 7,
+  "hMax": 14,
+  "danish": "required",
+  "fam": "public",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper søges til myndighedsopgaver i Team Vejforvaltningen Interesserer du dig for myndighedsarbejde, og brænder du for at kombinere din uddannelse med praktisk erfaring inden…",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-soges-til-myndighedsopgaver-i-team-vejforvaltningen/gvzy2o",
+  "enrichedBy": "regler",
+  "id": "xb5d341de83a1",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper med flair for SoMe søges til arbejdet med nikotinforebyggelse blandt børn og unge",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper med flair for SoMe søges til arbejdet med nikotinforebyggelse blandt børn og unge Er du skarp på sociale medier, og ved du, hvordan man kommunikerer til unge i øjenhøjde?",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-med-flair-for-some-soges-til-arbejdet-med-nikotinforebyggelse/lrworl",
+  "enrichedBy": "regler",
+  "id": "x3587e9074645",
+  "live": true
+ },
+ {
+  "title": "Er du pædagogstuderende? Få et studiejob med faglig udvikling, ansvar og praksisnær erfaring",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 8,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Er du pædagogstuderende?",
+  "req": "paedagog",
+  "url": "https://aalborg.career.emply.com/ad/er-du-paedagogstuderende-fa-et-studiejob-med-faglig-udvikling-ansvar-og-praksisn/u1ci6i",
+  "enrichedBy": "regler",
+  "id": "x78e1a6086590",
   "live": true
  },
  {
@@ -4401,35 +4511,6 @@
   "live": true
  },
  {
-  "title": "AI Assistant (Student Assistant) to R&D at Coloplast",
-  "co": "Coloplast",
-  "city": "Humlebæk",
-  "region": "nsj",
-  "hMin": 10,
-  "hMax": 20,
-  "danish": "no",
-  "fam": "datasci",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Power BI",
-   "SQL",
-   "Python",
-   "JavaScript",
-   "R"
-  ],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-08T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/",
-  "enrichedBy": "regler",
-  "id": "x65a799821b8b",
-  "live": true
- },
- {
   "title": "Student Assistant to PMO, R&D Innovation Portfolio Management",
   "co": "Coloplast",
   "city": "Humlebæk",
@@ -4456,6 +4537,35 @@
   "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Student-Assistant-to-PMO%2C-R&D-Innovation-Portfolio-Management/1435297933/",
   "enrichedBy": "regler",
   "id": "xe1be62911c34",
+  "live": true
+ },
+ {
+  "title": "AI Assistant (Student Assistant) to R&D at Coloplast",
+  "co": "Coloplast",
+  "city": "Humlebæk",
+  "region": "nsj",
+  "hMin": 10,
+  "hMax": 20,
+  "danish": "no",
+  "fam": "datasci",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Power BI",
+   "SQL",
+   "Python",
+   "JavaScript",
+   "R"
+  ],
+  "industry": "Medicinsk udstyr",
+  "postedAt": "2026-10-08T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "req": null,
+  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/",
+  "enrichedBy": "regler",
+  "id": "x65a799821b8b",
   "live": true
  },
  {
