@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-01 05:33 UTC
+# Jobindsamling 2026-11-01 14:29 UTC
 
-175 studiejob gemt. AI-kald i denne kørsel: 0.
+178 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -66,7 +66,7 @@
 | Gjensidige | rmk | 1 | 0 |  |
 | LB Forsikring | emply | 1 | 1 | 15 opslag på joblisten, 1 ligner studiejob |
 | KPMG Danmark | hrmanager | 11 | 0 |  |
-| BDO Danmark | emply | 1 | 1 | 18 opslag på joblisten, 1 ligner studiejob |
+| BDO Danmark | emply | 4 | 4 | 28 opslag på joblisten, 4 ligner studiejob |
 | twoday | teamtailor | 12 | 0 |  |
 | Columbus | teamtailor | 92 | 0 |  |
 | Templafy | teamtailor | 4 | 0 |  |

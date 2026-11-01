@@ -2627,6 +2627,35 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
+  "co": "Alka",
+  "city": "Ballerup, DK",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "pmo",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-10-20T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "regler",
+  "id": "xf028e014a732",
+  "live": true
+ },
+ {
   "title": "Student assistant interested in turning data and insights into actions",
   "co": "Alka",
   "city": "Ballerup, DK",
@@ -2654,35 +2683,6 @@
   "url": "https://careers.tryg.com/Tryg/job/Ballerup-Student-assistant-interested-in-turning-data-and-insights-into-actions/1452073433/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "regler",
   "id": "xb858115a335f",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
-  "co": "Alka",
-  "city": "Ballerup, DK",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "pmo",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": "2026-10-20T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "regler",
-  "id": "xf028e014a732",
   "live": true
  },
  {
@@ -2882,6 +2882,89 @@
   "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
   "enrichedBy": "regler",
   "id": "x91d9b736c8c3",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
+  "enrichedBy": "regler",
+  "id": "x7cb33429ddad",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
   "live": true
  },
  {
@@ -4209,34 +4292,6 @@
   "live": true
  },
  {
-  "title": "Chemical Assistant (Student Assistant) to R&D at Coloplast",
-  "co": "Coloplast",
-  "city": "Humlebæk",
-  "region": "nsj",
-  "hMin": 10,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "customer",
-  "sec": [
-   "bizdev",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "R"
-  ],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-08T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/",
-  "enrichedBy": "regler",
-  "id": "x1c98e23744ca",
-  "live": true
- },
- {
   "title": "Student Assistant to PMO, R&D Innovation Portfolio Management",
   "co": "Coloplast",
   "city": "Humlebæk",
@@ -4263,6 +4318,34 @@
   "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Student-Assistant-to-PMO%2C-R&D-Innovation-Portfolio-Management/1435297933/",
   "enrichedBy": "regler",
   "id": "xe1be62911c34",
+  "live": true
+ },
+ {
+  "title": "Chemical Assistant (Student Assistant) to R&D at Coloplast",
+  "co": "Coloplast",
+  "city": "Humlebæk",
+  "region": "nsj",
+  "hMin": 10,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "customer",
+  "sec": [
+   "bizdev",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R"
+  ],
+  "industry": "Medicinsk udstyr",
+  "postedAt": "2026-10-08T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "req": null,
+  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/",
+  "enrichedBy": "regler",
+  "id": "x1c98e23744ca",
   "live": true
  },
  {
