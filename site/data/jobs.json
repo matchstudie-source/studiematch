@@ -1645,60 +1645,6 @@
   "live": true
  },
  {
-  "title": "Praktikant til Litteratur & Talks i Den Sorte Diamant",
-  "co": "Det Kgl. Bibliotek",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 30,
-  "hMax": 30,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "hr"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-23T13:14:24+00:00",
-  "deadlineAt": "2026-10-31T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "I praktikforløbet vil du få erfaring med at kuratere og producere talks, events, forestillinger og arrangementer fra enden til anden: helt fra den tidlige idéproces og udvikling, og frem til den praktiske afvikling.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169370&DepartmentId=19107&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x1135bee4b382",
-  "live": true
- },
- {
-  "title": "Praktikant til musikproduktion i Den Sorte Diamant",
-  "co": "Det Kgl. Bibliotek",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 25,
-  "hMax": 25,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "product"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-23T13:47:27+00:00",
-  "deadlineAt": "2026-10-31T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "I praktikken/det projektorienterede forløb vil du få indsigt i og hands-on erfaring med de mange aspekter, der knytter sig til planlægning, formidling og afvikling af koncerter primært inden for klassisk musik og jazz.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169423&DepartmentId=19107&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xe9d672862e2a",
-  "live": true
- },
- {
   "title": "Praktikant til Nationalt Center mod Æresrelaterede Konflikter - Forår 2027",
   "co": "Statslige arbejdsgivere",
   "city": "Valby",
@@ -2186,34 +2132,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til arresthuse i Østjylland",
-  "co": "Danmarks Fængsler - Fængselskreds Vest",
-  "city": "Region Hovedstaden",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 10,
-  "danish": "required",
-  "fam": "education",
-  "sec": [
-   "product",
-   "public"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-28T07:14:57+00:00",
-  "deadlineAt": "2026-10-31T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Taler og skriver du grønlandsk og dansk – og har du lyst til at være med til at forme fremtidens uddannelse i Grønlands Fængsler?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=165454&DepartmentId=19152&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x6a94858ca9a4",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Center for Politisk Betjening i Banedanmark",
   "co": "Stab",
   "city": "Region Hovedstaden",
@@ -2570,62 +2488,6 @@
   "live": true
  },
  {
-  "title": "Udstillingspraktikant (design) til Det Kgl. Bibliotek, Den Sorte Diamant",
-  "co": "Det Kgl. Bibliotek",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "product",
-  "sec": [
-   "operations",
-   "hr"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-30T09:36:27+00:00",
-  "deadlineAt": "2026-10-31T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Om afdelingen Afdelingen for Publikum og Arrangementer har ansvar for Det Kgl. Biblioteks kulturaktiviteter m.v.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169446&DepartmentId=19107&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x709759cecc8d",
-  "live": true
- },
- {
-  "title": "Udstillingspraktikant (formidling) til Det Kgl. Bibliotek, Den Sorte Diamant",
-  "co": "Det Kgl. Bibliotek",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "hr",
-   "product"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-09-23T13:25:01+00:00",
-  "deadlineAt": "2026-10-31T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Om afdelingen Afdelingen for Publikum og Arrangementer har ansvar for Det Kgl. Biblioteks kulturaktiviteter m.v.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169441&DepartmentId=19107&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x644d73c8286f",
-  "live": true
- },
- {
   "title": "Velskrivende studentermedhjælper til kommunikationskontor i Skatte- og Vækstministeriet",
   "co": "Skatte- og Vækstministeriets departement",
   "city": "Storkøbenhavn",
@@ -2789,9 +2651,9 @@
   "src": "Virksomhedens karriereside",
   "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
   "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Student-assistant-interested-in-turning-data-and-insights-into-actions/1452073333/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Student-assistant-interested-in-turning-data-and-insights-into-actions/1452073433/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "regler",
-  "id": "x3533a438286a",
+  "id": "xb858115a335f",
   "live": true
  },
  {
@@ -2853,32 +2715,33 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
+  "title": "Student assistant interested in turning data and insights into actions",
   "co": "Alka",
   "city": "Høje-Taastrup",
   "region": "kbh",
-  "hMin": 10,
+  "hMin": 15,
   "hMax": 15,
-  "danish": "required",
+  "danish": "no",
   "fam": "operations",
   "sec": [
-   "pmo",
-   "strategy"
+   "datasci",
+   "customer"
   ],
   "famConf": "text",
   "skills": [
    "Excel",
+   "Python",
    "PowerPoint"
   ],
   "industry": "Pension og forsikring",
   "postedAt": null,
   "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
   "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Student-assistant-interested-in-turning-data-and-insights-into-actions/1452073433/",
   "enrichedBy": "regler",
-  "id": "xddff3f97d777",
+  "id": "x511caa50e528",
   "live": true
  },
  {
@@ -2907,33 +2770,32 @@
   "live": true
  },
  {
-  "title": "Student assistant interested in turning data and insights into actions",
+  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
   "co": "Alka",
   "city": "Høje-Taastrup",
   "region": "kbh",
-  "hMin": 15,
+  "hMin": 10,
   "hMax": 15,
-  "danish": "no",
+  "danish": "required",
   "fam": "operations",
   "sec": [
-   "datasci",
-   "customer"
+   "pmo",
+   "strategy"
   ],
   "famConf": "text",
   "skills": [
    "Excel",
-   "Python",
    "PowerPoint"
   ],
   "industry": "Pension og forsikring",
   "postedAt": null,
   "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
   "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Student-assistant-interested-in-turning-data-and-insights-into-actions/1452073333/",
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
   "enrichedBy": "regler",
-  "id": "x9e41c557bc49",
+  "id": "xddff3f97d777",
   "live": true
  },
  {
@@ -2997,32 +2859,6 @@
   "live": true
  },
  {
-  "title": "Audit Internship 2027 - Copenhagen",
-  "co": "KPMG Danmark",
-  "city": "Copenhagen",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Regnskab"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": "2026-09-21T16:55:54+00:00",
-  "deadlineAt": "2026-10-31T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Er du klar til at blive fremtidens revisor og en del af et team, der samarbejder med en række spændende virksomheder?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1762&ProjectId=144522&DepartmentId=18958&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xe492b33cce3e",
-  "live": true
- },
- {
   "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
   "co": "BDO Danmark",
   "city": "København",
@@ -3046,89 +2882,6 @@
   "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
   "enrichedBy": "regler",
   "id": "x91d9b736c8c3",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
-  "enrichedBy": "regler",
-  "id": "x7cb33429ddad",
-  "live": true
- },
- {
-  "title": "Financial Outsourcing Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "procurement",
-  "sec": [
-   "finance",
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Bogføring",
-   "Regnskab",
-   "Løn",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
-  "enrichedBy": "regler",
-  "id": "x5e77473a7a23",
-  "live": true
- },
- {
-  "title": "Audit & Assurance Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
-  "enrichedBy": "regler",
-  "id": "xca1a8d4ee87b",
   "live": true
  },
  {
@@ -3688,33 +3441,6 @@
   "url": "https://brondby.career.emply.com/ad/stilling-som-studentermedhjaelper-i-kultur-idraet-og-fritidsforvaltning-brondby-ko/ighuvb",
   "enrichedBy": "regler",
   "id": "x3ba0ba81a7ae",
-  "live": true
- },
- {
-  "title": "Sygeplejestuderende søges som afløser til Akutpladserne",
-  "co": "Næstved Kommune",
-  "city": "Næstved",
-  "region": "ssj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "health",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "R",
-   "Dokumentation"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger https://www.naestved.dk/kommunen/vejledning-om/cookiepolitik Jobagent Log ind Min profil Min profil Sygeplejestuderende søges som afløser til Akutpladserne Har du lyst til et spændende og…",
-  "req": "sygepleje",
-  "url": "https://naestved.career.emply.com/ad/sygeplejestuderende-soges-som-afloser-til-akutpladserne/c95u2c",
-  "enrichedBy": "regler",
-  "id": "x489407ada2fd",
   "live": true
  },
  {
