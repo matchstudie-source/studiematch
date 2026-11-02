@@ -320,7 +320,7 @@ async function route(ctx, path, method) {
     const jobs = rows.results.map((j) => ({
       id: `p${j.id}`, title: j.title, co: j.company, city: j.city, region: j.region, hMin: j.h_min || 0, hMax: j.h_max || 0, danish: j.danish,
       fam: j.fam, sec: parse(j.sec, []), famConf: "title", skills: [], industry: "Andet", postedAt: new Date(j.approved_at || j.ts).toISOString(),
-      deadlineAt: j.deadline ? `${j.deadline}T23:59:00+01:00` : null, src: "Slået op direkte på Studiematch",
+      deadlineAt: j.deadline ? `${j.deadline}T23:59:00+01:00` : null, src: "Studiematch, direkte fra virksomheden",
       blurb: clip(j.description.replace(/\s+/g, " "), 280), description: j.description,
       url: j.url || `mailto:${j.email}?subject=${encodeURIComponent("Ansøgning: " + j.title)}`, studies: parse(j.studies, undefined), why: j.why || undefined, direct: true,
     }));
