@@ -77,6 +77,9 @@ tr.click{cursor:pointer} tr.click:hover td{background:#F7FBF9}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:13px}
 pre.cv{white-space:pre-wrap;font:13px/1.5 var(--mono);background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:12px;max-height:340px;overflow:auto;margin:0}
+.job-card{display:grid;gap:12px}
+.job-card select.input{display:block;margin-top:4px}
+details summary{cursor:pointer;font-weight:700}
 .secret{font:16px var(--mono);background:#FFF8DB;border-radius:10px;padding:10px 12px;user-select:all}
 @media (max-width:640px){ .kv{grid-template-columns:1fr} .fstep{grid-template-columns:110px 1fr 46px} .hide-s{display:none} }
 </style>
@@ -92,7 +95,7 @@ const dt = t => t ? new Date(t).toLocaleString("da-DK",{day:"numeric",month:"sho
 const FAM={supply:"Supply Chain",procurement:"Indkøb",pmo:"Projektledelse",bizdev:"Forretningsudvikling",strategy:"Strategi",salesops:"Salgsoperationer",logistics:"Logistik",operations:"Drift",bi:"BI og data",finance:"Økonomi",marketing:"Marketing",product:"Produkt og UX",software:"Software",datasci:"Data science",hr:"HR",sustain:"Bæredygtighed",customer:"Kundesucces",legal:"Jura",research:"Forskning",engineering:"Ingeniør",health:"Sundhed",education:"Pædagogik",social:"Socialt arbejde",public:"Offentlig forvaltning"};
 const EVENT={pageview:"Sidevisning",signup:"Ny bruger",onboarded:"Færdig med opsætning",apply_click:"Klik på jobopslag",save:"Gemte job",like:"Interesseret",dismiss:"Fravalgte job",cv_added:"Uploadede CV",program_changed:"Skiftede uddannelse"};
 
-const st = {me:null, tab:"overview", stats:null, users:[], q:"", sel:null, detail:null, created:null, err:""};
+const st = {me:null, tab:"overview", stats:null, users:[], q:"", sel:null, detail:null, created:null, err:"", jobs:null, fams:{}, areas:{}};
 
 async function api(path, body, method){
   const r = await fetch("/api/"+path,{method:method||(body===undefined?"GET":"POST"),credentials:"same-origin",
@@ -115,7 +118,8 @@ function vLogin(msg){
 
 /* ---------- ramme ---------- */
 function shell(body){
-  const tabs=[["overview","Overblik"],["users","Brugere"],["companies","Virksomheder"]];
+  const pend=st.stats&&st.stats.pendingJobs?` <span class="pill">${st.stats.pendingJobs}</span>`:"";
+  const tabs=[["overview","Overblik"],["jobs","Job"+pend],["users","Brugere"],["companies","Virksomheder"]];
   return `<header><div class="wrap top">
     <div class="brand"><i></i>Studiematch <small>Admin</small></div>
     <nav class="tabs">${tabs.map(([k,l])=>`<button data-tab="${k}" ${st.tab===k?'aria-current="page"':""}>${l}</button>`).join("")}</nav>
@@ -170,6 +174,10 @@ function vOverview(){
     <section class="card"><h2>Mest klikkede job (30 dage)</h2>${list(s.topJobs,[{f:r=>esc(r.label||r.job_id)},{n:1,f:r=>fmt(r.n)}],"Ingen klik endnu.")}</section>
     <section class="card"><h2>Hvor kommer de fra</h2>${list(s.referrers,[{f:r=>esc(r.ref)},{n:1,f:r=>fmt(r.n)}],"Ingen henvisninger endnu. Direkte besøg tæller ikke med her.")}</section>
     <section class="card"><h2>Uddannelser blandt brugerne</h2>${list(s.programs,[{f:r=>`${esc(r.program)} <span class="muted small">${esc(r.school)}</span>`},{n:1,f:r=>fmt(r.n)}],"Ingen brugere endnu.")}</section>
+    <section class="card"><h2>Matchkvalitet (30 dage)</h2>${(()=>{ const g=(s.quality||{}).match_good||0, b=(s.quality||{}).match_bad||0, t=g+b;
+        return t?`<p><b style="font-size:24px">${Math.round(100*g/t)} %</b> <span class="muted">synes, jobbet passer til deres uddannelse (${fmt(g)} ja, ${fmt(b)} nej)</span></p>`:`<p class="empty">Ingen svar endnu. Studerende svarer under "Hvorfor dette match" på hvert job.</p>`; })()}
+      ${(s.badMatches||[]).length?`<h2 style="margin-top:12px">Seneste "passer ikke"</h2>${list(s.badMatches,[{f:r=>`${esc(r.label||"")}<div class="small muted">til ${esc(r.meta||"ukendt uddannelse")}</div>`},{f:r=>`<span class="small muted">${dt(r.ts)}</span>`}],"")}`:""}</section>
+    <section class="card"><h2>Hvorfor fravælger de job (30 dage)</h2>${list(s.dismissReasons||[],[{f:r=>esc(r.reason)},{n:1,f:r=>fmt(r.n)}],"Ingen har fravalgt job endnu.")}</section>
     <section class="card"><h2>Mest besøgte sider</h2>${list(s.paths,[{f:r=>`<code>${esc(r.path)}</code>`},{n:1,f:r=>fmt(r.n)}],"Ingen besøg endnu.")}</section>
     <section class="card"><h2>Seneste aktivitet</h2>${list(s.recent,[{f:r=>`<span class="small muted">${dt(r.ts)}</span>`},{f:r=>`${EVENT[r.type]||r.type}${r.label?` · <span class="muted">${esc(r.label)}</span>`:""}`}],"Intet endnu.")}</section>
   </div>`;
@@ -219,6 +227,41 @@ function vDetail(){
   </section>`;
 }
 
+/* ---------- job, som virksomheder har slået op ---------- */
+function vJobs(){
+  if(!st.jobs) return `<p class="muted">Henter…</p>`;
+  const label={pending:"Venter",approved:"Online",rejected:"Afvist"};
+  const fOpts=(sel)=>Object.entries(st.fams).map(([k,l])=>`<option value="${k}" ${k===sel?"selected":""}>${esc(l)}</option>`).join("");
+  const aOpts=(sel)=>Object.entries(st.areas).map(([k,l])=>`<option value="${k}" ${k===sel?"selected":""}>${esc(l)}</option>`).join("");
+  const card=j=>`<section class="card job-card" data-job="${j.id}">
+    <div class="row"><h2 style="margin:0;flex:1">${esc(j.title)} <span class="muted small">· ${esc(j.company)}</span></h2><span class="pill ${j.status==="approved"?"":"gray"}">${label[j.status]||j.status}</span></div>
+    <div class="kv">
+      <b>Sted</b><span>${esc(j.city)}</span>
+      <b>Timer</b><span>${j.h_max?`${j.h_min||"?"}–${j.h_max} t/uge`:"Ikke angivet"} · ${({required:"Kræver dansk",plus:"Dansk er en fordel",no:"Engelsk OK"})[j.danish]||""}</span>
+      <b>Frist</b><span>${esc(j.deadline||"Ingen")}</span>
+      <b>Kontakt</b><span>${esc(j.contact||"")} <a href="mailto:${esc(j.email)}">${esc(j.email)}</a></span>
+      <b>Link</b><span>${j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.url)}</a>`:"Ingen (ansøgning på mail)"}</span>
+      ${j.why?`<b>AI vurderer</b><span>${esc(j.why)}${j.studies&&j.studies.length?`<br><span class="muted small">${j.studies.map(esc).join(", ")}</span>`:""}</span>`:""}
+    </div>
+    <details><summary>Beskrivelse</summary><pre class="cv">${esc(j.description)}</pre></details>
+    <div class="row">
+      <label class="small">Felt <select class="input" data-f="fam">${fOpts(j.fam)}</select></label>
+      <label class="small">Landsdel <select class="input" data-f="region">${aOpts(j.region)}</select></label>
+    </div>
+    <div class="row">
+      ${j.status!=="approved"?`<button class="btn btn-p" data-jact="approve">Godkend og læg online</button>`:`<button class="btn" data-jact="approve">Gem ændringer</button><button class="btn" data-jact="unpublish">Tag offline</button>`}
+      ${j.status==="pending"?`<button class="btn btn-d" data-jact="reject">Afvis</button>`:""}
+      <button class="btn btn-d" data-jdel>Slet</button>
+    </div>
+  </section>`;
+  const pending=st.jobs.filter(j=>j.status==="pending"), rest=st.jobs.filter(j=>j.status!=="pending");
+  return `<h1>Job fra virksomheder</h1>
+  <p class="muted">Virksomheder slår job op via knappen på forsiden. Tjek jobbet, ret feltet, hvis det er forkert, og godkend. Så vises det for de studerende, det passer til.</p>
+  ${pending.length?`<h2>Venter på godkendelse (${pending.length})</h2>${pending.map(card).join("")}`:`<div class="note">Ingen job venter på godkendelse.</div>`}
+  ${rest.length?`<h2 style="margin-top:8px">Behandlede</h2>${rest.map(card).join("")}`:""}`;
+}
+async function loadJobs(){ const r=await api("admin/jobs"); if(r.ok){ st.jobs=r.data.jobs; st.fams=r.data.fams; st.areas=r.data.areas; render(); } }
+
 /* ---------- virksomheder ---------- */
 function vCompanies(){
   const s=st.stats; if(!s) return `<p class="muted">Henter…</p>`;
@@ -231,7 +274,7 @@ function vCompanies(){
 function render(){
   const a=$("#app");
   if(!st.me) return;
-  a.innerHTML = shell(st.tab==="users"?vUsers():st.tab==="companies"?vCompanies():vOverview());
+  a.innerHTML = shell(st.tab==="users"?vUsers():st.tab==="companies"?vCompanies():st.tab==="jobs"?vJobs():vOverview());
 }
 async function loadStats(){ const r=await api("admin/stats"); if(r.ok){ st.stats=r.data; render(); } }
 async function loadUsers(){ const r=await api("admin/users?q="+encodeURIComponent(st.q)); if(r.ok){ st.users=r.data.users; render(); const i=$("#uq"); if(i&&document.activeElement!==i&&st.focusQ){ i.focus(); i.setSelectionRange(i.value.length,i.value.length); } } }
@@ -261,9 +304,14 @@ document.addEventListener("submit", async e=>{
 let qTimer=null;
 document.addEventListener("input", e=>{ if(e.target.id==="uq"){ st.q=e.target.value; st.focusQ=true; clearTimeout(qTimer); qTimer=setTimeout(loadUsers,250); } });
 document.addEventListener("click", async e=>{
+  const jb=e.target.closest("[data-jact],[data-jdel]");
+  if(jb){ const c=jb.closest("[data-job]"), id=c.dataset.job;
+    if(jb.hasAttribute("data-jdel")){ if(!jb.dataset.sure){ jb.dataset.sure="1"; jb.textContent="Tryk igen for at slette"; return; } await api("admin/jobs/"+id,undefined,"DELETE"); return loadJobs(); }
+    const fam=c.querySelector('[data-f="fam"]').value, region=c.querySelector('[data-f="region"]').value;
+    await api("admin/jobs/"+id,{action:jb.dataset.jact,fam,region}); loadStats(); return loadJobs(); }
   const t=e.target.closest("[data-tab],[data-user],[data-close],[data-reset],[data-role],[data-del],#logout"); if(!t) return;
   if(t.id==="logout"){ await api("auth/logout",{}); location.reload(); return; }
-  if(t.dataset.tab){ st.tab=t.dataset.tab; st.focusQ=false; render(); if(st.tab==="overview"||st.tab==="companies") loadStats(); return; }
+  if(t.dataset.tab){ st.tab=t.dataset.tab; st.focusQ=false; render(); if(st.tab==="overview"||st.tab==="companies") loadStats(); if(st.tab==="jobs") loadJobs(); return; }
   if(t.dataset.user){ st.focusQ=false; return openUser(t.dataset.user); }
   if(t.hasAttribute("data-close")){ st.detail=null; return render(); }
   if(t.dataset.reset){ const r=await api(`admin/users/${t.dataset.reset}/password`,{}); if(r.ok){ st.detail.newPw=r.data.password; render(); } return; }

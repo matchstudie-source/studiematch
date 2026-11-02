@@ -335,6 +335,10 @@ button.ctx:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .acct svg{width:18px;height:18px}
 .nudge{display:flex;gap:10px 16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--accent-soft);border-radius:16px;padding:12px 16px;font-size:14.5px}
 .nudge b{display:block}
+.mfb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:4px;font-size:14.5px}
+.mfb span{flex:1 1 200px;color:var(--fg);font-weight:600}
+.sponsored.direct{background:var(--accent-soft);color:var(--accent)}
+.field-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
 .auth-form{display:grid;gap:14px}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted)}
 .check input{margin-top:3px;width:18px;height:18px;accent-color:var(--accent);flex:none}
@@ -1001,7 +1005,7 @@ function cardHTML(job, ev, opts){
     <div class="job-top">
       <div class="monogram" style="--h:${hue(job.co)}" aria-hidden="true">${esc(initials(job.co))}</div>
       <div class="job-head">
-        <div class="job-co"><span>${esc(job.co)}</span><span aria-hidden="true">·</span><span>${esc(job.city)}</span>${job.sponsored?'<span class="sponsored">Sponsoreret</span>':''}</div>
+        <div class="job-co"><span>${esc(job.co)}</span><span aria-hidden="true">·</span><span>${esc(job.city)}</span>${job.sponsored?'<span class="sponsored">Sponsoreret</span>':''}${job.direct?'<span class="sponsored direct">Direkte opslag</span>':''}</div>
         <h3 class="job-title">${esc(job.title)}</h3>
       </div>
       <div class="lvl lvl-${ev.level}"><span class="lvl-pill">${levelLabel(ev.level)}</span><span class="meter" aria-hidden="true"><i></i><i></i><i></i></span></div>
@@ -1043,6 +1047,7 @@ function whyPanel(job, ev, p){
     <p><b>Sådan er det scoret.</b> Uddannelsen vejer tungest. Derefter kommer kompetencer, interesser og erfaring fra dit CV. Det, du ikke har udfyldt, trækker ikke ned.</p>
     ${rows}${lt}
     <div class="filters-ok"><span>${I.check}Sprog</span><span>${I.check}Timer</span><span>${I.check}Område</span><span>${I.check}Felt ikke fravalgt</span></div>
+    ${job.live?(()=>{ const m=(S.fb[job.id]||{}).mfb; return `<div class="mfb"><span>Passer jobbet til din uddannelse?</span>${m?`<b>${m==="good"?"Du sagde ja. Tak!":"Du sagde nej. Tak!"}</b>`:`<button class="btn btn-ghost btn-sm" data-act="mfb" data-v="good" data-id="${job.id}">Ja</button><button class="btn btn-ghost btn-sm" data-act="mfb" data-v="bad" data-id="${job.id}">Nej</button>`}</div>`; })():""}
   </div>`;
 }
 function demoCtx(){
@@ -1111,6 +1116,8 @@ function vLanding(){
           <li>${I.check}<span>Færre irrelevante ansøgninger at læse igennem</span></li>
           <li>${I.check}<span>Nå passive kandidater, der aldrig selv havde fundet opslaget</span></li>
         </ul>
+        <p><button class="btn btn-primary" data-act="postjob">Slå et studiejob op, gratis</button></p>
+        <p class="fine">Vi tjekker jobbet og lægger det op inden for et døgn.</p>
       </div>
       <form class="panel" data-form="waitlist">
         <h3>Skriv til os</h3>
@@ -1419,8 +1426,33 @@ function cvSheet(sh){
     <div class="sheet-actions"><button class="btn btn-quiet" data-act="close-sheet">Annuller</button>${none?"":`<button class="btn btn-primary" data-act="cv-apply">Tilføj til min profil</button>`}</div>
   </div></div>`;
 }
+function postJobSheet(sh){
+  const v=UI.post||{}; const val=k=>esc(v[k]||"");
+  if(sh.done) return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">Tak, jobbet er modtaget</h2><p>Vi kigger på det og lægger det op inden for et døgn. Har vi spørgsmål, skriver vi til ${esc(v.email||"jer")}.</p>
+    <div class="sheet-actions"><button class="btn btn-primary" data-act="close-sheet">Luk</button></div></div></div>`;
+  const areaOpts=REGION_GROUPS.flatMap(g=>g.r).concat([{v:"remote",l:"Remote"}]).map(r=>`<option value="${r.v}" ${v.region===r.v?"selected":""}>${r.l}</option>`).join("");
+  return `<div class="scrim" data-act="close-sheet"><div class="sheet sheet-wide" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">Slå et studiejob op</h2><p>Gratis. Vi viser jobbet til de studerende, hvis uddannelse passer til det.</p>
+    <form class="auth-form" data-form="postjob">
+      <div class="field-row"><div class="field"><label class="label" for="pj-company">Virksomhed</label><input id="pj-company" class="input" required value="${val("company")}"></div>
+        <div class="field"><label class="label" for="pj-title">Jobtitel</label><input id="pj-title" class="input" required placeholder="Studentermedhjælper til …" value="${val("title")}"></div></div>
+      <div class="field-row"><div class="field"><label class="label" for="pj-city">By</label><input id="pj-city" class="input" required value="${val("city")}"></div>
+        <div class="field"><label class="label" for="pj-region">Landsdel</label><select id="pj-region" class="select" required><option value="">Vælg</option>${areaOpts}</select></div></div>
+      <div class="field-row"><div class="field"><label class="label" for="pj-hmin">Timer om ugen</label><div class="inline-form"><input id="pj-hmin" class="input" type="number" min="1" max="40" placeholder="fra" value="${val("hMin")}"><input id="pj-hmax" class="input" type="number" min="1" max="40" placeholder="til" value="${val("hMax")}"></div></div>
+        <div class="field"><label class="label" for="pj-danish">Dansk</label><select id="pj-danish" class="select">${[["required","Kræves"],["plus","En fordel"],["no","Ikke nødvendigt"]].map(([k,l])=>`<option value="${k}" ${v.danish===k?"selected":""}>${l}</option>`).join("")}</select></div></div>
+      <div class="field"><label class="label" for="pj-desc">Hvad skal den studerende lave, og hvem søger I?</label><textarea id="pj-desc" class="input" rows="6" required placeholder="Opgaver, hvilke uddannelser der passer, hvornår I starter">${val("description")}</textarea></div>
+      <div class="field-row"><div class="field"><label class="label" for="pj-url">Link til opslaget <span class="fine">(valgfrit)</span></label><input id="pj-url" class="input" placeholder="https://…" value="${val("url")}"><p class="fine">Uden link søger de studerende ved at skrive til jeres mail.</p></div>
+        <div class="field"><label class="label" for="pj-deadline">Ansøgningsfrist <span class="fine">(valgfrit)</span></label><input id="pj-deadline" class="input" type="date" value="${val("deadline")}"></div></div>
+      <div class="field-row"><div class="field"><label class="label" for="pj-contact">Dit navn</label><input id="pj-contact" class="input" autocomplete="name" value="${val("contact")}"></div>
+        <div class="field"><label class="label" for="pj-email">Mail til ansøgninger</label><input id="pj-email" class="input" type="email" required value="${val("email")}"></div></div>
+      ${sh.err?`<p class="form-err" role="alert">${esc(sh.err)}</p>`:""}
+      <div class="sheet-actions"><button class="btn btn-quiet" type="button" data-act="close-sheet">Annuller</button><button class="btn btn-primary" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Sender…":"Send til godkendelse"}</button></div>
+    </form></div></div>`;
+}
 function sheetHTML(){
   if(!UI.sheet) return "";
+  if(UI.sheet.type==="postjob") return postJobSheet(UI.sheet);
   if(UI.sheet.type==="auth") return authSheet(UI.sheet);
   if(UI.sheet.type==="password") return passwordSheet(UI.sheet);
   if(UI.sheet.type==="program") return programSheet(UI.sheet);
@@ -1437,7 +1469,7 @@ function sheetHTML(){
     <h2 id="sh-t">Søg hos ${esc(j.co)}</h2>
     <p>${j.url?`Du søger direkte hos ${esc(j.co)} på deres egen side.`:"I den rigtige version åbner dette det originale jobopslag på virksomhedens egen side."} Vi søger aldrig på dine vegne.</p>
     <p>${j.rolling?"Løbende optag, så du kan tilmelde dig når som helst.":j.deadline==null?"Fristen står i opslaget.":`Ansøgningsfrist: <b>${deadlineDate(j.deadline)}</b>.`} Markér jobbet som søgt for at holde styr på det under Gemt.</p>
-    <div class="sheet-actions">${j.url?`<a class="btn btn-ghost" href="${esc(j.url)}" target="_blank" rel="noopener" data-track="apply" data-id="${j.id}">Åbn jobopslaget</a>`:`<button class="btn btn-ghost" data-act="close-sheet">Annuller</button>`}<button class="btn btn-primary" data-act="apply-go">Markér som søgt</button></div></div></div>`;
+    <div class="sheet-actions">${j.url?`<a class="btn btn-ghost" href="${esc(j.url)}" target="_blank" rel="noopener" data-track="apply" data-id="${j.id}">${j.url.startsWith("mailto:")?"Skriv til virksomheden":"Åbn jobopslaget"}</a>`:`<button class="btn btn-ghost" data-act="close-sheet">Annuller</button>`}<button class="btn btn-primary" data-act="apply-go">Markér som søgt</button></div></div></div>`;
 }
 
 /* ============ TEGN ============ */
@@ -1494,7 +1526,7 @@ function act(a, el){
     case "apply": UI.sheet={type:"apply",id}; return render();
     case "close-sheet": UI.sheet=null; return render();
     case "reason": { const jid=UI.sheet.id; const j=byId(jid); snap(); UI.sheet=null;
-      const fb=fbOf(jid); fb.dismissed=v; track("dismiss",{jobId:jid,label:jobLabel(j)});
+      const fb=fbOf(jid); fb.dismissed=v; track("dismiss",{jobId:jid,label:jobLabel(j),meta:({field:"Ikke mit felt",hours:"Forkerte timer",danish:"Sproget passer ikke",location:"For langt væk",company:"Ikke denne virksomhed",other:"Noget andet",skip:"Ingen grund"})[v]||v});
       let msg="Skjult.";
       if(v==="field"){ bump(j.fam,-.2); (j.sec||[]).forEach(f=>bump(f,-.05)); msg=`Skjult. Færre job inden for ${FAM[j.fam].n} fremover.`; }
       else if(v==="hours") msg="Skjult. Tip: angiv dine timer under Profil, så frasorterer vi dem.";
@@ -1518,6 +1550,8 @@ function act(a, el){
     case "delete-no": UI.confirmDelete=false; return render();
     case "delete-yes": (async()=>{ if(ACC.user){ const r=await api("me",undefined,"DELETE"); if(!r.ok) return toast(r.data.error||"Det lykkedes ikke. Prøv igen."); ACC.user=null; }
       S=fresh(); UI.confirmDelete=false; UI.expanded={}; try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Dine data er slettet."); })(); return;
+    case "postjob": UI.sheet={type:"postjob"}; UI.focus="pj-company"; return render();
+    case "mfb": { const j=byId(id), fb=fbOf(id); fb.mfb=v; track(v==="good"?"match_good":"match_bad",{jobId:id,label:jobLabel(j),meta:(p.programName||"").slice(0,120)}); commit(); return toast(v==="good"?"Tak! Det hjælper os med at ramme endnu bedre.":"Tak! Vi bruger det til at gøre matchningen bedre."); }
     case "auth": UI.sheet={type:"auth",mode:v||"signup"}; UI.focus=v==="login"?"au-mail":"au-name"; return render();
     case "auth-mode": saveAuthFields(); UI.sheet={type:"auth",mode:v}; return render();
     case "pw-sheet": UI.sheet={type:"password"}; UI.focus="pw-old"; return render();
@@ -1597,6 +1631,14 @@ function applyCV(){
   UI.sheet=null; commit(); toast("Dit CV er brugt. Dine matches er opdateret.");
 }
 function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
+async function submitPostJob(form){
+  const g=id=>(form.querySelector("#pj-"+id)||{}).value||"";
+  UI.post={company:g("company"),title:g("title"),city:g("city"),region:g("region"),hMin:g("hmin"),hMax:g("hmax"),danish:g("danish"),description:g("desc"),url:g("url"),deadline:g("deadline"),contact:g("contact"),email:g("email")};
+  const sh=UI.sheet; sh.busy=true; sh.err=""; render();
+  const r=await api("jobs/submit",UI.post); sh.busy=false;
+  if(!r.ok){ sh.err=r.status===503?"Det virker ikke lige nu. Skriv til matchstudie@gmail.com.":(r.data.error||"Det lykkedes ikke. Prøv igen."); return render(); }
+  sh.done=true; render();
+}
 async function submitAuth(form){
   saveAuthFields(); const sh=UI.sheet; const pw=form.querySelector("#au-pw").value; const signup=sh.mode!=="login";
   if(signup && !UI.auth.consent){ sh.err="Sæt flueben ved privatlivspolitikken for at oprette en bruger."; return render(); }
@@ -1625,6 +1667,7 @@ function onSubmit(form){
       if(r.ok || r.status===503){ UI.waitlistDone=true; UI.waitlistErr=""; } else UI.waitlistErr=r.data.error||"Det lykkedes ikke. Skriv til matchstudie@gmail.com.";
       render(); }); return; }
   if(k==="auth") return submitAuth(form);
+  if(k==="postjob") return submitPostJob(form);
   if(k==="password") return submitPassword(form);
   if(k==="study"){ const t=form.querySelector("#pf-study").value.trim(); if(!t) return; const uni=(document.getElementById("pf-uni")||{}).value||"other"; const m=findProgram(t, uni)||programsFor(uni,"all",t)[0]; if(m) setProgram(m,true); else setFreeText(t, uni, true); UI.pfUni=null; commit(); return toast(`Matcher nu som ${p.programName}${p.uni?" ("+p.uni+")":""}.`); }
   if(k==="skill"){ const inp=form.querySelector("input"); const t=canonicalSkill(inp.value); if(t && !p.skills.some(s=>norm(s)===norm(t))) p.skills.push(t); UI.focus="pf-skill"; return commit(); }
@@ -1659,23 +1702,27 @@ if(typeof document!=="undefined"){
   initAccount();
 }
 /* Henter rigtige job fra data/jobs.json, som jobindsamleren skriver. Findes filen ikke, vises eksempeljob. */
+function toLive(j, t){
+  return {...j, sec:(j.sec||[]).filter(f=>FAM[f]), skills:j.skills||[], hMin:j.hMin||0, hMax:j.hMax||0,
+    postedH: j.postedAt ? Math.max(0,Math.round((t-Date.parse(j.postedAt))/36e5)) : 999,
+    deadline: j.rolling ? null : j.deadlineAt ? Math.max(0,Math.ceil((Date.parse(j.deadlineAt)-t)/864e5)) : null,
+    industry: j.industry||"Andet", live:true};
+}
 async function loadLiveJobs(){
+  const t = Date.now(); let live=[];
   try{
     const res = await fetch("data/jobs.json",{cache:"no-store"});
-    if(!res.ok) return;
-    const data = await res.json();
-    if(!Array.isArray(data) || !data.length) return;
-    const t = Date.now();
-    const live = data.filter(j=>j && j.title && j.id && FAM[j.fam]).map(j=>({...j,
-      sec:(j.sec||[]).filter(f=>FAM[f]), skills:j.skills||[], hMin:j.hMin||0, hMax:j.hMax||0,
-      postedH: j.postedAt ? Math.max(0,Math.round((t-Date.parse(j.postedAt))/36e5)) : 999,
-      deadline: j.rolling ? null : j.deadlineAt ? Math.max(0,Math.ceil((Date.parse(j.deadlineAt)-t)/864e5)) : null,
-      industry: j.industry||"Andet", live:true}));
-    if(!live.length) return;
-    JOBS.length=0; JOBS.push(...live);
-    INDUSTRIES.length=0; INDUSTRIES.push(...[...new Set(JOBS.map(j=>j.industry))].sort((a,b)=>a.localeCompare(b,"da")));
-    LIVE=true; render();
+    if(res.ok){ const data=await res.json(); if(Array.isArray(data)) live=data.filter(j=>j && j.title && j.id && FAM[j.fam]).map(j=>toLive(j,t)); }
   }catch(e){}
+  /* Job, som virksomheder har slået op direkte, og som I har godkendt i admin */
+  try{
+    const r=await fetch("/api/jobs");
+    if(r.ok){ const d=await r.json(); const direct=(d.jobs||[]).filter(j=>j && j.title && FAM[j.fam]).map(j=>toLive(j,t)); live=[...direct,...live]; }
+  }catch(e){}
+  if(!live.length) return;
+  JOBS.length=0; JOBS.push(...live);
+  INDUSTRIES.length=0; INDUSTRIES.push(...[...new Set(JOBS.map(j=>j.industry))].sort((a,b)=>a.localeCompare(b,"da")));
+  LIVE=true; render();
 }
 </script>
 </body>

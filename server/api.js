@@ -19,7 +19,26 @@ const FAMS = {
   engineering: "Ingeniørarbejde", health: "Sundhed og pleje", education: "Pædagogik og undervisning",
   social: "Socialt arbejde", public: "Offentlig forvaltning",
 };
-const TRACK_TYPES = new Set(["pageview", "onboarded", "apply_click", "save", "like", "dismiss", "cv_added", "program_changed"]);
+const TRACK_TYPES = new Set(["pageview", "onboarded", "apply_click", "save", "like", "dismiss", "cv_added", "program_changed", "match_good", "match_bad"]);
+const AREAS = { kbh: "Storkøbenhavn", nsj: "Nordsjælland", sj: "Midt- og Vestsjælland", ssj: "Sydsjælland og Lolland-Falster", bh: "Bornholm",
+  fyn: "Fyn", sjy: "Sønderjylland", svj: "Sydvestjylland", tre: "Trekantområdet", oj: "Østjylland", mvj: "Midt- og Vestjylland", nj: "Nordjylland", remote: "Remote" };
+/* Ord i jobtitlen, der peger på et felt. Bruges som forslag, når en virksomhed slår et job op (og AI ikke er slået til). */
+const FAM_WORDS = {
+  supply: ["supply", "planning", "planlægning", "forsyning"], procurement: ["indkøb", "procurement", "purchasing", "sourcing"],
+  pmo: ["projekt", "project", "pmo"], bizdev: ["forretningsudvikling", "business development"], strategy: ["strategi", "strategy", "konsulent", "consult"],
+  salesops: ["salg", "sales"], logistics: ["logistik", "logistics", "lager", "transport"], operations: ["drift", "operations", "proces", "produktion"],
+  bi: ["data", "analyse", "analyst", "bi "], finance: ["økonomi", "regnskab", "bogholder", "finance", "controller", "revision", "løn"],
+  marketing: ["marketing", "kommunikation", "communication", "content", "some", "social media"], product: ["produkt", "product", "ux", "design"],
+  software: ["udvikler", "developer", "software", "frontend", "backend", "it-"], datasci: ["data scien", "machine learning", "ai "],
+  hr: ["hr", "rekrut", "recruit"], sustain: ["bæredygtig", "esg", "klima", "sustainab"], customer: ["kunde", "customer", "support", "service"],
+  legal: ["jura", "juridisk", "legal", "compliance", "advokat"], research: ["forskning", "research", "laborat"], engineering: ["ingeniør", "engineer", "teknik", "konstruktion"],
+  health: ["sygepleje", "pleje", "sundhed", "læge", "patient", "klinik"], education: ["pædagog", "lærer", "undervis", "børn", "lektie"],
+  social: ["social", "bosted", "støtte"], public: ["kommune", "offentlig", "sagsbehandl", "forvaltning"],
+};
+function guessFams(text) {
+  const t = ` ${String(text || "").toLowerCase()} `;
+  return Object.entries(FAM_WORDS).map(([f, ws]) => [f, ws.filter((w) => t.includes(w)).length]).filter(([, n]) => n).sort((a, b) => b[1] - a[1]).map(([f]) => f);
+}
 const SESSION_DAYS = 30;
 const COOKIE = "sm_session";
 
@@ -74,9 +93,12 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS companies (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, company TEXT, email TEXT)`,
   `CREATE TABLE IF NOT EXISTS program_cache (key TEXT PRIMARY KEY, weights TEXT, ts INTEGER)`,
   `CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)`,
+  `CREATE TABLE IF NOT EXISTS posted_jobs (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, status TEXT DEFAULT 'pending',
+     company TEXT, contact TEXT, email TEXT, title TEXT, city TEXT, region TEXT, h_min INTEGER, h_max INTEGER, danish TEXT,
+     url TEXT, deadline TEXT, description TEXT, fam TEXT, sec TEXT, studies TEXT, why TEXT, approved_at INTEGER)`,
 ];
 /* Kolonner, der er kommet til senere. Fejler, hvis de allerede findes, og det er fint. */
-const MIGRATIONS = ["ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT"];
+const MIGRATIONS = ["ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT", "ALTER TABLE events ADD COLUMN meta TEXT"];
 let ready = null;
 function ensureSchema(db) {
   if (!ready) ready = db.batch(SCHEMA.map((s) => db.prepare(s)))
@@ -240,8 +262,8 @@ async function route(ctx, path, method) {
     let ref = "";
     try { const h = new URL(String(b.ref || "")).hostname; if (h && h !== new URL(req.url).hostname) ref = h; } catch {}
     const user = await currentUser(ctx);
-    await db.prepare("INSERT INTO events (ts, day, type, path, ref, visitor, user_id, job_id, label) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")
-      .bind(now(), day(), type, clip(b.path, 100), ref, visitor, user?.id ?? null, clip(b.jobId, 40) || null, clip(b.label, 160) || null).run();
+    await db.prepare("INSERT INTO events (ts, day, type, path, ref, visitor, user_id, job_id, label, meta) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
+      .bind(now(), day(), type, clip(b.path, 100), ref, visitor, user?.id ?? null, clip(b.jobId, 40) || null, clip(b.label, 160) || null, clip(b.meta, 120) || null).run();
     return new Response(null, { status: 204 });
   }
 
@@ -255,6 +277,54 @@ async function route(ctx, path, method) {
     const send = notify(env, `Ny virksomhed: ${company}`, [["Virksomhed", company], ["Kontakt", name], ["Mail", email], ["Besked", message]], email).catch((e) => console.error(e));
     if (ctx.waitUntil) ctx.waitUntil(send); else await send;
     return json({ ok: true });
+  }
+
+  /* ----- virksomheder slår studiejob op (godkendes i admin) ----- */
+  if (path === "jobs/submit" && method === "POST") {
+    const b = await readBody(req, 12000);
+    const email = cleanEmail(b.email);
+    const need = { company: "virksomhed", title: "jobtitel", city: "by", description: "beskrivelse" };
+    for (const [k, l] of Object.entries(need)) if (!String(b[k] || "").trim()) return err(`Udfyld ${l}`);
+    if (!validEmail(email)) return err("Skriv en gyldig mail");
+    if (!AREAS[b.region]) return err("Vælg en landsdel");
+    let url = String(b.url || "").trim();
+    if (url && !/^https?:\/\//i.test(url)) url = "https://" + url;
+    if (url) { try { new URL(url); } catch { return err("Linket ser ikke rigtigt ud"); } }
+    const hMin = Math.max(0, Math.min(40, parseInt(b.hMin) || 0)), hMax = Math.max(hMin, Math.min(40, parseInt(b.hMax) || hMin));
+    const deadline = /^\d{4}-\d{2}-\d{2}$/.test(String(b.deadline || "")) ? b.deadline : null;
+    const danish = ["required", "plus", "no"].includes(b.danish) ? b.danish : "required";
+    const title = clip(b.title, 140).trim(), description = clip(b.description, 4000).trim(), company = clip(b.company, 120).trim();
+    let fams = guessFams(`${title} ${title} ${description}`), studies = null, why = null;
+    try {
+      if (await aiAllowed(ctx)) {
+        const a = await askAI(ctx, `Et studiejob slået op på en dansk side for studerende.\nTitel: ${title}\nVirksomhed: ${company}\nTekst: ${description.slice(0, 3000)}\n\n` +
+          `Felter (brug kun disse nøgler):\n${famList()}\n\nSvar kun med JSON: {"fam": "nøgle", "sec": ["op til 2 nøgler"], ` +
+          `"studies": ["op til 8 uddannelser i små bogstaver, fx farmaci, ha, jura"], "why": "én sætning på dansk om hvem jobbet passer til"}`, 400);
+        if (FAMS[a.fam]) fams = [a.fam, ...(a.sec || []).filter((f) => FAMS[f] && f !== a.fam)];
+        studies = (a.studies || []).map((x) => clip(x, 50).toLowerCase()).slice(0, 8);
+        why = clip(a.why, 200);
+      }
+    } catch {}
+    const r = await db.prepare(`INSERT INTO posted_jobs (ts, status, company, contact, email, title, city, region, h_min, h_max, danish, url, deadline, description, fam, sec, studies, why)
+      VALUES (?, 'pending', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`).bind(now(), company, clip(b.contact, 80).trim() || null, email, title, clip(b.city, 80).trim(),
+      b.region, hMin, hMax, danish, url || null, deadline, description, fams[0] || "operations", JSON.stringify(fams.slice(1, 3)),
+      studies ? JSON.stringify(studies) : null, why).run();
+    const send = notify(env, `Nyt studiejob til godkendelse: ${title}`, [["Virksomhed", company], ["Job", title], ["Sted", `${clip(b.city, 80)} (${AREAS[b.region]})`],
+      ["Timer", hMax ? `${hMin}-${hMax} t/uge` : ""], ["Kontakt", `${clip(b.contact, 80)} ${email}`], ["Beskrivelse", description.slice(0, 1200)],
+      ["Godkend", "studiematch.dk/admin.html → fanen Job"]], email).catch((e) => console.error(e));
+    if (ctx.waitUntil) ctx.waitUntil(send); else await send;
+    return json({ ok: true, id: r.meta.last_row_id });
+  }
+  if (path === "jobs" && method === "GET") {
+    const rows = await db.prepare(`SELECT * FROM posted_jobs WHERE status='approved' AND (deadline IS NULL OR deadline >= ?) ORDER BY approved_at DESC LIMIT 300`).bind(day()).all();
+    const jobs = rows.results.map((j) => ({
+      id: `p${j.id}`, title: j.title, co: j.company, city: j.city, region: j.region, hMin: j.h_min || 0, hMax: j.h_max || 0, danish: j.danish,
+      fam: j.fam, sec: parse(j.sec, []), famConf: "title", skills: [], industry: "Andet", postedAt: new Date(j.approved_at || j.ts).toISOString(),
+      deadlineAt: j.deadline ? `${j.deadline}T23:59:00+01:00` : null, src: "Slået op direkte på Studiematch",
+      blurb: clip(j.description.replace(/\s+/g, " "), 280), description: j.description,
+      url: j.url || `mailto:${j.email}?subject=${encodeURIComponent("Ansøgning: " + j.title)}`, studies: parse(j.studies, undefined), why: j.why || undefined, direct: true,
+    }));
+    return json({ jobs }, 200, { "Cache-Control": "public, max-age=120" });
   }
 
   /* ----- konto ----- */
@@ -366,7 +436,7 @@ async function admin(ctx, path, method, me) {
   if (path === "stats" && method === "GET") {
     const since = day(now() - 29 * 864e5);
     const q = (sql, ...a) => db.prepare(sql).bind(...a);
-    const [daily, signups, totals, topJobs, refs, paths, programs, funnel, companies, recent] = await db.batch([
+    const [daily, signups, totals, topJobs, refs, paths, programs, funnel, companies, recent, quality, badList, reasons, pendingJobs] = await db.batch([
       q(`SELECT day, COUNT(DISTINCT visitor) AS visitors, COUNT(*) AS views FROM events WHERE type='pageview' AND day>=? GROUP BY day ORDER BY day`, since),
       q(`SELECT day, COUNT(*) AS n FROM events WHERE type='signup' AND day>=? GROUP BY day`, since),
       q(`SELECT (SELECT COUNT(*) FROM users) AS users, (SELECT COUNT(*) FROM users WHERE cv_name IS NOT NULL) AS with_cv,
@@ -378,12 +448,42 @@ async function admin(ctx, path, method, me) {
       q(`SELECT type, COUNT(*) AS n, COUNT(DISTINCT visitor) AS people FROM events WHERE day>=? AND type IN ('pageview','onboarded','apply_click','save','like','dismiss','cv_added') GROUP BY type`, since),
       q(`SELECT ts, company, email, name, message FROM companies ORDER BY ts DESC LIMIT 100`),
       q(`SELECT ts, type, label, path FROM events WHERE type IN ('signup','apply_click','onboarded','cv_added') ORDER BY ts DESC LIMIT 25`),
+      q(`SELECT type, COUNT(*) AS n FROM events WHERE type IN ('match_good','match_bad') AND day>=? GROUP BY type`, since),
+      q(`SELECT ts, label, meta FROM events WHERE type='match_bad' ORDER BY ts DESC LIMIT 20`),
+      q(`SELECT COALESCE(meta,'(ingen grund)') AS reason, COUNT(*) AS n FROM events WHERE type='dismiss' AND day>=? GROUP BY reason ORDER BY n DESC`, since),
+      q(`SELECT COUNT(*) AS n FROM posted_jobs WHERE status='pending'`),
     ]);
     return json({
       daily: daily.results, signups: signups.results, totals: totals.results[0], topJobs: topJobs.results,
       referrers: refs.results, paths: paths.results, programs: programs.results, funnel: funnel.results,
       companies: companies.results, recent: recent.results, ai: !!ctx.env.ANTHROPIC_API_KEY, mail: !!ctx.env.RESEND_API_KEY,
+      quality: Object.fromEntries(quality.results.map((r) => [r.type, r.n])), badMatches: badList.results, dismissReasons: reasons.results,
+      pendingJobs: pendingJobs.results[0].n,
     });
+  }
+  if (path === "jobs" && method === "GET") {
+    const rows = await db.prepare("SELECT * FROM posted_jobs ORDER BY CASE status WHEN 'pending' THEN 0 ELSE 1 END, ts DESC LIMIT 300").all();
+    return json({ jobs: rows.results.map((j) => ({ ...j, sec: parse(j.sec, []), studies: parse(j.studies, []) })), fams: FAMS, areas: AREAS });
+  }
+  const jm = path.match(/^jobs\/(\d+)$/);
+  if (jm && method === "POST") {
+    const b = await readBody(req, 12000);
+    const id = Number(jm[1]);
+    const j = await db.prepare("SELECT * FROM posted_jobs WHERE id=?").bind(id).first();
+    if (!j) return err("Findes ikke", 404);
+    const status = { approve: "approved", reject: "rejected", unpublish: "pending" }[b.action];
+    if (!status) return err("Ukendt handling");
+    const fam = FAMS[b.fam] ? b.fam : j.fam;
+    const sec = Array.isArray(b.sec) ? b.sec.filter((f) => FAMS[f] && f !== fam).slice(0, 2) : parse(j.sec, []);
+    const region = AREAS[b.region] ? b.region : j.region;
+    const title = clip(b.title || j.title, 140), city = clip(b.city || j.city, 80);
+    await db.prepare("UPDATE posted_jobs SET status=?, fam=?, sec=?, region=?, title=?, city=?, approved_at=? WHERE id=?")
+      .bind(status, fam, JSON.stringify(sec), region, title, city, status === "approved" ? (j.approved_at || now()) : j.approved_at, id).run();
+    return json({ ok: true });
+  }
+  if (jm && method === "DELETE") {
+    await db.prepare("DELETE FROM posted_jobs WHERE id=?").bind(Number(jm[1])).run();
+    return json({ ok: true });
   }
   if (path === "users" && method === "GET") {
     const url = new URL(req.url);
