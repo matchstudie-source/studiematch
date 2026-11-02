@@ -8,7 +8,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | SEB | Internship in Trade Finance Operations Team / SEB Group, Vilnius | udlandet: Vilnius |
 | SEB | Wealth & Asset Management Internship 2027: Growth and Market Intelligence / SEB, Gothenburg | udlandet: Göteborg |
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
-| Devoteam | Werkstudent Recruiting (m/w/d) | udlandet: München |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | 2 introduktionsstillinger i Intern medicin; Kardiologi på Hjertesygdomme, Vejle Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |

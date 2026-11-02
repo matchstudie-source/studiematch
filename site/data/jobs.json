@@ -1881,6 +1881,34 @@
   "live": true
  },
  {
+  "title": "Student til informationssikkerhed og databeskyttelse",
+  "co": "Beskæftigelses- og Ligestillingsministeriets departement",
+  "city": "København K",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "procurement"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T15:31:08+00:00",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Interesserer du dig for informationssikkerhed og persondatabeskyttelse? Er du struktureret, systematisk og analytisk stærk? Så er studenterstillingen i Koncernstyring noget for dig.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172338&DepartmentId=19045&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x69483e3d271a",
+  "live": true
+ },
+ {
   "title": "Student til Ledelsessekretariatet i Styrelsen for International Rekruttering og Integration",
   "co": "Statslige arbejdsgivere",
   "city": "Valby",
@@ -3023,6 +3051,32 @@
   "live": true
  },
  {
+  "title": "Sommerstudent",
+  "co": "Per Aarsleff",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "procurement",
+   "hr"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Byggeri",
+  "postedAt": "2026-11-02T15:50:06+00:00",
+  "deadlineAt": "2027-03-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Sommerstudent Er du ingeniørstudent og ønsker en spennende sommerjobb – tett på prosjekt, produksjon og fagmiljø?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182840&DepartmentId=21671&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x42ea4700e7c7",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til DR Kommunikation",
   "co": "DR",
   "city": "København",
@@ -3965,6 +4019,36 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til VIAs stabsafdeling (Direktionsstaben)",
+  "co": "VIA University College",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Dokumentation",
+   "Rekruttering"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Persondatapolitik Log ind Min profil Min profil Studentermedhjælper til VIAs stabsafdeling (Direktionsstaben) Søger du et spændende studiejob i en stor offentlig organisation, hvor du kan udvikle både…",
+  "req": null,
+  "url": "https://via.career.emply.com/ad/studentermedhjaelper-til-vias-stabsafdeling-direktionsstaben/p4lboh",
+  "enrichedBy": "regler",
+  "id": "x1d215f5c4623",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til HR, VIA University College",
   "co": "VIA University College",
   "city": "Aarhus",
@@ -4046,32 +4130,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145633&DepartmentId=18959&MediaId=5",
   "enrichedBy": "regler",
   "id": "x95a6233546c7",
-  "live": true
- },
- {
-  "title": "Associate Employee Experience Consultant",
-  "co": "Coloplast",
-  "city": "Humlebæk, DK",
-  "region": "nsj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "strategy",
-  "sec": [
-   "hr",
-   "operations"
-  ],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-23T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Would you like to shape the employee experience for more than 1,500 colleagues in Denmark while helping position Coloplast as an employer of choice for future talent?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Associate-Employee-Experience-Consultant/1450796633/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "regler",
-  "id": "x70980bb42d4f",
   "live": true
  },
  {
