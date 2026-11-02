@@ -210,6 +210,21 @@ button,input,select,textarea{font:inherit;color:inherit}
 .sub{color:var(--muted);margin-top:6px;font-size:15px}
 .filter-note{display:flex;gap:6px 10px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px 16px;font-size:14.5px;color:var(--muted)}
 .filter-note b{color:var(--fg);font-weight:700}
+.filtered{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 14px 10px;font-size:14.5px;color:var(--muted)}
+.fl-head{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:6px 0}
+.fl-head b{color:var(--fg)}
+.fl-head svg{width:18px;height:18px;transition:transform .15s}
+.fl-head[aria-expanded="true"] svg{transform:rotate(180deg)}
+.fl-head:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+.fl-why,.fl-jobs{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.fl-why li{display:flex;align-items:center;justify-content:space-between;gap:2px 8px;flex-wrap:wrap}
+.fl-why li .btn{margin-left:auto;padding-inline:0}
+.fl-why b{color:var(--fg)}
+.fl-jobs{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;gap:8px}
+.fl-jobs li{display:grid;grid-template-columns:1fr auto;gap:0 10px;align-items:center}
+.fl-t{color:var(--fg);font-weight:600;grid-column:1}
+.fl-s{font-size:13px;grid-column:1}
+.fl-jobs .btn{grid-column:2;grid-row:1/span 2}
 .cards{display:grid;gap:14px}
 
 /* jobkort */
@@ -309,6 +324,31 @@ button,input,select,textarea{font:inherit;color:inherit}
 .strength .bar{height:9px;border-radius:5px}
 .danger{color:var(--warn)}
 .btn-danger{background:var(--warn);color:var(--accent-ink)}
+button.ctx{all:unset;cursor:pointer;min-width:0;flex:1;font-size:14px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:8px}
+button.ctx:hover{color:var(--fg);text-decoration:underline}
+button.ctx:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.acct svg{width:18px;height:18px}
+.nudge{display:flex;gap:10px 16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--accent-soft);border-radius:16px;padding:12px 16px;font-size:14.5px}
+.nudge b{display:block}
+.auth-form{display:grid;gap:14px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted)}
+.check input{margin-top:3px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+.form-err{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 12px;font-size:14px;margin:0}
+.sheet-wide{max-width:640px;max-height:92vh;overflow:auto}
+.ps-schools{max-height:96px;overflow:auto}
+.ps-list{max-height:min(46vh,420px);overflow:auto}
+.edu-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.edu{display:flex;align-items:center;gap:10px;flex-wrap:wrap;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.edu>div{flex:1 1 220px;display:grid;min-width:0}
+.cv-box{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1.5px dashed var(--line);border-radius:14px;padding:14px}
+.cv-box>div{flex:1 1 240px;display:grid;gap:2px}
+.file-btn{position:relative;overflow:hidden;cursor:pointer}
+.file-btn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.link-btn{all:unset;cursor:pointer;color:var(--accent);text-decoration:underline}
+.acct-line{display:flex;gap:10px;align-items:center;margin:0}
+.acct-line svg{width:22px;height:22px;color:var(--accent);flex:none}
+.acct-line span{display:grid}
+.foot a{color:inherit}
 .file-drop{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1.5px dashed var(--line);border-radius:14px;padding:14px}
 .file-drop input{max-width:100%;min-width:0;font-size:14px}
 
@@ -648,16 +688,59 @@ function initials(s){ return s.split(/\s+/).filter(w=>/^[A-ZÆØÅ]/.test(w)).sl
 
 /* ============ TILSTAND ============ */
 const KEY = "pathfit-proto-v3";
-function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",alerts:true,alertFreq:"daily",email:""}; }
-function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{}}; }
+function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",cvAt:0,cvBy:"",cvFams:[],extra:[],aiWeights:false,alerts:true,alertFreq:"daily",email:""}; }
+function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
 function load(){
   try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
   return fresh();
 }
 let S = load();
-const UI = {sheet:null,expanded:{},heroText:"",obText:"",obUni:"",obLevel:"all",pfUni:null,waitlistDone:false,confirmDelete:false,focus:null};
+const UI = {sheet:null,expanded:{},heroText:"",obText:"",obUni:"",obLevel:"all",pfUni:null,waitlistDone:false,confirmDelete:false,focus:null,showFiltered:false,cvBusy:false,auth:{email:"",name:"",consent:false}};
 let snapshot = null;
-function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} if(ACC.user) syncSoon(); }
+
+/* ============ KONTO (valgfri) ============ */
+const ACC = {ready:false, backend:false, user:null, ai:false};
+async function api(path, body, method){
+  try{
+    const res = await fetch("/api/"+path, {method: method || (body===undefined ? "GET" : "POST"), credentials:"same-origin",
+      headers: body===undefined ? {} : {"Content-Type":"application/json"}, body: body===undefined ? undefined : JSON.stringify(body)});
+    let data={}; try{ data=await res.json(); }catch(e){}
+    return {ok:res.ok, status:res.status, data};
+  }catch(e){ return {ok:false, status:0, data:{error:"Ingen forbindelse. Prøv igen."}}; }
+}
+function serverState(){ return {onboarded:S.onboarded, disabled:S.disabled, learned:S.learned, fb:S.fb, nudgeClosed:S.nudgeClosed}; }
+let syncTimer=null;
+function syncSoon(){ clearTimeout(syncTimer); syncTimer=setTimeout(()=>{ if(ACC.user) api("me/state",{profile:S.profile,state:serverState(),name:ACC.user.name},"PUT"); },1200); }
+/* Når man logger ind, vinder det, der er gemt på brugeren. Er brugeren tom, gemmes det, man har lavet i browseren. */
+function applyServer(d){
+  if(d.state && d.state.onboarded){
+    const keepView=S.view;
+    S=Object.assign(fresh(), d.state, {profile:Object.assign(freshProfile(), d.profile||{})});
+    S.view = keepView==="landing" ? "landing" : "app";
+    persist();
+  } else if(S.onboarded) syncSoon();
+}
+async function initAccount(){
+  const r=await api("me");
+  ACC.ready=true; ACC.backend = r.ok && "user" in r.data; ACC.ai=!!r.data.ai;
+  if(ACC.backend && r.data.user){ ACC.user=r.data.user; applyServer(r.data); if(ACC.user.mustChangePassword) UI.sheet={type:"password",forced:true}; }
+  render();
+}
+/* Anonym statistik: ingen cookies. Serveren tæller besøgende med en hash, der skifter hver dag. */
+let lastPV="", firstPV=true;
+function track(type, extra){
+  try{
+    const body=JSON.stringify(Object.assign({type, path:location.pathname}, extra||{}));
+    fetch("/api/track",{method:"POST",headers:{"Content-Type":"application/json"},body,keepalive:true}).catch(()=>{});
+  }catch(e){}
+}
+function trackView(){
+  const key = S.view==="app" ? "/app/"+S.tab : S.view==="onboard" ? "/opsaetning/"+S.step : "/";
+  if(key===lastPV) return; lastPV=key;
+  track("pageview",{path:key, ref: firstPV ? document.referrer : ""}); firstPV=false;
+}
+const jobLabel = j => j ? `${j.title} · ${j.co}`.slice(0,160) : "";
 
 /* ============ FORSTÅ UDDANNELSEN ============ */
 function derive(name){
@@ -695,16 +778,60 @@ function setProgram(p, keepRegion){
   const pr=S.profile, s=schoolOf(p.uni);
   pr.programId=p.id; pr.programName=p.name; pr.programShort=shortName(p.name); pr.weights={...p.w}; pr.guessed=false;
   pr.uni=s.name; pr.uniKey=s.key; pr.level=p.level; if(!keepRegion) pr.regions=nearAreas(p.region);
-  pr.studyText=p.name; S.disabled=[];
+  pr.studyText=p.name; S.disabled=[]; pr.aiWeights=false;
+}
+/* AI-agenten tolker uddannelser, vi ikke kender (kræver backend med AI slået til) */
+async function aiProgram(name, school, target){
+  if(!ACC.backend) return;
+  const r=await api("agent/program",{name, school});
+  const w=r.ok && r.data.weights; if(!w || !Object.keys(w).length) return;
+  const p=S.profile;
+  if(target==="primary" && p.programName===name){ p.weights=w; p.aiWeights=true; }
+  else { const e=(p.extra||[]).find(x=>x.name===name); if(!e) return; e.weights=w; e.ai=true; }
+  commit(); toast(`Vores AI har tolket “${name}”, så dine matches passer bedre.`);
+}
+function programEntry(prog, text, uniKey){
+  if(prog){ const s=schoolOf(prog.uni); return {id:prog.id, name:prog.name, uni:s.name, uniKey:s.key, level:prog.level, weights:{...prog.w}, guessed:false}; }
+  const s=uniKey && uniKey!=="other" ? schoolOf(uniKey) : null;
+  let name=text.trim(); name=name.charAt(0).toUpperCase()+name.slice(1);
+  return {id:null, name, uni:s?s.name:"", uniKey:s?s.key:"", level:"", weights:derive(name), guessed:true};
+}
+function addExtra(entry){
+  const p=S.profile; p.extra=p.extra||[];
+  if(norm(entry.name)===norm(p.programName) || p.extra.some(e=>norm(e.name)===norm(entry.name))) return toast("Den uddannelse er allerede på din profil.");
+  p.extra.push(entry); p.extra=p.extra.slice(-3);
+  commit(); toast(`${entry.name} er tilføjet. Dine matches bruger nu begge uddannelser.`);
+  track("program_changed",{label:entry.name});
+  if(entry.guessed) aiProgram(entry.name, entry.uni, "extra");
+}
+function makePrimary(i){
+  const p=S.profile; const e=p.extra[i]; if(!e) return;
+  const old={id:p.programId, name:p.programName, uni:p.uni, uniKey:p.uniKey, level:p.level, weights:p.weights, guessed:p.guessed};
+  p.extra.splice(i,1); if(old.name) p.extra.unshift(old);
+  p.programId=e.id; p.programName=e.name; p.programShort=shortName(e.name); p.uni=e.uni; p.uniKey=e.uniKey; p.level=e.level; p.weights={...e.weights}; p.guessed=e.guessed; p.aiWeights=!!e.ai; p.studyText=e.name;
 }
 function setFreeText(text, uniKey, keepRegion){
   const pr=S.profile; const s=uniKey && uniKey!=="other" ? schoolOf(uniKey) : null;
   let name=text.trim(); name=name.charAt(0).toUpperCase()+name.slice(1);
   pr.programId=null; pr.programName=name||"Din uddannelse"; pr.programShort=pr.programName; pr.weights=derive(name); pr.guessed=true;
-  pr.uni=s?s.name:""; pr.uniKey=s?s.key:""; pr.level=""; if(!keepRegion) pr.regions=nearAreas(s?s.region:"kbh"); pr.studyText=name; S.disabled=[];
+  pr.uni=s?s.name:""; pr.uniKey=s?s.key:""; pr.level=""; if(!keepRegion) pr.regions=nearAreas(s?s.region:"kbh"); pr.studyText=name; S.disabled=[]; pr.aiWeights=false;
+  aiProgram(pr.programName, pr.uni, "primary");
 }
 
 /* ============ MATCHING ============ */
+/* Har man flere uddannelser (fx bachelor + kandidat), tæller den bedste pasform pr. felt */
+function effW(p){
+  const w={...(p.weights||{})};
+  for(const e of p.extra||[]) for(const f in e.weights||{}) w[f]=Math.max(w[f]||0,e.weights[f]);
+  return w;
+}
+/* Felter, man har erfaring i: fra CV'et og fra de tidligere job, man selv har skrevet */
+function famsFromText(t){
+  const s=" "+String(t||"").toLowerCase()+" "; const out=[];
+  for(const f in TITLE_KW) if(TITLE_KW[f].some(k=>s.includes(k))) out.push(f);
+  return out;
+}
+function expFams(p){ return [...new Set([...(p.cvFams||[]),...(p.pastJobs||[]).flatMap(famsFromText)])].filter(f=>FAM[f]); }
 function ctxOf(c){ return c || {profile:S.profile, learned:S.learned, disabled:S.disabled}; }
 /* Job, der kun er for studerende på en bestemt uddannelse (sat af jobindsamleren) */
 const REQ_STUDY = {
@@ -717,12 +844,12 @@ const REQ_STUDY = {
 function studyFits(req, p){
   const rx = REQ_STUDY[req]; if(!rx) return true;
   const prog = p.programId ? progById(p.programId) : null;
-  const hay = norm([p.programName, p.studyText, ...(prog ? prog.aliases : [])].join(" "));
+  const hay = norm([p.programName, p.studyText, ...(prog ? prog.aliases : []), ...(p.extra||[]).map(e=>e.name)].join(" "));
   if(req==="ingenioer" && /global business/.test(hay)) return false;  /* GBE er ikke en teknisk ingeniøruddannelse i denne forstand */
   return rx.test(hay);
 }
 function evaluate(job, c){
-  c=ctxOf(c); const p=c.profile, W=p.weights||{};
+  c=ctxOf(c); const p=c.profile, W=effW(p);
   if(job.req && !studyFits(job.req, p)) return {out:"study"};
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
@@ -750,6 +877,10 @@ function evaluate(job, c){
     if(p.industries.includes(job.industry)){ v=Math.max(v,.8); if(!interestHit) interestHit="ind:"+job.industry; }
     comps.push({k:"interest",label:"Interesser",v,w:.2});
   } else comps.push({k:"interest",label:"Interesser",v:null,w:.2});
+  const xf=expFams(p); let expHit=null;
+  /* Erfaring kan kun løfte et job: uden match tæller den slet ikke med */
+  if(xf.includes(job.fam)) expHit=job.fam; else expHit=secs.find(f=>xf.includes(f))||null;
+  comps.push({k:"exp",label:"Erfaring",v:expHit?(expHit===job.fam?1:.8):null,w:.15});
   const live=comps.filter(x=>x.v!==null); const wsum=live.reduce((s,x)=>s+x.w,0);
   let score = live.reduce((s,x)=>s+x.v*x.w,0)/wsum;
   if(job.postedH<12) score+=.03;
@@ -762,7 +893,7 @@ function evaluate(job, c){
   const title=" "+job.title.toLowerCase()+" ";
   const obvious = vocab.some(k=>title.includes(k));
   const hidden = !obvious && affinity>=.55 && score>=.5;
-  return {score,level,prim,bestSec,affinity,learnedAdj,skillHits,interestHit,comps,hidden};
+  return {score,level,prim,bestSec,affinity,learnedAdj,skillHits,interestHit,expHit,comps,hidden};
 }
 function reasonsFor(job, ev, c){
   c=ctxOf(c); const p=c.profile; const pos=[], neg=[]; const pname=p.programShort||p.programName||"din uddannelse";
@@ -770,6 +901,7 @@ function reasonsFor(job, ev, c){
   else if(ev.bestSec.f && ev.bestSec.w>=.45) pos.push(`Arbejdet er i høj grad ${FAM[ev.bestSec.f].n}, som passer til ${pname}`);
   else if(ev.prim>=.4) pos.push(`Beslægtet med ${pname}`);
   if(ev.skillHits.length) pos.push(`Du har ${listJoin(ev.skillHits)}`);
+  if(ev.expHit) pos.push(`Du har erfaring med ${FAM[ev.expHit].n}`);
   if(ev.interestHit){ pos.push(ev.interestHit.startsWith("ind:") ? `Inden for ${ev.interestHit.slice(4).toLowerCase()}, en branche du har valgt` : `Matcher din interesse for ${FAM[ev.interestHit].n}`); }
   const l=c.learned[job.fam]||0;
   if(l>=.1) pos.push(`Du har tidligere vist interesse for ${FAM[job.fam].n}`);
@@ -784,7 +916,7 @@ function reasonsFor(job, ev, c){
 }
 function hiddenWhy(job, ev, c){
   c=ctxOf(c); const pname=c.profile.programShort||"din uddannelse";
-  const work=[job.fam,...(job.sec||[])].filter(f=>(c.profile.weights[f]||0)>=.5).slice(0,2).map(f=>FAM[f].n);
+  const work=[job.fam,...(job.sec||[])].filter(f=>(effW(c.profile)[f]||0)>=.5).slice(0,2).map(f=>FAM[f].n);
   const t=job.title.replace(/^Studentermedhjælper – /,"");
   return `“${t}” bruger ikke de ord, du ville søge på som ${pname}-studerende, men arbejdet er i praksis ${work.length?listJoin(work):"tæt på dit felt"}.`;
 }
@@ -808,9 +940,13 @@ function feed(){
 }
 function hiddenFeed(){ return feed().filter(x=>x.ev.hidden); }
 function filteredCounts(){
-  const c={danish:0,hours:0,location:0,field:0,study:0};
-  for(const x of allEvals()){ if(x.ev.out && !(S.fb[x.job.id]||{}).dismissed) c[x.ev.out]++; }
+  const c={danish:0,hours:0,location:0,field:0,study:0,dismissed:0};
+  for(const x of allEvals()){ if((S.fb[x.job.id]||{}).dismissed) c.dismissed++; else if(x.ev.out) c[x.ev.out]++; }
   return c;
+}
+/* Alle job, der ikke vises, med grunden */
+function filteredJobs(){
+  return allEvals().map(x=>({...x,why:(S.fb[x.job.id]||{}).dismissed?"dismissed":x.ev.out})).filter(x=>x.why);
 }
 
 /* ============ IKONER ============ */
@@ -851,7 +987,7 @@ function cardHTML(job, ev, opts){
       <span class="tag">${danishTag}</span>
       ${job.rolling?'<span class="tag">Løbende optag</span>':job.deadline==null?"":`<span class="tag ${job.deadline<=5?"tag-soon":""}">Frist ${deadlineDate(job.deadline)}</span>`}
       ${job.postedH<12?`<span class="tag tag-new">Ny · ${agoShort(job.postedH)}</span>`:""}
-      ${ev.hidden && !opts.hiddenMode?'<span class="tag tag-hidden">Skjult match</span>':""}
+      ${ev.hidden && !opts.hiddenMode?'<span class="tag tag-hidden" title="Titlen nævner ikke dit felt, men arbejdet passer. Tryk Hvorfor for at se mere.">Uventet match</span>':""}
     </div>
     ${job.blurb?`<p class="blurb">${esc(job.blurb)}</p>`:""}
     ${opts.hiddenMode?`<div class="callout-hidden"><b>Derfor ville du overse det</b><span>${esc(hiddenWhy(job,ev,c))}</span></div>`:""}
@@ -874,12 +1010,13 @@ function cardHTML(job, ev, opts){
 function whyPanel(job, ev, p){
   const rows = ev.comps.map(x=>{
     const na=x.v===null; const pct=na?0:Math.round(x.v*100);
-    const note = na ? (x.k==="skills"?"Tilføj kompetencer":"Tilføj interesser") : pct+" %";
+    const note = na ? (x.k==="skills"?"Tilføj kompetencer":x.k==="exp"?(expFams(p).length?"Ikke relevant her":"Tilføj CV"):"Tilføj interesser") : pct+" %";
     return `<div class="bar-row ${na?"na":""}"><span>${x.label}</span><span class="bar"><span style="width:${pct}%"></span></span><span class="v">${note}</span></div>`;
   }).join("");
   const l=ev.learnedAdj; const lt = Math.abs(l)>=.03 ? `<p>Din feedback har flyttet uddannelses-pasformen ${l>0?"op":"ned"} med ${Math.round(Math.abs(l)*100)} point.</p>` : "";
   return `<div class="why-panel">
-    <p><b>Sådan er det scoret.</b> Uddannelse tæller 55 %, kompetencer 25 % og interesser 20 %. Det, du ikke har udfyldt, trækker ikke ned, og interesser kan kun løfte et job.</p>
+    ${ev.hidden?`<div class="callout-hidden"><b>Uventet match</b><span>${esc(hiddenWhy(job,ev))}</span></div>`:""}
+    <p><b>Sådan er det scoret.</b> Uddannelsen vejer tungest. Derefter kommer kompetencer, interesser og erfaring fra dit CV. Det, du ikke har udfyldt, trækker ikke ned.</p>
     ${rows}${lt}
     <div class="filters-ok"><span>${I.check}Sprog</span><span>${I.check}Timer</span><span>${I.check}Område</span><span>${I.check}Felt ikke fravalgt</span></div>
   </div>`;
@@ -892,7 +1029,7 @@ function vLanding(){
   const c=demoCtx(); const df=EXAMPLE_JOBS.map(j=>({job:j,ev:evaluate(j,c)})).filter(x=>!x.ev.out&&x.ev.level).sort((a,b)=>b.ev.score-a.ev.score); const top=df.filter(x=>!x.ev.hidden).slice(0,4); const hid=df.find(x=>x.ev.hidden);
   return `
   <header class="topbar"><div class="wrap topbar-in">${logo()}
-    <nav class="top-links"><a href="#virksomheder" class="link-quiet">For virksomheder</a><button class="btn btn-primary btn-sm" data-act="start">${S.onboarded?"Åbn mit feed":"Find mine matches"}</button></nav>
+    <nav class="top-links"><a href="#virksomheder" class="link-quiet">For virksomheder</a>${ACC.backend&&!ACC.user?'<button class="btn btn-quiet btn-sm" data-act="auth" data-v="login">Log ind</button>':""}<button class="btn btn-primary btn-sm" data-act="start">${S.onboarded?"Åbn mit feed":"Find mine matches"}</button></nav>
   </div></header>
   <main>
     <section class="hero"><div class="wrap hero-grid">
@@ -903,7 +1040,7 @@ function vLanding(){
         <div class="hero-form">
           <p class="label">Hvor læser du?</p>
           <div class="hero-schools">${SCHOOLS.map(s=>`<button class="school-chip" data-act="school" data-v="${s.key}">${esc(s.chip||s.name)}</button>`).join("")}<button class="school-chip ghost" data-act="school" data-v="other">Andet sted</button></div>
-          <p class="fine">Vælg din skole, og find din uddannelse på listen. Ingen konto eller CV.</p>
+          <p class="fine">Vælg din skole, og find din uddannelse på listen. Ingen bruger nødvendig.</p>
         </div>
       </div>
       <div>
@@ -911,7 +1048,7 @@ function vLanding(){
         <div class="demo-stack">
           ${cardHTML(top[0].job,top[0].ev,{demo:true,ctx:c})}
           <div class="demo-more"><p class="demo-more-h">Flere matches til hende</p>${top.slice(1).map(x=>`<div class="srow"><div class="monogram" style="--h:${hue(x.job.co)}" aria-hidden="true">${esc(initials(x.job.co))}</div><div class="srow-main"><div class="srow-title">${esc(x.job.title)}</div><div class="srow-sub">${esc(x.job.co)} · ${esc(x.job.city)}</div></div><span class="status ${x.ev.level==="strong"?"st-applied":"st-saved"}">${levelLabel(x.ev.level)}</span></div>`).join("")}</div>
-          ${hid?`<div class="demo-mini"><span class="tag tag-hidden">Skjult match</span><span>${esc(hiddenWhy(hid.job,hid.ev,c))} Jobbet er hos ${esc(hid.job.co)}.</span></div>`:""}
+          ${hid?`<div class="demo-mini"><span class="tag tag-hidden">Uventet match</span><span>${esc(hiddenWhy(hid.job,hid.ev,c))} Jobbet er hos ${esc(hid.job.co)}.</span></div>`:""}
         </div>
       </div>
     </div></section>
@@ -931,7 +1068,7 @@ function vLanding(){
       <div class="feat">
         <div class="feat-item"><span class="tag">Kræver dansk?</span><h3>Sprog er et hårdt filter</h3><p>Kræver et job flydende dansk, og taler du det ikke, ser du det ikke. Internationale studerende får et feed med reelle muligheder.</p></div>
         <div class="feat-item"><span class="tag">10–15 t/uge</span><h3>Passer til dine studietimer</h3><p>Fortæl hvor mange timer du kan arbejde. Et job på 30 timer dukker ikke op som topmatch.</p></div>
-        <div class="feat-item"><span class="tag tag-hidden">Skjult match</span><h3>Job du aldrig ville søge på</h3><p>“Udbudsstyring” eller “Prisanalytiker” nævner sjældent din uddannelse, men arbejdet kan passe perfekt.</p></div>
+        <div class="feat-item"><span class="tag tag-hidden">Uventet match</span><h3>Job du aldrig ville søge på</h3><p>“Udbudsstyring” eller “Prisanalytiker” nævner sjældent din uddannelse, men arbejdet kan passe perfekt.</p></div>
         <div class="feat-item"><span class="tag">Hvorfor dette match</span><h3>Ærlige grunde, også ulemperne</h3><p>Hvert job viser, hvorfor det passer, og hvad der ikke gør: flere timer end du ønsker, krav om dansk, en frist om tre dage.</p></div>
       </div>
     </div></section>
@@ -953,14 +1090,14 @@ function vLanding(){
       </div>
       <form class="panel" data-form="waitlist">
         <h3>Kom på ventelisten for virksomheder</h3>
-        ${UI.waitlistDone?`<p class="ok-note">Tak, du er skrevet op. (I prototypen bliver intet sendt.)</p>`:`
+        ${UI.waitlistDone?`<p class="ok-note">Tak, I er skrevet op. Vi kontakter jer snart.</p>`:`
         <div class="field"><label class="label" for="wl-co">Virksomhed</label><input id="wl-co" class="input" required placeholder="Virksomhedens navn"></div>
         <div class="field"><label class="label" for="wl-mail">Arbejdsmail</label><input id="wl-mail" class="input" type="email" required placeholder="navn@virksomhed.dk"></div>
         <button class="btn btn-primary" type="submit">Skriv mig op</button>`}
       </form>
     </div></section>
   </main>
-  <footer class="foot"><div class="wrap"><span>Studiematch · studiematch.dk</span><span>${LIVE?"Job hentes fra arbejdsgivernes egne sider. Din profil bliver i din browser.":"Eksempeljob fra opdigtede virksomheder. Intet af det, du skriver, forlader din browser."}</span></div></footer>`;
+  <footer class="foot"><div class="wrap"><span>Studiematch · studiematch.dk · <a href="/privatliv.html">Privatliv</a> · <a href="mailto:matchstudie@gmail.com">Kontakt</a></span><span>${LIVE?"Job hentes fra arbejdsgivernes egne sider og jobportaler, vi samarbejder med.":"Eksempeljob fra opdigtede virksomheder."} Din profil bliver i din browser, medmindre du opretter en bruger.</span></div></footer>`;
 }
 
 function vOnboard(){
@@ -1037,52 +1174,57 @@ function obFields(){
   </div>`;
 }
 
-const TABS=[{id:"foryou",l:"Til dig",short:"Til dig",icon:"spark"},{id:"hidden",l:"Skjulte matches",short:"Skjulte",icon:"compass"},{id:"saved",l:"Gemt",short:"Gemt",icon:"bookmark"},{id:"profile",l:"Profil",short:"Profil",icon:"user"}];
-function tabCounts(){ const f=feed(); return {foryou:f.length,hidden:f.filter(x=>x.ev.hidden).length,saved:Object.keys(S.fb).filter(id=>byId(id) && (S.fb[id].saved||S.fb[id].applied)).length,profile:null}; }
+const TABS=[{id:"foryou",l:"Til dig",short:"Til dig",icon:"spark"},{id:"saved",l:"Gemt",short:"Gemt",icon:"bookmark"},{id:"profile",l:"Profil",short:"Profil",icon:"user"}];
+function tabCounts(){ const f=feed(); return {foryou:f.length,saved:Object.keys(S.fb).filter(id=>byId(id) && (S.fb[id].saved||S.fb[id].applied)).length,profile:null}; }
 function tabsHTML(kind){
   const c=tabCounts();
   return TABS.map(t=>{ const cur=S.tab===t.id?'aria-current="page"':"";
     if(kind==="rail") return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.l}</span>${c[t.id]!=null?`<span class="count">${c[t.id]}</span>`:""}</button>`;
-    return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.short}</span>${t.id==="hidden"&&c.hidden?`<span class="badge">${c.hidden}</span>`:""}</button>`;
+    return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.short}</span></button>`;
   }).join("");
 }
-function ctxLine(){ const p=S.profile; return esc([p.programShort+(p.uni?" · "+p.uni:""),hoursText(p.hoursMax)+"/uge",danishLabel(p.danish)].join(" · ")); }
+function ctxLine(){ const p=S.profile; const more=(p.extra||[]).length; return esc([p.programShort+(p.uni?" · "+p.uni:"")+(more?` + ${more} mere`:""),hoursText(p.hoursMax)+"/uge",danishLabel(p.danish)].join(" · ")); }
 function vApp(){
-  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<p class="ctx">${ctxLine()}</p><button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button></div></header>
+  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<button class="ctx" data-act="program-sheet" data-v="replace" title="Skift uddannelse">${ctxLine()}</button>${ACC.backend?(ACC.user?`<button class="btn btn-ghost btn-sm acct" data-act="tab" data-tab="profile" title="${esc(ACC.user.email)}">${I.user}<span class="hide-mobile">${esc(ACC.user.name||"Min konto")}</span></button>`:'<button class="btn btn-ghost btn-sm" data-act="auth" data-v="signup">Opret bruger</button>'):'<button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button>'}</div></header>
   <div class="wrap app-grid">
     <nav class="rail" aria-label="Sektioner">${tabsHTML("rail")}</nav>
-    <main class="feed-col" id="main">${S.tab==="foryou"?tForYou():S.tab==="hidden"?tHidden():S.tab==="saved"?tSaved():tProfile()}</main>
-    <aside class="side" aria-label="Det har vi lært">${tasteHTML()}<p class="side-note">${LIVE?"Job hentes automatisk fra arbejdsgivernes egne sider flere gange om dagen. Tjek altid detaljerne i det originale opslag. Din profil bliver i denne browser.":"Prototype: eksempeljob fra opdigtede virksomheder. Alt bliver i denne browser."}</p></aside>
+    <main class="feed-col" id="main">${S.tab==="saved"?tSaved():S.tab==="profile"?tProfile():tForYou()}</main>
+    <aside class="side" aria-label="Det har vi lært">${tasteHTML()}<p class="side-note">${LIVE?"Job hentes automatisk fra arbejdsgivernes egne sider flere gange om dagen. Tjek altid detaljerne i det originale opslag. "+(ACC.user?"Din profil er gemt på din bruger.":"Din profil bliver i denne browser."):"Prototype: eksempeljob fra opdigtede virksomheder. Alt bliver i denne browser."}</p></aside>
   </div>
   <nav class="tabbar" aria-label="Sektioner">${tabsHTML("bar")}</nav>
   ${sheetHTML()}</div>`;
 }
+const WHY = {
+  danish:{l:"kræver flydende dansk", fix:["tab","profile","Ret dansk-niveau"]},
+  location:{l:"ligger uden for dine områder", fix:["widen","","Vis hele landet"]},
+  hours:{l:"kræver flere timer, end du kan", fix:["tab","profile","Ret timer"]},
+  field:{l:"er i felter, du har slået fra", fix:["fields-on","","Slå felterne til igen"]},
+  study:{l:"kræver en bestemt uddannelse, fx jura eller sygepleje", fix:null},
+  dismissed:{l:"har du selv fravalgt", fix:["undismiss","","Vis dem igen"]}
+};
 function filterNote(){
-  const c=filteredCounts(); const parts=[];
-  if(c.danish) parts.push(`${c.danish} kræver flydende dansk`); if(c.location) parts.push(`${c.location} uden for dit område`);
-  if(c.hours) parts.push(`${c.hours} kræver flere timer`); if(c.field) parts.push(`${c.field} i felter, du har fravalgt`);
-  const total=c.danish+c.location+c.hours+c.field;
+  const c=filteredCounts(); const keys=Object.keys(WHY).filter(k=>c[k]);
+  const total=keys.reduce((n,k)=>n+c[k],0);
   if(!total) return "";
-  return `<div class="filter-note"><span><b>${total} job frasorteret:</b> ${parts.join(", ")}.</span><button class="btn btn-quiet" data-act="tab" data-tab="profile">Ret filtre</button></div>`;
+  const open=UI.showFiltered;
+  const rows=keys.map(k=>`<li><span><b>${c[k]}</b> ${WHY[k].l}</span>${WHY[k].fix?`<button class="btn btn-quiet btn-sm" data-act="${WHY[k].fix[0]}" ${WHY[k].fix[1]?`data-tab="${WHY[k].fix[1]}"`:""}>${WHY[k].fix[2]}</button>`:""}</li>`).join("");
+  const list = open ? `<ul class="fl-jobs">${filteredJobs().slice(0,40).map(x=>`<li><span class="fl-t">${esc(x.job.title)}</span><span class="fl-s">${esc(x.job.co)} · ${WHY[x.why].l}</span>${x.why==="dismissed"?`<button class="btn btn-quiet btn-sm" data-act="undismiss-one" data-id="${x.job.id}">Vis igen</button>`:""}</li>`).join("")}</ul>` : "";
+  return `<section class="filtered"><button class="fl-head" data-act="toggle-filtered" aria-expanded="${open}"><span><b>${total} job vises ikke for dig</b> · ${open?"skjul listen":"se hvilke og hvorfor"}</span>${I.chev}</button>
+    ${open?`<ul class="fl-why">${rows}</ul>${list}`:""}</section>`;
 }
 function tForYou(){
   const f=feed(); const now=new Date().toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"});
   const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} job rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} studiejob gennemgået.</p></div>`;
-  if(!f.length) return head+filterNote()+emptyFeed();
-  return head+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
+  const nudge = ACC.backend && !ACC.user && !S.nudgeClosed ? `<section class="nudge"><div><b>Gem din profil</b><span>Opret en gratis bruger, så dine matches, gemte job og dit CV er med dig på alle enheder.</span></div><div class="chips"><button class="btn btn-primary btn-sm" data-act="auth" data-v="signup">Opret bruger</button><button class="btn btn-quiet btn-sm" data-act="nudge-close">Ikke nu</button></div></section>` : "";
+  if(!f.length) return head+nudge+filterNote()+emptyFeed();
+  return head+nudge+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
 }
 function emptyFeed(){
   const p=S.profile;
   return `<div class="empty"><h2>Du har set alle matches lige nu</h2>
     <p>Der kommer nye studiejob hver dag. Vi giver besked, når et stærkt match dukker op, typisk få timer efter det er slået op.</p>
     <div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Mail mig nye stærke matches"></button><span>Mail mig nye stærke matches</span></div>
-    <div class="chips"><button class="btn btn-ghost btn-sm" data-act="widen">Søg i hele landet</button><button class="btn btn-ghost btn-sm" data-act="tab" data-tab="hidden">Se skjulte matches</button></div></div>`;
-}
-function tHidden(){
-  const f=hiddenFeed();
-  const head=`<div><h1 class="h-feed">Skjulte matches</h1><p class="sub">Job med titler, du nok ikke ville søge på, men hvor din profil stadig passer.</p></div>`;
-  if(!f.length) return head+`<div class="empty"><h2>Ingen skjulte matches lige nu</h2><p>Tilføj kompetencer og interesser på din profil. Så kan vi finde job, hvis titel ikke nævner dit felt.</p><button class="btn btn-primary btn-sm" data-act="tab" data-tab="profile">Tilføj kompetencer</button></div>`;
-  return head+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev,{hiddenMode:true})).join("")}</div>`;
+    <div class="chips"><button class="btn btn-ghost btn-sm" data-act="widen">Søg i hele landet</button></div></div>`;
 }
 function tSaved(){
   const ids=Object.keys(S.fb).filter(id=>byId(id) && (S.fb[id].saved||S.fb[id].applied));
@@ -1098,43 +1240,44 @@ function tSaved(){
   return head+(applied.length?`<h2 class="group-h">Søgt · ${applied.length}</h2><div class="row-list">${applied.map(row).join("")}</div>`:"")+(saved.length?`<h2 class="group-h">Gemt · ${saved.length}</h2><div class="row-list">${saved.map(row).join("")}</div>`:"");
 }
 function completeness(){
-  const p=S.profile; const checks=[!!p.programName,!!p.semester,!!p.danish,!!p.hoursMax,p.regions.length>0,p.skills.length>=3,p.interests.length>0,p.industries.length>0,p.pastJobs.length>0,p.courses.length>0,!!p.cvName];
+  const p=S.profile; const checks=[!!p.programName,!!p.semester,!!p.danish,!!p.hoursMax,p.regions.length>0,p.skills.length>=3,p.interests.length>0,p.industries.length>0,p.pastJobs.length>0,p.courses.length>0,!!p.cvName,!!ACC.user];
   return Math.round(100*checks.filter(Boolean).length/checks.length);
 }
 function nextTip(){
   const p=S.profile;
-  if(p.skills.length<3) return "Tilføj mindst 3 kompetencer. Kompetencer tæller 25 % af hvert match.";
-  if(!p.interests.length) return "Vælg de felter, du er nysgerrig på. Interesser tæller 20 %.";
+  if(!p.cvName) return "Upload dit CV. Så finder vi dine kompetencer og din erfaring, og dine matches bliver skarpere.";
+  if(p.skills.length<3) return "Tilføj mindst 3 kompetencer. De tæller med i hvert match.";
+  if(!p.interests.length) return "Vælg de felter, du er nysgerrig på. Interesser kan løfte et job.";
   if(!p.industries.length) return "Vælg brancher, du gerne vil arbejde i.";
   if(!p.semester) return "Tilføj dit semester, så vi kan foreslå praktik på det rigtige tidspunkt.";
   if(!p.pastJobs.length) return "Tilføj et tidligere job. Selv et cafejob viser erfaring med kunder og vagter.";
   return "Din profil ser godt ud.";
 }
 function tProfile(){
-  const p=S.profile; const pct=completeness(); const pfUni=UI.pfUni||p.uniKey||"other";
-  const topFams=Object.keys(p.weights).sort((a,b)=>p.weights[b]-p.weights[a]).slice(0,6);
+  const p=S.profile; const pct=completeness(); const W=effW(p);
+  const topFams=Object.keys(W).sort((a,b)=>W[b]-W[a]).slice(0,6);
   const sugSkills=[...new Set(JOBS.filter(j=>topFams.includes(j.fam)).flatMap(j=>j.skills))].filter(s=>!p.skills.includes(s)).slice(0,10);
-  const famOpts=Object.keys(FAM).sort((a,b)=>(p.weights[b]||0)-(p.weights[a]||0));
+  const famOpts=Object.keys(FAM).sort((a,b)=>(W[b]||0)-(W[a]||0));
   const sems=["1. semester","2. semester","3. semester","4. semester","5. semester","6. semester","7. semester (kandidat 1.)","8. semester (kandidat 2.)","9. semester (kandidat 3.)","10. semester (speciale)"];
   return `<div><h1 class="h-feed">Profil</h1><p class="sub">Jo mere du tilføjer, jo skarpere bliver dine matches. Alt er valgfrit.</p></div>
   <section class="pcard strength"><div class="strength-top"><h2>Profilstyrke</h2><b class="num">${pct} %</b></div><span class="bar"><span style="width:${pct}%"></span></span><p class="fine">${esc(nextTip())}</p></section>
 
-  <section class="pcard"><h2>Dit studie</h2>
-    <div class="field-row">
-      <div class="field"><label class="label" for="pf-uni">Skole</label><select id="pf-uni" class="select" data-change="pf-uni">${SCHOOLS.map(s=>`<option value="${s.key}" ${pfUni===s.key?"selected":""}>${s.name} · ${esc(s.full)}</option>`).join("")}<option value="other" ${pfUni==="other"?"selected":""}>Andet sted</option></select></div>
-      <div class="field"><label class="label" for="pf-sem">Semester</label><select id="pf-sem" class="select" data-change="semester"><option value="">Ikke angivet</option>${sems.map((s,i)=>`<option value="${i+1}" ${String(p.semester)===String(i+1)?"selected":""}>${s}</option>`).join("")}</select></div>
-    </div>
-    <form class="field" data-form="study"><label class="label" for="pf-study">Uddannelse</label>
-      <div class="inline-form"><input id="pf-study" class="input" list="pf-prog-list" value="${esc(pfUni===(p.uniKey||"other")?(p.studyText||p.programName):"")}" placeholder="Søg i ${pfUni==="other"?"alle skolers":esc(schoolOf(pfUni).name)+"s"} uddannelser" autocomplete="off"><button class="btn btn-ghost" type="submit">Opdater</button></div>
-      <datalist id="pf-prog-list">${programsFor(pfUni,"all","").map(x=>`<option value="${esc(x.name)}">`).join("")}</datalist>
-      <p class="fine">Matcher lige nu som: <b>${esc(p.programName)}${p.uni?" ("+esc(p.uni)+")":""}</b>${p.level?" · "+LEVELS[p.level]:""}${p.guessed?" · tolket ud fra din tekst":""}</p></form>
+  ${accountCard()}
+
+  <section class="pcard"><h2>Dine uddannelser</h2>
+    <ul class="edu-list">
+      <li class="edu"><div><b>${esc(p.programName||"Ingen uddannelse valgt")}</b><span class="fine">${[p.uni,p.level?LEVELS[p.level]:"",p.guessed?(p.aiWeights?"tolket af AI":"tolket ud fra din tekst"):""].filter(Boolean).map(esc).join(" · ")}</span></div><span class="tag">Primær</span><button class="btn btn-ghost btn-sm" data-act="program-sheet" data-v="replace">Skift</button></li>
+      ${(p.extra||[]).map((e,i)=>`<li class="edu"><div><b>${esc(e.name)}</b><span class="fine">${[e.uni,e.level?LEVELS[e.level]:"",e.guessed?(e.ai?"tolket af AI":"tolket ud fra din tekst"):""].filter(Boolean).map(esc).join(" · ")}</span></div><button class="btn btn-quiet btn-sm" data-act="edu-primary" data-i="${i}">Gør til primær</button><button class="mini-x" data-act="edu-remove" data-i="${i}" aria-label="Fjern ${esc(e.name)}">${I.x}</button></li>`).join("")}
+    </ul>
+    ${(p.extra||[]).length<3?`<div><button class="btn btn-ghost btn-sm" data-act="program-sheet" data-v="add">+ Tilføj en uddannelse mere</button><p class="fine">Fx din bachelor, hvis du nu læser kandidat, eller et sidefag. Vi matcher på alle dine uddannelser.</p></div>`:""}
+    <div class="field"><label class="label" for="pf-sem">Semester</label><select id="pf-sem" class="select" data-change="semester"><option value="">Ikke angivet</option>${sems.map((x,i)=>`<option value="${i+1}" ${String(p.semester)===String(i+1)?"selected":""}>${x}</option>`).join("")}</select></div>
   </section>
 
   <section class="pcard"><h2>Filtre</h2><p class="hint">Job, der ikke består dem, kommer aldrig i dit feed.</p>
     <div class="field"><span class="label" id="pl-da">Dansk-niveau</span><div class="seg" role="group" aria-labelledby="pl-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div></div>
     <div class="field"><span class="label" id="pl-h">Timer om ugen</span><div class="seg" role="group" aria-labelledby="pl-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
     <div class="field"><span class="label" id="pl-r">Område</span>${regionChips(p,"pl-r")}</div>
-    <div class="field"><span class="label" id="pl-f">Felter, der er med</span><div class="chips" role="group" aria-labelledby="pl-f">${Object.keys(p.weights).filter(f=>p.weights[f]>=.3).sort((a,b)=>p.weights[b]-p.weights[a]).map(f=>`<button class="chip" data-act="fam-toggle" data-v="${f}" aria-pressed="${!S.disabled.includes(f)}">${FAM[f].label}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="pl-f">Felter, der er med</span><div class="chips" role="group" aria-labelledby="pl-f">${Object.keys(W).filter(f=>W[f]>=.3).sort((a,b)=>W[b]-W[a]).map(f=>`<button class="chip" data-act="fam-toggle" data-v="${f}" aria-pressed="${!S.disabled.includes(f)}">${FAM[f].label}</button>`).join("")}</div></div>
   </section>
 
   <section class="pcard"><h2>Kompetencer</h2><p class="hint">Værktøjer og metoder, du har brugt i fag, projekter eller job.</p>
@@ -1149,16 +1292,18 @@ function tProfile(){
     <div class="chips">${INDUSTRIES.map(x=>`<button class="chip" data-act="industry" data-v="${esc(x)}" aria-pressed="${p.industries.includes(x)}">${esc(x)}</button>`).join("")}</div>
   </section>
 
-  <section class="pcard"><h2>Erfaring</h2>
+  <section class="pcard"><h2>CV og erfaring</h2>
+    <div class="cv-box">
+      <div><b>${p.cvName?esc(p.cvName):"Upload dit CV"}</b><span class="fine">${p.cvName?`Læst ${new Date(p.cvAt||Date.now()).toLocaleDateString("da-DK",{day:"numeric",month:"short"})}${p.cvBy==="ai"?" af vores AI":""}. Erfaringen tæller med i dine matches.`:"Vi finder dine kompetencer og din erfaring og bruger dem til at give dig stærkere matches. Du vælger selv, hvad der kommer med."}</span></div>
+      <label class="btn ${p.cvName?"btn-ghost":"btn-primary"} btn-sm file-btn">${UI.cvBusy?"Læser…":p.cvName?"Upload nyt":"Vælg fil"}<input id="pf-cv" type="file" accept=".pdf,.docx,.txt" data-change="cv" ${UI.cvBusy?"disabled":""}></label>
+    </div>
+    <p class="fine">PDF eller Word (.docx). ${ACC.user?"CV'et gemmes på din bruger, og vores AI læser det, så vi kan finde mere end nøgleord.":"Uden bruger læses CV'et kun i din browser og sendes ingen steder hen."}${p.cvName?' <button class="link-btn" data-act="cv-remove">Fjern CV</button>':""}</p>
     <div class="field"><span class="label">Tidligere job</span>
-      <ul class="list-items">${p.pastJobs.map((s,i)=>`<li><span>${esc(s)}</span><button class="mini-x" data-act="list-remove" data-list="pastJobs" data-i="${i}" aria-label="Fjern">${I.x}</button></li>`).join("")}</ul>
+      <ul class="list-items">${p.pastJobs.map((x,i)=>`<li><span>${esc(x)}</span><button class="mini-x" data-act="list-remove" data-list="pastJobs" data-i="${i}" aria-label="Fjern">${I.x}</button></li>`).join("")}</ul>
       <form class="inline-form" data-form="pastJobs"><label class="sr" for="pf-job">Tilføj et tidligere job</label><input id="pf-job" class="input" placeholder="fx Barista, 2 år"><button class="btn btn-ghost" type="submit">Tilføj</button></form></div>
     <div class="field"><span class="label">Relevante fag</span>
-      <ul class="list-items">${p.courses.map((s,i)=>`<li><span>${esc(s)}</span><button class="mini-x" data-act="list-remove" data-list="courses" data-i="${i}" aria-label="Fjern">${I.x}</button></li>`).join("")}</ul>
+      <ul class="list-items">${p.courses.map((x,i)=>`<li><span>${esc(x)}</span><button class="mini-x" data-act="list-remove" data-list="courses" data-i="${i}" aria-label="Fjern">${I.x}</button></li>`).join("")}</ul>
       <form class="inline-form" data-form="courses"><label class="sr" for="pf-course">Tilføj et fag</label><input id="pf-course" class="input" placeholder="fx Supply Chain Management (5 ECTS)"><button class="btn btn-ghost" type="submit">Tilføj</button></form></div>
-    <div class="field"><label class="label" for="pf-cv">CV</label>
-      <div class="file-drop"><input id="pf-cv" type="file" accept=".pdf,.doc,.docx" data-change="cv">${p.cvName?`<span class="fine">Tilføjet: ${esc(p.cvName)}</span>`:""}</div>
-      <p class="fine">I den rigtige version læser vi dit CV for at foreslå kompetencer, og du godkender hver enkelt. Prototypen gemmer kun filnavnet.</p></div>
   </section>
 
   <section class="pcard"><h2>Jobalarmer</h2>
@@ -1169,12 +1314,20 @@ function tProfile(){
 
   <div class="only-narrow">${tasteHTML()}</div>
 
-  <section class="pcard"><h2>Dine data</h2><p class="hint">Alt her gemmes kun i denne browser.</p>
-    ${UI.confirmDelete?`<p>Slet din profil, din feedback og dine gemte job? Det kan ikke fortrydes.</p><div class="chips"><button class="btn btn-danger btn-sm" data-act="delete-yes">Slet alt</button><button class="btn btn-ghost btn-sm" data-act="delete-no">Annuller</button></div>`:`<div><button class="btn btn-ghost btn-sm danger" data-act="delete-ask">Slet mine data og start forfra</button></div>`}
+  <section class="pcard"><h2>Dine data</h2><p class="hint">${ACC.user?"Din profil, dine gemte job og dit CV er gemt på din bruger. Læs mere i vores <a href=\"/privatliv.html\">privatlivspolitik</a>.":"Alt her gemmes kun i denne browser."}</p>
+    ${UI.confirmDelete?`<p>${ACC.user?"Slet din bruger, din profil, dit CV og dine gemte job? Det kan ikke fortrydes.":"Slet din profil, din feedback og dine gemte job? Det kan ikke fortrydes."}</p><div class="chips"><button class="btn btn-danger btn-sm" data-act="delete-yes">Slet alt</button><button class="btn btn-ghost btn-sm" data-act="delete-no">Annuller</button></div>`:`<div><button class="btn btn-ghost btn-sm danger" data-act="delete-ask">${ACC.user?"Slet min bruger og alle mine data":"Slet mine data og start forfra"}</button></div>`}
   </section>`;
 }
+function accountCard(){
+  if(!ACC.backend) return "";
+  if(!ACC.user) return `<section class="pcard acct-card"><h2>Gem din profil</h2><p class="hint">Opret en gratis bruger, så din profil, dine gemte job og dit CV er gemt, og du kan logge ind fra alle dine enheder.</p>
+    <div class="chips"><button class="btn btn-primary btn-sm" data-act="auth" data-v="signup">Opret bruger</button><button class="btn btn-ghost btn-sm" data-act="auth" data-v="login">Log ind</button></div></section>`;
+  return `<section class="pcard acct-card"><h2>Din konto</h2>
+    <p class="acct-line">${I.user}<span><b>${esc(ACC.user.name||ACC.user.email)}</b>${ACC.user.name?`<span class="fine">${esc(ACC.user.email)}</span>`:""}</span></p>
+    <div class="chips"><button class="btn btn-ghost btn-sm" data-act="pw-sheet">Skift adgangskode</button><button class="btn btn-ghost btn-sm" data-act="logout">Log ud</button>${ACC.user.role==="admin"?'<a class="btn btn-ghost btn-sm" href="/admin.html">Admin</a>':""}</div></section>`;
+}
 function tasteHTML(){
-  const p=S.profile; const W=p.weights;
+  const p=S.profile; const W=effW(p);
   const rows=Object.keys(FAM).filter(f=>(W[f]||0)>=.3 || Math.abs(S.learned[f]||0)>=.05)
     .map(f=>({f,l:S.learned[f]||0,v:clamp((W[f]||0)+(S.learned[f]||0),0,1),off:S.disabled.includes(f)}))
     .sort((a,b)=>(a.off-b.off)||(b.v-a.v)).slice(0,8);
@@ -1184,8 +1337,69 @@ function tasteHTML(){
     ${any?`<button class="btn btn-quiet" data-act="reset-learning">Nulstil det, vi har lært</button>`:""}
   </section>`;
 }
+function authSheet(sh){
+  const signup=sh.mode!=="login"; const a=UI.auth;
+  return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">${signup?"Opret en gratis bruger":"Log ind"}</h2>
+    <p>${signup?"Så gemmes din profil, dine gemte job og dit CV, og du kan bruge Studiematch på alle dine enheder.":"Velkommen tilbage."}</p>
+    <form class="auth-form" data-form="auth">
+      ${signup?`<div class="field"><label class="label" for="au-name">Navn <span class="fine">(valgfrit)</span></label><input id="au-name" class="input" autocomplete="name" value="${esc(a.name)}"></div>`:""}
+      <div class="field"><label class="label" for="au-mail">E-mail</label><input id="au-mail" class="input" type="email" autocomplete="email" required value="${esc(a.email)}"></div>
+      <div class="field"><label class="label" for="au-pw">Adgangskode</label><input id="au-pw" class="input" type="password" autocomplete="${signup?"new-password":"current-password"}" required minlength="${signup?8:1}">${signup?'<p class="fine">Mindst 8 tegn.</p>':""}</div>
+      ${signup?`<label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="/privatliv.html" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>`:""}
+      ${sh.err?`<p class="form-err" role="alert">${esc(sh.err)}</p>`:""}
+      <div class="sheet-actions"><button class="btn btn-quiet" type="button" data-act="auth-mode" data-v="${signup?"login":"signup"}">${signup?"Har du en bruger? Log ind":"Ny her? Opret bruger"}</button><button class="btn btn-primary" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Vent…":signup?"Opret bruger":"Log ind"}</button></div>
+      ${signup?"":`<p class="fine">Glemt adgangskoden? Skriv til <a href="mailto:matchstudie@gmail.com">matchstudie@gmail.com</a>, så sender vi en ny.</p>`}
+    </form></div></div>`;
+}
+function passwordSheet(sh){
+  return `<div class="scrim" ${sh.forced?"":'data-act="close-sheet"'}><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">${sh.forced?"Vælg din egen adgangskode":"Skift adgangskode"}</h2>
+    ${sh.forced?"<p>Du er logget ind med en midlertidig adgangskode. Vælg en ny, som kun du kender.</p>":""}
+    <form class="auth-form" data-form="password">
+      ${sh.forced?"":`<div class="field"><label class="label" for="pw-old">Nuværende adgangskode</label><input id="pw-old" class="input" type="password" autocomplete="current-password" required></div>`}
+      <div class="field"><label class="label" for="pw-new">Ny adgangskode</label><input id="pw-new" class="input" type="password" autocomplete="new-password" minlength="8" required><p class="fine">Mindst 8 tegn.</p></div>
+      ${sh.err?`<p class="form-err" role="alert">${esc(sh.err)}</p>`:""}
+      <div class="sheet-actions">${sh.forced?"":'<button class="btn btn-quiet" type="button" data-act="close-sheet">Annuller</button>'}<button class="btn btn-primary" type="submit">Gem</button></div>
+    </form></div></div>`;
+}
+function psListHTML(){
+  const sh=UI.sheet; const list=programsFor(sh.uni, "all", sh.q).slice(0,80); const q=sh.q.trim();
+  let h=list.map(x=>`<li><button type="button" data-act="ps-pick" data-id="${x.id}"><span class="pn">${esc(x.name)}</span><span class="pl">${schoolOf(x.uni).name} · ${LEVELS[x.level]}</span></button></li>`).join("");
+  if(q) h+=`<li><button type="button" data-act="ps-text"><span class="pn free">Brug “${esc(q)}”</span><span class="pl">${ACC.ai?"vores AI tolker den":"vi tolker den"}</span></button></li>`;
+  return h || `<li class="none">Skriv navnet på din uddannelse.</li>`;
+}
+function programSheet(sh){
+  const add=sh.mode==="add";
+  return `<div class="scrim" data-act="close-sheet"><div class="sheet sheet-wide" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">${add?"Tilføj en uddannelse":"Skift uddannelse"}</h2>
+    <p>${add?"Har du flere uddannelser, fx en bachelor og en kandidat, bruger vi dem alle, når vi finder job.":"Dine filtre, gemte job og det, vi har lært om dig, bliver ved."}</p>
+    <div class="chips ps-schools" role="group" aria-label="Skole"><button class="chip" data-act="ps-uni" data-v="other" aria-pressed="${sh.uni==="other"}">Alle skoler</button>${SCHOOLS.map(x=>`<button class="chip" data-act="ps-uni" data-v="${x.key}" aria-pressed="${sh.uni===x.key}">${esc(x.chip||x.name)}</button>`).join("")}</div>
+    <label class="sr" for="ps-q">Søg efter uddannelse</label>
+    <input id="ps-q" class="input" placeholder="Søg, fx jura, HA eller sygeplejerske" autocomplete="off" value="${esc(sh.q)}">
+    <ul class="prog-list ps-list" id="ps-list">${psListHTML()}</ul>
+  </div></div>`;
+}
+function cvSheet(sh){
+  const ex=sh.ex; const box=(k,i,label)=>`<button class="chip" data-act="cv-pick" data-k="${k}" data-i="${i}" aria-pressed="${!!sh.pick[k][i]}">${esc(label)}</button>`;
+  const none=!ex.skills.length && !ex.experience.length && !ex.interests.length;
+  return `<div class="scrim" data-act="close-sheet"><div class="sheet sheet-wide" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">Det fandt vi i dit CV</h2>
+    <p>${ex.by==="ai"?"Vores AI har læst dit CV.":"Vi har læst dit CV i din browser."} Fravælg det, der ikke passer, og tryk Tilføj.</p>
+    ${ex.summary?`<p class="ok-note">${esc(ex.summary)}</p>`:""}
+    ${ex.skills.length?`<div class="field"><span class="label">Kompetencer</span><div class="chips">${ex.skills.map((v,i)=>box("skills",i,v)).join("")}</div></div>`:""}
+    ${ex.experience.length?`<div class="field"><span class="label">Erfaring</span><div class="chips">${ex.experience.map((e,i)=>box("experience",i,expLabel(e))).join("")}</div></div>`:""}
+    ${ex.interests.length?`<div class="field"><span class="label">Felter, du har arbejdet med</span><div class="chips">${ex.interests.map((f,i)=>box("interests",i,FAM[f].label)).join("")}</div></div>`:""}
+    ${none?`<p class="notice">Vi fandt ikke noget, vi kunne bruge. Du kan stadig skrive dine kompetencer og tidligere job ind selv.</p>`:""}
+    <div class="sheet-actions"><button class="btn btn-quiet" data-act="close-sheet">Annuller</button>${none?"":`<button class="btn btn-primary" data-act="cv-apply">Tilføj til min profil</button>`}</div>
+  </div></div>`;
+}
 function sheetHTML(){
   if(!UI.sheet) return "";
+  if(UI.sheet.type==="auth") return authSheet(UI.sheet);
+  if(UI.sheet.type==="password") return passwordSheet(UI.sheet);
+  if(UI.sheet.type==="program") return programSheet(UI.sheet);
+  if(UI.sheet.type==="cv") return cvSheet(UI.sheet);
   const j=byId(UI.sheet.id);
   if(UI.sheet.type==="dismiss"){
     const opts=[["field","Ikke mit felt",`Vis færre job inden for ${FAM[j.fam].n}`],["hours","Forkerte timer",""],["danish","Sproget passer ikke",""],["location","For langt væk",""],["company","Ikke denne virksomhed",""],["other","Noget andet",""]];
@@ -1198,14 +1412,15 @@ function sheetHTML(){
     <h2 id="sh-t">Søg hos ${esc(j.co)}</h2>
     <p>${j.url?`Du søger direkte hos ${esc(j.co)} på deres egen side.`:"I den rigtige version åbner dette det originale jobopslag på virksomhedens egen side."} Vi søger aldrig på dine vegne.</p>
     <p>${j.rolling?"Løbende optag, så du kan tilmelde dig når som helst.":j.deadline==null?"Fristen står i opslaget.":`Ansøgningsfrist: <b>${deadlineDate(j.deadline)}</b>.`} Markér jobbet som søgt for at holde styr på det under Gemt.</p>
-    <div class="sheet-actions">${j.url?`<a class="btn btn-ghost" href="${esc(j.url)}" target="_blank" rel="noopener">Åbn jobopslaget</a>`:`<button class="btn btn-ghost" data-act="close-sheet">Annuller</button>`}<button class="btn btn-primary" data-act="apply-go">Markér som søgt</button></div></div></div>`;
+    <div class="sheet-actions">${j.url?`<a class="btn btn-ghost" href="${esc(j.url)}" target="_blank" rel="noopener" data-track="apply" data-id="${j.id}">Åbn jobopslaget</a>`:`<button class="btn btn-ghost" data-act="close-sheet">Annuller</button>`}<button class="btn btn-primary" data-act="apply-go">Markér som søgt</button></div></div></div>`;
 }
 
 /* ============ TEGN ============ */
 const root=typeof document!=="undefined" ? document.getElementById("root") : null;
 function render(){
   if(S.view==="app" && !S.onboarded) S.view="landing";
-  root.innerHTML = S.view==="landing" ? vLanding() : S.view==="onboard" ? vOnboard() : vApp();
+  root.innerHTML = S.view==="landing" ? vLanding()+sheetHTML() : S.view==="onboard" ? vOnboard()+sheetHTML() : vApp();
+  trackView();
   if(UI.focus){ const el=document.getElementById(UI.focus); if(el){ el.focus(); if(el.setSelectionRange && el.value!=null){ const n=el.value.length; try{el.setSelectionRange(n,n);}catch(e){} } } UI.focus=null; }
 }
 function commit(){ persist(); render(); }
@@ -1240,21 +1455,21 @@ function act(a, el){
     case "ob-next": S.step=Math.min(4,S.step+1); window.scrollTo(0,0); return commit();
     case "ob-back": S.step=Math.max(1,S.step-1); if(S.step===2){ UI.obUni=p.uniKey||UI.obUni||"other"; UI.obText=""; UI.obLevel="all"; } window.scrollTo(0,0); return commit();
     case "fam-toggle": S.disabled = S.disabled.includes(v) ? S.disabled.filter(f=>f!==v) : [...S.disabled,v]; return commit();
-    case "finish": S.onboarded=true; S.view="app"; S.tab="foryou"; window.scrollTo(0,0); return commit();
+    case "finish": S.onboarded=true; S.view="app"; S.tab="foryou"; window.scrollTo(0,0); track("onboarded",{label:p.programName}); return commit();
     case "tab": S.tab=el.dataset.tab; UI.confirmDelete=false; window.scrollTo(0,0); return commit();
     case "why": UI.expanded[id]=!UI.expanded[id]; return render();
     case "like": { const j=byId(id), fb=fbOf(id); snap();
       if(fb.liked){ fb.liked=false; bump(j.fam,-.12); (j.sec||[]).forEach(f=>bump(f,-.04)); commit(); return toast("Fjernet fra interesseret"); }
-      fb.liked=true; bump(j.fam,.12); (j.sec||[]).forEach(f=>bump(f,.04)); commit(); return toast(`Noteret. Flere job inden for ${FAM[j.fam].n} fremover.`,true); }
+      track("like",{jobId:id,label:jobLabel(j)}); fb.liked=true; bump(j.fam,.12); (j.sec||[]).forEach(f=>bump(f,.04)); commit(); return toast(`Noteret. Flere job inden for ${FAM[j.fam].n} fremover.`,true); }
     case "save": { const j=byId(id), fb=fbOf(id); snap();
       if(fb.saved){ fb.saved=false; bump(j.fam,-.05); commit(); return toast("Fjernet fra Gemt",true); }
-      fb.saved=true; bump(j.fam,.05); commit(); return toast("Gemt. Du finder det under Gemt.",true); }
+      track("save",{jobId:id,label:jobLabel(j)}); fb.saved=true; bump(j.fam,.05); commit(); return toast("Gemt. Du finder det under Gemt.",true); }
     case "unsave": { const fb=fbOf(id); snap(); fb.saved=false; fb.applied=false; commit(); return toast("Fjernet",true); }
     case "dismiss": UI.sheet={type:"dismiss",id}; return render();
     case "apply": UI.sheet={type:"apply",id}; return render();
     case "close-sheet": UI.sheet=null; return render();
     case "reason": { const jid=UI.sheet.id; const j=byId(jid); snap(); UI.sheet=null;
-      const fb=fbOf(jid); fb.dismissed=v;
+      const fb=fbOf(jid); fb.dismissed=v; track("dismiss",{jobId:jid,label:jobLabel(j)});
       let msg="Skjult.";
       if(v==="field"){ bump(j.fam,-.2); (j.sec||[]).forEach(f=>bump(f,-.05)); msg=`Skjult. Færre job inden for ${FAM[j.fam].n} fremover.`; }
       else if(v==="hours") msg="Skjult. Tip: angiv dine timer under Profil, så frasorterer vi dem.";
@@ -1276,14 +1491,114 @@ function act(a, el){
     case "list-remove": p[el.dataset.list].splice(Number(el.dataset.i),1); return commit();
     case "delete-ask": UI.confirmDelete=true; return render();
     case "delete-no": UI.confirmDelete=false; return render();
-    case "delete-yes": S=fresh(); UI.confirmDelete=false; UI.expanded={}; try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); return toast("Dine data er slettet.");
+    case "delete-yes": (async()=>{ if(ACC.user){ const r=await api("me",undefined,"DELETE"); if(!r.ok) return toast(r.data.error||"Det lykkedes ikke. Prøv igen."); ACC.user=null; }
+      S=fresh(); UI.confirmDelete=false; UI.expanded={}; try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Dine data er slettet."); })(); return;
+    case "auth": UI.sheet={type:"auth",mode:v||"signup"}; UI.focus=v==="login"?"au-mail":"au-name"; return render();
+    case "auth-mode": saveAuthFields(); UI.sheet={type:"auth",mode:v}; return render();
+    case "pw-sheet": UI.sheet={type:"password"}; UI.focus="pw-old"; return render();
+    case "logout": (async()=>{ await api("auth/logout",{}); ACC.user=null; S=fresh(); try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Du er logget ud."); })(); return;
+    case "nudge-close": S.nudgeClosed=true; return commit();
+    case "toggle-filtered": UI.showFiltered=!UI.showFiltered; return render();
+    case "fields-on": S.disabled=[]; commit(); return toast("Alle felter er slået til igen.");
+    case "undismiss": for(const k in S.fb) if(S.fb[k].dismissed) delete S.fb[k].dismissed; commit(); return toast("De fravalgte job vises igen.");
+    case "undismiss-one": if(S.fb[id]) delete S.fb[id].dismissed; commit(); return toast("Jobbet vises igen.");
+    case "program-sheet": UI.sheet={type:"program",mode:v||"replace",uni:p.uniKey||"other",q:""}; UI.focus="ps-q"; return render();
+    case "ps-uni": UI.sheet.uni=v; UI.focus="ps-q"; return render();
+    case "ps-pick": case "ps-text": { const sh=UI.sheet; const prog=a==="ps-pick"?progById(id):null; if(!prog && !sh.q.trim()) return;
+      UI.sheet=null;
+      if(sh.mode==="add") return addExtra(programEntry(prog, sh.q, sh.uni));
+      if(prog) setProgram(prog,true); else setFreeText(sh.q, sh.uni, true);
+      track("program_changed",{label:p.programName}); commit(); return toast(`Matcher nu som ${p.programName}${p.uni?" ("+p.uni+")":""}.`); }
+    case "edu-primary": makePrimary(Number(el.dataset.i)); S.disabled=[]; commit(); return toast(`${p.programName} er nu din primære uddannelse.`);
+    case "edu-remove": { const e=p.extra.splice(Number(el.dataset.i),1)[0]; commit(); return toast(`${e.name} er fjernet.`); }
+    case "cv-pick": { const k=el.dataset.k, i=Number(el.dataset.i); UI.sheet.pick[k][i]=!UI.sheet.pick[k][i]; return render(); }
+    case "cv-apply": return applyCV();
+    case "cv-remove": (async()=>{ if(ACC.user) await api("me/cv",undefined,"DELETE"); p.cvName=""; p.cvAt=0; p.cvBy=""; p.cvFams=[]; commit(); toast("CV'et er fjernet. Kompetencer og job, du har tilføjet, bliver på profilen."); })(); return;
   }
+}
+/* ============ CV ============ */
+const CV_SKILLS = ["Kundeservice","Salg","Microsoft Office","Word","PowerPoint","Outlook","Google Analytics","HubSpot","WordPress","Shopify",
+  "Adobe","Photoshop","Illustrator","InDesign","Canva","Premiere Pro","Java","C#","C++","TypeScript","Node.js","HTML","CSS","Git","Docker","AWS","Azure",
+  "MATLAB","AutoCAD","SolidWorks","Revit","SPSS","Stata","e-conomic","Dinero","Navision","Dynamics","Jira","Scrum","Agile","Six Sigma","Kassesystem",
+  "Social media","SEO","Copywriting","Tysk","Fransk","Spansk","Engelsk","Førstehjælp","Kørekort"];
+function loadScript(src){ return new Promise((ok,bad)=>{ if(document.querySelector(`script[src="${src}"]`)) return ok(); const t=document.createElement("script"); t.src=src; t.onload=ok; t.onerror=()=>bad(new Error("Kunne ikke hente læseren")); document.head.appendChild(t); }); }
+async function cvText(file){
+  const name=file.name.toLowerCase();
+  if(name.endsWith(".pdf")){
+    const base="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+    await loadScript(base+"pdf.min.js");
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc=base+"pdf.worker.min.js";
+    const doc=await window.pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise; let out="";
+    for(let i=1;i<=Math.min(doc.numPages,6);i++){ const c=await (await doc.getPage(i)).getTextContent(); out+=c.items.map(it=>it.str+(it.hasEOL?"\n":" ")).join("")+"\n"; }
+    return out;
+  }
+  if(name.endsWith(".docx")){
+    await loadScript("https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js");
+    return (await window.mammoth.extractRawText({arrayBuffer:await file.arrayBuffer()})).value;
+  }
+  if(name.endsWith(".txt")) return await file.text();
+  throw new Error("Vi kan læse PDF, Word (.docx) og tekstfiler. Gem dit CV som PDF og prøv igen.");
+}
+function cvLocal(text){
+  const vocab=[...new Set([...SKILLS_COMMON,...CV_SKILLS,...JOBS.flatMap(j=>j.skills||[])])].filter(v=>v.length>1);
+  const low=" "+text.toLowerCase().replace(/\s+/g," ")+" ";
+  const skills=vocab.filter(v=>new RegExp(`(^|[^a-zæøå0-9])${v.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}($|[^a-zæøå0-9])`).test(low)).slice(0,15);
+  const lines=text.split(/\n+/).map(l=>l.replace(/\s+/g," ").trim()).filter(l=>l.length>=8 && l.length<=140);
+  const edu=/uddannelse|bachelor|kandidat|gymnasi|\bhf\b|\bstx\b|\bhhx\b|\bhtx\b|universit|university|education|folkeskole|efterskole|student fra/i;
+  const experience=lines.filter(l=>/(19|20)\d{2}/.test(l) && !edu.test(l)).slice(0,8).map(l=>({title:l, org:"", years:"", fams:famsFromText(l)}));
+  return {skills, experience, interests:[], summary:"", by:"local"};
+}
+async function handleCV(file){
+  if(!file) return;
+  UI.cvBusy=true; render();
+  try{
+    const text=(await cvText(file)).trim();
+    if(text.length<40) throw new Error("Vi kunne ikke finde tekst i filen. Er det et scannet billede? Prøv en PDF, der er gemt fra Word eller Google Docs.");
+    let ex=cvLocal(text);
+    if(ACC.user){ const r=await api("me/cv",{name:file.name,text}); if(r.ok && r.data.extract){ const a=r.data.extract; ex={...a, skills:[...new Set([...a.skills,...ex.skills])].slice(0,15)}; } }
+    UI.sheet={type:"cv", name:file.name, ex, pick:{skills:ex.skills.map(()=>true), experience:ex.experience.map(()=>true), interests:ex.interests.map(()=>true)}};
+    track("cv_added");
+  }catch(e){ toast(e.message||"CV'et kunne ikke læses."); }
+  UI.cvBusy=false; render();
+}
+function expLabel(e){ return [e.title, e.org].filter(Boolean).join(", ")+(e.years?` (${e.years})`:""); }
+function applyCV(){
+  const sh=UI.sheet, p=S.profile, ex=sh.ex;
+  ex.skills.forEach((v,i)=>{ if(sh.pick.skills[i] && !p.skills.some(s=>norm(s)===norm(v))) p.skills.push(v); });
+  const fams=new Set(p.cvFams||[]);
+  ex.experience.forEach((e,i)=>{ if(!sh.pick.experience[i]) return; const l=expLabel(e); if(!p.pastJobs.includes(l)) p.pastJobs.push(l); (e.fams||[]).forEach(f=>fams.add(f)); });
+  ex.interests.forEach((f,i)=>{ if(sh.pick.interests[i] && !p.interests.includes(f)) p.interests.push(f); });
+  p.cvFams=[...fams]; p.cvName=sh.name; p.cvAt=Date.now(); p.cvBy=ex.by;
+  UI.sheet=null; commit(); toast("Dit CV er brugt. Dine matches er opdateret.");
+}
+function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
+async function submitAuth(form){
+  saveAuthFields(); const sh=UI.sheet; const pw=form.querySelector("#au-pw").value; const signup=sh.mode!=="login";
+  if(signup && !UI.auth.consent){ sh.err="Sæt flueben ved privatlivspolitikken for at oprette en bruger."; return render(); }
+  sh.busy=true; sh.err=""; render();
+  const r = signup ? await api("auth/signup",{email:UI.auth.email,password:pw,name:UI.auth.name,consent:true,profile:S.onboarded?S.profile:null,state:S.onboarded?serverState():null})
+                   : await api("auth/login",{email:UI.auth.email,password:pw});
+  sh.busy=false;
+  if(!r.ok){ sh.err=r.data.error||"Det lykkedes ikke. Prøv igen."; return render(); }
+  ACC.user=r.data.user; UI.sheet=null; UI.auth={email:"",name:"",consent:false};
+  if(!signup) applyServer(r.data);
+  if(ACC.user.mustChangePassword) UI.sheet={type:"password",forced:true};
+  render(); toast(signup?"Din bruger er oprettet. Din profil gemmes nu automatisk.":`Velkommen tilbage${ACC.user.name?", "+ACC.user.name:""}.`);
+}
+async function submitPassword(form){
+  const sh=UI.sheet; const old=form.querySelector("#pw-old"); const pw=form.querySelector("#pw-new").value;
+  const r=await api("me/password",{current:old?old.value:"",password:pw});
+  if(!r.ok){ sh.err=r.data.error||"Det lykkedes ikke."; return render(); }
+  if(ACC.user) ACC.user.mustChangePassword=false; UI.sheet=null; render(); toast("Din adgangskode er gemt.");
 }
 function canonicalSkill(s){ const t=s.trim(); const hit=SKILLS_COMMON.find(x=>norm(x)===norm(t)); return hit||t; }
 function onSubmit(form){
   const k=form.dataset.form, p=S.profile;
   if(k==="ob-prog"){ const t=UI.obText.trim(); if(!t) return; const m=findProgram(t, UI.obUni)||programsFor(UI.obUni, UI.obLevel, t)[0]; if(m) setProgram(m); else setFreeText(t, UI.obUni); S.step=3; window.scrollTo(0,0); return commit(); }
-  if(k==="waitlist"){ UI.waitlistDone=true; return render(); }
+  if(k==="waitlist"){ const co=form.querySelector("#wl-co").value.trim(), mail=form.querySelector("#wl-mail").value.trim();
+    api("waitlist",{company:co,email:mail}).then(()=>{ UI.waitlistDone=true; render(); }); return; }
+  if(k==="auth") return submitAuth(form);
+  if(k==="password") return submitPassword(form);
   if(k==="study"){ const t=form.querySelector("#pf-study").value.trim(); if(!t) return; const uni=(document.getElementById("pf-uni")||{}).value||"other"; const m=findProgram(t, uni)||programsFor(uni,"all",t)[0]; if(m) setProgram(m,true); else setFreeText(t, uni, true); UI.pfUni=null; commit(); return toast(`Matcher nu som ${p.programName}${p.uni?" ("+p.uni+")":""}.`); }
   if(k==="skill"){ const inp=form.querySelector("input"); const t=canonicalSkill(inp.value); if(t && !p.skills.some(s=>norm(s)===norm(t))) p.skills.push(t); UI.focus="pf-skill"; return commit(); }
   if(k==="pastJobs"||k==="courses"){ const inp=form.querySelector("input"); const t=inp.value.trim(); if(t) p[k].push(t); UI.focus=inp.id; return commit(); }
@@ -1296,9 +1611,11 @@ if(typeof document!=="undefined"){
     if(el.tagName==="A") return;
     e.preventDefault(); act(el.dataset.act, el);
   });
+  document.addEventListener("click",e=>{ const a=e.target.closest("a[data-track]"); if(a) track("apply_click",{jobId:a.dataset.id,label:jobLabel(byId(a.dataset.id))}); }, true);
   document.addEventListener("submit",e=>{ e.preventDefault(); onSubmit(e.target); });
   document.addEventListener("input",e=>{
     if(e.target.id==="hero-study") UI.heroText=e.target.value;
+    if(e.target.id==="ps-q" && UI.sheet && UI.sheet.type==="program"){ UI.sheet.q=e.target.value; const l=document.getElementById("ps-list"); if(l) l.innerHTML=psListHTML(); }
     if(e.target.id==="ob-study"){ UI.obText=e.target.value; const l=document.getElementById("prog-list"); if(l) l.innerHTML=progListHTML(); const c=document.getElementById("prog-count"); if(c) c.textContent=progCount(); const b=document.getElementById("ob-go"); if(b) b.disabled=!norm(UI.obText); }
   });
   document.addEventListener("change",e=>{
@@ -1306,12 +1623,13 @@ if(typeof document!=="undefined"){
     if(k==="pf-uni"){ UI.pfUni=e.target.value; return render(); }
     if(k==="semester") p.semester=e.target.value;
     if(k==="email") p.email=e.target.value.trim();
-    if(k==="cv"){ const f=e.target.files&&e.target.files[0]; p.cvName=f?f.name:""; }
+    if(k==="cv"){ const f=e.target.files&&e.target.files[0]; return handleCV(f); }
     commit();
   });
-  document.addEventListener("keydown",e=>{ if(e.key==="Escape" && UI.sheet){ UI.sheet=null; render(); } });
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape" && UI.sheet && !UI.sheet.forced){ UI.sheet=null; render(); } });
   render();
   loadLiveJobs();
+  initAccount();
 }
 /* Henter rigtige job fra data/jobs.json, som jobindsamleren skriver. Findes filen ikke, vises eksempeljob. */
 async function loadLiveJobs(){

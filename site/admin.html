@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Studiematch Admin</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#F4F7F6; --surface:#FFFFFF; --fg:#1F2C33; --muted:#64737B; --line:#E3EAE7;
+  --accent:#0B7D60; --accent-soft:#E2F4EC; --warn:#BF3A2B; --warn-soft:#FDECEA; --blue:#235FC2;
+  --r:16px; --shadow:0 1px 2px rgba(31,44,51,.04),0 8px 24px rgba(31,44,51,.05);
+  --font:"Nunito Sans","Segoe UI",system-ui,-apple-system,sans-serif; --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 var(--font);-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.top{display:flex;align-items:center;gap:14px;min-height:60px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:17px;display:flex;align-items:center;gap:8px}
+.brand i{width:26px;height:26px;border-radius:8px;background:var(--accent);display:inline-block}
+.brand small{font-weight:600;color:var(--muted)}
+.top .sp{flex:1}
+.me{color:var(--muted);font-size:14px}
+nav.tabs{display:flex;gap:4px}
+nav.tabs button{all:unset;cursor:pointer;padding:8px 12px;border-radius:10px;font-weight:700;color:var(--muted)}
+nav.tabs button[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
+nav.tabs button:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{padding:22px 0 60px;display:grid;gap:18px}
+h1{font-size:24px;margin:0}
+h2{font-size:16px;margin:0 0 10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.kpi .v{font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.2}
+.kpi .l{color:var(--muted);font-size:13px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.chart{width:100%;height:190px;display:block}
+.chart text{font-size:10px;fill:var(--muted)}
+.legend{display:flex;gap:14px;font-size:13px;color:var(--muted);margin-top:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;color:var(--muted);font-weight:700;font-size:12.5px;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+tr.click{cursor:pointer} tr.click:hover td{background:#F7FBF9}
+.scroll{overflow-x:auto}
+.muted{color:var(--muted)} .small{font-size:13px}
+.empty{color:var(--muted);font-size:14px;padding:6px 0}
+.btn{border:1.5px solid var(--line);background:var(--surface);color:var(--fg);border-radius:10px;padding:7px 13px;font-weight:700;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn-p{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-d{color:var(--warn)} .btn-d:hover{border-color:var(--warn)}
+.input{border:1.5px solid var(--line);border-radius:10px;padding:8px 11px;background:#fff;min-width:0}
+.input:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{display:inline-block;border-radius:999px;padding:1px 9px;font-size:12px;font-weight:700;background:var(--accent-soft);color:var(--accent)}
+.pill.gray{background:#EEF2F1;color:var(--muted)}
+.funnel{display:grid;gap:8px}
+.fstep{display:grid;grid-template-columns:150px 1fr 60px;gap:10px;align-items:center;font-size:14px}
+.fbar{height:12px;border-radius:6px;background:#EEF2F1;overflow:hidden}
+.fbar span{display:block;height:100%;background:var(--accent);border-radius:6px}
+.note{background:var(--accent-soft);border-radius:12px;padding:12px 14px;font-size:14px}
+.warnbox{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:12px 14px;font-size:14px}
+.login{max-width:380px;margin:70px auto;display:grid;gap:12px}
+.login .input{width:100%}
+.detail{display:grid;gap:14px}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:4px 12px;font-size:14px}
+.kv b{color:var(--muted);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:13px}
+pre.cv{white-space:pre-wrap;font:13px/1.5 var(--mono);background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:12px;max-height:340px;overflow:auto;margin:0}
+.secret{font:16px var(--mono);background:#FFF8DB;border-radius:10px;padding:10px 12px;user-select:all}
+@media (max-width:640px){ .kv{grid-template-columns:1fr} .fstep{grid-template-columns:110px 1fr 46px} .hide-s{display:none} }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = n => Number(n||0).toLocaleString("da-DK");
+const date = t => t ? new Date(t).toLocaleDateString("da-DK",{day:"numeric",month:"short",year:"numeric"}) : "–";
+const dt = t => t ? new Date(t).toLocaleString("da-DK",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}) : "–";
+const FAM={supply:"Supply Chain",procurement:"Indkøb",pmo:"Projektledelse",bizdev:"Forretningsudvikling",strategy:"Strategi",salesops:"Salgsoperationer",logistics:"Logistik",operations:"Drift",bi:"BI og data",finance:"Økonomi",marketing:"Marketing",product:"Produkt og UX",software:"Software",datasci:"Data science",hr:"HR",sustain:"Bæredygtighed",customer:"Kundesucces",legal:"Jura",research:"Forskning",engineering:"Ingeniør",health:"Sundhed",education:"Pædagogik",social:"Socialt arbejde",public:"Offentlig forvaltning"};
+const EVENT={pageview:"Sidevisning",signup:"Ny bruger",onboarded:"Færdig med opsætning",apply_click:"Klik på jobopslag",save:"Gemte job",like:"Interesseret",dismiss:"Fravalgte job",cv_added:"Uploadede CV",program_changed:"Skiftede uddannelse"};
+
+const st = {me:null, tab:"overview", stats:null, users:[], q:"", sel:null, detail:null, created:null, err:""};
+
+async function api(path, body, method){
+  const r = await fetch("/api/"+path,{method:method||(body===undefined?"GET":"POST"),credentials:"same-origin",
+    headers: body===undefined?{}:{"Content-Type":"application/json"}, body: body===undefined?undefined:JSON.stringify(body)});
+  let d={}; try{ d=await r.json(); }catch(e){}
+  return {ok:r.ok,status:r.status,data:d};
+}
+
+/* ---------- login ---------- */
+function vLogin(msg){
+  return `<form class="login card" id="login">
+    <div class="brand"><i></i>Studiematch <small>Admin</small></div>
+    ${msg?`<div class="warnbox">${esc(msg)}</div>`:""}
+    <label>E-mail<br><input class="input" id="lg-mail" type="email" autocomplete="email" required></label>
+    <label>Adgangskode<br><input class="input" id="lg-pw" type="password" autocomplete="current-password" required></label>
+    <button class="btn btn-p" type="submit">Log ind</button>
+    <p class="muted small">Kun for administratorer. Mails i ADMIN_EMAILS i Cloudflare bliver automatisk admin.</p>
+  </form>`;
+}
+
+/* ---------- ramme ---------- */
+function shell(body){
+  const tabs=[["overview","Overblik"],["users","Brugere"],["companies","Virksomheder"]];
+  return `<header><div class="wrap top">
+    <div class="brand"><i></i>Studiematch <small>Admin</small></div>
+    <nav class="tabs">${tabs.map(([k,l])=>`<button data-tab="${k}" ${st.tab===k?'aria-current="page"':""}>${l}</button>`).join("")}</nav>
+    <span class="sp"></span><span class="me hide-s">${esc(st.me.email)}</span>
+    <a class="btn" href="/">Til siden</a><button class="btn" id="logout">Log ud</button>
+  </div></header><main class="wrap">${body}</main>`;
+}
+
+/* ---------- overblik ---------- */
+function last30(){
+  const out=[]; for(let i=29;i>=0;i--){ const d=new Date(Date.now()-i*864e5); out.push(d.toISOString().slice(0,10)); } return out;
+}
+function chart(s){
+  const days=last30(); const by=Object.fromEntries(s.daily.map(r=>[r.day,r])); const su=Object.fromEntries(s.signups.map(r=>[r.day,r.n]));
+  const vis=days.map(d=>(by[d]||{}).visitors||0), sig=days.map(d=>su[d]||0);
+  const max=Math.max(4,...vis); const W=600,H=170,pad=22,bw=(W-pad)/30;
+  const bars=vis.map((v,i)=>{ const h=(H-28)*v/max; return `<rect x="${pad+i*bw+2}" y="${H-18-h}" width="${bw-4}" height="${h}" rx="3" fill="var(--accent)"><title>${days[i]}: ${v} besøgende, ${sig[i]} nye brugere</title></rect>`
+    +(sig[i]?`<circle cx="${pad+i*bw+bw/2}" cy="${H-22-h-6}" r="4" fill="var(--blue)"></circle>`:""); }).join("");
+  const ticks=[0,Math.round(max/2),max].map(t=>`<text x="0" y="${H-18-(H-28)*t/max+3}">${t}</text><line x1="${pad}" x2="${W}" y1="${H-18-(H-28)*t/max}" y2="${H-18-(H-28)*t/max}" stroke="var(--line)"></line>`).join("");
+  const labels=[0,10,20,29].map(i=>`<text x="${pad+i*bw+bw/2}" y="${H-4}" text-anchor="middle">${new Date(days[i]).toLocaleDateString("da-DK",{day:"numeric",month:"short"})}</text>`).join("");
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Besøgende pr. dag de sidste 30 dage">${ticks}${bars}${labels}</svg>
+    <div class="legend"><span><i style="background:var(--accent)"></i>Besøgende pr. dag</span><span><i style="background:var(--blue);border-radius:50%"></i>Dag med nye brugere</span></div>`;
+}
+function list(rows, cols, emptyText){
+  if(!rows.length) return `<p class="empty">${emptyText}</p>`;
+  return `<div class="scroll"><table><tbody>${rows.map(r=>`<tr>${cols.map(c=>`<td class="${c.n?"n":""}">${c.f(r)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+function vOverview(){
+  const s=st.stats; if(!s) return `<p class="muted">Henter…</p>`;
+  const today=new Date().toISOString().slice(0,10);
+  const t=(s.daily.find(r=>r.day===today)||{});
+  const sum=(k)=>s.daily.reduce((n,r)=>n+(r[k]||0),0);
+  const f=Object.fromEntries(s.funnel.map(r=>[r.type,r]));
+  const signups30=s.signups.reduce((n,r)=>n+r.n,0);
+  const steps=[["Besøgte siden",(f.pageview||{}).people||0],["Færdig med opsætning",(f.onboarded||{}).people||0],["Klikkede på et job",(f.apply_click||{}).people||0]];
+  const top=Math.max(1,steps[0][1]);
+  return `<h1>Overblik</h1>
+  ${s.ai?"":`<div class="note">AI-agenten er slået fra. Tilføj <b>ANTHROPIC_API_KEY</b> i Cloudflare, så læser den CV'er og ukendte uddannelser.</div>`}
+  <div class="kpis">
+    <div class="kpi"><div class="v">${fmt(t.visitors)}</div><div class="l">Besøgende i dag</div></div>
+    <div class="kpi"><div class="v">${fmt(sum("visitors"))}</div><div class="l">Besøg, sidste 30 dage</div></div>
+    <div class="kpi"><div class="v">${fmt(sum("views"))}</div><div class="l">Sidevisninger, 30 dage</div></div>
+    <div class="kpi"><div class="v">${fmt(s.totals.users)}</div><div class="l">Brugere i alt · ${fmt(signups30)} nye</div></div>
+    <div class="kpi"><div class="v">${fmt((f.apply_click||{}).n)}</div><div class="l">Klik på jobopslag, 30 dage</div></div>
+    <div class="kpi"><div class="v">${fmt(s.totals.with_cv)}</div><div class="l">Brugere med CV</div></div>
+    <div class="kpi"><div class="v">${fmt(s.totals.active7)}</div><div class="l">Aktive brugere, 7 dage</div></div>
+  </div>
+  <section class="card"><h2>Besøgende de sidste 30 dage</h2>${chart(s)}<p class="muted small">En besøgende tælles én gang pr. dag. Vi bruger ingen cookies til statistik.</p></section>
+  <div class="grid2">
+    <section class="card"><h2>Fra besøg til klik (30 dage)</h2><div class="funnel">${steps.map(([l,n])=>`<div class="fstep"><span>${l}</span><span class="fbar"><span style="width:${Math.round(100*n/top)}%"></span></span><b class="n">${fmt(n)}</b></div>`).join("")}</div>
+      <p class="muted small">Gemte job: ${fmt((f.save||{}).n)} · Interesseret: ${fmt((f.like||{}).n)} · Fravalgt: ${fmt((f.dismiss||{}).n)} · CV'er: ${fmt((f.cv_added||{}).n)}</p></section>
+    <section class="card"><h2>Mest klikkede job (30 dage)</h2>${list(s.topJobs,[{f:r=>esc(r.label||r.job_id)},{n:1,f:r=>fmt(r.n)}],"Ingen klik endnu.")}</section>
+    <section class="card"><h2>Hvor kommer de fra</h2>${list(s.referrers,[{f:r=>esc(r.ref)},{n:1,f:r=>fmt(r.n)}],"Ingen henvisninger endnu. Direkte besøg tæller ikke med her.")}</section>
+    <section class="card"><h2>Uddannelser blandt brugerne</h2>${list(s.programs,[{f:r=>`${esc(r.program)} <span class="muted small">${esc(r.school)}</span>`},{n:1,f:r=>fmt(r.n)}],"Ingen brugere endnu.")}</section>
+    <section class="card"><h2>Mest besøgte sider</h2>${list(s.paths,[{f:r=>`<code>${esc(r.path)}</code>`},{n:1,f:r=>fmt(r.n)}],"Ingen besøg endnu.")}</section>
+    <section class="card"><h2>Seneste aktivitet</h2>${list(s.recent,[{f:r=>`<span class="small muted">${dt(r.ts)}</span>`},{f:r=>`${EVENT[r.type]||r.type}${r.label?` · <span class="muted">${esc(r.label)}</span>`:""}`}],"Intet endnu.")}</section>
+  </div>`;
+}
+
+/* ---------- brugere ---------- */
+function vUsers(){
+  const created = st.created ? `<div class="note">Bruger klar: <b>${esc(st.created.email)}</b><br>Midlertidig adgangskode (vises kun nu, send den til brugeren):<div class="secret">${esc(st.created.password)}</div>Brugeren bliver bedt om at vælge en ny adgangskode første gang.</div>` : "";
+  const rows=st.users.map(u=>`<tr class="click" data-user="${u.id}"><td><b>${esc(u.email)}</b>${u.role==="admin"?' <span class="pill">admin</span>':""}<div class="small muted">${esc(u.name||"")}</div></td>
+    <td class="hide-s">${esc(u.program||"–")}<div class="small muted">${esc(u.school||"")}</div></td><td>${u.has_cv?'<span class="pill">CV</span>':'<span class="pill gray">intet</span>'}</td>
+    <td class="small hide-s">${date(u.created_at)}</td><td class="small">${dt(u.last_seen)}</td></tr>`).join("");
+  return `<h1>Brugere <span class="muted">(${st.users.length})</span></h1>
+  <section class="card"><h2>Opret bruger</h2>
+    <form class="row" id="create"><input class="input" id="cu-mail" type="email" placeholder="mail@eksempel.dk" required><input class="input" id="cu-name" placeholder="Navn (valgfrit)"><select class="input" id="cu-role"><option value="user">Bruger</option><option value="admin">Admin</option></select><button class="btn btn-p" type="submit">Opret</button></form>
+    ${st.err?`<p class="warnbox">${esc(st.err)}</p>`:""}${created}</section>
+  <section class="card">
+    <div class="row" style="margin-bottom:10px"><input class="input" id="uq" placeholder="Søg på mail, navn eller uddannelse" value="${esc(st.q)}" style="flex:1"></div>
+    ${st.users.length?`<div class="scroll"><table><thead><tr><th>Bruger</th><th class="hide-s">Uddannelse</th><th>CV</th><th class="hide-s">Oprettet</th><th>Sidst set</th></tr></thead><tbody>${rows}</tbody></table></div>`:'<p class="empty">Ingen brugere fundet.</p>'}
+  </section>
+  ${st.detail?vDetail():""}`;
+}
+function vDetail(){
+  const d=st.detail, u=d.user, p=d.profile||{}, s=d.state||{};
+  const saved=Object.values(s.fb||{}).filter(x=>x.saved).length, applied=Object.values(s.fb||{}).filter(x=>x.applied).length;
+  const chips=a=>a&&a.length?`<div class="chips">${a.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div>`:'<span class="muted">–</span>';
+  return `<section class="card detail" id="detail">
+    <div class="row"><h2 style="margin:0;flex:1">${esc(u.email)} ${u.role==="admin"?'<span class="pill">admin</span>':""}</h2><button class="btn" data-close>Luk</button></div>
+    <div class="kv">
+      <b>Navn</b><span>${esc(u.name||"–")}</span>
+      <b>Uddannelse</b><span>${esc(p.programName||"–")}${p.uni?` · ${esc(p.uni)}`:""}${(p.extra||[]).length?`<br><span class="muted">+ ${p.extra.map(e=>esc(e.name)).join(", ")}</span>`:""}</span>
+      <b>Semester</b><span>${esc(p.semester||"–")}</span>
+      <b>Filtre</b><span>${esc([p.danish&&({fluent:"Flydende dansk",some:"Lidt dansk",none:"Intet dansk"}[p.danish]),p.hoursMax?`op til ${p.hoursMax} t/uge`:"",(p.regions||[]).join(", ")].filter(Boolean).join(" · ")||"–")}</span>
+      <b>Kompetencer</b><span>${chips(p.skills)}</span>
+      <b>Interesser</b><span>${chips((p.interests||[]).map(f=>FAM[f]||f))}</span>
+      <b>Erfaring</b><span>${chips(p.pastJobs)}</span>
+      <b>Job</b><span>${saved} gemt · ${applied} søgt</span>
+      <b>Oprettet</b><span>${date(u.createdAt)} · sidst set ${dt(u.lastSeen)}</span>
+    </div>
+    ${d.cv?`<div><h2>CV: ${esc(d.cv.name)} <span class="muted small">${date(d.cv.at)}</span></h2>${d.cv.extract&&d.cv.extract.summary?`<p class="note">${esc(d.cv.extract.summary)}</p>`:""}<details><summary>Vis CV-tekst</summary><pre class="cv">${esc(d.cv.text||"")}</pre></details></div>`:'<p class="muted">Intet CV.</p>'}
+    ${d.events.length?`<div><h2>Aktivitet</h2>${list(d.events,[{f:r=>`<span class="small muted">${dt(r.ts)}</span>`},{f:r=>`${EVENT[r.type]||r.type}${r.label?` · <span class="muted">${esc(r.label)}</span>`:""}`}],"")}</div>`:""}
+    ${d.newPw?`<div class="note">Ny midlertidig adgangskode til ${esc(u.email)}:<div class="secret">${esc(d.newPw)}</div></div>`:""}
+    <div class="row">
+      <button class="btn" data-reset="${u.id}">Nulstil adgangskode</button>
+      ${u.id!==st.me.id?`<button class="btn" data-role="${u.id}" data-v="${u.role==="admin"?"user":"admin"}">${u.role==="admin"?"Fjern admin":"Gør til admin"}</button>
+      <button class="btn btn-d" data-del="${u.id}">${d.confirmDel?"Tryk igen for at slette":"Slet bruger"}</button>`:""}
+    </div>
+  </section>`;
+}
+
+/* ---------- virksomheder ---------- */
+function vCompanies(){
+  const s=st.stats; if(!s) return `<p class="muted">Henter…</p>`;
+  return `<h1>Virksomheder på ventelisten <span class="muted">(${s.companies.length})</span></h1>
+  <section class="card">${s.companies.length?`<div class="scroll"><table><thead><tr><th>Virksomhed</th><th>Mail</th><th>Dato</th></tr></thead><tbody>${s.companies.map(c=>`<tr><td><b>${esc(c.company)}</b></td><td><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></td><td class="small">${dt(c.ts)}</td></tr>`).join("")}</tbody></table></div>`:'<p class="empty">Ingen endnu. Virksomheder skriver sig op nederst på forsiden.</p>'}</section>`;
+}
+
+/* ---------- tegn og handlinger ---------- */
+function render(){
+  const a=$("#app");
+  if(!st.me) return;
+  a.innerHTML = shell(st.tab==="users"?vUsers():st.tab==="companies"?vCompanies():vOverview());
+}
+async function loadStats(){ const r=await api("admin/stats"); if(r.ok){ st.stats=r.data; render(); } }
+async function loadUsers(){ const r=await api("admin/users?q="+encodeURIComponent(st.q)); if(r.ok){ st.users=r.data.users; render(); const i=$("#uq"); if(i&&document.activeElement!==i&&st.focusQ){ i.focus(); i.setSelectionRange(i.value.length,i.value.length); } } }
+async function openUser(id){ const r=await api("admin/users/"+id); if(r.ok){ st.detail=r.data; render(); const d=$("#detail"); if(d) d.scrollIntoView({behavior:"smooth",block:"start"}); } }
+async function start(msg){
+  const r=await api("me");
+  if(r.status===503){ $("#app").innerHTML=`<div class="login card"><div class="brand"><i></i>Studiematch <small>Admin</small></div><div class="warnbox">Databasen er ikke sat op endnu. Opret en D1-database i Cloudflare og bind den til projektet med navnet <b>DB</b>.</div></div>`; return; }
+  if(!r.ok || !r.data.user){ $("#app").innerHTML=vLogin(msg); return; }
+  if(r.data.user.role!=="admin"){ $("#app").innerHTML=vLogin("Du er logget ind som "+r.data.user.email+", men er ikke administrator."); return; }
+  st.me=r.data.user; render(); loadStats(); loadUsers();
+}
+document.addEventListener("submit", async e=>{
+  e.preventDefault();
+  if(e.target.id==="login"){
+    const r=await api("auth/login",{email:$("#lg-mail").value,password:$("#lg-pw").value});
+    if(!r.ok) return start(r.data.error||"Login mislykkedes");
+    if(r.data.user.mustChangePassword) return start("Vælg først din egen adgangskode på forsiden under Profil, og log så ind her.");
+    return start();
+  }
+  if(e.target.id==="create"){
+    st.err=""; st.created=null;
+    const r=await api("admin/users",{email:$("#cu-mail").value,name:$("#cu-name").value,role:$("#cu-role").value});
+    if(!r.ok){ st.err=r.data.error||"Kunne ikke oprette"; return render(); }
+    st.created=r.data; loadUsers(); loadStats();
+  }
+});
+let qTimer=null;
+document.addEventListener("input", e=>{ if(e.target.id==="uq"){ st.q=e.target.value; st.focusQ=true; clearTimeout(qTimer); qTimer=setTimeout(loadUsers,250); } });
+document.addEventListener("click", async e=>{
+  const t=e.target.closest("[data-tab],[data-user],[data-close],[data-reset],[data-role],[data-del],#logout"); if(!t) return;
+  if(t.id==="logout"){ await api("auth/logout",{}); location.reload(); return; }
+  if(t.dataset.tab){ st.tab=t.dataset.tab; st.focusQ=false; render(); if(st.tab==="overview"||st.tab==="companies") loadStats(); return; }
+  if(t.dataset.user){ st.focusQ=false; return openUser(t.dataset.user); }
+  if(t.hasAttribute("data-close")){ st.detail=null; return render(); }
+  if(t.dataset.reset){ const r=await api(`admin/users/${t.dataset.reset}/password`,{}); if(r.ok){ st.detail.newPw=r.data.password; render(); } return; }
+  if(t.dataset.role){ await api(`admin/users/${t.dataset.role}/role`,{role:t.dataset.v}); await openUser(t.dataset.role); return loadUsers(); }
+  if(t.dataset.del){
+    if(!st.detail.confirmDel){ st.detail.confirmDel=true; return render(); }
+    const r=await api(`admin/users/${t.dataset.del}`,undefined,"DELETE"); if(r.ok){ st.detail=null; loadUsers(); loadStats(); } return;
+  }
+});
+start();
+</script>
+</body>
+</html>

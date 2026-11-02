@@ -5,3 +5,7 @@
 
 /data/*
   Cache-Control: no-cache
+
+/admin.html
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store

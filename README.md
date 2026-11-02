@@ -57,7 +57,21 @@ Tjek også, at ingen anden dansk virksomhed bruger navnet. Søg i [CVR](https://
 3. Tilbage i Cloudflare: **Workers & Pages →** dit projekt **→ Custom domains → Set up a domain** → skriv `studiematch.dk`. Gentag med `www.studiematch.dk`.
 4. Det tager typisk fra 10 minutter til et par timer, før domænet virker. HTTPS sættes op af sig selv.
 
-### 6. (Valgfrit) Lad AI læse jobopslagene
+### 6. Slå brugere, admin og statistik til (ca. 5 minutter)
+
+Siden virker uden dette trin. Så gemmes profilen bare i browseren. Med trinnet kan de studerende oprette en bruger og uploade CV, og I får en admin-side på `studiematch.dk/admin.html` med brugere og besøgstal.
+
+1. I Cloudflare: **Storage & Databases → D1 SQL Database → Create** → navn `studiematch-db` → **Create**.
+2. **Workers & Pages →** projektet **studiematch → Settings → Bindings → Add → D1 database**. Variable name: **`DB`**, database: `studiematch-db` → **Save**.
+3. Samme sted under **Settings → Variables and secrets → Add**:
+   - `ADMIN_EMAILS` = jeres mails med komma imellem, fx `matchstudie@gmail.com`. De bliver admin, når de opretter en bruger.
+   - `ANTHROPIC_API_KEY` (valgfri, type **Secret**) slår AI-agenten til. Den læser CV'er og tolker uddannelser, siden ikke kender. Højst 300 AI-kald i døgnet (kan ændres med `AI_DAILY_LIMIT`).
+4. **Deployments →** den nyeste → **⋯ → Retry deployment**, så indstillingerne slår igennem.
+5. Opret jer selv som brugere på siden med mailen fra `ADMIN_EMAILS`, og åbn `studiematch.dk/admin.html`.
+
+Tabellerne i databasen oprettes automatisk første gang. Koden ligger i `functions/` og `server/api.js`.
+
+### 7. (Valgfrit) Lad AI læse jobopslagene
 
 Uden AI sorterer indsamleren job med faste regler, og det fungerer fint. Med AI bliver felter, timer, dansk-krav og beskrivelser mere præcise.
 
@@ -123,7 +137,7 @@ Når en virksomhed mailer dig et studiejob, skriver du det ind her. Det kommer m
 
 ## Data om brugerne
 
-Profilen (uddannelse, timer, sprog, gemte job) ligger kun i den studerendes egen browser. Siden har ingen database og sender ingen brugerdata nogen steder hen. Det skal ændres, når der kommer login og jobalarmer, og så skal der også skrives en privatlivspolitik.
+Uden bruger ligger profilen kun i den studerendes egen browser. Med bruger gemmes profil og CV-tekst i D1-databasen. Statistikken bruger ingen cookies: en besøgende tælles med en hash af IP og browser, der skifter hver dag. Se `site/privatliv.html`.
 
 ## Kør det på din egen computer
 
