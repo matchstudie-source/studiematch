@@ -1,4 +1,4 @@
-# Jobindsamling 2026-11-02 04:38 UTC
+# Jobindsamling 2026-11-02 05:48 UTC
 
 163 studiejob gemt. AI-kald i denne kørsel: 0.
 
@@ -126,7 +126,7 @@
 | Lemvig Kommune | emply | 0 | 0 | 13 opslag på joblisten, 0 ligner studiejob |
 | Mariagerfjord Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Morsø Kommune | emply | 0 | 0 | 13 opslag på joblisten, 0 ligner studiejob |
-| Nordfyns Kommune | emply | 0 | 0 | 25 opslag på joblisten, 0 ligner studiejob |
+| Nordfyns Kommune | emply | 0 | 0 | 18 opslag på joblisten, 0 ligner studiejob |
 | Nyborg Kommune | emply | 0 | 0 | 15 opslag på joblisten, 0 ligner studiejob |
 | Odder Kommune | hrmanager | 18 | 0 |  |
 | Ringkøbing-Skjern Kommune | emply | 2 | 1 | 41 opslag på joblisten, 2 ligner studiejob |
