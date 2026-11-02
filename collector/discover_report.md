@@ -1,6 +1,6 @@
-# Virksomhedsfinder 2026-10-26 20:50 UTC
+# Virksomhedsfinder 2026-11-02 04:07 UTC
 
-319 virksomheder tjekket. Jobsystem fundet hos 127. Nye kilder tilføjet: 42.
+319 virksomheder tjekket. Jobsystem fundet hos 125. Nye kilder tilføjet: 0.
 
 | Virksomhed | Fundet | Status |
 | --- | --- | --- |
@@ -10,7 +10,7 @@
 | Genmab |  | intet jobsystem fundet |
 | LEO Pharma | sitemap: https://jobs.leo-pharma.com | kendt |
 | Coloplast |  | forsiden kunne ikke hentes |
-| Ambu |  | intet jobsystem fundet |
+| Ambu |  | forsiden kunne ikke hentes |
 | Demant | sitemap: https://careers.demant.com | kendt |
 | GN Group | workday: https://gn.wd3.myworkdayjobs.com/GN-Careers | kendt |
 | Zealand Pharma |  | forsiden kunne ikke hentes |
@@ -57,7 +57,7 @@
 | Saxo Bank | workday: https://saxobank.wd3.myworkdayjobs.com/en-US/CareeratSaxoBank | kendt |
 | Lunar | teamtailor: https://jobs.lunar.app | kendt |
 | Pleo | ashby: pleo | kendt |
-| PFA | sitemap: https://www.pfa.dk | kendt |
+| PFA |  | intet jobsystem fundet |
 | ATP | hrmanager: atp | kendt |
 | PensionDanmark |  | intet jobsystem fundet |
 | Danica Pension |  | intet jobsystem fundet |
@@ -82,7 +82,7 @@
 | KMD |  | intet jobsystem fundet |
 | Systematic |  | intet jobsystem fundet |
 | Trifork |  | intet jobsystem fundet |
-| twoday | teamtailor: https://twodayfinland.teamtailor.com | kendt |
+| twoday | teamtailor: https://twodaydenmark.teamtailor.com | kendt |
 | Columbus | teamtailor: https://careers.columbusglobal.com | kendt |
 | Siteimprove |  | intet jobsystem fundet |
 | Templafy | teamtailor: https://templafy.teamtailor.com | kendt |
@@ -161,7 +161,7 @@
 | Erhvervsakademi Aarhus | hrmanager: statens_erekruttering | kendt |
 | Zealand |  | intet jobsystem fundet |
 | Rigshospitalet |  | intet jobsystem fundet |
-| Novo Nordisk Fonden | workable: novonordiskfoundation | ny |
+| Novo Nordisk Fonden | workable: novonordiskfoundation | kendt |
 | Carlsbergfondet |  | intet jobsystem fundet |
 | Red Barnet |  | forsiden kunne ikke hentes |
 | Dansk Røde Kors | emply: https://rodekors.career.emply.com | kendt |
@@ -169,11 +169,11 @@
 | WWF Verdensnaturfonden |  | intet jobsystem fundet |
 | Kræftens Bekæmpelse | hrmanager: Cancer | kendt |
 | Redpill Linpro | teamtailor: https://careers.redpill-linpro.com | kendt |
-| Albertslund Kommune | emply: https://albertslund.career.emply.com | ny |
+| Albertslund Kommune | emply: https://albertslund.career.emply.com | kendt |
 | Allerød Kommune |  | intet jobsystem fundet |
 | Assens Kommune |  | forsiden kunne ikke hentes |
 | Ballerup Kommune |  | intet jobsystem fundet |
-| Billund Kommune | hrmanager: ofir_billund | ny |
+| Billund Kommune | hrmanager: ofir_billund | kendt |
 | Bornholm Kommune |  | intet jobsystem fundet |
 | Brøndby Kommune | emply: https://brondby.career.emply.com | kendt |
 | Brønderslev Kommune |  | forsiden kunne ikke hentes |
@@ -182,35 +182,35 @@
 | Esbjerg Kommune |  | forsiden kunne ikke hentes |
 | Fanø Kommune |  | intet jobsystem fundet |
 | Favrskov Kommune |  | intet jobsystem fundet |
-| Faxe Kommune | hrmanager: ofir_faxekommune | ny |
+| Faxe Kommune | hrmanager: ofir_faxekommune | kendt |
 | Fredensborg Kommune |  | forsiden kunne ikke hentes |
-| Fredericia Kommune | emply: https://fredericia.career.emply.com | ny |
+| Fredericia Kommune | emply: https://fredericia.career.emply.com | kendt |
 | Frederiksberg Kommune | emply: https://frederiksberg.career.emply.com | kendt |
-| Frederikshavn Kommune | emply: https://frederikshavn.career.emply.com | ny |
+| Frederikshavn Kommune | emply: https://frederikshavn.career.emply.com | kendt |
 | Frederikssund Kommune |  | intet jobsystem fundet |
 | Furesø Kommune |  | forsiden kunne ikke hentes |
-| Faaborg-Midtfyn Kommune | hrmanager: faaborg-midtfyn-kommune_tr | ny |
+| Faaborg-Midtfyn Kommune | hrmanager: faaborg-midtfyn-kommune_tr | kendt |
 | Gentofte Kommune |  | forsiden kunne ikke hentes |
 | Gladsaxe Kommune |  | forsiden kunne ikke hentes |
-| Glostrup Kommune | emply: https://glostrup.career.emply.com | ny |
-| Greve Kommune | hrmanager: grevekommune | ny |
+| Glostrup Kommune | emply: https://glostrup.career.emply.com | kendt |
+| Greve Kommune | hrmanager: grevekommune | kendt |
 | Gribskov Kommune |  | intet jobsystem fundet |
-| Guldborgsund Kommune | emply: https://Guldborgsund.career.emply.com | ny |
-| Haderslev Kommune | emply: https://haderslev.career.emply.com | ny |
-| Halsnæs Kommune | emply: https://halsnaes.career.emply.com | ny |
-| Hedensted Kommune | emply: https://hedensted.career.emply.com | ny |
+| Guldborgsund Kommune | emply: https://Guldborgsund.career.emply.com | kendt |
+| Haderslev Kommune | emply: https://haderslev.career.emply.com | kendt |
+| Halsnæs Kommune | emply: https://halsnaes.career.emply.com | kendt |
+| Hedensted Kommune | emply: https://hedensted.career.emply.com | kendt |
 | Helsingør Kommune |  | intet jobsystem fundet |
 | Herlev Kommune |  | forsiden kunne ikke hentes |
 | Herning Kommune |  | intet jobsystem fundet |
 | Hillerød Kommune |  | intet jobsystem fundet |
-| Hjørring Kommune | hrmanager: hjorringkommune_tr | ny |
+| Hjørring Kommune | hrmanager: hjorringkommune_tr | kendt |
 | Holbæk Kommune | emply: https://holbaek.career.emply.com | kendt |
 | Holstebro Kommune |  | intet jobsystem fundet |
 | Horsens Kommune |  | intet jobsystem fundet |
 | Hvidovre Kommune | hrmanager: hvidovre | kendt |
 | Høje-Taastrup Kommune |  | forsiden kunne ikke hentes |
 | Hørsholm Kommune |  | forsiden kunne ikke hentes |
-| Ikast-Brande Kommune | emply: https://ikast-brande.career.emply.com | ny |
+| Ikast-Brande Kommune | emply: https://ikast-brande.career.emply.com | kendt |
 | Ishøj Kommune |  | forsiden kunne ikke hentes |
 | Jammerbugt Kommune |  | intet jobsystem fundet |
 | Kalundborg Kommune |  | intet jobsystem fundet |
@@ -220,23 +220,23 @@
 | Køge Kommune |  | forsiden kunne ikke hentes |
 | Langeland Kommune |  | forsiden kunne ikke hentes |
 | Lejre Kommune |  | intet jobsystem fundet |
-| Lemvig Kommune | emply: https://lemvig.career.emply.com | ny |
+| Lemvig Kommune | emply: https://lemvig.career.emply.com | kendt |
 | Lolland Kommune |  | forsiden kunne ikke hentes |
 | Lyngby-Taarbæk Kommune |  | intet jobsystem fundet |
 | Læsø Kommune |  | forsiden kunne ikke hentes |
-| Mariagerfjord Kommune | emply: https://mariagerfjord.career.emply.com | ny |
+| Mariagerfjord Kommune | emply: https://mariagerfjord.career.emply.com | kendt |
 | Middelfart Kommune |  | intet jobsystem fundet |
-| Morsø Kommune | emply: https://mors.career.emply.com | ny |
+| Morsø Kommune | emply: https://mors.career.emply.com | kendt |
 | Norddjurs Kommune |  | intet jobsystem fundet |
-| Nordfyns Kommune | emply: https://nordfynskommune.career.emply.com | ny |
-| Nyborg Kommune | emply: https://nyborg.career.emply.com | ny |
+| Nordfyns Kommune | emply: https://nordfynskommune.career.emply.com | kendt |
+| Nyborg Kommune |  | forsiden kunne ikke hentes |
 | Næstved Kommune | emply: https://naestved.career.emply.com | kendt |
-| Odder Kommune | hrmanager: ofir_odder | ny |
+| Odder Kommune | hrmanager: ofir_odder | kendt |
 | Odense Kommune | hrmanager: odense-kommune_tr | kendt |
 | Odsherred Kommune |  | intet jobsystem fundet |
 | Randers Kommune |  | intet jobsystem fundet |
 | Rebild Kommune |  | intet jobsystem fundet |
-| Ringkøbing-Skjern Kommune | emply: https://rksk-v2.career.emply.com | ny |
+| Ringkøbing-Skjern Kommune | emply: https://rksk-v2.career.emply.com | kendt |
 | Ringsted Kommune |  | forsiden kunne ikke hentes |
 | Roskilde Kommune |  | intet jobsystem fundet |
 | Rudersdal Kommune |  | intet jobsystem fundet |
@@ -246,18 +246,18 @@
 | Skanderborg Kommune |  | intet jobsystem fundet |
 | Skive Kommune |  | intet jobsystem fundet |
 | Slagelse Kommune |  | forsiden kunne ikke hentes |
-| Solrød Kommune | emply: https://solrod.career.emply.com | ny |
+| Solrød Kommune | emply: https://solrod.career.emply.com | kendt |
 | Sorø Kommune |  | intet jobsystem fundet |
-| Stevns Kommune | emply: https://stevns.career.emply.com | ny |
-| Struer Kommune | emply: https://struerkommune.career.emply.com | ny |
+| Stevns Kommune | emply: https://stevns.career.emply.com | kendt |
+| Struer Kommune | emply: https://struerkommune.career.emply.com | kendt |
 | Svendborg Kommune | emply: https://svendborg.career.emply.com | kendt |
-| Syddjurs Kommune | emply: https://syddjurs.career.emply.com | ny |
+| Syddjurs Kommune | emply: https://syddjurs.career.emply.com | kendt |
 | Sønderborg Kommune |  | intet jobsystem fundet |
 | Thisted Kommune |  | intet jobsystem fundet |
-| Tønder Kommune | emply: https://toender.career.emply.com | ny |
+| Tønder Kommune | emply: https://toender.career.emply.com | kendt |
 | Tårnby Kommune |  | intet jobsystem fundet |
 | Vallensbæk Kommune |  | intet jobsystem fundet |
-| Varde Kommune | emply: https://varde.career.emply.com | ny |
+| Varde Kommune | emply: https://varde.career.emply.com | kendt |
 | Vejen Kommune |  | forsiden kunne ikke hentes |
 | Vejle Kommune |  | intet jobsystem fundet |
 | Vesthimmerlands Kommune |  | intet jobsystem fundet |
@@ -269,10 +269,10 @@
 | Aarhus Kommune | hrmanager: aarhuskommune_tr | kendt |
 | Godt Smil Tandlægerne |  | intet jobsystem fundet |
 | ORIS Tandlægerne |  | intet jobsystem fundet |
-| Tandlægen.dk | hrmanager: tand | ny |
+| Tandlægen.dk | hrmanager: tand | kendt |
 | Colosseum Tandlægerne | teamtailor: https://colosseumklinikken.teamtailor.com | kendt |
-| Capio Danmark | emply: https://capio.career.emply.com | ny |
-| Aleris | hrmanager: aleris | ny |
+| Capio Danmark | emply: https://capio.career.emply.com | kendt |
+| Aleris | hrmanager: aleris | kendt |
 | Privathospitalet Kollund |  | forsiden kunne ikke hentes |
 | Apotekerforeningen |  | intet jobsystem fundet |
 | Pharmadanmark |  | intet jobsystem fundet |
@@ -282,43 +282,43 @@
 | FOA |  | intet jobsystem fundet |
 | Akademikerne |  | intet jobsystem fundet |
 | Prosa |  | intet jobsystem fundet |
-| Lidl Danmark | sitemap: https://karriere.lidl.dk | ny |
-| REMA 1000 | hrmanager: rema1000 | ny |
+| Lidl Danmark | sitemap: https://karriere.lidl.dk | kendt |
+| REMA 1000 | hrmanager: rema1000 | kendt |
 | Normal |  | intet jobsystem fundet |
 | Søstrene Grene |  | intet jobsystem fundet |
-| Magasin | teamtailor: https://karriere.magasin.dk | ny |
+| Magasin | teamtailor: https://karriere.magasin.dk | kendt |
 | Elgiganten |  | forsiden kunne ikke hentes |
 | Power |  | intet jobsystem fundet |
 | IKEA Danmark |  | intet jobsystem fundet |
-| 7-Eleven Danmark | emply: https://7-eleven.career.emply.com | ny |
+| 7-Eleven Danmark | emply: https://7-eleven.career.emply.com | kendt |
 | Joe & The Juice |  | forsiden kunne ikke hentes |
 | Tivoli |  | intet jobsystem fundet |
 | Zalando Danmark |  | intet jobsystem fundet |
-| Boozt | teamtailor: https://careers.booztgroup.com | ny |
+| Boozt | teamtailor: https://careers.booztgroup.com | kendt |
 | Nemlig.com |  | intet jobsystem fundet |
 | Wolt Danmark |  | intet jobsystem fundet |
 | Just Eat |  | forsiden kunne ikke hentes |
 | Vivino |  | forsiden kunne ikke hentes |
 | Unwrapped |  | forsiden kunne ikke hentes |
 | Kahoot |  | intet jobsystem fundet |
-| Danske Spil | teamtailor: https://karriere.danskespil.dk | ny |
+| Danske Spil | teamtailor: https://karriere.danskespil.dk | kendt |
 | Dansk Supermarked |  | intet jobsystem fundet |
 | Spar Nord |  | intet jobsystem fundet |
 | Ringkjøbing Landbobank |  | forsiden kunne ikke hentes |
 | Vestjysk Bank |  | intet jobsystem fundet |
 | Lån & Spar Bank |  | intet jobsystem fundet |
-| Topdanmark | workday: https://if.wd502.myworkdayjobs.com/Careers | ny |
+| Topdanmark | workday: https://if.wd502.myworkdayjobs.com/Careers | kendt |
 | Willis Towers Watson Danmark |  | forsiden kunne ikke hentes |
-| Accenture Danmark | workday: https://accenture.wd103.myworkdayjobs.com/AccentureCareers | ny |
+| Accenture Danmark | workday: https://accenture.wd103.myworkdayjobs.com/AccentureCareers | kendt |
 | McKinsey København |  | forsiden kunne ikke hentes |
 | Boston Consulting Group |  | intet jobsystem fundet |
 | Bain & Company |  | intet jobsystem fundet |
-| Kammeradvokaten | emply: https://poulschmith.career.emply.com | ny |
+| Kammeradvokaten | emply: https://poulschmith.career.emply.com | kendt |
 | Kromann Reumert |  | intet jobsystem fundet |
 | Gorrissen Federspiel |  | intet jobsystem fundet |
-| Bech-Bruun | emply: https://bechbruun.career.emply.com | ny |
+| Bech-Bruun | emply: https://bechbruun.career.emply.com | kendt |
 | Plesner |  | intet jobsystem fundet |
-| Accura | hrmanager: accura | ny |
+| Accura | hrmanager: accura | kendt |
 | DLA Piper Danmark |  | forsiden kunne ikke hentes |
 | Mazanti-Andersen |  | intet jobsystem fundet |
 | Lundgrens |  | intet jobsystem fundet |
