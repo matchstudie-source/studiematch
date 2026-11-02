@@ -594,8 +594,8 @@ function regionChips(p, labelId){
   return REGION_GROUPS.map(g=>`<p class="fine region-group">${g.l}</p><div class="chips" role="group" aria-label="${g.l}">${g.r.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div>`).join("")
     + `<div class="chips region-any"><button class="chip" data-act="region" data-v="any" aria-pressed="${p.regions.includes("any")}">Hele landet</button></div>`;
 }
-/* v = det højeste antal timer, man kan. 40 betyder "20 eller flere", altså ingen øvre grænse. */
-const HOURS = [{v:5,l:"Op til 5 t"},{v:10,l:"5–10 t"},{v:15,l:"10–15 t"},{v:20,l:"15–20 t"},{v:40,l:"20+ t"}];
+/* v = det højeste antal timer om ugen, man kan arbejde. 40 = alle timer, ingen grænse. */
+const HOURS = [{v:5,l:"Op til 5 t"},{v:10,l:"Op til 10 t"},{v:15,l:"Op til 15 t"},{v:20,l:"Op til 20 t"},{v:40,l:"Alle timer"}];
 const DANISH = [{v:"fluent",l:"Flydende dansk"},{v:"some",l:"Lidt dansk"},{v:"none",l:"Intet dansk"}];
 const SKILLS_COMMON = ["Excel","Bogføring","Regnskab","Løn","Power BI","SQL","Python","SAP","Salesforce","Tableau","Lean","Procesforbedring","Projektkoordinering","Stakeholder management","Dataanalyse","Forhandling","Forecasting","Figma","JavaScript","React","Statistik","R","Skriftlig formidling","Sociale medier","Copywriting","Kundeservice","Rekruttering","Kontraktret","ESG-rapportering","LCA","CAD","Laboratoriearbejde","Dokumentation","PowerPoint","CRM","Brugerundersøgelser","Optimering","Eventplanlægning","Prototyping"];
 
@@ -1210,7 +1210,7 @@ function tabsHTML(kind){
     return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.short}</span></button>`;
   }).join("");
 }
-function ctxLine(){ const p=S.profile; const more=(p.extra||[]).length; return esc([p.programShort+(p.uni?" · "+p.uni:"")+(more?` + ${more} mere`:""),hoursText(p.hoursMax)+"/uge",danishLabel(p.danish)].join(" · ")); }
+function ctxLine(){ const p=S.profile; const more=(p.extra||[]).length; return esc([p.programShort+(p.uni?" · "+p.uni:"")+(more?` + ${more} mere`:""),(p.hoursMax>=40?"Alle timer":hoursText(p.hoursMax)+"/uge"),danishLabel(p.danish)].join(" · ")); }
 function vApp(){
   return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<button class="ctx" data-act="program-sheet" data-v="replace" title="Skift uddannelse">${ctxLine()}</button>${ACC.backend?(ACC.user?`<button class="btn btn-ghost btn-sm acct" data-act="tab" data-tab="profile" title="${esc(ACC.user.email)}">${I.user}<span class="hide-mobile">${esc(ACC.user.name||"Min konto")}</span></button>`:'<button class="btn btn-ghost btn-sm" data-act="auth" data-v="signup">Opret bruger</button>'):'<button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button>'}</div></header>
   <div class="wrap app-grid">
