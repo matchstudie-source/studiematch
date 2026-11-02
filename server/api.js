@@ -39,7 +39,7 @@ function guessFams(text) {
   const t = ` ${String(text || "").toLowerCase()} `;
   return Object.entries(FAM_WORDS).map(([f, ws]) => [f, ws.filter((w) => t.includes(w)).length]).filter(([, n]) => n).sort((a, b) => b[1] - a[1]).map(([f]) => f);
 }
-const SESSION_DAYS = 30;
+const SESSION_DAYS = 90;
 const COOKIE = "sm_session";
 
 /* ---------- små hjælpere ---------- */
@@ -77,8 +77,16 @@ function getCookie(req, name) {
   const m = (req.headers.get("Cookie") || "").match(new RegExp(`(?:^|;\\s*)${name}=([^;]+)`));
   return m ? m[1] : null;
 }
-const sessionCookie = (token, maxAge) =>
-  `${COOKIE}=${token}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${maxAge}`;
+/* Cookien gælder både studiematch.dk og www.studiematch.dk, så man forbliver logget ind på begge */
+const cookieDomain = (host) => /(^|\.)studiematch\.dk$/i.test(String(host || "").split(":")[0]) ? "; Domain=studiematch.dk" : "";
+const sessionCookie = (token, maxAge, host) =>
+  `${COOKIE}=${token}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${maxAge}${cookieDomain(host)}`;
+/* Ved log ud slettes både den nye og en evt. gammel cookie, der kun gjaldt én adresse */
+function clearCookies(res, host) {
+  res.headers.append("Set-Cookie", sessionCookie("", 0, host));
+  res.headers.append("Set-Cookie", `${COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`);
+  return res;
+}
 
 /* ---------- database ---------- */
 const SCHEMA = [
@@ -156,12 +164,12 @@ async function currentUser(ctx) {
   }
   return row;
 }
-async function startSession(db, userId) {
+async function startSession(db, userId, host) {
   const token = randHex(32);
   await db.prepare("INSERT INTO sessions (token, user_id, created_at, expires_at) VALUES (?, ?, ?, ?)")
     .bind(await sha256(token), userId, now(), now() + SESSION_DAYS * 864e5).run();
   await db.prepare("UPDATE users SET last_login=?, last_seen=? WHERE id=?").bind(now(), now(), userId).run();
-  return sessionCookie(token, SESSION_DAYS * 86400);
+  return sessionCookie(token, SESSION_DAYS * 86400, host);
 }
 function publicUser(u) {
   return u ? { id: u.id, email: u.email, name: u.name || "", role: u.role, mustChangePassword: !!u.must_change_pw, createdAt: u.created_at } : null;
@@ -343,7 +351,7 @@ async function route(ctx, path, method) {
       clip(p.programName, 120) || null, clip(p.uni, 60) || null, b.profile ? JSON.stringify(b.profile) : null, b.state ? JSON.stringify(b.state) : null).run();
     const id = r.meta.last_row_id;
     await db.prepare("INSERT INTO events (ts, day, type, user_id) VALUES (?, ?, 'signup', ?)").bind(now(), day(), id).run();
-    const cookie = await startSession(db, id);
+    const cookie = await startSession(db, id, new URL(req.url).host);
     return json({ user: publicUser({ id, email, name: b.name, role, created_at: now() }) }, 200, { "Set-Cookie": cookie });
   }
   if (path === "auth/login" && method === "POST") {
@@ -358,14 +366,14 @@ async function route(ctx, path, method) {
       return err("Forkert mail eller adgangskode", 401);
     }
     if (adminEmails(env).has(email) && u.role !== "admin") { await db.prepare("UPDATE users SET role='admin' WHERE id=?").bind(u.id).run(); u.role = "admin"; }
-    const cookie = await startSession(db, u.id);
+    const cookie = await startSession(db, u.id, new URL(req.url).host);
     return json({ user: publicUser(u), profile: parse(u.profile), state: parse(u.state), cv: u.cv_name ? { name: u.cv_name, at: u.cv_at, extract: parse(u.cv_extract) } : null },
       200, { "Set-Cookie": cookie });
   }
   if (path === "auth/logout" && method === "POST") {
     const token = getCookie(req, COOKIE);
     if (token) await db.prepare("DELETE FROM sessions WHERE token=?").bind(await sha256(token)).run();
-    return json({ ok: true }, 200, { "Set-Cookie": sessionCookie("", 0) });
+    return clearCookies(json({ ok: true }), new URL(req.url).host);
   }
 
   /* ----- det, der kræver login ----- */
@@ -419,7 +427,7 @@ async function route(ctx, path, method) {
       db.prepare("UPDATE events SET user_id=NULL WHERE user_id=?").bind(user.id),
       db.prepare("DELETE FROM users WHERE id=?").bind(user.id),
     ]);
-    return json({ ok: true }, 200, { "Set-Cookie": sessionCookie("", 0) });
+    return clearCookies(json({ ok: true }), new URL(req.url).host);
   }
 
   /* ----- admin ----- */
