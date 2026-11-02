@@ -594,7 +594,8 @@ function regionChips(p, labelId){
   return REGION_GROUPS.map(g=>`<p class="fine region-group">${g.l}</p><div class="chips" role="group" aria-label="${g.l}">${g.r.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div>`).join("")
     + `<div class="chips region-any"><button class="chip" data-act="region" data-v="any" aria-pressed="${p.regions.includes("any")}">Hele landet</button></div>`;
 }
-const HOURS = [{v:10,l:"Op til 10 t"},{v:15,l:"10–15 t"},{v:20,l:"15–20 t"},{v:25,l:"20+ t"}];
+/* v = det højeste antal timer, man kan. 40 betyder "20 eller flere", altså ingen øvre grænse. */
+const HOURS = [{v:5,l:"Op til 5 t"},{v:10,l:"5–10 t"},{v:15,l:"10–15 t"},{v:20,l:"15–20 t"},{v:40,l:"20+ t"}];
 const DANISH = [{v:"fluent",l:"Flydende dansk"},{v:"some",l:"Lidt dansk"},{v:"none",l:"Intet dansk"}];
 const SKILLS_COMMON = ["Excel","Bogføring","Regnskab","Løn","Power BI","SQL","Python","SAP","Salesforce","Tableau","Lean","Procesforbedring","Projektkoordinering","Stakeholder management","Dataanalyse","Forhandling","Forecasting","Figma","JavaScript","React","Statistik","R","Skriftlig formidling","Sociale medier","Copywriting","Kundeservice","Rekruttering","Kontraktret","ESG-rapportering","LCA","CAD","Laboratoriearbejde","Dokumentation","PowerPoint","CRM","Brugerundersøgelser","Optimering","Eventplanlægning","Prototyping"];
 
@@ -685,7 +686,7 @@ const byId = id => JOBS.find(j=>j.id===id);
 const listJoin = a => a.length<=1 ? (a[0]||"") : a.slice(0,-1).join(", ")+" og "+a[a.length-1];
 const ago = h => h<1 ? "lige nu" : h<24 ? `for ${h} timer siden` : `for ${Math.round(h/24)} dage siden`;
 const agoShort = h => h<1 ? "nu" : h<24 ? `${h} t. siden` : `${Math.round(h/24)} d. siden`;
-const hoursText = v => (HOURS.find(x=>x.v===v)||HOURS[1]).l;
+const hoursText = v => (HOURS.find(x=>x.v===v)||HOURS.find(x=>x.v>=v)||HOURS[HOURS.length-1]).l;
 const danishLabel = v => v==="fluent" ? "Dansk OK" : v==="some" ? "Lidt dansk" : "Kun engelsk";
 const deadlineDate = d => new Date(Date.now()+d*864e5).toLocaleDateString("da-DK",{day:"numeric",month:"short"});
 function hue(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))%360; return h; }
@@ -698,7 +699,7 @@ try{ const old=localStorage.getItem("pathfit-proto-v3"); if(old && !localStorage
 function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",cvAt:0,cvBy:"",cvFams:[],extra:[],aiWeights:false,alerts:false,alertFreq:"daily",email:""}; }
 function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
 function load(){
-  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
+  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); if(pr.hoursMax===25) pr.hoursMax=40; const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
   return fresh();
 }
 let S = load();
@@ -724,6 +725,7 @@ function applyServer(d){
   if(d.state && d.state.onboarded){
     const keepView=S.view;
     S=Object.assign(fresh(), d.state, {profile:Object.assign(freshProfile(), d.profile||{})});
+    if(S.profile.hoursMax===25) S.profile.hoursMax=40;
     S.view = keepView==="landing" ? "landing" : "app";
     persist();
   } else if(S.onboarded) syncSoon();
@@ -930,7 +932,7 @@ function reasonsFor(job, ev, c){
   if(job.danish==="no" && p.danish!=="fluent") pos.push("Arbejdssproget er engelsk");
   if(job.postedH<12) pos.push(`Slået op ${ago(job.postedH)}, så du er tidligt ude`);
   if(job.danish==="plus" && p.danish!=="fluent") neg.push("Dansk er et plus her");
-  if(job.hMax>p.hoursMax) neg.push(`Op til ${job.hMax} timer om ugen, mere end dine ${hoursText(p.hoursMax).replace(" t"," timer")}`);
+  if(job.hMax>p.hoursMax) neg.push(`Op til ${job.hMax} timer om ugen, mere end de ${p.hoursMax} timer, du kan`);
   if(job.deadline!=null && job.deadline<=5) neg.push(`Ansøgningsfrist om ${job.deadline} dage`);
   if(p.skills.length && !ev.skillHits.length) neg.push(`Efterspørger ${job.skills[0]}, som ikke står på din profil`);
   if(l<=-.1) neg.push(`Du har tidligere fravalgt ${FAM[job.fam].n}`);
