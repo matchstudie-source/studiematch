@@ -387,3 +387,39 @@ class WorkableTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class StuderendeOnlineTest(unittest.TestCase):
+    SAMPLE = {"total": 2, "hits": [
+        {"Id": 101, "Title": "Studentermedhjælper til Marketing", "CompanyName": "Eksempel A/S",
+         "Content": "<p>Du bliver en del af teamet.</p><p><strong>Arbejdssted</strong><br />Kontoret i Albertslund.</p><p>8-15 timer om ugen.</p>",
+         "Categories": ["33\\/2", "54\\/4", "66\\/29"], "ApplicationDate": "2099-11-20"},
+        {"Id": 102, "Title": "Politisk student", "CompanyName": "Forening", "Content": "<p>15 timer om ugen i Aarhus.</p>",
+         "Categories": ["54/4"], "ApplicationDate": "2099-11-30"}]}
+
+    def test_parse(self):
+        jobs = sources.parse_studerendeonline_json(self.SAMPLE)
+        self.assertEqual(len(jobs), 2)
+        a = jobs[0]
+        self.assertEqual(a["company"], "Eksempel A/S")
+        self.assertEqual(a["location"], "Albertslund")
+        self.assertEqual(a["commitment"], "Studiejob")
+        self.assertEqual(a["url"], "https://jobbank.dk/job/101/eksempel-a-s/studentermedhjaelper-til-marketing/")
+        self.assertTrue(a["deadline_at"].startswith("2099-11-20"))
+        self.assertEqual(jobs[1]["location"], "Aarhus")
+
+    def test_enrich_keeps_company_and_area(self):
+        raw = sources.parse_studerendeonline_json(self.SAMPLE)[1]
+        job = enrich.enrich_rules(raw, {"name": "StuderendeOnline", "region": "cph", "city": "København"})
+        self.assertEqual(job["co"], "Forening")
+        self.assertEqual(job["region"], "oj")
+        self.assertEqual(job["src"], "StuderendeOnline")
+
+    def test_template_from_env(self):
+        jobs = sources.parse_studerendeonline_json(self.SAMPLE, "https://www.studerendeonline.dk/job/{id}")
+        self.assertEqual(jobs[0]["url"], "https://www.studerendeonline.dk/job/101")
+
+    def test_without_access_returns_nothing(self):
+        import os
+        os.environ.pop("STUDERENDEONLINE_API_URL", None)
+        self.assertEqual(sources.fetch_studerendeonline("studerendeonline", "StuderendeOnline"), [])

@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import re
 import time
+import unicodedata
 import urllib.robotparser
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -746,3 +748,71 @@ def fetch_workable(ref: str, company: str) -> list[dict]:
     account = m.group(1) if m else ref.strip("/")
     resp = _get(f"https://apply.workable.com/api/v1/widget/accounts/{account}", params={"details": "true"})
     return [j for j in parse_workable_json(resp.json(), company) if in_denmark(j["location"])]
+
+
+# ---------- StuderendeOnline / Jobbank.dk (Move On Career) ----------
+# Adgang efter aftale med Move On Career. API-adressen og nøglen ligger som hemmeligheder i GitHub:
+#   STUDERENDEONLINE_API_URL  (fx søgeadressen med kun studiejob)
+#   STUDERENDEONLINE_API_KEY  (hvis de giver en nøgle)
+#   STUDERENDEONLINE_JOB_URL  (link til opslaget, med {id}, {company} og {title}; ellers bruges Jobbank.dk's format)
+
+SO_JOBTYPE = {"54/4": "Studiejob"}  # kategoritype 54 = jobtype, 4 = studiejob (fra Move On Career)
+SO_DEFAULT_URL = "https://jobbank.dk/job/{id}/{company}/{title}/"
+_WORKPLACE = re.compile(r"arbejdssted\s*:?\s*(.{0,200})", re.I | re.S)
+
+
+def _slug(text: str) -> str:
+    t = (text or "").lower().replace("æ", "ae").replace("ø", "oe").replace("å", "aa")
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
+def _so_location(text: str) -> str:
+    """Byen fra afsnittet 'Arbejdssted', ellers den første by, der nævnes i opslaget."""
+    from enrich import _TOWN_RE  # undgår cirkulær import
+    m = _WORKPLACE.search(text)
+    if m and (t := _TOWN_RE.search(m.group(1).lower())):
+        return t.group(1).title()
+    # ellers kun en by efter "i", "på" eller "ved", så personnavne som "Ærø-Larsen" ikke tæller
+    for t in _TOWN_RE.finditer(text.lower()):
+        if re.search(r"(?:^|\s)(?:i|på|ved)\s+$", text.lower()[max(0, t.start() - 5):t.start()]) and \
+                not re.match(r"-\w", text[t.end():t.end() + 2]):
+            return t.group(1).title()
+    return ""
+
+
+def parse_studerendeonline_json(data: dict, url_template: str | None = None) -> list[dict]:
+    tmpl = url_template or SO_DEFAULT_URL
+    jobs = []
+    for h in data.get("hits", []):
+        cats = [c.replace("\\/", "/") for c in h.get("Categories", [])]
+        text = html_to_text(h.get("Content"))
+        company = (h.get("CompanyName") or "").strip()
+        title = (h.get("Title") or "").strip()
+        jobs.append({
+            "title": title,
+            "company": company,
+            "location": _so_location(text),
+            "description": text,
+            "url": h.get("Url") or h.get("Link") or tmpl.format(id=h.get("Id"), company=_slug(company), title=_slug(title)),
+            "posted_at": _parse_any_date(h.get("PublishDate") or h.get("Published")),
+            "deadline_at": _parse_any_date(h.get("ApplicationDate")),
+            "source": "StuderendeOnline",
+            "commitment": " ".join(SO_JOBTYPE.get(c, "") for c in cats).strip(),
+            "categories": cats,
+        })
+    return [j for j in jobs if j["title"]]
+
+
+def fetch_studerendeonline(ref: str, company: str) -> list[dict]:
+    api = os.environ.get("STUDERENDEONLINE_API_URL", "").strip() or (ref if ref.startswith("http") else "")
+    if not api:
+        LAST_NOTE[ref] = "venter på API-adgang fra Move On Career"
+        return []
+    key = os.environ.get("STUDERENDEONLINE_API_KEY", "").strip()
+    headers = {"Authorization": f"Bearer {key}", "X-Api-Key": key} if key else {}
+    data = _get(api, headers=headers).json()
+    jobs = parse_studerendeonline_json(data, os.environ.get("STUDERENDEONLINE_JOB_URL", "").strip() or None)
+    total = data.get("total")
+    LAST_NOTE[ref] = f"{len(jobs)} af {total} opslag hentet" if total else ""
+    return jobs

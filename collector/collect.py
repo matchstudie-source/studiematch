@@ -42,6 +42,7 @@ FETCHERS = {
     "sitemap": lambda e: sources.fetch_sitemap(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
     "ashby": lambda e: sources.fetch_ashby(e["ref"], e["name"]),
     "workable": lambda e: sources.fetch_workable(e["ref"], e["name"]),
+    "studerendeonline": lambda e: sources.fetch_studerendeonline(e["ref"], e["name"]),
     "rmk": lambda e: sources.fetch_rmk(e["ref"], e["name"], e.get("src_label") or "Virksomhedens karriereside"),
 }
 CAREER_HOST = re.compile(r"^https?://(careers?|jobs?|applyforjob)\.", re.I)

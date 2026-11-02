@@ -33,6 +33,9 @@ jobs:
         run: python collector/collect.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          STUDERENDEONLINE_API_URL: ${{ secrets.STUDERENDEONLINE_API_URL }}
+          STUDERENDEONLINE_API_KEY: ${{ secrets.STUDERENDEONLINE_API_KEY }}
+          STUDERENDEONLINE_JOB_URL: ${{ secrets.STUDERENDEONLINE_JOB_URL }}
       - name: Gem resultatet
         run: |
           git config user.name "studiematch-bot"

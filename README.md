@@ -90,6 +90,7 @@ Står der "intet jobsystem fundet" i `collector/discover_report.md`, bruger virk
 | `workday` | Adressen på Workday-karrieresiden | `https://firma.wd3.myworkdayjobs.com/Careers` |
 | `sitemap` | Karrieresidens adresse, hvis den har et sitemap (fx SAP SuccessFactors) | `https://jobs.firma.com` |
 | `careerpage` | Jobsiden, hvis den bruger standarden *JobPosting* (mange offentlige sider gør) | `https://…/ledige-stillinger` |
+| `studerendeonline` | Skriv bare `studerendeonline`. Adgangen kommer fra Move On Career og ligger som hemmelighederne `STUDERENDEONLINE_API_URL`, `STUDERENDEONLINE_API_KEY` og evt. `STUDERENDEONLINE_JOB_URL` (linkformat med `{id}`, `{company}`, `{title}`). | `studerendeonline` |
 | `evergreen` | Et link til en ordning med løbende optag, fx et vikarkorps for sygeplejestuderende. Udfyld også `title`, `fam`, `blurb` og `src_label`. | `https://…/vikar` |
 
 Sådan finder du ud af, hvilket system en virksomhed bruger: åbn et af deres jobopslag, og se på adressen. Står der fx `teamtailor`, `greenhouse`, `lever`, `smartrecruiters`, `hr-manager`, `emply` eller `myworkdayjobs`, kan du tilføje dem.
