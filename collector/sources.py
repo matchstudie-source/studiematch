@@ -757,7 +757,7 @@ def fetch_workable(ref: str, company: str) -> list[dict]:
 #   STUDERENDEONLINE_JOB_URL  (link til opslaget, med {id}, {company} og {title}; ellers bruges Jobbank.dk's format)
 
 SO_JOBTYPE = {"54/4": "Studiejob"}  # kategoritype 54 = jobtype, 4 = studiejob (fra Move On Career)
-SO_DEFAULT_URL = "https://jobbank.dk/job/{id}/{company}/{title}/"
+SO_DEFAULT_URL = "https://jobbank.dk/job/{id}/"  # korte links virker, fx jobbank.dk/job/2449008/
 _WORKPLACE = re.compile(r"arbejdssted\s*:?\s*(.{0,200})", re.I | re.S)
 
 

@@ -404,7 +404,7 @@ class StuderendeOnlineTest(unittest.TestCase):
         self.assertEqual(a["company"], "Eksempel A/S")
         self.assertEqual(a["location"], "Albertslund")
         self.assertEqual(a["commitment"], "Studiejob")
-        self.assertEqual(a["url"], "https://jobbank.dk/job/101/eksempel-a-s/studentermedhjaelper-til-marketing/")
+        self.assertEqual(a["url"], "https://jobbank.dk/job/101/")
         self.assertTrue(a["deadline_at"].startswith("2099-11-20"))
         self.assertEqual(jobs[1]["location"], "Aarhus")
 
