@@ -318,6 +318,11 @@ Felter:
 - "skills": op til 5 konkrete kompetencer, opslaget efterspørger (korte navne).
 - "deadline": ansøgningsfrist som "YYYY-MM-DD", eller null.
 - "blurb_da": 1-2 korte sætninger på dansk om, hvad man laver i jobbet. Skriv konkret, uden reklamesprog.
+- "studies": op til 8 uddannelser, som jobbet passer bedst til, med almindelige danske navne i små bogstaver,
+  fx ["farmaci", "kemi", "biokemi"] eller ["erhvervsøkonomi", "ha", "cand.merc", "global business engineering"].
+  Tænk på, hvad arbejdet kræver, ikke kun titlen. Et job i regulatory affairs passer fx til farmaci og jura.
+- "open_to_all": true hvis studerende fra næsten alle uddannelser kan tage jobbet (fx kundeservice, butik, hjemmepleje uden krav).
+- "why": én kort sætning på dansk om, hvorfor jobbet passer til de uddannelser.
 
 Jobopslag:
 Titel: {title}
@@ -356,5 +361,10 @@ def enrich_ai(raw: dict, base: dict, api_key: str) -> dict:
         out["deadlineAt"] = f"{data['deadline']}T23:59:00+00:00"
     if data.get("blurb_da"):
         out["blurb"] = str(data["blurb_da"])[:300]
+    studies = [str(x).strip().lower()[:50] for x in data.get("studies") or [] if str(x).strip()]
+    if studies:
+        out["studies"] = studies[:8]
+        out["why"] = str(data.get("why") or "")[:200]
+    out["openToAll"] = bool(data.get("open_to_all"))
     out["enrichedBy"] = "ai"
     return out

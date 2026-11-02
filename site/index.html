@@ -10,6 +10,7 @@
 <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="https://studiematch.dk/">
 <title>Studiematch</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -694,7 +695,7 @@ function initials(s){ return s.split(/\s+/).filter(w=>/^[A-ZÆØÅ]/.test(w)).sl
 const KEY = "studiematch-v1";
 /* Flyt profiler fra det gamle navn, så ingen mister deres data */
 try{ const old=localStorage.getItem("pathfit-proto-v3"); if(old && !localStorage.getItem(KEY)){ localStorage.setItem(KEY,old); } if(old) localStorage.removeItem("pathfit-proto-v3"); }catch(e){}
-function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",cvAt:0,cvBy:"",cvFams:[],extra:[],aiWeights:false,alerts:true,alertFreq:"daily",email:""}; }
+function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",cvAt:0,cvBy:"",cvFams:[],extra:[],aiWeights:false,alerts:false,alertFreq:"daily",email:""}; }
 function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
 function load(){
   try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
@@ -837,6 +838,16 @@ function famsFromText(t){
   for(const f in TITLE_KW) if(TITLE_KW[f].some(k=>s.includes(k))) out.push(f);
   return out;
 }
+/* AI-agentens vurdering: hvilke uddannelser jobbet passer til (sat af jobindsamleren, når AI er slået til) */
+function studyHay(p){
+  const prog=p.programId?progById(p.programId):null;
+  return " "+norm([p.programName,p.studyText,...(prog?prog.aliases:[]),...(p.extra||[]).map(e=>e.name)].join(" "))+" ";
+}
+function aiFits(job, p){
+  if(!job.studies || !job.studies.length) return null;
+  const hay=studyHay(p); const words=hay.split(" ").filter(w=>w.length>=5);
+  return job.studies.some(t=>{ const n=norm(t); return n && (hay.includes(" "+n+" ") || hay.includes(n) && n.length>=5 || words.some(w=>n.split(" ").includes(w))); });
+}
 function expFams(p){ return [...new Set([...(p.cvFams||[]),...(p.pastJobs||[]).flatMap(famsFromText)])].filter(f=>FAM[f]); }
 function ctxOf(c){ return c || {profile:S.profile, learned:S.learned, disabled:S.disabled}; }
 /* Job, der kun er for studerende på en bestemt uddannelse (sat af jobindsamleren) */
@@ -865,7 +876,11 @@ function evaluate(job, c){
   let bestSec={f:null,w:0};
   for(const f of job.sec||[]){ const w=(W[f]||0)*.85; if(w>bestSec.w) bestSec={f,w}; }
   /* Er feltet kun gættet ud fra opslagets tekst (ikke titlen), stoler vi mindre på det */
-  const degree = Math.max(prim,bestSec.w) * (job.famConf==="text" ? .7 : 1);
+  let degree = Math.max(prim,bestSec.w) * (job.famConf==="text" ? .7 : 1);
+  /* Agenten og reglerne stemmer sammen: siger AI'en, at jobbet passer til uddannelsen, løftes det; ellers dæmpes det lidt */
+  const ai = aiFits(job,p);
+  if(ai===true) degree=Math.max(degree,.8);
+  else if(ai===false && !job.openToAll) degree*=.85;
   const secs=job.sec||[];
   const learnedAdj = (c.learned[job.fam]||0) + (secs.length ? .4*secs.reduce((s,f)=>s+(c.learned[f]||0),0)/secs.length : 0);
   const affinity = clamp(degree+learnedAdj,0,1);
@@ -899,11 +914,12 @@ function evaluate(job, c){
   const title=" "+job.title.toLowerCase()+" ";
   const obvious = vocab.some(k=>title.includes(k));
   const hidden = !obvious && affinity>=.55 && score>=.5;
-  return {score,level,prim,bestSec,affinity,learnedAdj,skillHits,interestHit,expHit,comps,hidden};
+  return {score,level,prim,bestSec,affinity,learnedAdj,skillHits,interestHit,expHit,ai,comps,hidden};
 }
 function reasonsFor(job, ev, c){
   c=ctxOf(c); const p=c.profile; const pos=[], neg=[]; const pname=p.programShort||p.programName||"din uddannelse";
-  if(ev.prim>=.6) pos.push(p.guessed ? `${FAM[job.fam].label} passer til det, du har fortalt om dit studie` : `${FAM[job.fam].label} er et oplagt felt for ${pname}`);
+  if(ev.ai===true && job.why) pos.push(job.why);
+  else if(ev.prim>=.6) pos.push(p.guessed ? `${FAM[job.fam].label} passer til det, du har fortalt om dit studie` : `${FAM[job.fam].label} er et oplagt felt for ${pname}`);
   else if(ev.bestSec.f && ev.bestSec.w>=.45) pos.push(`Arbejdet er i høj grad ${FAM[ev.bestSec.f].n}, som passer til ${pname}`);
   else if(ev.prim>=.4) pos.push(`Beslægtet med ${pname}`);
   if(ev.skillHits.length) pos.push(`Du har ${listJoin(ev.skillHits)}`);
@@ -1228,8 +1244,7 @@ function tForYou(){
 function emptyFeed(){
   const p=S.profile;
   return `<div class="empty"><h2>Du har set alle matches lige nu</h2>
-    <p>Der kommer nye studiejob hver dag. Vi giver besked, når et stærkt match dukker op, typisk få timer efter det er slået op.</p>
-    <div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Mail mig nye stærke matches"></button><span>Mail mig nye stærke matches</span></div>
+    <p>Der kommer nye studiejob hver dag, og siden tjekker for nye to gange i døgnet. Kig forbi igen, eller vis job fra hele landet.</p>
     <div class="chips"><button class="btn btn-ghost btn-sm" data-act="widen">Søg i hele landet</button></div></div>`;
 }
 function tSaved(){
@@ -1312,10 +1327,9 @@ function tProfile(){
       <form class="inline-form" data-form="courses"><label class="sr" for="pf-course">Tilføj et fag</label><input id="pf-course" class="input" placeholder="fx Supply Chain Management (5 ECTS)"><button class="btn btn-ghost" type="submit">Tilføj</button></form></div>
   </section>
 
-  <section class="pcard"><h2>Jobalarmer</h2>
-    <div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Mail mig nye stærke matches"></button><span>Mail mig nye stærke matches</span></div>
-    ${p.alerts?`<div class="seg" role="group" aria-label="Hvor ofte">${[["instant","Med det samme"],["daily","Dagligt"],["weekly","Ugentligt"]].map(([v,l])=>`<button class="chip" data-act="freq" data-v="${v}" aria-pressed="${p.alertFreq===v}">${l}</button>`).join("")}</div>
-    <div class="field"><label class="label" for="pf-mail">E-mail</label><input id="pf-mail" class="input" type="email" value="${esc(p.email)}" placeholder="dig@student.dtu.dk" data-change="email"></div>`:""}
+  <section class="pcard"><h2>Jobalarmer <span class="tag">Kommer snart</span></h2>
+    <p class="hint">Snart kan du få en mail, når der kommer et stærkt match. ${ACC.user?"Slå det til, så får du besked, når det er klar.":"Opret en bruger, så kan du få besked, når det er klar."}</p>
+    ${ACC.user?`<div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Giv mig besked om jobalarmer"></button><span>Ja tak, mail mig, når jobalarmer er klar</span></div>`:""}
   </section>
 
   <div class="only-narrow">${tasteHTML()}</div>

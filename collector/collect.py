@@ -164,7 +164,7 @@ def main() -> int:
             elif api_key and ai_calls < max_ai_calls:
                 job = enrich.enrich_ai(raw, base, api_key)
                 ai_calls += 1
-                cache[key] = {k: job[k] for k in ("fam", "sec", "danish", "hMin", "hMax", "skills", "blurb", "deadlineAt", "enrichedBy", "skip") if k in job}
+                cache[key] = {k: job[k] for k in ("fam", "sec", "danish", "hMin", "hMax", "skills", "blurb", "deadlineAt", "enrichedBy", "skip", "studies", "why", "openToAll") if k in job}
             else:
                 job = base
             if job.get("skip"):

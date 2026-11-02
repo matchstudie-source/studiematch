@@ -87,6 +87,24 @@ if (lawJob) {
   check("Uddannelseskrav", feedFor("ku-bachelor-jura").some(x => x.job.id === lawJob.id), "jurajob vises ikke for Jura");
 }
 
+// AI-agentens vurdering: et job, agenten siger passer til farmaci, skal løftes for Farmaci og ikke for Jura
+{
+  const base = { id: "ai1", title: "Studentermedhjælper til Regulatory Affairs", co: "Eksempel Pharma", city: "København", region: "kbh",
+    fam: "legal", sec: ["research"], famConf: "title", danish: "required", hMin: 15, hMax: 15, skills: [], postedH: 48, deadline: null, live: true };
+  const ev = (job, id) => { const p = site.progById(id);
+    const profile = Object.assign(site.freshProfile(), { programId: p.id, programName: p.name, weights: { ...p.w }, danish: "fluent", hoursMax: 20, regions: ["any"] });
+    return site.evaluate(job, { profile, learned: {}, disabled: [] }); };
+  const withAI = { ...base, studies: ["farmaci", "kemi", "jura"], why: "Arbejdet kræver forståelse af lægemiddelregler." };
+  const f0 = ev(base, "ku-bachelor-farmaci"), f1 = ev(withAI, "ku-bachelor-farmaci");
+  check("AI-agent", f1.affinity > f0.affinity, `løftede ikke Farmaci (${f0.affinity} -> ${f1.affinity})`);
+  check("AI-agent", f1.ai === true, "Farmaci blev ikke genkendt i agentens liste");
+  const g = ev({ ...base, fam: "procurement", sec: [], studies: ["jura"] }, "dtu-diplom-global-business-og-teknologi");
+  const g0 = ev({ ...base, fam: "procurement", sec: [] }, "dtu-diplom-global-business-og-teknologi");
+  check("AI-agent", g.ai === false && g.affinity < g0.affinity, "dæmpede ikke et job, agenten ikke mente passede");
+  const open = ev({ ...base, fam: "procurement", sec: [], studies: ["jura"], openToAll: true }, "dtu-diplom-global-business-og-teknologi");
+  check("AI-agent", open.affinity === g0.affinity, "dæmpede et job, der er åbent for alle");
+}
+
 if (fails.length) {
   console.error(`\n${fails.length} fejl i matchningen:\n- ` + fails.join("\n- "));
   process.exit(1);
