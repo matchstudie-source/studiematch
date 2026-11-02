@@ -54,7 +54,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .btn-quiet{background:transparent;color:var(--accent);padding:8px 8px}
 .btn-sm{padding:7px 14px;font-size:14px}
 .btn-lg{padding:14px 24px;font-size:16px}
-.input,.select{width:100%;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:11px 15px;font-size:15.5px;min-width:0}
+.input,.select{width:100%;font-family:inherit;resize:vertical;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:11px 15px;font-size:15.5px;min-width:0}
 .input:focus,.select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
 .input-lg{padding:15px 18px;font-size:16.5px;border-radius:999px}
 .label{display:block;font-weight:700;font-size:14.5px;margin-bottom:8px}
@@ -1111,11 +1111,14 @@ function vLanding(){
         </ul>
       </div>
       <form class="panel" data-form="waitlist">
-        <h3>Kom på ventelisten for virksomheder</h3>
-        ${UI.waitlistDone?`<p class="ok-note">Tak, I er skrevet op. Vi kontakter jer snart.</p>`:`
+        <h3>Skriv til os</h3>
+        ${UI.waitlistDone?`<p class="ok-note">Tak for jeres besked. Vi vender tilbage hurtigst muligt.</p>`:`
         <div class="field"><label class="label" for="wl-co">Virksomhed</label><input id="wl-co" class="input" required placeholder="Virksomhedens navn"></div>
+        <div class="field"><label class="label" for="wl-name">Dit navn <span class="fine">(valgfrit)</span></label><input id="wl-name" class="input" autocomplete="name"></div>
         <div class="field"><label class="label" for="wl-mail">Arbejdsmail</label><input id="wl-mail" class="input" type="email" required placeholder="navn@virksomhed.dk"></div>
-        <button class="btn btn-primary" type="submit">Skriv mig op</button>`}
+        <div class="field"><label class="label" for="wl-msg">Hvad søger I? <span class="fine">(valgfrit)</span></label><textarea id="wl-msg" class="input" rows="3" placeholder="Fx to studentermedhjælpere til økonomi i Aarhus fra januar"></textarea></div>
+        ${UI.waitlistErr?`<p class="form-err" role="alert">${esc(UI.waitlistErr)}</p>`:""}
+        <button class="btn btn-primary" type="submit">Send</button>`}
       </form>
     </div></section>
   </main>
@@ -1615,8 +1618,10 @@ function canonicalSkill(s){ const t=s.trim(); const hit=SKILLS_COMMON.find(x=>no
 function onSubmit(form){
   const k=form.dataset.form, p=S.profile;
   if(k==="ob-prog"){ const t=UI.obText.trim(); if(!t) return; const m=findProgram(t, UI.obUni)||programsFor(UI.obUni, UI.obLevel, t)[0]; if(m) setProgram(m); else setFreeText(t, UI.obUni); S.step=3; window.scrollTo(0,0); return commit(); }
-  if(k==="waitlist"){ const co=form.querySelector("#wl-co").value.trim(), mail=form.querySelector("#wl-mail").value.trim();
-    api("waitlist",{company:co,email:mail}).then(()=>{ UI.waitlistDone=true; render(); }); return; }
+  if(k==="waitlist"){ const g=id=>form.querySelector(id).value.trim();
+    api("waitlist",{company:g("#wl-co"),name:g("#wl-name"),email:g("#wl-mail"),message:g("#wl-msg")}).then(r=>{
+      if(r.ok || r.status===503){ UI.waitlistDone=true; UI.waitlistErr=""; } else UI.waitlistErr=r.data.error||"Det lykkedes ikke. Skriv til matchstudie@gmail.com.";
+      render(); }); return; }
   if(k==="auth") return submitAuth(form);
   if(k==="password") return submitPassword(form);
   if(k==="study"){ const t=form.querySelector("#pf-study").value.trim(); if(!t) return; const uni=(document.getElementById("pf-uni")||{}).value||"other"; const m=findProgram(t, uni)||programsFor(uni,"all",t)[0]; if(m) setProgram(m,true); else setFreeText(t, uni, true); UI.pfUni=null; commit(); return toast(`Matcher nu som ${p.programName}${p.uni?" ("+p.uni+")":""}.`); }

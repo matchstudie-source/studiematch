@@ -5,6 +5,9 @@
  *   ANTHROPIC_API_KEY  valgfri: slår AI-agenten til (CV-læsning og ukendte uddannelser)
  *   AI_MODEL           valgfri: modelnavn, standard claude-haiku-5-5
  *   AI_DAILY_LIMIT     valgfri: højst så mange AI-kald i døgnet, standard 300
+ *   RESEND_API_KEY     valgfri: sender en mail til jer, når en virksomhed skriver sig op
+ *   NOTIFY_EMAIL       hvem mailen går til, standard matchstudie@gmail.com
+ *   NOTIFY_FROM        afsender, standard "Studiematch <onboarding@resend.dev>"
  */
 
 const FAMS = {
@@ -72,10 +75,35 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS program_cache (key TEXT PRIMARY KEY, weights TEXT, ts INTEGER)`,
   `CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)`,
 ];
+/* Kolonner, der er kommet til senere. Fejler, hvis de allerede findes, og det er fint. */
+const MIGRATIONS = ["ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT"];
 let ready = null;
 function ensureSchema(db) {
-  if (!ready) ready = db.batch(SCHEMA.map((s) => db.prepare(s))).catch((e) => { ready = null; throw e; });
+  if (!ready) ready = db.batch(SCHEMA.map((s) => db.prepare(s)))
+    .then(async () => { for (const m of MIGRATIONS) { try { await db.prepare(m).run(); } catch {} } })
+    .catch((e) => { ready = null; throw e; });
   return ready;
+}
+
+/* ---------- mails til jer ---------- */
+const escHtml = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+async function notify(env, subject, rows, replyTo) {
+  if (!env.RESEND_API_KEY) return;
+  const html = `<div style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.5;color:#1F2C33">
+    <h2 style="margin:0 0 12px;color:#0B7D60">${escHtml(subject)}</h2>
+    <table style="border-collapse:collapse">${rows.filter(([, v]) => v).map(([k, v]) =>
+      `<tr><td style="padding:4px 14px 4px 0;color:#64737B;vertical-align:top">${escHtml(k)}</td><td style="padding:4px 0;white-space:pre-wrap">${escHtml(v)}</td></tr>`).join("")}</table>
+    <p style="color:#64737B;font-size:13px;margin-top:18px">Svar direkte på denne mail for at skrive til dem. Alle henvendelser står også på studiematch.dk/admin.html under Virksomheder.</p></div>`;
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      from: env.NOTIFY_FROM || "Studiematch <onboarding@resend.dev>",
+      to: String(env.NOTIFY_EMAIL || "matchstudie@gmail.com").split(",").map((x) => x.trim()).filter(Boolean),
+      subject, html, ...(replyTo ? { reply_to: replyTo } : {}),
+    }),
+  });
+  if (!res.ok) console.error("Resend", res.status, await res.text());
 }
 async function salt(db) {
   const row = await db.prepare("SELECT v FROM kv WHERE k='salt'").first();
@@ -219,10 +247,13 @@ async function route(ctx, path, method) {
 
   /* ----- virksomheders venteliste ----- */
   if (path === "waitlist" && method === "POST") {
-    const b = await readBody(req, 2000);
+    const b = await readBody(req, 6000);
     const email = cleanEmail(b.email);
     if (!validEmail(email) || !String(b.company || "").trim()) return err("Udfyld virksomhed og mail");
-    await db.prepare("INSERT INTO companies (ts, company, email) VALUES (?, ?, ?)").bind(now(), clip(b.company, 120), email).run();
+    const company = clip(b.company, 120).trim(), name = clip(b.name, 80).trim(), message = clip(b.message, 2000).trim();
+    await db.prepare("INSERT INTO companies (ts, company, email, name, message) VALUES (?, ?, ?, ?, ?)").bind(now(), company, email, name || null, message || null).run();
+    const send = notify(env, `Ny virksomhed: ${company}`, [["Virksomhed", company], ["Kontakt", name], ["Mail", email], ["Besked", message]], email).catch((e) => console.error(e));
+    if (ctx.waitUntil) ctx.waitUntil(send); else await send;
     return json({ ok: true });
   }
 
@@ -345,13 +376,13 @@ async function admin(ctx, path, method, me) {
       q(`SELECT path, COUNT(*) AS n FROM events WHERE type='pageview' AND day>=? GROUP BY path ORDER BY n DESC LIMIT 10`, since),
       q(`SELECT COALESCE(program,'(ikke valgt)') AS program, COALESCE(school,'') AS school, COUNT(*) AS n FROM users GROUP BY program, school ORDER BY n DESC LIMIT 15`),
       q(`SELECT type, COUNT(*) AS n, COUNT(DISTINCT visitor) AS people FROM events WHERE day>=? AND type IN ('pageview','onboarded','apply_click','save','like','dismiss','cv_added') GROUP BY type`, since),
-      q(`SELECT ts, company, email FROM companies ORDER BY ts DESC LIMIT 50`),
+      q(`SELECT ts, company, email, name, message FROM companies ORDER BY ts DESC LIMIT 100`),
       q(`SELECT ts, type, label, path FROM events WHERE type IN ('signup','apply_click','onboarded','cv_added') ORDER BY ts DESC LIMIT 25`),
     ]);
     return json({
       daily: daily.results, signups: signups.results, totals: totals.results[0], topJobs: topJobs.results,
       referrers: refs.results, paths: paths.results, programs: programs.results, funnel: funnel.results,
-      companies: companies.results, recent: recent.results, ai: !!ctx.env.ANTHROPIC_API_KEY,
+      companies: companies.results, recent: recent.results, ai: !!ctx.env.ANTHROPIC_API_KEY, mail: !!ctx.env.RESEND_API_KEY,
     });
   }
   if (path === "users" && method === "GET") {
