@@ -266,31 +266,6 @@
   "live": true
  },
  {
-  "title": "People Partner",
-  "co": "Visma Public DK",
-  "city": "Højbjerg",
-  "region": "oj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "operations"
-  ],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Tech og software",
-  "postedAt": "2026-10-23T11:51:58+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "VISMA PUBLIC · PEOPLE Fuldtid/deltid - Aarhus Vil du være med til at gøre People til noget, man mærker i hverdagen? Så er det dig, vi leder efter.",
-  "req": null,
-  "url": "https://vismapublictechnologies.teamtailor.com/jobs/8608836-people-partner",
-  "enrichedBy": "regler",
-  "id": "x0506d86b8160",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Marketing",
   "co": "Humac Denmark",
   "city": "Rudersdal",
@@ -626,6 +601,31 @@
   "live": true
  },
  {
+  "title": "Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse.",
+  "co": "Region Syddanmark",
+  "city": "Kolding",
+  "region": "tre",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "health",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-11-02T12:41:32+00:00",
+  "deadlineAt": "2026-11-19T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Kunne du tænke dig at være en del af en afdeling, som har en central rolle på akutsygehuset, stor ambulant aktivitet, blik for at god uddannelse gør hele forskellen for fremtidens sundhedsvæsen og ikke mindst 70…",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237748&DepartmentId=6717&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xaae8c9557735",
+  "live": true
+ },
+ {
   "title": "Fagligt relevant studiejob til sygeplejestuderende i Region Syddanmark - få erfaring og fleksibilitet",
   "co": "Region Syddanmark",
   "city": "Børkop",
@@ -887,6 +887,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Drug Substance Production",
+  "co": "ALK",
+  "city": "Hørsholm",
+  "region": "nsj",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "product"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Dokumentation"
+  ],
+  "industry": "Medicinal",
+  "postedAt": "2026-11-02T13:50:18+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du have et studiejob ca. 8 timer om ugen, der er relevant for din akademiske uddannelse og som er fleksibelt? Er du initiativrig, struktureret og ivrig for at lære nyt?",
+  "req": null,
+  "url": "https://careers.alk.net/jobs/8651790-studentermedhjaelper-til-drug-substance-production",
+  "enrichedBy": "regler",
+  "id": "xaa1a39998ed3",
+  "live": true
+ },
+ {
   "title": "Finance Intern",
   "co": "Vestas",
   "city": "Aarhus N, Region Central Jutland, DK, 8200",
@@ -938,6 +965,61 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til data og visualisering i Digital Platforms",
+  "co": "Energinet",
+  "city": "Fredericia",
+  "region": "tre",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Power BI",
+   "SQL",
+   "JavaScript"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-02T10:46:58+00:00",
+  "deadlineAt": "2026-11-20T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du studerende, har du teknisk flair, og synes du, det er spændende at gøre data nemme at forstå og bruge?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=189001&DepartmentId=21679&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x32cf8a4467fc",
+  "live": true
+ },
+ {
+  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-10-15T00:00:00+00:00",
+  "deadlineAt": "2026-11-08T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
+  "enrichedBy": "regler",
+  "id": "x63d77aa5ca60",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Group ESG",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -964,28 +1046,26 @@
   "live": true
  },
  {
-  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 10,
-  "hMax": 15,
+  "title": "Sektionsleder til intern kommunikation, branding og kampagner",
+  "co": "HOFOR",
+  "city": "Hovedkontoret, Ørestads Boulevard 35, 2300 København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
   "danish": "required",
-  "fam": "finance",
+  "fam": "marketing",
   "sec": [],
   "famConf": "title",
-  "skills": [
-   "Excel"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-10-15T00:00:00+00:00",
-  "deadlineAt": "2026-11-08T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
+  "skills": [],
+  "industry": "Forsyning",
+  "postedAt": "2026-11-02T13:21:06+00:00",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at sætte retningen for HOFORs interne kommunikationsindsatser og styrke vores brand og arbejde med kampagner?",
   "req": null,
-  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184463&DepartmentId=21987&MediaId=5",
   "enrichedBy": "regler",
-  "id": "x63d77aa5ca60",
+  "id": "xf20e518721bf",
   "live": true
  },
  {
@@ -1177,6 +1257,31 @@
   "live": true
  },
  {
+  "title": "Det Kongelige Teaters udviklingsafdeling søger en praktikant til forårssemestret 2027",
+  "co": "Børn og Udvikling, Det Kongelige Teater og Kapel",
+  "city": "Det Kongelige Teater",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T13:53:46+00:00",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du kandidatstuderende med interesse for kultur, samarbejde, organisationsudvikling og projektledelse?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172279&DepartmentId=19283&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xdb38d759cb84",
+  "live": true
+ },
+ {
   "title": "Drømmer du om en praktikplads i krydsfeltet mellem politik og praksis?",
   "co": "Statslige arbejdsgivere",
   "city": "Valby",
@@ -1257,6 +1362,34 @@
   "live": true
  },
  {
+  "title": "Finansministeriets departement søger studentermedhjælper til employer branding og organisationsudvikling",
+  "co": "Finansministeriets departement",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T13:54:20+00:00",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Har du mod på faglige udfordringer og stort ansvar? Vi søger en ny studentermedhjælper med god sans for struktur, et skarpt blik for detaljer og interesse for organisationsudvikling.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172295&DepartmentId=18978&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x30db673ff08d",
+  "live": true
+ },
+ {
   "title": "Ingeniørpraktikant til geoteknik og fundering",
   "co": "Befæstelser, Bygværker og Geoteknik",
   "city": "Skanderborg",
@@ -1279,33 +1412,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170265&DepartmentId=19793&MediaId=5",
   "enrichedBy": "regler",
   "id": "x0178caa004af",
-  "live": true
- },
- {
-  "title": "Jurastuderende til Justitsministeriets departement",
-  "co": "Justitsministeriets departement",
-  "city": "Justitsministeriets departement",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "legal"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-08T13:54:02+00:00",
-  "deadlineAt": "2026-11-02T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vi tilbyder dig et studierelevant job i et spændende og stærkt fagligt miljø, hvor kvaliteten af arbejdet vægtes højt, og hvor der er fokus på din udvikling. Du vil blive tilknyttet et af departementets kontorer.",
-  "req": "jura",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170763&DepartmentId=19001&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xcc5716f68a4c",
   "live": true
  },
  {
@@ -1722,6 +1828,34 @@
   "live": true
  },
  {
+  "title": "Stud.jur. til Retten i Aarhus",
+  "co": "Retten i Aarhus",
+  "city": "Retten i Aarhus",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "hr",
+   "legal"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T10:39:06+00:00",
+  "deadlineAt": "2026-11-20T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Arbejdsområde: Som studentermedhjælper i Strafferetssekretariatet vil du komme til at arbejde med spændende opgaver indenfor det strafferetlige område.",
+  "req": "jura",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172284&DepartmentId=19266&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x96b265464883",
+  "live": true
+ },
+ {
   "title": "Student til Grønt Politisk Center (GPC) i Finansministeriet",
   "co": "Finansministeriets departement",
   "city": "København K",
@@ -1939,6 +2073,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper med skarp pen til Trafikstyrelsens kommunikationsteam",
+  "co": "Trafikstyrelsen",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Sociale medier"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T10:46:51+00:00",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Og vil du prøve kræfter med alt fra intern kommunikation og LinkedIn til interviews og kommunikationskampagner? Så er du måske vores nye studentermedhjælper i Trafikstyrelsen.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172231&DepartmentId=19131&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xc974d40fa377",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til afdeling for skatteøkonomisk kriminalitet",
   "co": "Skattestyrelsen",
   "city": "Nordsjælland",
@@ -2075,6 +2236,32 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til idrætsundervisning",
+  "co": "Danmarks Fængsler - Fængselskreds Øst",
+  "city": "Region Hovedstaden",
+  "region": "kbh",
+  "hMin": 5,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T11:04:41+00:00",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vær med til at gøre en forskel Vil du være med til at styrke det kriminalitetsforebyggende arbejde i Danmarks fængsler og bruge idræt som et aktivt redskab i den indsats?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172164&DepartmentId=19151&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xf0180074a988",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til juridisk afdeling i Vejdirektoratet",
   "co": "Vejsektor og myndighed",
   "city": "København",
@@ -2153,6 +2340,31 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172118&DepartmentId=19145&MediaId=5",
   "enrichedBy": "regler",
   "id": "x6aea37a77c48",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til undervisning og børneaktiviteter på Det Kgl. Bibliotek",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T12:36:03+00:00",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Så er du måske vores nye kollega. Det Kgl. Bibliotek er hele Danmarks bibliotek med unikke samlinger af kulturarv.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170011&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x18dc0e1ce010",
   "live": true
  },
  {
@@ -2494,31 +2706,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til rådgivning og salg",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "salesops",
-  "sec": [
-   "social"
-  ],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-r%C3%A5dgivning-og-salg/1452951533/",
-  "enrichedBy": "regler",
-  "id": "x7cd5ddee9cbb",
-  "live": true
- },
- {
   "title": "Student assistant interested in turning data and insights into actions",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2604,6 +2791,31 @@
   "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
   "enrichedBy": "regler",
   "id": "xc7e71abcfd04",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til rådgivning og salg",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "salesops",
+  "sec": [
+   "social"
+  ],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Er du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-r%C3%A5dgivning-og-salg/1452951533/",
+  "enrichedBy": "regler",
+  "id": "x7cd5ddee9cbb",
   "live": true
  },
  {
@@ -2857,62 +3069,6 @@
   "live": true
  },
  {
-  "title": "ISS søger Studentermedhjælper til Strategisk Finans hos ISS Danmark",
-  "co": "ISS",
-  "city": "København, DK",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "strategy",
-  "sec": [
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Service",
-  "postedAt": "2026-10-23T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "november 2026 Er du analytisk, ambitiøs og nysgerrig på, hvordan finansielle modeller, - og analyser understøtter beslutninger i en stor organisation?",
-  "req": null,
-  "url": "https://jobs.issworld.com/job/K%C3%B8benhavn-ISS-s%C3%B8ger-Studentermedhj%C3%A6lper-til-Strategisk-Finans-hos-ISS-Danmark/1375659657/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "regler",
-  "id": "x01bc3600ba9b",
-  "live": true
- },
- {
-  "title": "ISS søger Studentermedhjælper til Strategisk Finans hos ISS Danmark",
-  "co": "ISS",
-  "city": "Søborg",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "strategy",
-  "sec": [
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Service",
-  "postedAt": "2026-10-23T00:00:00+00:00",
-  "deadlineAt": "2026-11-10T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "november 2026 Er du analytisk, ambitiøs og nysgerrig på, hvordan finansielle modeller, - og analyser understøtter beslutninger i en stor organisation?",
-  "req": null,
-  "url": "https://jobs.issworld.com/job/K%C3%B8benhavn-ISS-s%C3%B8ger-Studentermedhj%C3%A6lper-til-Strategisk-Finans-hos-ISS-Danmark/1375659657/",
-  "enrichedBy": "regler",
-  "id": "xf86cae02c5e8",
-  "live": true
- },
- {
   "title": "Studentermedhjælper",
   "co": "HK",
   "city": "HK Forbundet",
@@ -2931,13 +3087,36 @@
   ],
   "industry": "Interesseorganisation",
   "postedAt": "2026-10-30T10:55:52+00:00",
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "deadlineAt": null,
   "src": "Virksomhedens rekrutteringssystem",
   "blurb": "Jobbet Som vores nye student vil du primært skulle behandle ansøgninger til både den kommunale og regionale kompetencefond.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=318&ProjectId=180161&DepartmentId=10000&MediaId=5",
   "enrichedBy": "regler",
   "id": "x3386707a08b7",
+  "live": true
+ },
+ {
+  "title": "Praktikant med interesse for udviklingen af byens udsatte boligområder",
+  "co": "Aarhus Kommune",
+  "city": "Rådhuset, Rådhuspladsen 2, 8000 Aarhus C",
+  "region": "oj",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "social",
+  "sec": [],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T14:24:46+00:00",
+  "deadlineAt": "2026-11-17T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Om jobbet: I Bydelsudvikling og Boliger i Magistraten for Sociale Forhold og Beskæftigelse søger vi en praktikant til forårssemestret fra 1. februar til 30. juni 2027. Vores kontor arbejder tæt sammen med andre…",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144784&DepartmentId=22139&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x8a134d662b3e",
   "live": true
  },
  {
@@ -3110,31 +3289,32 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til belysning",
-  "co": "Frederiksberg Kommune",
-  "city": "Frederiksberg",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
+  "title": "Botilbuddet Sonjavej søger faste vikarer og studiejobber på 5-10 timer pr. uge",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 5,
+  "hMax": 10,
   "danish": "required",
-  "fam": "product",
+  "fam": "health",
   "sec": [
-   "engineering",
-   "education"
+   "operations",
+   "finance"
   ],
   "famConf": "text",
   "skills": [
+   "Løn",
    "R"
   ],
   "industry": "Offentlig",
   "postedAt": null,
   "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "blurb": "uge Vil du gøre en forskel for beboere med forskellige udviklingshandicaps? Kan du arbejde indenfor det pædagogiske og sundhedsfaglige felt, har du blik for det enkelte menneske og har du samtidig hjertet med?",
   "req": null,
-  "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-belysning/1su2ap",
+  "url": "https://aalborg.career.emply.com/ad/botilbuddet-sonjavej-soger-faste-vikarer-og-studiejobber-pa-5-10-timer-pr-uge/i43lij",
   "enrichedBy": "regler",
-  "id": "x885c92b4081d",
+  "id": "x8f92890c828e",
   "live": true
  },
  {
@@ -3163,6 +3343,34 @@
   "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-gronne-events-kommunikation-og-koordinering/dvdqw0",
   "enrichedBy": "regler",
   "id": "x4bfabffdb220",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til belysning",
+  "co": "Frederiksberg Kommune",
+  "city": "Frederiksberg",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "product",
+  "sec": [
+   "engineering",
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "req": null,
+  "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-belysning/1su2ap",
+  "enrichedBy": "regler",
+  "id": "x885c92b4081d",
   "live": true
  },
  {
@@ -3381,6 +3589,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
+  "co": "Politiet",
+  "city": "Glostrup, DK, 2600",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Løn",
+   "Python"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-02T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
+  "req": null,
+  "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "regler",
+  "id": "x6df006caf8b3",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælpere til økonomistyring i Rigspolitiet",
   "co": "Politiet",
   "city": "København",
@@ -3436,6 +3671,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Personalejura",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Har du lyst til at udvikle dig i et stærkt fagligt miljø, hvor du får mulighed for at anvende dine teoretiske kundskaber i praksis? Så er det måske dig, vi leder efter.",
+  "req": null,
+  "url": "https://job.politi.dk/job/K%C3%B8benhavn-V-Studentermedhj%C3%A6lper-til-Personalejura-1567/1372910655/",
+  "enrichedBy": "regler",
+  "id": "xd859fcddd725",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælpere søges til afdelingen for personfarlig kriminalitet ved efterforskningsenheden",
   "co": "Politiet",
   "city": "København",
@@ -3463,30 +3725,30 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Personalejura",
+  "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
   "co": "Politiet",
   "city": "København",
   "region": "kbh",
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "legal",
-  "sec": [
-   "public"
-  ],
+  "fam": "finance",
+  "sec": [],
   "famConf": "title",
   "skills": [
-   "Løn"
+   "Excel",
+   "Løn",
+   "Python"
   ],
   "industry": "Offentlig",
   "postedAt": null,
   "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Har du lyst til at udvikle dig i et stærkt fagligt miljø, hvor du får mulighed for at anvende dine teoretiske kundskaber i praksis? Så er det måske dig, vi leder efter.",
+  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
   "req": null,
-  "url": "https://job.politi.dk/job/K%C3%B8benhavn-V-Studentermedhj%C3%A6lper-til-Personalejura-1567/1372910655/",
+  "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/",
   "enrichedBy": "regler",
-  "id": "xd859fcddd725",
+  "id": "xe7192bf4b738",
   "live": true
  },
  {
@@ -3535,7 +3797,7 @@
   ],
   "industry": "Uddannelse og forskning",
   "postedAt": "2026-10-06T09:55:08+00:00",
-  "deadlineAt": "2026-11-02T12:00:00+00:00",
+  "deadlineAt": "2026-11-16T12:00:00+00:00",
   "src": "Virksomhedens rekrutteringssystem",
   "blurb": "Job description Do you enjoy your studies and want to share your experience with prospective students?",
   "req": null,
@@ -3842,6 +4104,35 @@
   "live": true
  },
  {
+  "title": "AI Assistant (Student Assistant) to R&D at Coloplast",
+  "co": "Coloplast",
+  "city": "Humlebæk, DK",
+  "region": "nsj",
+  "hMin": 10,
+  "hMax": 20,
+  "danish": "no",
+  "fam": "datasci",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Power BI",
+   "SQL",
+   "Python",
+   "JavaScript",
+   "R"
+  ],
+  "industry": "Medicinsk udstyr",
+  "postedAt": "2026-10-08T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "req": null,
+  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "regler",
+  "id": "x19d66191a496",
+  "live": true
+ },
+ {
   "title": "Chemical Assistant (Student Assistant) to R&D at Coloplast",
   "co": "Coloplast",
   "city": "Humlebæk, DK",
@@ -3872,7 +4163,7 @@
  {
   "title": "AI Assistant (Student Assistant) to R&D at Coloplast",
   "co": "Coloplast",
-  "city": "Humlebæk, DK",
+  "city": "Humlebæk",
   "region": "nsj",
   "hMin": 10,
   "hMax": 20,
@@ -3893,9 +4184,9 @@
   "src": "Virksomhedens karriereside",
   "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
   "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/",
   "enrichedBy": "regler",
-  "id": "x19d66191a496",
+  "id": "x65a799821b8b",
   "live": true
  },
  {
@@ -3953,35 +4244,6 @@
   "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/",
   "enrichedBy": "regler",
   "id": "x1c98e23744ca",
-  "live": true
- },
- {
-  "title": "AI Assistant (Student Assistant) to R&D at Coloplast",
-  "co": "Coloplast",
-  "city": "Humlebæk",
-  "region": "nsj",
-  "hMin": 10,
-  "hMax": 20,
-  "danish": "no",
-  "fam": "datasci",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Power BI",
-   "SQL",
-   "Python",
-   "JavaScript",
-   "R"
-  ],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-08T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/",
-  "enrichedBy": "regler",
-  "id": "x65a799821b8b",
   "live": true
  },
  {
@@ -4121,6 +4383,61 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3319&ProjectId=143971&DepartmentId=18999&MediaId=5",
   "enrichedBy": "regler",
   "id": "x44d904edd1c6",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælp til fritidspasordningen",
+  "co": "Glostrup Kommune",
+  "city": "Glostrup",
+  "region": "kbh",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Log ind Min profil Min profil Studentermedhjælp til fritidspasordningen Vil du være med til at åbne døren til gode fritidsfællesskaber for børn og unge i Glostrup? Et fritidsfællesskab kan betyde meget.",
+  "req": null,
+  "url": "https://glostrup.career.emply.com/ad/studentermedhjaelp-til-fritidspasordningen/5ya82v",
+  "enrichedBy": "regler",
+  "id": "xf2865fee9ae4",
+  "live": true
+ },
+ {
+  "title": "Studerende/ufaglærte til Nattevagtsteamet",
+  "co": "Haderslev Kommune",
+  "city": "Haderslev",
+  "region": "sjy",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "health",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Jobagent Log ind Min profil Min profil Studerende/ufaglærte til Nattevagtsteamet Har du sabbatår eller er du studerende og har du lyst til at arbejde med pleje for borgere i eget hjem eller på center? Så se her.",
+  "req": null,
+  "url": "https://haderslev.career.emply.com/ad/studerende-ufaglaerte-til-nattevagtsteamet/aw4fkr",
+  "enrichedBy": "regler",
+  "id": "x5c89c9f2f18f",
   "live": true
  },
  {
@@ -4303,6 +4620,31 @@
   "url": "https://karriere.danskespil.dk/jobs/8582927-senior-intern-kommunikationsraadgiver",
   "enrichedBy": "regler",
   "id": "x31da9bab7147",
+  "live": true
+ },
+ {
+  "title": "Student Event: Inside Accenture - Ask Us Anything",
+  "co": "Accenture A/S Company",
+  "city": "Copenhagen, Danmark",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Rådgivning",
+  "postedAt": "2026-11-02T00:00:00+00:00",
+  "deadlineAt": "2026-11-18T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Are you curious about what it's really like to work as a consultant? Interested in digital transformation, technology, business, and solving complex challenges for leading organizations?",
+  "req": null,
+  "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Copenhagen/Student-Event--Inside-Accenture---Ask-Us-Anything_R00368651",
+  "enrichedBy": "regler",
+  "id": "x9f9ffa557c24",
   "live": true
  },
  {

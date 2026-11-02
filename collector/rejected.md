@@ -38,6 +38,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
 | Aalborg Kommune | Ansvarsfulde og engagerende pædagoger søges til Botilbuddet Studievej 15 i Nørresundby | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
+| Københavns Professionshøjskole | Studiementorer til ergoterapeutuddannelsen | ikke et studiejob |
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
