@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-02 18:25 UTC
+# Jobindsamling 2026-11-02 19:32 UTC
 
-178 studiejob gemt. AI-kald i denne kørsel: 0.
+175 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -43,7 +43,7 @@
 | Vestas | rmk | 3 | 2 |  |
 | Energinet | hrmanager | 35 | 1 |  |
 | Norlys | sitemap | 2 | 2 |  |
-| Andel | hrmanager | 7 | 0 |  |
+| Andel | hrmanager | 8 | 0 |  |
 | HOFOR | hrmanager | 19 | 1 |  |
 | Carlsberg | rmk | 1 | 0 |  |
 | Danish Crown | rmk | 1 | 0 |  |
@@ -66,7 +66,7 @@
 | Gjensidige | rmk | 1 | 0 |  |
 | LB Forsikring | emply | 0 | 0 | 10 opslag på joblisten, 0 ligner studiejob |
 | KPMG Danmark | hrmanager | 14 | 0 |  |
-| BDO Danmark | emply | 4 | 4 | 29 opslag på joblisten, 4 ligner studiejob |
+| BDO Danmark | emply | 1 | 1 | 18 opslag på joblisten, 1 ligner studiejob |
 | twoday | teamtailor | 11 | 0 |  |
 | Columbus | teamtailor | 95 | 0 |  |
 | Templafy | teamtailor | 4 | 0 |  |
@@ -96,7 +96,7 @@
 | Statslige arbejdsgivere | hrmanager | 74 | 2 |  |
 | VIA University College | emply | 3 | 2 | 32 opslag på joblisten, 3 ligner studiejob |
 | UCN | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
-| Erhvervsakademi København | emply | 1 | 1 | 6 opslag på joblisten, 1 ligner studiejob |
+| Erhvervsakademi København | emply | 1 | 1 | 11 opslag på joblisten, 1 ligner studiejob |
 | Dansk Røde Kors | emply | 0 | 0 | ingen jobliste fundet |
 | Mellemfolkeligt Samvirke | hrmanager | 0 | 0 | fejl: HTTPError |
 | Kræftens Bekæmpelse | hrmanager | 7 | 1 |  |
@@ -110,7 +110,7 @@
 | Ballerup Kommune | emply | 2 | 2 | 48 opslag på joblisten, 2 ligner studiejob |
 | Novo Nordisk Fonden | workable | 2 | 1 |  |
 | Albertslund Kommune | emply | 0 | 0 | 22 opslag på joblisten, 0 ligner studiejob |
-| Billund Kommune | hrmanager | 26 | 0 |  |
+| Billund Kommune | hrmanager | 0 | 0 | fejl: ConnectionError |
 | Faxe Kommune | hrmanager | 25 | 0 |  |
 | Fredericia Kommune | emply | 0 | 0 | 33 opslag på joblisten, 0 ligner studiejob |
 | Frederikshavn Kommune | emply | 0 | 0 | 42 opslag på joblisten, 0 ligner studiejob |
