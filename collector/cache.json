@@ -2639,5 +2639,34 @@
   "blurb": "Du bliver en del af et mindre team med to fastansatte, hvor du bliver vores tredje kollega.",
   "deadlineAt": null,
   "enrichedBy": "regler"
+ },
+ "ca34590a64fc30efa4654c2dc1a961827d6ef135": {
+  "fam": "operations",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Du vil som praktikant indgå i et mindre men tætarbejdende og velfungerende team. Læs mere nedenfor.",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "7ff49ab91352f900ed38fa8f4c86a760cc80edbb": {
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du interesseret i myndighedsarbejde? Har du et godt overblik og en systematisk tilgang til opgaveløsningen? Så er du måske vores nye studentermedhjælper!",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
  }
 }

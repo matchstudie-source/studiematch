@@ -35,6 +35,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | Lunar | International Payment Specialist | ikke et studiejob |
 | Alka | Trygg-Hansa söker student som vill arbeta extra som HR-administratör! | ikke et studiejob |
+| Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |

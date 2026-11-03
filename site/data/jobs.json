@@ -1473,6 +1473,31 @@
   "live": true
  },
  {
+  "title": "Kunsthal Charlottenborg søger praktikant i foråret 2027",
+  "co": "Det Kongelige Danske Kunstakademi Billedkunstskolerne",
+  "city": "Kunsthal Charlottenborg",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-03T15:42:37+00:00",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du vil som praktikant indgå i et mindre men tætarbejdende og velfungerende team. Læs mere nedenfor.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172453&DepartmentId=19823&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x21d7f081a835",
+  "live": true
+ },
+ {
   "title": "Medarbejdere med IT-erfaring til kontor for Økonomi, HR og Intern Service i Styrelsen for Samfundssikkerhed",
   "co": "Styrelsen for Samfundssikkerhed",
   "city": "Birkerød",
@@ -2015,6 +2040,34 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171536&DepartmentId=18972&MediaId=5",
   "enrichedBy": "regler",
   "id": "x041593cb92c6",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælp til forseglingsopgaver i FødevareSyd",
+  "co": "Fødevarestyrelsen",
+  "city": "Fødevarestyrelsen",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "public"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-03T16:12:33+00:00",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du interesseret i myndighedsarbejde? Har du et godt overblik og en systematisk tilgang til opgaveløsningen? Så er du måske vores nye studentermedhjælper!",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170456&DepartmentId=19122&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xfdb1fdbc2585",
   "live": true
  },
  {
@@ -2864,6 +2917,115 @@
   "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-r%C3%A5dgivning-og-salg/1452951533/",
   "enrichedBy": "regler",
   "id": "x7cd5ddee9cbb",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
+  "enrichedBy": "regler",
+  "id": "x91d9b736c8c3",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
+  "enrichedBy": "regler",
+  "id": "x7cb33429ddad",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
   "live": true
  },
  {
@@ -4098,35 +4260,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145633&DepartmentId=18959&MediaId=5",
   "enrichedBy": "regler",
   "id": "x95a6233546c7",
-  "live": true
- },
- {
-  "title": "Student Assistant to PMO, R&D Innovation Portfolio Management",
-  "co": "Coloplast",
-  "city": "Humlebæk, DK",
-  "region": "nsj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "pmo",
-  "sec": [
-   "customer"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "R"
-  ],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-08T02:01:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Looking to gain business knowledge and experience while you are still studying? Are you ambitious, dedicated and have a flair for data, automation and IT?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Student-Assistant-to-PMO%2C-R&D-Innovation-Portfolio-Management/1435297933/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "regler",
-  "id": "x9b8dad5d76ce",
   "live": true
  },
  {
