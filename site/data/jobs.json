@@ -703,31 +703,6 @@
   "live": true
  },
  {
-  "title": "Studerende til juridiske opgaver",
-  "co": "Region Syddanmark",
-  "city": "Vejle",
-  "region": "tre",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "legal",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Sundhed og region",
-  "postedAt": "2026-10-12T08:59:48+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Studerende til juridiske opgaver Er du jurastuderende og brænder du for sundhedsområdet og forvaltningsret?",
-  "req": "jura",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237453&DepartmentId=5563&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x44f0bcf2b5dc",
-  "live": true
- },
- {
   "title": "Student Assistant - Clinical Data Insights & Transformation",
   "co": "Novo Nordisk",
   "city": "Søborg, Capital Region of Denmark, DK",
@@ -1501,33 +1476,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171345&DepartmentId=19147&MediaId=5",
   "enrichedBy": "regler",
   "id": "x63df743f15d2",
-  "live": true
- },
- {
-  "title": "Plan- og Landdistriktsstyrelsen søger stud.jur. til Team Byudvikling og Plantilsyn",
-  "co": "Plan- og Landdistriktsstyrelsen",
-  "city": "Carsten Niebuhrs Gade 43, 1577 København V",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "legal"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Dokumentation"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T11:11:42+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du have indblik i arbejdet med samfundsrelevante opgaver gennem konkret sagsbehandling på et politisk aktuelt område? Plan- og Landdistriktsstyrelsen søger en stud.jur. til Team Byudvikling og Plantilsyn.",
-  "req": "jura",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171313&DepartmentId=19274&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x56b8629c6cc7",
   "live": true
  },
  {
@@ -2535,37 +2483,6 @@
   "live": true
  },
  {
-  "title": "Vil du bidrage til at skabe en mere bæredygtig fødevareproduktion og samtidig få indblik i arbejdet i en statslig styrelse? Bliv student hos os!",
-  "co": "Fødevarestyrelsen",
-  "city": "Fødevarestyrelsen",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "operations",
-   "product"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Løn",
-   "Statistik",
-   "Dokumentation"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-19T16:43:19+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du have relevant joberfaring og en unik mulighed for at arbejde helt tæt på beslutningerne og beslutningstagerne i en stor statslig styrelse? Så kan du være vores nye student i Fødevarestyrelsen.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169891&DepartmentId=19122&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x8d26916d0782",
-  "live": true
- },
- {
   "title": "Økonomi- og Indenrigsministeriet søger to praktikanter til Center for Demokrati til forårssemesteret 2027",
   "co": "Økonomi- og Indenrigsministeriets departement",
   "city": "København K",
@@ -2873,6 +2790,89 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
+  "enrichedBy": "regler",
+  "id": "x7cb33429ddad",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true
+ },
+ {
   "title": "Unsolicited intern applications",
   "co": "NIRAS",
   "city": "Allerød",
@@ -2945,29 +2945,6 @@
   "live": true
  },
  {
-  "title": "Digital praktikant til ekstern kommunikation hos Sweco",
-  "co": "Sweco Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Ingeniørrådgivning",
-  "postedAt": "2026-09-23T14:48:58+00:00",
-  "deadlineAt": "2026-11-02T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": ".... 2026-09-23T12:24:16 140949",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=87&ProjectId=183711&DepartmentId=2127&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x9c1d65e85000",
-  "live": true
- },
- {
   "title": "Sommerstudent",
   "co": "Per Aarsleff",
   "city": "Aarhus",
@@ -2984,7 +2961,7 @@
   "skills": [],
   "industry": "Byggeri",
   "postedAt": "2026-11-02T15:50:06+00:00",
-  "deadlineAt": "2027-03-31T23:59:59+00:00",
+  "deadlineAt": "2027-01-22T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
   "blurb": "Sommerstudent Er du ingeniørstudent og ønsker en spennende sommerjobb – tett på prosjekt, produksjon og fagmiljø?",
   "req": null,
@@ -3147,34 +3124,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144661&DepartmentId=22761&MediaId=5",
   "enrichedBy": "regler",
   "id": "x3f053d2292b8",
-  "live": true
- },
- {
-  "title": "Studiejob som fast afløser ved Bofællesskaber, Bostøtte og Værested",
-  "co": "Aalborg Kommune",
-  "city": "Aalborg",
-  "region": "nj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "finance",
-   "health"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Bemærk: Ansættelsen er fast og forudsætter, at du er aktivt indskrevet ved en uddannelsesinstitution.",
-  "req": null,
-  "url": "https://aalborg.career.emply.com/ad/studiejob-som-fast-afloser-ved-bofaellesskaber-bostotte-og-vaerested/hy6x66",
-  "enrichedBy": "regler",
-  "id": "xc7d7908ffe24",
   "live": true
  },
  {
@@ -4494,33 +4443,6 @@
   "url": "https://varde.career.emply.com/ad/praktik-og-opgaveskrivning-for-studerende-ved-universiteterne/ablgx7",
   "enrichedBy": "regler",
   "id": "xf99310ad50d8",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Marketing & Kommunikation hos Capio Privathospital",
-  "co": "Capio Danmark",
-  "city": "Hellerup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "health"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Sociale medier"
-  ],
-  "industry": "Sundhed",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Upload CV & Jobagent Dansk English Log ind Min profil Min profil Studentermedhjælper til Marketing & Kommunikation hos Capio Privathospital Har du flair for WordPress, et godt grafisk øje og lyst til…",
-  "req": null,
-  "url": "https://capio.career.emply.com/da/ad/studentermedhjaelper-til-marketing-kommunikation-hos-capio-privathospital/467cos",
-  "enrichedBy": "regler",
-  "id": "x6d9f6ec9cb71",
   "live": true
  },
  {

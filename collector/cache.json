@@ -1,1 +1,2474 @@
-{}
+{
+ "813e2d104b45fcc141d8f7cff933c798155fb2bb": {
+  "fam": "marketing",
+  "sec": [
+   "strategy",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Sociale medier"
+  ],
+  "blurb": "Vil du arbejde med politisk kommunikation og erhvervspolitik og være med til at sætte virksomhedernes vilkår på den lokale dagsorden?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "e26dcd218c59654e5365f02de116436fe79b3534": {
+  "fam": "datasci",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Projektkoordinering"
+  ],
+  "blurb": "Har du en naturlig interesse for teknologi og AI, og er du god til at forklare komplicerede emner, så andre faktisk kan forstå dem?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "06f1ba5e6f2bbd5719b19bf95934ef59bb293916": {
+  "fam": "supply",
+  "sec": [
+   "bizdev",
+   "marketing"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Internship at DI’s Office in India – Spring 2027 Do you want to support Danish companies with hands-on business development activities, and boost Danish companies’ engagement in India?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b008bf9cc3a1681dfb108edcfcdc7fbf68ebb110": {
+  "fam": "procurement",
+  "sec": [
+   "operations",
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "blurb": "Do you study International Shipping & Trade at Copenhagen Business School, and are you looking for an internship where you can set direction and create valuable impact?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "c2d2b2c29d8d4a714e4e0c77f5bc3d38600dea65": {
+  "fam": "logistics",
+  "sec": [
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "blurb": "Do you study International Shipping & Trade at Copenhagen Business School, and are you looking for an internship where you can set direction and create valuable impact?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "3e7fac9a721bdf05f2da202b1867321f6c225058": {
+  "fam": "procurement",
+  "sec": [
+   "operations",
+   "sustain"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "blurb": "Do you study International Shipping & Trade at Copenhagen Business School, and are you looking for an internship where you can set direction and create valuable impact?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "278cb824a89dd59f3218db741f92d37b04311494": {
+  "fam": "engineering",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Drømmer du om en karriere til søs, som Skibsførerstuderende om bord på Ro-Ro Fragt eller Passager skibe, så er en karriere i DFDS måske noget for dig. Be part of the movement and play your part! NB!",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "2239908263a1415c2c48b98acbc82b1f6e4046f3": {
+  "fam": "engineering",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Drømmer du om en karriere til søs, som maskinmesterstuderende om bord på Ro-Ro Fragt eller Passager skibe, så er en karriere i DFDS måske noget for dig. Be part of the movement and play your part! NB!",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "c84d79ac1818574b0a71b895f6cbd1795a663593": {
+  "fam": "engineering",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Drømmer du om en karriere til søs, som Dual Skibsofficer om bord på Ro-Ro Fragt eller Passager skibe, så er en karriere i DFDS måske noget for dig. Be part of the movement and play your part! NB!",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "84b80b27aa53375f253ef76e94bf35338b8c0926": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Figma"
+  ],
+  "blurb": "Marketing Student Assistant Are you studying marketing, communications or business and looking for a student job where you can build hands-on marketing experience and see how it all comes together in practice?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "01e885e444d72798c7ed285e3eae37bd8ce46ad2": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Figma",
+   "Sociale medier"
+  ],
+  "blurb": "Du bliver en del af et lille, dynamisk team på to personer med tilknyttede eksterne samarbejdspartnere. Dine opgaver Du bliver en fast del af marketingteamet og kommer tæt på hele vores markedsføring.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "9675fefb07cf50b2a48e9d17d1ac46eea936a094": {
+  "fam": "strategy",
+  "sec": [
+   "marketing",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Rekruttering"
+  ],
+  "blurb": "Drømmer du om et udfordrende studiejob, hvor du kan udvikle dig både fagligt og personligt og omsætte teori til praksis? Og er du nysgerrig, ambitiøs og struktureret?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "9bf638354dc07a2a58637be0108af94199bab033": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Hos Colosseum Tandlægerne ønsker vi at tage ansvar for at være med til at uddanne fremtidens tandplejere. Derfor tilbyder vi løbende praktikforløb på vores klinikker rundt om i landet.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "0c9bd4d8d2ba97588196806b41e1d213486dae15": {
+  "fam": "logistics",
+  "sec": [
+   "bi",
+   "datasci"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "If you've ever watched a match and wondered who else saw what you saw, you already know why this matters. We're looking for people who want to build that future with us.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "ee55aeb73957d342ef0bcf5a70afb6816f9be309": {
+  "fam": "health",
+  "sec": [
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Vi bruger cookies Vi bruger cookies og andre tracking teknologier for at forbedre din oplevelse på vores website, til at vise personaliseret indhold, målrettede annoncer og til at forstå hvor vores besøgende kommer fra.…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "ff15d47d00e57b15d053f54e335670ce9c600b9a": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Kunne du tænke dig at være en del af en afdeling, som har en central rolle på akutsygehuset, stor ambulant aktivitet, blik for at god uddannelse gør hele forskellen for fremtidens sundhedsvæsen og ikke mindst 70…",
+  "deadlineAt": "2026-11-19T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "0627b95bc1171dcd30cba549a01b14ca01d53512": {
+  "fam": "health",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du sygeplejestuderende og vil du have et fagligt relevant studiejob? Ønsker du at forberede fremtidige ansættelsesmuligheder? Så bliv en del af Vagtordningen Region Syddanmark.",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "abb72f6d376aa19e8eac21f405f3153a7f08d051": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Har du erfaring som SPV, og har du lyst til at bruge dine kompetencer i et fast team, hvor du gør en forskel for borgere med erhvervet hjerneskade? Vagtordningen søger ca.",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "77792ccc7c720b5db60608cdc16e28f792d7027b": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 12,
+  "hMax": 12,
+  "skills": [
+   "Løn",
+   "Statistik",
+   "Stata"
+  ],
+  "blurb": "Som studentermedhjælper ved afdelingen kommer du til at arbejde med data.",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "8cbf3f202312c7bfe43c261c35274d83b8fb1ad4": {
+  "fam": "education",
+  "sec": [
+   "operations",
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "Python"
+  ],
+  "blurb": "Location: Søborg Your impact begins here As a Student Assistant in Clinical Data Insights & Transformation, you will help turn clinical data into insights that support decision-making in clinical development.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "cfaa9df83e8ffcf44285aae08b4d2219797920c8": {
+  "fam": "research",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Are you passionate about data and innovation?",
+  "deadlineAt": "2026-11-07T00:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "73e23bcfc776ce8dc36279cd6272d311ffae7708": {
+  "fam": "bi",
+  "sec": [
+   "supply",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "SQL",
+   "Python"
+  ],
+  "blurb": "Are you curious about how data and analytics can shape the future of global supply chains? Join Global Supply Chain Data & Analytics and get hands-on experience turning complex supply chain data into insights and action.",
+  "deadlineAt": "2026-11-16T00:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "ef10618797944c179e3df08b1efb921de19f9944": {
+  "fam": "supply",
+  "sec": [
+   "datasci"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [],
+  "blurb": "Are you excited about the potential of AI to transform the way we work, collaborate, and solve business challenges?",
+  "deadlineAt": "2026-11-16T00:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "28adb47a238ac4a4c5fa1851b310ac7af97e7198": {
+  "fam": "customer",
+  "sec": [],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "We are looking for a Student Assistant who would like to join a dedicated team and gain hands-on experience in customer service, administrative tasks, and marketing.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "35a1b32d98383047cb6b515eab3d864353c5472c": {
+  "fam": "customer",
+  "sec": [],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "We are looking for a Student Assistant who would like to join a dedicated team and gain hands-on experience in customer service, administrative tasks, and marketing.",
+  "deadlineAt": "2026-11-13T23:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "964ffe3292ef0e7ba52fa3860834f7c045e214a4": {
+  "fam": "operations",
+  "sec": [
+   "product"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "Dokumentation"
+  ],
+  "blurb": "Vil du have et studiejob ca. 8 timer om ugen, der er relevant for din akademiske uddannelse og som er fleksibelt? Er du initiativrig, struktureret og ivrig for at lære nyt?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "8fd76c0a16338cbfed3cddaca17b92d3ca55b7fa": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Are you ready to kickstart your career in a global, purpose-driven company? Can you see yourself building a professional career within Finance? Then we have just the opportunity for you.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "bc67331727f2ef8d8acb53d3c803301900e826e1": {
+  "fam": "procurement",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Are you ready to kickstart your career in a global, purpose-driven company? Can you see yourself embarking on a professional career in Procurement? Then we have just the opportunity for you.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "05e36653be870dfd8068b11b4d24e6af4eb01bae": {
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Power BI",
+   "SQL",
+   "JavaScript"
+  ],
+  "blurb": "Er du studerende, har du teknisk flair, og synes du, det er spændende at gøre data nemme at forstå og bruge?",
+  "deadlineAt": "2026-11-20T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "b081f14ba4fdecfc46c4ddaceb255929ba457b45": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel"
+  ],
+  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
+  "deadlineAt": "2026-11-08T23:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "c6873131f10f6a3b56f67785ea352310c0f7d9cb": {
+  "fam": "sustain",
+  "sec": [],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "SQL",
+   "Python"
+  ],
+  "blurb": "december 2026 og frem Vil du arbejde i krydsfeltet mellem data, software, bæredygtighed og forretning? Og motiveres du af at omsætte komplekse data til løsninger, der kan bruges i praksis?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "207fcd1c64190b4eaa6ef68ae05ba5eb22040559": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Vil du være med til at sætte retningen for HOFORs interne kommunikationsindsatser og styrke vores brand og arbejde med kampagner?",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "121e398575e066cfc953f3b5d3463be223336945": {
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.) Har du interesse…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "04bd2480ff7827c98635e8ae7c811c84f87a0986": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Statistik",
+   "Dataanalyse"
+  ],
+  "blurb": "Vil du bruge dine faglige kompetencer på aktuelle problemstillinger inden for skole og uddannelse?",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "e26f89f265ab935536cc98f3e3ff574bc4a638ca": {
+  "fam": "supply",
+  "sec": [
+   "salesops",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Dokumentation"
+  ],
+  "blurb": "Er du aktiv studerende på en videregående uddannelse, og er du servicemindet og passioneret omkring film, så kunne et job i Cinematekets butik- og billetsalg være noget for dig. Om jobbet Jobbet består bl.a.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "083b3573ce4946d85bb54a91a4e06835a06d0abe": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Copywriting",
+   "Sociale medier"
+  ],
+  "blurb": "Drømmer du om at arbejde med kommunikation og markedsføring i en kreativ kulturinstitution? Og er du studerende ved en videregående uddannelse og måske endda vild med film? Så skal du søge praktik i Cinemateket!",
+  "deadlineAt": "2026-11-05T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "5c358860eaaa4b2aedc206d545440f68b443a66e": {
+  "fam": "marketing",
+  "sec": [
+   "pmo"
+  ],
+  "danish": "required",
+  "hMin": 25,
+  "hMax": 37,
+  "skills": [],
+  "blurb": "Er du studerende, kulturinteresseret, kompetent kommunikerende og klar til at gøre dig professionelle erfaringer med marketing og kulturkommunikation i et inspirerende og sjovt arbejdsmiljø?",
+  "deadlineAt": "2026-11-10T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "e146a2d78adef24aaefc173105edafce18b1cfa1": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du i fuld gang med en relevant uddannelse og har lyst til at arbejde i landets største kulturorganisation, vil vi glæde os til at læse din ansøgning. Se hvordan du ansøger nederst.",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "3dedd2ef6ec056e6962190d5ea08642961a222dc": {
+  "fam": "bi",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "SQL",
+   "PowerPoint"
+  ],
+  "blurb": "Om jobbet Afdelingen består af 11 medarbejdere, og du vil blive en del af et mindre analyseteam, som arbejder med at indsamle, strukturere, analysere og formidle data, så de skaber værdi for organisationen.",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "54c0e3442dfabcf1433e2ad05e9578850da075f5": {
+  "fam": "operations",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Er du kandidatstuderende med interesse for kultur, samarbejde, organisationsudvikling og projektledelse?",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "8b08cde6db465317e990822910c78c92533db741": {
+  "fam": "strategy",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Rekruttering"
+  ],
+  "blurb": "Vil du arbejde med at styrke integration og beskæftigelse for flygtninge og fordrevne? Vil du også bidrage til at styrke danskuddannelse for voksne udlændinge?",
+  "deadlineAt": "2026-11-23T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "07cdedd07343a7a8fa70aadd3c05730cae4d5dc6": {
+  "fam": "social",
+  "sec": [
+   "operations",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Forhandling"
+  ],
+  "blurb": "Du kommer til at arbejde tæt sammen med direktøren og de tre afdelingsledere og får en central rolle i at holde styr på en række af organisationens tværgående processer og forpligtelser.",
+  "deadlineAt": "2026-11-19T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "2207618b546fba50904a1243d2de595981964641": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Har du lyst til at arbejde i maskinrummet bag finansloven og komme helt tæt på centrale regeringsprocesser? Og har du lyst til at blive en del af et ambitiøst kontor med høj faglighed og et stærkt fællesskab?",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "ca7172b8776d1afbbd291b2aeb7334eceb80ece2": {
+  "fam": "public",
+  "sec": [
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "blurb": "Har du mod på faglige udfordringer og stort ansvar? Vi søger en ny studentermedhjælper med god sans for struktur, et skarpt blik for detaljer og interesse for organisationsudvikling.",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "a9626892d7646dfa2904cc685dc67304fc071aa2": {
+  "fam": "engineering",
+  "sec": [],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Vil du gerne kickstarte din karriere indenfor geoteknik, og vil du lære, hvordan geotekniske undersøgelser og rådgivning planlægges og gennemføres på nogle af Danmarks største vejprojekter?",
+  "deadlineAt": "2026-11-29T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "e9e9d8d06656033793cdd4838cce549d1c7470af": {
+  "fam": "public",
+  "sec": [
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Udvikl dig juridisk og personligt i et ministerium med en samfundsmæssig vigtig opgave.",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "b6216e1ceb5966bd201f85c8fa7aa52294e3b257": {
+  "fam": "public",
+  "sec": [
+   "finance",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du dokumenteret IT-erfaring? Ønsker du at være med til et spændende opbygningsarbejde, hvor målet er en ny faglig IT-enhed?",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "3d882936cc96e56285271b027a47ea57fa6fcd9f": {
+  "fam": "bi",
+  "sec": [
+   "public",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Løn",
+   "Power BI",
+   "SQL",
+   "Python",
+   "R"
+  ],
+  "blurb": "Er du i gang med en videregående samfundsvidenskabelig uddannelse? Har du analytisk tæft, og er du skarp med tal? Har du høje kvalitetsstandarder og blik for både helhed og detaljen?",
+  "deadlineAt": "2026-11-05T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "5e2a7d668a0b5659f896e3039b79679a5456975b": {
+  "fam": "legal",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Vil du have indblik i udbudsretlige problemstillinger og prøve kræfter med at være intern rådgiver og sparringpartner? Har du kendskab til eller interesse for udbud, entrepriseret og kontrakter generelt?",
+  "deadlineAt": "2026-11-08T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "eef59549c8ed6b783f1119b71633a266aef659e6": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 30,
+  "skills": [
+   "Løn",
+   "Sociale medier"
+  ],
+  "blurb": "Er du studerende med en interesse for kommunikation, kultur og brugerinddragelse?",
+  "deadlineAt": "2026-11-10T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "63a52f18d84454bb02d66338d5f927317c14860b": {
+  "fam": "public",
+  "sec": [
+   "hr",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Rekruttering",
+   "Sociale medier"
+  ],
+  "blurb": "Brænder du for integration, ligestilling og menneskerettigheder – og vil du prøve, hvordan du kan anvende dine færdigheder inden for et komplekst og meget samfundsrelevant felt?",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "e38153ac2f93b0f94f2f991b7d21ced65a70f359": {
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [],
+  "blurb": "Hos os bliver du en del af et refusions- eller regnskabsteam, hvor du arbejder sammen med erfarne kolleger om opgaver for statslige institutioner.",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "cc80f8c7c29b4fe196678eb83eefc63a1f6a89fb": {
+  "fam": "health",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [
+   "Dataanalyse"
+  ],
+  "blurb": "Har du lyst til at se, hvordan Sundhedsstyrelsen arbejder indefra, og er du klar til at bruge fem måneder på at omsætte din viden fra studiet og få praktisk erfaring?",
+  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "05d1d9fa8f3d6b2b17d181b27fda46b201eba064": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Afdelingen for Publikum og Arrangementer på Det Kgl. Bibliotek i Den Sorte Diamant søger to praktikanter, der har lyst til at prøve kræfter med nogle af de mange opgaver, som findes i forbindelse med undervisning og…",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "c6bd34af3a43981fdb9c3316a0885b914543afcc": {
+  "fam": "pmo",
+  "sec": [
+   "finance",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du flair for at arrangere og koordinere events og arrangementer? Har du overblik, sans for detaljen og er du en stærk koordinator? Og er du af natur en, der brænder for at få andre til at lykkes?",
+  "deadlineAt": "2026-11-06T12:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "ca40e9c465af3c6f0747f27a8a6f799063841635": {
+  "fam": "customer",
+  "sec": [],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Løn",
+   "Python",
+   "Kundeservice"
+  ],
+  "blurb": "Er du udadvendt, serviceorienteret og kan levere god kundeservice? Så søger vi dig til at medvirke til varetagelsen af kundeservice hos Danmarks Meteorologiske Institut.",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "46e90337568814a222b4f71a0e96614bc5aaa0ea": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Interesserer du dig for, hvordan kunst og kultur kan spille en rolle på den internationale scene?",
+  "deadlineAt": "2026-11-20T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "513db7a56c4f5d53dfc222f029cfd425f8d91300": {
+  "fam": "legal",
+  "sec": [
+   "public",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du godt i gang med dit studie, og har du lyst til at prøve kræfter med forskellige juridiske opgaver i en styrelse med internationalt udsyn? Så er du måske vores nye studentermedhjælper i Regulering og Efterkontrol.",
+  "deadlineAt": "2026-11-20T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "bf32246b6d4ac923723204b43096780d1a4065b7": {
+  "fam": "public",
+  "sec": [
+   "legal",
+   "sustain"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Kunne du tænke dig at arbejde tæt på politiske aftaler og beslutninger, i et kontor der udmønter tilskudsmidler, sikrer understøttelse af et bæredygtigt fiskeri og har politisk bevågenhed?",
+  "deadlineAt": "2026-11-08T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "bbfb1c5db2dd52ac3c7bd536d2db59a5abe8a357": {
+  "fam": "operations",
+  "sec": [
+   "hr",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Arbejdsområde: Som studentermedhjælper i Strafferetssekretariatet vil du komme til at arbejde med spændende opgaver indenfor det strafferetlige område.",
+  "deadlineAt": "2026-11-20T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "c0c86de202a1a159bdef83f728961e47a31a9f8b": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Interesserer du dig for at arbejde med klima-, energi-, miljø- og landbrugspolitik?",
+  "deadlineAt": "2026-11-08T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "8dffcfff10a416805ecf28880ffd72ed79984fe8": {
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "procurement"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Interesserer du dig for informationssikkerhed og persondatabeskyttelse? Er du struktureret, systematisk og analytisk stærk? Så er studenterstillingen i Koncernstyring noget for dig.",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "c6d018f990e6e7dbd3f839c1df09d2d934223edd": {
+  "fam": "public",
+  "sec": [
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Løn",
+   "PowerPoint",
+   "Rekruttering"
+  ],
+  "blurb": "Er du serviceminded, struktureret og nysgerrig på, hvordan en offentlig styrelse arbejder på et politisk område med stor bevågenhed?",
+  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "91736bf109b54caf613cc5649e0b3eda11a7e864": {
+  "fam": "strategy",
+  "sec": [
+   "pmo",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Det er her, du kommer ind i billedet!",
+  "deadlineAt": "2026-11-11T12:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "837ef4a8488b07b33f1562ab68a0da59c92c7354": {
+  "fam": "finance",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du studerende på en juridisk eller revisions-/regnskabsmæssig uddannelse eller på uddannelsen som professionsbachelor i skat, og har du interesse for selskabskatteret?",
+  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "4d1fd087884feecb64cecd5c467fbd6e855d1af8": {
+  "fam": "public",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du lyst til at afprøve dine akademiske og juridiske evner i praksis, og drømmer du om et studiejob, hvor du får ansvar, udfordringer og mulighed for at bruge din uddannelse?",
+  "deadlineAt": "2026-11-09T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "bfad334733e4b6df83921e3a369275c68d6c00c8": {
+  "fam": "legal",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Studentermedhjælper (stud.jur.) til Østre Landsret Vil du have praktisk erfaring med domstolenes arbejde, mens du læser jura? Østre Landsret søger en engageret og grundig studentermedhjælper (stud.jur.) .",
+  "deadlineAt": "2026-11-16T12:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "65cd2400261d6c3b7fe18d673774c2b104cb961a": {
+  "fam": "public",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 19,
+  "hMax": 19,
+  "skills": [],
+  "blurb": "Studentermedhjælpere skal være aktivt studerende og indskrevet ved en højere læreanstalt. Der lægges desuden vægt på gode sprogkundskaber (dansk samt engelsk, fransk eller spansk). Arbejdssproget er dansk.",
+  "deadlineAt": "2050-01-01T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "82678c24a7a80b807b5bf8c95d04f53aaec86124": {
+  "fam": "sustain",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 5,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du studerende og interesseret i miljø, myndighedsarbejde og regulering?",
+  "deadlineAt": "2026-11-15T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "e3cd0cf63a27515b7abc8084fc41ce7b234ed0be": {
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Sociale medier"
+  ],
+  "blurb": "Og vil du prøve kræfter med alt fra intern kommunikation og LinkedIn til interviews og kommunikationskampagner? Så er du måske vores nye studentermedhjælper i Trafikstyrelsen.",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "dc47deaf54baf096745de5657e980485eea8e13d": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Kan du arbejde selvstændigt og struktureret med stort fokus på detaljerne? Så er det måske dig, vi leder efter.",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "46f1e00af454bec913e6d22e0070f078a5f6c859": {
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Vil du arbejde tæt på politiske processer, direktion og ledelse i en af Danmarks største statslige organisationer?",
+  "deadlineAt": "2026-11-17T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "e5258297fb3300d0d79f92cb8d301db270e3e34c": {
+  "fam": "strategy",
+  "sec": [
+   "legal",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Nu har du chancen for at få en hverdag i CPR-systemets maskinrum.",
+  "deadlineAt": "2026-11-18T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "0a15af423b2423ac3f2cb49b0507204054e9f854": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du studerende og vil du have et studiejob med ansvar, hvor du får indblik i myndighedsarbejde og bidrager til opgaver med betydning for import og kontrol af varer?",
+  "deadlineAt": "2026-11-13T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "e306cdb5a0ffba71416b60ca13be32a1c85294ee": {
+  "fam": "sustain",
+  "sec": [
+   "research",
+   "health"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Vil du bidrage til forskning, der skal skabe sunde og sikre arbejdspladser? Har du interesse for kvalitative og kvantitative metoder, og arbejder du grundigt og selvstændigt?",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "7363db6b0fe9d5b6e583dc6603d91961b6070dcb": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 5,
+  "hMax": 10,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Vær med til at gøre en forskel Vil du være med til at styrke det kriminalitetsforebyggende arbejde i Danmarks fængsler og bruge idræt som et aktivt redskab i den indsats?",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "a17bfa95bef1eb53d653ff88ee6db7c50534d64f": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Rekruttering"
+  ],
+  "blurb": "Er du jurastuderende og klar på at bruge din viden i praksis? Vil du prøve kræfter med alt fra klagesager til aktindsigt og samtidig få gode kollegaer og ansvar fra dag ét? Så er det måske dig, vi leder efter!",
+  "deadlineAt": "2026-11-29T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "cbf7e56b50768d69d55ec7c555d866b5299db612": {
+  "fam": "finance",
+  "sec": [
+   "public",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 19,
+  "hMax": 19,
+  "skills": [],
+  "blurb": "Studentermedhjælpere skal være aktivt studerende og indskrevet ved en højere læreanstalt.",
+  "deadlineAt": "2050-01-01T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "7bfc313b5962d00d14f9ac796052f6669a9ab007": {
+  "fam": "public",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Kan du lide at have mange bolde i luften? Har du flair for at kunne løse administrative opgaver, og vil du have erfaring med aktindsigt efter forvaltningsloven, borger- og virksomhedskontakt samt koordinering?",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "a5fe3bc52ed4e2786ca8011eb743c27f0f9c98b7": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Dokumentation"
+  ],
+  "blurb": "Så er du måske vores nye kollega. Det Kgl. Bibliotek er hele Danmarks bibliotek med unikke samlinger af kulturarv.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "8e774c7402e192f6e9e3ae646e44d2e03c6f7b21": {
+  "fam": "social",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Vil du bidrage til at fremme trivsel hos studerende ved videregående uddannelser? Er du psykolog eller socialrådgiver med en terapeutisk efteruddannelse?",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "8a082e205a467568179975dd93ae912ba6f2a1fd": {
+  "fam": "finance",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Regnskab",
+   "Løn",
+   "Rekruttering"
+  ],
+  "blurb": "Har du interesse for regnskab, tilskud og økonomistyring i en offentlig kontekst? Og er du hurtig til at mestre nye systemer?",
+  "deadlineAt": "2026-11-11T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "0f9e5e2a9f890f2282e87b820d0e43393fab026e": {
+  "fam": "operations",
+  "sec": [
+   "hr",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Rekruttering"
+  ],
+  "blurb": "Vil du styrke dine juridiske kompetencer og komme tæt på de politiske processer, der former indsatsen for at hjælpe ledige i arbejde? Så er det måske dig, vi leder efter.",
+  "deadlineAt": "2026-11-05T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "4159fed7e92989373afc56bbb0152ec13630b22e": {
+  "fam": "public",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Regnskab"
+  ],
+  "blurb": "Vidste du, at dine kompetencer indenfor fx revision, regnskab, finansiering, ejendomshandel, erhvervsjura, administration, kommunikation, IT samt privat-, samfunds- og erhvervsøkonomi kan bringes i spil i en…",
+  "deadlineAt": "2026-12-18T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "841a4a24c82694e1e5fd5c066e589cf10387a204": {
+  "fam": "public",
+  "sec": [
+   "finance",
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "PowerPoint"
+  ],
+  "blurb": "Kan du kommunikere klart og fængende i alt fra en intranetnyhed til et SoMe-opslag?",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "08d8621bf8aca29f9c47608f8b5e30455f2c7dc4": {
+  "fam": "public",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 7,
+  "hMax": 7,
+  "skills": [],
+  "blurb": "Drømmer du om at arbejde med demokrati, valg eller lokaldemokrati i kommuner og regioner i et departement tæt på det politiske miljø og samtidig prøve kræfter med din uddannelse i praksis?",
+  "deadlineAt": "2026-11-12T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "b3d5250515cf0a8693fc720e2c1296c2c1ac9735": {
+  "fam": "finance",
+  "sec": [
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Regnskab",
+   "Løn",
+   "Forhandling"
+  ],
+  "blurb": "Du får en central rolle i vores arbejde med budget, regnskab og økonomiopfølgning.",
+  "deadlineAt": "2026-11-19T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "c73ab41b7d6b6f5e0e4c1cab90e348218b998d00": {
+  "fam": "salesops",
+  "sec": [
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Er du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "731ac53f60a79751a2519bb6aac707ebc388cb36": {
+  "fam": "operations",
+  "sec": [
+   "datasci",
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Python",
+   "PowerPoint"
+  ],
+  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "5270bb52ad385e7d1e051ce76c22889c26496a84": {
+  "fam": "operations",
+  "sec": [
+   "datasci",
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Python",
+   "PowerPoint"
+  ],
+  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "0eb373b210156267afd8f3693f813ad9ab3fee01": {
+  "fam": "operations",
+  "sec": [
+   "pmo",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "354c7b11faea8c9dabf5010cc1cd754f8567b0ac": {
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Kundeservice"
+  ],
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "d997fefc17bc565164862024ecc07d4e4663527f": {
+  "fam": "operations",
+  "sec": [
+   "datasci",
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Python",
+   "PowerPoint"
+  ],
+  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "91e1d829ecdc05d66b943229093a68aed0e73c25": {
+  "fam": "operations",
+  "sec": [
+   "datasci",
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Python",
+   "PowerPoint"
+  ],
+  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b7efd9991889968c6d504d022707b18fe22006f6": {
+  "fam": "operations",
+  "sec": [
+   "pmo",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "PowerPoint"
+  ],
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "6c833d7854f455de989195785e5b97ea6fafbda8": {
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Kundeservice"
+  ],
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "bf6325874dab4a607b23beb9585674302430242a": {
+  "fam": "salesops",
+  "sec": [
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Er du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "d8b264b97d59786484b06028b86ad95fda33258a": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "d9882dab9379f44fdbbd96cb55ea98044b26a3df": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "a14fa2817e13848e3c06cbb53f85a09540e804ef": {
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "95a0a1641402e0ebf30f229028ab3e709f17ad57": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "7dfbf9df7959dcc11fe6496bc50185aa472a0c31": {
+  "fam": "hr",
+  "sec": [
+   "pmo",
+   "sustain"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Unsolicited Applications as an Intern at NIRAS Are you an ambitious student dreaming of gaining practical experience in an international company that works with innovative and sustainable solutions?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "64a116ac632e19bf2cb1c83a51c1433d696fbc73": {
+  "fam": "operations",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "2023-02-23T15:05:27 140166",
+  "deadlineAt": "2029-01-31T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "0ba0f567ddd44945b09b79e06a6083a33de2af31": {
+  "fam": "engineering",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "2023-02-23T14:28:06 140164",
+  "deadlineAt": "2026-12-31T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "abc82ba0cc6f99ecf606284a7cff491f845f4132": {
+  "fam": "education",
+  "sec": [
+   "procurement",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Sommerstudent Er du ingeniørstudent og ønsker en spennende sommerjobb – tett på prosjekt, produksjon og fagmiljø?",
+  "deadlineAt": "2027-01-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "c5d6939b886e09f8ab39edb678374dcc13fe019d": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Har du lyst til at arbejde med kommunikation i en virksomhed, der favner alt fra dokumentaren ’Alt for klubben’ til ’Genstart’ – og fra ’Ultra Nyt’ til ’P3 Guld’?",
+  "deadlineAt": "2026-11-15T23:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "47bbff26636d4a954bc7aa3c3c51537c46010a14": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Brænder du for databeskyttelse, AI og teleretlige emner? Vil du kombinere dine juridiske studier med praktisk erfaring i en dynamisk virksomhed – og samarbejde med kollegaer og stakeholders på tværs af organisationen?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "c4f92849008467625cf6f7982543e8b421bb90be": {
+  "fam": "health",
+  "sec": [
+   "public",
+   "pmo"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Jobbet Som vores nye student vil du primært skulle behandle ansøgninger til både den kommunale og regionale kompetencefond.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "f7ad07fa4b5ed087e7ac0e39707323cda37f9b00": {
+  "fam": "social",
+  "sec": [],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [],
+  "blurb": "Om jobbet: I Bydelsudvikling og Boliger i Magistraten for Sociale Forhold og Beskæftigelse søger vi en praktikant til forårssemestret fra 1. februar til 30. juni 2027. Vores kontor arbejder tæt sammen med andre…",
+  "deadlineAt": "2026-11-17T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "7130ac1ab248bc42552195ed38da260c1d15a4a3": {
+  "fam": "marketing",
+  "sec": [
+   "health",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Løn",
+   "Rekruttering",
+   "Sociale medier",
+   "Forhandling"
+  ],
+  "blurb": "Om jobbet: Drømmer du om et fleksibelt studiejob, hvor du får mulighed for at afprøve forskellige grene af kommunikationsfaget? Så er du måske vores nye studentermedhjælper.",
+  "deadlineAt": "2026-11-12T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "c617f4386617e07f08cb7a5c84831ce71e98fa9d": {
+  "fam": "sustain",
+  "sec": [
+   "public",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du f.eks. administrationsbachelorstuderende og på udkig efter et fagligt relevant studiejob i en stor offentlig forvaltning? Ønsker du at styrke dine kompetencer inden for bl.a.",
+  "deadlineAt": "2026-11-19T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "676e367d7e3a316e1d4981cc17a8c64f95bd5898": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 7,
+  "hMax": 14,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper søges til myndighedsopgaver i Team Vejforvaltningen Interesserer du dig for myndighedsarbejde, og brænder du for at kombinere din uddannelse med praktisk erfaring inden…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "66d72582e232663730c2d7c2c54044880faa37fd": {
+  "fam": "education",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Løn",
+   "R",
+   "Sociale medier"
+  ],
+  "blurb": "Log ind Min profil Min profil Studentermedhjælper med flair for SoMe søges til arbejdet med nikotinforebyggelse blandt børn og unge Er du skarp på sociale medier, og ved du, hvordan man kommunikerer til unge i øjenhøjde?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "89a16880d726cd6096783dcfcfecfa5debc204d8": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Er du pædagogstuderende?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "faae052affdcb1f1051065859c03b1565daec31b": {
+  "fam": "health",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 5,
+  "hMax": 10,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "uge Vil du gøre en forskel for beboere med forskellige udviklingshandicaps? Kan du arbejde indenfor det pædagogiske og sundhedsfaglige felt, har du blik for det enkelte menneske og har du samtidig hjertet med?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "3483b490736454a0768095819190366dbcbe8b1b": {
+  "fam": "marketing",
+  "sec": [
+   "strategy",
+   "sustain"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Sociale medier"
+  ],
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "92b3e3fb99e8cd29fc4f94b3bcbe73aca067c544": {
+  "fam": "product",
+  "sec": [
+   "engineering",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "cefb64b3b96089e5fc231f9ac1500d5dde09197d": {
+  "fam": "education",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "dbe0bb0b3d59ff79e0f45b1f020c23cc45beb13e": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 10,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "dbde84ad332e2fb8b109b2dca85172021419b6fc": {
+  "fam": "public",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Statistik",
+   "Sociale medier"
+  ],
+  "blurb": "Vælg hvilke cookies du vil sætte. Nødvendige Disse cookies er nødvendige for, at hjemmesiden fungerer korrekt, og de kan ikke deaktiveres. Fra Til Statistik Statistikken er anonym og uden persondata.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "8a19f808f2af794fe8c7bb6cc31354d88b8b326f": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du interesse og flair for strafferetten, og kunne du tænke dig et studenterjob, hvor du blandt andet arbejder med anmeldelser om digital kriminalitet?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "50a1f6a3f681bc14347cc2ec8b5834b1b5e688a2": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du lyst til at udvikle dig i et stærkt fagligt miljø, hvor du får mulighed for at anvende dine teoretiske kundskaber i praksis? Så er det måske dig, vi leder efter.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b386b23995123c4b768ef7b11768ffbb0f4ab46a": {
+  "fam": "research",
+  "sec": [
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Som studentermedhjælper får du et spændende og udviklende job på en dynamisk arbejdsplads med alsidige og udfordrende opgaver samt fokus på høj faglighed og kvalitet.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "3350986e60a793f4637dd4526f39879dedc7fb4a": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Løn"
+  ],
+  "blurb": "Har du lyst til at prøve kræfter med økonomistyring i en af landets mest spændende organisationer med stor samfundsmæssig betydning og offentlig bevågenhed?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "35a9759d95ff2b99d66cdc554edd543cd806e521": {
+  "fam": "strategy",
+  "sec": [
+   "finance",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Løn"
+  ],
+  "blurb": "Har du styr på Excel, blik for detaljerne og lyst til at arbejde med HR-data? Trives du med at skabe struktur, finde sammenhænge og sikre, at tallene stemmer?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "60cb37c25c7ed5cae69ca52722a3ee168533a2e0": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Løn",
+   "Python"
+  ],
+  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "9f4bc069f9aac40f76287d9c196ef54766c7983c": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Løn"
+  ],
+  "blurb": "Har du lyst til at prøve kræfter med økonomistyring i en af landets mest spændende organisationer med stor samfundsmæssig betydning og offentlig bevågenhed?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "63aef4e6857f439c4058b1163dc9e4bcf433c5ed": {
+  "fam": "strategy",
+  "sec": [
+   "finance",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Løn"
+  ],
+  "blurb": "Har du styr på Excel, blik for detaljerne og lyst til at arbejde med HR-data? Trives du med at skabe struktur, finde sammenhænge og sikre, at tallene stemmer?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "c8a6581a2f069a11857d7e209e7f5138c0fd3022": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du lyst til at udvikle dig i et stærkt fagligt miljø, hvor du får mulighed for at anvende dine teoretiske kundskaber i praksis? Så er det måske dig, vi leder efter.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b3c745c275c148219e2222af8e6d2b7bb9e1cef9": {
+  "fam": "research",
+  "sec": [
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Som studentermedhjælper får du et spændende og udviklende job på en dynamisk arbejdsplads med alsidige og udfordrende opgaver samt fokus på høj faglighed og kvalitet.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "7f0ce8c4483cfd4618fbfcea73b6b409482aac5b": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Løn",
+   "Python"
+  ],
+  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "bff5facc5dd2204a7f082f337a538b789ee273f1": {
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "supply"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "Dokumentation"
+  ],
+  "blurb": "Om stillingen Er du struktureret, nysgerrig og har lyst til at få erfaring med administration, koordinering og databehandling? Så er du måske vores nye studentermedhjælper.",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "f3dcff0c68e1cb9ba1c8edf33d464758580e7e0b": {
+  "fam": "datasci",
+  "sec": [],
+  "danish": "required",
+  "hMin": 7,
+  "hMax": 12,
+  "skills": [
+   "SAP"
+  ],
+  "blurb": "Job description Do you enjoy your studies and want to share your experience with prospective students?",
+  "deadlineAt": "2026-11-16T12:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "9b1ba626a414f95e0847ac564e8a24ed3a108a87": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 12,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Har du stærke sproglige færdigheder og sans for detaljer - og interesserer du dig for krydsfeltet mellem web og kommunikation?",
+  "deadlineAt": "2026-11-20T12:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "9a18c81e279f65e01a8a8d87fb7ca9cfc5eaf9f7": {
+  "fam": "education",
+  "sec": [
+   "health",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Login My profile My profile Timelærere og studenterundervisere med naturvidenskabelige kompetencer til sygeplejerskeuddannelsen Vil du være med til at uddanne fremtidens sygeplejersker?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "00ada16eb3d2adaef33739316f41b06abe61de4d": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 20,
+  "hMax": 30,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Login My profile My profile Studenterundervisere til ergoterapeutuddannelsen Brænder du for din profession? Har du lyst til at inspirere og motivere dine medstuderende og videregive din faglighed?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "46fe6be2e05cd99aaa32de7020bab6a555c4f3e1": {
+  "fam": "health",
+  "sec": [
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Login My profile My profile Studentermedhjælper til Forskning og Udvikling ved Institut for Sygeplejerske- og Ernæringsuddannelser Er du studerende, og vil du gerne arbejde med forskningsunderstøttelse og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "2d0e912643c4638e8fefc1f35c2a1e3fcd365868": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 10,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du jurastuderende og interesserer du dig for forvaltningsret, uddannelsesjura og juridisk sagsbe-handling?",
+  "deadlineAt": "2026-11-23T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "21cd601dc37f38aea00d24f8577827208422ed30": {
+  "fam": "pmo",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 20,
+  "hMax": 30,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Vil du være med til at undersøge, hvordan AI kan bruges ansvarligt og værdiskabende i en humanitær organisation?",
+  "deadlineAt": "2026-11-15T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "bf309d12e6d3b35879143619f095dd27d9a766dc": {
+  "fam": "public",
+  "sec": [
+   "operations",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation",
+   "Rekruttering"
+  ],
+  "blurb": "Ledige stillinger Persondatapolitik Log ind Min profil Min profil Studentermedhjælper til VIAs stabsafdeling (Direktionsstaben) Søger du et spændende studiejob i en stor offentlig organisation, hvor du kan udvikle både…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "2b208aca4f163ff380d727ee10a85cb5d084a4f1": {
+  "fam": "hr",
+  "sec": [
+   "education",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Excel",
+   "Løn",
+   "Rekruttering"
+  ],
+  "blurb": "Ledige stillinger Persondatapolitik Log ind Min profil Min profil Studentermedhjælper til HR, VIA University College Har du lyst til at blive en del af en HR-afdeling, hvor der er mulighed for at bringe dit studie i…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "2b5a1ab6b34dc1381544ccbb7be6998e91ba935d": {
+  "fam": "sustain",
+  "sec": [
+   "operations",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Sociale medier"
+  ],
+  "blurb": "Tilmeld dig JobAgent ledige stillinger Dansk English Log ind Min profil Min profil Labtrainee til nyt labmiljø i Nansensgade - studenterjob på Erhvervsakademi København Er du nysgerrig på teknologi, kreativ produktion…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "24b234a1df9eb6e0f770d8211abc765cc572cb51": {
+  "fam": "marketing",
+  "sec": [
+   "education",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [],
+  "blurb": "Har du lyst til at arbejde med forebyggelse?",
+  "deadlineAt": "2026-12-15T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "8a40c8450528f934d26154bd3015e481122335b4": {
+  "fam": "pmo",
+  "sec": [
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "R"
+  ],
+  "blurb": "Looking to gain business knowledge and experience while you are still studying? Are you ambitious, dedicated and have a flair for data, automation and IT?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "d5326461809688fea2f5be172969260cfb54dd47": {
+  "fam": "datasci",
+  "sec": [],
+  "danish": "no",
+  "hMin": 10,
+  "hMax": 20,
+  "skills": [
+   "Power BI",
+   "SQL",
+   "Python",
+   "JavaScript",
+   "R"
+  ],
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "a9c2a6909212a8fd493a5c09c6118ef25945cbf6": {
+  "fam": "customer",
+  "sec": [
+   "bizdev",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 20,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "f309945dad693fc01df30b20b3cdba74a547527c": {
+  "fam": "datasci",
+  "sec": [],
+  "danish": "no",
+  "hMin": 10,
+  "hMax": 20,
+  "skills": [
+   "Power BI",
+   "SQL",
+   "Python",
+   "JavaScript",
+   "R"
+  ],
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "6146fa0247030af6c0efaef9275af2b1cbe9404c": {
+  "fam": "pmo",
+  "sec": [
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "R"
+  ],
+  "blurb": "Looking to gain business knowledge and experience while you are still studying? Are you ambitious, dedicated and have a flair for data, automation and IT?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "2ac19f58d527c4e9b6d721b9e1b08edfaef3c881": {
+  "fam": "customer",
+  "sec": [
+   "bizdev",
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 20,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "afe19275cdc332de07c318e441ff6a71fa56b4b0": {
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "finance"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "blurb": "Are you interested in corporate treasury and motivated by combining financial analysis with practical execution?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "8aff01fabe38655e155bd666d83f4854df551f52": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Forhandling"
+  ],
+  "blurb": "januar 2027 Vi mangler dig, der brænder for at lave inspirerende undervisning i dansk i en 4. klasse og har viden om, eller erfaring med, arbejdet med Basis- og DSA-elever.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b176d2f7fe3d6e7720fedd3f49242c034ca417eb": {
+  "fam": "social",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation",
+   "Forhandling"
+  ],
+  "blurb": "Ledige jobs Mange muligheder Bliv elev Log ind Min profil Min profil To studentermedhjælpere til Center for Børne- og Ungerådgivning Vil du omsætte din socialfaglige viden til praksis og få erfaring med…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "294603ea07f8222eb764ac54268e7fdcf01025cd": {
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "hr"
+  ],
+  "danish": "no",
+  "hMin": 12,
+  "hMax": 15,
+  "skills": [
+   "PowerPoint"
+  ],
+  "blurb": "When applying, please indicate which position you are primarily interested in and briefly explain how your academic background and interests relate to that area.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "d829abfaff7cf3e4a519cd32c6c61816737a7553": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Har du lyst til at arbejde med ældre mennesker på et plejehjem, hvor vi samarbejder om bedst mulig trivsel sammen med beboerne?",
+  "deadlineAt": "2026-11-13T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "e326aa165e2c039d7eabf907be71373afb252d1b": {
+  "fam": "education",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Ledige stillinger Log ind Min profil Min profil Studentermedhjælp til fritidspasordningen Vil du være med til at åbne døren til gode fritidsfællesskaber for børn og unge i Glostrup? Et fritidsfællesskab kan betyde meget.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "1099c6b5fbdd3b16d7c77c1e84225f8aaea1d6e7": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Jobagent Log ind Min profil Min profil Studerende/ufaglærte til Nattevagtsteamet Har du sabbatår eller er du studerende og har du lyst til at arbejde med pleje for borgere i eget hjem eller på center? Så se her.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b2e56da0a21a1dc9690ddc215c779317403fa408": {
+  "fam": "health",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "blurb": "Plejecenter Solhjem søger medarbejdere Leder du efter et studiejob, et meningsfuldt arbejde i dit sabbatår eller søger du generelt et job, hvor du gør en reel forskel for andre mennesker?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "b3c2f96aef2d585f3812f20136f7b9157d2b9952": {
+  "fam": "finance",
+  "sec": [
+   "health"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Ledige stillinger Jobagent Log ind Min profil Min profil uddannet SOSU, ufaglært, efterlønner eller studerende Gør en forskel, når det passer dig: Bliv vikar på Centerparken Leder du efter et studiejob med mening?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "60bcfc46275a9896083554110feec4b8269bf030": {
+  "fam": "public",
+  "sec": [
+   "procurement",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Ledige stillinger Jobagent Log ind Min profil Min profil Praktik og opgaveskrivning for studerende ved universiteterne Som studerende på universitetet, administrationsbachelor mv., har du mulighed for et samarbejde med…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "d6becda9f1582990357c5cfec29a42feb1c7ad02": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "“Hej, jeg hedder Christine, og jeg er E-mail Marketing Lead i Magasin. Vi søger en engageret studiepraktikant til vores e-mailteam til vinter 2026, eller foråret 2027 . Vi søger dig som har lyst til at få hands-on…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "f13f632a60711220141cab98dab8893d3e3cbde3": {
+  "fam": "marketing",
+  "sec": [
+   "supply",
+   "pmo"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Brænder du for mode, styling og visuel kommunikation?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "1084b7deaf14a09afbb08eaeffb44f2d540c9e58": {
+  "fam": "marketing",
+  "sec": [
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Som vores nye interne senior kommunikationsrådgiver får du ansvaret for at gøre Danske Spils strategi, udvikling og ansvarlighed til kommunikation, der engagerer og skaber retning for dine omtrent 500 kolleger.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "75c8f30cf308668539aebd5f1596a8221f8218f7": {
+  "fam": "hr",
+  "sec": [
+   "strategy"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Are you curious about what it's really like to work as a consultant? Interested in digital transformation, technology, business, and solving complex challenges for leading organizations?",
+  "deadlineAt": "2026-11-18T00:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "7996884c5ac63df7d0ae307dbfeb983f6eab84e9": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Har du stærke kompetencer inden for AI og er du nysgerrig på, hvordan AI-baserede løsninger og anden legal tech kan skabe nye muligheder i advokatbranchen? Så er du måske en af vores nye AI-studentermedhjælpere!",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "9a3d341a9493331534e0cf1c92d9ffc248f95aa9": {
+  "fam": "legal",
+  "sec": [
+   "hr",
+   "customer"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Har du lyst til at opleve dagligdagen i advokatbranchen på vores kontor i Aarhus enten som jurist, studentermedhjælper, staben, office supporter, afdelingssupporter eller sekretær?",
+  "deadlineAt": "2050-01-01T23:59:59+00:00",
+  "enrichedBy": "regler"
+ }
+}

@@ -20,9 +20,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Novo Nordisk | PhD Student in Aptamer-Enabled, Animal-Free Bioanalysis | ikke et studiejob |
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
-| HOFOR | To maskinmestre til bachelorpraktik på Amagerværket | ikke et studiejob |
 | Statslige arbejdsgivere | Akademisk medarbejder til Energistyrelsens Kontor for Internationalt Affald og Klassificering | ikke et studiejob |
-| Statslige arbejdsgivere | Erfaren kontorchef til International Mobilitet i Uddannelses- og Forskningsstyrelsen | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Studielektor i repetition for sangere, akkompagnement for pianister og som akkompagnatør for sang og orkesterinstrumenter | ikke et studiejob |
