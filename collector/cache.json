@@ -2470,5 +2470,174 @@
   "blurb": "Har du lyst til at opleve dagligdagen i advokatbranchen på vores kontor i Aarhus enten som jurist, studentermedhjælper, staben, office supporter, afdelingssupporter eller sekretær?",
   "deadlineAt": "2050-01-01T23:59:59+00:00",
   "enrichedBy": "regler"
+ },
+ "b4212edfcfc4241a181bb94b6a9b8fa149c01fb9": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Er du jurastuderende, og har du lyst til at prøve kræfter med jura i praksis? Vil du have indblik i mange forskellige juridiske discipliner og samtidig få ansvar for konkrete opgaver? Så har vi måske studiejobbet til dig.",
+  "deadlineAt": "2026-11-13T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "868b413794984ef2ad2c5d640bcbfde645da83e0": {
+  "fam": "hr",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Rekruttering"
+  ],
+  "blurb": "Studentermedhjælper til kultur, ledelse og organisationsudvikling Silkeborg | Forventet opstart omkring februar 2027 Vil du være med til at styrke kultur, ledelse og organisationsudvikling i Norlys-koncernen?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "6639a2409ce9031c784d4e6edf5bc328443f4477": {
+  "fam": "pmo",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "e1192fd4b8325c158f6308d8c0185adc450a8425": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Som specialestuderende ved De Økonomiske Råds sekretariat vil du få mulighed for at have din daglige gang i et miljø med høj faglighed, hvor nysgerrigheden efter ny viden er stor Unik mulighed .",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "96a22d966c1f41337ce0d3fd0ce615cc82619c99": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Vil du være med til at sætte retning for god økonomistyring på tværs af staten? Og bliver du motiveret af en stejl læringskurve og et højt fagligt ambitionsniveau?",
+  "deadlineAt": "2026-11-17T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "b7bba766560a65aed6823deffaa3ff074278e6c5": {
+  "fam": "customer",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Sociale medier"
+  ],
+  "blurb": "Skab gode oplevelser og stærke fællesskaber for studerende hos HK Sydjylland: Er du service- og oplevelsesøkonom eller markedsføringsøkonom – og har du lyst til at omsætte din faglighed til praksis?",
+  "deadlineAt": "2027-01-29T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "81d5dcd16305e66a45d1ca7212f71084942d0676": {
+  "fam": "product",
+  "sec": [
+   "engineering",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "1d42c30c03d363c7136c746c8433a7329245f827": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 10,
+  "skills": [
+   "R"
+  ],
+  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "538b03a2d10c3a5393e16f344d897421a6087a22": {
+  "fam": "education",
+  "sec": [
+   "research",
+   "pmo"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Login My profile My profile Studentermedhjælper til forskningsprojekt: Børnehaver i bevægelse Er du nysgerrig på forskning, børns trivsel og betydningen af bevægelse i dagtilbud?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "477332189c4f81f7fe90a3f0ef271fe1f6aff25e": {
+  "fam": "operations",
+  "sec": [
+   "health",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Login My profile My profile Studentermedhjælper til Forretnings-IT Er du systematisk, digitalt nysgerrig og god til at føre opgaver videre?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "0b5ab31d186ef07eb373e0a141fada8f7e08710d": {
+  "fam": "research",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Er du laborantstuderende og på udkig efter en spændende praktikplads, hvor du kan få praktisk erfaring med laboratoriearbejde i et fagligt miljø?",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "0d102acc70e3111d7f54a324339c1304772b171b": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Du bliver en del af et mindre team med to fastansatte, hvor du bliver vores tredje kollega.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
  }
 }

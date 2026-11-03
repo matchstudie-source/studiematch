@@ -653,6 +653,32 @@
   "live": true
  },
  {
+  "title": "Jurastuderende søges som studentermedhjælp til Jura i FynBus",
+  "co": "Region Syddanmark",
+  "city": "Odense",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-11-03T13:04:26+00:00",
+  "deadlineAt": "2026-11-13T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du jurastuderende, og har du lyst til at prøve kræfter med jura i praksis? Vil du have indblik i mange forskellige juridiske discipliner og samtidig få ansvar for konkrete opgaver? Så har vi måske studiejobbet til dig.",
+  "req": "jura",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237781&DepartmentId=9131&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xd0e148a388ed",
+  "live": true
+ },
+ {
   "title": "Medicinstuderende søges til fast nattevagthold på Bjerggårdshaven",
   "co": "Region Syddanmark",
   "city": "Odense",
@@ -995,29 +1021,58 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Group ESG",
+  "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
   "region": "oj",
-  "hMin": 10,
+  "hMin": 15,
   "hMax": 15,
   "danish": "required",
-  "fam": "sustain",
+  "fam": "hr",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "Rekruttering"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Studentermedhjælper til kultur, ledelse og organisationsudvikling Silkeborg | Forventet opstart omkring februar 2027 Vil du være med til at styrke kultur, ledelse og organisationsudvikling i Norlys-koncernen?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
+  "enrichedBy": "regler",
+  "id": "x77933f416508",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
   "sec": [],
   "famConf": "title",
   "skills": [
-   "SQL",
-   "Python"
+   "Excel",
+   "Power BI",
+   "PowerPoint"
   ],
   "industry": "Energi",
-  "postedAt": "2026-10-13T00:00:00+00:00",
+  "postedAt": "2026-11-03T00:00:00+00:00",
   "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "december 2026 og frem Vil du arbejde i krydsfeltet mellem data, software, bæredygtighed og forretning? Og motiveres du af at omsætte komplekse data til løsninger, der kan bruges i praksis?",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
   "req": null,
-  "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Group-ESG-8600/1447253433/",
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
   "enrichedBy": "regler",
-  "id": "x9c8b1be5861f",
+  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1720,6 +1775,29 @@
   "live": true
  },
  {
+  "title": "Specialestuderende ved De Økonomiske Råds sekretariat",
+  "co": "De Økonomiske Råd",
+  "city": "Horsens",
+  "region": "oj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-03T09:34:23+00:00",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Som specialestuderende ved De Økonomiske Råds sekretariat vil du få mulighed for at have din daglige gang i et miljø med høj faglighed, hvor nysgerrigheden efter ny viden er stor Unik mulighed .",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172377&DepartmentId=19000&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xc775e1529469",
+  "live": true
+ },
+ {
   "title": "Strukturerede juridiske studentermedhjælpere",
   "co": "Toldstyrelsen",
   "city": "Østjylland",
@@ -1884,6 +1962,31 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170922&DepartmentId=19029&MediaId=5",
   "enrichedBy": "regler",
   "id": "xe2ce5ea43717",
+  "live": true
+ },
+ {
+  "title": "Studentermedarbejder til tværstatslig økonomistyring og implementering",
+  "co": "Økonomistyrelsen",
+  "city": "København K",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-03T15:22:28+00:00",
+  "deadlineAt": "2026-11-17T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at sætte retning for god økonomistyring på tværs af staten? Og bliver du motiveret af en stejl læringskurve og et højt fagligt ambitionsniveau?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171684&DepartmentId=18980&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x7d8691cd7865",
   "live": true
  },
  {
@@ -2764,115 +2867,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
-  "enrichedBy": "regler",
-  "id": "x91d9b736c8c3",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
-  "enrichedBy": "regler",
-  "id": "x7cb33429ddad",
-  "live": true
- },
- {
-  "title": "Financial Outsourcing Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "procurement",
-  "sec": [
-   "finance",
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Bogføring",
-   "Regnskab",
-   "Løn",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
-  "enrichedBy": "regler",
-  "id": "x5e77473a7a23",
-  "live": true
- },
- {
-  "title": "Audit & Assurance Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
-  "enrichedBy": "regler",
-  "id": "xca1a8d4ee87b",
-  "live": true
- },
- {
   "title": "Unsolicited intern applications",
   "co": "NIRAS",
   "city": "Allerød",
@@ -3014,6 +3008,32 @@
   "url": "https://careers.3.dk/jobs/8427379-juridisk-studentermedhjaelper-privacy-og-regulatory",
   "enrichedBy": "regler",
   "id": "x06c2b5f592dc",
+  "live": true
+ },
+ {
+  "title": "Markedsføringsøkonom- eller service- og oplevelsesøkonom-praktikant søges",
+  "co": "HK",
+  "city": "HK Sydjylland",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "customer",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Sociale medier"
+  ],
+  "industry": "Interesseorganisation",
+  "postedAt": "2026-11-03T11:06:47+00:00",
+  "deadlineAt": "2027-01-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Skab gode oplevelser og stærke fællesskaber for studerende hos HK Sydjylland: Er du service- og oplevelsesøkonom eller markedsføringsøkonom – og har du lyst til at omsætte din faglighed til praksis?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=318&ProjectId=180163&DepartmentId=20927&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xa2998b727a18",
   "live": true
  },
  {
@@ -3618,33 +3638,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælpere søges til afdelingen for personfarlig kriminalitet ved efterforskningsenheden",
-  "co": "Politiet",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "research",
-  "sec": [
-   "legal"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Som studentermedhjælper får du et spændende og udviklende job på en dynamisk arbejdsplads med alsidige og udfordrende opgaver samt fokus på høj faglighed og kvalitet.",
-  "req": null,
-  "url": "https://job.politi.dk/job/K%C3%B8benhavn-SV-Studentermedhj%C3%A6lpere-s%C3%B8ges-til-afdelingen-for-personfarlig-kriminalitet-ved-efterforskningsenheden-2450/1374699055/",
-  "enrichedBy": "regler",
-  "id": "xf3d568f638c9",
-  "live": true
- },
- {
   "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
   "co": "Politiet",
   "city": "København",
@@ -3669,6 +3662,33 @@
   "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/",
   "enrichedBy": "regler",
   "id": "xe7192bf4b738",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere søges til afdelingen for personfarlig kriminalitet ved efterforskningsenheden",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "research",
+  "sec": [
+   "legal"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Som studentermedhjælper får du et spændende og udviklende job på en dynamisk arbejdsplads med alsidige og udfordrende opgaver samt fokus på høj faglighed og kvalitet.",
+  "req": null,
+  "url": "https://job.politi.dk/job/K%C3%B8benhavn-SV-Studentermedhj%C3%A6lpere-s%C3%B8ges-til-afdelingen-for-personfarlig-kriminalitet-ved-efterforskningsenheden-2450/1374699055/",
+  "enrichedBy": "regler",
+  "id": "xf3d568f638c9",
   "live": true
  },
  {
@@ -3804,6 +3824,35 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til forskningsprojekt: Børnehaver i bevægelse",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "research",
+   "pmo"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Login My profile My profile Studentermedhjælper til forskningsprojekt: Børnehaver i bevægelse Er du nysgerrig på forskning, børns trivsel og betydningen af bevægelse i dagtilbud?",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forskningsprojekt-bornehaver-i-bevaegelse/h2e2le",
+  "enrichedBy": "regler",
+  "id": "x6c3a1ee3f8dd",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Forskning og Udvikling ved Institut for Sygeplejerske- og Ernæringsuddannelser",
   "co": "Københavns Professionshøjskole",
   "city": "København",
@@ -3828,6 +3877,59 @@
   "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forskning-og-udvikling-ved-institut-for-sygeplejerske-og/bka7i0",
   "enrichedBy": "regler",
   "id": "x951b965062ac",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Forretnings-IT",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "health",
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Login My profile My profile Studentermedhjælper til Forretnings-IT Er du systematisk, digitalt nysgerrig og god til at føre opgaver videre?",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forretnings-it/0tpjwp",
+  "enrichedBy": "regler",
+  "id": "x884fc96bfe5a",
+  "live": true
+ },
+ {
+  "title": "Laborantpraktikant til undervisning og forsknings- og innovationsopgaver",
+  "co": "Erhvervsakademi Aarhus",
+  "city": "Sønderhøj",
+  "region": "sj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "research",
+  "sec": [
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-11-03T12:10:00+00:00",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Er du laborantstuderende og på udkig efter en spændende praktikplads, hvor du kan få praktisk erfaring med laboratoriearbejde i et fagligt miljø?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194505&DepartmentId=8299&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x6cf95e65160d",
   "live": true
  },
  {
@@ -4028,6 +4130,34 @@
   "live": true
  },
  {
+  "title": "Chemical Assistant (Student Assistant) to R&D at Coloplast",
+  "co": "Coloplast",
+  "city": "Humlebæk, DK",
+  "region": "nsj",
+  "hMin": 10,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "customer",
+  "sec": [
+   "bizdev",
+   "strategy"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R"
+  ],
+  "industry": "Medicinsk udstyr",
+  "postedAt": "2026-10-08T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
+  "req": null,
+  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "regler",
+  "id": "x2e6d26c73cc8",
+  "live": true
+ },
+ {
   "title": "AI Assistant (Student Assistant) to R&D at Coloplast",
   "co": "Coloplast",
   "city": "Humlebæk, DK",
@@ -4059,7 +4189,7 @@
  {
   "title": "Chemical Assistant (Student Assistant) to R&D at Coloplast",
   "co": "Coloplast",
-  "city": "Humlebæk, DK",
+  "city": "Humlebæk",
   "region": "nsj",
   "hMin": 10,
   "hMax": 20,
@@ -4079,9 +4209,9 @@
   "src": "Virksomhedens karriereside",
   "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
   "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/",
   "enrichedBy": "regler",
-  "id": "x2e6d26c73cc8",
+  "id": "x1c98e23744ca",
   "live": true
  },
  {
@@ -4111,63 +4241,6 @@
   "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-AI-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445560733/",
   "enrichedBy": "regler",
   "id": "x65a799821b8b",
-  "live": true
- },
- {
-  "title": "Student Assistant to PMO, R&D Innovation Portfolio Management",
-  "co": "Coloplast",
-  "city": "Humlebæk",
-  "region": "nsj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "pmo",
-  "sec": [
-   "customer"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "R"
-  ],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-08T02:01:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Looking to gain business knowledge and experience while you are still studying? Are you ambitious, dedicated and have a flair for data, automation and IT?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Student-Assistant-to-PMO%2C-R&D-Innovation-Portfolio-Management/1435297933/",
-  "enrichedBy": "regler",
-  "id": "xe1be62911c34",
-  "live": true
- },
- {
-  "title": "Chemical Assistant (Student Assistant) to R&D at Coloplast",
-  "co": "Coloplast",
-  "city": "Humlebæk",
-  "region": "nsj",
-  "hMin": 10,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "customer",
-  "sec": [
-   "bizdev",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "R"
-  ],
-  "industry": "Medicinsk udstyr",
-  "postedAt": "2026-10-08T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?",
-  "req": null,
-  "url": "https://careers.coloplast.com/job/Humleb%C3%A6k-Chemical-Assistant-%28Student-Assistant%29-to-R&D-at-Coloplast/1445562033/",
-  "enrichedBy": "regler",
-  "id": "x1c98e23744ca",
   "live": true
  },
  {
@@ -4253,34 +4326,6 @@
   "url": "https://job.ballerup.dk/ad/to-studentermedhjaelpere-til-center-for-borne-og-ungeradgivning/ce9e7p",
   "enrichedBy": "regler",
   "id": "x307c4d7b15e9",
-  "live": true
- },
- {
-  "title": "2 Student Assistants for the Health Area",
-  "co": "Novo Nordisk Fonden",
-  "city": "Hellerup, Denmark",
-  "region": "kbh",
-  "hMin": 12,
-  "hMax": 15,
-  "danish": "no",
-  "fam": "operations",
-  "sec": [
-   "marketing",
-   "hr"
-  ],
-  "famConf": "text",
-  "skills": [
-   "PowerPoint"
-  ],
-  "industry": "Fonde",
-  "postedAt": "2026-10-22T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "When applying, please indicate which position you are primarily interested in and briefly explain how your academic background and interests relate to that area.",
-  "req": null,
-  "url": "https://apply.workable.com/j/CD404682DA",
-  "enrichedBy": "regler",
-  "id": "x746c730ca766",
   "live": true
  },
  {
@@ -4492,6 +4537,29 @@
   "url": "https://karriere.magasin.dk/jobs/6239725-modeinteresseret-studiepraktikant-til-creative",
   "enrichedBy": "regler",
   "id": "x8f839e9f8473",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til GDPR, compliance og informationssikkerhed",
+  "co": "Danske Spil",
+  "city": "Brøndby",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Underholdning",
+  "postedAt": "2026-11-03T09:21:36+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du bliver en del af et mindre team med to fastansatte, hvor du bliver vores tredje kollega.",
+  "req": null,
+  "url": "https://karriere.danskespil.dk/jobs/8656436-studentermedhjaelper-til-gdpr-compliance-og-informationssikkerhed",
+  "enrichedBy": "regler",
+  "id": "xb1571386d456",
   "live": true
  },
  {

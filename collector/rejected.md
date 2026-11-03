@@ -5,12 +5,17 @@ Bruges til at tjekke, om filteret er for strengt.
 | Arbejdsgiver | Titel | Årsag |
 | --- | --- | --- |
 | SEB | Corporate & Investment Banking Summer Internship 2027: Client Analyst / SEB, Helsinki | udlandet: Helsinki |
+| SEB | Finance Developer (Finanšu izstrādātājs(-a)) in General Ledger and Internal Accounting Team / SEB, Riga | ikke et studiejob |
+| SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Tallinn | ikke et studiejob |
+| SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Vilnius | udlandet: Vilnius |
+| SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in Trade Finance Operations Team / SEB Group, Vilnius | udlandet: Vilnius |
 | SEB | Wealth & Asset Management Internship 2027: Growth and Market Intelligence / SEB, Gothenburg | udlandet: Göteborg |
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | 2 introduktionsstillinger i Intern medicin; Kardiologi på Hjertesygdomme, Vejle Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
+| Region Syddanmark | Introduktionsstilling i Intern Medicin – Medicinsk Afdeling, Vejle Sygehus | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Sønderborg i specialerne endokrinologi, nefrologi, hæmatologi og lungemedicin | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Aabenraa i specialerne geriatri og gastroenterologi | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin på Svendborg Sygehus | ikke et studiejob |
@@ -21,6 +26,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | Statslige arbejdsgivere | Akademisk medarbejder til Energistyrelsens Kontor for Internationalt Affald og Klassificering | ikke et studiejob |
+| Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Studielektor i repetition for sangere, akkompagnement for pianister og som akkompagnatør for sang og orkesterinstrumenter | ikke et studiejob |
@@ -34,6 +40,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
 | Aalborg Kommune | Ansvarsfulde og engagerende pædagoger søges til Botilbuddet Studievej 15 i Nørresundby | ikke et studiejob |
+| Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studiementorer til ergoterapeutuddannelsen | ikke et studiejob |
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
