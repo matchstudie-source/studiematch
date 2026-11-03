@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-03 17:36 UTC
+# Jobindsamling 2026-11-03 18:26 UTC
 
-180 studiejob gemt. AI-kald i denne kørsel: 2.
+176 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -39,7 +39,7 @@
 | Demant | rmk | 3 | 2 |  |
 | GN Group | workday | 0 | 0 |  |
 | Bavarian Nordic | workday | 0 | 0 |  |
-| ALK | teamtailor | 18 | 1 |  |
+| ALK | teamtailor | 19 | 1 |  |
 | Vestas | rmk | 3 | 2 |  |
 | Energinet | hrmanager | 37 | 1 |  |
 | Norlys | sitemap | 3 | 3 |  |
@@ -58,7 +58,7 @@
 | Statslige arbejdsgivere | hrmanager | 470 | 58 |  |
 | Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 13 | 0 |  |
-| Pleo | ashby | 45 | 0 |  |
+| Pleo | ashby | 44 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
 | ATP | hrmanager | 23 | 0 |  |
 | PKA | hrmanager | 0 | 0 |  |
@@ -66,7 +66,7 @@
 | Gjensidige | rmk | 1 | 0 |  |
 | LB Forsikring | emply | 0 | 0 | 10 opslag på joblisten, 0 ligner studiejob |
 | KPMG Danmark | hrmanager | 14 | 0 |  |
-| BDO Danmark | emply | 4 | 4 | 29 opslag på joblisten, 4 ligner studiejob |
+| BDO Danmark | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | twoday | teamtailor | 11 | 0 |  |
 | Columbus | teamtailor | 95 | 0 |  |
 | Templafy | teamtailor | 4 | 0 |  |
@@ -135,7 +135,7 @@
 | Struer Kommune | emply | 0 | 0 | 17 opslag på joblisten, 0 ligner studiejob |
 | Syddjurs Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Tønder Kommune | emply | 0 | 0 | 28 opslag på joblisten, 0 ligner studiejob |
-| Varde Kommune | emply | 1 | 1 | 42 opslag på joblisten, 1 ligner studiejob |
+| Varde Kommune | emply | 1 | 1 | 43 opslag på joblisten, 1 ligner studiejob |
 | Tandlægen.dk | hrmanager | 12 | 0 |  |
 | Capio Danmark | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Aleris | hrmanager | 6 | 0 |  |
