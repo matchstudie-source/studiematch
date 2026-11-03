@@ -335,6 +335,7 @@ button.ctx:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .acct svg{width:18px;height:18px}
 .nudge{display:flex;gap:10px 16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--accent-soft);border-radius:16px;padding:12px 16px;font-size:14.5px}
 .nudge b{display:block}
+.src-icon{width:16px;height:16px;vertical-align:-3px;margin-right:6px;border-radius:50%}
 .mfb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:4px;font-size:14.5px}
 .mfb span{flex:1 1 200px;color:var(--fg);font-weight:600}
 .sponsored.direct{background:var(--accent-soft);color:var(--accent)}
@@ -996,6 +997,8 @@ const I = {
 /* ============ VISNINGER ============ */
 function logo(){ return `<button class="logo" data-act="home" aria-label="Studiematch forside"><span class="logo-mark">${I.mark}</span>Studiematch</button>`; }
 function levelLabel(l){ return l==="strong"?"Stærkt match":l==="good"?"Godt match":"Værd at se"; }
+/* Logoer fra jobportaler, vi samarbejder med (brugt med deres tilladelse) */
+const SRC_ICON = {"StuderendeOnline":"/img/studerendeonline.png"};
 function cardHTML(job, ev, opts){
   opts=opts||{}; const c=opts.ctx; const r=reasonsFor(job,ev,c); const fb=opts.demo?{}:(S.fb[job.id]||{});
   const open=!!UI.expanded[job.id]; const p=ctxOf(c).profile;
@@ -1023,7 +1026,7 @@ function cardHTML(job, ev, opts){
       ${r.pos.map(t=>`<li class="r-pos">${I.check}<span>${esc(t)}</span></li>`).join("")}
       ${r.neg.map(t=>`<li class="r-neg">${I.warn}<span>${esc(t)}</span></li>`).join("")}
     </ul>
-    <p class="src">${job.live?"Fundet via":"Kilde i den rigtige version:"} ${esc(job.src||"Virksomhedens karriereside")}</p>
+    <p class="src">${SRC_ICON[job.src]?`<img class="src-icon" src="${SRC_ICON[job.src]}" alt="" width="16" height="16">`:""}${job.live?"Fundet via":"Kilde i den rigtige version:"} ${esc(job.src||"Virksomhedens karriereside")}</p>
     ${open?whyPanel(job,ev,p):""}
     <div class="actions">
       <button class="icon-btn b-pass" ${da||`data-act="dismiss" data-id="${job.id}"`} aria-label="Ikke interesseret" title="Ikke interesseret">${I.x}</button>

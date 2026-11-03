@@ -2,7 +2,7 @@ name: Hent job
 
 on:
   schedule:
-    - cron: "17 4,13 * * *"   # to gange i døgnet (UTC), så det holder sig inden for de gratis minutter
+    - cron: "3 7,17 * * *"   # kl. 8 og 18 dansk vintertid (9 og 19 om sommeren), aftalt med StuderendeOnline
   workflow_dispatch: {}             # knap til at køre den manuelt under Actions
   push:                             # kører også, når læserne eller kildelisten ændres
     paths: ["collector/sources.py", "collector/enrich.py", "collector/collect.py", "collector/employers.csv", ".github/workflows/collect.yml"]

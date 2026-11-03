@@ -281,16 +281,25 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
     if not title or not is_student_job(title, text, raw.get("commitment", "")):
         return None
     fam, sec = classify_families(title, text)
+    hint = [f for f in raw.get("fam_hint") or [] if f in FAMILIES]
+    if hint:  # kategorier fra jobportalen: vores eget gæt bestemmer kun rækkefølgen
+        order = [f for f in [fam, *sec] if f in hint] + [f for f in hint if f not in (fam, *sec)]
+        fam, sec = order[0], order[1:3]
     h_min, h_max = detect_hours(text)
     region, city = detect_region(raw.get("location", ""), employer_area(employer))
-    return {
+    if raw.get("region_hint") and (region not in ("remote",) or raw["region_hint"] == "remote"):
+        region = raw["region_hint"]
+    extra = {k: raw[k] for k in ("studies", "why") if raw.get(k)}
+    if hint:
+        extra["catFam"] = True
+    return {**extra,
         "title": title,
         "co": raw.get("company") or employer["name"],
         "city": city or employer.get("city", ""),
         "region": region,
         "hMin": h_min, "hMax": h_max,
         "danish": detect_danish(f"{title} {text}"),
-        "fam": fam, "sec": sec, "famConf": family_confidence(title, fam),
+        "fam": fam, "sec": sec, "famConf": "title" if hint else family_confidence(title, fam),
         "skills": detect_skills(text),
         "industry": employer.get("industry") or "Andet",
         "postedAt": raw.get("posted_at"),
@@ -367,4 +376,8 @@ def enrich_ai(raw: dict, base: dict, api_key: str) -> dict:
         out["why"] = str(data.get("why") or "")[:200]
     out["openToAll"] = bool(data.get("open_to_all"))
     out["enrichedBy"] = "ai"
+    if base.get("catFam"):  # jobportalens egne kategorier og uddannelser vinder over AI'ens gæt
+        for k in ("fam", "sec", "studies", "why"):
+            if k in base:
+                out[k] = base[k]
     return out

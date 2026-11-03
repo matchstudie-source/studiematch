@@ -390,29 +390,36 @@ if __name__ == "__main__":
 
 
 class StuderendeOnlineTest(unittest.TestCase):
-    SAMPLE = {"total": 2, "hits": [
+    SAMPLE = {"total": 4, "hits": [
         {"Id": 101, "Title": "Studentermedhjælper til Marketing", "CompanyName": "Eksempel A/S",
          "Content": "<p>Du bliver en del af teamet.</p><p><strong>Arbejdssted</strong><br />Kontoret i Albertslund.</p><p>8-15 timer om ugen.</p>",
-         "Categories": ["33\\/2", "54\\/4", "66\\/29"], "ApplicationDate": "2099-11-20"},
+         "Categories": ["33\\/2", "33\\/21", "54\\/4", "66\\/29", "66\\/35", "99\\/22", "99\\/25"], "ApplicationDate": "2099-11-20"},
         {"Id": 102, "Title": "Politisk student", "CompanyName": "Forening", "Content": "<p>15 timer om ugen i Aarhus.</p>",
-         "Categories": ["54/4"], "ApplicationDate": "2099-11-30"}]}
+         "Categories": ["54/4", "33/8", "66/52", "99/34"], "ApplicationDate": "2099-11-30"},
+        {"Id": 103, "Title": "Senior controller", "CompanyName": "Firma", "Content": "<p>Fuldtid.</p>", "Categories": ["54/3", "33/2"]},
+        {"Id": 104, "Title": "Studiejob i Malmö", "CompanyName": "Firma", "Content": "<p>Studiejob.</p>", "Categories": ["54/4", "33/23"]}]}
 
     def test_parse(self):
         jobs = sources.parse_studerendeonline_json(self.SAMPLE)
-        self.assertEqual(len(jobs), 2)
+        self.assertEqual(len(jobs), 2)  # fuldtid og udlandet sorteres fra
         a = jobs[0]
         self.assertEqual(a["company"], "Eksempel A/S")
-        self.assertEqual(a["location"], "Albertslund")
         self.assertEqual(a["commitment"], "Studiejob")
-        self.assertEqual(a["url"], "https://jobbank.dk/job/101/")
+        self.assertEqual(a["url"], "https://studerendeonline.dk/job/101/?utm_source=studiematch.dk")
+        self.assertEqual(a["region_hint"], "kbh")
+        self.assertEqual(a["fam_hint"], ["marketing"])
+        self.assertIn("ha", a["studies"])
+        self.assertIn("marketing og business", a["why"])
         self.assertTrue(a["deadline_at"].startswith("2099-11-20"))
-        self.assertEqual(jobs[1]["location"], "Aarhus")
 
-    def test_enrich_keeps_company_and_area(self):
+    def test_enrich_uses_categories(self):
         raw = sources.parse_studerendeonline_json(self.SAMPLE)[1]
         job = enrich.enrich_rules(raw, {"name": "StuderendeOnline", "region": "cph", "city": "København"})
         self.assertEqual(job["co"], "Forening")
         self.assertEqual(job["region"], "oj")
+        self.assertEqual(job["fam"], "public")
+        self.assertEqual(job["famConf"], "title")
+        self.assertIn("statskundskab", job["studies"])
         self.assertEqual(job["src"], "StuderendeOnline")
 
     def test_template_from_env(self):

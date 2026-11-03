@@ -754,10 +754,51 @@ def fetch_workable(ref: str, company: str) -> list[dict]:
 # Adgang efter aftale med Move On Career. API-adressen og nøglen ligger som hemmeligheder i GitHub:
 #   STUDERENDEONLINE_API_URL  (fx søgeadressen med kun studiejob)
 #   STUDERENDEONLINE_API_KEY  (hvis de giver en nøgle)
-#   STUDERENDEONLINE_JOB_URL  (link til opslaget, med {id}, {company} og {title}; ellers bruges Jobbank.dk's format)
+#   STUDERENDEONLINE_JOB_URL  (valgfri: andet linkformat med {id}; standard er studerendeonline.dk/job/{id}/?utm_source=studiematch.dk)
 
-SO_JOBTYPE = {"54/4": "Studiejob"}  # kategoritype 54 = jobtype, 4 = studiejob (fra Move On Career)
-SO_DEFAULT_URL = "https://jobbank.dk/job/{id}/"  # korte links virker, fx jobbank.dk/job/2449008/
+# Kategorier fra Move On Careers kategoriark (kategorityper: 54 opslagstype, 33 geografi, 66 arbejdsområde,
+# 99 uddannelse, 125 relevant for, 132 diverse). Hvert job har par som "33/2" = geografi/Storkøbenhavn.
+SO_JOBTYPE = {"54/4": "Studiejob", "54/9": "Praktikplads", "54/13": "Deltidsjob for studerende"}
+SO_GEO = {"33/2": "kbh", "33/21": "kbh", "33/3": "nsj", "33/14": "sj", "33/4": "sj", "33/5": "ssj", "33/13": "fyn",
+          "33/12": "sjy", "33/11": "svj", "33/9": "mvj", "33/10": "tre", "33/7": "mvj", "33/8": "oj", "33/6": "nj", "33/20": "bh"}
+SO_ABROAD = {"33/22", "33/23", "33/24", "33/19"}
+SO_REMOTE = {"132/5"}
+SO_WORK = {  # arbejdsområde -> Studiematchs felter
+    "66/20": "operations", "66/38": "product", "66/22": "finance", "66/37": "marketing", "66/47": "salesops",
+    "66/41": "research", "66/28": "hr", "66/49": "procurement", "66/34": "marketing", "66/32": "engineering",
+    "66/33": "software", "66/31": "software", "66/24": "legal", "66/35": "marketing", "66/46": "engineering",
+    "66/43": "bi", "66/26": "pmo", "66/29": "marketing", "66/45": "research", "66/23": "public", "66/52": "public",
+    "66/44": "operations", "66/27": "pmo", "66/50": "customer", "66/30": "salesops", "66/39": "social",
+    "66/40": "health", "66/42": "engineering", "66/25": "strategy", "66/48": "logistics", "66/36": "education",
+    "66/21": "finance",
+}
+SO_STUDY = {  # uddannelse -> (navn, ord der matcher uddannelsesnavne på Studiematch)
+    "99/20": ("administration", ["administration", "administrationsøkonom", "offentlig administration"]),
+    "99/43": ("byggeri og konstruktion", ["byggeri", "bygning", "anlæg", "konstruktør", "byggeteknologi"]),
+    "99/29": ("arkitektur, kunst og design", ["arkitekt", "design", "kunst"]),
+    "99/47": ("elektro", ["elektro", "elektronik", "elektroteknologi", "telekommunikation"]),
+    "99/32": ("fødevarer og veterinær", ["fødevare", "veterinær", "ernæring"]),
+    "99/38": ("HR", ["hr", "human resource"]),
+    "99/28": ("humaniora", ["humanistisk", "humaniora", "historie", "filosofi", "kultur", "dansk"]),
+    "99/24": ("IT", ["it", "datalogi", "software", "datamatiker", "computer", "data science", "informatik"]),
+    "99/23": ("jura", ["jura", "erhvervsjura", "law"]),
+    "99/44": ("kemi og biotek", ["kemi", "bioteknologi", "biokemi", "farmaci", "materiale"]),
+    "99/45": ("klima, miljø og energi", ["miljø", "energi", "klima", "bæredygtig"]),
+    "99/37": ("landbrug og natur", ["landbrug", "jordbrug", "skov", "biologi"]),
+    "99/22": ("marketing og business", ["ha", "erhvervsøkonomi", "business", "marketing", "markedsføring", "cand.merc", "handel", "global business"]),
+    "99/48": ("maskin og design", ["maskin", "mekanik", "produktudvikling"]),
+    "99/46": ("matematik og fysik", ["matematik", "fysik", "nano", "statistik"]),
+    "99/31": ("medicin og sundhed", ["medicin", "sygepleje", "farmaci", "sundhed", "folkesundhed", "fysioterapeut", "ergoterapeut", "bioanalytiker", "jordemoder", "radiograf", "tandpleje", "odontologi"]),
+    "99/30": ("naturvidenskab", ["naturvidenskab", "biologi", "kemi", "fysik", "geografi", "geologi", "molekylær"]),
+    "99/41": ("organisation og ledelse", ["ledelse", "organisation", "management", "erhvervsøkonomi", "cand.merc"]),
+    "99/35": ("produktion og logistik", ["logistik", "produktion", "supply chain", "transport", "global business", "operations"]),
+    "99/34": ("samfundsvidenskab", ["statskundskab", "samfundsvidenskab", "sociologi", "økonomi", "politik", "antropologi", "samfundsfag", "socialvidenskab"]),
+    "99/25": ("sprog og kommunikation", ["kommunikation", "journalistik", "medie", "sprog", "engelsk", "tysk", "fransk", "spansk"]),
+    "99/33": ("teknik og teknologi", ["ingeniør", "teknologi", "teknik", "engineering"]),
+    "99/26": ("pædagogik og undervisning", ["pædagog", "lærer", "pædagogik", "undervisning"]),
+    "99/21": ("økonomi og revision", ["økonomi", "revision", "regnskab", "finans", "finansøkonom", "erhvervsøkonomi", "ha", "cand.merc"]),
+}
+SO_DEFAULT_URL = "https://studerendeonline.dk/job/{id}/?utm_source=studiematch.dk"  # aftalt med Move On Career
 _WORKPLACE = re.compile(r"arbejdssted\s*:?\s*(.{0,200})", re.I | re.S)
 
 
@@ -785,7 +826,17 @@ def parse_studerendeonline_json(data: dict, url_template: str | None = None) -> 
     tmpl = url_template or SO_DEFAULT_URL
     jobs = []
     for h in data.get("hits", []):
-        cats = [c.replace("\\/", "/") for c in h.get("Categories", [])]
+        cats = [str(c).replace("\\/", "/") for c in h.get("Categories", [])]
+        types = [SO_JOBTYPE[c] for c in cats if c in SO_JOBTYPE]
+        if not types:
+            continue  # fuldtid, graduate, speciale osv. er ikke studiejob
+        geos = [c for c in cats if c.startswith("33/")]
+        if geos and all(c in SO_ABROAD for c in geos):
+            continue
+        areas = list(dict.fromkeys(SO_GEO[c] for c in geos if c in SO_GEO))
+        region = "remote" if any(c in SO_REMOTE for c in cats) else ("dk" if len(areas) >= 3 else (areas[0] if areas else None))
+        fams = list(dict.fromkeys(SO_WORK[c] for c in cats if c in SO_WORK))
+        study = [SO_STUDY[c] for c in cats if c in SO_STUDY]
         text = html_to_text(h.get("Content"))
         company = (h.get("CompanyName") or "").strip()
         title = (h.get("Title") or "").strip()
@@ -798,8 +849,13 @@ def parse_studerendeonline_json(data: dict, url_template: str | None = None) -> 
             "posted_at": _parse_any_date(h.get("PublishDate") or h.get("Published")),
             "deadline_at": _parse_any_date(h.get("ApplicationDate")),
             "source": "StuderendeOnline",
-            "commitment": " ".join(SO_JOBTYPE.get(c, "") for c in cats).strip(),
+            "commitment": " ".join(types),
             "categories": cats,
+            # arbejdsgiverens egne kategorier vægter over vores gæt
+            "region_hint": region,
+            "fam_hint": fams,
+            "studies": list(dict.fromkeys(w for _, ws in study for w in ws)) or None,
+            "why": f"Arbejdsgiveren søger studerende inden for {', '.join(n for n, _ in study[:3])}." if study else None,
         })
     return [j for j in jobs if j["title"]]
 
