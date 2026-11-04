@@ -48,3 +48,9 @@ Bruges til at tjekke, om filteret er for strengt.
 | VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
+| StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
+| StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
+| StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
+| StuderendeOnline.dk | Studentermedhjælper, Central Operations | ikke et studiejob |
+| StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
+| StuderendeOnline.dk | Praktikplats hos ECIT! | ikke et studiejob |
