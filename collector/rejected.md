@@ -14,6 +14,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | 2 introduktionsstillinger i Intern medicin; Kardiologi på Hjertesygdomme, Vejle Sygehus, Sygehus Lillebælt | ikke et studiejob |
+| Region Syddanmark | Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse. | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i Intern Medicin – Medicinsk Afdeling, Vejle Sygehus | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Sønderborg i specialerne endokrinologi, nefrologi, hæmatologi og lungemedicin | ikke et studiejob |
@@ -26,6 +27,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Novo Nordisk | PhD Student in Aptamer-Enabled, Animal-Free Bioanalysis | ikke et studiejob |
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
+| HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
 | Statslige arbejdsgivere | Akademisk medarbejder til Energistyrelsens Kontor for Internationalt Affald og Klassificering | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
@@ -36,6 +38,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Lunar | International Payment Specialist | ikke et studiejob |
 | Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |
 | Alka | Trygg-Hansa söker student som vill arbeta extra som HR-administratör! | ikke et studiejob |
+| NIRAS | Unsolicited intern applications | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aarhus Kommune | Pædagogmedhjælper – International Day Nursery, Aarhus 37 timer om ugen / Tiltrædelse: 15. november 2026 eller snarest derefter | ikke et studiejob |
@@ -47,6 +50,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
+| Danske Spil | Senior intern kommunikationsrådgiver | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |

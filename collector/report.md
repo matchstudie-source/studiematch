@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-04 17:14 UTC
+# Jobindsamling 2026-11-04 17:48 UTC
 
-1170 studiejob gemt. AI-kald i denne kørsel: 200. AI-fejl: ValueError: substring not found
+1168 studiejob gemt. AI-kald i denne kørsel: 200. AI-fejl: ValueError: substring not found
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 10 | 0 |  |
-| Region Syddanmark | hrmanager | 349 | 5 |  |
+| Region Syddanmark | hrmanager | 349 | 4 |  |
 | Novo Nordisk | rmk | 6 | 2 |  |
 | Novonesis | workday | 4 | 3 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -44,7 +44,7 @@
 | Energinet | hrmanager | 39 | 1 |  |
 | Norlys | sitemap | 3 | 3 |  |
 | Andel | hrmanager | 11 | 0 |  |
-| HOFOR | hrmanager | 18 | 1 |  |
+| HOFOR | hrmanager | 18 | 0 |  |
 | Carlsberg | rmk | 1 | 0 |  |
 | Danish Crown | rmk | 1 | 0 |  |
 | Royal Unibrew | sitemap | 0 | 0 |  |
@@ -55,7 +55,7 @@
 | Bang & Olufsen | sitemap | 0 | 0 |  |
 | Matas | emply | 3 | 3 | 17 opslag på joblisten, 3 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 |  |
-| Statslige arbejdsgivere | hrmanager | 474 | 61 |  |
+| Statslige arbejdsgivere | hrmanager | 475 | 61 |  |
 | Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 11 | 0 |  |
 | Pleo | ashby | 43 | 0 |  |
@@ -71,7 +71,7 @@
 | Columbus | teamtailor | 100 | 0 |  |
 | Templafy | teamtailor | 4 | 0 |  |
 | Queue-it | teamtailor | 3 | 0 |  |
-| NIRAS | hrmanager | 11 | 1 |  |
+| NIRAS | hrmanager | 11 | 0 |  |
 | Sweco Danmark | hrmanager | 19 | 2 |  |
 | Per Aarsleff | hrmanager | 10 | 2 |  |
 | DSB | sitemap | 0 | 0 |  |
@@ -81,7 +81,7 @@
 | HK | hrmanager | 13 | 2 |  |
 | Aarhus Kommune | hrmanager | 209 | 3 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 6 | 4 | 127 opslag på joblisten, 6 ligner studiejob |
+| Aalborg Kommune | emply | 6 | 4 | 128 opslag på joblisten, 6 ligner studiejob |
 | Frederiksberg Kommune | emply | 4 | 4 | 53 opslag på joblisten, 4 ligner studiejob |
 | Hvidovre Kommune | hrmanager | 37 | 1 |  |
 | Brøndby Kommune | emply | 1 | 1 | 56 opslag på joblisten, 1 ligner studiejob |
@@ -144,7 +144,7 @@
 | Magasin | teamtailor | 14 | 2 |  |
 | 7-Eleven Danmark | emply | 0 | 0 | ingen jobliste fundet |
 | Boozt | teamtailor | 9 | 0 |  |
-| Danske Spil | teamtailor | 3 | 2 |  |
+| Danske Spil | teamtailor | 3 | 1 |  |
 | Topdanmark | workday | 2 | 0 |  |
 | Accenture Danmark | workday | 1 | 1 |  |
 | Kammeradvokaten | emply | 1 | 1 | 5 opslag på joblisten, 1 ligner studiejob |

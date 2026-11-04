@@ -601,31 +601,6 @@
   "live": true
  },
  {
-  "title": "Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse.",
-  "co": "Region Syddanmark",
-  "city": "Kolding",
-  "region": "tre",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "health",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Sundhed og region",
-  "postedAt": "2026-11-02T12:41:32+00:00",
-  "deadlineAt": "2026-11-19T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Kunne du tænke dig at være en del af en afdeling, som har en central rolle på akutsygehuset, stor ambulant aktivitet, blik for at god uddannelse gør hele forskellen for fremtidens sundhedsvæsen og ikke mindst 70…",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237748&DepartmentId=6717&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xaae8c9557735",
-  "live": true
- },
- {
   "title": "Fagligt relevant studiejob til sygeplejestuderende i Region Syddanmark - få erfaring og fleksibilitet",
   "co": "Region Syddanmark",
   "city": "Børkop",
@@ -767,7 +742,7 @@
    "operations",
    "bi"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
    "Excel",
    "Power BI",
@@ -1072,29 +1047,6 @@
   "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
   "enrichedBy": "regler",
   "id": "x0da1049a63d3",
-  "live": true
- },
- {
-  "title": "Sektionsleder til intern kommunikation, branding og kampagner",
-  "co": "HOFOR",
-  "city": "Hovedkontoret, Ørestads Boulevard 35, 2300 København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Forsyning",
-  "postedAt": "2026-11-02T13:21:06+00:00",
-  "deadlineAt": "2026-11-22T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Vil du være med til at sætte retningen for HOFORs interne kommunikationsindsatser og styrke vores brand og arbejde med kampagner?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184463&DepartmentId=21987&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xf20e518721bf",
   "live": true
  },
  {
@@ -2165,7 +2117,7 @@
   "sec": [
    "public"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
    "Løn"
   ],
@@ -3168,32 +3120,6 @@
   "live": true
  },
  {
-  "title": "Unsolicited intern applications",
-  "co": "NIRAS",
-  "city": "Allerød",
-  "region": "nsj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "hr",
-  "sec": [
-   "pmo",
-   "sustain"
-  ],
-  "famConf": "text",
-  "skills": [],
-  "industry": "Ingeniørrådgivning",
-  "postedAt": "2025-09-02T09:46:57+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Unsolicited Applications as an Intern at NIRAS Are you an ambitious student dreaming of gaining practical experience in an international company that works with innovative and sustainable solutions?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2939&ProjectId=143684&DepartmentId=19003&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "xcfd069d9f732",
-  "live": true
- },
- {
   "title": "Arkitektpraktikanter, Aarhus eller Silkeborg",
   "co": "Sweco Danmark",
   "city": "Aarhus",
@@ -3276,7 +3202,7 @@
   "fam": "legal",
   "sec": [
    "operations",
-   "sustain"
+   "hr"
   ],
   "famConf": "text",
   "skills": [],
@@ -3756,7 +3682,7 @@
   "danish": "required",
   "fam": "legal",
   "sec": [],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
    "Løn"
   ],
@@ -4240,7 +4166,7 @@
   "sec": [
    "public"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
    "Løn"
   ],
@@ -4354,7 +4280,7 @@
    "education",
    "strategy"
   ],
-  "famConf": "text",
+  "famConf": "title",
   "skills": [
    "Excel",
    "Løn",
@@ -4689,7 +4615,7 @@
   "danish": "required",
   "fam": "health",
   "sec": [],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
    "Løn",
    "R"
@@ -4743,7 +4669,7 @@
   "sec": [
    "health"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
    "R"
   ],
@@ -4856,31 +4782,6 @@
   "url": "https://karriere.danskespil.dk/jobs/8656436-studentermedhjaelper-til-gdpr-compliance-og-informationssikkerhed",
   "enrichedBy": "regler",
   "id": "xb1571386d456",
-  "live": true
- },
- {
-  "title": "Senior intern kommunikationsrådgiver",
-  "co": "Danske Spil",
-  "city": "Brøndby",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "social"
-  ],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Underholdning",
-  "postedAt": "2026-10-21T09:03:48+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Som vores nye interne senior kommunikationsrådgiver får du ansvaret for at gøre Danske Spils strategi, udvikling og ansvarlighed til kommunikation, der engagerer og skaber retning for dine omtrent 500 kolleger.",
-  "req": null,
-  "url": "https://karriere.danskespil.dk/jobs/8582927-senior-intern-kommunikationsraadgiver",
-  "enrichedBy": "regler",
-  "id": "x31da9bab7147",
   "live": true
  },
  {
@@ -5189,10 +5090,10 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "education",
+  "fam": "health",
   "sec": [
    "marketing",
-   "health"
+   "education"
   ],
   "famConf": "title",
   "skills": [],
@@ -6062,9 +5963,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "public",
   "sec": [
-   "public",
+   "marketing",
    "bi"
   ],
   "famConf": "title",
@@ -7114,10 +7015,10 @@
   "hMin": 6,
   "hMax": 6,
   "danish": "required",
-  "fam": "education",
+  "fam": "hr",
   "sec": [
-   "public",
-   "operations"
+   "education",
+   "public"
   ],
   "famConf": "title",
   "skills": [
@@ -7808,9 +7709,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "hr",
   "sec": [
-   "hr",
+   "marketing",
    "social"
   ],
   "famConf": "title",
@@ -8239,9 +8140,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "legal",
+  "fam": "operations",
   "sec": [
-   "operations",
+   "legal",
    "bi"
   ],
   "famConf": "title",
@@ -9436,9 +9337,9 @@
   "hMin": 25,
   "hMax": 25,
   "danish": "required",
-  "fam": "public",
+  "fam": "hr",
   "sec": [
-   "hr"
+   "public"
   ],
   "famConf": "title",
   "skills": [
@@ -9495,10 +9396,10 @@
   "hMin": 10,
   "hMax": 15,
   "danish": "required",
-  "fam": "education",
+  "fam": "research",
   "sec": [
-   "research",
-   "operations"
+   "operations",
+   "education"
   ],
   "famConf": "title",
   "skills": [
@@ -11199,10 +11100,10 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "research",
   "sec": [
-   "research",
-   "finance"
+   "finance",
+   "pmo"
   ],
   "famConf": "title",
   "skills": [
@@ -11407,9 +11308,7 @@
   "hMax": 0,
   "danish": "no",
   "fam": "supply",
-  "sec": [
-   "customer"
-  ],
+  "sec": [],
   "famConf": "text",
   "skills": [],
   "industry": "Jobportal for studerende",
@@ -12247,9 +12146,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "health",
+  "fam": "research",
   "sec": [
-   "research",
+   "health",
    "bi"
   ],
   "famConf": "title",
@@ -18214,8 +18113,8 @@
   "danish": "required",
   "fam": "marketing",
   "sec": [
-   "education",
-   "public"
+   "public",
+   "education"
   ],
   "famConf": "title",
   "skills": [
@@ -18945,7 +18844,6 @@
   "danish": "required",
   "fam": "health",
   "sec": [
-   "education",
    "public"
   ],
   "famConf": "text",
@@ -19200,9 +19098,9 @@
   "hMin": 37,
   "hMax": 37,
   "danish": "required",
-  "fam": "finance",
+  "fam": "operations",
   "sec": [
-   "operations"
+   "finance"
   ],
   "famConf": "title",
   "skills": [],
@@ -19708,8 +19606,8 @@
   "danish": "required",
   "fam": "marketing",
   "sec": [
-   "education",
-   "salesops"
+   "salesops",
+   "education"
   ],
   "famConf": "title",
   "skills": [],
@@ -19966,8 +19864,8 @@
   "danish": "required",
   "fam": "hr",
   "sec": [
-   "marketing",
-   "operations"
+   "operations",
+   "marketing"
   ],
   "famConf": "title",
   "skills": [
@@ -20046,9 +19944,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "salesops",
+  "fam": "finance",
   "sec": [
-   "finance",
+   "salesops",
    "customer"
   ],
   "famConf": "title",
@@ -21006,9 +20904,9 @@
   "hMin": 37,
   "hMax": 37,
   "danish": "required",
-  "fam": "finance",
+  "fam": "marketing",
   "sec": [
-   "marketing",
+   "finance",
    "public"
   ],
   "famConf": "title",
@@ -22647,10 +22545,10 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "research",
   "sec": [
-   "research",
-   "finance"
+   "finance",
+   "pmo"
   ],
   "famConf": "title",
   "skills": [
@@ -25647,9 +25545,9 @@
   "hMin": 15,
   "hMax": 15,
   "danish": "required",
-  "fam": "salesops",
+  "fam": "marketing",
   "sec": [
-   "marketing"
+   "salesops"
   ],
   "famConf": "title",
   "skills": [],
@@ -25817,10 +25715,10 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "no",
-  "fam": "engineering",
+  "fam": "software",
   "sec": [
-   "software",
-   "research"
+   "research",
+   "engineering"
   ],
   "famConf": "title",
   "skills": [
@@ -26562,9 +26460,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "no",
-  "fam": "operations",
+  "fam": "finance",
   "sec": [
-   "finance"
+   "operations"
   ],
   "famConf": "title",
   "skills": [],
@@ -26987,9 +26885,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "customer",
   "sec": [
-   "customer"
+   "marketing"
   ],
   "famConf": "title",
   "skills": [],
@@ -28111,9 +28009,9 @@
   "hMin": 15,
   "hMax": 15,
   "danish": "required",
-  "fam": "finance",
+  "fam": "marketing",
   "sec": [
-   "marketing"
+   "finance"
   ],
   "famConf": "title",
   "skills": [],
@@ -29345,8 +29243,8 @@
   "danish": "required",
   "fam": "salesops",
   "sec": [
-   "finance",
-   "hr"
+   "hr",
+   "sustain"
   ],
   "famConf": "text",
   "skills": [
@@ -30365,9 +30263,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "public",
   "sec": [
-   "public",
+   "marketing",
    "social"
   ],
   "famConf": "title",
@@ -31035,9 +30933,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "finance",
+  "fam": "education",
   "sec": [],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [],
   "industry": "Jobportal for studerende",
   "postedAt": null,
@@ -32785,9 +32683,9 @@
   "hMin": 10,
   "hMax": 10,
   "danish": "required",
-  "fam": "education",
+  "fam": "marketing",
   "sec": [
-   "marketing"
+   "education"
   ],
   "famConf": "title",
   "skills": [],
@@ -34508,8 +34406,8 @@
   "danish": "no",
   "fam": "operations",
   "sec": [
-   "engineering",
-   "research"
+   "research",
+   "engineering"
   ],
   "famConf": "title",
   "skills": [],
@@ -35056,9 +34954,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "operations",
+  "fam": "hr",
   "sec": [
-   "hr",
+   "operations",
    "bi"
   ],
   "famConf": "title",
@@ -38819,9 +38717,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "engineering",
+  "fam": "software",
   "sec": [
-   "software"
+   "engineering"
   ],
   "famConf": "title",
   "skills": [],
@@ -39086,12 +38984,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "hr",
-   "education"
-  ],
-  "famConf": "text",
+  "fam": "datasci",
+  "sec": [],
+  "famConf": "title",
   "skills": [],
   "industry": "Jobportal for studerende",
   "postedAt": null,
@@ -40746,10 +40641,10 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "education",
+  "fam": "bi",
   "sec": [
-   "bi",
-   "marketing"
+   "marketing",
+   "education"
   ],
   "famConf": "title",
   "skills": [],
@@ -41663,11 +41558,11 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "hr",
+  "fam": "datasci",
   "sec": [
-   "education"
+   "hr"
   ],
-  "famConf": "text",
+  "famConf": "title",
   "skills": [],
   "industry": "Jobportal for studerende",
   "postedAt": null,
@@ -43419,9 +43314,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "salesops",
+  "fam": "customer",
   "sec": [
-   "customer"
+   "salesops"
   ],
   "famConf": "title",
   "skills": [
@@ -45020,7 +44915,7 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "no",
-  "fam": "sustain",
+  "fam": "operations",
   "sec": [],
   "famConf": "text",
   "skills": [],
@@ -46175,7 +46070,9 @@
   "hMax": 0,
   "danish": "required",
   "fam": "operations",
-  "sec": [],
+  "sec": [
+   "hr"
+  ],
   "famConf": "text",
   "skills": [],
   "industry": "Jobportal for studerende",
@@ -48419,9 +48316,9 @@
   "hMin": 0,
   "hMax": 0,
   "danish": "required",
-  "fam": "marketing",
+  "fam": "operations",
   "sec": [
-   "operations",
+   "marketing",
    "salesops"
   ],
   "famConf": "title",
@@ -48501,8 +48398,7 @@
   "danish": "no",
   "fam": "marketing",
   "sec": [
-   "product",
-   "sustain"
+   "product"
   ],
   "famConf": "text",
   "skills": [],
