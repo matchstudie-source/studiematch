@@ -356,18 +356,21 @@ def enrich_ai(raw: dict, base: dict, api_key: str) -> dict:
     """Forbedrer et regel-beriget job med AI. Returnerer base uændret, hvis noget går galt."""
     prompt = PROMPT.format(families=", ".join(FAMILIES), title=raw["title"], company=base["co"],
                            location=raw.get("location", ""), text=raw.get("description", "")[:6000])
+    text, stop = "", ""
     try:
         resp = requests.post(AI_URL, timeout=60, headers={
             "x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json",
-        }, json={"model": AI_MODEL, "max_tokens": 600, "messages": [{"role": "user", "content": prompt}]})
+        }, json={"model": AI_MODEL, "max_tokens": 1500, "messages": [{"role": "user", "content": prompt}]})
         resp.raise_for_status()
-        text = "".join(part.get("text", "") for part in resp.json().get("content", []))
+        body_json = resp.json()
+        stop = body_json.get("stop_reason", "")
+        text = "".join(part.get("text", "") for part in body_json.get("content", []))
         data = json.loads(text[text.index("{"): text.rindex("}") + 1])
     except (requests.RequestException, ValueError, KeyError) as err:
         global AI_ERROR
         if not AI_ERROR:  # vis den første fejl i rapporten, så en forkert nøgle eller model ikke går stille hen
             body = getattr(getattr(err, "response", None), "text", "") or ""
-            AI_ERROR = f"{type(err).__name__}: {err} {body[:200]}".strip()
+            AI_ERROR = f"{type(err).__name__}: {err} {body[:200]} (stop: {stop}, svar: {text[:160]!r})".strip()
             print("AI-fejl:", AI_ERROR)
         return base
     if data.get("is_student_job") is False:
