@@ -208,7 +208,7 @@ def main() -> int:
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
 
     lines = [f"# Jobindsamling {now().strftime('%Y-%m-%d %H:%M')} UTC", "",
-             f"{len(final)} studiejob gemt. AI-kald i denne kørsel: {ai_calls}.", "",
+             f"{len(final)} studiejob gemt. AI-kald i denne kørsel: {ai_calls}." + (f" AI-fejl: {enrich.AI_ERROR}" if enrich.AI_ERROR else ""), "",
              "| Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |", "| --- | --- | --- | --- | --- |"]
     lines += [f"| {n} | {s} | {a} | {k} | {note} |" for n, s, a, k, note in report_rows]
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")

@@ -315,6 +315,7 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
 # ---------- AI-laget ----------
 AI_MODEL = os.environ.get("STUDIEMATCH_MODEL", "claude-haiku-5-5")
 AI_URL = "https://api.anthropic.com/v1/messages"
+AI_ERROR = ""  # første fejl fra AI-laget i denne kørsel
 
 PROMPT = """Du hjælper en dansk side, der anbefaler studiejob til studerende. Læs jobopslaget og svar KUN med JSON.
 
@@ -352,7 +353,12 @@ def enrich_ai(raw: dict, base: dict, api_key: str) -> dict:
         resp.raise_for_status()
         text = "".join(part.get("text", "") for part in resp.json().get("content", []))
         data = json.loads(text[text.index("{"): text.rindex("}") + 1])
-    except (requests.RequestException, ValueError, KeyError):
+    except (requests.RequestException, ValueError, KeyError) as err:
+        global AI_ERROR
+        if not AI_ERROR:  # vis den første fejl i rapporten, så en forkert nøgle eller model ikke går stille hen
+            body = getattr(getattr(err, "response", None), "text", "") or ""
+            AI_ERROR = f"{type(err).__name__}: {err} {body[:200]}".strip()
+            print("AI-fejl:", AI_ERROR)
         return base
     if data.get("is_student_job") is False:
         return {**base, "skip": True}
