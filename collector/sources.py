@@ -752,13 +752,15 @@ def fetch_workable(ref: str, company: str) -> list[dict]:
 
 # ---------- StuderendeOnline / Jobbank.dk (Move On Career) ----------
 # Adgang efter aftale med Move On Career. API-adressen og nøglen ligger som hemmeligheder i GitHub:
-#   STUDERENDEONLINE_API_URL  (fx søgeadressen med kun studiejob)
-#   STUDERENDEONLINE_API_KEY  (hvis de giver en nøgle)
+#   STUDERENDEONLINE_API_KEY  nøglen fra Move On Career (sendes som x-api-key)
+#   STUDERENDEONLINE_API_URL  valgfri: anden søgeadresse end standarden herunder
 #   STUDERENDEONLINE_JOB_URL  (valgfri: andet linkformat med {id}; standard er studerendeonline.dk/job/{id}/?utm_source=studiematch.dk)
 
 # Kategorier fra Move On Careers kategoriark (kategorityper: 54 opslagstype, 33 geografi, 66 arbejdsområde,
 # 99 uddannelse, 125 relevant for, 132 diverse). Hvert job har par som "33/2" = geografi/Storkøbenhavn.
-SO_JOBTYPE = {"54/4": "Studiejob", "54/9": "Praktikplads", "54/13": "Deltidsjob for studerende"}
+SO_JOBTYPE = {"54/4": "Studiejob", "54/9": "Praktikplads for studerende"}  # deltidsjob (13) kræver ofte færdig uddannelse
+# network=53990 = kun job, der ligger på StuderendeOnline.dk; cvtype 4 = studiejob, 9 = praktikplads; max=9999 = alle på én gang
+SO_API_URL = "https://services.moveon.dk/delivery/api/jobserve/?network=53990&max=9999&cvtype=4,9"
 SO_GEO = {"33/2": "kbh", "33/21": "kbh", "33/3": "nsj", "33/14": "sj", "33/4": "sj", "33/5": "ssj", "33/13": "fyn",
           "33/12": "sjy", "33/11": "svj", "33/9": "mvj", "33/10": "tre", "33/7": "mvj", "33/8": "oj", "33/6": "nj", "33/20": "bh"}
 SO_ABROAD = {"33/22", "33/23", "33/24", "33/19"}
@@ -848,7 +850,7 @@ def parse_studerendeonline_json(data: dict, url_template: str | None = None) -> 
             "url": h.get("Url") or h.get("Link") or tmpl.format(id=h.get("Id"), company=_slug(company), title=_slug(title)),
             "posted_at": _parse_any_date(h.get("PublishDate") or h.get("Published")),
             "deadline_at": _parse_any_date(h.get("ApplicationDate")),
-            "source": "StuderendeOnline",
+            "source": "StuderendeOnline.dk",
             "commitment": " ".join(types),
             "categories": cats,
             # arbejdsgiverens egne kategorier vægter over vores gæt
@@ -861,14 +863,13 @@ def parse_studerendeonline_json(data: dict, url_template: str | None = None) -> 
 
 
 def fetch_studerendeonline(ref: str, company: str) -> list[dict]:
-    api = os.environ.get("STUDERENDEONLINE_API_URL", "").strip() or (ref if ref.startswith("http") else "")
-    if not api:
-        LAST_NOTE[ref] = "venter på API-adgang fra Move On Career"
-        return []
     key = os.environ.get("STUDERENDEONLINE_API_KEY", "").strip()
-    headers = {"Authorization": f"Bearer {key}", "X-Api-Key": key} if key else {}
-    data = _get(api, headers=headers).json()
+    if not key:
+        LAST_NOTE[ref] = "mangler STUDERENDEONLINE_API_KEY i GitHub"
+        return []
+    api = os.environ.get("STUDERENDEONLINE_API_URL", "").strip() or SO_API_URL
+    data = _get(api, headers={"x-api-key": key, "Accept": "application/json"}).json()
     jobs = parse_studerendeonline_json(data, os.environ.get("STUDERENDEONLINE_JOB_URL", "").strip() or None)
     total = data.get("total")
-    LAST_NOTE[ref] = f"{len(jobs)} af {total} opslag hentet" if total else ""
+    LAST_NOTE[ref] = f"{len(data.get('hits', []))} af {total} opslag hentet, {len(jobs)} er studiejob eller praktik i Danmark" if total is not None else ""
     return jobs

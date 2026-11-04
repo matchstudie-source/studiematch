@@ -420,7 +420,7 @@ class StuderendeOnlineTest(unittest.TestCase):
         self.assertEqual(job["fam"], "public")
         self.assertEqual(job["famConf"], "title")
         self.assertIn("statskundskab", job["studies"])
-        self.assertEqual(job["src"], "StuderendeOnline")
+        self.assertEqual(job["src"], "StuderendeOnline.dk")
 
     def test_template_from_env(self):
         jobs = sources.parse_studerendeonline_json(self.SAMPLE, "https://www.studerendeonline.dk/job/{id}")
@@ -428,5 +428,5 @@ class StuderendeOnlineTest(unittest.TestCase):
 
     def test_without_access_returns_nothing(self):
         import os
-        os.environ.pop("STUDERENDEONLINE_API_URL", None)
+        os.environ.pop("STUDERENDEONLINE_API_KEY", None)
         self.assertEqual(sources.fetch_studerendeonline("studerendeonline", "StuderendeOnline"), [])

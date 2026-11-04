@@ -998,7 +998,7 @@ const I = {
 function logo(){ return `<button class="logo" data-act="home" aria-label="Studiematch forside"><span class="logo-mark">${I.mark}</span>Studiematch</button>`; }
 function levelLabel(l){ return l==="strong"?"Stærkt match":l==="good"?"Godt match":"Værd at se"; }
 /* Logoer fra jobportaler, vi samarbejder med (brugt med deres tilladelse) */
-const SRC_ICON = {"StuderendeOnline":"/img/studerendeonline.png"};
+const SRC_ICON = {"StuderendeOnline.dk":"/img/studerendeonline.png","StuderendeOnline":"/img/studerendeonline.png"};
 function cardHTML(job, ev, opts){
   opts=opts||{}; const c=opts.ctx; const r=reasonsFor(job,ev,c); const fb=opts.demo?{}:(S.fb[job.id]||{});
   const open=!!UI.expanded[job.id]; const p=ctxOf(c).profile;

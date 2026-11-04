@@ -159,7 +159,7 @@ def is_student_job(title: str, text: str, commitment: str = "") -> bool:
     if NOT_STUDENT_RE.search(title) and not re.search(r"studenter|studentermedhjælp|student assistant|student worker", title, re.I):
         return False
     hours = detect_hours(text)
-    if hours[0] >= 30 and not re.search(r"praktik|intern", title, re.I):
+    if hours[0] >= 30 and not re.search(r"praktik|intern", f"{title} {commitment}", re.I):
         return False  # fuldtid er ikke et studiejob (praktik kan godt være fuldtid)
     if STUDENT_RE.search(title) or STUDENT_RE.search(commitment or ""):
         return True
