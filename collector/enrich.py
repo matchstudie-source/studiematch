@@ -55,7 +55,7 @@ SKILLS = ["Excel", "Bogføring", "Regnskab", "Løn", "Power BI", "SQL", "Python"
 STUDENT_RE = re.compile(
     r"student|studentermedhjælp|studentermedarbejder|studiejob|studerende|studenterjob|working student|"
     r"student assistant|student worker|deltidsjob for studerende|praktikant|internship|\bintern\b", re.I)
-SENIOR_RE = re.compile(r"\b(senior|lead|head of|director|chef|manager|direktør|leder)\b", re.I)
+SENIOR_RE = re.compile(r"\b(senior|lead|head of|director|manager|direktør)\b|\w*leder\b|\w*chef\b", re.I)  # også "sektionsleder", "teamleder"
 
 DANISH_REQUIRED = ["flydende dansk", "taler og skriver dansk", "mestrer dansk", "dansk på modersmål", "fluent in danish",
                    "fluent danish", "danish is required", "danish is a requirement", "native danish", "skal kunne tale dansk",
@@ -161,7 +161,9 @@ def is_student_job(title: str, text: str, commitment: str = "") -> bool:
     hours = detect_hours(text)
     if hours[0] >= 30 and not re.search(r"praktik|intern", f"{title} {commitment}", re.I):
         return False  # fuldtid er ikke et studiejob (praktik kan godt være fuldtid)
-    if STUDENT_RE.search(title) or STUDENT_RE.search(commitment or ""):
+    # "intern kommunikation" er dansk for intern, ikke en praktikant
+    t_student = re.sub(r"\bintern(?=\s+(?!(?:in|for|at|to|with|within)\b)[a-zæøå])", "", title)
+    if STUDENT_RE.search(t_student) or STUDENT_RE.search(commitment or ""):
         return True
     if SENIOR_RE.search(title) or re.search(
             r"konsulent|koordinator|tekniker|serviceassistent|rådgiver|psykolog|afløser|weekend", title, re.I):
@@ -169,11 +171,19 @@ def is_student_job(title: str, text: str, commitment: str = "") -> bool:
     return bool(STUDENT_TEXT_RE.search(text[:2500]))
 
 
+def _has(text: str, word: str) -> bool:
+    """Korte ord (fx "sfo", "hr") skal stå alene, så "transformation" ikke tæller som SFO. Lange ord må være en del af et ord."""
+    w = word.strip()
+    if len(w) <= 4:
+        return re.search(rf"(?<![a-zæøå0-9]){re.escape(w)}(?![a-zæøå0-9])", text) is not None
+    return word in text
+
+
 def classify_families(title: str, text: str) -> tuple[str, list[str]]:
     t, d = f" {title.lower()} ", f" {text.lower()} "
     scores = {}
     for fam, words in FAMILY_WORDS.items():
-        s = sum(5 for w in words if w in t) + sum(1 for w in words if w in d)
+        s = sum(5 for w in words if _has(t, w)) + sum(1 for w in words if _has(d, w))
         if s:
             scores[fam] = s
     if not scores:
@@ -186,7 +196,7 @@ def classify_families(title: str, text: str) -> tuple[str, list[str]]:
 def family_confidence(title: str, fam: str) -> str:
     """'title' når titlen selv peger på feltet, ellers 'text' (et gæt ud fra opslagets tekst)."""
     t = f" {title.lower()} "
-    return "title" if any(w in t for w in FAMILY_WORDS.get(fam, [])) else "text"
+    return "title" if any(_has(t, w) for w in FAMILY_WORDS.get(fam, [])) else "text"
 
 
 def detect_danish(text: str) -> str:
