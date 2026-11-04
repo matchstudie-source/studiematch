@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-04 18:24 UTC
+# Jobindsamling 2026-11-04 19:02 UTC
 
-1160 studiejob gemt. AI-kald i denne kørsel: 200. AI-fejl: ValueError: substring not found  (stop: max_tokens, svar: '```json\n{\n  "is_student_job": true,\n  "fam": "social",\n  "sec": ["marketing", "bizdev"],\n  "danish": "plus",\n  "h_min": null,\n  "h_max": null,\n  "skills": ["pro')
+1147 studiejob gemt. AI-kald i denne kørsel: 200.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -79,11 +79,11 @@
 | 3 Danmark | teamtailor | 21 | 1 |  |
 | ISS | rmk | 1 | 0 |  |
 | HK | hrmanager | 13 | 2 |  |
-| Aarhus Kommune | hrmanager | 209 | 3 |  |
+| Aarhus Kommune | hrmanager | 210 | 3 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 6 | 4 | 128 opslag på joblisten, 6 ligner studiejob |
+| Aalborg Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Frederiksberg Kommune | emply | 4 | 4 | 53 opslag på joblisten, 4 ligner studiejob |
-| Hvidovre Kommune | hrmanager | 37 | 1 |  |
+| Hvidovre Kommune | hrmanager | 37 | 0 |  |
 | Brøndby Kommune | emply | 1 | 1 | 56 opslag på joblisten, 1 ligner studiejob |
 | Næstved Kommune | emply | 0 | 0 | 67 opslag på joblisten, 0 ligner studiejob |
 | Holbæk Kommune | emply | 0 | 0 | ingen jobliste fundet |
@@ -149,5 +149,5 @@
 | Accenture Danmark | workday | 1 | 1 |  |
 | Kammeradvokaten | emply | 1 | 1 | 5 opslag på joblisten, 1 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |
-| Accura | hrmanager | 5 | 2 |  |
-| StuderendeOnline.dk | studerendeonline | 1045 | 1034 | 1144 af 1144 opslag hentet, 1045 er studiejob eller praktik i Danmark |
+| Accura | hrmanager | 0 | 0 | fejl: ReadTimeout |
+| StuderendeOnline.dk | studerendeonline | 1045 | 1027 | 1144 af 1144 opslag hentet, 1045 er studiejob eller praktik i Danmark |
