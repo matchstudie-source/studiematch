@@ -729,6 +729,32 @@
   "live": true
  },
  {
+  "title": "Student Assistant",
+  "co": "Novo Nordisk",
+  "city": "Ørestad, Capital Region of Denmark, DK",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "operations",
+   "marketing"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Medicinal",
+  "postedAt": "2026-11-04T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Your impact begins here As Student Assistant in the Legal, Compliance & Quality team, you will support colleagues across Novo Denmark on a broad range of legal and compliance activities.",
+  "req": null,
+  "url": "https://careers.novonordisk.com/job/%C3%98restad-Student-Assistant-Capi/1454278333/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "regler",
+  "id": "x71680ee81a83",
+  "live": true
+ },
+ {
   "title": "Student Assistant - Clinical Data Insights & Transformation",
   "co": "Novo Nordisk",
   "city": "Søborg, Capital Region of Denmark, DK",
@@ -1069,6 +1095,61 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184463&DepartmentId=21987&MediaId=5",
   "enrichedBy": "regler",
   "id": "xf20e518721bf",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.) Er du skarp til at skabe og klippe…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-snapchat-tiktok-4-6-mdr/udp3ne",
+  "enrichedBy": "regler",
+  "id": "x3e37b1490b05",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.) Har du…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-influencer-marketing-local-brand-activation-4/yvw1ih",
+  "enrichedBy": "regler",
+  "id": "x38abd0b8d81e",
   "live": true
  },
  {
@@ -1963,6 +2044,35 @@
   "live": true
  },
  {
+  "title": "Student til Rigsarkivet i Odense",
+  "co": "Rigsarkivet",
+  "city": "Odense",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-04T09:47:12+00:00",
+  "deadlineAt": "2026-11-23T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at gøre data fra Rigsarkivets samlinger tilgængelige for borgerne?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171839&DepartmentId=19911&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x42bd3060034b",
+  "live": true
+ },
+ {
   "title": "Studentermedarbejder til tværstatslig økonomistyring og implementering",
   "co": "Økonomistyrelsen",
   "city": "København K",
@@ -2231,6 +2341,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Center for Detailhandel, Industri, Fødevarer, Landbrug og Sundhed",
+  "co": "Konkurrence- og Forbrugerstyrelsen",
+  "city": "Carl Jacobsens Vej 35, 2500 Valby",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-04T10:49:17+00:00",
+  "deadlineAt": "2026-11-18T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Trives du i et stærkt fagligt miljø, hvor du bliver udfordret? Så vælg en karriere i Konkurrence- og Forbrugerstyrelsen. Vi arbejder for velfungerende markeder, der skaber vækst og høj forbrugervelfærd. Vi er ca.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172469&DepartmentId=18989&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "x0029ce75c587",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Center for Politisk Betjening i Banedanmark",
   "co": "Stab",
   "city": "Region Hovedstaden",
@@ -2392,6 +2529,35 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172134&DepartmentId=19804&MediaId=5",
   "enrichedBy": "regler",
   "id": "xbf42b668d5d4",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Web-platform",
+  "co": "Udviklings- og Forenklingsstyrelsen",
+  "city": "Storkøbenhavn",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance",
+   "product"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-04T10:15:35+00:00",
+  "deadlineAt": "2026-11-18T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Vil du være med til at sikre automatiserede test, forstå data og omsætte det til anbefalinger til forretningen samt optimere supportkæden i Skatte- og Vækstministeriets web-platform?",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172477&DepartmentId=19140&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xd868eafa8dd6",
   "live": true
  },
  {
@@ -2805,35 +2971,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "pmo",
-   "strategy"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Excel",
-   "PowerPoint"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
-  "enrichedBy": "regler",
-  "id": "xddff3f97d777",
-  "live": true
- },
- {
   "title": "Student assistant interested in turning data and insights into actions",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -2893,112 +3030,32 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
-  "co": "BDO Danmark",
-  "city": "København",
+  "title": "Studentermedhjælper til Kommercielle Tiltag og Lanceringer",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
   "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
+  "hMin": 10,
+  "hMax": 15,
   "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
-  "enrichedBy": "regler",
-  "id": "x91d9b736c8c3",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Kolding & Odense Når du åbner døren til BDO, mærker du…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-kolding-odense/yne830",
-  "enrichedBy": "regler",
-  "id": "x7cb33429ddad",
-  "live": true
- },
- {
-  "title": "Financial Outsourcing Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "procurement",
+  "fam": "operations",
   "sec": [
-   "finance",
-   "education"
+   "pmo",
+   "strategy"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
-   "Bogføring",
-   "Regnskab",
-   "Løn",
-   "R"
+   "Excel",
+   "PowerPoint"
   ],
-  "industry": "Revision og rådgivning",
+  "industry": "Pension og forsikring",
   "postedAt": null,
   "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "blurb": "Er du analytisk stærk, skarp i PowerPoint og motiveres af at omsætte data og indsigter til præsentationer, analyser og beslutningsgrundlag?",
   "req": null,
-  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Kommercielle-Tiltag-og-Lanceringer/1449499433/",
   "enrichedBy": "regler",
-  "id": "x5e77473a7a23",
-  "live": true
- },
- {
-  "title": "Audit & Assurance Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
-  "enrichedBy": "regler",
-  "id": "xca1a8d4ee87b",
+  "id": "xddff3f97d777",
   "live": true
  },
  {
@@ -3747,33 +3804,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
-  "co": "Politiet",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Løn",
-   "Python"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
-  "req": null,
-  "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/",
-  "enrichedBy": "regler",
-  "id": "xe7192bf4b738",
-  "live": true
- },
- {
   "title": "Studentermedhjælpere søges til afdelingen for personfarlig kriminalitet ved efterforskningsenheden",
   "co": "Politiet",
   "city": "København",
@@ -3798,6 +3828,33 @@
   "url": "https://job.politi.dk/job/K%C3%B8benhavn-SV-Studentermedhj%C3%A6lpere-s%C3%B8ges-til-afdelingen-for-personfarlig-kriminalitet-ved-efterforskningsenheden-2450/1374699055/",
   "enrichedBy": "regler",
   "id": "xf3d568f638c9",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Løn",
+   "Python"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
+  "req": null,
+  "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/",
+  "enrichedBy": "regler",
+  "id": "xe7192bf4b738",
   "live": true
  },
  {
@@ -3856,6 +3913,32 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148332&DepartmentId=18972&MediaId=5",
   "enrichedBy": "regler",
   "id": "xc9da283e3309",
+  "live": true
+ },
+ {
+  "title": "Join Our Team of Career Ambassadors at ITU – Make a real impact for your fellow Students!",
+  "co": "IT-Universitetet",
+  "city": "Student Affairs and Programmes",
+  "region": "kbh",
+  "hMin": 25,
+  "hMax": 40,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "hr",
+   "customer"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-11-04T13:23:39+00:00",
+  "deadlineAt": "2026-12-01T12:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Are you passionate about communication, proactive by nature, and eager to work closely with both students and companies? If so, you might be the perfect fit for our team of Career Ambassadors at ITU.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xc795046bf838",
   "live": true
  },
  {
@@ -4094,6 +4177,35 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194482&DepartmentId=8336&MediaId=5",
   "enrichedBy": "regler",
   "id": "x8a6d867d5edb",
+  "live": true
+ },
+ {
+  "title": "TECs direktionssekretariat søger studentermedhjælper",
+  "co": "Technical Education Copenhagen",
+  "city": "Stæhr Johansens Vej 7, 2000 Frederiksberg",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance",
+   "hr"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "Løn"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-11-04T11:34:56+00:00",
+  "deadlineAt": "2026-11-19T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Erhvervsskolesektoren er i rivende udvikling, og nu kan du blive en del af forandringen! TEC – en af Danmarks største erhvervsskoler – søger en studentermedhjælper til projekt- og analyseopgaver i direktionssekretariatet.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194503&DepartmentId=8478&MediaId=5",
+  "enrichedBy": "regler",
+  "id": "xbc8ece873253",
   "live": true
  },
  {
@@ -4408,35 +4520,6 @@
   "live": true
  },
  {
-  "title": "To studentermedhjælpere til Center for Børne- og Ungerådgivning",
-  "co": "Ballerup Kommune",
-  "city": "Ballerup",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "social",
-  "sec": [
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "Dokumentation",
-   "Forhandling"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige jobs Mange muligheder Bliv elev Log ind Min profil Min profil To studentermedhjælpere til Center for Børne- og Ungerådgivning Vil du omsætte din socialfaglige viden til praksis og få erfaring med…",
-  "req": null,
-  "url": "https://job.ballerup.dk/ad/to-studentermedhjaelpere-til-center-for-borne-og-ungeradgivning/ce9e7p",
-  "enrichedBy": "regler",
-  "id": "x307c4d7b15e9",
-  "live": true
- },
- {
   "title": "Plejehjemmet Åløkkeparken søger både faglærte og ufaglærte tilkaldevikarer",
   "co": "Faaborg-Midtfyn Kommune",
   "city": "Åløkkevej 4, 5672 Broby",
@@ -4718,6 +4801,29 @@
   "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Copenhagen/Student-Event--Inside-Accenture---Ask-Us-Anything_R00368651",
   "enrichedBy": "regler",
   "id": "x9f9ffa557c24",
+  "live": true
+ },
+ {
+  "title": "Juridiske studenter til København",
+  "co": "Kammeradvokaten",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Advokat",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Dansk English Log ind Min profil Min profil Juridiske studenter til København Er du jura- eller erhvervsjurastuderende og klar til at udfordre og udvikle dine juridiske evner i praksis?",
+  "req": "jura",
+  "url": "https://poulschmith.career.emply.com/da/ad/juridiske-studenter-til-kobenhavn/c7qhao",
+  "enrichedBy": "regler",
+  "id": "x5d7364b800b8",
   "live": true
  },
  {

@@ -2700,5 +2700,168 @@
   "blurb": "Det Kriminalpræventive Råds sekretariat søger en studentermedhjælper til Staben. Staben udgøres, udover studentermedhjælperen, af tre medarbejdere, som består af to administrative medarbejdere og en juridisk konsulent.…",
   "deadlineAt": null,
   "enrichedBy": "regler"
+ },
+ "df9b120a5a378dfa2800cce0599b5ab173cb3026": {
+  "fam": "legal",
+  "sec": [
+   "operations",
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Your impact begins here As Student Assistant in the Legal, Compliance & Quality team, you will support colleagues across Novo Denmark on a broad range of legal and compliance activities.",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "fe79730cc23e458d6f1341f79799db8ab0cb89f3": {
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.) Er du skarp til at skabe og klippe…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "117a8977dab64cfee637ade053741790838f9f62": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.) Har du…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "9532d248dda20f8790287a3ebc7ffd0e0bf8fc50": {
+  "fam": "public",
+  "sec": [
+   "operations",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Vil du være med til at gøre data fra Rigsarkivets samlinger tilgængelige for borgerne?",
+  "deadlineAt": "2026-11-23T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "ed6b2e801db45de4cd136c505ce3e1c7668b3819": {
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Er du interesseret i myndighedsarbejde? Har du et godt overblik og en systematisk tilgang til opgaveløsningen? Så er du måske vores nye studentermedhjælper!",
+  "deadlineAt": "2026-11-22T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "a0490c60a2b644b265f5b589c108653882ca41ea": {
+  "fam": "health",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel"
+  ],
+  "blurb": "Trives du i et stærkt fagligt miljø, hvor du bliver udfordret? Så vælg en karriere i Konkurrence- og Forbrugerstyrelsen. Vi arbejder for velfungerende markeder, der skaber vækst og høj forbrugervelfærd. Vi er ca.",
+  "deadlineAt": "2026-11-18T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "92641789e400bbfd2b0bc280d6e07d62dd7cfcde": {
+  "fam": "public",
+  "sec": [
+   "finance",
+   "product"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn",
+   "Dokumentation"
+  ],
+  "blurb": "Vil du være med til at sikre automatiserede test, forstå data og omsætte det til anbefalinger til forretningen samt optimere supportkæden i Skatte- og Vækstministeriets web-platform?",
+  "deadlineAt": "2026-11-18T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "20469ba1d63315ebe030344024c6f4d0f84e33af": {
+  "fam": "social",
+  "sec": [],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [],
+  "blurb": "Om jobbet: I Bydelsudvikling og Boliger i Magistraten for Sociale Forhold og Beskæftigelse søger vi en praktikant til forårssemestret fra 1. februar til 30. juni 2027. Vores kontor arbejder tæt sammen med andre…",
+  "deadlineAt": "2026-11-17T23:59:59+00:00",
+  "enrichedBy": "regler"
+ },
+ "c836c2435d0dcb79e74e7c64b749849405b66493": {
+  "fam": "marketing",
+  "sec": [
+   "hr",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 25,
+  "hMax": 40,
+  "skills": [],
+  "blurb": "Are you passionate about communication, proactive by nature, and eager to work closely with both students and companies? If so, you might be the perfect fit for our team of Career Ambassadors at ITU.",
+  "deadlineAt": "2026-12-01T12:00:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "693227f7f203ce08f04ffd4ac0d98d1ecc26ec52": {
+  "fam": "public",
+  "sec": [
+   "finance",
+   "hr"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Løn"
+  ],
+  "blurb": "Erhvervsskolesektoren er i rivende udvikling, og nu kan du blive en del af forandringen! TEC – en af Danmarks største erhvervsskoler – søger en studentermedhjælper til projekt- og analyseopgaver i direktionssekretariatet.",
+  "deadlineAt": "2026-11-19T23:59:00+00:00",
+  "enrichedBy": "regler"
+ },
+ "3f1ad659474c3d50c017451c20d1c616c55e42c6": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [],
+  "blurb": "Ledige stillinger Dansk English Log ind Min profil Min profil Juridiske studenter til København Er du jura- eller erhvervsjurastuderende og klar til at udfordre og udvikle dine juridiske evner i praksis?",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
  }
 }
