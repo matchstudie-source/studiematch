@@ -128,6 +128,34 @@ class EndToEndTest(unittest.TestCase):
             self.assertTrue(all(j["id"] and j["live"] for j in jobs))
             self.assertIn("fejl: RuntimeError", (tmp / "report.md").read_text(encoding="utf-8"))
 
+    def test_collect_ai_in_parallel(self):
+        """AI-laget kører bagefter og parallelt; et job, AI'en afviser, forsvinder, og svarene gemmes i cachen."""
+        import os
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            emp = tmp / "employers.csv"
+            emp.write_text("name,source,ref,city,region,industry,title,fam,sec,danish,hours,blurb,src_label\n"
+                           "Eksempel ApS,greenhouse,x,,cph,Tech,,,,,,,\n", encoding="utf-8")
+            originals, real_ai = dict(collect.FETCHERS), enrich.enrich_ai
+            collect.FETCHERS["greenhouse"] = lambda e: sources.parse_greenhouse_json(json.loads(fixture("greenhouse.json")), e["name"])
+            enrich.enrich_ai = lambda raw, base, key: {**base, "skip": True} if raw["title"] == "Data Analyst" else {**base, "fam": "bi", "enrichedBy": "ai"}
+            paths = {k: getattr(collect, k) for k in ("EMPLOYERS", "MANUAL", "CACHE", "REPORT", "OUT", "REJECTED")}
+            collect.EMPLOYERS, collect.MANUAL, collect.CACHE = emp, tmp / "none.csv", tmp / "cache.json"
+            collect.REPORT, collect.OUT, collect.REJECTED = tmp / "report.md", tmp / "jobs.json", tmp / "rejected.md"
+            os.environ["ANTHROPIC_API_KEY"] = "test"
+            try:
+                collect.main()
+            finally:
+                os.environ.pop("ANTHROPIC_API_KEY", None)
+                enrich.enrich_ai = real_ai
+                collect.FETCHERS.clear(); collect.FETCHERS.update(originals)
+                for k, v in paths.items():
+                    setattr(collect, k, v)
+            jobs = json.loads((tmp / "jobs.json").read_text(encoding="utf-8"))
+            self.assertNotIn("Data Analyst", {j["title"] for j in jobs})
+            self.assertTrue(jobs and all(j["enrichedBy"] == "ai" and j["fam"] == "bi" for j in jobs))
+            self.assertTrue(json.loads((tmp / "cache.json").read_text(encoding="utf-8")))
+
 
 
 class AiTest(unittest.TestCase):

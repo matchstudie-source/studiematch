@@ -131,7 +131,7 @@ def main() -> int:
     employers = normalize_sources(read_csv(EMPLOYERS))
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    jobs, report_rows, ai_calls, rejected = [], [], 0, []
+    jobs, report_rows, ai_calls, rejected, pending = [], [], 0, [], []
     max_ai_calls = int(os.environ.get("STUDIEMATCH_MAX_AI_CALLS", "200"))  # loft pr. kørsel, så regningen ikke løber løbsk
 
     for e in employers:
@@ -161,10 +161,9 @@ def main() -> int:
             key = hashlib.sha1(f"{raw.get('url')}|{raw['title']}|{len(raw.get('description', ''))}".encode()).hexdigest()
             if key in cache:
                 job = {**base, **cache[key]}
-            elif api_key and ai_calls < max_ai_calls:
-                job = enrich.enrich_ai(raw, base, api_key)
-                ai_calls += 1
-                cache[key] = {k: job[k] for k in ("fam", "sec", "danish", "hMin", "hMax", "skills", "blurb", "deadlineAt", "enrichedBy", "skip", "studies", "why", "openToAll") if k in job}
+            elif api_key and len(pending) < max_ai_calls:
+                job = base
+                pending.append((len(jobs), key, raw, base))  # læses af AI'en bagefter, mange ad gangen
             else:
                 job = base
             if job.get("skip"):
@@ -172,6 +171,18 @@ def main() -> int:
             jobs.append(job)
             kept += 1
         report_rows.append((e["name"], src, len(raw_jobs), kept, sources.LAST_NOTE.get(e["ref"], "")))
+
+    # AI-laget: læs nye opslag parallelt, så kørslen ikke løber tør for tid
+    if pending:
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=int(os.environ.get("STUDIEMATCH_AI_WORKERS", "8"))) as pool:
+            results = list(pool.map(lambda p: enrich.enrich_ai(p[2], p[3], api_key), pending))
+        for (idx, key, _raw, _base), job in zip(pending, results):
+            jobs[idx] = job
+            if job.get("enrichedBy") == "ai" or job.get("skip"):
+                cache[key] = {k: job[k] for k in ("fam", "sec", "danish", "hMin", "hMax", "skills", "blurb", "deadlineAt", "enrichedBy", "skip", "studies", "why", "openToAll") if k in job}
+        ai_calls = len(pending)
+        jobs = [j for j in jobs if not j.get("skip")]
 
     for m in read_csv(MANUAL):
         jobs.append(manual_job(m))
