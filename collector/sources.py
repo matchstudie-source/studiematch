@@ -856,8 +856,10 @@ def parse_studerendeonline_json(data: dict, url_template: str | None = None) -> 
             # arbejdsgiverens egne kategorier vægter over vores gæt
             "region_hint": region,
             "fam_hint": fams,
-            "studies": list(dict.fromkeys(w for _, ws in study for w in ws)) or None,
-            "why": f"Arbejdsgiveren søger studerende inden for {', '.join(n for n, _ in study[:3])}." if study else None,
+            # krydser arbejdsgiveren 5 eller flere uddannelsesområder af, er jobbet reelt åbent for alle
+            "studies": list(dict.fromkeys(w for _, ws in study for w in ws)) if 0 < len(study) < 5 else None,
+            "why": f"Arbejdsgiveren søger studerende inden for {', '.join(n for n, _ in study[:3])}." if 0 < len(study) < 5 else None,
+            "openToAll": len(study) >= 5,
         })
     return [j for j in jobs if j["title"]]
 

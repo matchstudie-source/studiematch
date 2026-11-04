@@ -299,7 +299,7 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
     region, city = detect_region(raw.get("location", ""), employer_area(employer))
     if raw.get("region_hint") and (region not in ("remote",) or raw["region_hint"] == "remote"):
         region = raw["region_hint"]
-    extra = {k: raw[k] for k in ("studies", "why") if raw.get(k)}
+    extra = {k: raw[k] for k in ("studies", "why", "openToAll") if raw.get(k)}
     if hint:
         extra["catFam"] = True
     return {**extra,
@@ -327,7 +327,7 @@ AI_MODEL = os.environ.get("STUDIEMATCH_MODEL", "claude-haiku-5-5")
 AI_URL = "https://api.anthropic.com/v1/messages"
 AI_ERROR = ""  # første fejl fra AI-laget i denne kørsel
 
-PROMPT = """Du hjælper en dansk side, der anbefaler studiejob til studerende. Læs jobopslaget og svar KUN med JSON.
+PROMPT = """Du hjælper en dansk side, der anbefaler studiejob til studerende. Læs jobopslaget og svar KUN med ét kompakt JSON-objekt på én linje, uden kodeblok og uden forklaring.
 
 Felter:
 - "is_student_job": true hvis jobbet er et studiejob, studentermedhjælper-job, deltidsjob for studerende eller praktik. Ellers false.
@@ -360,7 +360,7 @@ def enrich_ai(raw: dict, base: dict, api_key: str) -> dict:
     try:
         resp = requests.post(AI_URL, timeout=60, headers={
             "x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json",
-        }, json={"model": AI_MODEL, "max_tokens": 1500, "messages": [{"role": "user", "content": prompt}]})
+        }, json={"model": AI_MODEL, "max_tokens": 2000, "messages": [{"role": "user", "content": prompt}]})
         resp.raise_for_status()
         body_json = resp.json()
         stop = body_json.get("stop_reason", "")
