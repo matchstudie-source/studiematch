@@ -2668,5 +2668,37 @@
   "blurb": "Er du interesseret i myndighedsarbejde? Har du et godt overblik og en systematisk tilgang til opgaveløsningen? Så er du måske vores nye studentermedhjælper!",
   "deadlineAt": "2026-11-22T23:59:59+00:00",
   "enrichedBy": "regler"
+ },
+ "5362c32049bb185616a84328ed0d41593578ccb5": {
+  "fam": "procurement",
+  "sec": [
+   "strategy",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Regnskab"
+  ],
+  "blurb": "Det Kriminalpræventive Råds sekretariat søger en studentermedhjælper til Staben. Staben udgøres, udover studentermedhjælperen, af tre medarbejdere, som består af to administrative medarbejdere og en juridisk konsulent.…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
+ },
+ "64173be04ec0e85b6142e5ff2f911d53560966e6": {
+  "fam": "procurement",
+  "sec": [
+   "strategy",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Regnskab"
+  ],
+  "blurb": "Det Kriminalpræventive Råds sekretariat søger en studentermedhjælper til Staben. Staben udgøres, udover studentermedhjælperen, af tre medarbejdere, som består af to administrative medarbejdere og en juridisk konsulent.…",
+  "deadlineAt": null,
+  "enrichedBy": "regler"
  }
 }
