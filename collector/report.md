@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-04 16:22 UTC
+# Jobindsamling 2026-11-04 17:14 UTC
 
-1172 studiejob gemt. AI-kald i denne kørsel: 200.
+1170 studiejob gemt. AI-kald i denne kørsel: 200. AI-fejl: ValueError: substring not found
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -57,7 +57,7 @@
 | Nationalbanken | workday | 0 | 0 |  |
 | Statslige arbejdsgivere | hrmanager | 474 | 61 |  |
 | Saxo Bank | workday | 0 | 0 |  |
-| Lunar | teamtailor | 10 | 0 |  |
+| Lunar | teamtailor | 11 | 0 |  |
 | Pleo | ashby | 43 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
 | ATP | hrmanager | 24 | 0 |  |
@@ -92,7 +92,7 @@
 | Forbrugerrådet Tænk | hrmanager | 3 | 0 |  |
 | Roskilde Universitet | hrmanager | 12 | 1 |  |
 | IT-Universitetet | hrmanager | 8 | 3 |  |
-| Københavns Professionshøjskole | emply | 7 | 5 | 20 opslag på joblisten, 7 ligner studiejob |
+| Københavns Professionshøjskole | emply | 4 | 2 | 6 opslag på joblisten, 4 ligner studiejob |
 | Statslige arbejdsgivere | hrmanager | 73 | 4 |  |
 | VIA University College | emply | 3 | 2 | 36 opslag på joblisten, 3 ligner studiejob |
 | UCN | emply | 0 | 0 | 7 opslag på joblisten, 0 ligner studiejob |

@@ -4204,90 +4204,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til forskningsprojekt: Børnehaver i bevægelse",
-  "co": "Københavns Professionshøjskole",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "education",
-  "sec": [
-   "research",
-   "pmo"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "Dokumentation"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Login My profile My profile Studentermedhjælper til forskningsprojekt: Børnehaver i bevægelse Er du nysgerrig på forskning, børns trivsel og betydningen af bevægelse i dagtilbud?",
-  "req": null,
-  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forskningsprojekt-bornehaver-i-bevaegelse/h2e2le",
-  "enrichedBy": "regler",
-  "id": "x6c3a1ee3f8dd",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Forskning og Udvikling ved Institut for Sygeplejerske- og Ernæringsuddannelser",
-  "co": "Københavns Professionshøjskole",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "health",
-  "sec": [
-   "research"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Login My profile My profile Studentermedhjælper til Forskning og Udvikling ved Institut for Sygeplejerske- og Ernæringsuddannelser Er du studerende, og vil du gerne arbejde med forskningsunderstøttelse og…",
-  "req": null,
-  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forskning-og-udvikling-ved-institut-for-sygeplejerske-og/bka7i0",
-  "enrichedBy": "regler",
-  "id": "x951b965062ac",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Forretnings-IT",
-  "co": "Københavns Professionshøjskole",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "health",
-   "education"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Login My profile My profile Studentermedhjælper til Forretnings-IT Er du systematisk, digitalt nysgerrig og god til at føre opgaver videre?",
-  "req": null,
-  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-forretnings-it/0tpjwp",
-  "enrichedBy": "regler",
-  "id": "x884fc96bfe5a",
-  "live": true
- },
- {
   "title": "Laborantpraktikant til undervisning og forsknings- og innovationsopgaver",
   "co": "Erhvervsakademi Aarhus",
   "city": "Sønderhøj",
@@ -9598,6 +9514,54 @@
   "url": "https://studerendeonline.dk/job/3152368/?utm_source=studiematch.dk",
   "enrichedBy": "regler",
   "id": "x473206e5b829",
+  "live": true
+ },
+ {
+  "studies": [
+   "pædagog",
+   "lærer",
+   "pædagogik",
+   "undervisning",
+   "medicin",
+   "sygepleje",
+   "farmaci",
+   "sundhed",
+   "folkesundhed",
+   "fysioterapeut",
+   "ergoterapeut",
+   "bioanalytiker",
+   "jordemoder",
+   "radiograf",
+   "tandpleje",
+   "odontologi"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for pædagogik og undervisning, medicin og sundhed.",
+  "catFam": true,
+  "title": "Studentermedhjælper til Forretnings-IT",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "education",
+   "social"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Løn"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-16T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Er du systematisk, digitalt nysgerrig og god til at føre opgaver videre? Har du lyst til at arbejde med sikkerhed tæt på de systemer og mennesker, der får hverdagen til at fungere på Københavns Professionshøjskole (KP)?",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3152369/?utm_source=studiematch.dk",
+  "enrichedBy": "regler",
+  "id": "x9f083712546a",
   "live": true
  },
  {
