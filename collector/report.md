@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-04 17:48 UTC
+# Jobindsamling 2026-11-04 18:24 UTC
 
-1168 studiejob gemt. AI-kald i denne kørsel: 200. AI-fejl: ValueError: substring not found
+1160 studiejob gemt. AI-kald i denne kørsel: 200. AI-fejl: ValueError: substring not found  (stop: max_tokens, svar: '```json\n{\n  "is_student_job": true,\n  "fam": "social",\n  "sec": ["marketing", "bizdev"],\n  "danish": "plus",\n  "h_min": null,\n  "h_max": null,\n  "skills": ["pro')
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -92,7 +92,7 @@
 | Forbrugerrådet Tænk | hrmanager | 3 | 0 |  |
 | Roskilde Universitet | hrmanager | 12 | 1 |  |
 | IT-Universitetet | hrmanager | 8 | 3 |  |
-| Københavns Professionshøjskole | emply | 4 | 2 | 6 opslag på joblisten, 4 ligner studiejob |
+| Københavns Professionshøjskole | emply | 7 | 5 | 20 opslag på joblisten, 7 ligner studiejob |
 | Statslige arbejdsgivere | hrmanager | 73 | 4 |  |
 | VIA University College | emply | 3 | 2 | 36 opslag på joblisten, 3 ligner studiejob |
 | UCN | emply | 0 | 0 | 7 opslag på joblisten, 0 ligner studiejob |
