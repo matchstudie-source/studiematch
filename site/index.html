@@ -341,6 +341,18 @@ button.ctx:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .sponsored.direct{background:var(--accent-soft);color:var(--accent)}
 .field-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
 .auth-form{display:grid;gap:14px}
+.auth-sheet{position:relative;max-width:420px}
+.auth-sheet h2{padding-right:36px}
+.sheet-x{all:unset;cursor:pointer;position:absolute;top:14px;right:14px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;color:var(--muted)}
+.sheet-x:hover{background:var(--bg)} .sheet-x:focus-visible{outline:2px solid var(--accent)}
+.sheet-x svg{width:18px;height:18px}
+.btn-block{width:100%;justify-content:center}
+.label-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.label-row .link-btn{font-size:14px}
+.link-btn.center{justify-self:center;font-size:14.5px}
+.auth-switch{margin:0;text-align:center;font-size:14.5px;color:var(--muted)}
+.auth-or{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:14px;margin:18px 0 12px}
+.auth-or::before,.auth-or::after{content:"";flex:1;height:1px;background:var(--line)}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted)}
 .check input{margin-top:3px;width:18px;height:18px;accent-color:var(--accent);flex:none}
 .form-err{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 12px;font-size:14px;margin:0}
@@ -735,10 +747,21 @@ function applyServer(d){
     persist();
   } else if(S.onboarded) syncSoon();
 }
+/* Links som studiematch.dk/#nulstil=… (fra mailen), /#log-ind og /#glemt åbner det rigtige vindue */
+function openFromHash(){
+  if(!ACC.backend) return false;
+  const m=location.hash.match(/^#nulstil=([a-f0-9]{64})$/);
+  if(m) UI.sheet={type:"reset",token:m[1]}, UI.focus="rs-pw";
+  else if(!ACC.user && (location.hash==="#log-ind" || location.hash==="#glemt")) UI.sheet={type:"auth",mode:location.hash==="#glemt"?"forgot":"login"}, UI.focus="au-mail";
+  else return false;
+  history.replaceState(null,"",location.pathname); return true;
+}
+window.addEventListener("hashchange",()=>{ if(openFromHash()) render(); });
 async function initAccount(){
   const r=await api("me");
   ACC.ready=true; ACC.backend = r.ok && "user" in r.data; ACC.ai=!!r.data.ai;
   if(ACC.backend && r.data.user){ ACC.user=r.data.user; applyServer(r.data); if(ACC.user.mustChangePassword) UI.sheet={type:"password",forced:true}; }
+  openFromHash();
   render();
 }
 /* Anonym statistik: ingen cookies. Serveren tæller besøgende med en hash, der skifter hver dag. */
@@ -1222,7 +1245,7 @@ function tabsHTML(kind){
 }
 function ctxLine(){ const p=S.profile; const more=(p.extra||[]).length; return esc([p.programShort+(p.uni?" · "+p.uni:"")+(more?` + ${more} mere`:""),(p.hoursMax>=40?"Alle timer":hoursText(p.hoursMax)+"/uge"),danishLabel(p.danish)].join(" · ")); }
 function vApp(){
-  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<button class="ctx" data-act="program-sheet" data-v="replace" title="Skift uddannelse">${ctxLine()}</button>${ACC.backend?(ACC.user?`<button class="btn btn-ghost btn-sm acct" data-act="tab" data-tab="profile" title="${esc(ACC.user.email)}">${I.user}<span class="hide-mobile">${esc(ACC.user.name||"Min konto")}</span></button>`:'<button class="btn btn-ghost btn-sm" data-act="auth" data-v="signup">Opret bruger</button>'):'<button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button>'}</div></header>
+  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<button class="ctx" data-act="program-sheet" data-v="replace" title="Skift uddannelse">${ctxLine()}</button>${ACC.backend?(ACC.user?`<button class="btn btn-ghost btn-sm acct" data-act="tab" data-tab="profile" title="${esc(ACC.user.email)}">${I.user}<span class="hide-mobile">${esc(ACC.user.name||"Min konto")}</span></button>`:'<button class="btn btn-ghost btn-sm" data-act="auth" data-v="login">Log ind</button>'):'<button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button>'}</div></header>
   <div class="wrap app-grid">
     <nav class="rail" aria-label="Sektioner">${tabsHTML("rail")}</nav>
     <main class="feed-col" id="main">${S.tab==="saved"?tSaved():S.tab==="profile"?tProfile():tForYou()}</main>
@@ -1373,18 +1396,50 @@ function tasteHTML(){
   </section>`;
 }
 function authSheet(sh){
-  const signup=sh.mode!=="login"; const a=UI.auth;
-  return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
-    <h2 id="sh-t">${signup?"Opret en gratis bruger":"Log ind"}</h2>
-    <p>${signup?"Så gemmes din profil, dine gemte job og dit CV, og du kan bruge Studiematch på alle dine enheder.":"Velkommen tilbage."}</p>
+  const mode=sh.mode||"login"; const a=UI.auth;
+  const close=`<button class="sheet-x" type="button" data-act="close-sheet" aria-label="Luk">${I.x}</button>`;
+  const err=sh.err?`<p class="form-err" role="alert">${esc(sh.err)}</p>`:"";
+  const wrap=inner=>`<div class="scrim" data-act="close-sheet"><div class="sheet auth-sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>${close}${inner}</div></div>`;
+  if(mode==="forgot") return wrap(sh.sent
+    ? `<h2 id="sh-t">Tjek din mail</h2><p>Hvis der findes en bruger med <b>${esc(a.email)}</b>, har vi sendt et link, hvor du kan vælge en ny adgangskode. Linket virker i en time. Kig også i spam.</p>
+       <div class="sheet-actions"><button class="btn btn-ghost" data-act="auth-mode" data-v="login">Tilbage til log ind</button></div>`
+    : `<h2 id="sh-t">Glemt adgangskode?</h2><p>Skriv din mail, så sender vi et link, hvor du kan vælge en ny.</p>
+       <form class="auth-form" data-form="forgot">
+         <div class="field"><label class="label" for="au-mail">E-mail</label><input id="au-mail" class="input" type="email" autocomplete="email" required value="${esc(a.email)}"></div>
+         ${err}
+         <button class="btn btn-primary btn-block" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Sender…":"Send link"}</button>
+         <button class="link-btn center" type="button" data-act="auth-mode" data-v="login">Tilbage til log ind</button>
+       </form>`);
+  if(mode==="signup") return wrap(`<h2 id="sh-t">Opret en gratis bruger</h2>
+    <p>Så gemmes din profil, dine gemte job og dit CV, og du kan logge ind fra alle dine enheder.</p>
     <form class="auth-form" data-form="auth">
-      ${signup?`<div class="field"><label class="label" for="au-name">Navn <span class="fine">(valgfrit)</span></label><input id="au-name" class="input" autocomplete="name" value="${esc(a.name)}"></div>`:""}
+      <div class="field"><label class="label" for="au-name">Navn <span class="fine">(valgfrit)</span></label><input id="au-name" class="input" autocomplete="name" value="${esc(a.name)}"></div>
       <div class="field"><label class="label" for="au-mail">E-mail</label><input id="au-mail" class="input" type="email" autocomplete="email" required value="${esc(a.email)}"></div>
-      <div class="field"><label class="label" for="au-pw">Adgangskode</label><input id="au-pw" class="input" type="password" autocomplete="${signup?"new-password":"current-password"}" required minlength="${signup?8:1}">${signup?'<p class="fine">Mindst 8 tegn.</p>':""}</div>
-      ${signup?`<label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="/privatliv.html" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>`:""}
+      <div class="field"><label class="label" for="au-pw">Adgangskode</label><input id="au-pw" class="input" type="password" autocomplete="new-password" required minlength="8"><p class="fine">Mindst 8 tegn.</p></div>
+      <label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="/privatliv.html" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>
+      ${err}
+      <button class="btn btn-primary btn-block" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Vent…":"Opret bruger"}</button>
+      <p class="auth-switch">Har du allerede en bruger? <button class="link-btn" type="button" data-act="auth-mode" data-v="login">Log ind</button></p>
+    </form>`);
+  return wrap(`<h2 id="sh-t">Log ind</h2>
+    <form class="auth-form" data-form="auth">
+      <div class="field"><label class="label" for="au-mail">E-mail</label><input id="au-mail" class="input" type="email" autocomplete="email" required value="${esc(a.email)}"></div>
+      <div class="field"><div class="label-row"><label class="label" for="au-pw">Adgangskode</label><button class="link-btn" type="button" data-act="auth-mode" data-v="forgot">Glemt adgangskode?</button></div><input id="au-pw" class="input" type="password" autocomplete="current-password" required></div>
+      ${err}
+      <button class="btn btn-primary btn-block" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Vent…":"Log ind"}</button>
+    </form>
+    <div class="auth-or"><span>Ny på Studiematch?</span></div>
+    <button class="btn btn-ghost btn-block" data-act="auth-mode" data-v="signup">Opret en gratis bruger</button>`);
+}
+function resetSheet(sh){
+  return `<div class="scrim"><div class="sheet auth-sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">Vælg en ny adgangskode</h2>
+    <form class="auth-form" data-form="reset">
+      <div class="field"><label class="label" for="rs-pw">Ny adgangskode</label><input id="rs-pw" class="input" type="password" autocomplete="new-password" minlength="8" required><p class="fine">Mindst 8 tegn.</p></div>
+      <div class="field"><label class="label" for="rs-pw2">Gentag adgangskoden</label><input id="rs-pw2" class="input" type="password" autocomplete="new-password" minlength="8" required></div>
       ${sh.err?`<p class="form-err" role="alert">${esc(sh.err)}</p>`:""}
-      <div class="sheet-actions"><button class="btn btn-quiet" type="button" data-act="auth-mode" data-v="${signup?"login":"signup"}">${signup?"Har du en bruger? Log ind":"Ny her? Opret bruger"}</button><button class="btn btn-primary" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Vent…":signup?"Opret bruger":"Log ind"}</button></div>
-      ${signup?"":`<p class="fine">Glemt adgangskoden? Skriv til <a href="mailto:matchstudie@gmail.com">matchstudie@gmail.com</a>, så sender vi en ny.</p>`}
+      <button class="btn btn-primary btn-block" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Gemmer…":"Gem og log ind"}</button>
+      ${sh.expired?`<button class="link-btn center" type="button" data-act="auth-mode" data-v="forgot">Send et nyt link</button>`:""}
     </form></div></div>`;
 }
 function passwordSheet(sh){
@@ -1469,6 +1524,7 @@ function sheetHTML(){
   if(UI.sheet.type==="postjob") return postJobSheet(UI.sheet);
   if(UI.sheet.type==="auth") return authSheet(UI.sheet);
   if(UI.sheet.type==="password") return passwordSheet(UI.sheet);
+  if(UI.sheet.type==="reset") return resetSheet(UI.sheet);
   if(UI.sheet.type==="program") return programSheet(UI.sheet);
   if(UI.sheet.type==="cv") return cvSheet(UI.sheet);
   const j=byId(UI.sheet.id);
@@ -1572,8 +1628,8 @@ function act(a, el){
       S=fresh(); UI.confirmDelete=false; UI.expanded={}; try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Dine data er slettet."); })(); return;
     case "postjob": UI.sheet={type:"postjob"}; UI.focus="pj-company"; return render();
     case "mfb": { const j=byId(id), fb=fbOf(id); fb.mfb=v; track(v==="good"?"match_good":"match_bad",{jobId:id,label:jobLabel(j),meta:(p.programName||"").slice(0,120)}); commit(); return toast(v==="good"?"Tak! Det hjælper os med at ramme endnu bedre.":"Tak! Vi bruger det til at gøre matchningen bedre."); }
-    case "auth": UI.sheet={type:"auth",mode:v||"signup"}; UI.focus=v==="login"?"au-mail":"au-name"; return render();
-    case "auth-mode": saveAuthFields(); UI.sheet={type:"auth",mode:v}; return render();
+    case "auth": UI.sheet={type:"auth",mode:v||"login"}; UI.focus=v==="signup"?"au-name":"au-mail"; return render();
+    case "auth-mode": saveAuthFields(); UI.sheet={type:"auth",mode:v}; UI.focus=v==="signup"?"au-name":"au-mail"; return render();
     case "pw-sheet": UI.sheet={type:"password"}; UI.focus="pw-old"; return render();
     case "logout": (async()=>{ await api("auth/logout",{}); ACC.user=null; S=fresh(); try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Du er logget ud."); })(); return;
     case "nudge-close": S.nudgeClosed=true; return commit();
@@ -1659,6 +1715,21 @@ async function submitPostJob(form){
   if(!r.ok){ sh.err=r.status===503?"Det virker ikke lige nu. Skriv til matchstudie@gmail.com.":(r.data.error||"Det lykkedes ikke. Prøv igen."); return render(); }
   sh.done=true; render();
 }
+async function submitForgot(form){
+  saveAuthFields(); const sh=UI.sheet; sh.busy=true; sh.err=""; render();
+  const r=await api("auth/forgot",{email:UI.auth.email}); sh.busy=false;
+  if(!r.ok){ sh.err=r.data.error||"Det lykkedes ikke. Prøv igen."; return render(); }
+  sh.sent=true; render();
+}
+async function submitReset(form){
+  const sh=UI.sheet; const pw=form.querySelector("#rs-pw").value, pw2=form.querySelector("#rs-pw2").value;
+  if(pw!==pw2){ sh.err="De to adgangskoder er ikke ens."; return render(); }
+  sh.busy=true; sh.err=""; render();
+  const r=await api("auth/reset",{token:sh.token,password:pw}); sh.busy=false;
+  if(!r.ok){ sh.err=r.data.error||"Det lykkedes ikke. Prøv igen."; sh.expired=r.status===400; return render(); }
+  ACC.user=r.data.user; UI.sheet=null; applyServer(r.data); if(S.onboarded && S.view==="landing") S.view="app";
+  render(); toast("Din nye adgangskode er gemt, og du er logget ind.");
+}
 async function submitAuth(form){
   saveAuthFields(); const sh=UI.sheet; const pw=form.querySelector("#au-pw").value; const signup=sh.mode!=="login";
   if(signup && !UI.auth.consent){ sh.err="Sæt flueben ved privatlivspolitikken for at oprette en bruger."; return render(); }
@@ -1687,6 +1758,8 @@ function onSubmit(form){
       if(r.ok || r.status===503){ UI.waitlistDone=true; UI.waitlistErr=""; } else UI.waitlistErr=r.data.error||"Det lykkedes ikke. Skriv til matchstudie@gmail.com.";
       render(); }); return; }
   if(k==="auth") return submitAuth(form);
+  if(k==="forgot") return submitForgot(form);
+  if(k==="reset") return submitReset(form);
   if(k==="postjob") return submitPostJob(form);
   if(k==="password") return submitPassword(form);
   if(k==="study"){ const t=form.querySelector("#pf-study").value.trim(); if(!t) return; const uni=(document.getElementById("pf-uni")||{}).value||"other"; const m=findProgram(t, uni)||programsFor(uni,"all",t)[0]; if(m) setProgram(m,true); else setFreeText(t, uni, true); UI.pfUni=null; commit(); return toast(`Matcher nu som ${p.programName}${p.uni?" ("+p.uni+")":""}.`); }

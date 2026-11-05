@@ -66,6 +66,7 @@ Siden virker uden dette trin. Så gemmes profilen bare i browseren. Med trinnet 
 3. Samme sted under **Settings → Variables and secrets → Add**:
    - `ADMIN_EMAILS` = jeres mails med komma imellem, fx `matchstudie@gmail.com`. De bliver admin, når de opretter en bruger.
    - `ANTHROPIC_API_KEY` (valgfri, type **Secret**) slår AI-agenten til. Den læser CV'er og tolker uddannelser, siden ikke kender. Højst 300 AI-kald i døgnet (kan ændres med `AI_DAILY_LIMIT`).
+   - `MAIL_FROM` = `Studiematch <noreply@studiematch.dk>`: afsender på mails til brugerne, fx når de har glemt deres adgangskode. Kræver, at studiematch.dk er bekræftet under **Domains** hos Resend.
    - `RESEND_API_KEY` (valgfri, type **Secret**): I får en mail, hver gang en virksomhed skriver via formularen på forsiden. Opret en gratis konto på resend.com med den mail, beskederne skal til. `NOTIFY_EMAIL` kan ændre modtageren (standard matchstudie@gmail.com).
 4. **Deployments →** den nyeste → **⋯ → Retry deployment**, så indstillingerne slår igennem.
 5. Opret jer selv som brugere på siden med mailen fra `ADMIN_EMAILS`, og åbn `studiematch.dk/admin.html`.

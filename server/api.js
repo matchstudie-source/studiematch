@@ -8,6 +8,8 @@
  *   RESEND_API_KEY     valgfri: sender en mail til jer, når en virksomhed skriver sig op
  *   NOTIFY_EMAIL       hvem mailen går til, standard matchstudie@gmail.com
  *   NOTIFY_FROM        afsender, standard "Studiematch <onboarding@resend.dev>"
+ *   MAIL_FROM          afsender på mails til brugerne (nulstil adgangskode), fx "Studiematch <noreply@studiematch.dk>".
+ *                      Kræver, at studiematch.dk er bekræftet hos Resend. Uden den kan Resend kun sende til jeres egen mail.
  */
 
 const FAMS = {
@@ -101,6 +103,7 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS companies (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, company TEXT, email TEXT)`,
   `CREATE TABLE IF NOT EXISTS program_cache (key TEXT PRIMARY KEY, weights TEXT, ts INTEGER)`,
   `CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)`,
+  `CREATE TABLE IF NOT EXISTS password_resets (token TEXT PRIMARY KEY, user_id INTEGER NOT NULL, expires_at INTEGER, used INTEGER DEFAULT 0)`,
   `CREATE TABLE IF NOT EXISTS posted_jobs (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, status TEXT DEFAULT 'pending',
      company TEXT, contact TEXT, email TEXT, title TEXT, city TEXT, region TEXT, h_min INTEGER, h_max INTEGER, danish TEXT,
      url TEXT, deadline TEXT, description TEXT, fam TEXT, sec TEXT, studies TEXT, why TEXT, approved_at INTEGER)`,
@@ -135,6 +138,18 @@ async function notify(env, subject, rows, replyTo) {
   });
   if (!res.ok) console.error("Resend", res.status, await res.text());
 }
+/* Mail til en bruger (fx nulstil adgangskode). Returnerer true, hvis Resend tog imod den. */
+async function sendMail(env, to, subject, html) {
+  if (!env.RESEND_API_KEY) return false;
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ from: env.MAIL_FROM || env.NOTIFY_FROM || "Studiematch <onboarding@resend.dev>", to: [to], subject, html }),
+  });
+  if (!res.ok) console.error("Resend", res.status, await res.text());
+  return res.ok;
+}
+const RESET_MINUTES = 60;
 async function salt(db) {
   const row = await db.prepare("SELECT v FROM kv WHERE k='salt'").first();
   if (row) return row.v;
@@ -369,6 +384,47 @@ async function route(ctx, path, method) {
     const cookie = await startSession(db, u.id, new URL(req.url).host);
     return json({ user: publicUser(u), profile: parse(u.profile), state: parse(u.state), cv: u.cv_name ? { name: u.cv_name, at: u.cv_at, extract: parse(u.cv_extract) } : null },
       200, { "Set-Cookie": cookie });
+  }
+  /* ----- glemt adgangskode: et link på mail, der virker i en time ----- */
+  if (path === "auth/forgot" && method === "POST") {
+    const b = await readBody(req, 2000);
+    const email = cleanEmail(b.email);
+    if (!validEmail(email)) return err("Skriv en gyldig mail");
+    if (!env.RESEND_API_KEY) return err("Nulstilling på mail er ikke slået til endnu. Skriv til matchstudie@gmail.com.", 503);
+    const recent = await db.prepare("SELECT COUNT(*) AS n FROM events WHERE type='reset_req' AND label=? AND ts>?").bind(email, now() - 3600e3).first();
+    await db.prepare("INSERT INTO events (ts, day, type, label) VALUES (?, ?, 'reset_req', ?)").bind(now(), day(), email).run();
+    const u = await db.prepare("SELECT id, name FROM users WHERE email=?").bind(email).first();
+    /* Samme svar, uanset om brugeren findes, så ingen kan teste, hvilke mails der har en bruger */
+    if (u && (recent?.n || 0) < 3) {
+      const token = randHex(32);
+      await db.prepare("INSERT INTO password_resets (token, user_id, expires_at) VALUES (?, ?, ?)").bind(await sha256(token), u.id, now() + RESET_MINUTES * 60e3).run();
+      const link = `${env.SITE_URL || new URL(req.url).origin}/#nulstil=${token}`;
+      const html = `<div style="font-family:system-ui,sans-serif;font-size:16px;line-height:1.5;color:#1F2C33;max-width:520px">
+        <h2 style="margin:0 0 12px;color:#0B7D60">Vælg en ny adgangskode</h2>
+        <p>Hej${u.name ? " " + escHtml(u.name) : ""}</p>
+        <p>Nogen (forhåbentlig dig) har bedt om at nulstille adgangskoden til din bruger på Studiematch. Tryk på knappen for at vælge en ny. Linket virker i ${RESET_MINUTES} minutter.</p>
+        <p><a href="${link}" style="display:inline-block;background:#0B7D60;color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px">Vælg ny adgangskode</a></p>
+        <p style="color:#64737B;font-size:14px">Har du ikke bedt om det, kan du bare ignorere mailen. Din adgangskode er ikke ændret.</p></div>`;
+      const send = sendMail(env, email, "Nulstil din adgangskode til Studiematch", html).catch((e) => console.error(e));
+      if (ctx.waitUntil) ctx.waitUntil(send); else await send;
+    }
+    return json({ ok: true });
+  }
+  if (path === "auth/reset" && method === "POST") {
+    const b = await readBody(req, 2000);
+    const password = String(b.password || "");
+    if (password.length < 8) return err("Adgangskoden skal være mindst 8 tegn");
+    const row = await db.prepare("SELECT * FROM password_resets WHERE token=?").bind(await sha256(String(b.token || ""))).first();
+    if (!row || row.used || row.expires_at < now()) return err("Linket er udløbet eller allerede brugt. Bed om et nyt.", 400);
+    const { hash, salt: s } = await hashPassword(password);
+    await db.batch([
+      db.prepare("UPDATE users SET pw_hash=?, pw_salt=?, must_change_pw=0 WHERE id=?").bind(hash, s, row.user_id),
+      db.prepare("UPDATE password_resets SET used=1 WHERE user_id=?").bind(row.user_id),
+      db.prepare("DELETE FROM sessions WHERE user_id=?").bind(row.user_id),
+    ]);
+    const u = await db.prepare("SELECT * FROM users WHERE id=?").bind(row.user_id).first();
+    const cookie = await startSession(db, u.id, new URL(req.url).host);
+    return json({ user: publicUser(u), profile: parse(u.profile), state: parse(u.state) }, 200, { "Set-Cookie": cookie });
   }
   if (path === "auth/logout" && method === "POST") {
     const token = getCookie(req, COOKIE);
