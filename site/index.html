@@ -1034,7 +1034,7 @@ function cardHTML(job, ev, opts){
       <button class="icon-btn b-like" ${da||`data-act="like" data-id="${job.id}"`} aria-pressed="${!!fb.liked}" aria-label="Interesseret" title="Interesseret">${I.thumb}</button>
       <button class="why-btn" ${da||`data-act="why" data-id="${job.id}"`} aria-expanded="${open}"><span>Hvorfor<span class="why-long"> dette match</span></span>${I.chev}</button>
       <span class="act-spacer"></span>
-      <button class="btn btn-primary btn-sm" ${da||`data-act="apply" data-id="${job.id}"`}>Søg ${I.out}</button>
+      ${!da && job.url ? applyLink(job,"btn btn-primary btn-sm",`Søg ${I.out}`) : `<button class="btn btn-primary btn-sm" ${da||`data-act="apply" data-id="${job.id}"`}>Søg ${I.out}</button>`}
     </div>
   </article>`;
 }
@@ -1270,7 +1270,7 @@ function tSaved(){
     return `<div class="srow"><div class="monogram" style="--h:${hue(j.co)}" aria-hidden="true">${esc(initials(j.co))}</div>
       <div class="srow-main"><div class="srow-title">${esc(j.title)}</div><div class="srow-sub">${esc(j.co)} · ${j.rolling?"Løbende optag":j.deadline==null?"Ingen frist angivet":"Frist "+deadlineDate(j.deadline)}${ev.level?" · "+levelLabel(ev.level):""}</div></div>
       <span class="status ${fb.applied?"st-applied":"st-saved"}">${fb.applied?"Søgt":"Gemt"}</span>
-      ${fb.applied?"":`<button class="btn btn-primary btn-sm" data-act="apply" data-id="${id}">Søg</button>`}
+      ${fb.applied?"":j.url?applyLink(j,"btn btn-primary btn-sm","Søg"):`<button class="btn btn-primary btn-sm" data-act="apply" data-id="${id}">Søg</button>`}
       <button class="mini-x" data-act="unsave" data-id="${id}" aria-label="Fjern ${esc(j.title)}">${I.x}</button></div>`; };
   const applied=ids.filter(id=>S.fb[id].applied), saved=ids.filter(id=>!S.fb[id].applied);
   return head+(applied.length?`<h2 class="group-h">Søgt · ${applied.length}</h2><div class="row-list">${applied.map(row).join("")}</div>`:"")+(saved.length?`<h2 class="group-h">Gemt · ${saved.length}</h2><div class="row-list">${saved.map(row).join("")}</div>`:"");
@@ -1453,6 +1453,17 @@ function postJobSheet(sh){
       <div class="sheet-actions"><button class="btn btn-quiet" type="button" data-act="close-sheet">Annuller</button><button class="btn btn-primary" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Sender…":"Send til godkendelse"}</button></div>
     </form></div></div>`;
 }
+/* "Søg" åbner opslaget i en ny fane. Når man kommer tilbage, spørger vi, om man søgte (idé fra StuderendeOnline.dk) */
+function applyLink(j, cls, label){
+  return `<a class="${cls}" href="${esc(j.url)}" target="_blank" rel="noopener" data-track="apply" data-id="${j.id}">${label}</a>`;
+}
+let pendingApply=null;
+function askIfApplied(){
+  if(!pendingApply || document.visibilityState==="hidden") return;
+  const {id,at}=pendingApply; pendingApply=null;
+  if(Date.now()-at<2500 || !byId(id) || (S.fb[id]||{}).applied || UI.sheet) return;
+  UI.sheet={type:"apply",id,ask:true}; render();
+}
 function sheetHTML(){
   if(!UI.sheet) return "";
   if(UI.sheet.type==="postjob") return postJobSheet(UI.sheet);
@@ -1468,6 +1479,11 @@ function sheetHTML(){
       <div class="reason-list">${opts.map(([v,l,s])=>`<button data-act="reason" data-v="${v}">${l}${s?`<small>${esc(s)}</small>`:""}</button>`).join("")}</div>
       <div class="sheet-actions"><button class="btn btn-quiet" data-act="reason" data-v="skip">Skjul bare jobbet</button></div></div></div>`;
   }
+  if(UI.sheet.ask) return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+    <h2 id="sh-t">Søgte du jobbet hos ${esc(j.co)}?</h2>
+    <p>${esc(j.title)}</p>
+    <p>Så holder vi styr på det under Gemt${j.deadline!=null&&!j.rolling?`, og du kan se fristen (${deadlineDate(j.deadline)})`:""}.</p>
+    <div class="sheet-actions"><button class="btn btn-quiet" data-act="close-sheet">Nej</button><button class="btn btn-ghost" data-act="apply-later">Gem til senere</button><button class="btn btn-primary" data-act="apply-go">Ja, jeg har søgt</button></div></div></div>`;
   return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
     <h2 id="sh-t">Søg hos ${esc(j.co)}</h2>
     <p>${j.url?`Du søger direkte hos ${esc(j.co)} på deres egen side.`:"I den rigtige version åbner dette det originale jobopslag på virksomhedens egen side."} Vi søger aldrig på dine vegne.</p>
@@ -1527,6 +1543,7 @@ function act(a, el){
     case "unsave": { const fb=fbOf(id); snap(); fb.saved=false; fb.applied=false; commit(); return toast("Fjernet",true); }
     case "dismiss": UI.sheet={type:"dismiss",id}; return render();
     case "apply": UI.sheet={type:"apply",id}; return render();
+    case "apply-later": { const jid=UI.sheet.id; const fb=fbOf(jid); if(!fb.saved){ fb.saved=true; bump(byId(jid).fam,.05); } UI.sheet=null; commit(); return toast("Gemt. Du finder det under Gemt."); }
     case "close-sheet": UI.sheet=null; return render();
     case "reason": { const jid=UI.sheet.id; const j=byId(jid); snap(); UI.sheet=null;
       const fb=fbOf(jid); fb.dismissed=v; track("dismiss",{jobId:jid,label:jobLabel(j),meta:({field:"Ikke mit felt",hours:"Forkerte timer",danish:"Sproget passer ikke",location:"For langt væk",company:"Ikke denne virksomhed",other:"Noget andet",skip:"Ingen grund"})[v]||v});
@@ -1684,7 +1701,12 @@ if(typeof document!=="undefined"){
     if(el.tagName==="A") return;
     e.preventDefault(); act(el.dataset.act, el);
   });
-  document.addEventListener("click",e=>{ const a=e.target.closest("a[data-track]"); if(a) track("apply_click",{jobId:a.dataset.id,label:jobLabel(byId(a.dataset.id))}); }, true);
+  document.addEventListener("click",e=>{ const a=e.target.closest("a[data-track]"); if(!a) return;
+    track("apply_click",{jobId:a.dataset.id,label:jobLabel(byId(a.dataset.id))});
+    if(UI.sheet && UI.sheet.type==="apply"){ UI.sheet=null; render(); }
+    pendingApply={id:a.dataset.id, at:Date.now()}; }, true);
+  window.addEventListener("focus", askIfApplied);
+  document.addEventListener("visibilitychange", askIfApplied);
   document.addEventListener("submit",e=>{ e.preventDefault(); onSubmit(e.target); });
   document.addEventListener("input",e=>{
     if(e.target.id==="hero-study") UI.heroText=e.target.value;
