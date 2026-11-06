@@ -10,6 +10,9 @@ Bruges til at tjekke, om filteret er for strengt.
 | SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in Trade Finance Operations Team / SEB Group, Vilnius | udlandet: Vilnius |
+| SEB | Senior Software Developer (Vecākais izstrādātājs) in Internet Bank Customer Journey / SEB, Riga | ikke et studiejob |
+| SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Tallinn | ikke et studiejob |
+| SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Wealth & Asset Management Internship 2027: Growth and Market Intelligence / SEB, Gothenburg | udlandet: Göteborg |
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
@@ -42,6 +45,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
 | Aalborg Kommune | Ansvarsfulde og engagerende pædagoger søges til Botilbuddet Studievej 15 i Nørresundby | ikke et studiejob |
+| Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
@@ -49,6 +53,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | VIA University College | VIA University College, Pædagoguddannelsen Aarhus/Grenå søger studie- og SPS-vejleder | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
+| Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Danske Spil | Senior intern kommunikationsrådgiver | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
 | StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
