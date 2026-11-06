@@ -35,6 +35,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | Lunar | International Payment Specialist | ikke et studiejob |
+| ATP | Medarbejdere til sagsbehandling i internationale sager om familieydelse | ikke et studiejob |
 | Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |
 | NIRAS | Unsolicited intern applications | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
@@ -50,9 +51,8 @@ Bruges til at tjekke, om filteret er for strengt.
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Danske Spil | Senior intern kommunikationsrådgiver | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
+| StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
-| StuderendeOnline.dk | Studentermedhjælper, Central Operations | ikke et studiejob |
-| StuderendeOnline.dk | Student Assistant, Digital Development - Viby | ikke et studiejob |
 | StuderendeOnline.dk | Praktikplats hos ECIT! | ikke et studiejob |
