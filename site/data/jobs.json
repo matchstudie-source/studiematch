@@ -1105,28 +1105,30 @@
   "live": true
  },
  {
-  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
   "co": "Norlys",
   "city": "Silkeborg",
   "region": "oj",
-  "hMin": 10,
-  "hMax": 15,
+  "hMin": 15,
+  "hMax": 20,
   "danish": "required",
-  "fam": "finance",
+  "fam": "pmo",
   "sec": [],
   "famConf": "title",
   "skills": [
-   "Excel"
+   "Excel",
+   "Power BI",
+   "PowerPoint"
   ],
   "industry": "Energi",
-  "postedAt": "2026-10-15T00:00:00+00:00",
-  "deadlineAt": "2026-11-08T23:00:00+00:00",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
   "req": null,
-  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
   "enrichedBy": "regler",
-  "id": "x63d77aa5ca60",
+  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1158,30 +1160,28 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
   "co": "Norlys",
   "city": "Silkeborg",
   "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
+  "hMin": 10,
+  "hMax": 15,
   "danish": "required",
-  "fam": "pmo",
+  "fam": "finance",
   "sec": [],
   "famConf": "title",
   "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
+   "Excel"
   ],
   "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
+  "postedAt": "2026-10-15T00:00:00+00:00",
+  "deadlineAt": "2026-11-08T23:00:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
   "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
   "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
+  "id": "x63d77aa5ca60",
   "live": true
  },
  {
