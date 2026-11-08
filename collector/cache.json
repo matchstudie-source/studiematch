@@ -46408,5 +46408,70 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for pædagogik og undervisning.",
   "openToAll": true
+ },
+ "676a20f0f01d82ca92cebeb6914a4f34145cca47": {
+  "fam": "research",
+  "sec": [
+   "engineering",
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "syntesekemi",
+   "analytisk kemi",
+   "kemiske beregninger",
+   "engelsk",
+   "selvstændigt arbejde"
+  ],
+  "blurb": "Du medvirker til undervisningsøvelser, forskningsstøtte, indkøb og praktiske opgaver på instituttet under din laborantpraktik på 11 måneder. Arbejdet veksler mellem rutineopgaver og selvstændige opgaver inden for analytisk og syntesekemi.",
+  "deadlineAt": "2026-11-22T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "naturvidenskab",
+   "biologi",
+   "kemi",
+   "fysik",
+   "geografi",
+   "geologi",
+   "molekylær",
+   "bioteknologi",
+   "biokemi",
+   "farmaci",
+   "materiale"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for naturvidenskab, kemi og biotek.",
+  "openToAll": false
+ },
+ "d705019578e42b6954762589f5a3220a94b8b6a6": {
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "logistics"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "projektcontrolling",
+   "Power BI",
+   "månedsrapportering",
+   "regnskab",
+   "detaljeorientering"
+  ],
+  "blurb": "Du støtter månedlig rapportering og projektcontrolling, følger op på betalinger og hjælper med at dokumentere finansielle processer. Du arbejder også med Power BI-rapporter og bidrager til ledelsesrapporter sammen med erfarne projektcontrollere.",
+  "deadlineAt": "2026-11-15T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "finansiering",
+   "økonomi",
+   "cand.merc",
+   "ha",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver økonomisk indsigt, talforståelse og interesse for projektstyring og rapportering, hvilket passer godt til studerende på økonomiske uddannelser.",
+  "openToAll": false
  }
 }
