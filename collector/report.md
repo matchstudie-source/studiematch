@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-08 08:25 UTC
+# Jobindsamling 2026-11-08 18:04 UTC
 
-1152 studiejob gemt. AI-kald i denne kørsel: 2.
+1152 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 10 | 0 |  |
-| Region Syddanmark | hrmanager | 365 | 5 |  |
+| Region Syddanmark | hrmanager | 366 | 5 |  |
 | Novo Nordisk | rmk | 6 | 3 |  |
 | Novonesis | workday | 2 | 2 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -78,7 +78,7 @@
 | DR | sitemap | 1 | 1 |  |
 | 3 Danmark | teamtailor | 19 | 0 |  |
 | ISS | rmk | 1 | 0 |  |
-| HK | hrmanager | 14 | 2 |  |
+| HK | hrmanager | 13 | 2 |  |
 | Aarhus Kommune | hrmanager | 231 | 8 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
 | Aalborg Kommune | emply | 6 | 4 | 135 opslag på joblisten, 6 ligner studiejob |
@@ -87,11 +87,11 @@
 | Brøndby Kommune | emply | 1 | 1 | 58 opslag på joblisten, 1 ligner studiejob |
 | Næstved Kommune | emply | 0 | 0 | 75 opslag på joblisten, 0 ligner studiejob |
 | Holbæk Kommune | emply | 0 | 0 | ingen jobliste fundet |
-| Svendborg Kommune | emply | 1 | 0 | 42 opslag på joblisten, 1 ligner studiejob |
+| Svendborg Kommune | emply | 1 | 0 | 43 opslag på joblisten, 1 ligner studiejob |
 | Politiet | rmk | 17 | 11 |  |
 | Forbrugerrådet Tænk | hrmanager | 3 | 0 |  |
 | Roskilde Universitet | hrmanager | 12 | 1 |  |
-| IT-Universitetet | hrmanager | 8 | 3 |  |
+| IT-Universitetet | hrmanager | 7 | 3 |  |
 | Københavns Professionshøjskole | emply | 7 | 5 | 20 opslag på joblisten, 7 ligner studiejob |
 | Statslige arbejdsgivere | hrmanager | 86 | 5 |  |
 | VIA University College | emply | 2 | 2 | 36 opslag på joblisten, 2 ligner studiejob |
@@ -110,7 +110,7 @@
 | Ballerup Kommune | emply | 2 | 2 | 49 opslag på joblisten, 2 ligner studiejob |
 | Novo Nordisk Fonden | workable | 4 | 0 |  |
 | Albertslund Kommune | emply | 0 | 0 | 34 opslag på joblisten, 0 ligner studiejob |
-| Billund Kommune | hrmanager | 0 | 0 | fejl: ConnectionError |
+| Billund Kommune | hrmanager | 36 | 0 |  |
 | Faxe Kommune | hrmanager | 37 | 0 |  |
 | Fredericia Kommune | emply | 0 | 0 | 48 opslag på joblisten, 0 ligner studiejob |
 | Frederikshavn Kommune | emply | 0 | 0 | 53 opslag på joblisten, 0 ligner studiejob |
@@ -129,12 +129,12 @@
 | Nordfyns Kommune | emply | 0 | 0 | 34 opslag på joblisten, 0 ligner studiejob |
 | Nyborg Kommune | emply | 0 | 0 | 13 opslag på joblisten, 0 ligner studiejob |
 | Odder Kommune | hrmanager | 22 | 0 |  |
-| Ringkøbing-Skjern Kommune | emply | 0 | 0 | 57 opslag på joblisten, 0 ligner studiejob |
+| Ringkøbing-Skjern Kommune | emply | 0 | 0 | 58 opslag på joblisten, 0 ligner studiejob |
 | Solrød Kommune | emply | 0 | 0 | 12 opslag på joblisten, 0 ligner studiejob |
 | Stevns Kommune | emply | 0 | 0 | 25 opslag på joblisten, 0 ligner studiejob |
 | Struer Kommune | emply | 0 | 0 | 19 opslag på joblisten, 0 ligner studiejob |
 | Syddjurs Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
-| Tønder Kommune | emply | 0 | 0 | 35 opslag på joblisten, 0 ligner studiejob |
+| Tønder Kommune | emply | 0 | 0 | 36 opslag på joblisten, 0 ligner studiejob |
 | Varde Kommune | emply | 1 | 1 | 54 opslag på joblisten, 1 ligner studiejob |
 | Tandlægen.dk | hrmanager | 12 | 0 |  |
 | Capio Danmark | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |

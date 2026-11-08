@@ -1132,6 +1132,31 @@
   "live": true
  },
  {
+  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-10-15T00:00:00+00:00",
+  "deadlineAt": "2026-11-08T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
+  "enrichedBy": "regler",
+  "id": "x63d77aa5ca60",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1157,31 +1182,6 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
-  "live": true
- },
- {
-  "title": "Student Assistant til Payroll & Masterdata - 10-15 timer om ugen",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-10-15T00:00:00+00:00",
-  "deadlineAt": "2026-11-08T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Vil du have praktisk erfaring med HR-data, lønsystemer og administrative processer i en stor organisation?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Norlys/job/K%C3%B8benhavn-S-Student-Assistant-til-Payroll-&-Masterdata-10-15-timer-om-ugen-2300/1448114633/",
-  "enrichedBy": "regler",
-  "id": "x63d77aa5ca60",
   "live": true
  },
  {
