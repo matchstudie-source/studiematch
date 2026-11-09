@@ -21,11 +21,9 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Introduktionsstilling i Intern Medicin – Medicinsk Afdeling, Vejle Sygehus | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Sønderborg i specialerne endokrinologi, nefrologi, hæmatologi og lungemedicin | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Aabenraa i specialerne geriatri og gastroenterologi | ikke et studiejob |
-| Region Syddanmark | Introduktionsstillinger i intern medicin på Svendborg Sygehus | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
 | Region Syddanmark | Læge eller speciallæge i psykiatri, intern medicin eller almen medicin til Lokalpsykiatri Kolding | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger en projektleder til internationale projekter | ikke et studiejob |
-| Novo Nordisk | PhD Student in Aptamer-Enabled, Animal-Free Bioanalysis | ikke et studiejob |
 | ALK | Head of Medical Affairs International Markets | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
@@ -43,7 +41,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
-| Aalborg Kommune | Ansvarsfulde og engagerende pædagoger søges til Botilbuddet Studievej 15 i Nørresundby | ikke et studiejob |
 | Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
@@ -54,7 +51,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Danske Spil | Senior intern kommunikationsrådgiver | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
-| StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |

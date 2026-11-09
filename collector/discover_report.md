@@ -1,6 +1,6 @@
-# Virksomhedsfinder 2026-11-02 04:07 UTC
+# Virksomhedsfinder 2026-11-09 04:09 UTC
 
-319 virksomheder tjekket. Jobsystem fundet hos 125. Nye kilder tilføjet: 0.
+319 virksomheder tjekket. Jobsystem fundet hos 126. Nye kilder tilføjet: 0.
 
 | Virksomhed | Fundet | Status |
 | --- | --- | --- |
@@ -10,9 +10,9 @@
 | Genmab |  | intet jobsystem fundet |
 | LEO Pharma | sitemap: https://jobs.leo-pharma.com | kendt |
 | Coloplast |  | forsiden kunne ikke hentes |
-| Ambu |  | forsiden kunne ikke hentes |
+| Ambu |  | intet jobsystem fundet |
 | Demant | sitemap: https://careers.demant.com | kendt |
-| GN Group | workday: https://gn.wd3.myworkdayjobs.com/GN-Careers | kendt |
+| GN Group | workday: https://gngroup.wd502.myworkdayjobs.com/GN-Careers | kendt |
 | Zealand Pharma |  | forsiden kunne ikke hentes |
 | Bavarian Nordic | workday: https://bavariannordic.wd103.myworkdayjobs.com/en-US/BavarianNordic | kendt |
 | ALK | teamtailor: https://careers.alk.net | kendt |
@@ -57,7 +57,7 @@
 | Saxo Bank | workday: https://saxobank.wd3.myworkdayjobs.com/en-US/CareeratSaxoBank | kendt |
 | Lunar | teamtailor: https://jobs.lunar.app | kendt |
 | Pleo | ashby: pleo | kendt |
-| PFA |  | intet jobsystem fundet |
+| PFA | sitemap: https://www.pfa.dk | kendt |
 | ATP | hrmanager: atp | kendt |
 | PensionDanmark |  | intet jobsystem fundet |
 | Danica Pension |  | intet jobsystem fundet |
@@ -144,7 +144,7 @@
 | Domstolsstyrelsen |  | forsiden kunne ikke hentes |
 | Forbrugerrådet Tænk | hrmanager: taenk | kendt |
 | DTU |  | intet jobsystem fundet |
-| Københavns Universitet |  | intet jobsystem fundet |
+| Københavns Universitet | hrmanager: statensrekrutteringsloesning_tr | kendt |
 | CBS | hrmanager: statensrekrutteringsloesning_tr | kendt |
 | Aarhus Universitet |  | intet jobsystem fundet |
 | Syddansk Universitet |  | intet jobsystem fundet |
@@ -229,10 +229,10 @@
 | Morsø Kommune | emply: https://mors.career.emply.com | kendt |
 | Norddjurs Kommune |  | intet jobsystem fundet |
 | Nordfyns Kommune | emply: https://nordfynskommune.career.emply.com | kendt |
-| Nyborg Kommune |  | forsiden kunne ikke hentes |
+| Nyborg Kommune | emply: https://nyborg.career.emply.com | kendt |
 | Næstved Kommune | emply: https://naestved.career.emply.com | kendt |
 | Odder Kommune | hrmanager: ofir_odder | kendt |
-| Odense Kommune | hrmanager: odense-kommune_tr | kendt |
+| Odense Kommune |  | forsiden kunne ikke hentes |
 | Odsherred Kommune |  | intet jobsystem fundet |
 | Randers Kommune |  | intet jobsystem fundet |
 | Rebild Kommune |  | intet jobsystem fundet |
@@ -269,7 +269,7 @@
 | Aarhus Kommune | hrmanager: aarhuskommune_tr | kendt |
 | Godt Smil Tandlægerne |  | intet jobsystem fundet |
 | ORIS Tandlægerne |  | intet jobsystem fundet |
-| Tandlægen.dk | hrmanager: tand | kendt |
+| Tandlægen.dk |  | forsiden kunne ikke hentes |
 | Colosseum Tandlægerne | teamtailor: https://colosseumklinikken.teamtailor.com | kendt |
 | Capio Danmark | emply: https://capio.career.emply.com | kendt |
 | Aleris | hrmanager: aleris | kendt |

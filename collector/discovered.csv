@@ -3,7 +3,7 @@ Novo Nordisk,sitemap,https://www.novonordisk.com,Bagsværd,cph,Medicinal,,,,,,,,
 Novonesis,workday,https://novonesis.wd103.myworkdayjobs.com/en-US/Novonesis_Careers,Lyngby,cph,Bioteknologi,,,,,,,,https://www.novonesis.com/en/careers/jobs
 LEO Pharma,sitemap,https://jobs.leo-pharma.com,Ballerup,cph,Medicinal,,,,,,,,https://jobs.leo-pharma.com/
 Demant,sitemap,https://careers.demant.com,Smørum,cph,Medicinsk udstyr,,,,,,,,https://careers.demant.com
-GN Group,workday,https://gn.wd3.myworkdayjobs.com/GN-Careers,Ballerup,cph,Elektronik,,,,,,,,https://www.gn.com/
+GN Group,workday,https://gngroup.wd502.myworkdayjobs.com/GN-Careers,Ballerup,cph,Elektronik,,,,,,,,https://www.gn.com/
 Bavarian Nordic,workday,https://bavariannordic.wd103.myworkdayjobs.com/en-US/BavarianNordic,Hellerup,cph,Bioteknologi,,,,,,,,https://www.bavarian-nordic.com/careers/careers.aspx
 ALK,teamtailor,https://careers.alk.net,Hørsholm,cph,Medicinal,,,,,,,,https://careers.alk.net/
 Ascendis Pharma,workable,ascendis-pharma,Hellerup,cph,Bioteknologi,,,,,,,,https://ascendispharma.com/careers/
@@ -26,6 +26,7 @@ Finanstilsynet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentli
 Saxo Bank,workday,https://saxobank.wd3.myworkdayjobs.com/en-US/CareeratSaxoBank,Hellerup,cph,Finans,,,,,,,,https://www.home.saxo/about-us/careers
 Lunar,teamtailor,https://jobs.lunar.app,København,cph,Finans,,,,,,,,https://jobs.lunar.app/jobs
 Pleo,ashby,pleo,København,cph,Tech,,,,,,,,https://www.pleo.io/en/careers
+PFA,sitemap,https://www.pfa.dk,København,cph,Pension og forsikring,,,,,,,,https://www.pfa.dk/om-pfa/job-i-pfa/ledige-job/?icid=linklist_nyttigelinks_ledigestillingeripfa
 ATP,hrmanager,atp,Hillerød,cph,Pension og forsikring,,,,,,,,https://www.atp.dk/en/career
 PKA,hrmanager,forcapartner_tr,Hellerup,cph,Pension og forsikring,,,,,,,,https://pka.dk/job
 Alka,sitemap,https://careers.tryg.com,Høje-Taastrup,cph,Pension og forsikring,,,,,,,,https://careers.tryg.com/Alka?locale=da_DK&utm_source=corpsite
@@ -60,6 +61,7 @@ Uddannelses- og Forskningsministeriet,hrmanager,statensrekrutteringsloesning_tr,
 Politiet,sitemap,https://job.politi.dk,København,cph,Offentlig,,,,,,,,https://job.politi.dk/
 Kriminalforsorgen,hrmanager,statensrekrutteringsloesning_tr,København,cph,Offentlig,,,,,,,,https://xn--danmarksfngsler-5lb.dk/karriere/ledige-stillinger/
 Forbrugerrådet Tænk,hrmanager,taenk,København,cph,Interesseorganisation,,,,,,,,https://taenk.dk/om-os/job-hos-forbrugerraadet-taenk
+Københavns Universitet,hrmanager,statensrekrutteringsloesning_tr,København,cph,Uddannelse og forskning,,,,,,,,https://jobportal.ku.dk/
 CBS,hrmanager,statensrekrutteringsloesning_tr,Frederiksberg,cph,Uddannelse og forskning,,,,,,,,https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger
 Roskilde Universitet,hrmanager,ruc,Roskilde,cph,Uddannelse og forskning,,,,,,,,https://ruc.dk/roskilde-universitets-jobunivers
 IT-Universitetet,hrmanager,ituniversitetet,København,cph,Uddannelse og forskning,,,,,,,,https://www.itu.dk/Om-ITU/Stillinger
@@ -96,9 +98,9 @@ Lemvig Kommune,emply,https://lemvig.career.emply.com,Lemvig,aar,Offentlig,,,,,,,
 Mariagerfjord Kommune,emply,https://mariagerfjord.career.emply.com,Mariagerfjord,aal,Offentlig,,,,,,,,https://www.mariagerfjord.dk/om-os/job-og-elevpladser/ledige-stillinger
 Morsø Kommune,emply,https://mors.career.emply.com,Morsø,aal,Offentlig,,,,,,,,https://mors.dk/om-kommunen/job/ledige-job
 Nordfyns Kommune,emply,https://nordfynskommune.career.emply.com,Nordfyns,ode,Offentlig,,,,,,,,https://www.nordfynskommune.dk/vores-kommune/job-hos-os/ledige-stillinger/
+Nyborg Kommune,emply,https://nyborg.career.emply.com,Nyborg,ode,Offentlig,,,,,,,,https://www.nyborg.dk/da/
 Næstved Kommune,emply,https://naestved.career.emply.com,Næstved,cph,Offentlig,,,,,,,,https://www.naestved.dk/
 Odder Kommune,hrmanager,ofir_odder,Odder,aar,Offentlig,,,,,,,,https://odder.dk/borger/job-and-ledighed/ledige-kommunale-job
-Odense Kommune,hrmanager,odense-kommune_tr,Odense,ode,Offentlig,,,,,,,,https://www.odense.dk/job
 Ringkøbing-Skjern Kommune,emply,https://rksk-v2.career.emply.com,Ringkøbing-Skjern,aar,Offentlig,,,,,,,,https://www.rksk.dk/om-kommunen/ledige-jobs-uddannelse-og-kommunen-som-arbejdsplads
 Solrød Kommune,emply,https://solrod.career.emply.com,Solrød,cph,Offentlig,,,,,,,,https://solrod.dk/
 Stevns Kommune,emply,https://stevns.career.emply.com,Stevns,cph,Offentlig,,,,,,,,https://www.stevns.dk/ledige-stillinger
@@ -109,7 +111,6 @@ Tønder Kommune,emply,https://toender.career.emply.com,Tønder,ode,Offentlig,,,,
 Varde Kommune,emply,https://varde.career.emply.com,Varde,ode,Offentlig,,,,,,,,https://vardekommune.dk/
 Aalborg Kommune,emply,https://aalborg.career.emply.com,Aalborg,aal,Offentlig,,,,,,,,https://www.aalborg.dk/job-og-karriere/se-ledige-job/
 Aarhus Kommune,hrmanager,aarhuskommune_tr,Aarhus,aar,Offentlig,,,,,,,,https://aarhus.dk/job
-Tandlægen.dk,hrmanager,tand,København,cph,Sundhed,,,,,,,,https://tandlaegen.dk:443/
 Colosseum Tandlægerne,teamtailor,https://colosseumklinikken.teamtailor.com,Hellerup,cph,Sundhed,,,,,,,,https://www.colosseumtand.dk/
 Capio Danmark,emply,https://capio.career.emply.com,Hellerup,cph,Sundhed,,,,,,,,https://capio.dk/bliv-en-del-af-capio/
 Aleris,hrmanager,aleris,København,cph,Sundhed,,,,,,,,https://www.aleris.dk/godt-at-vide/om-aleris-danmark/job-hos-aleris/

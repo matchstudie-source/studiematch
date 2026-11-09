@@ -46473,5 +46473,49 @@
   ],
   "why": "Jobbet kræver økonomisk indsigt, talforståelse og interesse for projektstyring og rapportering, hvilket passer godt til studerende på økonomiske uddannelser.",
   "openToAll": false
+ },
+ "d497760aa2f9db54a4b9fd6254f6164db6af6520": {
+  "fam": "bi",
+  "sec": [
+   "marketing",
+   "finance"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel",
+   "PowerPoint",
+   "dataanalyse",
+   "dashboards",
+   "Power BI"
+  ],
+  "blurb": "Du støtter det globale marketingteam med at måle markeders, produkters og brands performance og bygger dashboards og rapporter. Du laver også ad hoc-analyser og deltager i projekter om brand- og markedsstrategi.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, teknik og teknologi, samfundsvidenskab.",
+  "openToAll": false
  }
 }
