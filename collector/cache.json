@@ -46517,5 +46517,84 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for marketing og business, teknik og teknologi, samfundsvidenskab.",
   "openToAll": false
+ },
+ "cb27b2c7f036938931db53755d3c81582f9c51c1": {
+  "fam": "hr",
+  "sec": [
+   "marketing",
+   "logistics"
+  ],
+  "danish": "required",
+  "hMin": 16,
+  "hMax": 20,
+  "skills": [
+   "rekruttering",
+   "employer branding",
+   "Workday",
+   "LinkedIn-sourcing",
+   "kommunikation"
+  ],
+  "blurb": "Du støtter rekrutteringsprocesserne med administrative opgaver, fx jobopslag, kandidatadministration i Workday og reference- og baggrundstjek. Du hjælper også med at planlægge og koordinere employer branding-aktiviteter som karrieremesser og studenterarrangementer.",
+  "deadlineAt": "2026-11-23T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "personaleledelse",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "psykologi",
+   "kommunikation",
+   "medievidenskab"
+  ],
+  "why": "Jobbet kombinerer rekruttering, HR og employer branding, og kræver god forståelse for organisation, mennesker og kommunikation.",
+  "openToAll": false
+ },
+ "30c7eb839924464ac87dbea80df950d3bedd8981": {
+  "fam": "marketing",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [
+   "skriftlig formidling",
+   "dansk grammatik",
+   "videoredigering",
+   "Umbraco",
+   "SEO"
+  ],
+  "blurb": "Du skriver tekster, korrekturlæser og er med til at planlægge og producere indhold som video, nyhedsbreve og opslag på sociale medier. Du redigerer også FOF Aarhus' hjemmeside i CMS-systemet Umbraco og arbejder med søgemaskineoptimering.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "arkitekt",
+   "design",
+   "kunst"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, humaniora.",
+  "openToAll": false
  }
 }

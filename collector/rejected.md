@@ -28,6 +28,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
 | Statslige arbejdsgivere | Akademisk medarbejder til Energistyrelsens Kontor for Internationalt Affald og Klassificering | ikke et studiejob |
+| Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Studielektor i repetition for sangere, akkompagnement for pianister og som akkompagnatør for sang og orkesterinstrumenter | ikke et studiejob |
