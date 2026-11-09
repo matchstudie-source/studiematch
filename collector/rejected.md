@@ -10,6 +10,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in Trade Finance Operations Team / SEB Group, Vilnius | udlandet: Vilnius |
+| SEB | Junior HR Specialist (HR Intern) | udlandet: Warsaw |
 | SEB | Senior Software Developer (Vecākais izstrādātājs) in Internet Bank Customer Journey / SEB, Riga | ikke et studiejob |
 | SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Tallinn | ikke et studiejob |
 | SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Vilnius | udlandet: Vilnius |
@@ -37,6 +38,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | Lunar | International Payment Specialist | ikke et studiejob |
 | ATP | Medarbejdere til sagsbehandling i internationale sager om familieydelse | ikke et studiejob |
+| ATP | Sagsbehandler til international kontrol (projektansættelse – 1 år) | ikke et studiejob |
 | Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |
 | NIRAS | Unsolicited intern applications | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
@@ -47,7 +49,10 @@ Bruges til at tjekke, om filteret er for strengt.
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studiementorer til ergoterapeutuddannelsen | ikke et studiejob |
+| Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
+| Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
+| Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Danske Spil | Senior intern kommunikationsrådgiver | ikke et studiejob |

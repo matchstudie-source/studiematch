@@ -46596,5 +46596,302 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, humaniora.",
   "openToAll": false
+ },
+ "ae763fb22785194c63502c0f65623c39127f1863": {
+  "fam": "sustain",
+  "sec": [
+   "research",
+   "legal"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "dataanalyse",
+   "Excel",
+   "PowerPoint",
+   "engelsk",
+   "miljøvurdering"
+  ],
+  "blurb": "Du omsætter miljødata og research til beslutningsmateriale om cirkulært produktdesign, kemikaliekompliance og klimarisiko. Du arbejder sammen med projektledere og specialister og laver præsentationer til kolleger.",
+  "deadlineAt": "2026-11-22T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "miljøteknologi",
+   "miljøvidenskab",
+   "kemi",
+   "farmaci",
+   "erhvervsøkonomi",
+   "jura",
+   "biologi",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver viden om miljø, kemi og dataanalyse, som dækkes af naturvidenskabelige, tekniske og samfundsfaglige uddannelser.",
+  "openToAll": false
+ },
+ "62ac49609d28e9921c5a86f3bdc5b3eb86d9d341": {
+  "fam": "engineering",
+  "sec": [
+   "operations",
+   "sustain"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "PowerFactory",
+   "elsystemanalyse",
+   "spændingsregulering",
+   "effektoverførsel",
+   "statistik"
+  ],
+  "blurb": "Du laver analyser af, hvordan vedvarende energi og nye forbrugstyper kan indpasses i driften af det danske elsystem, og hjælper med ad hoc-opgaver om transmissionsnettet. Du er også med til at videreudvikle de værktøjer, som bruges til at vurdere elsystemet.",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "elektroteknik",
+   "elektroteknologi",
+   "energiteknik",
+   "elektrisk energiteknologi",
+   "bæredygtig energi",
+   "matematik"
+  ],
+  "why": "Jobbet kræver faglig viden om stærkstrøm, effektoverførsel og simulering af elnet, hvilket er kernen i elektro- og energiuddannelserne.",
+  "openToAll": false
+ },
+ "2671d07fa3779a1957667eac82f86c14b7efd152": {
+  "fam": "marketing",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "PowerPoint",
+   "skriftlig formidling",
+   "SharePoint",
+   "layout og visuel formidling",
+   "koordinering"
+  ],
+  "blurb": "Du udarbejder og kvalitetssikrer præsentationer til CTO Talks, Town Halls og andre ledelsesarrangementer. Du skriver og redigerer artikler og nyheder til interne kanaler og vedligeholder SharePoint-sites.",
+  "deadlineAt": "2026-12-06T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "medievidenskab",
+   "dansk",
+   "digital design",
+   "informatik"
+  ],
+  "why": "Jobbet kræver skriftlig formidling, indholdsproduktion og visuel kommunikation, hvilket passer til kommunikations- og mediefag samt sprogfag.",
+  "openToAll": false
+ },
+ "b7ac3d7260dfea5de42af7c1a6778c1d5f869f15": {
+  "fam": "public",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "mødeforberedelse",
+   "skriftlig kommunikation",
+   "overblik og struktur",
+   "selvstændighed"
+  ],
+  "blurb": "Du følger op på folketingsspørgsmål og holder overblik over ministerens invitationer og aktiviteter. Du understøtter sekretariatets medarbejdere med mødeforberedelse, administrative opgaver og ad hoc-opgaver.",
+  "deadlineAt": "2026-11-23T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "offentlig administration",
+   "jura",
+   "sociologi",
+   "økonomi"
+  ],
+  "why": "Jobbet kræver forståelse for politiske processer, forvaltning og samfundsforhold, som er kernen i samfundsvidenskabelige uddannelser.",
+  "openToAll": false
+ },
+ "1a99744c12c106ec5dbb72199c5091d2817e5768": {
+  "fam": "public",
+  "sec": [
+   "legal",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "analytisk tænkning",
+   "research og informationssøgnin",
+   "grundighed og struktur",
+   "statistik",
+   "interesse for international si"
+  ],
+  "blurb": "Du bistår med sagsforberedelse, delanalyser og trusselvurderinger om eksportkontrol, sanktioner og investeringsscreening, og du hjælper med at besvare henvendelser fra virksomheder. Du laver også statistik, research, aktindsigter og journalisering.",
+  "deadlineAt": "2026-11-23T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "internationale studier",
+   "ibp",
+   "ha",
+   "erhvervsøkonomi",
+   "økonomi",
+   "europastudier"
+  ],
+  "why": "Arbejdet kræver juridisk og samfundsfaglig forståelse af handelsregler og sikkerhedspolitik, som uddannelser i jura, statskundskab og international handel giver.",
+  "openToAll": false
+ },
+ "8e97ec213d3a2da69438bc588f380581fdd52a16": {
+  "fam": "finance",
+  "sec": [
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "sagsbehandling",
+   "juridisk analyse",
+   "økonomisk forståelse",
+   "struktureret arbejde",
+   "prioritering"
+  ],
+  "blurb": "Du behandler ansøgninger og notifikationer fra fondsmæglerselskaber, investeringsforeninger og forvaltere af alternative investeringsfonde. Derudover løser du ad hoc-opgaver inden for jura og økonomi.",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "erhvervsjura",
+   "økonomi",
+   "erhvervsøkonomi",
+   "finansiel økonomi"
+  ],
+  "why": "Jobbet kræver både juridisk sagsbehandling og økonomisk forståelse af den finansielle sektor, og det passer derfor til jura- og økonomistuderende.",
+  "openToAll": false
+ },
+ "1e3ba3fc5e439803e45015af58d5bf19f12ddc0e": {
+  "fam": "legal",
+  "sec": [
+   "public",
+   "marketing"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "sagsbehandling",
+   "juridisk analyse",
+   "offentlighedsloven",
+   "telefonbetjening",
+   "bevissikring"
+  ],
+  "blurb": "Du hjælper med sagsbehandling i forbrugersager, fx vildledende markedsføring og skjult reklame, og besvarer aktindsigtsanmodninger. Du bistår også i straffe- og civile sager og opdaterer domsdatabasen og hjemmesiden.",
+  "deadlineAt": "2026-12-06T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "erhvervsøkonomi",
+   "ha"
+  ],
+  "why": "Jobbet kræver juridisk indsigt i forbruger- og markedsføringsret, som er kernen i jurastudiet.",
+  "openToAll": false
+ },
+ "f9c5f94676d68e600b2275e5b76a73006eb3039b": {
+  "fam": "public",
+  "sec": [
+   "health",
+   "sustain"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "almindelig IT",
+   "databaser",
+   "dokumenthåndtering",
+   "kontakt pr. mail og telefon",
+   "overblik"
+  ],
+  "blurb": "Du registrerer indkomne oplysninger og dokumenter, følger op hos virksomheder og personer, når data mangler, og opdaterer databaser over virksomheder og strålekilder. Du hjælper også med at registrere og sende persondosimetre og med praktiske opgaver til kurser og beredskab.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "fysik",
+   "radiografi",
+   "sundhedsvidenskab",
+   "kemi",
+   "biologi",
+   "miljøteknologi",
+   "ingeniørfag"
+  ],
+  "why": "Jobbet kræver en naturvidenskabelig, teknisk eller sundhedsfaglig baggrund og god forståelse for stråling, databaser og myndighedsarbejde.",
+  "openToAll": false
+ },
+ "c4d06ae5655feaf6ca10400cb4576fccd0a55739": {
+  "fam": "customer",
+  "sec": [
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "community management",
+   "social medier",
+   "kundeservice",
+   "dansk sprogforståelse",
+   "skriftlig formidling"
+  ],
+  "blurb": "Du deltager i samtaler i kommentarsporene på DR's sociale medier og svarer brugere i direkte beskeder. Du giver førstelinje-support om podcasts, apps og programmer og hjælper med at holde tonen konstruktiv.",
+  "deadlineAt": "2026-11-23T23:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medievidenskab",
+   "markedsføring",
+   "digitale medier",
+   "erhvervskommunikation"
+  ],
+  "why": "Jobbet kræver formidlingskompetence og forståelse for sociale medier, som uddannelser inden for kommunikation og medier giver.",
+  "openToAll": false
+ },
+ "5c136f998f6a321406cca6cceb804366ea8c73b5": {
+  "fam": "health",
+  "sec": [
+   "software",
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "skriftlig formidling",
+   "kvalitetssikring",
+   "interaktive læringsmaterialer",
+   "desk research",
+   "systematisk arbejde"
+  ],
+  "blurb": "Du udvikler og kvalitetssikrer skriftligt indhold og interaktive læringselementer, animationer og AI-værktøjer til kurser på velfærdsområdet. Du laver også interviews, desk research og kortlægger mulige samarbejdspartnere.",
+  "deadlineAt": "2026-12-15T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "pædagogik",
+   "psykologi",
+   "socialt arbejde",
+   "sygepleje",
+   "it-didaktisk design",
+   "teknoantropologi",
+   "it"
+  ],
+  "why": "Jobbet kræver forståelse for læringsprocesser, velfærdsfaglig viden og god skriftlig formidling, som uddannelserne dækker.",
+  "openToAll": false
  }
 }
