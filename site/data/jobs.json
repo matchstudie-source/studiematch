@@ -383,6 +383,67 @@
   "live": true
  },
  {
+  "title": "Internship Opportunities at Veo - Register Your CV",
+  "co": "Veo",
+  "city": "Copenhagen Office",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "logistics",
+  "sec": [
+   "bi",
+   "datasci"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Tech og software",
+  "postedAt": "2026-05-06T09:21:09.043000+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "If you've ever watched a match and wondered who else saw what you saw, you already know why this matters. We're looking for people who want to build that future with us.",
+  "req": null,
+  "url": "https://jobs.lever.co/veo/0e9d2a87-92f6-4086-a8a5-f750f124c76f",
+  "enrichedBy": "regler",
+  "id": "x61eed9363a48",
+  "live": true
+ },
+ {
+  "title": "Student Assistant, Football Data",
+  "co": "Veo",
+  "city": "Copenhagen Office",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "datasci",
+  "sec": [
+   "software",
+   "research"
+  ],
+  "famConf": "text",
+  "skills": [],
+  "industry": "Tech og software",
+  "postedAt": "2026-11-06T13:02:49.664000+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du arbejder med fodbolddata fra Veos AI-kameraer, som bruges til videoanalyse af hold på alle niveauer. Opslaget beskriver ikke de præcise arbejdsopgaver.",
+  "req": null,
+  "url": "https://jobs.lever.co/veo/2148585b-5a5d-48d0-b165-deca52e853e7",
+  "enrichedBy": "ai",
+  "studies": [
+   "datalogi",
+   "statistik",
+   "matematik",
+   "data science",
+   "idrætsvidenskab"
+  ],
+  "why": "Jobbet handler om at analysere sportsdata, så det kræver analytiske og tekniske færdigheder i datalogi, statistik eller matematik.",
+  "openToAll": false,
+  "id": "x205f636ec0d5",
+  "live": true
+ },
+ {
   "title": "Analytisk stærk studentermedhjælper der vil arbejde med sundhedspolitik",
   "co": "Danske Regioner",
   "city": "København",
@@ -875,6 +936,48 @@
   "live": true
  },
  {
+  "title": "Student Assistant, Novonesis, Global LIMS, Automation & Digitalization, Bagsværd",
+  "co": "Novozymes A/S",
+  "city": "Bagsværd, Danmark",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "no",
+  "fam": "engineering",
+  "sec": [
+   "research",
+   "operations"
+  ],
+  "famConf": "text",
+  "skills": [
+   "3D-print",
+   "parametrisk CAD",
+   "laboratorieudstyr",
+   "teknisk dokumentation",
+   "firmwareopdatering"
+  ],
+  "industry": "Bioteknologi",
+  "postedAt": "2026-11-10T00:00:00+00:00",
+  "deadlineAt": "2026-11-17T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du printer og efterbehandler 3D-printede dele ud fra eksisterende designs og laver enkle komponenter til mindre projekter. Du hjælper også med målinger, firmwareopdateringer på laboratorieudstyr og opdatering af arbejdsinstrukser og SOP'er.",
+  "req": null,
+  "url": "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Bagsvrd/Student-Assistant--Novonesis--Global-LIMS--Automation---Digitalization--Bagsvrd_JR113928-1",
+  "enrichedBy": "ai",
+  "studies": [
+   "maskinteknik",
+   "mekatronik",
+   "robotteknologi",
+   "bioteknologi",
+   "kemi",
+   "elektroteknik"
+  ],
+  "why": "Jobbet kræver teknisk forståelse, 3D-print og laboratoriearbejde, som ligger tæt på ingeniør- og naturvidenskabelige uddannelser.",
+  "openToAll": false,
+  "id": "xf8d22a8a4e4a",
+  "live": true
+ },
+ {
   "title": "Student Assistant for Supply Chain Data & Analytics",
   "co": "Novozymes A/S",
   "city": "Lyngby, Danmark",
@@ -1025,6 +1128,47 @@
   "url": "https://careers.vestas.com/job/Aarhus-N-Procurement-Intern-Regi-8200/1451142333/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "regler",
   "id": "x9181e7ed2145",
+  "live": true
+ },
+ {
+  "title": "Praktikant til Anlægskommunikation",
+  "co": "Energinet",
+  "city": "Fredericia",
+  "region": "tre",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "pressemeddelelser",
+   "sociale medier",
+   "hjemmeside",
+   "indholdsproduktion",
+   "samarbejde"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-10T09:19:58+00:00",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du arbejder med at udvikle og vedligeholde hjemmesiden for Energiø Bornholm og skriver pressemeddelelser og nyheder til interne og eksterne kanaler. Du laver også indhold til LinkedIn og andre sociale medier og støtter kommunikationen ved borgermøder og workshops.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=189017&DepartmentId=21679&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medievidenskab",
+   "webudvikling",
+   "formidling",
+   "erhvervskommunikation"
+  ],
+  "why": "Jobbet kræver skriftlig, digital og mundtlig formidling, og det passer derfor til kommunikations-, medie- og journalistuddannelser.",
+  "openToAll": false,
+  "id": "x07afdda57081",
   "live": true
  },
  {
@@ -2979,6 +3123,50 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170011&DepartmentId=19107&MediaId=5",
   "enrichedBy": "regler",
   "id": "x18dc0e1ce010",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere, Historiske samlinger og Forskning, Det Kgl. Bibliotek",
+  "co": "Det Kgl. Bibliotek",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "research",
+  "sec": [
+   "operations",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "katalogisering",
+   "metadata",
+   "registrering og ordenssans",
+   "fysisk håndtering af materiale",
+   "Alma"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-10T12:39:40+00:00",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du sorterer, registrerer og ompakker samlinger, herunder nyindsamlet materiale og pallelager, og klargør materiale til digitalisering. Du laver også metadata på digitale filer og katalogiserer i systemet Alma.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172707&DepartmentId=19107&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "kulturarvsstudier",
+   "museologi",
+   "arkivvidenskab",
+   "biblioteks- og informationsvidenskab",
+   "historie",
+   "kunsthistorie",
+   "boghistorie",
+   "nordisk"
+  ],
+  "why": "Arbejdet kræver viden om kulturarv, samlinger og arkivering, som uddannelser inden for historie, arkiv, bibliotek og museum giver.",
+  "openToAll": false,
+  "id": "x4d9cc44ed6e7",
   "live": true
  },
  {
@@ -4939,6 +5127,47 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til studieadministration",
+  "co": "Studieservice",
+  "city": "Esbjerg",
+  "region": "svj",
+  "hMin": 10,
+  "hMax": 12,
+  "danish": "plus",
+  "fam": "operations",
+  "sec": [
+   "customer"
+  ],
+  "famConf": "text",
+  "skills": [
+   "sagsbehandling",
+   "IT-systemer",
+   "struktur og detaljefokus",
+   "samarbejde",
+   "kommunikation"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-11-10T12:07:12+00:00",
+  "deadlineAt": "2026-12-14T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du behandler ansøgninger om optagelse og løser forskellige ad hoc-opgaver i Team Optagelse og SU på Campus Esbjerg. Arbejdet foregår i et lille team i studieadministrationen.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194539&DepartmentId=8336&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "it-teknolog",
+   "erhvervsøkonomi",
+   "jura",
+   "sygepleje",
+   "pædagogik",
+   "socialrådgiver"
+  ],
+  "why": "Jobbet kræver interesse for IT, administrative sagsgange og samarbejde, hvilket passer til IT- og administrationsfaglige uddannelser samt professionsuddannelser på UC SYD.",
+  "openToAll": false,
+  "id": "xeefe2c9b1fe9",
+  "live": true
+ },
+ {
   "title": "TECs direktionssekretariat søger studentermedhjælper",
   "co": "Technical Education Copenhagen",
   "city": "Stæhr Johansens Vej 7, 2000 Frederiksberg",
@@ -5352,46 +5581,6 @@
   "url": "https://varde.career.emply.com/ad/praktik-og-opgaveskrivning-for-studerende-ved-universiteterne/ablgx7",
   "enrichedBy": "regler",
   "id": "xf99310ad50d8",
-  "live": true
- },
- {
-  "title": "Juleassistance til Magasins IT",
-  "co": "Magasin",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 8,
-  "hMax": 8,
-  "danish": "plus",
-  "fam": "operations",
-  "sec": [
-   "customer"
-  ],
-  "famConf": "text",
-  "skills": [
-   "IT-support",
-   "fejlsøgning",
-   "kundeservice",
-   "kommunikation",
-   "selvstændighed"
-  ],
-  "industry": "Detailhandel",
-  "postedAt": "2026-09-09T11:41:45+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du yder telefonisk og fysisk IT-support til kolleger, fx ved problemer med dankortterminaler og computere på Kongens Nytorv. Du overvåger også driftsstatus og alarmer og eskalerer mere komplekse problemer til relevante kolleger.",
-  "req": null,
-  "url": "https://karriere.magasin.dk/jobs/8352759-juleassistance-til-magasins-it",
-  "enrichedBy": "ai",
-  "studies": [
-   "datalogi",
-   "it-teknolog",
-   "softwareudvikling",
-   "datateknik",
-   "it-økonomi"
-  ],
-  "why": "Jobbet kræver teknisk forståelse af IT-systemer og fejlsøgning, som it- og datauddannelser arbejder med.",
-  "openToAll": false,
-  "id": "x01bf3d3d2823",
   "live": true
  },
  {

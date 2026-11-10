@@ -49191,5 +49191,125 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for administration, humaniora, samfundsvidenskab.",
   "openToAll": false
+ },
+ "f7ef5e2ca1ae70b30648eb47c8990be051e9f27a": {
+  "fam": "engineering",
+  "sec": [
+   "research",
+   "operations"
+  ],
+  "danish": "no",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "3D-print",
+   "parametrisk CAD",
+   "laboratorieudstyr",
+   "teknisk dokumentation",
+   "firmwareopdatering"
+  ],
+  "blurb": "Du printer og efterbehandler 3D-printede dele ud fra eksisterende designs og laver enkle komponenter til mindre projekter. Du hjælper også med målinger, firmwareopdateringer på laboratorieudstyr og opdatering af arbejdsinstrukser og SOP'er.",
+  "deadlineAt": "2026-11-17T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "maskinteknik",
+   "mekatronik",
+   "robotteknologi",
+   "bioteknologi",
+   "kemi",
+   "elektroteknik"
+  ],
+  "why": "Jobbet kræver teknisk forståelse, 3D-print og laboratoriearbejde, som ligger tæt på ingeniør- og naturvidenskabelige uddannelser.",
+  "openToAll": false
+ },
+ "96def4a879b06f7153205ccb6c965527ca03cb5e": {
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "pressemeddelelser",
+   "sociale medier",
+   "hjemmeside",
+   "indholdsproduktion",
+   "samarbejde"
+  ],
+  "blurb": "Du arbejder med at udvikle og vedligeholde hjemmesiden for Energiø Bornholm og skriver pressemeddelelser og nyheder til interne og eksterne kanaler. Du laver også indhold til LinkedIn og andre sociale medier og støtter kommunikationen ved borgermøder og workshops.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medievidenskab",
+   "webudvikling",
+   "formidling",
+   "erhvervskommunikation"
+  ],
+  "why": "Jobbet kræver skriftlig, digital og mundtlig formidling, og det passer derfor til kommunikations-, medie- og journalistuddannelser.",
+  "openToAll": false
+ },
+ "4e5a544ad3dbd75ebcceda4c8d145e1a4a777862": {
+  "fam": "research",
+  "sec": [
+   "operations",
+   "logistics"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "katalogisering",
+   "metadata",
+   "registrering og ordenssans",
+   "fysisk håndtering af materiale",
+   "Alma"
+  ],
+  "blurb": "Du sorterer, registrerer og ompakker samlinger, herunder nyindsamlet materiale og pallelager, og klargør materiale til digitalisering. Du laver også metadata på digitale filer og katalogiserer i systemet Alma.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kulturarvsstudier",
+   "museologi",
+   "arkivvidenskab",
+   "biblioteks- og informationsvidenskab",
+   "historie",
+   "kunsthistorie",
+   "boghistorie",
+   "nordisk"
+  ],
+  "why": "Arbejdet kræver viden om kulturarv, samlinger og arkivering, som uddannelser inden for historie, arkiv, bibliotek og museum giver.",
+  "openToAll": false
+ },
+ "8c0960d558442d1b19ea3758356c3b5afa2d953d": {
+  "fam": "operations",
+  "sec": [
+   "customer"
+  ],
+  "danish": "plus",
+  "hMin": 10,
+  "hMax": 12,
+  "skills": [
+   "sagsbehandling",
+   "IT-systemer",
+   "struktur og detaljefokus",
+   "samarbejde",
+   "kommunikation"
+  ],
+  "blurb": "Du behandler ansøgninger om optagelse og løser forskellige ad hoc-opgaver i Team Optagelse og SU på Campus Esbjerg. Arbejdet foregår i et lille team i studieadministrationen.",
+  "deadlineAt": "2026-12-14T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "it-teknolog",
+   "erhvervsøkonomi",
+   "jura",
+   "sygepleje",
+   "pædagogik",
+   "socialrådgiver"
+  ],
+  "why": "Jobbet kræver interesse for IT, administrative sagsgange og samarbejde, hvilket passer til IT- og administrationsfaglige uddannelser samt professionsuddannelser på UC SYD.",
+  "openToAll": false
  }
 }
