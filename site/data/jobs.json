@@ -952,27 +952,29 @@
   "skills": [
    "3D-print",
    "parametrisk CAD",
-   "laboratorieudstyr",
-   "teknisk dokumentation",
-   "firmwareopdatering"
+   "mekanisk prototyping",
+   "firmwareopdatering",
+   "teknisk dokumentation"
   ],
   "industry": "Bioteknologi",
   "postedAt": "2026-11-10T00:00:00+00:00",
   "deadlineAt": "2026-11-17T00:00:00+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du printer og efterbehandler 3D-printede dele ud fra eksisterende designs og laver enkle komponenter til mindre projekter. Du hjælper også med målinger, firmwareopdateringer på laboratorieudstyr og opdatering af arbejdsinstrukser og SOP'er.",
+  "blurb": "Du printer og efterbehandler 3D-dele ud fra eksisterende designs og laver gentagne målinger og tests efter faste procedurer. Du hjælper også med at opdatere firmware på laboratorieudstyr og med at opdatere arbejdsordrer og SOP'er.",
   "req": null,
   "url": "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Bagsvrd/Student-Assistant--Novonesis--Global-LIMS--Automation---Digitalization--Bagsvrd_JR113928-1",
   "enrichedBy": "ai",
   "studies": [
    "maskinteknik",
    "mekatronik",
-   "robotteknologi",
+   "produktdesign",
+   "elektronik",
    "bioteknologi",
    "kemi",
-   "elektroteknik"
+   "biokemi",
+   "laboratorieteknologi"
   ],
-  "why": "Jobbet kræver teknisk forståelse, 3D-print og laboratoriearbejde, som ligger tæt på ingeniør- og naturvidenskabelige uddannelser.",
+  "why": "Jobbet kræver praktisk teknisk forståelse for 3D-print, laboratorieudstyr og automatisering, som uddannelserne giver.",
   "openToAll": false,
   "id": "xf8d22a8a4e4a",
   "live": true
@@ -1137,24 +1139,24 @@
   "region": "tre",
   "hMin": 0,
   "hMax": 0,
-  "danish": "plus",
+  "danish": "required",
   "fam": "marketing",
   "sec": [
-   "public"
+   "sustain"
   ],
   "famConf": "title",
   "skills": [
+   "kommunikation",
    "pressemeddelelser",
    "sociale medier",
-   "hjemmeside",
-   "indholdsproduktion",
+   "hjemmesideredigering",
    "samarbejde"
   ],
   "industry": "Energi",
   "postedAt": "2026-11-10T09:19:58+00:00",
   "deadlineAt": "2026-11-29T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du arbejder med at udvikle og vedligeholde hjemmesiden for Energiø Bornholm og skriver pressemeddelelser og nyheder til interne og eksterne kanaler. Du laver også indhold til LinkedIn og andre sociale medier og støtter kommunikationen ved borgermøder og workshops.",
+  "blurb": "Du arbejder med kommunikation om Energiø Bornholm, herunder hjemmesiden, pressemeddelelser og nyheder til interne og eksterne kanaler. Du producerer også indhold til LinkedIn og andre sociale medier og understøtter borgermøder og workshops.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=189017&DepartmentId=21679&MediaId=5",
   "enrichedBy": "ai",
@@ -1162,11 +1164,10 @@
    "kommunikation",
    "journalistik",
    "medievidenskab",
-   "webudvikling",
    "formidling",
-   "erhvervskommunikation"
+   "digital design"
   ],
-  "why": "Jobbet kræver skriftlig, digital og mundtlig formidling, og det passer derfor til kommunikations-, medie- og journalistuddannelser.",
+  "why": "Jobbet kræver skriftlig og digital formidling samt kommunikation med eksterne interessenter, og det er kernen i de nævnte uddannelser.",
   "openToAll": false,
   "id": "x07afdda57081",
   "live": true
@@ -3135,36 +3136,35 @@
   "danish": "required",
   "fam": "research",
   "sec": [
-   "operations",
-   "logistics"
+   "public",
+   "education"
   ],
   "famConf": "title",
   "skills": [
-   "katalogisering",
+   "sortering og registrering",
+   "katalogisering i Alma",
    "metadata",
-   "registrering og ordenssans",
    "fysisk håndtering af materiale",
-   "Alma"
+   "selvstændighed"
   ],
   "industry": "Offentlig",
   "postedAt": "2026-11-10T12:39:40+00:00",
   "deadlineAt": "2026-11-29T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du sorterer, registrerer og ompakker samlinger, herunder nyindsamlet materiale og pallelager, og klargør materiale til digitalisering. Du laver også metadata på digitale filer og katalogiserer i systemet Alma.",
+  "blurb": "Du sorterer, registrerer og ompakker samlinger, herunder nyindsamlet materiale og pallelager, og klargør materiale til digitalisering. Du laver også metadata på digitale filer og katalogiserer i Alma.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172707&DepartmentId=19107&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
-   "kulturarvsstudier",
-   "museologi",
-   "arkivvidenskab",
+   "arkiv- og informationsvidenskab",
    "biblioteks- og informationsvidenskab",
    "historie",
-   "kunsthistorie",
    "boghistorie",
-   "nordisk"
+   "kulturformidling",
+   "nordiske studier",
+   "musikvidenskab"
   ],
-  "why": "Arbejdet kræver viden om kulturarv, samlinger og arkivering, som uddannelser inden for historie, arkiv, bibliotek og museum giver.",
+  "why": "Arbejdet kræver kendskab til samlinger, registrering og metadata, og det passer derfor til kulturhistoriske og informationsfaglige uddannelser.",
   "openToAll": false,
   "id": "x4d9cc44ed6e7",
   "live": true
@@ -3614,89 +3614,6 @@
   "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
   "enrichedBy": "regler",
   "id": "xc7e71abcfd04",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
-  "enrichedBy": "regler",
-  "id": "x91d9b736c8c3",
-  "live": true
- },
- {
-  "title": "Financial Outsourcing Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "procurement",
-  "sec": [
-   "finance",
-   "education"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Bogføring",
-   "Regnskab",
-   "Løn",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
-  "enrichedBy": "regler",
-  "id": "x5e77473a7a23",
-  "live": true
- },
- {
-  "title": "Audit & Assurance Praktikant 2027",
-  "co": "BDO Danmark",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 37,
-  "hMax": 37,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Regnskab",
-   "R"
-  ],
-  "industry": "Revision og rådgivning",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
-  "req": null,
-  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
-  "enrichedBy": "regler",
-  "id": "xca1a8d4ee87b",
   "live": true
  },
  {
@@ -5133,37 +5050,38 @@
   "region": "svj",
   "hMin": 10,
   "hMax": 12,
-  "danish": "plus",
+  "danish": "required",
   "fam": "operations",
   "sec": [
-   "customer"
+   "customer",
+   "education"
   ],
   "famConf": "text",
   "skills": [
    "sagsbehandling",
    "IT-systemer",
-   "struktur og detaljefokus",
+   "administrative sagsgange",
    "samarbejde",
-   "kommunikation"
+   "detaljeorientering"
   ],
   "industry": "Uddannelse og forskning",
   "postedAt": "2026-11-10T12:07:12+00:00",
   "deadlineAt": "2026-12-14T23:59:00+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du behandler ansøgninger om optagelse og løser forskellige ad hoc-opgaver i Team Optagelse og SU på Campus Esbjerg. Arbejdet foregår i et lille team i studieadministrationen.",
+  "blurb": "Du behandler ansøgninger om optagelse og løser forskellige ad hoc-opgaver i Team Optagelse og SU på Campus Esbjerg. Arbejdet foregår i IT-systemer og i et team med fem faste medarbejdere.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194539&DepartmentId=8336&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
-   "it-teknolog",
    "erhvervsøkonomi",
+   "statskundskab",
    "jura",
-   "sygepleje",
-   "pædagogik",
-   "socialrådgiver"
+   "it-økonomi",
+   "datalogi",
+   "pædagogik"
   ],
-  "why": "Jobbet kræver interesse for IT, administrative sagsgange og samarbejde, hvilket passer til IT- og administrationsfaglige uddannelser samt professionsuddannelser på UC SYD.",
-  "openToAll": false,
+  "why": "Jobbet kræver interesse for IT og administration og er åbent for studerende fra både professionsuddannelser og andre videregående uddannelser.",
+  "openToAll": true,
   "id": "xeefe2c9b1fe9",
   "live": true
  },
@@ -5221,6 +5139,48 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194470&DepartmentId=8703&MediaId=5",
   "enrichedBy": "regler",
   "id": "xfd148d3f1f4a",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til team Digitale kanaler",
+  "co": "VIA University College",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "famConf": "text",
+  "skills": [
+   "CMS",
+   "webtilgængelighed",
+   "Umbraco",
+   "Matomo",
+   "indholdskvalitetssikring"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-07T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du opsætter websider, kvalitetssikrer indhold og vedligeholder brugervejledninger til VIAs digitale platforme. Du laver også mindre analyser af trafik og brugeradfærd og bidrager til udviklingsopgaver i teamet.",
+  "req": null,
+  "url": "https://via.career.emply.com/ad/studentermedhjaelper-til-team-digitale-kanaler/vhz5zm",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "informationsvidenskab",
+   "kommunikation",
+   "it-produktudvikling",
+   "multimediedesign",
+   "datalogi"
+  ],
+  "why": "Jobbet kræver teknisk forståelse for digitale systemer kombineret med indholdsarbejde og klar kommunikation, hvilket medie- og informationsstudier dækker godt.",
+  "openToAll": false,
+  "id": "xb0877e6e4e76",
   "live": true
  },
  {

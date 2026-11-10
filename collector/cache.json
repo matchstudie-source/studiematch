@@ -49204,112 +49204,143 @@
   "skills": [
    "3D-print",
    "parametrisk CAD",
-   "laboratorieudstyr",
-   "teknisk dokumentation",
-   "firmwareopdatering"
+   "mekanisk prototyping",
+   "firmwareopdatering",
+   "teknisk dokumentation"
   ],
-  "blurb": "Du printer og efterbehandler 3D-printede dele ud fra eksisterende designs og laver enkle komponenter til mindre projekter. Du hjælper også med målinger, firmwareopdateringer på laboratorieudstyr og opdatering af arbejdsinstrukser og SOP'er.",
+  "blurb": "Du printer og efterbehandler 3D-dele ud fra eksisterende designs og laver gentagne målinger og tests efter faste procedurer. Du hjælper også med at opdatere firmware på laboratorieudstyr og med at opdatere arbejdsordrer og SOP'er.",
   "deadlineAt": "2026-11-17T00:00:00+00:00",
   "enrichedBy": "ai",
   "studies": [
    "maskinteknik",
    "mekatronik",
-   "robotteknologi",
+   "produktdesign",
+   "elektronik",
    "bioteknologi",
    "kemi",
-   "elektroteknik"
+   "biokemi",
+   "laboratorieteknologi"
   ],
-  "why": "Jobbet kræver teknisk forståelse, 3D-print og laboratoriearbejde, som ligger tæt på ingeniør- og naturvidenskabelige uddannelser.",
+  "why": "Jobbet kræver praktisk teknisk forståelse for 3D-print, laboratorieudstyr og automatisering, som uddannelserne giver.",
   "openToAll": false
  },
  "96def4a879b06f7153205ccb6c965527ca03cb5e": {
   "fam": "marketing",
   "sec": [
-   "public"
+   "sustain"
   ],
-  "danish": "plus",
+  "danish": "required",
   "hMin": 0,
   "hMax": 0,
   "skills": [
+   "kommunikation",
    "pressemeddelelser",
    "sociale medier",
-   "hjemmeside",
-   "indholdsproduktion",
+   "hjemmesideredigering",
    "samarbejde"
   ],
-  "blurb": "Du arbejder med at udvikle og vedligeholde hjemmesiden for Energiø Bornholm og skriver pressemeddelelser og nyheder til interne og eksterne kanaler. Du laver også indhold til LinkedIn og andre sociale medier og støtter kommunikationen ved borgermøder og workshops.",
+  "blurb": "Du arbejder med kommunikation om Energiø Bornholm, herunder hjemmesiden, pressemeddelelser og nyheder til interne og eksterne kanaler. Du producerer også indhold til LinkedIn og andre sociale medier og understøtter borgermøder og workshops.",
   "deadlineAt": "2026-11-29T23:59:59+00:00",
   "enrichedBy": "ai",
   "studies": [
    "kommunikation",
    "journalistik",
    "medievidenskab",
-   "webudvikling",
    "formidling",
-   "erhvervskommunikation"
+   "digital design"
   ],
-  "why": "Jobbet kræver skriftlig, digital og mundtlig formidling, og det passer derfor til kommunikations-, medie- og journalistuddannelser.",
+  "why": "Jobbet kræver skriftlig og digital formidling samt kommunikation med eksterne interessenter, og det er kernen i de nævnte uddannelser.",
   "openToAll": false
  },
  "4e5a544ad3dbd75ebcceda4c8d145e1a4a777862": {
   "fam": "research",
   "sec": [
-   "operations",
-   "logistics"
+   "public",
+   "education"
   ],
   "danish": "required",
   "hMin": 10,
   "hMax": 10,
   "skills": [
-   "katalogisering",
+   "sortering og registrering",
+   "katalogisering i Alma",
    "metadata",
-   "registrering og ordenssans",
    "fysisk håndtering af materiale",
-   "Alma"
+   "selvstændighed"
   ],
-  "blurb": "Du sorterer, registrerer og ompakker samlinger, herunder nyindsamlet materiale og pallelager, og klargør materiale til digitalisering. Du laver også metadata på digitale filer og katalogiserer i systemet Alma.",
+  "blurb": "Du sorterer, registrerer og ompakker samlinger, herunder nyindsamlet materiale og pallelager, og klargør materiale til digitalisering. Du laver også metadata på digitale filer og katalogiserer i Alma.",
   "deadlineAt": "2026-11-29T23:59:59+00:00",
   "enrichedBy": "ai",
   "studies": [
-   "kulturarvsstudier",
-   "museologi",
-   "arkivvidenskab",
+   "arkiv- og informationsvidenskab",
    "biblioteks- og informationsvidenskab",
    "historie",
-   "kunsthistorie",
    "boghistorie",
-   "nordisk"
+   "kulturformidling",
+   "nordiske studier",
+   "musikvidenskab"
   ],
-  "why": "Arbejdet kræver viden om kulturarv, samlinger og arkivering, som uddannelser inden for historie, arkiv, bibliotek og museum giver.",
+  "why": "Arbejdet kræver kendskab til samlinger, registrering og metadata, og det passer derfor til kulturhistoriske og informationsfaglige uddannelser.",
   "openToAll": false
  },
  "8c0960d558442d1b19ea3758356c3b5afa2d953d": {
   "fam": "operations",
   "sec": [
-   "customer"
+   "customer",
+   "education"
   ],
-  "danish": "plus",
+  "danish": "required",
   "hMin": 10,
   "hMax": 12,
   "skills": [
    "sagsbehandling",
    "IT-systemer",
-   "struktur og detaljefokus",
+   "administrative sagsgange",
    "samarbejde",
-   "kommunikation"
+   "detaljeorientering"
   ],
-  "blurb": "Du behandler ansøgninger om optagelse og løser forskellige ad hoc-opgaver i Team Optagelse og SU på Campus Esbjerg. Arbejdet foregår i et lille team i studieadministrationen.",
+  "blurb": "Du behandler ansøgninger om optagelse og løser forskellige ad hoc-opgaver i Team Optagelse og SU på Campus Esbjerg. Arbejdet foregår i IT-systemer og i et team med fem faste medarbejdere.",
   "deadlineAt": "2026-12-14T23:59:00+00:00",
   "enrichedBy": "ai",
   "studies": [
-   "it-teknolog",
    "erhvervsøkonomi",
+   "statskundskab",
    "jura",
-   "sygepleje",
-   "pædagogik",
-   "socialrådgiver"
+   "it-økonomi",
+   "datalogi",
+   "pædagogik"
   ],
-  "why": "Jobbet kræver interesse for IT, administrative sagsgange og samarbejde, hvilket passer til IT- og administrationsfaglige uddannelser samt professionsuddannelser på UC SYD.",
+  "why": "Jobbet kræver interesse for IT og administration og er åbent for studerende fra både professionsuddannelser og andre videregående uddannelser.",
+  "openToAll": true
+ },
+ "ba69d0c6cd695d3855b8fec74aed11fe11cdf5d2": {
+  "fam": "marketing",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "CMS",
+   "webtilgængelighed",
+   "Umbraco",
+   "Matomo",
+   "indholdskvalitetssikring"
+  ],
+  "blurb": "Du opsætter websider, kvalitetssikrer indhold og vedligeholder brugervejledninger til VIAs digitale platforme. Du laver også mindre analyser af trafik og brugeradfærd og bidrager til udviklingsopgaver i teamet.",
+  "deadlineAt": "2026-12-07T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "informationsvidenskab",
+   "kommunikation",
+   "it-produktudvikling",
+   "multimediedesign",
+   "datalogi"
+  ],
+  "why": "Jobbet kræver teknisk forståelse for digitale systemer kombineret med indholdsarbejde og klar kommunikation, hvilket medie- og informationsstudier dækker godt.",
   "openToAll": false
  }
 }
