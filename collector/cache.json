@@ -49342,5 +49342,65 @@
   ],
   "why": "Jobbet kræver teknisk forståelse for digitale systemer kombineret med indholdsarbejde og klar kommunikation, hvilket medie- og informationsstudier dækker godt.",
   "openToAll": false
+ },
+ "ce5a9e7ff50f9a010de9f204d74c1472a5ed21da": {
+  "fam": "public",
+  "sec": [
+   "bizdev",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "projektunderstøttelse",
+   "research",
+   "analyse",
+   "kvalitativ og kvantitativ meto",
+   "præsentationer"
+  ],
+  "blurb": "Du laver research, notater og analyser om udviklings- og vækstøkonomier og forbereder præsentationer til konsulenter. Du hjælper også med planlægning af arrangementer og delegationsbesøg i Danmark.",
+  "deadlineAt": "2026-11-27T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "international udvikling",
+   "statskundskab",
+   "økonomi",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "sociologi"
+  ],
+  "why": "Jobbet kræver analytisk arbejde om økonomi, udviklingspolitik og erhvervssamarbejde i vækstmarkeder, hvilket passer til samfundsfaglige og økonomiske uddannelser.",
+  "openToAll": false
+ },
+ "b20d4fca364b9447bcfa4c59e975b9bfd9b9b0b9": {
+  "fam": "sustain",
+  "sec": [
+   "engineering",
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 15,
+  "skills": [
+   "livscyklusvurdering",
+   "EU-taksonomi",
+   "dataanalyse",
+   "Power BI",
+   "LCAbyg"
+  ],
+  "blurb": "Du hjælper med livscyklusvurderinger af projekter og produkter, screening af projekter efter EU-taksonomiens kriterier og indsamling og bearbejdning af data til bæredygtighedsanalyser. Opgaverne varierer efter aktuelle projekter.",
+  "deadlineAt": "2026-12-04T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "bygningsingeniør",
+   "byggeteknik",
+   "miljøteknik",
+   "civilingeniør",
+   "energiteknik",
+   "arkitektur"
+  ],
+  "why": "LCA og EU-taksonomi for byggeri og anlæg kræver teknisk forståelse af materialer, konstruktion og data, som ingeniør- og byggeuddannelser giver.",
+  "openToAll": false
  }
 }

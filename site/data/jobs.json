@@ -1,5 +1,47 @@
 [
  {
+  "title": "Student til at understøtte DI's projekter i udviklings- og vækstøkonomier",
+  "co": "Dansk Industri",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "bizdev",
+   "research"
+  ],
+  "famConf": "title",
+  "skills": [
+   "projektunderstøttelse",
+   "research",
+   "analyse",
+   "kvalitativ og kvantitativ meto",
+   "præsentationer"
+  ],
+  "industry": "Interesseorganisation",
+  "postedAt": "2026-11-10T02:15:33+00:00",
+  "deadlineAt": "2026-11-27T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du laver research, notater og analyser om udviklings- og vækstøkonomier og forbereder præsentationer til konsulenter. Du hjælper også med planlægning af arrangementer og delegationsbesøg i Danmark.",
+  "req": null,
+  "url": "https://danskindustri.teamtailor.com/jobs/8693707-student-til-at-understotte-di-s-projekter-i-udviklings-og-vaekstokonomier",
+  "enrichedBy": "ai",
+  "studies": [
+   "international udvikling",
+   "statskundskab",
+   "økonomi",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "sociologi"
+  ],
+  "why": "Jobbet kræver analytisk arbejde om økonomi, udviklingspolitik og erhvervssamarbejde i vækstmarkeder, hvilket passer til samfundsfaglige og økonomiske uddannelser.",
+  "openToAll": false,
+  "id": "xb44215a16e41",
+  "live": true
+ },
+ {
   "title": "Praktikant til kommunikation og arrangementer i DI Byggeri",
   "co": "Dansk Industri",
   "city": "København",
@@ -3617,6 +3659,89 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
+  "enrichedBy": "regler",
+  "id": "x91d9b736c8c3",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true
+ },
+ {
   "title": "Arkitektpraktikanter, Aarhus eller Silkeborg",
   "co": "Sweco Danmark",
   "city": "Aarhus",
@@ -3734,7 +3859,7 @@
   "region": "oj",
   "hMin": 8,
   "hMax": 15,
-  "danish": "plus",
+  "danish": "required",
   "fam": "sustain",
   "sec": [
    "engineering",
@@ -3742,7 +3867,7 @@
   ],
   "famConf": "title",
   "skills": [
-   "LCA",
+   "livscyklusvurdering",
    "EU-taksonomi",
    "dataanalyse",
    "Power BI",
@@ -3752,19 +3877,19 @@
   "postedAt": "2026-11-05T08:44:35+00:00",
   "deadlineAt": "2026-12-04T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du støtter screening af projekter mod EU-taksonomiens kriterier og hjælper med livscyklusvurderinger af projekter og produkter. Du indsamler og bearbejder data og hjælper teamet med andre bæredygtighedsanalyser.",
+  "blurb": "Du hjælper med livscyklusvurderinger af projekter og produkter, screening af projekter efter EU-taksonomiens kriterier og indsamling og bearbejdning af data til bæredygtighedsanalyser. Opgaverne varierer efter aktuelle projekter.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182843&DepartmentId=21679&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
    "bygningsingeniør",
    "byggeteknik",
-   "miljøteknologi",
+   "miljøteknik",
    "civilingeniør",
-   "maskiningeniør",
-   "bæredygtigt byggeri"
+   "energiteknik",
+   "arkitektur"
   ],
-  "why": "Jobbet kræver teknisk forståelse af byggeri og anlæg samt arbejde med data og dokumentation, hvilket ingeniør- og byggeuddannelser giver.",
+  "why": "LCA og EU-taksonomi for byggeri og anlæg kræver teknisk forståelse af materialer, konstruktion og data, som ingeniør- og byggeuddannelser giver.",
   "openToAll": false,
   "id": "xfb733fea070e",
   "live": true
@@ -5541,29 +5666,6 @@
   "url": "https://varde.career.emply.com/ad/praktik-og-opgaveskrivning-for-studerende-ved-universiteterne/ablgx7",
   "enrichedBy": "regler",
   "id": "xf99310ad50d8",
-  "live": true
- },
- {
-  "title": "Studiepraktikant til E-mail Marketing hos Magasin",
-  "co": "Magasin",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Detailhandel",
-  "postedAt": "2026-05-08T09:57:12+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "“Hej, jeg hedder Christine, og jeg er E-mail Marketing Lead i Magasin. Vi søger en engageret studiepraktikant til vores e-mailteam til vinter 2026, eller foråret 2027 . Vi søger dig som har lyst til at få hands-on…",
-  "req": null,
-  "url": "https://karriere.magasin.dk/jobs/7705912-studiepraktikant-til-e-mail-marketing-hos-magasin",
-  "enrichedBy": "regler",
-  "id": "x8d7d997f3e37",
   "live": true
  },
  {

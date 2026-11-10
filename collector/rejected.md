@@ -43,6 +43,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
+| IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
 | Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studiementorer til ergoterapeutuddannelsen | ikke et studiejob |
 | Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
