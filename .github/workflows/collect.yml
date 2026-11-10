@@ -49,3 +49,10 @@ jobs:
           git diff --cached --quiet || git commit -m "Opdater job"
           git pull --rebase -X theirs   # opstår der en konflikt med en anden kørsel, vinder de nyeste job
           git push
+      - name: Send jobalarmer
+        # Venter et par minutter, så den nye jobliste er online, før mails linker til den
+        run: sleep 120 && node scripts/send_alerts.mjs
+        continue-on-error: true
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          SITE_URL: https://studiematch.dk

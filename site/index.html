@@ -1365,9 +1365,12 @@ function tProfile(){
       <form class="inline-form" data-form="courses"><label class="sr" for="pf-course">Tilføj et fag</label><input id="pf-course" class="input" placeholder="fx Supply Chain Management (5 ECTS)"><button class="btn btn-ghost" type="submit">Tilføj</button></form></div>
   </section>
 
-  <section class="pcard"><h2>Jobalarmer <span class="tag">Kommer snart</span></h2>
-    <p class="hint">Snart kan du få en mail, når der kommer et stærkt match. ${ACC.user?"Slå det til, så får du besked, når det er klar.":"Opret en bruger, så kan du få besked, når det er klar."}</p>
-    ${ACC.user?`<div class="toggle-row"><button class="switch" role="switch" aria-checked="${p.alerts}" data-act="alerts" aria-label="Giv mig besked om jobalarmer"></button><span>Ja tak, mail mig, når jobalarmer er klar</span></div>`:""}
+  <section class="pcard"><h2>Jobmails</h2>
+    ${ACC.user?`<p class="hint">Få en mail, når der kommer nye studiejob, der passer til din uddannelse og dine filtre. Kun når der er noget nyt.</p>
+      <div class="toggle-row"><button class="switch" role="switch" aria-checked="${!!p.alerts}" data-act="alerts" aria-label="Mail mig nye job, der passer til mig"></button><span>Mail mig nye job, der passer til mig</span></div>
+      ${p.alerts?`<div class="chips" role="group" aria-label="Hvor tit"><button class="chip" data-act="alert-freq" data-v="daily" aria-pressed="${p.alertFreq!=="weekly"}">Højst én gang om dagen</button><button class="chip" data-act="alert-freq" data-v="weekly" aria-pressed="${p.alertFreq==="weekly"}">Én gang om ugen</button></div>
+      <p class="fine">Mailene går til ${esc(ACC.user.email)}.</p>`:""}`
+    :`<p class="hint">Opret en gratis bruger, så mailer vi dig, når der kommer nye studiejob, der passer til din uddannelse.</p><div><button class="btn btn-primary btn-sm" data-act="auth" data-v="signup">Opret bruger og få jobmails</button></div>`}
   </section>
 
   <div class="only-narrow">${tasteHTML()}</div>
@@ -1416,6 +1419,7 @@ function authSheet(sh){
       <div class="field"><label class="label" for="au-name">Navn <span class="fine">(valgfrit)</span></label><input id="au-name" class="input" autocomplete="name" value="${esc(a.name)}"></div>
       <div class="field"><label class="label" for="au-mail">E-mail</label><input id="au-mail" class="input" type="email" autocomplete="email" required value="${esc(a.email)}"></div>
       <div class="field"><label class="label" for="au-pw">Adgangskode</label><input id="au-pw" class="input" type="password" autocomplete="new-password" required minlength="8"><p class="fine">Mindst 8 tegn.</p></div>
+      <label class="check"><input type="checkbox" id="au-alerts" ${a.alerts!==false?"checked":""}><span>Send mig nye studiejob, der passer til min uddannelse, på mail. Højst én gang om dagen, og du kan altid afmelde.</span></label>
       <label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="/privatliv.html" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>
       ${err}
       <button class="btn btn-primary btn-block" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Vent…":"Opret bruger"}</button>
@@ -1578,9 +1582,9 @@ function act(a, el){
     case "level": UI.obLevel=v; return render();
     case "pick": setProgram(progById(id)); S.step=3; window.scrollTo(0,0); return commit();
     case "use-text": setFreeText(UI.obText, UI.obUni); S.step=3; window.scrollTo(0,0); return commit();
-    case "danish": p.danish=v; return commit();
-    case "hours": p.hoursMax=Number(v); return commit();
-    case "region":
+    case "danish": p.danish=v; if(S.view==="app") track("filter",{meta:"Dansk: "+danishLabel(v)}); return commit();
+    case "hours": p.hoursMax=Number(v); if(S.view==="app") track("filter",{meta:"Timer: "+hoursText(Number(v))}); return commit();
+    case "region": if(S.view==="app") track("filter",{meta:"Område: "+((REGIONS.find(r=>r.v===v)||{}).l||v)});
       if(v==="any") p.regions=["any"];
       else { p.regions=p.regions.filter(r=>r!=="any"); p.regions = p.regions.includes(v) ? p.regions.filter(r=>r!==v) : [...p.regions,v]; if(!p.regions.length) p.regions=[v]; }
       return commit();
@@ -1589,7 +1593,7 @@ function act(a, el){
     case "fam-toggle": S.disabled = S.disabled.includes(v) ? S.disabled.filter(f=>f!==v) : [...S.disabled,v]; return commit();
     case "finish": S.onboarded=true; S.view="app"; S.tab="foryou"; window.scrollTo(0,0); track("onboarded",{label:p.programName}); return commit();
     case "tab": S.tab=el.dataset.tab; UI.confirmDelete=false; window.scrollTo(0,0); return commit();
-    case "why": UI.expanded[id]=!UI.expanded[id]; return render();
+    case "why": UI.expanded[id]=!UI.expanded[id]; if(UI.expanded[id]) track("why",{jobId:id,label:jobLabel(byId(id))}); return render();
     case "like": { const j=byId(id), fb=fbOf(id); snap();
       if(fb.liked){ fb.liked=false; bump(j.fam,-.12); (j.sec||[]).forEach(f=>bump(f,-.04)); commit(); return toast("Fjernet fra interesseret"); }
       track("like",{jobId:id,label:jobLabel(j)}); fb.liked=true; bump(j.fam,.12); (j.sec||[]).forEach(f=>bump(f,.04)); commit(); return toast(`Noteret. Flere job inden for ${FAM[j.fam].n} fremover.`,true); }
@@ -1616,7 +1620,8 @@ function act(a, el){
     case "undo": if(snapshot){ const s=JSON.parse(snapshot); S.learned=s.learned; S.fb=s.fb; snapshot=null; commit(); document.getElementById("toast").classList.remove("show"); } return;
     case "reset-learning": snap(); S.learned={}; commit(); return toast("Læringen er nulstillet til din uddannelses udgangspunkt.",true);
     case "widen": p.regions=["any"]; commit(); return toast("Viser nu job fra hele landet.");
-    case "alerts": p.alerts=!p.alerts; return commit();
+    case "alerts": p.alerts=!p.alerts; if(p.alerts && !p.alertFreq) p.alertFreq="daily"; commit(); return toast(p.alerts?"Jobmails er slået til.":"Jobmails er slået fra.");
+    case "alert-freq": p.alertFreq=v; return commit();
     case "freq": p.alertFreq=v; return commit();
     case "interest": p.interests = p.interests.includes(v) ? p.interests.filter(x=>x!==v) : [...p.interests,v]; return commit();
     case "industry": p.industries = p.industries.includes(v) ? p.industries.filter(x=>x!==v) : [...p.industries,v]; return commit();
@@ -1626,9 +1631,9 @@ function act(a, el){
     case "delete-no": UI.confirmDelete=false; return render();
     case "delete-yes": (async()=>{ if(ACC.user){ const r=await api("me",undefined,"DELETE"); if(!r.ok) return toast(r.data.error||"Det lykkedes ikke. Prøv igen."); ACC.user=null; }
       S=fresh(); UI.confirmDelete=false; UI.expanded={}; try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Dine data er slettet."); })(); return;
-    case "postjob": UI.sheet={type:"postjob"}; UI.focus="pj-company"; return render();
+    case "postjob": track("postjob_open"); UI.sheet={type:"postjob"}; UI.focus="pj-company"; return render();
     case "mfb": { const j=byId(id), fb=fbOf(id); fb.mfb=v; track(v==="good"?"match_good":"match_bad",{jobId:id,label:jobLabel(j),meta:(p.programName||"").slice(0,120)}); commit(); return toast(v==="good"?"Tak! Det hjælper os med at ramme endnu bedre.":"Tak! Vi bruger det til at gøre matchningen bedre."); }
-    case "auth": UI.sheet={type:"auth",mode:v||"login"}; UI.focus=v==="signup"?"au-name":"au-mail"; return render();
+    case "auth": track("auth_open",{meta:v||"login"}); UI.sheet={type:"auth",mode:v||"login"}; UI.focus=v==="signup"?"au-name":"au-mail"; return render();
     case "auth-mode": saveAuthFields(); UI.sheet={type:"auth",mode:v}; UI.focus=v==="signup"?"au-name":"au-mail"; return render();
     case "pw-sheet": UI.sheet={type:"password"}; UI.focus="pw-old"; return render();
     case "logout": (async()=>{ await api("auth/logout",{}); ACC.user=null; S=fresh(); try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Du er logget ud."); })(); return;
@@ -1706,7 +1711,7 @@ function applyCV(){
   p.cvFams=[...fams]; p.cvName=sh.name; p.cvAt=Date.now(); p.cvBy=ex.by;
   UI.sheet=null; commit(); toast("Dit CV er brugt. Dine matches er opdateret.");
 }
-function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
+function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-alerts")) UI.auth.alerts=g("au-alerts").checked; if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
 async function submitPostJob(form){
   const g=id=>(form.querySelector("#pj-"+id)||{}).value||"";
   UI.post={company:g("company"),title:g("title"),city:g("city"),region:g("region"),hMin:g("hmin"),hMax:g("hmax"),danish:g("danish"),description:g("desc"),url:g("url"),deadline:g("deadline"),contact:g("contact"),email:g("email")};
@@ -1733,8 +1738,9 @@ async function submitReset(form){
 async function submitAuth(form){
   saveAuthFields(); const sh=UI.sheet; const pw=form.querySelector("#au-pw").value; const signup=sh.mode!=="login";
   if(signup && !UI.auth.consent){ sh.err="Sæt flueben ved privatlivspolitikken for at oprette en bruger."; return render(); }
+  if(signup){ S.profile.alerts=UI.auth.alerts!==false; S.profile.alertFreq=S.profile.alertFreq||"daily"; }
   sh.busy=true; sh.err=""; render();
-  const r = signup ? await api("auth/signup",{email:UI.auth.email,password:pw,name:UI.auth.name,consent:true,profile:S.onboarded?S.profile:null,state:S.onboarded?serverState():null})
+  const r = signup ? await api("auth/signup",{email:UI.auth.email,password:pw,name:UI.auth.name,consent:true,profile:S.profile,state:S.onboarded?serverState():null})
                    : await api("auth/login",{email:UI.auth.email,password:pw});
   sh.busy=false;
   if(!r.ok){ sh.err=r.data.error||"Det lykkedes ikke. Prøv igen."; return render(); }
@@ -1815,7 +1821,8 @@ async function loadLiveJobs(){
   /* Job, som virksomheder har slået op direkte, og som I har godkendt i admin */
   try{
     const r=await fetch("/api/jobs");
-    if(r.ok){ const d=await r.json(); const direct=(d.jobs||[]).filter(j=>j && j.title && FAM[j.fam]).map(j=>toLive(j,t)); live=[...direct,...live]; }
+    if(r.ok){ const d=await r.json(); const direct=(d.jobs||[]).filter(j=>j && j.title && FAM[j.fam]).map(j=>toLive(j,t)); live=[...direct,...live];
+      const hidden=new Set(d.hidden||[]); if(hidden.size) live=live.filter(j=>!hidden.has(j.id)); /* job, I har skjult i admin */ }
   }catch(e){}
   if(!live.length) return;
   JOBS.length=0; JOBS.push(...live);

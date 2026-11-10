@@ -43,7 +43,8 @@ h2{font-size:16px;margin:0 0 10px}
 .kpi .l{color:var(--muted);font-size:13px}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
 .chart{width:100%;height:190px;display:block}
-.chart text{font-size:10px;fill:var(--muted)}
+.chart text{font-size:11px;fill:var(--muted)}
+.grid2>.card{align-self:start}
 .legend{display:flex;gap:14px;font-size:13px;color:var(--muted);margin-top:6px}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
 table{width:100%;border-collapse:collapse;font-size:14px}
@@ -80,6 +81,12 @@ pre.cv{white-space:pre-wrap;font:13px/1.5 var(--mono);background:#F7FAF9;border:
 .job-card{display:grid;gap:12px}
 .job-card select.input{display:block;margin-top:4px}
 details summary{cursor:pointer;font-weight:700}
+.visit{border-top:1px solid var(--line)}
+.visit-h{all:unset;cursor:pointer;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;width:100%;padding:10px 0}
+.visit-h:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.visit-h .vn{font-weight:700;flex:1 1 220px}
+.tl{list-style:none;margin:0 0 12px;padding:0 0 0 14px;border-left:2px solid var(--accent-soft);display:grid;gap:6px;font-size:14px}
+.tl li{display:grid;grid-template-columns:76px 1fr;gap:10px}
 .secret{font:16px var(--mono);background:#FFF8DB;border-radius:10px;padding:10px 12px;user-select:all}
 @media (max-width:640px){ .kv{grid-template-columns:1fr} .fstep{grid-template-columns:110px 1fr 46px} .hide-s{display:none} }
 </style>
@@ -93,9 +100,11 @@ const fmt = n => Number(n||0).toLocaleString("da-DK");
 const date = t => t ? new Date(t).toLocaleDateString("da-DK",{day:"numeric",month:"short",year:"numeric"}) : "–";
 const dt = t => t ? new Date(t).toLocaleString("da-DK",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}) : "–";
 const FAM={supply:"Supply Chain",procurement:"Indkøb",pmo:"Projektledelse",bizdev:"Forretningsudvikling",strategy:"Strategi",salesops:"Salgsoperationer",logistics:"Logistik",operations:"Drift",bi:"BI og data",finance:"Økonomi",marketing:"Marketing",product:"Produkt og UX",software:"Software",datasci:"Data science",hr:"HR",sustain:"Bæredygtighed",customer:"Kundesucces",legal:"Jura",research:"Forskning",engineering:"Ingeniør",health:"Sundhed",education:"Pædagogik",social:"Socialt arbejde",public:"Offentlig forvaltning"};
-const EVENT={pageview:"Sidevisning",signup:"Ny bruger",onboarded:"Færdig med opsætning",apply_click:"Klik på jobopslag",save:"Gemte job",like:"Interesseret",dismiss:"Fravalgte job",cv_added:"Uploadede CV",program_changed:"Skiftede uddannelse"};
+const EVENT={pageview:"Sidevisning",signup:"Ny bruger",onboarded:"Færdig med opsætning",apply_click:"Klik på jobopslag",save:"Gemte job",like:"Interesseret",dismiss:"Fravalgte job",cv_added:"Uploadede CV",program_changed:"Skiftede uddannelse",match_good:"Sagde: passer",match_bad:"Sagde: passer ikke",why:"Åbnede \"Hvorfor dette match\"",auth_open:"Åbnede log ind/opret",filter:"Ændrede filter",postjob_open:"Åbnede \"Slå job op\"",alert_sent:"Fik jobmail",login_fail:"Forkert login",reset_req:"Bad om ny kode"};
+const PATH={"/":"Forsiden","/app/foryou":"Til dig","/app/saved":"Gemt","/app/profile":"Profil","/app/hidden":"Til dig","/opsaetning/1":"Opsætning: skole og uddannelse","/opsaetning/2":"Opsætning: filtre","/opsaetning/3":"Opsætning: interesser"};
+const DOW=["Man","Tir","Ons","Tor","Fre","Lør","Søn"];
 
-const st = {me:null, tab:"overview", stats:null, users:[], q:"", sel:null, detail:null, created:null, err:"", jobs:null, fams:{}, areas:{}};
+const st = {actDay:new Date().toISOString().slice(0,10), act:null, open:{}, all:null, hidden:null, jq:"", me:null, tab:"overview", stats:null, users:[], q:"", sel:null, detail:null, created:null, err:"", jobs:null, fams:{}, areas:{}};
 
 async function api(path, body, method){
   const r = await fetch("/api/"+path,{method:method||(body===undefined?"GET":"POST"),credentials:"same-origin",
@@ -120,7 +129,7 @@ function vLogin(msg){
 /* ---------- ramme ---------- */
 function shell(body){
   const pend=st.stats&&st.stats.pendingJobs?` <span class="pill">${st.stats.pendingJobs}</span>`:"";
-  const tabs=[["overview","Overblik"],["jobs","Job"+pend],["users","Brugere"],["companies","Virksomheder"]];
+  const tabs=[["overview","Overblik"],["activity","Aktivitet"],["alljobs","Alle job"],["jobs","Opslag"+pend],["users","Brugere"],["companies","Virksomheder"]];
   return `<header><div class="wrap top">
     <div class="brand"><i></i>Studiematch <small>Admin</small></div>
     <nav class="tabs">${tabs.map(([k,l])=>`<button data-tab="${k}" ${st.tab===k?'aria-current="page"':""}>${l}</button>`).join("")}</nav>
@@ -167,6 +176,7 @@ function vOverview(){
     <div class="kpi"><div class="v">${fmt((f.apply_click||{}).n)}</div><div class="l">Klik på jobopslag, 30 dage</div></div>
     <div class="kpi"><div class="v">${fmt(s.totals.with_cv)}</div><div class="l">Brugere med CV</div></div>
     <div class="kpi"><div class="v">${fmt(s.totals.active7)}</div><div class="l">Aktive brugere, 7 dage</div></div>
+    <div class="kpi"><div class="v">${fmt((s.alerts||{}).subs)}</div><div class="l">Har jobmails slået til · ${fmt((s.alerts||{}).mails)} mails sendt</div></div>
   </div>
   <section class="card"><h2>Besøgende de sidste 30 dage</h2>${chart(s)}<p class="muted small">En besøgende tælles én gang pr. dag. Vi bruger ingen cookies til statistik.</p></section>
   <div class="grid2">
@@ -272,10 +282,85 @@ function vCompanies(){
 }
 
 /* ---------- tegn og handlinger ---------- */
+/* ---------- aktivitet: hvem er inde, hvornår, og hvad trykker de på ---------- */
+function bars(data, labels, title){
+  const max=Math.max(1,...data); const W=320,H=170,pad=22,bw=(W-pad)/data.length;
+  const b=data.map((v,i)=>`<rect x="${pad+i*bw+2}" y="${H-20-(H-30)*v/max}" width="${bw-4}" height="${(H-30)*v/max}" rx="3" fill="var(--accent)"><title>${labels[i]}: ${v}</title></rect>`).join("");
+  const l=labels.map((t,i)=>(data.length>12 && i%3) ? "" : `<text x="${pad+i*bw+bw/2}" y="${H-5}" text-anchor="middle">${t}</text>`).join("");
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}"><text x="0" y="14">${max}</text><line x1="${pad}" x2="${W}" y1="${H-20}" y2="${H-20}" stroke="var(--line)"/>${b}${l}</svg>`;
+}
+const vName=v=>v.email?esc(v.email):`Besøgende ${esc(v.visitor.slice(0,4))}`;
+const evText=e=>{
+  if(e.type==="pageview") return `Så ${esc(PATH[e.path]||e.path||"siden")}`;
+  const base=EVENT[e.type]||e.type;
+  const extra=[e.label,e.meta].filter(Boolean).map(esc).join(" · ");
+  return extra?`${base}: <span class="muted">${extra}</span>`:base;
+};
+function vActivity(){
+  const s=st.stats||{}; const t=s.today||{};
+  const hrs=Array.from({length:24},(_,h)=>((s.hours||[]).find(r=>Number(r.hour)===h)||{}).n||0);
+  const dws=Array.from({length:7},(_,d)=>((s.weekdays||[]).find(r=>Number(r.dow)===d)||{}).n||0);
+  const a=st.act;
+  const visits=!a?`<p class="muted">Henter…</p>`:!a.visitors.length?`<p class="empty">Ingen besøg denne dag.</p>`:a.visitors.map(v=>{
+    const open=st.open[v.visitor]; const acts=v.events.filter(e=>e.type!=="pageview").length;
+    return `<div class="visit">
+      <button class="visit-h" data-visit="${v.visitor}" aria-expanded="${!!open}">
+        <span class="vn">${vName(v)} ${v.email?'<span class="pill">bruger</span>':'<span class="pill gray">ingen bruger</span>'}</span>
+        <span class="small muted">${new Date(v.first).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"})}–${new Date(v.last).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"})} · ${v.events.length} hændelser, ${acts} handlinger${v.ref?` · fra ${esc(v.ref)}`:""}</span>
+      </button>
+      ${open?`<ol class="tl">${v.events.map(e=>`<li><span class="small muted">${new Date(e.ts).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit",second:"2-digit"})}</span><span>${evText(e)}</span></li>`).join("")}</ol>`:""}
+    </div>`; }).join("");
+  const anon=a?a.visitors.filter(v=>!v.email).length:0;
+  return `<h1>Aktivitet</h1>
+  <p class="muted">Alle besøg, også fra folk uden bruger. En besøgende uden bruger er anonym og får et nyt nummer hver dag, så vi ikke kan følge nogen fra dag til dag.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v">${fmt(t.all_v)}</div><div class="l">Besøgende i dag</div></div>
+    <div class="kpi"><div class="v">${fmt(t.anon_v)}</div><div class="l">Uden bruger i dag</div></div>
+    <div class="kpi"><div class="v">${fmt(t.user_v)}</div><div class="l">Logget ind i dag</div></div>
+  </div>
+  <div class="grid2">
+    <section class="card"><h2>Hvornår er de inde (30 dage)</h2>${bars(hrs,hrs.map((_,h)=>String(h).padStart(2,"0")),"Besøg pr. time")}<p class="muted small">Klokkeslæt i dansk vintertid.</p></section>
+    <section class="card"><h2>Ugedage (30 dage)</h2>${bars(dws,DOW,"Besøg pr. ugedag")}</section>
+    <section class="card"><h2>Hvad trykker de på (30 dage)</h2>${list(s.actions||[],[{f:r=>EVENT[r.type]||esc(r.type)},{n:1,f:r=>fmt(r.n)}],"Ingen handlinger endnu.")}</section>
+    <section class="card"><h2>Uddannelser valgt af folk uden bruger</h2>${list(s.anonPrograms||[],[{f:r=>esc(r.label)},{n:1,f:r=>fmt(r.n)}],"Ingen endnu.")}</section>
+  </div>
+  <section class="card">
+    <div class="row" style="margin-bottom:12px"><h2 style="margin:0;flex:1">Besøgende ${a?`(${a.visitors.length}, heraf ${anon} uden bruger)`:""}</h2>
+      <button class="btn" data-day="-1" aria-label="Dagen før">←</button><input class="input" type="date" id="act-day" value="${st.actDay}"><button class="btn" data-day="1" aria-label="Dagen efter">→</button></div>
+    <p class="muted small">Tryk på en besøgende for at se, hvad de så og trykkede på, i rækkefølge.</p>
+    ${visits}
+  </section>`;
+}
+async function loadActivity(){ st.act=null; render(); const r=await api("admin/activity?day="+st.actDay); if(r.ok){ st.act=r.data; render(); } }
+
+/* ---------- alle job på siden: søg og skjul ---------- */
+function vAllJobs(){
+  if(!st.all) return `<p class="muted">Henter…</p>`;
+  const hid=new Set((st.hidden||[]).map(h=>h.job_id)); const q=st.jq.trim().toLowerCase();
+  const hits=st.all.filter(j=>!q || `${j.title} ${j.co} ${j.city} ${j.src}`.toLowerCase().includes(q));
+  const row=j=>`<tr><td><b>${esc(j.title)}</b><div class="small muted">${esc(j.co)} · ${esc(j.city||"")} · ${esc(j.src||"")}</div></td>
+    <td class="small">${j.url?`<a href="${esc(j.url)}" target="_blank" rel="noopener">Åbn</a>`:""}</td>
+    <td>${hid.has(j.id)?`<button class="btn" data-unhide="${esc(j.id)}">Vis igen</button>`:`<button class="btn btn-d" data-hide="${esc(j.id)}">Skjul</button>`}</td></tr>`;
+  return `<h1>Alle job <span class="muted">(${fmt(st.all.length)})</span></h1>
+  <p class="muted">Skjul et job, der er forkert, udløbet eller ikke er et studiejob. Det forsvinder for alle med det samme og kommer ikke i jobmails.</p>
+  ${(st.hidden||[]).length?`<section class="card"><h2>Skjulte job (${st.hidden.length})</h2><div class="scroll"><table><tbody>${st.hidden.map(h=>`<tr><td>${esc(h.title||h.job_id)}<div class="small muted">skjult ${dt(h.ts)}</div></td><td><button class="btn" data-unhide="${esc(h.job_id)}">Vis igen</button></td></tr>`).join("")}</tbody></table></div></section>`:""}
+  <section class="card">
+    <div class="row" style="margin-bottom:10px"><input class="input" id="jq" placeholder="Søg på titel, virksomhed, by eller kilde" value="${esc(st.jq)}" style="flex:1"></div>
+    <p class="muted small">${fmt(hits.length)} job${hits.length>150?", viser de første 150":""}</p>
+    <div class="scroll"><table><tbody>${hits.slice(0,150).map(row).join("")}</tbody></table></div>
+  </section>`;
+}
+async function loadAllJobs(){
+  const [a,h]=await Promise.all([fetch("/data/jobs.json",{cache:"no-store"}).then(r=>r.json()).catch(()=>[]), api("admin/hidden")]);
+  const direct=await fetch("/api/jobs").then(r=>r.json()).then(d=>d.jobs||[]).catch(()=>[]);
+  st.all=[...direct,...a]; st.hidden=h.ok?h.data.hidden:[]; render();
+}
+
 function render(){
   const a=$("#app");
   if(!st.me) return;
-  a.innerHTML = shell(st.tab==="users"?vUsers():st.tab==="companies"?vCompanies():st.tab==="jobs"?vJobs():vOverview());
+  a.innerHTML = shell(st.tab==="users"?vUsers():st.tab==="companies"?vCompanies():st.tab==="jobs"?vJobs():st.tab==="activity"?vActivity():st.tab==="alljobs"?vAllJobs():vOverview());
+  if(st.focusJ){ const i=$("#jq"); if(i){ i.focus(); i.setSelectionRange(i.value.length,i.value.length); } }
 }
 async function loadStats(){ const r=await api("admin/stats"); if(r.ok){ st.stats=r.data; render(); } }
 async function loadUsers(){ const r=await api("admin/users?q="+encodeURIComponent(st.q)); if(r.ok){ st.users=r.data.users; render(); const i=$("#uq"); if(i&&document.activeElement!==i&&st.focusQ){ i.focus(); i.setSelectionRange(i.value.length,i.value.length); } } }
@@ -303,8 +388,18 @@ document.addEventListener("submit", async e=>{
   }
 });
 let qTimer=null;
-document.addEventListener("input", e=>{ if(e.target.id==="uq"){ st.q=e.target.value; st.focusQ=true; clearTimeout(qTimer); qTimer=setTimeout(loadUsers,250); } });
+document.addEventListener("change", e=>{ if(e.target.id==="act-day" && e.target.value){ st.actDay=e.target.value; st.open={}; loadActivity(); } });
+document.addEventListener("input", e=>{ if(e.target.id==="jq"){ st.jq=e.target.value; st.focusJ=true; render(); return; } if(e.target.id==="uq"){ st.q=e.target.value; st.focusQ=true; clearTimeout(qTimer); qTimer=setTimeout(loadUsers,250); } });
 document.addEventListener("click", async e=>{
+  const x=e.target.closest("[data-visit],[data-day],[data-hide],[data-unhide]");
+  if(x){
+    if(x.dataset.visit){ st.open[x.dataset.visit]=!st.open[x.dataset.visit]; return render(); }
+    if(x.dataset.day){ const d=new Date(st.actDay+"T12:00:00Z"); d.setUTCDate(d.getUTCDate()+Number(x.dataset.day)); st.actDay=d.toISOString().slice(0,10); st.open={}; return loadActivity(); }
+    st.focusJ=false;
+    if(x.dataset.hide){ const j=st.all.find(j=>j.id===x.dataset.hide); await api("admin/hidden",{jobId:x.dataset.hide,title:j?`${j.title} · ${j.co}`:""}); }
+    else await api("admin/hidden/"+encodeURIComponent(x.dataset.unhide),undefined,"DELETE");
+    const h=await api("admin/hidden"); st.hidden=h.ok?h.data.hidden:[]; return render();
+  }
   const jb=e.target.closest("[data-jact],[data-jdel]");
   if(jb){ const c=jb.closest("[data-job]"), id=c.dataset.job;
     if(jb.hasAttribute("data-jdel")){ if(!jb.dataset.sure){ jb.dataset.sure="1"; jb.textContent="Tryk igen for at slette"; return; } await api("admin/jobs/"+id,undefined,"DELETE"); return loadJobs(); }
@@ -312,7 +407,7 @@ document.addEventListener("click", async e=>{
     await api("admin/jobs/"+id,{action:jb.dataset.jact,fam,region}); loadStats(); return loadJobs(); }
   const t=e.target.closest("[data-tab],[data-user],[data-close],[data-reset],[data-role],[data-del],#logout"); if(!t) return;
   if(t.id==="logout"){ await api("auth/logout",{}); location.reload(); return; }
-  if(t.dataset.tab){ st.tab=t.dataset.tab; st.focusQ=false; render(); if(st.tab==="overview"||st.tab==="companies") loadStats(); if(st.tab==="jobs") loadJobs(); return; }
+  if(t.dataset.tab){ st.tab=t.dataset.tab; st.focusQ=false; render(); if(st.tab==="overview"||st.tab==="companies") loadStats(); if(st.tab==="jobs") loadJobs(); if(st.tab==="activity"){ loadStats(); loadActivity(); } if(st.tab==="alljobs") loadAllJobs(); st.focusJ=false; return; }
   if(t.dataset.user){ st.focusQ=false; return openUser(t.dataset.user); }
   if(t.hasAttribute("data-close")){ st.detail=null; return render(); }
   if(t.dataset.reset){ const r=await api(`admin/users/${t.dataset.reset}/password`,{}); if(r.ok){ st.detail.newPw=r.data.password; render(); } return; }

@@ -8,6 +8,8 @@
  *   RESEND_API_KEY     valgfri: sender en mail til jer, når en virksomhed skriver sig op
  *   NOTIFY_EMAIL       hvem mailen går til, standard matchstudie@gmail.com
  *   NOTIFY_FROM        afsender, standard "Studiematch <onboarding@resend.dev>"
+ *   CRON_SECRET        hemmelig kode, som GitHub bruger, når den sender jobalarmer (samme værdi i GitHub og Cloudflare)
+ *   SITE_URL           sidens adresse i mails, standard https://studiematch.dk
  *   MAIL_FROM          afsender på mails til brugerne (nulstil adgangskode), fx "Studiematch <noreply@studiematch.dk>".
  *                      Kræver, at studiematch.dk er bekræftet hos Resend. Uden den kan Resend kun sende til jeres egen mail.
  */
@@ -21,7 +23,7 @@ const FAMS = {
   engineering: "Ingeniørarbejde", health: "Sundhed og pleje", education: "Pædagogik og undervisning",
   social: "Socialt arbejde", public: "Offentlig forvaltning",
 };
-const TRACK_TYPES = new Set(["pageview", "onboarded", "apply_click", "save", "like", "dismiss", "cv_added", "program_changed", "match_good", "match_bad"]);
+const TRACK_TYPES = new Set(["pageview", "onboarded", "apply_click", "save", "like", "dismiss", "cv_added", "program_changed", "match_good", "match_bad", "why", "auth_open", "filter", "postjob_open", "tab"]);
 const AREAS = { kbh: "Storkøbenhavn", nsj: "Nordsjælland", sj: "Midt- og Vestsjælland", ssj: "Sydsjælland og Lolland-Falster", bh: "Bornholm",
   fyn: "Fyn", sjy: "Sønderjylland", svj: "Sydvestjylland", tre: "Trekantområdet", oj: "Østjylland", mvj: "Midt- og Vestjylland", nj: "Nordjylland", remote: "Remote" };
 /* Ord i jobtitlen, der peger på et felt. Bruges som forslag, når en virksomhed slår et job op (og AI ikke er slået til). */
@@ -103,13 +105,15 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS companies (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, company TEXT, email TEXT)`,
   `CREATE TABLE IF NOT EXISTS program_cache (key TEXT PRIMARY KEY, weights TEXT, ts INTEGER)`,
   `CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)`,
+  `CREATE TABLE IF NOT EXISTS hidden_jobs (job_id TEXT PRIMARY KEY, ts INTEGER, title TEXT, by_user INTEGER)`,
+  `CREATE TABLE IF NOT EXISTS alert_sent (user_id INTEGER NOT NULL, job_id TEXT NOT NULL, ts INTEGER, PRIMARY KEY (user_id, job_id))`,
   `CREATE TABLE IF NOT EXISTS password_resets (token TEXT PRIMARY KEY, user_id INTEGER NOT NULL, expires_at INTEGER, used INTEGER DEFAULT 0)`,
   `CREATE TABLE IF NOT EXISTS posted_jobs (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, status TEXT DEFAULT 'pending',
      company TEXT, contact TEXT, email TEXT, title TEXT, city TEXT, region TEXT, h_min INTEGER, h_max INTEGER, danish TEXT,
      url TEXT, deadline TEXT, description TEXT, fam TEXT, sec TEXT, studies TEXT, why TEXT, approved_at INTEGER)`,
 ];
 /* Kolonner, der er kommet til senere. Fejler, hvis de allerede findes, og det er fint. */
-const MIGRATIONS = ["ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT", "ALTER TABLE events ADD COLUMN meta TEXT"];
+const MIGRATIONS = ["ALTER TABLE users ADD COLUMN last_alert INTEGER", "ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT", "ALTER TABLE events ADD COLUMN meta TEXT"];
 let ready = null;
 function ensureSchema(db) {
   if (!ready) ready = db.batch(SCHEMA.map((s) => db.prepare(s)))
@@ -150,6 +154,41 @@ async function sendMail(env, to, subject, html) {
   return res.ok;
 }
 const RESET_MINUTES = 60;
+
+/* ---------- jobalarmer ----------
+ * GitHub regner matches ud efter hver jobindsamling (samme matchning som på siden) og beder serveren sende mails.
+ * Serveren holder styr på, hvem der vil have mails, hvor tit, og hvilke job de allerede har fået. */
+const ALERT_GAP = { daily: 20 * 3600e3, weekly: 6.5 * 864e5 };
+const siteUrl = (env, req) => env.SITE_URL || new URL(req.url).origin;
+async function hmac(secret, msg) {
+  const key = await crypto.subtle.importKey("raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  return hex(await crypto.subtle.sign("HMAC", key, enc.encode(msg))).slice(0, 32);
+}
+function cronOk(env, req) {
+  const got = (req.headers.get("Authorization") || "").replace(/^Bearer\s+/i, "");
+  return !!env.CRON_SECRET && got.length > 0 && safeEqual(got, env.CRON_SECRET);
+}
+function alertMail(base, u, jobs, offUrl, freq) {
+  const p = parse(u.profile, {}) || {};
+  const prog = p.programShort || p.programName || "din uddannelse";
+  const n = jobs.length;
+  const items = jobs.map((j) => `
+    <tr><td style="padding:14px 0;border-top:1px solid #E3EAE7">
+      <div style="font-size:13px;color:#64737B">${escHtml(j.co)}${j.city ? " · " + escHtml(j.city) : ""}${j.level === "strong" ? ' · <b style="color:#0B7D60">Stærkt match</b>' : ""}</div>
+      <div style="font-size:17px;font-weight:700;margin:2px 0 4px">${escHtml(j.title)}</div>
+      ${j.why ? `<div style="font-size:14px;color:#1F2C33">${escHtml(j.why)}</div>` : ""}
+      ${j.deadline ? `<div style="font-size:13px;color:#64737B;margin-top:2px">Frist: ${escHtml(j.deadline)}</div>` : ""}
+      <a href="${escHtml(j.url)}" style="display:inline-block;margin-top:8px;color:#0B7D60;font-weight:700;text-decoration:none">Se jobbet →</a>
+    </td></tr>`).join("");
+  const html = `<div style="font-family:system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.5;color:#1F2C33;max-width:560px;margin:0 auto;padding:8px">
+    <p style="font-size:15px;margin:0 0 4px">Hej${u.name ? " " + escHtml(u.name) : ""}</p>
+    <h1 style="font-size:22px;margin:0 0 6px;color:#0B7D60">${n === 1 ? "Et nyt studiejob" : `${n} nye studiejob`}, der passer til ${escHtml(prog)}</h1>
+    <p style="font-size:15px;margin:0 0 6px;color:#4A5A62">Fundet ud fra din uddannelse, dine timer og dine områder.</p>
+    <table style="width:100%;border-collapse:collapse">${items}</table>
+    <p style="margin:18px 0"><a href="${base}/" style="display:inline-block;background:#0B7D60;color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:999px">Se alle dine matches</a></p>
+    <p style="font-size:12.5px;color:#64737B;margin-top:24px">Du får denne mail ${freq === "weekly" ? "højst én gang om ugen" : "højst én gang om dagen"}, fordi du har slået jobmails til på Studiematch. Du kan ændre det under Profil, eller <a href="${offUrl}" style="color:#64737B">afmelde jobmails med ét klik</a>.</p></div>`;
+  return { subject: n === 1 ? `Nyt studiejob til dig: ${jobs[0].title}`.slice(0, 120) : `${n} nye studiejob til dig som ${prog}`.slice(0, 120), html };
+}
 async function salt(db) {
   const row = await db.prepare("SELECT v FROM kv WHERE k='salt'").first();
   if (row) return row.v;
@@ -347,7 +386,8 @@ async function route(ctx, path, method) {
       blurb: clip(j.description.replace(/\s+/g, " "), 280), description: j.description,
       url: j.url || `mailto:${j.email}?subject=${encodeURIComponent("Ansøgning: " + j.title)}`, studies: parse(j.studies, undefined), why: j.why || undefined, direct: true,
     }));
-    return json({ jobs }, 200, { "Cache-Control": "public, max-age=120" });
+    const hidden = (await db.prepare("SELECT job_id FROM hidden_jobs").all()).results.map((r) => r.job_id);
+    return json({ jobs, hidden }, 200, { "Cache-Control": "public, max-age=60" });
   }
 
   /* ----- konto ----- */
@@ -385,6 +425,58 @@ async function route(ctx, path, method) {
     return json({ user: publicUser(u), profile: parse(u.profile), state: parse(u.state), cv: u.cv_name ? { name: u.cv_name, at: u.cv_at, extract: parse(u.cv_extract) } : null },
       200, { "Set-Cookie": cookie });
   }
+  /* ----- jobalarmer: kaldes af GitHub efter hver jobindsamling ----- */
+  if (path === "cron/subscribers" && method === "GET") {
+    if (!cronOk(env, req)) return err("Ingen adgang", 401);
+    const rows = await db.prepare(`SELECT id, email, name, profile, state, last_alert FROM users
+      WHERE json_extract(profile, '$.alerts') = 1 AND json_extract(profile, '$.programName') <> ''`).all();
+    const due = rows.results.filter((u) => {
+      const freq = (parse(u.profile, {}) || {}).alertFreq === "weekly" ? "weekly" : "daily";
+      return !u.last_alert || now() - u.last_alert >= ALERT_GAP[freq];
+    });
+    const out = [];
+    for (const u of due) {
+      const sent = await db.prepare("SELECT job_id FROM alert_sent WHERE user_id=? AND ts>?").bind(u.id, now() - 120 * 864e5).all();
+      out.push({ id: u.id, profile: parse(u.profile), state: parse(u.state), sent: sent.results.map((r) => r.job_id) });
+    }
+    return json({ users: out, mail: !!env.RESEND_API_KEY });
+  }
+  if (path === "cron/alerts" && method === "POST") {
+    if (!cronOk(env, req)) return err("Ingen adgang", 401);
+    const b = await readBody(req, 2_000_000);
+    const base = siteUrl(env, req);
+    let sent = 0, failed = 0;
+    for (const a of (b.alerts || []).slice(0, Number(env.ALERT_MAX_PER_RUN || 90))) {
+      const u = await db.prepare("SELECT * FROM users WHERE id=?").bind(Number(a.userId)).first();
+      const jobs = (a.jobs || []).slice(0, 6).map((j) => ({ id: clip(j.id, 60), title: clip(j.title, 140), co: clip(j.co, 100), city: clip(j.city, 60),
+        url: /^https?:\/\//.test(String(j.url || "")) ? clip(j.url, 400) : `${base}/`, why: clip(j.why, 200), deadline: clip(j.deadline, 30), level: j.level === "strong" ? "strong" : "good" }));
+      if (!u || !jobs.length || (parse(u.profile, {}) || {}).alerts !== true) continue;
+      const freq = (parse(u.profile, {}) || {}).alertFreq === "weekly" ? "weekly" : "daily";
+      const offUrl = `${base}/api/alerts/off?u=${u.id}&t=${await hmac(env.CRON_SECRET, "off:" + u.id)}`;
+      const mail = alertMail(base, u, jobs, offUrl, freq);
+      const ok = b.dry ? true : await sendMail(env, u.email, mail.subject, mail.html);
+      if (!ok) { failed++; continue; }
+      sent++;
+      await db.batch([
+        db.prepare("UPDATE users SET last_alert=? WHERE id=?").bind(now(), u.id),
+        ...jobs.map((j) => db.prepare("INSERT OR IGNORE INTO alert_sent (user_id, job_id, ts) VALUES (?, ?, ?)").bind(u.id, j.id, now())),
+        db.prepare("INSERT INTO events (ts, day, type, user_id, label) VALUES (?, ?, 'alert_sent', ?, ?)").bind(now(), day(), u.id, `${jobs.length} job`),
+      ]);
+    }
+    return json({ sent, failed });
+  }
+  if (path === "alerts/off" && method === "GET") {
+    const url = new URL(req.url);
+    const id = Number(url.searchParams.get("u"));
+    const page = (msg) => new Response(`<!doctype html><html lang="da"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jobmails · Studiematch</title>
+      <body style="font-family:system-ui,sans-serif;max-width:520px;margin:60px auto;padding:0 16px;color:#1F2C33;line-height:1.5"><h1 style="color:#0B7D60;font-size:24px">${msg}</h1>
+      <p>Du kan altid slå jobmails til igen under Profil på <a href="/" style="color:#0B7D60">studiematch.dk</a>.</p></body></html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    if (!env.CRON_SECRET || !id || !safeEqual(String(url.searchParams.get("t") || ""), await hmac(env.CRON_SECRET, "off:" + id))) return page("Linket virker ikke");
+    const u = await db.prepare("SELECT profile FROM users WHERE id=?").bind(id).first();
+    if (u) { const p = parse(u.profile, {}) || {}; p.alerts = false; await db.prepare("UPDATE users SET profile=? WHERE id=?").bind(JSON.stringify(p), id).run(); }
+    return page("Du får ikke flere jobmails");
+  }
+
   /* ----- glemt adgangskode: et link på mail, der virker i en time ----- */
   if (path === "auth/forgot" && method === "POST") {
     const b = await readBody(req, 2000);
@@ -500,7 +592,7 @@ async function admin(ctx, path, method, me) {
   if (path === "stats" && method === "GET") {
     const since = day(now() - 29 * 864e5);
     const q = (sql, ...a) => db.prepare(sql).bind(...a);
-    const [daily, signups, totals, topJobs, refs, paths, programs, funnel, companies, recent, quality, badList, reasons, pendingJobs] = await db.batch([
+    const [daily, signups, totals, topJobs, refs, paths, programs, funnel, companies, recent, quality, badList, reasons, pendingJobs, alertStats, todayV, hours, dows, actions, anonPrograms] = await db.batch([
       q(`SELECT day, COUNT(DISTINCT visitor) AS visitors, COUNT(*) AS views FROM events WHERE type='pageview' AND day>=? GROUP BY day ORDER BY day`, since),
       q(`SELECT day, COUNT(*) AS n FROM events WHERE type='signup' AND day>=? GROUP BY day`, since),
       q(`SELECT (SELECT COUNT(*) FROM users) AS users, (SELECT COUNT(*) FROM users WHERE cv_name IS NOT NULL) AS with_cv,
@@ -516,14 +608,52 @@ async function admin(ctx, path, method, me) {
       q(`SELECT ts, label, meta FROM events WHERE type='match_bad' ORDER BY ts DESC LIMIT 20`),
       q(`SELECT COALESCE(meta,'(ingen grund)') AS reason, COUNT(*) AS n FROM events WHERE type='dismiss' AND day>=? GROUP BY reason ORDER BY n DESC`, since),
       q(`SELECT COUNT(*) AS n FROM posted_jobs WHERE status='pending'`),
+      q(`SELECT (SELECT COUNT(*) FROM users WHERE json_extract(profile,'$.alerts')=1) AS subs, (SELECT COUNT(*) FROM events WHERE type='alert_sent' AND day>=?) AS mails`, since),
+      q(`SELECT COUNT(DISTINCT visitor) AS all_v, COUNT(DISTINCT CASE WHEN user_id IS NULL THEN visitor END) AS anon_v,
+           COUNT(DISTINCT CASE WHEN user_id IS NOT NULL THEN visitor END) AS user_v FROM events WHERE day=? AND visitor IS NOT NULL`, day()),
+      q(`SELECT ((ts/3600000) + 1) % 24 AS hour, COUNT(DISTINCT visitor || day) AS n FROM events WHERE type='pageview' AND day>=? GROUP BY hour`, since),
+      q(`SELECT ((ts/86400000) + 3) % 7 AS dow, COUNT(DISTINCT visitor || day) AS n FROM events WHERE type='pageview' AND day>=? GROUP BY dow`, since),
+      q(`SELECT type, COUNT(*) AS n FROM events WHERE day>=? AND visitor IS NOT NULL AND type NOT IN ('pageview') GROUP BY type ORDER BY n DESC`, since),
+      q(`SELECT label, COUNT(*) AS n FROM events WHERE type='onboarded' AND day>=? AND user_id IS NULL AND label IS NOT NULL GROUP BY label ORDER BY n DESC LIMIT 15`, since),
     ]);
     return json({
       daily: daily.results, signups: signups.results, totals: totals.results[0], topJobs: topJobs.results,
       referrers: refs.results, paths: paths.results, programs: programs.results, funnel: funnel.results,
       companies: companies.results, recent: recent.results, ai: !!ctx.env.ANTHROPIC_API_KEY, mail: !!ctx.env.RESEND_API_KEY,
       quality: Object.fromEntries(quality.results.map((r) => [r.type, r.n])), badMatches: badList.results, dismissReasons: reasons.results,
-      pendingJobs: pendingJobs.results[0].n,
+      pendingJobs: pendingJobs.results[0].n, alerts: alertStats.results[0], today: todayV.results[0],
+      hours: hours.results, weekdays: dows.results, actions: actions.results, anonPrograms: anonPrograms.results,
     });
+  }
+  if (path === "hidden" && method === "GET") {
+    return json({ hidden: (await db.prepare("SELECT job_id, ts, title FROM hidden_jobs ORDER BY ts DESC").all()).results });
+  }
+  if (path === "hidden" && method === "POST") {
+    const b = await readBody(req, 4000);
+    if (!b.jobId) return err("Mangler job");
+    await db.prepare("INSERT OR REPLACE INTO hidden_jobs (job_id, ts, title, by_user) VALUES (?, ?, ?, ?)").bind(clip(b.jobId, 60), now(), clip(b.title, 200), me.id).run();
+    return json({ ok: true });
+  }
+  const hm = path.match(/^hidden\/(.+)$/);
+  if (hm && method === "DELETE") {
+    await db.prepare("DELETE FROM hidden_jobs WHERE job_id=?").bind(decodeURIComponent(hm[1])).run();
+    return json({ ok: true });
+  }
+  if (path === "activity" && method === "GET") {
+    const url = new URL(req.url);
+    const d = /^\d{4}-\d{2}-\d{2}$/.test(url.searchParams.get("day") || "") ? url.searchParams.get("day") : day();
+    const rows = (await db.prepare(`SELECT e.ts, e.type, e.path, e.ref, e.visitor, e.user_id, e.job_id, e.label, e.meta, u.email
+      FROM events e LEFT JOIN users u ON u.id = e.user_id
+      WHERE e.day=? AND e.visitor IS NOT NULL ORDER BY e.ts LIMIT 5000`).bind(d).all()).results;
+    const by = new Map();
+    for (const r of rows) {
+      if (!by.has(r.visitor)) by.set(r.visitor, { visitor: r.visitor, first: r.ts, last: r.ts, email: null, ref: "", events: [] });
+      const v = by.get(r.visitor);
+      v.last = r.ts; if (r.email) v.email = r.email; if (r.ref && !v.ref) v.ref = r.ref;
+      v.events.push({ ts: r.ts, type: r.type, path: r.path, label: r.label, meta: r.meta });
+    }
+    const visitors = [...by.values()].sort((a, b) => b.last - a.last).slice(0, 300);
+    return json({ day: d, visitors });
   }
   if (path === "jobs" && method === "GET") {
     const rows = await db.prepare("SELECT * FROM posted_jobs ORDER BY CASE status WHEN 'pending' THEN 0 ELSE 1 END, ts DESC LIMIT 300").all();
