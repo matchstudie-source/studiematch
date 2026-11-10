@@ -9,14 +9,12 @@ Bruges til at tjekke, om filteret er for strengt.
 | SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Tallinn | ikke et studiejob |
 | SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
-| SEB | Internship in Trade Finance Operations Team / SEB Group, Vilnius | udlandet: Vilnius |
 | SEB | Junior HR Specialist (HR Intern) | udlandet: Warsaw |
 | SEB | Senior Software Developer (Vecākais izstrādātājs) in Internet Bank Customer Journey / SEB, Riga | ikke et studiejob |
 | SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Tallinn | ikke et studiejob |
 | SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Vilnius | udlandet: Vilnius |
 | Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
-| Region Syddanmark | 2 introduktionsstillinger i Intern medicin; Kardiologi på Hjertesygdomme, Vejle Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse. | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i Intern Medicin – Medicinsk Afdeling, Vejle Sygehus | ikke et studiejob |
@@ -25,10 +23,8 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
 | Region Syddanmark | Læge eller speciallæge i psykiatri, intern medicin eller almen medicin til Lokalpsykiatri Kolding | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger en projektleder til internationale projekter | ikke et studiejob |
-| ALK | Head of Medical Affairs International Markets | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
-| Statslige arbejdsgivere | Akademisk medarbejder til Energistyrelsens Kontor for Internationalt Affald og Klassificering | ikke et studiejob |
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
@@ -55,8 +51,9 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
 | Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
-| Danske Spil | Senior intern kommunikationsrådgiver | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
+| StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
+| StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
