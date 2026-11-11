@@ -113,7 +113,9 @@ const SCHEMA = [
      url TEXT, deadline TEXT, description TEXT, fam TEXT, sec TEXT, studies TEXT, why TEXT, approved_at INTEGER)`,
 ];
 /* Kolonner, der er kommet til senere. Fejler, hvis de allerede findes, og det er fint. */
-const MIGRATIONS = ["ALTER TABLE users ADD COLUMN last_alert INTEGER", "ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT", "ALTER TABLE events ADD COLUMN meta TEXT"];
+const MIGRATIONS = ["ALTER TABLE users ADD COLUMN last_alert INTEGER", "ALTER TABLE companies ADD COLUMN message TEXT", "ALTER TABLE companies ADD COLUMN name TEXT", "ALTER TABLE events ADD COLUMN meta TEXT",
+  // Kun brugere, der har bevist, at de ejer mailen, kan blive admin. Eksisterende admins er bekræftet.
+  "ALTER TABLE users ADD COLUMN email_verified INTEGER DEFAULT 0", "UPDATE users SET email_verified=1 WHERE role='admin'"];
 let ready = null;
 function ensureSchema(db) {
   if (!ready) ready = db.batch(SCHEMA.map((s) => db.prepare(s)))
@@ -231,7 +233,7 @@ async function currentUser(ctx) {
     "SELECT u.* FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token = ? AND s.expires_at > ?"
   ).bind(await sha256(token), now()).first();
   if (!row) return null;
-  if (adminEmails(ctx.env).has(row.email) && row.role !== "admin") {
+  if (adminEmails(ctx.env).has(row.email) && row.role !== "admin" && row.email_verified) {
     await db.prepare("UPDATE users SET role='admin' WHERE id=?").bind(row.id).run();
     row.role = "admin";
   }
@@ -421,7 +423,7 @@ async function route(ctx, path, method) {
     if (!b.consent) return err("Du skal acceptere privatlivspolitikken");
     if (await db.prepare("SELECT id FROM users WHERE email=?").bind(email).first()) return err("Der findes allerede en bruger med den mail. Log ind i stedet.", 409);
     const { hash, salt: s } = await hashPassword(password);
-    const role = adminEmails(env).has(email) ? "admin" : "user";
+    const role = "user"; // admin kræver bekræftet mail (via nulstil adgangskode), se currentUser
     const p = b.profile || {};
     const r = await db.prepare(`INSERT INTO users (email, name, pw_hash, pw_salt, role, created_at, consent_at, program, school, profile, state)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`).bind(email, clip(b.name, 80), hash, s, role, now(), now(),
@@ -442,7 +444,7 @@ async function route(ctx, path, method) {
       await db.prepare("INSERT INTO events (ts, day, type, label) VALUES (?, ?, 'login_fail', ?)").bind(now(), day(), email).run();
       return err("Forkert mail eller adgangskode", 401);
     }
-    if (adminEmails(env).has(email) && u.role !== "admin") { await db.prepare("UPDATE users SET role='admin' WHERE id=?").bind(u.id).run(); u.role = "admin"; }
+    if (adminEmails(env).has(email) && u.role !== "admin" && u.email_verified) { await db.prepare("UPDATE users SET role='admin' WHERE id=?").bind(u.id).run(); u.role = "admin"; }
     const cookie = await startSession(db, u.id, new URL(req.url).host);
     return json({ user: publicUser(u), profile: parse(u.profile), state: parse(u.state), cv: u.cv_name ? { name: u.cv_name, at: u.cv_at, extract: parse(u.cv_extract) } : null },
       200, { "Set-Cookie": cookie });
@@ -533,7 +535,7 @@ async function route(ctx, path, method) {
     if (!row || row.used || row.expires_at < now()) return err("Linket er udløbet eller allerede brugt. Bed om et nyt.", 400);
     const { hash, salt: s } = await hashPassword(password);
     await db.batch([
-      db.prepare("UPDATE users SET pw_hash=?, pw_salt=?, must_change_pw=0 WHERE id=?").bind(hash, s, row.user_id),
+      db.prepare("UPDATE users SET pw_hash=?, pw_salt=?, must_change_pw=0, email_verified=1 WHERE id=?").bind(hash, s, row.user_id),
       db.prepare("UPDATE password_resets SET used=1 WHERE user_id=?").bind(row.user_id),
       db.prepare("DELETE FROM sessions WHERE user_id=?").bind(row.user_id),
     ]);
@@ -603,7 +605,7 @@ async function route(ctx, path, method) {
 
   /* ----- admin ----- */
   if (path.startsWith("admin/")) {
-    if (user.role !== "admin") return err("Kun for administratorer", 403);
+    if (user.role !== "admin") return err(adminEmails(env).has(user.email) ? "Bekræft først, at mailen er din: log ud, tryk Glemt adgangskode og vælg en ny via linket i mailen." : "Kun for administratorer", 403);
     return admin(ctx, path.slice(6), method, user);
   }
   return err("Findes ikke", 404);
