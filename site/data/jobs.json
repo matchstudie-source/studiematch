@@ -402,6 +402,46 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Content & SoMe",
+  "co": "Colosseum Tandlægerne",
+  "city": "",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "bi"
+  ],
+  "famConf": "title",
+  "skills": [
+   "SoMe-indhold",
+   "videoredigering",
+   "Canva",
+   "fotografering",
+   "dataopfølgning"
+  ],
+  "industry": "Sundhed",
+  "postedAt": "2026-11-11T14:14:54+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du planlægger, optager og klipper billeder og videoer til klinikkernes kanaler og lægger indhold op på Instagram og TikTok. Du laver også grafik i Canva og følger op på anmeldelser og tal fra kanalerne.",
+  "req": null,
+  "url": "https://colosseumklinikken.teamtailor.com/jobs/8705498-studentermedhjaelper-til-content-some",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "marketing",
+   "medievidenskab",
+   "multimediedesign",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver forståelse for kommunikation, SoMe og visuelt indhold, som uddannelserne inden for marketing, kommunikation og medier giver.",
+  "openToAll": false,
+  "id": "x3240bd29a37f",
+  "live": true
+ },
+ {
   "title": "Tandplejerstuderende praktik - uopfordret ansøgning",
   "co": "Colosseum Tandlægerne",
   "city": "Hellerup, Holbæk, Aarup, Ballerup, Brøndby, Dragør, Esbjerg, Herlev, Hørsholm, Odense, København, Køge, Næstved, København, København, Ribe, Roskilde, Skibby, Slagelse, Odense, Sønderborg, Varde, Vejle, Viborg, København, København",
@@ -734,7 +774,7 @@
    "Løn"
   ],
   "industry": "Sundhed og region",
-  "postedAt": "2026-10-12T07:40:17+00:00",
+  "postedAt": "2026-11-11T12:00:45+00:00",
   "deadlineAt": "2026-11-15T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
   "blurb": "Er du sygeplejestuderende og vil du have et fagligt relevant studiejob? Ønsker du at forberede fremtidige ansættelsesmuligheder? Så bliv en del af Vagtordningen Region Syddanmark.",
@@ -1577,6 +1617,48 @@
   "live": true
  },
  {
+  "title": "Bliv student i Børne-, Ældre- og Boligministeriet",
+  "co": "Børne-, Ældre- og Boligministeriets Departement",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "social",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "analytisk sans",
+   "skriftlig kommunikation",
+   "mundtlig kommunikation",
+   "struktureret arbejde",
+   "ansvarsbevidsthed"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T14:23:59+00:00",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper med besvarelse af borgerhenvendelser og udarbejdelse af mødemateriale til ministeren og Folketinget. Du kommer tæt på politikudvikling, lovgivningsprocesser og interessentinddragelse på børne- og ældreområdet.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172994&DepartmentId=20144&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "sociologi",
+   "politik og administration",
+   "jura",
+   "socialvidenskab",
+   "pædagogik"
+  ],
+  "why": "Jobbet kræver samfundsfaglig indsigt i politiske processer og lovgivning, som uddannelser som statskundskab, sociologi og jura giver.",
+  "openToAll": false,
+  "id": "xe45fcba0333c",
+  "live": true
+ },
+ {
   "title": "Cinemateket søger løbende studentermedhjælpere til butiks- og billetskranken",
   "co": "Det Danske Filminstitut",
   "city": "Gothersgade 55, 1123 København K",
@@ -1708,6 +1790,48 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5",
   "enrichedBy": "regler",
   "id": "x2ce08920d332",
+  "live": true
+ },
+ {
+  "title": "Dygtig student med stor interesse for EU og international økonomi til Skatte- og Vækstministeriet",
+  "co": "Skatte- og Vækstministeriets departement",
+  "city": "Storkøbenhavn",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance",
+   "research"
+  ],
+  "famConf": "title",
+  "skills": [
+   "analytisk arbejde",
+   "international økonomi",
+   "EU-samarbejde",
+   "skriftlig formidling",
+   "samarbejdsevner"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T12:26:08+00:00",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du bidrager til notater, analyse- og skriveopgaver samt indsamling og præsentation af nøgletal om EU- og internationale økonomiske emner, bl.a. til forberedelse af ECOFIN-møder. Du skal også kunne påtage dig løbende ad hoc-opgaver.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172963&DepartmentId=18994&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "politik",
+   "statskundskab",
+   "samfundsøkonomi",
+   "international politik",
+   "jura"
+  ],
+  "why": "Jobbet kræver analytisk arbejde med økonomisk politik og EU-samarbejde, som fagene økonomi, politik og statskundskab dækker.",
+  "openToAll": false,
+  "id": "x6a30f785567b",
   "live": true
  },
  {
@@ -1982,6 +2106,45 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170265&DepartmentId=19793&MediaId=5",
   "enrichedBy": "regler",
   "id": "x0178caa004af",
+  "live": true
+ },
+ {
+  "title": "Jurastuderende til Lægemiddelstyrelsen sektion for Jura og Internationalt",
+  "co": "Lægemiddelstyrelsen",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "no",
+  "fam": "legal",
+  "sec": [
+   "health",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "engelsk",
+   "forvaltningsret",
+   "EU-ret",
+   "systematik",
+   "sagsbehandling"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T10:09:36+00:00",
+  "deadlineAt": "2026-12-04T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du understøtter juristerne i sektionen med lovgivningsarbejde, høringer, aktindsigtssager og journalisering. Opgaverne spænder over forvaltningsret, EU-ret og lægemiddelret.",
+  "req": "jura",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172766&DepartmentId=19040&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "farmaci"
+  ],
+  "why": "Jobbet kræver juridisk forståelse af forvaltningsret, EU-ret og lægemiddelret, som er kerneområder i jurastudiet.",
+  "openToAll": false,
+  "id": "x7906ea0e2709",
   "live": true
  },
  {
@@ -2295,6 +2458,48 @@
   "live": true
  },
  {
+  "title": "Student i afdelingen for Læring og værtskab på SMK",
+  "co": "Statslige arbejdsgivere",
+  "city": "Statens Museum for Kunst",
+  "region": "kbh",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "plus",
+  "fam": "education",
+  "sec": [
+   "customer"
+  ],
+  "famConf": "text",
+  "skills": [
+   "omvisning",
+   "undervisning",
+   "formidling",
+   "gæstekontakt",
+   "børneformidling"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T13:49:39+00:00",
+  "deadlineAt": "2026-12-03T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du underviser, viser rundt og er vært for museets gæster, både børn og voksne, i udstillinger og på værkstedet. Du hjælper også med praktiske opgaver i museets åbningstid, herunder aftener, weekender og ferier.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172708&DepartmentId=19818&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "kunsthistorie",
+   "kunstvidenskab",
+   "kulturvidenskab",
+   "pædagogik",
+   "museologi",
+   "læringsvidenskab",
+   "æstetiske fag"
+  ],
+  "why": "Jobbet kræver faglighed inden for kunst, kultur eller pædagogik og en formidlende tilgang til museets gæster.",
+  "openToAll": false,
+  "id": "xe9b966167361",
+  "live": true
+ },
+ {
   "title": "Student til ansættelse hos Forbrugerombudsmanden",
   "co": "Sekretariatet for Forbrugerombudsmanden",
   "city": "Carl Jacobsens Vej 35, 2500 Valby",
@@ -2413,34 +2618,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171684&DepartmentId=18980&MediaId=5",
   "enrichedBy": "regler",
   "id": "x7d8691cd7865",
-  "live": true
- },
- {
-  "title": "Studentermedarbejdere med viden om EU søges til Folketingets EU-Oplysning",
-  "co": "Folketinget",
-  "city": "København K",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "strategy",
-  "sec": [
-   "pmo",
-   "finance"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-22T09:40:50+00:00",
-  "deadlineAt": "2026-11-11T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Det er her, du kommer ind i billedet!",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171536&DepartmentId=18972&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x041593cb92c6",
   "live": true
  },
  {
@@ -2565,6 +2742,48 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=147873&DepartmentId=19811&MediaId=5",
   "enrichedBy": "regler",
   "id": "x25fb2f711132",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper med interesse for internationalt og nordisk samarbejde søges til Folketinget",
+  "co": "Folketinget",
+  "city": "København K",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations",
+   "research"
+  ],
+  "famConf": "text",
+  "skills": [
+   "eventplanlægning",
+   "research",
+   "deltagerkoordinering",
+   "engelsk",
+   "struktureret arbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T14:16:51+00:00",
+  "deadlineAt": "2026-11-24T12:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper med at planlægge og gennemføre møder, konferencer og høringer for Folketingets internationale delegationer, primært til Nordisk Råd. Du researcher og udarbejder baggrundsmateriale og håndterer deltagerlister, tilmeldinger og praktisk information.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172993&DepartmentId=18972&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "kommunikation",
+   "samfundsvidenskab",
+   "international politik",
+   "europastudier",
+   "skandinavistik"
+  ],
+  "why": "Jobbet kræver interesse for samfundsforhold og internationalt samarbejde samt god skriftlig formulering, hvilket passer til samfundsfaglige og kommunikationsfaglige uddannelser.",
+  "openToAll": false,
+  "id": "x7c77aa590028",
   "live": true
  },
  {
@@ -2892,6 +3111,91 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172134&DepartmentId=19804&MediaId=5",
   "enrichedBy": "regler",
   "id": "xbf42b668d5d4",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til kontoret Erhverv, Drift og Registrering",
+  "co": "Udviklings- og Forenklingsstyrelsen",
+  "city": "Storkøbenhavn",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "procurement"
+  ],
+  "famConf": "title",
+  "skills": [
+   "skriftlig formulering",
+   "prioritering",
+   "struktureret arbejde",
+   "samarbejde",
+   "selvstændighed"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T12:55:46+00:00",
+  "deadlineAt": "2026-11-26T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper med administrative opgaver i Delivery Management-teamet, fx varemodtagelse, fakturaoverførsler og bestilling af varer. Du får også egne ansvarsområder, fx adgangsstyring, koordinering af kontorets økonomi og udarbejdelse af powerpoints og notater.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172972&DepartmentId=19140&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "statskundskab",
+   "økonomi",
+   "jura",
+   "international business"
+  ],
+  "why": "Opgaverne kræver forståelse for økonomi, indkøb og administrativ styring, hvilket passer godt til samfundsvidenskabelige og økonomiske uddannelser.",
+  "openToAll": false,
+  "id": "x1ff016f17eb6",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til projekter relaterede til Historisk Personregister - tidsbegrænset i 3 år",
+  "co": "Rigsarkivet",
+  "city": "Odense",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "datasci",
+  "sec": [
+   "research",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "transskription",
+   "Excel eller Access",
+   "dansk historie 1800-1900",
+   "praktisk støtte",
+   "selvstændighed"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T13:42:53+00:00",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du transskriberer, linker og beskriver historiske kilder og persondata til forskningsinfrastrukturprojekter. Du hjælper også med praktiske opgaver som arrangementer, søgning, bestilling og scanning af materiale.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172551&DepartmentId=19911&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "historie",
+   "arkivvidenskab",
+   "digital humaniora",
+   "kulturhistorie",
+   "socialhistorie",
+   "nordisk",
+   "etnologi",
+   "demografi"
+  ],
+  "why": "Jobbet kræver kendskab til dansk historie og arbejde med historiske kilder, og det passer derfor til historiske og humanistiske fag.",
+  "openToAll": false,
+  "id": "x541890dc9008",
   "live": true
  },
  {
@@ -3608,6 +3912,89 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Studentermedhjælpere til Public Audit & Assurance hos BDO i Aalborg og Aarhus Når du åbner døren til BDO, mærker du…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/studentermedhjaelpere-til-public-audit-assurance-hos-bdo-i-aalborg-og-aarhus/8xhxjs",
+  "enrichedBy": "regler",
+  "id": "x91d9b736c8c3",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true
+ },
+ {
   "title": "Arkitektpraktikanter, Aarhus eller Silkeborg",
   "co": "Sweco Danmark",
   "city": "Aarhus",
@@ -3825,6 +4212,45 @@
   "live": true
  },
  {
+  "title": "Vil du være med til at sætte DR i feedet? Vi søger en kreativ studentermedhjælper til sociale medier",
+  "co": "DR",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "videoproduktion",
+   "idéudvikling",
+   "opslagstekster",
+   "sociale medier",
+   "Adobe Premiere Pro"
+  ],
+  "industry": "Medier",
+  "postedAt": "2026-11-11T00:00:00+00:00",
+  "deadlineAt": "2026-12-01T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du hjælper med at udvikle, producere og tilpasse DR-indhold til Facebook, Instagram og YouTube, fx ved at klippe videoer, skrive captions og udvikle kreative formater. Du arbejder i et team med to redaktører.",
+  "req": null,
+  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Vil-du-v%C3%A6re-med-til-at-s%C3%A6tte-DR-i-feedet-Vi-s%C3%B8ger-en-kreativ-studentermedhj%C3%A6lper-til-sociale-medier-0999/1456502533/",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "journalistik",
+   "multimediedesign",
+   "markedsføringsøkonomi",
+   "digital design"
+  ],
+  "why": "Jobbet handler om medieindhold, formidling og kommunikation på sociale medier, som medie- og kommunikationsuddannelser er rettet mod.",
+  "openToAll": false,
+  "id": "x14f48d583c67",
+  "live": true
+ },
+ {
   "title": "Markedsføringsøkonom- eller service- og oplevelsesøkonom-praktikant søges",
   "co": "HK",
   "city": "HK Sydjylland",
@@ -3848,34 +4274,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=318&ProjectId=180163&DepartmentId=20927&MediaId=5",
   "enrichedBy": "regler",
   "id": "xa2998b727a18",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper",
-  "co": "HK",
-  "city": "HK Forbundet",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "health",
-  "sec": [
-   "public",
-   "pmo"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Interesseorganisation",
-  "postedAt": "2026-10-30T10:55:52+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Jobbet Som vores nye student vil du primært skulle behandle ansøgninger til både den kommunale og regionale kompetencefond.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=318&ProjectId=180161&DepartmentId=10000&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x3386707a08b7",
   "live": true
  },
  {
@@ -3915,6 +4313,48 @@
   "why": "Jobbet kræver juridisk forståelse af forvaltningsret og fortolkning af love, hvilket passer til jura og offentlig administration.",
   "openToAll": false,
   "id": "x1c5384dc66be",
+  "live": true
+ },
+ {
+  "title": "Malling plejehjem søger tilkaldevikarer med sundhedsfaglig baggrund",
+  "co": "Aarhus Kommune",
+  "city": "Starupvej 9B, 8340 Malling",
+  "region": "oj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "social"
+  ],
+  "famConf": "title",
+  "skills": [
+   "sundhedsfaglig baggrund",
+   "personcentreret tilgang",
+   "rehabiliterende arbejde",
+   "samarbejde",
+   "initiativ"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-11T14:30:49+00:00",
+  "deadlineAt": "2026-12-31T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du dækker vagter som tilkaldevikar på et plejehjem med 38 boliger, primært i weekender, helligdage, ferier og hverdagsaftner. Arbejdet handler om at støtte beboerne i hverdagen ud fra deres ønsker, med fokus på tryghed og rehabilitering.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144918&DepartmentId=22601&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi",
+   "ernæring og sundhed",
+   "social- og sundhedsassistent",
+   "pædagogik",
+   "psykologi"
+  ],
+  "why": "Jobbet kræver sundhedsfaglig viden og omsorg i pleje af ældre, hvilket passer godt til sundhedsuddannelserne.",
+  "openToAll": false,
+  "id": "x10d9d6965bc1",
   "live": true
  },
  {
@@ -4218,61 +4658,6 @@
   "url": "https://aalborg.career.emply.com/ad/studentermedhjaelper-med-flair-for-some-soges-til-arbejdet-med-nikotinforebyggelse/lrworl",
   "enrichedBy": "regler",
   "id": "x3587e9074645",
-  "live": true
- },
- {
-  "title": "Er du pædagogstuderende? Få et studiejob med faglig udvikling, ansvar og praksisnær erfaring",
-  "co": "Aalborg Kommune",
-  "city": "Aalborg",
-  "region": "nj",
-  "hMin": 8,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "education",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "R"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Log ind Min profil Min profil Er du pædagogstuderende?",
-  "req": "paedagog",
-  "url": "https://aalborg.career.emply.com/ad/er-du-paedagogstuderende-fa-et-studiejob-med-faglig-udvikling-ansvar-og-praksisn/u1ci6i",
-  "enrichedBy": "regler",
-  "id": "x78e1a6086590",
-  "live": true
- },
- {
-  "title": "Botilbuddet Sonjavej søger faste vikarer og studiejobber på 5-10 timer pr. uge",
-  "co": "Aalborg Kommune",
-  "city": "Aalborg",
-  "region": "nj",
-  "hMin": 5,
-  "hMax": 10,
-  "danish": "required",
-  "fam": "health",
-  "sec": [
-   "operations",
-   "finance"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "R"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "uge Vil du gøre en forskel for beboere med forskellige udviklingshandicaps? Kan du arbejde indenfor det pædagogiske og sundhedsfaglige felt, har du blik for det enkelte menneske og har du samtidig hjertet med?",
-  "req": null,
-  "url": "https://aalborg.career.emply.com/ad/botilbuddet-sonjavej-soger-faste-vikarer-og-studiejobber-pa-5-10-timer-pr-uge/i43lij",
-  "enrichedBy": "regler",
-  "id": "x8f92890c828e",
   "live": true
  },
  {
@@ -5919,6 +6304,51 @@
   ],
   "why": "Jobbet kombinerer event- og projektarbejde, kommunikation og facilitering, så det passer til både akademiske og kreative uddannelser inden for samfund, organisation og formidling.",
   "id": "x4c766364a669",
+  "live": true
+ },
+ {
+  "openToAll": false,
+  "catFam": true,
+  "title": "Studentermedhjælper med interesse for internationalt og nordisk samarbejde søges til Folketinget",
+  "co": "Folketinget, Christiansborg",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "operations",
+   "customer"
+  ],
+  "famConf": "title",
+  "skills": [
+   "planlægning af arrangementer",
+   "deltagerhåndtering",
+   "research og baggrundsmateriale",
+   "dansk og engelsk skriftligt og",
+   "struktureret arbejde med deadl"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-24T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du hjælper med planlægning og afvikling af møder, konferencer og studieture for Folketingets internationale delegationer, primært i forbindelse med Nordisk Råd. Du researcher baggrundsmateriale, håndterer deltagerlister og tilmeldinger og vejleder deltagere ved arrangementer.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3158100/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "samfundsvidenskab",
+   "kommunikation",
+   "europastudier",
+   "international business",
+   "nordiske sprog",
+   "jura",
+   "økonomi"
+  ],
+  "why": "Jobbet kræver interesse for samfundsforhold og internationalt samarbejde, og det passer derfor især til samfundsfaglige og kommunikationsfaglige uddannelser.",
+  "id": "xa56d0c1b6e23",
   "live": true
  },
  {
@@ -22799,6 +23229,47 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "xbf476d3ebeed",
+  "live": true
+ },
+ {
+  "studies": [
+   "pædagog",
+   "lærer",
+   "pædagogik",
+   "undervisning"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for pædagogik og undervisning.",
+  "catFam": true,
+  "title": "Botilbuddet Sonjavej søger faste vikarer og studiejobber på 5-10 timer pr. uge",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 5,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "health",
+  "sec": [
+   "social",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "personlig pleje",
+   "pædagogisk guidning",
+   "konflikthåndtering",
+   "medicinhåndtering",
+   "relationsarbejde"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-15T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du hjælper beboere med udviklingshandicap i hverdagen, fx med personlig pleje, madlavning, tøjvask, medicin og samtaler. Du arbejder pædagogisk og relationelt ud fra den enkelte beboers behov.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3150773/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x19dc21f71c83",
   "live": true
  },
  {

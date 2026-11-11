@@ -51188,5 +51188,330 @@
   ],
   "why": "Jobbet kræver god kommunikation, samtaleførelse og struktur, som især går igen på psykologi, kommunikation og HR-relaterede uddannelser.",
   "openToAll": true
+ },
+ "11f51cf66eb65b44d016ee55d29c8886aa58925f": {
+  "fam": "marketing",
+  "sec": [
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "SoMe-indhold",
+   "videoredigering",
+   "Canva",
+   "fotografering",
+   "dataopfølgning"
+  ],
+  "blurb": "Du planlægger, optager og klipper billeder og videoer til klinikkernes kanaler og lægger indhold op på Instagram og TikTok. Du laver også grafik i Canva og følger op på anmeldelser og tal fra kanalerne.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "marketing",
+   "medievidenskab",
+   "multimediedesign",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver forståelse for kommunikation, SoMe og visuelt indhold, som uddannelserne inden for marketing, kommunikation og medier giver.",
+  "openToAll": false
+ },
+ "19fac05b99a59a68ad3e5e4cca1c81235b712445": {
+  "fam": "public",
+  "sec": [
+   "social",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "analytisk sans",
+   "skriftlig kommunikation",
+   "mundtlig kommunikation",
+   "struktureret arbejde",
+   "ansvarsbevidsthed"
+  ],
+  "blurb": "Du hjælper med besvarelse af borgerhenvendelser og udarbejdelse af mødemateriale til ministeren og Folketinget. Du kommer tæt på politikudvikling, lovgivningsprocesser og interessentinddragelse på børne- og ældreområdet.",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "sociologi",
+   "politik og administration",
+   "jura",
+   "socialvidenskab",
+   "pædagogik"
+  ],
+  "why": "Jobbet kræver samfundsfaglig indsigt i politiske processer og lovgivning, som uddannelser som statskundskab, sociologi og jura giver.",
+  "openToAll": false
+ },
+ "497b119eb1888d63317b25d71577329765091eed": {
+  "fam": "public",
+  "sec": [
+   "finance",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "analytisk arbejde",
+   "international økonomi",
+   "EU-samarbejde",
+   "skriftlig formidling",
+   "samarbejdsevner"
+  ],
+  "blurb": "Du bidrager til notater, analyse- og skriveopgaver samt indsamling og præsentation af nøgletal om EU- og internationale økonomiske emner, bl.a. til forberedelse af ECOFIN-møder. Du skal også kunne påtage dig løbende ad hoc-opgaver.",
+  "deadlineAt": "2026-11-25T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "politik",
+   "statskundskab",
+   "samfundsøkonomi",
+   "international politik",
+   "jura"
+  ],
+  "why": "Jobbet kræver analytisk arbejde med økonomisk politik og EU-samarbejde, som fagene økonomi, politik og statskundskab dækker.",
+  "openToAll": false
+ },
+ "ad715dafa0e08977767878e112c2f2cce9eac05c": {
+  "fam": "legal",
+  "sec": [
+   "health",
+   "public"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "engelsk",
+   "forvaltningsret",
+   "EU-ret",
+   "systematik",
+   "sagsbehandling"
+  ],
+  "blurb": "Du understøtter juristerne i sektionen med lovgivningsarbejde, høringer, aktindsigtssager og journalisering. Opgaverne spænder over forvaltningsret, EU-ret og lægemiddelret.",
+  "deadlineAt": "2026-12-04T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "farmaci"
+  ],
+  "why": "Jobbet kræver juridisk forståelse af forvaltningsret, EU-ret og lægemiddelret, som er kerneområder i jurastudiet.",
+  "openToAll": false
+ },
+ "6cfcccb877c8fae8ff440f96c0b81ddbef91376f": {
+  "fam": "education",
+  "sec": [
+   "customer"
+  ],
+  "danish": "plus",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "omvisning",
+   "undervisning",
+   "formidling",
+   "gæstekontakt",
+   "børneformidling"
+  ],
+  "blurb": "Du underviser, viser rundt og er vært for museets gæster, både børn og voksne, i udstillinger og på værkstedet. Du hjælper også med praktiske opgaver i museets åbningstid, herunder aftener, weekender og ferier.",
+  "deadlineAt": "2026-12-03T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kunsthistorie",
+   "kunstvidenskab",
+   "kulturvidenskab",
+   "pædagogik",
+   "museologi",
+   "læringsvidenskab",
+   "æstetiske fag"
+  ],
+  "why": "Jobbet kræver faglighed inden for kunst, kultur eller pædagogik og en formidlende tilgang til museets gæster.",
+  "openToAll": false
+ },
+ "bf38e18d508d3a9bb4151586111cfc224fc1bd9f": {
+  "fam": "public",
+  "sec": [
+   "operations",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "eventplanlægning",
+   "research",
+   "deltagerkoordinering",
+   "engelsk",
+   "struktureret arbejde"
+  ],
+  "blurb": "Du hjælper med at planlægge og gennemføre møder, konferencer og høringer for Folketingets internationale delegationer, primært til Nordisk Råd. Du researcher og udarbejder baggrundsmateriale og håndterer deltagerlister, tilmeldinger og praktisk information.",
+  "deadlineAt": "2026-11-24T12:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "kommunikation",
+   "samfundsvidenskab",
+   "international politik",
+   "europastudier",
+   "skandinavistik"
+  ],
+  "why": "Jobbet kræver interesse for samfundsforhold og internationalt samarbejde samt god skriftlig formulering, hvilket passer til samfundsfaglige og kommunikationsfaglige uddannelser.",
+  "openToAll": false
+ },
+ "f23c5d8f0cb4856d03e6b1d06efdf685baca2e3a": {
+  "fam": "operations",
+  "sec": [
+   "finance",
+   "procurement"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "skriftlig formulering",
+   "prioritering",
+   "struktureret arbejde",
+   "samarbejde",
+   "selvstændighed"
+  ],
+  "blurb": "Du hjælper med administrative opgaver i Delivery Management-teamet, fx varemodtagelse, fakturaoverførsler og bestilling af varer. Du får også egne ansvarsområder, fx adgangsstyring, koordinering af kontorets økonomi og udarbejdelse af powerpoints og notater.",
+  "deadlineAt": "2026-11-26T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "statskundskab",
+   "økonomi",
+   "jura",
+   "international business"
+  ],
+  "why": "Opgaverne kræver forståelse for økonomi, indkøb og administrativ styring, hvilket passer godt til samfundsvidenskabelige og økonomiske uddannelser.",
+  "openToAll": false
+ },
+ "9c0497e6a640022df8bf3387c69a0831ac1b9574": {
+  "fam": "datasci",
+  "sec": [
+   "research",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "transskription",
+   "Excel eller Access",
+   "dansk historie 1800-1900",
+   "praktisk støtte",
+   "selvstændighed"
+  ],
+  "blurb": "Du transskriberer, linker og beskriver historiske kilder og persondata til forskningsinfrastrukturprojekter. Du hjælper også med praktiske opgaver som arrangementer, søgning, bestilling og scanning af materiale.",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "historie",
+   "arkivvidenskab",
+   "digital humaniora",
+   "kulturhistorie",
+   "socialhistorie",
+   "nordisk",
+   "etnologi",
+   "demografi"
+  ],
+  "why": "Jobbet kræver kendskab til dansk historie og arbejde med historiske kilder, og det passer derfor til historiske og humanistiske fag.",
+  "openToAll": false
+ },
+ "25579f178d05f3e7364bdedc6ca4b18bdb0e1ff3": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "videoproduktion",
+   "idéudvikling",
+   "opslagstekster",
+   "sociale medier",
+   "Adobe Premiere Pro"
+  ],
+  "blurb": "Du hjælper med at udvikle, producere og tilpasse DR-indhold til Facebook, Instagram og YouTube, fx ved at klippe videoer, skrive captions og udvikle kreative formater. Du arbejder i et team med to redaktører.",
+  "deadlineAt": "2026-12-01T23:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "journalistik",
+   "multimediedesign",
+   "markedsføringsøkonomi",
+   "digital design"
+  ],
+  "why": "Jobbet handler om medieindhold, formidling og kommunikation på sociale medier, som medie- og kommunikationsuddannelser er rettet mod.",
+  "openToAll": false
+ },
+ "eceab8a0ddee21c4e2ee2d8c7526e1671162d5f1": {
+  "fam": "health",
+  "sec": [
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "sundhedsfaglig baggrund",
+   "personcentreret tilgang",
+   "rehabiliterende arbejde",
+   "samarbejde",
+   "initiativ"
+  ],
+  "blurb": "Du dækker vagter som tilkaldevikar på et plejehjem med 38 boliger, primært i weekender, helligdage, ferier og hverdagsaftner. Arbejdet handler om at støtte beboerne i hverdagen ud fra deres ønsker, med fokus på tryghed og rehabilitering.",
+  "deadlineAt": "2026-12-31T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi",
+   "ernæring og sundhed",
+   "social- og sundhedsassistent",
+   "pædagogik",
+   "psykologi"
+  ],
+  "why": "Jobbet kræver sundhedsfaglig viden og omsorg i pleje af ældre, hvilket passer godt til sundhedsuddannelserne.",
+  "openToAll": false
+ },
+ "e19eb8fc307ae7e71945763ba3c6c1da9b20e207": {
+  "fam": "marketing",
+  "sec": [
+   "operations",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "planlægning af arrangementer",
+   "deltagerhåndtering",
+   "research og baggrundsmateriale",
+   "dansk og engelsk skriftligt og",
+   "struktureret arbejde med deadl"
+  ],
+  "blurb": "Du hjælper med planlægning og afvikling af møder, konferencer og studieture for Folketingets internationale delegationer, primært i forbindelse med Nordisk Råd. Du researcher baggrundsmateriale, håndterer deltagerlister og tilmeldinger og vejleder deltagere ved arrangementer.",
+  "deadlineAt": "2026-11-24T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "samfundsvidenskab",
+   "kommunikation",
+   "europastudier",
+   "international business",
+   "nordiske sprog",
+   "jura",
+   "økonomi"
+  ],
+  "why": "Jobbet kræver interesse for samfundsforhold og internationalt samarbejde, og det passer derfor især til samfundsfaglige og kommunikationsfaglige uddannelser.",
+  "openToAll": false
  }
 }

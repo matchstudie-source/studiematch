@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-11 08:50 UTC
+# Jobindsamling 2026-11-11 18:28 UTC
 
-1158 studiejob gemt. AI-kald i denne kørsel: 52.
+1169 studiejob gemt. AI-kald i denne kørsel: 11.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -11,13 +11,13 @@
 | Visma Public DK | teamtailor | 1 | 0 |  |
 | Humac Denmark | teamtailor | 4 | 1 |  |
 | Cepheo | teamtailor | 16 | 0 |  |
-| GML A/S | teamtailor | 37 | 1 |  |
-| Colosseum Tandlægerne | teamtailor | 17 | 1 |  |
+| GML A/S | teamtailor | 40 | 1 |  |
+| Colosseum Tandlægerne | teamtailor | 19 | 2 |  |
 | Lufthavnsvikar | teamtailor | 0 | 0 |  |
 | AutoProff | greenhouse | 12 | 0 |  |
 | Worksome | greenhouse | 0 | 0 | fejl: ConnectionError |
-| Veo | lever | 24 | 2 |  |
-| SEB | lever | 131 | 0 |  |
+| Veo | lever | 25 | 2 |  |
+| SEB | lever | 132 | 0 |  |
 | Devoteam | smartrecruiters | 100 | 0 |  |
 | Københavns Universitet | careerpage | 0 | 0 |  |
 | Danske Regioner | emply | 1 | 1 | 3 opslag på joblisten, 1 ligner studiejob |
@@ -31,8 +31,8 @@
 | Carelink | evergreen | 1 | 1 |  |
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
-| Redpill Linpro | teamtailor | 11 | 0 |  |
-| Region Syddanmark | hrmanager | 353 | 5 |  |
+| Redpill Linpro | teamtailor | 12 | 0 |  |
+| Region Syddanmark | hrmanager | 360 | 5 |  |
 | Novo Nordisk | rmk | 5 | 3 |  |
 | Novonesis | workday | 4 | 4 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -41,7 +41,7 @@
 | Bavarian Nordic | workday | 0 | 0 |  |
 | ALK | teamtailor | 15 | 0 |  |
 | Vestas | rmk | 3 | 2 |  |
-| Energinet | hrmanager | 28 | 3 |  |
+| Energinet | hrmanager | 29 | 3 |  |
 | Norlys | sitemap | 2 | 2 |  |
 | Andel | hrmanager | 10 | 1 |  |
 | HOFOR | hrmanager | 16 | 0 |  |
@@ -55,48 +55,48 @@
 | Bang & Olufsen | sitemap | 0 | 0 |  |
 | Matas | emply | 3 | 3 | 20 opslag på joblisten, 3 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 |  |
-| Statslige arbejdsgivere | hrmanager | 459 | 61 |  |
+| Statslige arbejdsgivere | hrmanager | 490 | 67 |  |
 | Saxo Bank | workday | 0 | 0 |  |
-| Lunar | teamtailor | 20 | 0 |  |
-| Pleo | ashby | 40 | 0 |  |
+| Lunar | teamtailor | 19 | 0 |  |
+| Pleo | ashby | 37 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
 | ATP | hrmanager | 19 | 0 |  |
 | PKA | hrmanager | 0 | 0 |  |
-| Alka | rmk | 13 | 10 |  |
+| Alka | rmk | 15 | 10 |  |
 | Gjensidige | rmk | 1 | 0 |  |
 | LB Forsikring | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | KPMG Danmark | hrmanager | 14 | 0 |  |
-| BDO Danmark | emply | 0 | 0 | 18 opslag på joblisten, 0 ligner studiejob |
+| BDO Danmark | emply | 3 | 3 | 27 opslag på joblisten, 3 ligner studiejob |
 | twoday | teamtailor | 8 | 0 |  |
-| Columbus | teamtailor | 80 | 0 |  |
+| Columbus | teamtailor | 69 | 0 |  |
 | Templafy | teamtailor | 5 | 0 |  |
 | Queue-it | teamtailor | 3 | 0 |  |
 | NIRAS | hrmanager | 12 | 0 |  |
 | Sweco Danmark | hrmanager | 24 | 2 |  |
 | Per Aarsleff | hrmanager | 9 | 3 |  |
 | DSB | sitemap | 0 | 0 |  |
-| DR | sitemap | 2 | 2 |  |
+| DR | sitemap | 3 | 3 |  |
 | 3 Danmark | teamtailor | 19 | 0 |  |
 | ISS | rmk | 1 | 0 |  |
-| HK | hrmanager | 14 | 2 |  |
-| Aarhus Kommune | hrmanager | 243 | 8 |  |
+| HK | hrmanager | 13 | 1 |  |
+| Aarhus Kommune | hrmanager | 249 | 9 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 5 | 4 | 144 opslag på joblisten, 5 ligner studiejob |
-| Frederiksberg Kommune | emply | 3 | 3 | 63 opslag på joblisten, 3 ligner studiejob |
-| Hvidovre Kommune | hrmanager | 35 | 0 |  |
-| Brøndby Kommune | emply | 1 | 1 | 55 opslag på joblisten, 1 ligner studiejob |
-| Næstved Kommune | emply | 0 | 0 | 81 opslag på joblisten, 0 ligner studiejob |
+| Aalborg Kommune | emply | 3 | 2 | 72 opslag på joblisten, 3 ligner studiejob |
+| Frederiksberg Kommune | emply | 3 | 3 | 65 opslag på joblisten, 3 ligner studiejob |
+| Hvidovre Kommune | hrmanager | 38 | 0 |  |
+| Brøndby Kommune | emply | 1 | 1 | 57 opslag på joblisten, 1 ligner studiejob |
+| Næstved Kommune | emply | 0 | 0 | 87 opslag på joblisten, 0 ligner studiejob |
 | Holbæk Kommune | emply | 0 | 0 | ingen jobliste fundet |
-| Svendborg Kommune | emply | 1 | 0 | 53 opslag på joblisten, 1 ligner studiejob |
+| Svendborg Kommune | emply | 1 | 0 | 55 opslag på joblisten, 1 ligner studiejob |
 | Politiet | rmk | 17 | 11 |  |
 | Forbrugerrådet Tænk | hrmanager | 3 | 0 |  |
 | Roskilde Universitet | hrmanager | 12 | 1 |  |
 | IT-Universitetet | hrmanager | 6 | 3 |  |
-| Københavns Professionshøjskole | emply | 9 | 5 | 22 opslag på joblisten, 9 ligner studiejob |
-| Statslige arbejdsgivere | hrmanager | 81 | 6 |  |
-| VIA University College | emply | 2 | 2 | 32 opslag på joblisten, 2 ligner studiejob |
-| UCN | emply | 0 | 0 | 5 opslag på joblisten, 0 ligner studiejob |
-| Erhvervsakademi København | emply | 1 | 1 | 10 opslag på joblisten, 1 ligner studiejob |
+| Københavns Professionshøjskole | emply | 10 | 5 | 23 opslag på joblisten, 10 ligner studiejob |
+| Statslige arbejdsgivere | hrmanager | 82 | 6 |  |
+| VIA University College | emply | 2 | 2 | 33 opslag på joblisten, 2 ligner studiejob |
+| UCN | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
+| Erhvervsakademi København | emply | 1 | 1 | 11 opslag på joblisten, 1 ligner studiejob |
 | Dansk Røde Kors | emply | 0 | 0 | ingen jobliste fundet |
 | Mellemfolkeligt Samvirke | hrmanager | 0 | 0 | fejl: HTTPError |
 | Kræftens Bekæmpelse | hrmanager | 8 | 1 |  |
@@ -106,41 +106,41 @@
 | Aarhus Universitet | emply | 0 | 0 | ingen jobliste fundet |
 | DSV | rmk | 1 | 0 |  |
 | Coloplast | rmk | 3 | 2 |  |
-| Ascendis Pharma | workable | 23 | 1 |  |
-| Ballerup Kommune | emply | 2 | 2 | 47 opslag på joblisten, 2 ligner studiejob |
-| Novo Nordisk Fonden | workable | 4 | 0 |  |
-| Albertslund Kommune | emply | 0 | 0 | 32 opslag på joblisten, 0 ligner studiejob |
-| Billund Kommune | hrmanager | 32 | 0 |  |
+| Ascendis Pharma | workable | 22 | 1 |  |
+| Ballerup Kommune | emply | 2 | 2 | 53 opslag på joblisten, 2 ligner studiejob |
+| Novo Nordisk Fonden | workable | 5 | 0 |  |
+| Albertslund Kommune | emply | 0 | 0 | 37 opslag på joblisten, 0 ligner studiejob |
+| Billund Kommune | hrmanager | 0 | 0 | fejl: ConnectionError |
 | Faxe Kommune | hrmanager | 36 | 0 |  |
-| Fredericia Kommune | emply | 0 | 0 | 46 opslag på joblisten, 0 ligner studiejob |
-| Frederikshavn Kommune | emply | 0 | 0 | 55 opslag på joblisten, 0 ligner studiejob |
-| Faaborg-Midtfyn Kommune | hrmanager | 49 | 1 |  |
-| Glostrup Kommune | emply | 1 | 1 | 42 opslag på joblisten, 1 ligner studiejob |
+| Fredericia Kommune | emply | 0 | 0 | 49 opslag på joblisten, 0 ligner studiejob |
+| Frederikshavn Kommune | emply | 0 | 0 | 57 opslag på joblisten, 0 ligner studiejob |
+| Faaborg-Midtfyn Kommune | hrmanager | 51 | 1 |  |
+| Glostrup Kommune | emply | 1 | 1 | 43 opslag på joblisten, 1 ligner studiejob |
 | Greve Kommune | hrmanager | 10 | 0 |  |
-| Guldborgsund Kommune | emply | 0 | 0 | 42 opslag på joblisten, 0 ligner studiejob |
-| Haderslev Kommune | emply | 1 | 1 | 32 opslag på joblisten, 1 ligner studiejob |
-| Halsnæs Kommune | emply | 1 | 1 | 29 opslag på joblisten, 1 ligner studiejob |
+| Guldborgsund Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
+| Haderslev Kommune | emply | 1 | 1 | 30 opslag på joblisten, 1 ligner studiejob |
+| Halsnæs Kommune | emply | 1 | 1 | 28 opslag på joblisten, 1 ligner studiejob |
 | Hedensted Kommune | emply | 0 | 0 | 34 opslag på joblisten, 0 ligner studiejob |
 | Hjørring Kommune | hrmanager | 0 | 0 |  |
-| Ikast-Brande Kommune | emply | 0 | 0 | 36 opslag på joblisten, 0 ligner studiejob |
-| Lemvig Kommune | emply | 0 | 0 | 16 opslag på joblisten, 0 ligner studiejob |
+| Ikast-Brande Kommune | emply | 0 | 0 | 38 opslag på joblisten, 0 ligner studiejob |
+| Lemvig Kommune | emply | 0 | 0 | 20 opslag på joblisten, 0 ligner studiejob |
 | Mariagerfjord Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Morsø Kommune | emply | 0 | 0 | 14 opslag på joblisten, 0 ligner studiejob |
-| Nordfyns Kommune | emply | 0 | 0 | 40 opslag på joblisten, 0 ligner studiejob |
+| Nordfyns Kommune | emply | 0 | 0 | 12 opslag på joblisten, 0 ligner studiejob |
 | Nyborg Kommune | emply | 0 | 0 | 13 opslag på joblisten, 0 ligner studiejob |
-| Odder Kommune | hrmanager | 17 | 0 |  |
+| Odder Kommune | hrmanager | 16 | 0 |  |
 | Ringkøbing-Skjern Kommune | emply | 0 | 0 | 54 opslag på joblisten, 0 ligner studiejob |
 | Solrød Kommune | emply | 0 | 0 | 17 opslag på joblisten, 0 ligner studiejob |
-| Stevns Kommune | emply | 0 | 0 | 27 opslag på joblisten, 0 ligner studiejob |
+| Stevns Kommune | emply | 0 | 0 | 29 opslag på joblisten, 0 ligner studiejob |
 | Struer Kommune | emply | 0 | 0 | 18 opslag på joblisten, 0 ligner studiejob |
 | Syddjurs Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
-| Tønder Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
+| Tønder Kommune | emply | 0 | 0 | 38 opslag på joblisten, 0 ligner studiejob |
 | Varde Kommune | emply | 1 | 1 | 57 opslag på joblisten, 1 ligner studiejob |
-| Tandlægen.dk | hrmanager | 12 | 0 |  |
-| Capio Danmark | emply | 0 | 0 | 4 opslag på joblisten, 0 ligner studiejob |
+| Tandlægen.dk | hrmanager | 11 | 0 |  |
+| Capio Danmark | emply | 0 | 0 | 5 opslag på joblisten, 0 ligner studiejob |
 | Aleris | hrmanager | 8 | 0 |  |
 | Lidl Danmark | sitemap | 0 | 0 |  |
-| REMA 1000 | hrmanager | 69 | 0 |  |
+| REMA 1000 | hrmanager | 73 | 0 |  |
 | Magasin | teamtailor | 13 | 1 |  |
 | 7-Eleven Danmark | emply | 0 | 0 | ingen jobliste fundet |
 | Boozt | teamtailor | 9 | 0 |  |
@@ -150,4 +150,4 @@
 | Kammeradvokaten | emply | 1 | 1 | 9 opslag på joblisten, 1 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |
 | Accura | hrmanager | 5 | 2 |  |
-| StuderendeOnline.dk | studerendeonline | 1099 | 1040 | 1195 af 1195 opslag hentet, 1099 er studiejob eller praktik i Danmark |
+| StuderendeOnline.dk | studerendeonline | 1100 | 1036 | 1196 af 1196 opslag hentet, 1100 er studiejob eller praktik i Danmark |

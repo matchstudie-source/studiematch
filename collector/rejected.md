@@ -25,6 +25,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Syddansk Sundhedsinnovation søger en projektleder til internationale projekter | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
+| Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
@@ -50,8 +51,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
-| Ascendis Pharma | System Manager for Commercial IT Europe and International Markets | ikke et studiejob |
-| Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
 | StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
