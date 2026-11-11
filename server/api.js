@@ -707,7 +707,8 @@ async function admin(ctx, path, method, me) {
   if (path === "users" && method === "GET") {
     const url = new URL(req.url);
     const term = `%${(url.searchParams.get("q") || "").trim().toLowerCase()}%`;
-    const rows = await db.prepare(`SELECT id, email, name, role, created_at, last_seen, program, school, cv_name IS NOT NULL AS has_cv
+    const rows = await db.prepare(`SELECT id, email, name, role, created_at, last_seen, program, school, cv_name IS NOT NULL AS has_cv,
+      json_extract(profile,'$.heard') AS heard, json_extract(profile,'$.src') AS src
       FROM users WHERE lower(email) LIKE ? OR lower(COALESCE(name,'')) LIKE ? OR lower(COALESCE(program,'')) LIKE ?
       ORDER BY created_at DESC LIMIT 500`).bind(term, term, term).all();
     return json({ users: rows.results });

@@ -184,7 +184,7 @@ function vOverview(){
     <section class="card"><h2>Fra besøg til klik (30 dage)</h2><div class="funnel">${steps.map(([l,n])=>`<div class="fstep"><span>${l}</span><span class="fbar"><span style="width:${Math.round(100*n/top)}%"></span></span><b class="n">${fmt(n)}</b></div>`).join("")}</div>
       <p class="muted small">Gemte job: ${fmt((f.save||{}).n)} · Interesseret: ${fmt((f.like||{}).n)} · Fravalgt: ${fmt((f.dismiss||{}).n)} · CV'er: ${fmt((f.cv_added||{}).n)}</p></section>
     <section class="card"><h2>Mest klikkede job (30 dage)</h2>${list(s.topJobs,[{f:r=>esc(r.label||r.job_id)},{n:1,f:r=>fmt(r.n)}],"Ingen klik endnu.")}</section>
-    <section class="card"><h2>Hvor kommer de fra</h2>${list(s.referrers,[{f:r=>esc(r.ref)},{n:1,f:r=>fmt(r.n)}],"Ingen henvisninger endnu. Direkte besøg tæller ikke med her.")}</section>
+    <section class="card"><h2>Hvor kommer de fra</h2>${list(s.referrers,[{f:r=>esc(r.ref.replace(/\.kilde$/,""))},{n:1,f:r=>fmt(r.n)}],"Ingen henvisninger endnu. Direkte besøg tæller ikke med her.")}</section>
     <section class="card"><h2>Uddannelser blandt brugerne</h2>${list(s.programs,[{f:r=>`${esc(r.program)} <span class="muted small">${esc(r.school)}</span>`},{n:1,f:r=>fmt(r.n)}],"Ingen brugere endnu.")}</section>
     <section class="card"><h2>Matchkvalitet (30 dage)</h2>${(()=>{ const g=(s.quality||{}).match_good||0, b=(s.quality||{}).match_bad||0, t=g+b;
         return t?`<p><b style="font-size:24px">${Math.round(100*g/t)} %</b> <span class="muted">synes, jobbet passer til deres uddannelse (${fmt(g)} ja, ${fmt(b)} nej)</span></p>`:`<p class="empty">Ingen svar endnu. Studerende svarer under "Hvorfor dette match" på hvert job.</p>`; })()}
@@ -200,14 +200,14 @@ function vUsers(){
   const created = st.created ? `<div class="note">Bruger klar: <b>${esc(st.created.email)}</b><br>Midlertidig adgangskode (vises kun nu, send den til brugeren):<div class="secret">${esc(st.created.password)}</div>Brugeren bliver bedt om at vælge en ny adgangskode første gang.</div>` : "";
   const rows=st.users.map(u=>`<tr class="click" data-user="${u.id}"><td><b>${esc(u.email)}</b>${u.role==="admin"?' <span class="pill">admin</span>':""}<div class="small muted">${esc(u.name||"")}</div></td>
     <td class="hide-s">${esc(u.program||"–")}<div class="small muted">${esc(u.school||"")}</div></td><td>${u.has_cv?'<span class="pill">CV</span>':'<span class="pill gray">intet</span>'}</td>
-    <td class="small hide-s">${date(u.created_at)}</td><td class="small">${dt(u.last_seen)}</td></tr>`).join("");
+    <td class="small">${u.heard||u.src?`${esc(u.heard||"")}${u.heard&&u.src?"<br>":""}${u.src?`<span class="muted">via ${esc(u.src.replace(/\.kilde$/,""))}</span>`:""}`:'<span class="muted">ukendt</span>'}</td><td class="small hide-s">${date(u.created_at)}</td><td class="small">${dt(u.last_seen)}</td></tr>`).join("");
   return `<h1>Brugere <span class="muted">(${st.users.length})</span></h1>
   <section class="card"><h2>Opret bruger</h2>
     <form class="row" id="create"><input class="input" id="cu-mail" type="email" placeholder="mail@eksempel.dk" required><input class="input" id="cu-name" placeholder="Navn (valgfrit)"><select class="input" id="cu-role"><option value="user">Bruger</option><option value="admin">Admin</option></select><button class="btn btn-p" type="submit">Opret</button></form>
     ${st.err?`<p class="warnbox">${esc(st.err)}</p>`:""}${created}</section>
   <section class="card">
     <div class="row" style="margin-bottom:10px"><input class="input" id="uq" placeholder="Søg på mail, navn eller uddannelse" value="${esc(st.q)}" style="flex:1"></div>
-    ${st.users.length?`<div class="scroll"><table><thead><tr><th>Bruger</th><th class="hide-s">Uddannelse</th><th>CV</th><th class="hide-s">Oprettet</th><th>Sidst set</th></tr></thead><tbody>${rows}</tbody></table></div>`:'<p class="empty">Ingen brugere fundet.</p>'}
+    ${st.users.length?`<div class="scroll"><table><thead><tr><th>Bruger</th><th class="hide-s">Uddannelse</th><th>CV</th><th>Kom fra</th><th class="hide-s">Oprettet</th><th>Sidst set</th></tr></thead><tbody>${rows}</tbody></table></div>`:'<p class="empty">Ingen brugere fundet.</p>'}
   </section>
   ${st.detail?vDetail():""}`;
 }
@@ -307,7 +307,7 @@ function vActivity(){
     return `<div class="visit">
       <button class="visit-h" data-visit="${v.visitor}" aria-expanded="${!!open}">
         <span class="vn">${vName(v)} ${v.email?'<span class="pill">bruger</span>':'<span class="pill gray">ingen bruger</span>'}</span>
-        <span class="small muted">${new Date(v.first).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"})}–${new Date(v.last).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"})} · ${v.events.length} hændelser, ${acts} handlinger${v.ref?` · fra ${esc(v.ref)}`:""}</span>
+        <span class="small muted">${new Date(v.first).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"})}–${new Date(v.last).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"})} · ${v.events.length} hændelser, ${acts} handlinger${v.ref?` · fra ${esc(v.ref.replace(/\.kilde$/,""))}`:""}</span>
       </button>
       ${open?`<ol class="tl">${v.events.map(e=>`<li><span class="small muted">${new Date(e.ts).toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit",second:"2-digit"})}</span><span>${evText(e)}</span></li>`).join("")}</ol>`:""}
     </div>`; }).join("");

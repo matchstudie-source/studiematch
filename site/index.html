@@ -769,6 +769,10 @@ async function initAccount(){
 }
 /* Anonym statistik: ingen cookies. Serveren tæller besøgende med en hash, der skifter hver dag. */
 let lastPV="", firstPV=true;
+/* Hvor kom den besøgende fra? ?ref=plakat eller ?utm_source=instagram vinder over den side, de kom fra. */
+const SRC_PARAM = (()=>{ try{ const q=new URLSearchParams(location.search); return (q.get("ref")||q.get("utm_source")||"").toLowerCase().replace(/[^a-z0-9._-]/g,"").slice(0,40); }catch(e){ return ""; } })();
+const SRC_NOW = SRC_PARAM || (()=>{ try{ const h=new URL(document.referrer).hostname.replace(/^www\./,""); return h && h!==location.hostname.replace(/^www\./,"") ? h : ""; }catch(e){ return ""; } })();
+if(typeof window!=="undefined" && SRC_NOW && !S.profile.src){ S.profile.src=SRC_NOW; }
 function track(type, extra){
   try{
     const body=JSON.stringify(Object.assign({type, path:location.pathname}, extra||{}));
@@ -778,7 +782,7 @@ function track(type, extra){
 function trackView(){
   const key = S.view==="app" ? "/app/"+S.tab : S.view==="onboard" ? "/opsaetning/"+S.step : "/";
   if(key===lastPV) return; lastPV=key;
-  track("pageview",{path:key, ref: firstPV ? document.referrer : ""}); firstPV=false;
+  track("pageview",{path:key, ref: firstPV ? (SRC_PARAM ? "https://"+SRC_PARAM+".kilde" : document.referrer) : ""}); firstPV=false;
 }
 const jobLabel = j => j ? `${j.title} · ${j.co}`.slice(0,160) : "";
 
@@ -1416,6 +1420,7 @@ function authSheet(sh){
       <div class="field"><label class="label" for="au-name">Navn <span class="fine">(valgfrit)</span></label><input id="au-name" class="input" autocomplete="name" value="${esc(a.name)}"></div>
       <div class="field"><label class="label" for="au-mail">E-mail</label><input id="au-mail" class="input" type="email" autocomplete="email" required value="${esc(a.email)}"></div>
       <div class="field"><label class="label" for="au-pw">Adgangskode</label><input id="au-pw" class="input" type="password" autocomplete="new-password" required minlength="8"><p class="fine">Mindst 8 tegn.</p></div>
+      <div class="field"><label class="label" for="au-heard">Hvor hørte du om Studiematch? <span class="fine">(valgfrit)</span></label><select id="au-heard" class="input select"><option value="">Vælg</option>${["Plakat","Instagram eller TikTok","En ven","Google","Mit studie eller en underviser","En jobportal","Andet"].map(o=>`<option ${a.heard===o?"selected":""}>${o}</option>`).join("")}</select></div>
       <label class="check"><input type="checkbox" id="au-alerts" ${a.alerts!==false?"checked":""}><span>Send mig nye studiejob, der passer til min uddannelse, på mail. Højst én gang om dagen, og du kan altid afmelde.</span></label>
       <label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="/privatliv.html" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>
       ${err}
@@ -1708,7 +1713,7 @@ function applyCV(){
   p.cvFams=[...fams]; p.cvName=sh.name; p.cvAt=Date.now(); p.cvBy=ex.by;
   UI.sheet=null; commit(); toast("Dit CV er brugt. Dine matches er opdateret.");
 }
-function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-alerts")) UI.auth.alerts=g("au-alerts").checked; if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
+function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-alerts")) UI.auth.alerts=g("au-alerts").checked; if(g("au-heard")) UI.auth.heard=g("au-heard").value; if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
 async function submitPostJob(form){
   const g=id=>(form.querySelector("#pj-"+id)||{}).value||"";
   UI.post={company:g("company"),title:g("title"),city:g("city"),region:g("region"),hMin:g("hmin"),hMax:g("hmax"),danish:g("danish"),description:g("desc"),url:g("url"),deadline:g("deadline"),contact:g("contact"),email:g("email")};
@@ -1735,7 +1740,7 @@ async function submitReset(form){
 async function submitAuth(form){
   saveAuthFields(); const sh=UI.sheet; const pw=form.querySelector("#au-pw").value; const signup=sh.mode!=="login";
   if(signup && !UI.auth.consent){ sh.err="Sæt flueben ved privatlivspolitikken for at oprette en bruger."; return render(); }
-  if(signup){ S.profile.alerts=UI.auth.alerts!==false; S.profile.alertFreq=S.profile.alertFreq||"daily"; }
+  if(signup){ S.profile.alerts=UI.auth.alerts!==false; S.profile.alertFreq=S.profile.alertFreq||"daily"; if(UI.auth.heard) S.profile.heard=UI.auth.heard; }
   sh.busy=true; sh.err=""; render();
   const r = signup ? await api("auth/signup",{email:UI.auth.email,password:pw,name:UI.auth.name,consent:true,profile:S.profile,state:S.onboarded?serverState():null})
                    : await api("auth/login",{email:UI.auth.email,password:pw});
