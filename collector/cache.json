@@ -53096,5 +53096,218 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora.",
   "openToAll": false
+ },
+ "2e4ed124e33835f53b757aecc22dbbbc51f2f7be": {
+  "fam": "public",
+  "sec": [
+   "legal",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "informationssikkerhed",
+   "databeskyttelse (GDPR)",
+   "beredskabsplanlægning",
+   "compliance-systemer",
+   "skriftlig formulering"
+  ],
+  "blurb": "Du følger op på, at retningslinjer og lovgivning om informationssikkerhed og databeskyttelse overholdes, og du hjælper med at vedligeholde ministeriets compliance-system RISMA og beredskabsplaner. Du varetager også sekretariatsopgaver for et koncernfælles forum, fx mødeindkaldelser og referater.",
+  "deadlineAt": "2026-11-16T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation og it",
+   "statskundskab",
+   "jura",
+   "informatik",
+   "datalogi",
+   "politik og administration",
+   "samfundsfag"
+  ],
+  "why": "Jobbet kombinerer jura, it-sikkerhed og offentlig styring, så det passer til samfundsfaglige og it-orienterede uddannelser.",
+  "openToAll": false
+ },
+ "edc98fb6b4df7d01741705934b15116264cab503": {
+  "fam": "marketing",
+  "sec": [
+   "research",
+   "public"
+  ],
+  "danish": "plus",
+  "hMin": 12,
+  "hMax": 12,
+  "skills": [
+   "Illustrator",
+   "InDesign",
+   "After Effects",
+   "Photoshop",
+   "Foto og video"
+  ],
+  "blurb": "Du laver grafik, infografikker, animationer og videoklip til VIVEs rapporter og sociale medier og vedligeholder VIVEs designbibliotek. Du hjælper også med praktiske opgaver som udsendelse af mails og vedligeholdelse af fotoarkivet.",
+  "deadlineAt": "2026-12-04T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "grafisk design",
+   "kommunikation",
+   "multimediedesign",
+   "medievidenskab",
+   "journalistik"
+  ],
+  "why": "Jobbet kræver visuelle og kommunikative færdigheder til at formidle komplekse undersøgelser, som uddannelser i design og kommunikation giver.",
+  "openToAll": false
+ },
+ "a37c14dd7d2dc0e4726608290488677d5bd91990": {
+  "fam": "research",
+  "sec": [
+   "operations",
+   "logistics"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "katalogisering",
+   "metadata",
+   "registrering af samlinger",
+   "systematik",
+   "fysisk håndtering af materiale"
+  ],
+  "blurb": "Du sorterer, registrerer og ompakker samlinger og opretter arkiver for nyt materiale. Du klargør materiale til digitalisering, katalogiserer i Alma og laver metadata på digitale filer.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "historie",
+   "arkæologi",
+   "kulturarvsstudier",
+   "informationsvidenskab",
+   "boghistorie",
+   "kunsthistorie",
+   "musikvidenskab",
+   "nordisk"
+  ],
+  "why": "Arbejdet med samlinger, katalogisering og metadata kræver kendskab til kulturhistorisk materiale og arkivfaglige metoder, som de humanistiske uddannelser giver.",
+  "openToAll": false
+ },
+ "35e046fc279738c1639e6a4de4fabf0ae91b2c0e": {
+  "fam": "bizdev",
+  "sec": [
+   "marketing",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "CRM-systemer",
+   "Office-pakken",
+   "databaser",
+   "flydende engelsk",
+   "flydende dansk"
+  ],
+  "blurb": "Du assisterer salgsteamet i DR Sales med administration, mødebooking med internationale indkøbere og forberedelse til festivaler og markeder. Du opdaterer CRM-systemet, varetager fællespostkassen og følger op på kundekontakt.",
+  "deadlineAt": "2026-11-30T23:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "international business"
+  ],
+  "why": "Jobbet kombinerer international salg, kommunikation og mediebranchen, så det passer godt til studier i medier, kommunikation og erhvervsøkonomi.",
+  "openToAll": false
+ },
+ "35fadf02de254ea3ad437ba0e4e9bc17a9872d53": {
+  "fam": "marketing",
+  "sec": [
+   "customer",
+   "software"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "HTML",
+   "CSS",
+   "JavaScript",
+   "Salesforce Marketing Cloud",
+   "e-mail-kvalitetssikring"
+  ],
+  "blurb": "Du opsætter og kvalitetssikrer e-mails, kampagner og automatiserede kunderejser i Salesforce Marketing Cloud. Du tester links, personalisering og data, før kommunikationen sendes ud.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "digital business",
+   "marketingøkonomi",
+   "erhvervsøkonomi",
+   "multimediedesign",
+   "medievidenskab"
+  ],
+  "why": "Jobbet kræver teknisk forståelse af HTML og data kombineret med interesse for marketing og kundekommunikation.",
+  "openToAll": false
+ },
+ "c1279f31c41763a246f3e12468217433d60f318f": {
+  "fam": "marketing",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "layout",
+   "Adobe Illustrator",
+   "Adobe InDesign",
+   "Photoshop",
+   "sociale medier"
+  ],
+  "blurb": "Du laver layout og grafisk understøttelse til digitale og trykte medier, fx websites, infoskærme, skilte, plakater og sociale medier. Du producerer også SoMe-indhold til arrangementer og hjælper med løbende opgaver i kommunikationsafdelingen.",
+  "deadlineAt": "2026-12-06T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "multimediedesign",
+   "grafisk design",
+   "visuel kommunikation",
+   "kommunikation",
+   "digital design"
+  ],
+  "why": "Jobbet kræver visuel kreativitet og færdigheder i grafiske værktøjer, som især uddannelser inden for design og kommunikation giver.",
+  "openToAll": false
+ },
+ "d7a05f2d6dca380f89a085c1f8504446e947a06c": {
+  "fam": "engineering",
+  "sec": [
+   "product"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "CAD",
+   "Revit",
+   "byggetekniske tegninger",
+   "tekniske specifikationer",
+   "projektsamarbejde"
+  ],
+  "blurb": "Du udarbejder byggetekniske tegninger og arbejdsbeskrivelser og er med i byggeprojekter fra start til slut. Du analyserer også virksomhedens standardløsninger og hjælper med byggepladsens daglige opgaver og logistik.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "byggeri",
+   "bygning",
+   "anlæg",
+   "konstruktør",
+   "byggeteknologi"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for teknik og teknologi, byggeri og konstruktion.",
+  "openToAll": false
  }
 }
