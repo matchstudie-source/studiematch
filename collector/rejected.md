@@ -4,7 +4,6 @@ Bruges til at tjekke, om filteret er for strengt.
 
 | Arbejdsgiver | Titel | Årsag |
 | --- | --- | --- |
-| SEB | Corporate & Investment Banking Summer Internship 2027: Client Analyst / SEB, Helsinki | udlandet: Helsinki |
 | SEB | Finance Developer (Finanšu izstrādātājs(-a)) in General Ledger and Internal Accounting Team / SEB, Riga | ikke et studiejob |
 | SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Tallinn | ikke et studiejob |
 | SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Vilnius | udlandet: Vilnius |
@@ -45,16 +44,17 @@ Bruges til at tjekke, om filteret er for strengt.
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
 | IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
-| Københavns Professionshøjskole | Uddannelsesjurist til Studieservice | ikke et studiejob |
 | Københavns Professionshøjskole | Studiementorer til ergoterapeutuddannelsen | ikke et studiejob |
 | Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
 | Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
+| Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
-| StuderendeOnline.dk | Student Assistant - Torvehallerne, Copenhagen | ikke et studiejob |
+| StuderendeOnline.dk | Student Assistant, Digital Development - Viby | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
+| StuderendeOnline.dk | Rådet for Sikker Trafik søger: ung-til-ung underviser til meningsfuldt studiejob | ikke et studiejob |
 | StuderendeOnline.dk | Praktikplats hos ECIT! | ikke et studiejob |
