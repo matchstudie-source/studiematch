@@ -1,47 +1,5 @@
 [
  {
-  "title": "Student til at understøtte DI's projekter i udviklings- og vækstøkonomier",
-  "co": "Dansk Industri",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "bizdev",
-   "research"
-  ],
-  "famConf": "title",
-  "skills": [
-   "projektunderstøttelse",
-   "research",
-   "analyse",
-   "kvalitativ og kvantitativ meto",
-   "præsentationer"
-  ],
-  "industry": "Interesseorganisation",
-  "postedAt": "2026-11-10T02:15:33+00:00",
-  "deadlineAt": "2026-11-27T23:59:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du laver research, notater og analyser om udviklings- og vækstøkonomier og forbereder præsentationer til konsulenter. Du hjælper også med planlægning af arrangementer og delegationsbesøg i Danmark.",
-  "req": null,
-  "url": "https://danskindustri.teamtailor.com/jobs/8693707-student-til-at-understotte-di-s-projekter-i-udviklings-og-vaekstokonomier",
-  "enrichedBy": "ai",
-  "studies": [
-   "international udvikling",
-   "statskundskab",
-   "økonomi",
-   "erhvervsøkonomi",
-   "cand.merc",
-   "sociologi"
-  ],
-  "why": "Jobbet kræver analytisk arbejde om økonomi, udviklingspolitik og erhvervssamarbejde i vækstmarkeder, hvilket passer til samfundsfaglige og økonomiske uddannelser.",
-  "openToAll": false,
-  "id": "xb44215a16e41",
-  "live": true
- },
- {
   "title": "Praktikant til kommunikation og arrangementer i DI Byggeri",
   "co": "Dansk Industri",
   "city": "København",
@@ -323,6 +281,48 @@
   "live": true
  },
  {
+  "title": "R&D Intern",
+  "co": "Again",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "research",
+  "sec": [
+   "engineering",
+   "sustain"
+  ],
+  "famConf": "text",
+  "skills": [
+   "fermentering",
+   "mikrobiologi",
+   "bioreaktorer",
+   "adaptive laboratory evolution",
+   "dataanalyse"
+  ],
+  "industry": "Biotek",
+  "postedAt": "2026-06-09T14:40:45+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du betjener og udvider en pioreaktor-platform, hvor bakterier omdanner gasser til kemikalier. Du kører fermenteringsforsøg, tester og karakteriserer stammer og dokumenterer resultaterne i rapporter og labbøger.",
+  "req": null,
+  "url": "https://again.teamtailor.com/jobs/7881513-r-d-intern",
+  "enrichedBy": "ai",
+  "studies": [
+   "bioteknologi",
+   "mikrobiologi",
+   "biokemisk teknologi",
+   "biologi",
+   "biokemi",
+   "kemiteknologi"
+  ],
+  "why": "Arbejdet kræver viden om mikroorganismer, fermentering og bioprocesser, som disse uddannelser giver.",
+  "openToAll": false,
+  "id": "xc83f91a5e0f1",
+  "live": true
+ },
+ {
   "title": "Marketing Student Assistant",
   "co": "Copenhagen Optimization",
   "city": "København",
@@ -462,6 +462,48 @@
   "url": "https://colosseumklinikken.teamtailor.com/jobs/7956285-tandplejerstuderende-praktik-uopfordret-ansoegning",
   "enrichedBy": "regler",
   "id": "x1ab0e96ca352",
+  "live": true
+ },
+ {
+  "title": "Camera Test Assistant - Student",
+  "co": "Veo",
+  "city": "Copenhagen Office",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "engineering",
+  "sec": [
+   "product",
+   "operations"
+  ],
+  "famConf": "text",
+  "skills": [
+   "testprotokoller",
+   "dokumentation",
+   "detaljeorientering",
+   "ansvarlighed",
+   "teknologisk nysgerrighed"
+  ],
+  "industry": "Tech og software",
+  "postedAt": "2026-09-24T11:13:47.706000+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du optager kampe med Veos nye kamera under virkelige forhold og gennemfører tests efter en testprotokol. Du dokumenterer præcist, hvad der sker, så ingeniørerne kan finde fejl, der ikke kan ses på et testbord.",
+  "req": null,
+  "url": "https://jobs.lever.co/veo/233f0ae1-24e7-4a53-892e-9e72aa853634",
+  "enrichedBy": "ai",
+  "studies": [
+   "elektronik",
+   "datalogi",
+   "maskinteknik",
+   "fysik",
+   "medievidenskab",
+   "idrætsvidenskab"
+  ],
+  "why": "Jobbet kræver teknisk nysgerrighed og systematisk testarbejde, som er centralt i elektronik, datalogi og fysik.",
+  "openToAll": false,
+  "id": "x4c65d777b3b3",
   "live": true
  },
  {
@@ -1371,33 +1413,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1423,6 +1438,33 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1463,6 +1505,90 @@
   "why": "Jobbet kræver skriftlig formidling, indholdsproduktion og visuel kommunikation, hvilket passer til kommunikations- og mediefag samt sprogfag.",
   "openToAll": false,
   "id": "x9de181496895",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.) Er du skarp til at skabe og klippe…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-snapchat-tiktok-4-6-mdr/udp3ne",
+  "enrichedBy": "regler",
+  "id": "x3e37b1490b05",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.) Har du…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-influencer-marketing-local-brand-activation-4/yvw1ih",
+  "enrichedBy": "regler",
+  "id": "x38abd0b8d81e",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.) Har du interesse…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-some-meta-community-management-4-6-mdr/ilt9mi",
+  "enrichedBy": "regler",
+  "id": "x6a4f7e879fef",
   "live": true
  },
  {
@@ -2281,6 +2407,47 @@
   "live": true
  },
  {
+  "title": "Proaktiv praktikant med blik for detaljer til Klima-, Energi- og Forsyningsministeriets elkontor",
+  "co": "Klima-, Energi- og Forsyningsministeriets departement",
+  "city": "København K.",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "finance",
+   "legal"
+  ],
+  "famConf": "title",
+  "skills": [
+   "detaljeorientering",
+   "proaktivitet",
+   "klar skriftlig formidling",
+   "koordinering",
+   "dokumentation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-13T14:10:27+00:00",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper med struktur, koordinering, informationsindsamling og kvalitetssikring i et kontor, der arbejder med rammerne for elsektoren og ministeriets ejerskab af Energinet. Du følger større projektforløb tæt sammen med kolleger i koncernøkonomikontoret og andre kontorer.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173213&DepartmentId=19133&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "jura",
+   "offentlig administration",
+   "økonomi",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver forståelse for politiske og administrative processer samt økonomi og regulering, som disse uddannelser dækker.",
+  "openToAll": false,
+  "id": "x9941c42a8cf0",
+  "live": true
+ },
+ {
   "title": "Servicemindede studentermedhjælpere til DMI",
   "co": "Danmarks Meteorologiske Institut (DMI)",
   "city": "København",
@@ -2953,6 +3120,50 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til EU og internationalt samarbejde",
+  "co": "Fødevarestyrelsen",
+  "city": "Fødevarestyrelsen",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "bizdev"
+  ],
+  "famConf": "text",
+  "skills": [
+   "koordinering",
+   "sagsfordeling",
+   "EU-forhold",
+   "struktureret arbejde",
+   "serviceminded"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-13T13:01:29+00:00",
+  "deadlineAt": "2026-12-02T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper forkontoret med at arrangere delegationsbesøg og fordeler sager fra kontorets digitale postkasser til medarbejderne. Du assisterer også kontoret i EU- og internationalt arbejde på fødevare- og veterinærområdet.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172805&DepartmentId=19122&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "europastudier",
+   "jura",
+   "international business",
+   "internationale udviklingsstudier",
+   "fødevarevidenskab",
+   "veterinærmedicin",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver indsigt i EU-samarbejde, politisk styring og internationale relationer, hvilket passer til samfundsfaglige og juridiske uddannelser samt fødevare- og veterinære uddannelser.",
+  "openToAll": false,
+  "id": "x70c3a78968b6",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til forseglingsopgaver hos Fødevarestyrelsen, Aarhus Havn Aarhus",
   "co": "Fødevarestyrelsen",
   "city": "Fødevarestyrelsen",
@@ -3411,6 +3622,48 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælpere søges til spændende og alsidige arbejdsopgaver i Team Jura og Institutionsledelse (Center for Institutionsdrift og Koncernregnskab) i Styrelsen for Undervisning og Kvalitet",
+  "co": "Styrelsen for Undervisning og Kvalitet",
+  "city": "Styrelsen for Undervisning og Kvalitet i København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "education",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "forvaltningsret",
+   "sagsbehandling",
+   "skriftlig formidling",
+   "analytisk tænkning",
+   "samarbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-13T10:39:33+00:00",
+  "deadlineAt": "2026-12-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du behandler sager og henvendelser fra skoler og institutioner, blandt andet aktindsigt og rådgivning om overenskomster og ansættelsesret. Du bistår også teamets jurister med notater, forberedelse af møder og andre delopgaver.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173206&DepartmentId=19749&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "administration",
+   "samfundsvidenskab",
+   "sociologi",
+   "revisionsøkonomi"
+  ],
+  "why": "Jobbet kræver juridisk forståelse og samfundsfaglig indsigt i offentlig forvaltning og uddannelsespolitik.",
+  "openToAll": false,
+  "id": "x614eb2d085a4",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælpere til Kontor for Statens Business Intelligence i Økonomistyrelsen",
   "co": "Økonomistyrelsen",
   "city": "København",
@@ -3564,6 +3817,50 @@
   "why": "Arbejdet med samlinger, katalogisering og metadata kræver kendskab til kulturhistorisk materiale og arkivfaglige metoder, som de humanistiske uddannelser giver.",
   "openToAll": false,
   "id": "x4d9cc44ed6e7",
+  "live": true
+ },
+ {
+  "title": "Talstærk student med interesse for analyse og økonomi på beskæftigelsesområdet",
+  "co": "Beskæftigelses- og Ligestillingsministeriets departement",
+  "city": "Beskæftigelses- og Ligestillingsministeriets departement",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "bi",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "programmering i SAS eller Pyth",
+   "dataanalyse",
+   "økonomisk analyse",
+   "økonomistyring",
+   "registerdata"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-13T13:30:16+00:00",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du laver datatunge analyser og økonomiske konsekvensberegninger til den politiske proces på beskæftigelsesområdet, bl.a. ud fra registerdata. Du hjælper også med økonomistyring af ministeriets budget på ca. 300 mia. kr. og kvalitetssikring af lovforslag, aktstykker og nøgletal.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173215&DepartmentId=19045&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "samfundsøkonomi",
+   "matematik-økonomi",
+   "erhvervsøkonomi",
+   "statistik",
+   "statskundskab",
+   "politik og administration",
+   "sociologi"
+  ],
+  "why": "Stillingen kræver stærk analytisk og økonomisk indsigt i arbejdsmarkedspolitik, som passer godt til økonomiske og samfundsvidenskabelige uddannelser.",
+  "openToAll": false,
+  "id": "x54aad363e601",
   "live": true
  },
  {
@@ -5788,6 +6085,46 @@
   "live": true
  },
  {
+  "title": "Student Assistant - Digital Solutions and AI at Cellerator",
+  "co": "Novo Nordisk Fonden",
+  "city": "Lyngby, Denmark",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "software",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Copilot Studio",
+   "Power Apps",
+   "SharePoint",
+   "programmering",
+   "API og systemintegration"
+  ],
+  "industry": "Fonde",
+  "postedAt": "2026-11-13T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du bygger og vedligeholder Copilot Studio-agenter, Power Apps og SharePoint-løsninger sammen med forskere og kolleger. Du har ansvar for mindre løsninger fra kravindsamling til drift og underviser kolleger i brugen af værktøjerne.",
+  "req": null,
+  "url": "https://apply.workable.com/j/06FA0B29DD",
+  "enrichedBy": "ai",
+  "studies": [
+   "datalogi",
+   "softwareteknologi",
+   "data science",
+   "it-teknologi",
+   "matematik-datalogi"
+  ],
+  "why": "Jobbet kræver programmeringserfaring, dataforståelse og systemintegration, som især dækkes af it- og datauddannelser.",
+  "openToAll": false,
+  "id": "xaf188ad751b8",
+  "live": true
+ },
+ {
   "title": "Plejehjemmet Åløkkeparken søger både faglærte og ufaglærte tilkaldevikarer",
   "co": "Faaborg-Midtfyn Kommune",
   "city": "Åløkkevej 4, 5672 Broby",
@@ -6145,6 +6482,49 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=149&ProjectId=176030&DepartmentId=10606&MediaId=5",
   "enrichedBy": "regler",
   "id": "xd18595b2d307",
+  "live": true
+ },
+ {
+  "openToAll": false,
+  "catFam": true,
+  "title": "Proaktiv praktikant med blik for detaljer til Klima-, Energi- og Forsyningsministeriets elkontor",
+  "co": "Klima-, Energi- og Forsyningsministeriet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "famConf": "title",
+  "skills": [
+   "detaljeorientering",
+   "proaktivitet",
+   "klar skriftlig formulering",
+   "koordinering",
+   "dokumentation"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-30T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du hjælper med at strukturere sager, indsamle information og kvalitetssikre dokumenter i større projektforløb om rammerne for elsektoren og ministeriets ejerskab af Energinet. Du samarbejder med kolleger i koncernøkonomikontoret og andre kontorer.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3159785/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "jura",
+   "offentlig administration",
+   "økonomi",
+   "erhvervsøkonomi",
+   "cand.polit"
+  ],
+  "why": "Arbejdet kræver forståelse for regulering, økonomi og politiske processer, som de nævnte uddannelser giver.",
+  "id": "x5eabdd657c69",
   "live": true
  },
  {
@@ -7665,6 +8045,213 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x9d7541ae1e2c",
+  "live": true
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business.",
+  "catFam": true,
+  "title": "Student Assistant | Careers at Weld",
+  "co": "Weld",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "hr",
+  "sec": [
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "digital marketing",
+   "CRM",
+   "dataanalyse",
+   "budgettering og forecasting",
+   "kundefeedback"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du hjælper med indhold, digitale marketingstrategier og optimering af brugerrejser samt med leads og CRM. Du indsamler også kundefeedback og er med til at analysere budget og forecasts.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3159754/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x326c2abf9e7d",
+  "live": true
+ },
+ {
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation.",
+  "catFam": true,
+  "title": "praktikant til kommunikation og udvikling",
+  "co": "Frivilligcenter Aarhus",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 25,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "hjemmesider",
+   "sociale medier",
+   "layout",
+   "indholdsproduktion",
+   "formidling"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du skriver og udvikler indhold til Frivilligcentrets hjemmeside, sociale medier og en ny digital platform for samarbejde mellem erhvervsliv og foreningsliv. Du laver også layout af kursuskatalog og årsberetning og implementerer den nye visuelle identitet.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3159757/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x43669220791b",
+  "live": true
+ },
+ {
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "logistik",
+   "produktion",
+   "supply chain",
+   "transport",
+   "global business",
+   "operations",
+   "elektro",
+   "elektronik",
+   "elektroteknologi",
+   "telekommunikation"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, teknik og teknologi, produktion og logistik.",
+  "catFam": true,
+  "title": "Internship – Software, Power Electronics & Robotics (Spring 2027) — Careers — Acodyne",
+  "co": "Acodyne ApS",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "engineering",
+  "sec": [
+   "software",
+   "legal"
+  ],
+  "famConf": "title",
+  "skills": [
+   "C/C++",
+   "Python",
+   "embedded firmware",
+   "kredsløbsdesign",
+   "power electronics"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-14T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du udvikler og tester firmware og software til flyve- og jordsystemer og arbejder med højeffektelektronik som strømfordeling, batterisystemer og motordrev. Du integrerer sensorer og aktuatorer og fejlfinder hardware på labbænken og under flyvetest.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3159769/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "xdd73b6638c00",
+  "live": true
+ },
+ {
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, sprog og kommunikation, humaniora.",
+  "catFam": true,
+  "title": "Studiejob for nye studerende: Bliv vores faste hjælp på kontoret tirsdag og onsdag",
+  "co": "CWN ApS",
+  "city": "Søborg",
+  "region": "kbh",
+  "hMin": 6,
+  "hMax": 6,
+  "danish": "plus",
+  "fam": "operations",
+  "sec": [
+   "customer"
+  ],
+  "famConf": "title",
+  "skills": [
+   "forplejning",
+   "servicering af kaffebar",
+   "kørekort B",
+   "fotografering",
+   "mødestabilitet"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2027-01-01T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du anretter frokost og servicerer mødeforplejning og kaffebar tirsdag og onsdag, og du modtager varer og hjælper med opvask og oprydning på kontoret. Lejlighedsvis kører du til eksterne lokationer og tager billeder til projekter og sociale medier.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3159779/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": true,
+  "id": "xa9e20b7a324b",
   "live": true
  },
  {

@@ -54661,5 +54661,415 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for administration, naturvidenskab, fødevarer og veterinær.",
   "openToAll": false
+ },
+ "40e9fbc1c21e872e684c5d74f15ad185270decd4": {
+  "fam": "research",
+  "sec": [
+   "engineering",
+   "sustain"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "fermentering",
+   "mikrobiologi",
+   "bioreaktorer",
+   "adaptive laboratory evolution",
+   "dataanalyse"
+  ],
+  "blurb": "Du betjener og udvider en pioreaktor-platform, hvor bakterier omdanner gasser til kemikalier. Du kører fermenteringsforsøg, tester og karakteriserer stammer og dokumenterer resultaterne i rapporter og labbøger.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "bioteknologi",
+   "mikrobiologi",
+   "biokemisk teknologi",
+   "biologi",
+   "biokemi",
+   "kemiteknologi"
+  ],
+  "why": "Arbejdet kræver viden om mikroorganismer, fermentering og bioprocesser, som disse uddannelser giver.",
+  "openToAll": false
+ },
+ "7a565c6740a9db3f5e6f6e51c5dc6b120eb3f1fe": {
+  "fam": "engineering",
+  "sec": [
+   "product",
+   "operations"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "testprotokoller",
+   "dokumentation",
+   "detaljeorientering",
+   "ansvarlighed",
+   "teknologisk nysgerrighed"
+  ],
+  "blurb": "Du optager kampe med Veos nye kamera under virkelige forhold og gennemfører tests efter en testprotokol. Du dokumenterer præcist, hvad der sker, så ingeniørerne kan finde fejl, der ikke kan ses på et testbord.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "elektronik",
+   "datalogi",
+   "maskinteknik",
+   "fysik",
+   "medievidenskab",
+   "idrætsvidenskab"
+  ],
+  "why": "Jobbet kræver teknisk nysgerrighed og systematisk testarbejde, som er centralt i elektronik, datalogi og fysik.",
+  "openToAll": false
+ },
+ "31e0ab30f6570c5e01f4ec97e56d4a68d49723cd": {
+  "fam": "public",
+  "sec": [
+   "finance",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "detaljeorientering",
+   "proaktivitet",
+   "klar skriftlig formidling",
+   "koordinering",
+   "dokumentation"
+  ],
+  "blurb": "Du hjælper med struktur, koordinering, informationsindsamling og kvalitetssikring i et kontor, der arbejder med rammerne for elsektoren og ministeriets ejerskab af Energinet. Du følger større projektforløb tæt sammen med kolleger i koncernøkonomikontoret og andre kontorer.",
+  "deadlineAt": "2026-11-30T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "jura",
+   "offentlig administration",
+   "økonomi",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver forståelse for politiske og administrative processer samt økonomi og regulering, som disse uddannelser dækker.",
+  "openToAll": false
+ },
+ "b17612e34c1afeb0d885a0f4d27ac046a748bb2d": {
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "bizdev"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "koordinering",
+   "sagsfordeling",
+   "EU-forhold",
+   "struktureret arbejde",
+   "serviceminded"
+  ],
+  "blurb": "Du hjælper forkontoret med at arrangere delegationsbesøg og fordeler sager fra kontorets digitale postkasser til medarbejderne. Du assisterer også kontoret i EU- og internationalt arbejde på fødevare- og veterinærområdet.",
+  "deadlineAt": "2026-12-02T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "europastudier",
+   "jura",
+   "international business",
+   "internationale udviklingsstudier",
+   "fødevarevidenskab",
+   "veterinærmedicin",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver indsigt i EU-samarbejde, politisk styring og internationale relationer, hvilket passer til samfundsfaglige og juridiske uddannelser samt fødevare- og veterinære uddannelser.",
+  "openToAll": false
+ },
+ "59a69eaeb9466d2d632b3e1a2c989ba0ce79f520": {
+  "fam": "legal",
+  "sec": [
+   "education",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "forvaltningsret",
+   "sagsbehandling",
+   "skriftlig formidling",
+   "analytisk tænkning",
+   "samarbejde"
+  ],
+  "blurb": "Du behandler sager og henvendelser fra skoler og institutioner, blandt andet aktindsigt og rådgivning om overenskomster og ansættelsesret. Du bistår også teamets jurister med notater, forberedelse af møder og andre delopgaver.",
+  "deadlineAt": "2026-12-01T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "administration",
+   "samfundsvidenskab",
+   "sociologi",
+   "revisionsøkonomi"
+  ],
+  "why": "Jobbet kræver juridisk forståelse og samfundsfaglig indsigt i offentlig forvaltning og uddannelsespolitik.",
+  "openToAll": false
+ },
+ "94cc50bd9f817c8ba8a96dcce37b8d491b3b8bcc": {
+  "fam": "finance",
+  "sec": [
+   "bi",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "programmering i SAS eller Pyth",
+   "dataanalyse",
+   "økonomisk analyse",
+   "økonomistyring",
+   "registerdata"
+  ],
+  "blurb": "Du laver datatunge analyser og økonomiske konsekvensberegninger til den politiske proces på beskæftigelsesområdet, bl.a. ud fra registerdata. Du hjælper også med økonomistyring af ministeriets budget på ca. 300 mia. kr. og kvalitetssikring af lovforslag, aktstykker og nøgletal.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "samfundsøkonomi",
+   "matematik-økonomi",
+   "erhvervsøkonomi",
+   "statistik",
+   "statskundskab",
+   "politik og administration",
+   "sociologi"
+  ],
+  "why": "Stillingen kræver stærk analytisk og økonomisk indsigt i arbejdsmarkedspolitik, som passer godt til økonomiske og samfundsvidenskabelige uddannelser.",
+  "openToAll": false
+ },
+ "944a96e9f7bfaa538fa702eb68b6af6383aff296": {
+  "fam": "pmo",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Tilmeld dig JobAgent ledige stillinger Dansk English Log ind Min profil Min profil Forskerstuderende til projekt om digitale investeringsplatforme, køn og finansiel lighed søges til Erhvervsakademi København Vil du…",
+  "deadlineAt": null,
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "115246297d68183b0e5bdcf197db950875b02dc8": {
+  "fam": "software",
+  "sec": [
+   "operations"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Copilot Studio",
+   "Power Apps",
+   "SharePoint",
+   "programmering",
+   "API og systemintegration"
+  ],
+  "blurb": "Du bygger og vedligeholder Copilot Studio-agenter, Power Apps og SharePoint-løsninger sammen med forskere og kolleger. Du har ansvar for mindre løsninger fra kravindsamling til drift og underviser kolleger i brugen af værktøjerne.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "datalogi",
+   "softwareteknologi",
+   "data science",
+   "it-teknologi",
+   "matematik-datalogi"
+  ],
+  "why": "Jobbet kræver programmeringserfaring, dataforståelse og systemintegration, som især dækkes af it- og datauddannelser.",
+  "openToAll": false
+ },
+ "96931e671a19938dafdcde7f8bcfa1b233e3bc98": {
+  "fam": "public",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "detaljeorientering",
+   "proaktivitet",
+   "klar skriftlig formulering",
+   "koordinering",
+   "dokumentation"
+  ],
+  "blurb": "Du hjælper med at strukturere sager, indsamle information og kvalitetssikre dokumenter i større projektforløb om rammerne for elsektoren og ministeriets ejerskab af Energinet. Du samarbejder med kolleger i koncernøkonomikontoret og andre kontorer.",
+  "deadlineAt": "2026-11-30T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "jura",
+   "offentlig administration",
+   "økonomi",
+   "erhvervsøkonomi",
+   "cand.polit"
+  ],
+  "why": "Arbejdet kræver forståelse for regulering, økonomi og politiske processer, som de nævnte uddannelser giver.",
+  "openToAll": false
+ },
+ "fba5c72d798c57e7435c3890ba8402d71a95407c": {
+  "fam": "hr",
+  "sec": [
+   "marketing"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "digital marketing",
+   "CRM",
+   "dataanalyse",
+   "budgettering og forecasting",
+   "kundefeedback"
+  ],
+  "blurb": "Du hjælper med indhold, digitale marketingstrategier og optimering af brugerrejser samt med leads og CRM. Du indsamler også kundefeedback og er med til at analysere budget og forecasts.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business.",
+  "openToAll": false
+ },
+ "3e63814721dfea4ac93be4d22ec1087c9ae9dca8": {
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 25,
+  "hMax": 37,
+  "skills": [
+   "hjemmesider",
+   "sociale medier",
+   "layout",
+   "indholdsproduktion",
+   "formidling"
+  ],
+  "blurb": "Du skriver og udvikler indhold til Frivilligcentrets hjemmeside, sociale medier og en ny digital platform for samarbejde mellem erhvervsliv og foreningsliv. Du laver også layout af kursuskatalog og årsberetning og implementerer den nye visuelle identitet.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation.",
+  "openToAll": false
+ },
+ "8e6bb51bd9188eaabdeafac5c26e4f89e7a53376": {
+  "fam": "engineering",
+  "sec": [
+   "software",
+   "legal"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "C/C++",
+   "Python",
+   "embedded firmware",
+   "kredsløbsdesign",
+   "power electronics"
+  ],
+  "blurb": "Du udvikler og tester firmware og software til flyve- og jordsystemer og arbejder med højeffektelektronik som strømfordeling, batterisystemer og motordrev. Du integrerer sensorer og aktuatorer og fejlfinder hardware på labbænken og under flyvetest.",
+  "deadlineAt": "2026-11-14T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "logistik",
+   "produktion",
+   "supply chain",
+   "transport",
+   "global business",
+   "operations",
+   "elektro",
+   "elektronik",
+   "elektroteknologi",
+   "telekommunikation"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, teknik og teknologi, produktion og logistik.",
+  "openToAll": false
+ },
+ "573e1a0832de2558a2839e264ed2bc078de26223": {
+  "fam": "operations",
+  "sec": [
+   "customer"
+  ],
+  "danish": "plus",
+  "hMin": 6,
+  "hMax": 6,
+  "skills": [
+   "forplejning",
+   "servicering af kaffebar",
+   "kørekort B",
+   "fotografering",
+   "mødestabilitet"
+  ],
+  "blurb": "Du anretter frokost og servicerer mødeforplejning og kaffebar tirsdag og onsdag, og du modtager varer og hjælper med opvask og oprydning på kontoret. Lejlighedsvis kører du til eksterne lokationer og tager billeder til projekter og sociale medier.",
+  "deadlineAt": "2027-01-01T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, sprog og kommunikation, humaniora.",
+  "openToAll": true
  }
 }
