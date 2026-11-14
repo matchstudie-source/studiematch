@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-14 08:25 UTC
+# Jobindsamling 2026-11-14 18:02 UTC
 
-1161 studiejob gemt. AI-kald i denne kørsel: 32.
+1161 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,12 +32,12 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 12 | 0 |  |
-| Region Syddanmark | hrmanager | 327 | 4 |  |
+| Region Syddanmark | hrmanager | 326 | 4 |  |
 | Novo Nordisk | rmk | 5 | 3 |  |
 | Novonesis | workday | 6 | 4 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
 | Demant | rmk | 1 | 0 |  |
-| GN Group | workday | 0 | 0 | fejl: JSONDecodeError |
+| GN Group | workday | 0 | 0 |  |
 | Bavarian Nordic | workday | 0 | 0 |  |
 | ALK | teamtailor | 16 | 0 |  |
 | Vestas | rmk | 3 | 2 |  |
@@ -49,14 +49,14 @@
 | Danish Crown | rmk | 1 | 0 |  |
 | Royal Unibrew | sitemap | 0 | 0 |  |
 | Grundfos | sitemap | 0 | 0 |  |
-| FLSmidth | workday | 0 | 0 | fejl: JSONDecodeError |
+| FLSmidth | workday | 0 | 0 |  |
 | NKT | sitemap | 0 | 0 |  |
-| Velux | workday | 0 | 0 | fejl: JSONDecodeError |
+| Velux | workday | 0 | 0 |  |
 | Bang & Olufsen | sitemap | 0 | 0 |  |
 | Matas | emply | 3 | 3 | 20 opslag på joblisten, 3 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 |  |
 | Statslige arbejdsgivere | hrmanager | 492 | 70 |  |
-| Saxo Bank | workday | 0 | 0 | fejl: JSONDecodeError |
+| Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 19 | 0 |  |
 | Pleo | ashby | 35 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
@@ -150,4 +150,4 @@
 | Kammeradvokaten | emply | 1 | 1 | 9 opslag på joblisten, 1 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |
 | Accura | hrmanager | 4 | 1 |  |
-| StuderendeOnline.dk | studerendeonline | 1085 | 1018 | 1174 af 1174 opslag hentet, 1085 er studiejob eller praktik i Danmark |
+| StuderendeOnline.dk | studerendeonline | 1085 | 1016 | 1174 af 1174 opslag hentet, 1085 er studiejob eller praktik i Danmark |
