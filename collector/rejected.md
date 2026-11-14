@@ -17,8 +17,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse. | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling i Intern Medicin – Medicinsk Afdeling, Vejle Sygehus | ikke et studiejob |
-| Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Sønderborg i specialerne endokrinologi, nefrologi, hæmatologi og lungemedicin | ikke et studiejob |
-| Region Syddanmark | Introduktionsstilling i intern medicin ved Medicinske Sygdomme, Sygehus Sønderjylland, Aabenraa i specialerne geriatri og gastroenterologi | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
 | Region Syddanmark | Læge eller speciallæge i psykiatri, intern medicin eller almen medicin til Lokalpsykiatri Kolding | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger en projektleder til internationale projekter | ikke et studiejob |
@@ -51,7 +49,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Hovedstadsområdet og Sjælland) | ikke et studiejob |
-| StuderendeOnline.dk | Student Assistant, Digital Development - Viby | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
