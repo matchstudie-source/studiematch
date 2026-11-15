@@ -49,6 +49,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Hovedstadsområdet og Sjælland) | ikke et studiejob |
+| StuderendeOnline.dk | Student Assistant, Digital Development - Viby | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |

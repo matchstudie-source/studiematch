@@ -56289,5 +56289,103 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, samfundsvidenskab.",
   "openToAll": false
+ },
+ "61b244492287a031a61b395b9a49d12b7e43911e": {
+  "fam": "engineering",
+  "sec": [
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "produktsikkerhed",
+   "compliance",
+   "risikovurdering",
+   "leverandøropfølgning",
+   "bæredygtighed"
+  ],
+  "blurb": "Du arbejder med leverandøropfølgning, compliance-tjek og dokumentation samt deltager i risikovurderinger af produkter og leverandører. Du hjælper også med at implementere ny lovgivning om bæredygtighed og produktsikkerhed i konkrete løsninger.",
+  "deadlineAt": "2026-11-20T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab",
+   "ledelse",
+   "organisation",
+   "management",
+   "erhvervsøkonomi",
+   "cand.merc"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for samfundsvidenskab, organisation og ledelse.",
+  "openToAll": false
+ },
+ "8da570d595c70cde83fe34748b8c96d871998028": {
+  "fam": "research",
+  "sec": [
+   "education"
+  ],
+  "danish": "no",
+  "hMin": 6,
+  "hMax": 6,
+  "skills": [
+   "R",
+   "Python",
+   "dataanalyse",
+   "datavisualisering",
+   "rekruttering af deltagere"
+  ],
+  "blurb": "Du hjælper med at rekruttere deltagere til et forskningsprojekt om forældreskab og barselsorlov og analyserer data. Du laver også visualiseringer af resultaterne og bidrager til formidlingen af forskningen.",
+  "deadlineAt": "2026-11-26T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kognitionsvidenskab",
+   "psykologi",
+   "statistik",
+   "datalogi",
+   "sociologi"
+  ],
+  "why": "Jobbet kræver dataanalyse i R og Python samt forståelse for kognitiv og psykologisk forskning med deltagere, hvilket passer til kognitionsvidenskab og psykologi.",
+  "openToAll": false
+ },
+ "280134dfb040cb3a689eafaa08dd5edbddc0781e": {
+  "fam": "health",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "PowerPoint",
+   "præsentation",
+   "engelsk kommunikation",
+   "koordinering",
+   "selvstændighed"
+  ],
+  "blurb": "Du laver og forbedrer PowerPoint-præsentationer og kommunikationsmateriale, støtter workshops og koordinerer løbende aktiviteter i business support. Du hjælper også med at opbygge et netværk for studentermedhjælpere og praktikanter.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "ledelse",
+   "organisation",
+   "management",
+   "erhvervsøkonomi",
+   "cand.merc"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, organisation og ledelse.",
+  "openToAll": false
  }
 }

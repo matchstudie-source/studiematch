@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-14 18:02 UTC
+# Jobindsamling 2026-11-15 08:27 UTC
 
-1161 studiejob gemt. AI-kald i denne kørsel: 0.
+1110 studiejob gemt. AI-kald i denne kørsel: 3.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,14 +32,14 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 12 | 0 |  |
-| Region Syddanmark | hrmanager | 326 | 4 |  |
+| Region Syddanmark | hrmanager | 319 | 4 |  |
 | Novo Nordisk | rmk | 5 | 3 |  |
 | Novonesis | workday | 6 | 4 |  |
 | LEO Pharma | rmk | 1 | 0 |  |
 | Demant | rmk | 1 | 0 |  |
 | GN Group | workday | 0 | 0 |  |
 | Bavarian Nordic | workday | 0 | 0 |  |
-| ALK | teamtailor | 16 | 0 |  |
+| ALK | teamtailor | 17 | 0 |  |
 | Vestas | rmk | 3 | 2 |  |
 | Energinet | hrmanager | 29 | 3 |  |
 | Norlys | sitemap | 2 | 2 |  |
@@ -55,7 +55,7 @@
 | Bang & Olufsen | sitemap | 0 | 0 |  |
 | Matas | emply | 3 | 3 | 20 opslag på joblisten, 3 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 |  |
-| Statslige arbejdsgivere | hrmanager | 492 | 70 |  |
+| Statslige arbejdsgivere | hrmanager | 493 | 70 |  |
 | Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 19 | 0 |  |
 | Pleo | ashby | 35 | 0 |  |
@@ -79,12 +79,12 @@
 | 3 Danmark | teamtailor | 19 | 1 |  |
 | ISS | rmk | 1 | 0 |  |
 | HK | hrmanager | 11 | 1 |  |
-| Aarhus Kommune | hrmanager | 259 | 8 |  |
+| Aarhus Kommune | hrmanager | 255 | 8 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 5 | 4 | 144 opslag på joblisten, 5 ligner studiejob |
+| Aalborg Kommune | emply | 4 | 3 | 142 opslag på joblisten, 4 ligner studiejob |
 | Frederiksberg Kommune | emply | 3 | 3 | 62 opslag på joblisten, 3 ligner studiejob |
 | Hvidovre Kommune | hrmanager | 35 | 0 |  |
-| Brøndby Kommune | emply | 1 | 1 | 50 opslag på joblisten, 1 ligner studiejob |
+| Brøndby Kommune | emply | 1 | 1 | 49 opslag på joblisten, 1 ligner studiejob |
 | Næstved Kommune | emply | 0 | 0 | 85 opslag på joblisten, 0 ligner studiejob |
 | Holbæk Kommune | emply | 0 | 0 | ingen jobliste fundet |
 | Svendborg Kommune | emply | 1 | 0 | 52 opslag på joblisten, 1 ligner studiejob |
@@ -107,7 +107,7 @@
 | DSV | rmk | 1 | 0 |  |
 | Coloplast | rmk | 3 | 2 |  |
 | Ascendis Pharma | workable | 23 | 1 |  |
-| Ballerup Kommune | emply | 1 | 1 | 53 opslag på joblisten, 1 ligner studiejob |
+| Ballerup Kommune | emply | 1 | 1 | 52 opslag på joblisten, 1 ligner studiejob |
 | Novo Nordisk Fonden | workable | 7 | 1 |  |
 | Albertslund Kommune | emply | 0 | 0 | 36 opslag på joblisten, 0 ligner studiejob |
 | Billund Kommune | hrmanager | 34 | 0 |  |
@@ -134,7 +134,7 @@
 | Stevns Kommune | emply | 0 | 0 | 29 opslag på joblisten, 0 ligner studiejob |
 | Struer Kommune | emply | 0 | 0 | 18 opslag på joblisten, 0 ligner studiejob |
 | Syddjurs Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
-| Tønder Kommune | emply | 0 | 0 | 40 opslag på joblisten, 0 ligner studiejob |
+| Tønder Kommune | emply | 0 | 0 | 39 opslag på joblisten, 0 ligner studiejob |
 | Varde Kommune | emply | 1 | 1 | 52 opslag på joblisten, 1 ligner studiejob |
 | Tandlægen.dk | hrmanager | 11 | 0 |  |
 | Capio Danmark | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
@@ -150,4 +150,4 @@
 | Kammeradvokaten | emply | 1 | 1 | 9 opslag på joblisten, 1 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |
 | Accura | hrmanager | 4 | 1 |  |
-| StuderendeOnline.dk | studerendeonline | 1085 | 1016 | 1174 af 1174 opslag hentet, 1085 er studiejob eller praktik i Danmark |
+| StuderendeOnline.dk | studerendeonline | 1087 | 1017 | 1176 af 1176 opslag hentet, 1087 er studiejob eller praktik i Danmark |
