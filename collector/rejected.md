@@ -44,7 +44,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Københavns Professionshøjskole | Studiementorer til ergoterapeutuddannelsen | ikke et studiejob |
 | Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
-| Statslige arbejdsgivere | Centerleder for studiestøtte på SOSU H | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
