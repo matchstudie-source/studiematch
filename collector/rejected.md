@@ -36,7 +36,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | NIRAS | Unsolicited intern applications | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
-| Aalborg Kommune | Uddannelsespraktik, Uddannelseshuset, Job og Social, Aalborg Kommune | ikke et studiejob |
 | Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |

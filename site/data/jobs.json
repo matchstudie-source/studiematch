@@ -1271,35 +1271,6 @@
   "live": true
  },
  {
-  "title": "Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.)",
-  "co": "Matas",
-  "city": "Allerød",
-  "region": "nsj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "operations",
-  "sec": [
-   "marketing",
-   "social"
-  ],
-  "famConf": "text",
-  "skills": [
-   "R",
-   "Sociale medier"
-  ],
-  "industry": "Detailhandel",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.) Har du interesse…",
-  "req": null,
-  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-some-meta-community-management-4-6-mdr/ilt9mi",
-  "enrichedBy": "regler",
-  "id": "x6a4f7e879fef",
-  "live": true
- },
- {
   "title": "Ambitiøs og engageret studentermedhjælper til Minister- og Ledelsessekretariatet i Kulturministeriets departement",
   "co": "Kulturministeriets departement",
   "city": "Nybrogade 2, 1203 København K",
@@ -2646,35 +2617,36 @@
   "danish": "required",
   "fam": "engineering",
   "sec": [
-   "bi",
-   "software"
+   "datasci",
+   "operations"
   ],
   "famConf": "text",
   "skills": [
    "kvalitetskontrol",
-   "dataanalyse",
-   "bygningsmodeller",
+   "datastrukturering",
    "dokumentation",
+   "digitale bygningsmodeller",
    "præsentation"
   ],
   "industry": "Offentlig",
   "postedAt": "2026-11-16T08:52:15+00:00",
   "deadlineAt": "2026-12-07T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du samler, strukturerer og kvalitetstjekker projekt- og bygningsdata og gennemgår digitale afleveringer for mangler i modeller og dokumentation. Du opdaterer også skabeloner og tjeklister og laver mindre analyser for IKT-teamet.",
+  "blurb": "Du samler, strukturerer og kvalitetstjekker projekt- og bygningsdata og gennemgår digitale afleveringer for mangler. Du opdaterer skabeloner og tjeklister og hjælper med at kortlægge, hvordan information flyder fra byggeprojekt til drift.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171714&DepartmentId=19130&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
    "bygningskonstruktør",
    "bygningsingeniør",
+   "byggeteknologi",
    "civilingeniør i byggeri",
-   "byggeledelse",
    "arkitektur",
    "ingeniør",
+   "informationsteknologi",
    "datalogi"
   ],
-  "why": "Jobbet kræver forståelse for byggeprocesser og tekniske bygningsmodeller, som uddannelserne i byggeri og ingeniørfag giver.",
+  "why": "Jobbet kræver teknisk forståelse af byggeri, dokumentation og data, som ingeniør- og bygningsuddannelserne giver.",
   "openToAll": false,
   "id": "x9cf1768514f7",
   "live": true
@@ -4365,32 +4337,6 @@
   "live": true
  },
  {
-  "title": "Er du pædagogstuderende? Få et studiejob med faglig udvikling, ansvar og praksisnær erfaring",
-  "co": "Aalborg Kommune",
-  "city": "Aalborg",
-  "region": "nj",
-  "hMin": 8,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "education",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Løn",
-   "R"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Log ind Min profil Min profil Er du pædagogstuderende?",
-  "req": "paedagog",
-  "url": "https://aalborg.career.emply.com/ad/er-du-paedagogstuderende-fa-et-studiejob-med-faglig-udvikling-ansvar-og-praksisn/u1ci6i",
-  "enrichedBy": "regler",
-  "id": "x78e1a6086590",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til grønne events, kommunikation og koordinering",
   "co": "Frederiksberg Kommune",
   "city": "Frederiksberg",
@@ -4699,22 +4645,21 @@
   "danish": "required",
   "fam": "education",
   "sec": [
-   "social",
-   "health"
+   "social"
   ],
   "famConf": "text",
   "skills": [
-   "empati",
    "samtaleteknik",
+   "vejledning",
+   "empati",
    "facilitering",
-   "formidling",
-   "dansk og engelsk"
+   "formidling af komplekse emner"
   ],
   "industry": "Uddannelse og forskning",
   "postedAt": "2026-11-16T08:10:41+00:00",
   "deadlineAt": "2026-11-27T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du vejleder studerende på RUC om studievalg, planlægning og trivsel gennem samtaler og enkelte oplæg eller workshops. Du har en fast vagt om ugen og deltager desuden i møder og arrangementer, og du bliver oplært i samtaleteknik og studieadministration.",
+  "blurb": "Du vejleder studerende i uddannelsesplanlægning og studievalg og taler med studerende, der oplever tvivl, stress eller mistrivsel. Du holder desuden oplæg og deltager i vejledningsarrangementer.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148354&DepartmentId=18977&MediaId=5",
   "enrichedBy": "ai",
@@ -4724,11 +4669,10 @@
    "socialt arbejde",
    "sociologi",
    "uddannelsesvidenskab",
-   "kommunikation",
-   "filosofi"
+   "læringsvidenskab"
   ],
-  "why": "Jobbet handler om at vejlede studerende i studievalg og trivsel, hvilket kræver indsigt i menneskers udvikling, samtale og formidling, som uddannelser i psykologi, pædagogik og sociologi giver.",
-  "openToAll": false,
+  "why": "Studievejledning kræver indsigt i læring, trivsel og samtaler med studerende, og det er kernen i uddannelser som psykologi, pædagogik og socialt arbejde.",
+  "openToAll": true,
   "id": "x910cf2854d47",
   "live": true
  },
@@ -5406,31 +5350,31 @@
   ],
   "famConf": "title",
   "skills": [
-   "LinkedIn",
-   "indholdsproduktion",
+   "LinkedIn-indhold",
    "engelsk skrivning",
    "eventplanlægning",
+   "projektkoordinering",
    "AI-værktøjer"
   ],
   "industry": "Fonde",
   "postedAt": "2026-11-16T00:00:00+00:00",
   "deadlineAt": null,
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du hjælper med at planlægge og producere indhold til Cellerators LinkedIn-kanal og omsætter videnskabelige emner til forståelige opslag. Du er også med til at planlægge, koordinere og følge op på events og projekter.",
+  "blurb": "Du hjælper med at planlægge og publicere indhold på LinkedIn og finde historier om Cellerator og cellebehandlinger. Du er også med til at planlægge, koordinere og følge op på events og projekter.",
   "req": null,
   "url": "https://apply.workable.com/j/D55C015E75",
   "enrichedBy": "ai",
   "studies": [
+   "bioteknologi",
+   "biologi",
+   "medicin",
+   "biomedicin",
    "kommunikation",
    "marketing",
-   "biotek",
-   "biologi",
-   "life science",
-   "medicin",
    "erhvervsøkonomi",
-   "ingeniør"
+   "ingeniørvidenskab"
   ],
-  "why": "Jobbet kombinerer kommunikation og indhold med en naturvidenskabelig kontekst, så både kommunikations-, marketing- og biotekstuderende kan bruge deres faglighed.",
+  "why": "Jobbet kræver interesse for kommunikation og en forståelse af biovidenskab, og det kombinerer faglighed med SoMe og projektarbejde.",
   "openToAll": false,
   "id": "xd9fe00f2e4d5",
   "live": true
@@ -5650,29 +5594,6 @@
   "url": "https://karriere.danskespil.dk/jobs/8656436-studentermedhjaelper-til-gdpr-compliance-og-informationssikkerhed",
   "enrichedBy": "regler",
   "id": "xb1571386d456",
-  "live": true
- },
- {
-  "title": "Juridiske studenter til København",
-  "co": "Kammeradvokaten",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "legal",
-  "sec": [],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Advokat",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Ledige stillinger Dansk English Log ind Min profil Min profil Juridiske studenter til København Er du jura- eller erhvervsjurastuderende og klar til at udfordre og udvikle dine juridiske evner i praksis?",
-  "req": "jura",
-  "url": "https://poulschmith.career.emply.com/da/ad/juridiske-studenter-til-kobenhavn/c7qhao",
-  "enrichedBy": "regler",
-  "id": "x5d7364b800b8",
   "live": true
  },
  {
