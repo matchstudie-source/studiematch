@@ -56387,5 +56387,142 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, organisation og ledelse.",
   "openToAll": false
+ },
+ "b477fabcd15c71b4c7771f75ef27af9123bc613c": {
+  "fam": "strategy",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Løn"
+  ],
+  "blurb": "Dine opgaver og kompetencer Som efterforsker vil du primært arbejde med efterforskning af straffesager og udrykningssager. Arbejde med adfærdsklagesager, f.eks. afhøringer, vil også kunne være en del af dine opgaver.",
+  "deadlineAt": "2026-12-04T23:59:59+00:00",
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "aabc8afca8aa1fb71c41d44f56ba003bd5fe4532": {
+  "fam": "engineering",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "kvalitetskontrol",
+   "dataanalyse",
+   "bygningsmodeller",
+   "dokumentation",
+   "præsentation"
+  ],
+  "blurb": "Du samler, strukturerer og kvalitetstjekker projekt- og bygningsdata og gennemgår digitale afleveringer for mangler i modeller og dokumentation. Du opdaterer også skabeloner og tjeklister og laver mindre analyser for IKT-teamet.",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "bygningskonstruktør",
+   "bygningsingeniør",
+   "civilingeniør i byggeri",
+   "byggeledelse",
+   "arkitektur",
+   "ingeniør",
+   "datalogi"
+  ],
+  "why": "Jobbet kræver forståelse for byggeprocesser og tekniske bygningsmodeller, som uddannelserne i byggeri og ingeniørfag giver.",
+  "openToAll": false
+ },
+ "6b8c58a363661375e824370807b217f10da03ab3": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Skriver du, så både hjerne og hjerte bliver ramt? Finder du energi i at udvikle kanaler og formidlingsformer og skabe en rød tråd i fortællinger fra strategi til hverdag?",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "46b61d34b5429c3e9b0a3e288c18b2f5ea1d3ce1": {
+  "fam": "education",
+  "sec": [
+   "social",
+   "health"
+  ],
+  "danish": "required",
+  "hMin": 7,
+  "hMax": 8,
+  "skills": [
+   "empati",
+   "samtaleteknik",
+   "facilitering",
+   "formidling",
+   "dansk og engelsk"
+  ],
+  "blurb": "Du vejleder studerende på RUC om studievalg, planlægning og trivsel gennem samtaler og enkelte oplæg eller workshops. Du har en fast vagt om ugen og deltager desuden i møder og arrangementer, og du bliver oplært i samtaleteknik og studieadministration.",
+  "deadlineAt": "2026-11-27T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "psykologi",
+   "pædagogik",
+   "socialt arbejde",
+   "sociologi",
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "filosofi"
+  ],
+  "why": "Jobbet handler om at vejlede studerende i studievalg og trivsel, hvilket kræver indsigt i menneskers udvikling, samtale og formidling, som uddannelser i psykologi, pædagogik og sociologi giver.",
+  "openToAll": false
+ },
+ "a1f91bd0b60486c53679e71989fbad8440fab7c2": {
+  "fam": "hr",
+  "sec": [],
+  "danish": "required",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [
+   "R",
+   "Rekruttering"
+  ],
+  "blurb": "Ledige stillinger Persondatapolitik Log ind Min profil Min profil VIAs søger medarbejder til onboarding og tilknytning af internationale studerende Vil du være med til at sikre internationale studerende succes på deres…",
+  "deadlineAt": null,
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "5c82ceb5f618371e26a3dde0b26069452d987034": {
+  "fam": "marketing",
+  "sec": [
+   "bizdev",
+   "pmo"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "LinkedIn",
+   "indholdsproduktion",
+   "engelsk skrivning",
+   "eventplanlægning",
+   "AI-værktøjer"
+  ],
+  "blurb": "Du hjælper med at planlægge og producere indhold til Cellerators LinkedIn-kanal og omsætter videnskabelige emner til forståelige opslag. Du er også med til at planlægge, koordinere og følge op på events og projekter.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "marketing",
+   "biotek",
+   "biologi",
+   "life science",
+   "medicin",
+   "erhvervsøkonomi",
+   "ingeniør"
+  ],
+  "why": "Jobbet kombinerer kommunikation og indhold med en naturvidenskabelig kontekst, så både kommunikations-, marketing- og biotekstuderende kan bruge deres faglighed.",
+  "openToAll": false
  }
 }
