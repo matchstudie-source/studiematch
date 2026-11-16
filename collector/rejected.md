@@ -14,7 +14,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Vilnius | udlandet: Vilnius |
 | Devoteam | Creative Marketing Intern | udlandet: Stockholm |
 | Devoteam | Business Development Intern | udlandet: Stockholm |
-| Devoteam | BDR Intern, N Platform | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse. | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
@@ -30,6 +29,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
+| Lunar | Junior Account Executive - Student Worker | udlandet: Stockholm |
 | ATP | Medarbejdere til sagsbehandling i internationale sager om familieydelse | ikke et studiejob |
 | ATP | Sagsbehandler til international kontrol (projektansættelse – 1 år) | ikke et studiejob |
 | Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |
@@ -42,9 +42,10 @@ Bruges til at tjekke, om filteret er for strengt.
 | IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
 | Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
+| Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
-| StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Hovedstadsområdet og Sjælland) | ikke et studiejob |
+| StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
 | StuderendeOnline.dk | Student Assistant, Digital Development - Viby | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |

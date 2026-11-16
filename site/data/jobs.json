@@ -1,5 +1,48 @@
 [
  {
+  "title": "Kommunikationsstudent til DI Turisme, Kultur & Oplevelser",
+  "co": "Dansk Industri",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "public",
+   "research"
+  ],
+  "famConf": "title",
+  "skills": [
+   "engagerende skrivning",
+   "storytelling",
+   "redaktion af nyhedsbrev",
+   "LinkedIn",
+   "hjemmesideoptimering"
+  ],
+  "industry": "Interesseorganisation",
+  "postedAt": "2026-11-16T12:21:45+00:00",
+  "deadlineAt": "2026-12-01T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du skriver indhold til hjemmeside, nyhedsbrev og LinkedIn samt er redaktør på nyhedsbrevet. Du laver udkast til debatindlæg om turisme- og kulturpolitik og hjælper med research, data og arrangementer.",
+  "req": null,
+  "url": "https://danskindustri.teamtailor.com/jobs/8747957-kommunikationsstudent-til-di-turisme-kultur-oplevelser",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medievidenskab",
+   "erhvervskommunikation",
+   "statskundskab",
+   "dansk",
+   "turisme"
+  ],
+  "why": "Jobbet kræver, at man kan finde og fortælle historier og skrive klart om politik og erhverv, hvilket kommunikation, journalistik og medievidenskab træner.",
+  "openToAll": false,
+  "id": "x3091bec5d0d4",
+  "live": true
+ },
+ {
   "title": "Praktikant til kommunikation og arrangementer i DI Byggeri",
   "co": "Dansk Industri",
   "city": "København",
@@ -439,6 +482,48 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Sales Operations",
+  "co": "AutoProff",
+  "city": "Vejle (Denmark)",
+  "region": "tre",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "plus",
+  "fam": "salesops",
+  "sec": [
+   "customer",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "kundeonboarding",
+   "administration",
+   "digitale systemer",
+   "detaljeorientering",
+   "kommunikation"
+  ],
+  "industry": "Tech og software",
+  "postedAt": "2026-11-16T11:45:48+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper nye kunder i gang på AutoProffs platform, bl.a. ved at indhente oplysninger og dokumenter til KYC-processer. Du står også for administrative opgaver og opdatering af kundedata for salgsteamet.",
+  "req": null,
+  "url": "https://job-boards.greenhouse.io/autoproff/jobs/8204752003",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "datalogi",
+   "informatik",
+   "it-økonomi"
+  ],
+  "why": "Jobbet kræver interesse for IT, digitale systemer og forretningsprocesser, som uddannelser inden for økonomi og IT dækker.",
+  "openToAll": false,
+  "id": "x999a79ca6838",
+  "live": true
+ },
+ {
   "title": "Camera Test Assistant - Student",
   "co": "Veo",
   "city": "Copenhagen Office",
@@ -844,6 +929,48 @@
   "live": true
  },
  {
+  "title": "Student Assistant, Contract & Local Manufacturing Drug Product",
+  "co": "Novo Nordisk",
+  "city": "Høje-Taastrup, Capital Region of Denmark, DK",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "operations",
+  "sec": [
+   "bizdev",
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "PowerPoint",
+   "præsentationer",
+   "skriftlig engelsk",
+   "koordinering",
+   "workshopstøtte"
+  ],
+  "industry": "Medicinal",
+  "postedAt": "2026-11-10T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du laver PowerPoint-præsentationer og kommunikationsmateriale, fx mails og nyhedsbreve, og hjælper med at samle output og opfølgning fra workshops. Du støtter også løbende opgaver, forretningsudvikling og operationel excellence samt et netværk for studentermedhjælpere og praktikanter.",
+  "req": null,
+  "url": "https://careers.novonordisk.com/job/H%C3%B8je-Taastrup-Student-Assistant%2C-Contract-&-Local-Manufacturing-Drug-Product-Capi/1456158033/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "global business engineering",
+   "markedsføringsøkonomi",
+   "international business"
+  ],
+  "why": "Jobbet kræver forretningsforståelse, præsentations- og kommunikationsarbejde samt koordinering, som er centrale elementer i erhvervsøkonomiske uddannelser.",
+  "openToAll": false,
+  "id": "x4c78a7a61641",
+  "live": true
+ },
+ {
   "title": "Internships - Environmental Responsibility",
   "co": "Novo Nordisk",
   "city": "Bagsværd, Capital Region of Denmark, DK",
@@ -955,6 +1082,90 @@
   "url": "https://careers.novonordisk.com/job/%C3%98restad-Student-Assistant-Capi/1454278333/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "regler",
   "id": "x71680ee81a83",
+  "live": true
+ },
+ {
+  "title": "Student Assistant, Digital Marketing & Localization",
+  "co": "Demant",
+  "city": "Smørum, DK, 2765",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "no",
+  "fam": "marketing",
+  "sec": [
+   "pmo"
+  ],
+  "famConf": "title",
+  "skills": [
+   "oversættelse",
+   "lokalisering",
+   "digital markedsføring",
+   "projektkoordinering",
+   "korrekturlæsning"
+  ],
+  "industry": "Medicinsk udstyr",
+  "postedAt": "2026-11-16T00:00:00+00:00",
+  "deadlineAt": "2026-11-24T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du koordinerer oversættelse og lokalisering af digitale kampagner, herunder paid media, på tværs af sprog og markeder. Du gennemlæser oversat indhold, følger op på deadlines og hjælper marketingteamet med at sikre, at materialerne er klar til udrulning.",
+  "req": null,
+  "url": "https://careers.demant.com/demant/job/Sm%C3%B8rum-Student-Assistant%2C-Digital-Marketing-&-Localization-2765/1457455433/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "engelsk",
+   "fremmedsprog",
+   "tysk",
+   "international markedsføring",
+   "kommunikation",
+   "cand.comm",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver sproglig præcision, kulturel forståelse og kendskab til markedsføring, hvilket passer godt til sprog- og kommunikationsuddannelser.",
+  "openToAll": false,
+  "id": "xa775857ad8d4",
+  "live": true
+ },
+ {
+  "title": "Student Assistant, Digital Marketing & Localization",
+  "co": "Demant",
+  "city": "Smørum",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "no",
+  "fam": "marketing",
+  "sec": [
+   "pmo"
+  ],
+  "famConf": "title",
+  "skills": [
+   "oversættelse",
+   "lokalisering",
+   "digital marketing",
+   "projektkoordinering",
+   "korrekturlæsning"
+  ],
+  "industry": "Medicinsk udstyr",
+  "postedAt": "2026-11-16T00:00:00+00:00",
+  "deadlineAt": "2026-11-24T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du koordinerer oversættelse og lokalisering af digitale kampagner og annoncer på tværs af markeder og sikrer, at indholdet er korrekt og rettidigt. Du holder styr på workflows, deadlines og feedback fra kolleger i de lokale markeder.",
+  "req": null,
+  "url": "https://careers.demant.com/demant/job/Sm%C3%B8rum-Student-Assistant%2C-Digital-Marketing-&-Localization-2765/1457455433/",
+  "enrichedBy": "ai",
+  "studies": [
+   "oversættelse",
+   "engelsk",
+   "kommunikation",
+   "international virksomhedskommunikation",
+   "sprogvidenskab",
+   "cand.merc",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver sprogfærdigheder, forståelse for kommunikation og markedsføring samt projektkoordinering på tværs af lande.",
+  "openToAll": false,
+  "id": "x599d2c29ef7b",
   "live": true
  },
  {
@@ -1121,33 +1332,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1173,6 +1357,33 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1268,6 +1479,35 @@
   "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-influencer-marketing-local-brand-activation-4/yvw1ih",
   "enrichedBy": "regler",
   "id": "x38abd0b8d81e",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.) Har du interesse…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-some-meta-community-management-4-6-mdr/ilt9mi",
+  "enrichedBy": "regler",
+  "id": "x6a4f7e879fef",
   "live": true
  },
  {
@@ -2360,34 +2600,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper (stud.jur.) til Østre Landsret",
-  "co": "Østre Landsret",
-  "city": "Østre Landsret",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "legal",
-  "sec": [
-   "operations",
-   "hr"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-10-26T15:01:28+00:00",
-  "deadlineAt": "2026-11-16T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Studentermedhjælper (stud.jur.) til Østre Landsret Vil du have praktisk erfaring med domstolenes arbejde, mens du læser jura? Østre Landsret søger en engageret og grundig studentermedhjælper (stud.jur.) .",
-  "req": "jura",
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171798&DepartmentId=19272&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5e14f371ff6e",
-  "live": true
- },
- {
   "title": "Studentermedhjælper i Udenrigsministeriet",
   "co": "Udenrigsministeriet",
   "city": "Danmark",
@@ -3415,6 +3627,35 @@
   "live": true
  },
  {
+  "title": "Mødebooker (studiejob), Tryg Privat",
+  "co": "Alka",
+  "city": "Århus N, DK",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Kundeservice"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-16T02:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "regler",
+  "id": "x61008d10db2a",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper med interesse for analyse, data og kundeindsigter",
   "co": "Alka",
   "city": "Ballerup, DK",
@@ -3483,94 +3724,6 @@
   "live": true
  },
  {
-  "title": "Student assistant interested in turning data and insights into actions",
-  "co": "Alka",
-  "city": "Ballerup, DK",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "no",
-  "fam": "operations",
-  "sec": [
-   "datasci",
-   "customer"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Excel",
-   "Python",
-   "PowerPoint"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": "2026-10-28T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Would you like to help strengthen climate adaptation across the Nordic region? Join Tryg’s Climate Excellence team as a student assistant and help turn data into insights that support better decisions.",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Student-assistant-interested-in-turning-data-and-insights-into-actions/1452073333/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "regler",
-  "id": "x3533a438286a",
-  "live": true
- },
- {
-  "title": "Mødebooker (studiejob), Tryg Privat",
-  "co": "Alka",
-  "city": "Århus N, DK",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "customer",
-   "social"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Kundeservice"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": "2026-10-18T02:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "regler",
-  "id": "x61008d10db2a",
-  "live": true
- },
- {
-  "title": "Mødebooker (studiejob), Tryg Privat",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "customer",
-   "social"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Kundeservice"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
-  "enrichedBy": "regler",
-  "id": "xc7e71abcfd04",
-  "live": true
- },
- {
   "title": "Studentermedhjælper med interesse for analyse, data og kundeindsigter",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -3636,6 +3789,35 @@
   "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-r%C3%A5dgivning-og-salg/1452951533/",
   "enrichedBy": "regler",
   "id": "x7cd5ddee9cbb",
+  "live": true
+ },
+ {
+  "title": "Mødebooker (studiejob), Tryg Privat",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Kundeservice"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
+  "enrichedBy": "regler",
+  "id": "xc7e71abcfd04",
   "live": true
  },
  {
@@ -3849,45 +4031,6 @@
   "live": true
  },
  {
-  "title": "Vil du være med til at sætte DR i feedet? Vi søger en kreativ studentermedhjælper til sociale medier",
-  "co": "DR",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "plus",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "videoproduktion",
-   "idéudvikling",
-   "opslagstekster",
-   "sociale medier",
-   "Adobe Premiere Pro"
-  ],
-  "industry": "Medier",
-  "postedAt": "2026-11-11T00:00:00+00:00",
-  "deadlineAt": "2026-12-01T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du hjælper med at udvikle, producere og tilpasse DR-indhold til Facebook, Instagram og YouTube, fx ved at klippe videoer, skrive captions og udvikle kreative formater. Du arbejder i et team med to redaktører.",
-  "req": null,
-  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Vil-du-v%C3%A6re-med-til-at-s%C3%A6tte-DR-i-feedet-Vi-s%C3%B8ger-en-kreativ-studentermedhj%C3%A6lper-til-sociale-medier-0999/1456502533/",
-  "enrichedBy": "ai",
-  "studies": [
-   "medievidenskab",
-   "kommunikation",
-   "journalistik",
-   "multimediedesign",
-   "markedsføringsøkonomi",
-   "digital design"
-  ],
-  "why": "Jobbet handler om medieindhold, formidling og kommunikation på sociale medier, som medie- og kommunikationsuddannelser er rettet mod.",
-  "openToAll": false,
-  "id": "x14f48d583c67",
-  "live": true
- },
- {
   "title": "Studentermedhjælper",
   "co": "DR",
   "city": "København",
@@ -3968,6 +4111,45 @@
   "why": "Jobbet kræver formidlingskompetence og forståelse for sociale medier, som uddannelser inden for kommunikation og medier giver.",
   "openToAll": false,
   "id": "x7b9351578ce6",
+  "live": true
+ },
+ {
+  "title": "Vil du være med til at sætte DR i feedet? Vi søger en kreativ studentermedhjælper til sociale medier",
+  "co": "DR",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "videoproduktion",
+   "idéudvikling",
+   "opslagstekster",
+   "sociale medier",
+   "Adobe Premiere Pro"
+  ],
+  "industry": "Medier",
+  "postedAt": "2026-11-11T00:00:00+00:00",
+  "deadlineAt": "2026-12-01T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du hjælper med at udvikle, producere og tilpasse DR-indhold til Facebook, Instagram og YouTube, fx ved at klippe videoer, skrive captions og udvikle kreative formater. Du arbejder i et team med to redaktører.",
+  "req": null,
+  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Vil-du-v%C3%A6re-med-til-at-s%C3%A6tte-DR-i-feedet-Vi-s%C3%B8ger-en-kreativ-studentermedhj%C3%A6lper-til-sociale-medier-0999/1456502533/",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "journalistik",
+   "multimediedesign",
+   "markedsføringsøkonomi",
+   "digital design"
+  ],
+  "why": "Jobbet handler om medieindhold, formidling og kommunikation på sociale medier, som medie- og kommunikationsuddannelser er rettet mod.",
+  "openToAll": false,
+  "id": "x14f48d583c67",
   "live": true
  },
  {
@@ -4337,6 +4519,32 @@
   "live": true
  },
  {
+  "title": "Er du pædagogstuderende? Få et studiejob med faglig udvikling, ansvar og praksisnær erfaring",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 8,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "education",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Log ind Min profil Min profil Er du pædagogstuderende?",
+  "req": "paedagog",
+  "url": "https://aalborg.career.emply.com/ad/er-du-paedagogstuderende-fa-et-studiejob-med-faglig-udvikling-ansvar-og-praksisn/u1ci6i",
+  "enrichedBy": "regler",
+  "id": "x78e1a6086590",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til grønne events, kommunikation og koordinering",
   "co": "Frederiksberg Kommune",
   "city": "Frederiksberg",
@@ -4362,31 +4570,6 @@
   "url": "https://frederiksberg.career.emply.com/ad/studentermedhjaelper-til-gronne-events-kommunikation-og-koordinering/dvdqw0",
   "enrichedBy": "regler",
   "id": "x4bfabffdb220",
-  "live": true
- },
- {
-  "title": "Frederiksberg Kommune - Center for Digital Udvikling og Erhverv søger studentermedhjælper",
-  "co": "Frederiksberg Kommune",
-  "city": "Frederiksberg",
-  "region": "kbh",
-  "hMin": 8,
-  "hMax": 10,
-  "danish": "required",
-  "fam": "public",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "R"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Log ind Min profil Min profil Job i kommunen Administration Børn og Unge Elever (sosu, kontor, pau, gartner m.fl.) Handicap og Psykiatri Kultur og Fritid Lederjob Miljø, Byudvikling og Vedligehold Sundhed, Ældre og…",
-  "req": null,
-  "url": "https://frederiksberg.career.emply.com/ad/frederiksberg-kommune-center-for-digital-udvikling-og-erhverv-soger-studenterme/g3doqv",
-  "enrichedBy": "regler",
-  "id": "x2e49cb220a99",
   "live": true
  },
  {
@@ -4551,33 +4734,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
-  "co": "Politiet",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "finance",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Løn",
-   "Python"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
-  "req": null,
-  "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/",
-  "enrichedBy": "regler",
-  "id": "xe7192bf4b738",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Staben i Det Kriminalpræventive Råd",
   "co": "Politiet",
   "city": "København",
@@ -4603,6 +4759,33 @@
   "url": "https://job.politi.dk/job/K%C3%B8benhavn-S-Studentermedhj%C3%A6lper-til-Staben-i-Det-Kriminalpr%C3%A6ventive-R%C3%A5d-2300/1375650755/",
   "enrichedBy": "regler",
   "id": "x7cee42ead2d9",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere til kamp mod økonomisk kriminalitet i National enhed for Særlig Kriminalitet",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Løn",
+   "Python"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Vil du bruge din faglighed til at bekæmpe kriminalitet og styrke trygheden i samfundet?",
+  "req": null,
+  "url": "https://job.politi.dk/job/Glostrup-Studentermedhj%C3%A6lpere-til-kamp-mod-%C3%B8konomisk-kriminalitet-i-National-enhed-for-S%C3%A6rlig-Kriminalitet-2600/1375398355/",
+  "enrichedBy": "regler",
+  "id": "xe7192bf4b738",
   "live": true
  },
  {
@@ -4636,6 +4819,47 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til forskningsprojekt om militærplaner fra den Kolde Krig",
+  "co": "Roskilde Universitet",
+  "city": "Roskilde Universitet",
+  "region": "sj",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "plus",
+  "fam": "research",
+  "sec": [
+   "datasci"
+  ],
+  "famConf": "title",
+  "skills": [
+   "QGIS/ArcGIS",
+   "georeferering",
+   "Python/R",
+   "digital tekstbehandling",
+   "dokumentation af datasæt"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-11-16T11:24:51+00:00",
+  "deadlineAt": "2026-12-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du georefererer historiske kort og militære plandokumenter, opretter GIS-lag og opmærker steder og enheder i polske og russiske tekster. Du transskriberer arkivtabeller, kvalitetstjekker automatiske indtastninger og dokumenterer datasæt og arbejdsgange.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148355&DepartmentId=18971&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "historie",
+   "geografi",
+   "geoinformatik",
+   "kulturgeografi",
+   "russisk",
+   "statskundskab"
+  ],
+  "why": "Arbejdet kræver historisk indsigt i kildemateriale kombineret med GIS og databehandling, og det ligger tæt på historie og geografi.",
+  "openToAll": false,
+  "id": "xa9f40e8fdcde",
+  "live": true
+ },
+ {
   "title": "Studiejob med mening – bliv studenterstudievejleder på RUC",
   "co": "Roskilde Universitet",
   "city": "Roskilde Universitet",
@@ -4645,33 +4869,34 @@
   "danish": "required",
   "fam": "education",
   "sec": [
-   "social"
+   "social",
+   "public"
   ],
   "famConf": "text",
   "skills": [
    "samtaleteknik",
-   "vejledning",
    "empati",
    "facilitering",
-   "formidling af komplekse emner"
+   "formidling af komplekse emner",
+   "dansk og engelsk"
   ],
   "industry": "Uddannelse og forskning",
   "postedAt": "2026-11-16T08:10:41+00:00",
-  "deadlineAt": "2026-11-27T23:59:59+00:00",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du vejleder studerende i uddannelsesplanlægning og studievalg og taler med studerende, der oplever tvivl, stress eller mistrivsel. Du holder desuden oplæg og deltager i vejledningsarrangementer.",
+  "blurb": "Du vejleder RUC-studerende om studievalg, uddannelsesplanlægning og trivsel gennem samtaler, og du holder oplæg og workshops. Du svarer også potentielle ansøgere på spørgsmål om optag og studieadministration.",
   "req": null,
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148354&DepartmentId=18977&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
-   "psykologi",
    "pædagogik",
+   "psykologi",
+   "uddannelsesvidenskab",
    "socialt arbejde",
    "sociologi",
-   "uddannelsesvidenskab",
-   "læringsvidenskab"
+   "filosofi"
   ],
-  "why": "Studievejledning kræver indsigt i læring, trivsel og samtaler med studerende, og det er kernen i uddannelser som psykologi, pædagogik og socialt arbejde.",
+  "why": "Studievejledning kræver forståelse for studerendes trivsel, valg og læring, og det får man blandt andet på uddannelser med fokus på mennesker, læring og samfund.",
   "openToAll": true,
   "id": "x910cf2854d47",
   "live": true
@@ -4700,31 +4925,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5",
   "enrichedBy": "regler",
   "id": "xc795046bf838",
-  "live": true
- },
- {
-  "title": "Student Ambassadors for the MSc Data Science Programme at ITU’s Open House Event, 2 February 2027",
-  "co": "IT-Universitetet",
-  "city": "Student Affairs and Programmes",
-  "region": "kbh",
-  "hMin": 7,
-  "hMax": 12,
-  "danish": "required",
-  "fam": "datasci",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "SAP"
-  ],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-06T09:55:08+00:00",
-  "deadlineAt": "2026-11-16T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Job description Do you enjoy your studies and want to share your experience with prospective students?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181910&DepartmentId=3505&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x5d51d6b7fbf5",
   "live": true
  },
  {
@@ -5267,6 +5467,49 @@
   "live": true
  },
  {
+  "title": "To studentermedhjælpere til Ballerups Kommunale Ungeindsats i Center for Social og Arbejdsmarked - for socialrådgiverstuderende",
+  "co": "Ballerup Kommune",
+  "city": "Ballerup",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "public",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "sagsbehandling",
+   "dokumentation",
+   "motiverende samtaler",
+   "IT-kompetencer",
+   "tværfagligt samarbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du assisterer sagsbehandlere i ungeindsatsen for unge mellem 15 og 30 år uden uddannelse eller job, blandt andet med dokumentation, koordinering af forløb og forberedelse af tværfaglige møder. Du deltager også i motiverende samtaler og får indblik i kommunale myndighedsopgaver og lovgivning.",
+  "req": "socialraadgiver",
+  "url": "https://job.ballerup.dk/ad/to-studentermedhjaelpere-til-ballerups-kommunale-ungeindsats-i-center-for-social-o/idlny1",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "socialt arbejde",
+   "socialpædagogik",
+   "pædagogik",
+   "psykologi",
+   "sociologi",
+   "jura"
+  ],
+  "why": "Jobbet giver praktisk indsigt i socialrådgivernes sagsbehandling og myndighedsarbejde med unge, hvilket passer direkte til socialfaglige uddannelser.",
+  "openToAll": false,
+  "id": "xaf5d54f2f9c9",
+  "live": true
+ },
+ {
   "title": "To studentermedhjælpere til Center for Børne- og Ungerådgivning",
   "co": "Ballerup Kommune",
   "city": "Ballerup",
@@ -5597,6 +5840,29 @@
   "live": true
  },
  {
+  "title": "Juridiske studenter til København",
+  "co": "Kammeradvokaten",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Advokat",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Dansk English Log ind Min profil Min profil Juridiske studenter til København Er du jura- eller erhvervsjurastuderende og klar til at udfordre og udvikle dine juridiske evner i praksis?",
+  "req": "jura",
+  "url": "https://poulschmith.career.emply.com/da/ad/juridiske-studenter-til-kobenhavn/c7qhao",
+  "enrichedBy": "regler",
+  "id": "x5d7364b800b8",
+  "live": true
+ },
+ {
   "title": "Uopfordret ansøgning til Aarhus (Alle stillinger)",
   "co": "Accura",
   "city": "Aarhus",
@@ -5663,6 +5929,65 @@
   ],
   "why": "Arbejdet kræver forståelse for regulering, økonomi og politiske processer, som de nævnte uddannelser giver.",
   "id": "x5eabdd657c69",
+  "live": true
+ },
+ {
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora, samfundsvidenskab.",
+  "catFam": true,
+  "title": "Studentermedhjælper til projekter relaterede til Historisk Personregister - tidsbegrænset i 3 år",
+  "co": "Rigsarkivet - Statens Arkiver",
+  "city": "Odense",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "research"
+  ],
+  "famConf": "title",
+  "skills": [
+   "transskription af historiske k",
+   "strukturerede data i Excel ell",
+   "kendskab til dansk historie 18",
+   "selvstændighed",
+   "dansk og engelsk"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-30T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du transskriberer og bearbejder historiske kilder og persondata, linker poster på tværs af datasæt og beskriver kilderne. Du hjælper også med søgning, scanning, kodning og praktiske opgaver ved projekternes arrangementer og formidling.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3160586/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x00dcc1a82b53",
   "live": true
  },
  {
@@ -6548,83 +6873,6 @@
   "live": true
  },
  {
-  "openToAll": false,
-  "catFam": true,
-  "title": "SoMe-praktikant med sans for grafik og kreativt content",
-  "co": "Move On Career ApS",
-  "city": "Solrød",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [
-   "product",
-   "engineering"
-  ],
-  "famConf": "title",
-  "skills": [
-   "sociale medier",
-   "content creation",
-   "grafisk design",
-   "videoproduktion",
-   "tekstforfatning"
-  ],
-  "industry": "Jobportal for studerende",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "StuderendeOnline.dk",
-  "blurb": "Du producerer tekster, videoer og grafik til virksomhedens sociale kanaler og er med til at planlægge kampagner. Du arbejder også med community-building og tester nyt indhold, især på TikTok.",
-  "req": null,
-  "url": "https://studerendeonline.dk/job/3137947/?utm_source=studiematch.dk",
-  "enrichedBy": "ai",
-  "studies": [
-   "ha",
-   "erhvervsøkonomi",
-   "business",
-   "marketing",
-   "markedsføring",
-   "cand.merc",
-   "handel",
-   "global business",
-   "kommunikation",
-   "journalistik",
-   "medie",
-   "sprog",
-   "engelsk",
-   "tysk",
-   "fransk",
-   "spansk",
-   "pædagog",
-   "lærer",
-   "pædagogik",
-   "undervisning",
-   "humanistisk",
-   "humaniora",
-   "historie",
-   "filosofi",
-   "kultur",
-   "dansk",
-   "arkitekt",
-   "design",
-   "kunst",
-   "statskundskab",
-   "samfundsvidenskab",
-   "sociologi",
-   "økonomi",
-   "politik",
-   "antropologi",
-   "samfundsfag",
-   "socialvidenskab",
-   "ledelse",
-   "organisation",
-   "management"
-  ],
-  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, pædagogik og undervisning.",
-  "id": "xbfa942257840",
-  "live": true
- },
- {
   "studies": [
    "kommunikation",
    "journalistik",
@@ -7107,6 +7355,56 @@
   "why": "Jobbet kræver faglig indsigt i arbejds- og organisationspsykologi samt evnen til at formidle og facilitere diskussioner om emnet.",
   "openToAll": false,
   "id": "x9e97aaeea892",
+  "live": true
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, samfundsvidenskab.",
+  "catFam": true,
+  "title": "Student Assistant - Business Development & E-commerce",
+  "co": "Grundfos",
+  "city": "København",
+  "region": "remote",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "no",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "dataanalyse",
+   "PowerPoint",
+   "engelsk kommunikation"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du indsamler, validerer og analyserer e-commerce-, markeds- og konkurrencedata og vedligeholder løbende rapporter. Du omsætter data til præsentationer for kommercielle ledere og støtter e-commerce- og forretningsudviklingsprojekter.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3149664/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x4abbe5dc1d7c",
   "live": true
  },
  {
@@ -8152,6 +8450,54 @@
   ],
   "why": "Jobbet kræver dataanalyse i R og Python samt forståelse for kognitiv og psykologisk forskning med deltagere, hvilket passer til kognitionsvidenskab og psykologi.",
   "id": "xbd9157cd6e76",
+  "live": true
+ },
+ {
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora.",
+  "catFam": true,
+  "title": "Kunsthistorie-studerende",
+  "co": "Tårnby Kommune",
+  "city": "Tårnby",
+  "region": "kbh",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "SARA-registrering",
+   "udstillingsarbejde",
+   "formidling",
+   "skriftlig kommunikation",
+   "selvstændighed"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-12-09T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du registrerer museets samling i registreringssystemet SARA og hjælper med udstillingsarbejde. Du laver også mundtlige og skriftlige formidlings- og kommunikationsopgaver.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3160573/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x11ee4376d996",
   "live": true
  },
  {
@@ -14193,65 +14539,6 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x79807831c272",
-  "live": true
- },
- {
-  "studies": [
-   "it",
-   "datalogi",
-   "software",
-   "datamatiker",
-   "computer",
-   "data science",
-   "informatik",
-   "kommunikation",
-   "journalistik",
-   "medie",
-   "sprog",
-   "engelsk",
-   "tysk",
-   "fransk",
-   "spansk",
-   "statskundskab",
-   "samfundsvidenskab",
-   "sociologi",
-   "økonomi",
-   "politik",
-   "antropologi",
-   "samfundsfag",
-   "socialvidenskab"
-  ],
-  "why": "Arbejdsgiveren søger studerende inden for IT, sprog og kommunikation, samfundsvidenskab.",
-  "catFam": true,
-  "title": "Studentermedhjælper til projekter relaterede til Historisk Personregister - tidsbegrænset i 3 år",
-  "co": "Rigsarkivet - Statens Arkiver",
-  "city": "Odense",
-  "region": "fyn",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "software",
-  "sec": [
-   "research"
-  ],
-  "famConf": "title",
-  "skills": [
-   "transskription af historiske k",
-   "Excel eller Access",
-   "dansk historie 1800-1900",
-   "praktiske støtteopgaver",
-   "selvstændighed"
-  ],
-  "industry": "Jobportal for studerende",
-  "postedAt": null,
-  "deadlineAt": "2026-11-30T00:00:00+00:00",
-  "src": "StuderendeOnline.dk",
-  "blurb": "Du transskriberer og bearbejder historiske kilder fra 1800- og 1900-tallet, linker og beskriver data og hjælper med praktiske opgaver til forskningsprojekter om historiske persondata. Arbejdet foregår i et tværfagligt team i Rigsarkivets Data Science-enhed i Odense.",
-  "req": null,
-  "url": "https://studerendeonline.dk/job/3158407/?utm_source=studiematch.dk",
-  "enrichedBy": "ai",
-  "openToAll": false,
-  "id": "xf212dfa7b1f7",
   "live": true
  },
  {

@@ -56523,5 +56523,364 @@
   ],
   "why": "Jobbet kræver interesse for kommunikation og en forståelse af biovidenskab, og det kombinerer faglighed med SoMe og projektarbejde.",
   "openToAll": false
+ },
+ "cbe3107c2a5e69a7ee373925cc4d079dac7dc667": {
+  "fam": "marketing",
+  "sec": [
+   "public",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "engagerende skrivning",
+   "storytelling",
+   "redaktion af nyhedsbrev",
+   "LinkedIn",
+   "hjemmesideoptimering"
+  ],
+  "blurb": "Du skriver indhold til hjemmeside, nyhedsbrev og LinkedIn samt er redaktør på nyhedsbrevet. Du laver udkast til debatindlæg om turisme- og kulturpolitik og hjælper med research, data og arrangementer.",
+  "deadlineAt": "2026-12-01T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medievidenskab",
+   "erhvervskommunikation",
+   "statskundskab",
+   "dansk",
+   "turisme"
+  ],
+  "why": "Jobbet kræver, at man kan finde og fortælle historier og skrive klart om politik og erhverv, hvilket kommunikation, journalistik og medievidenskab træner.",
+  "openToAll": false
+ },
+ "d3e15f0b1dca920251c935e629fbd67ffdb05afc": {
+  "fam": "salesops",
+  "sec": [
+   "customer",
+   "operations"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "kundeonboarding",
+   "administration",
+   "digitale systemer",
+   "detaljeorientering",
+   "kommunikation"
+  ],
+  "blurb": "Du hjælper nye kunder i gang på AutoProffs platform, bl.a. ved at indhente oplysninger og dokumenter til KYC-processer. Du står også for administrative opgaver og opdatering af kundedata for salgsteamet.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "datalogi",
+   "informatik",
+   "it-økonomi"
+  ],
+  "why": "Jobbet kræver interesse for IT, digitale systemer og forretningsprocesser, som uddannelser inden for økonomi og IT dækker.",
+  "openToAll": false
+ },
+ "8c321e39be926034ccae4587440617c296780f12": {
+  "fam": "operations",
+  "sec": [
+   "bizdev",
+   "marketing"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "PowerPoint",
+   "præsentationer",
+   "skriftlig engelsk",
+   "koordinering",
+   "workshopstøtte"
+  ],
+  "blurb": "Du laver PowerPoint-præsentationer og kommunikationsmateriale, fx mails og nyhedsbreve, og hjælper med at samle output og opfølgning fra workshops. Du støtter også løbende opgaver, forretningsudvikling og operationel excellence samt et netværk for studentermedhjælpere og praktikanter.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "global business engineering",
+   "markedsføringsøkonomi",
+   "international business"
+  ],
+  "why": "Jobbet kræver forretningsforståelse, præsentations- og kommunikationsarbejde samt koordinering, som er centrale elementer i erhvervsøkonomiske uddannelser.",
+  "openToAll": false
+ },
+ "1243fcfc439a8eb4959da2f92f0945c7be904e89": {
+  "fam": "marketing",
+  "sec": [
+   "pmo"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "oversættelse",
+   "lokalisering",
+   "digital markedsføring",
+   "projektkoordinering",
+   "korrekturlæsning"
+  ],
+  "blurb": "Du koordinerer oversættelse og lokalisering af digitale kampagner, herunder paid media, på tværs af sprog og markeder. Du gennemlæser oversat indhold, følger op på deadlines og hjælper marketingteamet med at sikre, at materialerne er klar til udrulning.",
+  "deadlineAt": "2026-11-24T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "engelsk",
+   "fremmedsprog",
+   "tysk",
+   "international markedsføring",
+   "kommunikation",
+   "cand.comm",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver sproglig præcision, kulturel forståelse og kendskab til markedsføring, hvilket passer godt til sprog- og kommunikationsuddannelser.",
+  "openToAll": false
+ },
+ "5e8de493026b1942c482b58cc61ad3be94ce2ba9": {
+  "fam": "marketing",
+  "sec": [
+   "pmo"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "oversættelse",
+   "lokalisering",
+   "digital marketing",
+   "projektkoordinering",
+   "korrekturlæsning"
+  ],
+  "blurb": "Du koordinerer oversættelse og lokalisering af digitale kampagner og annoncer på tværs af markeder og sikrer, at indholdet er korrekt og rettidigt. Du holder styr på workflows, deadlines og feedback fra kolleger i de lokale markeder.",
+  "deadlineAt": "2026-11-24T23:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "oversættelse",
+   "engelsk",
+   "kommunikation",
+   "international virksomhedskommunikation",
+   "sprogvidenskab",
+   "cand.merc",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver sprogfærdigheder, forståelse for kommunikation og markedsføring samt projektkoordinering på tværs af lande.",
+  "openToAll": false
+ },
+ "fe9cf7cfd766b2389249f03fecf1f814c3710c1e": {
+  "fam": "research",
+  "sec": [
+   "datasci"
+  ],
+  "danish": "plus",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "QGIS/ArcGIS",
+   "georeferering",
+   "Python/R",
+   "digital tekstbehandling",
+   "dokumentation af datasæt"
+  ],
+  "blurb": "Du georefererer historiske kort og militære plandokumenter, opretter GIS-lag og opmærker steder og enheder i polske og russiske tekster. Du transskriberer arkivtabeller, kvalitetstjekker automatiske indtastninger og dokumenterer datasæt og arbejdsgange.",
+  "deadlineAt": "2026-12-01T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "historie",
+   "geografi",
+   "geoinformatik",
+   "kulturgeografi",
+   "russisk",
+   "statskundskab"
+  ],
+  "why": "Arbejdet kræver historisk indsigt i kildemateriale kombineret med GIS og databehandling, og det ligger tæt på historie og geografi.",
+  "openToAll": false
+ },
+ "af25ca5f6a3ab771d5da283a1a40c5db1da9bcd5": {
+  "fam": "education",
+  "sec": [
+   "social",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 7,
+  "hMax": 8,
+  "skills": [
+   "samtaleteknik",
+   "empati",
+   "facilitering",
+   "formidling af komplekse emner",
+   "dansk og engelsk"
+  ],
+  "blurb": "Du vejleder RUC-studerende om studievalg, uddannelsesplanlægning og trivsel gennem samtaler, og du holder oplæg og workshops. Du svarer også potentielle ansøgere på spørgsmål om optag og studieadministration.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "pædagogik",
+   "psykologi",
+   "uddannelsesvidenskab",
+   "socialt arbejde",
+   "sociologi",
+   "filosofi"
+  ],
+  "why": "Studievejledning kræver forståelse for studerendes trivsel, valg og læring, og det får man blandt andet på uddannelser med fokus på mennesker, læring og samfund.",
+  "openToAll": true
+ },
+ "ecbaf203c956d70044d9969de12485f4e303c630": {
+  "fam": "social",
+  "sec": [
+   "public",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "sagsbehandling",
+   "dokumentation",
+   "motiverende samtaler",
+   "IT-kompetencer",
+   "tværfagligt samarbejde"
+  ],
+  "blurb": "Du assisterer sagsbehandlere i ungeindsatsen for unge mellem 15 og 30 år uden uddannelse eller job, blandt andet med dokumentation, koordinering af forløb og forberedelse af tværfaglige møder. Du deltager også i motiverende samtaler og får indblik i kommunale myndighedsopgaver og lovgivning.",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "socialt arbejde",
+   "socialpædagogik",
+   "pædagogik",
+   "psykologi",
+   "sociologi",
+   "jura"
+  ],
+  "why": "Jobbet giver praktisk indsigt i socialrådgivernes sagsbehandling og myndighedsarbejde med unge, hvilket passer direkte til socialfaglige uddannelser.",
+  "openToAll": false
+ },
+ "7734586c713695fdfd130971ec0407e682c0fc52": {
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "transskription af historiske k",
+   "strukturerede data i Excel ell",
+   "kendskab til dansk historie 18",
+   "selvstændighed",
+   "dansk og engelsk"
+  ],
+  "blurb": "Du transskriberer og bearbejder historiske kilder og persondata, linker poster på tværs af datasæt og beskriver kilderne. Du hjælper også med søgning, scanning, kodning og praktiske opgaver ved projekternes arrangementer og formidling.",
+  "deadlineAt": "2026-11-30T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "41463a3851a4f3fc394ac89a92423f8efbdcb411": {
+  "fam": "pmo",
+  "sec": [],
+  "danish": "no",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "dataanalyse",
+   "PowerPoint",
+   "engelsk kommunikation"
+  ],
+  "blurb": "Du indsamler, validerer og analyserer e-commerce-, markeds- og konkurrencedata og vedligeholder løbende rapporter. Du omsætter data til præsentationer for kommercielle ledere og støtter e-commerce- og forretningsudviklingsprojekter.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "c9869b3ddeb8ceea73af85460f8de49ee22950ae": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "SARA-registrering",
+   "udstillingsarbejde",
+   "formidling",
+   "skriftlig kommunikation",
+   "selvstændighed"
+  ],
+  "blurb": "Du registrerer museets samling i registreringssystemet SARA og hjælper med udstillingsarbejde. Du laver også mundtlige og skriftlige formidlings- og kommunikationsopgaver.",
+  "deadlineAt": "2026-12-09T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora.",
+  "openToAll": false
  }
 }
