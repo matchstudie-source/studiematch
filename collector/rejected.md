@@ -4,9 +4,6 @@ Bruges til at tjekke, om filteret er for strengt.
 
 | Arbejdsgiver | Titel | Årsag |
 | --- | --- | --- |
-| SEB | Finance Developer (Finanšu izstrādātājs(-a)) in General Ledger and Internal Accounting Team / SEB, Riga | ikke et studiejob |
-| SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Tallinn | ikke et studiejob |
-| SEB | Finance Developer in General Ledger and Internal Accounting Team / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in HR department | udlandet: Warsaw |
 | SEB | Senior Software Developer (Vecākais izstrādātājs) in Internet Bank Customer Journey / SEB, Riga | ikke et studiejob |
@@ -18,7 +15,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse. | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
-| Region Syddanmark | Læge eller speciallæge i psykiatri, intern medicin eller almen medicin til Lokalpsykiatri Kolding | ikke et studiejob |
 | Region Syddanmark | Syddansk Sundhedsinnovation søger en projektleder til internationale projekter | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
@@ -36,6 +32,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | NIRAS | Unsolicited intern applications | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
+| Aarhus Kommune | The International Day Nursery – Aarhus søger to engagerede og eventyrlystne pædagoger | ikke et studiejob |
 | Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
@@ -46,7 +43,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
-| StuderendeOnline.dk | Student Assistant, Digital Development - Viby | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
