@@ -21,6 +21,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
+| Statslige arbejdsgivere | Midlertidig ansat til Internationale Ægteskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
