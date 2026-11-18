@@ -918,45 +918,89 @@
   "live": true
  },
  {
-  "title": "P&O Student Intern",
+  "title": "Associate Process Engineer, Student",
+  "co": "Novo Nordisk",
+  "city": "Kalundborg, Region Zealand, DK",
+  "region": "sj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "operations",
+  "sec": [
+   "supply",
+   "datasci"
+  ],
+  "famConf": "title",
+  "skills": [
+   "matematisk modellering",
+   "MILP",
+   "optimering",
+   "Pyomo",
+   "Gurobi"
+  ],
+  "industry": "Medicinal",
+  "postedAt": "2026-11-18T00:00:00+00:00",
+  "deadlineAt": "2026-11-27T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du bygger og bruger matematiske modeller til kapacitets-, produktions- og planlægningsbeslutninger i Novo Nordisks API-produktion i Kalundborg. Du arbejder med MILP-modeller og optimeringsprojekter sammen med en specialiseret optimeringsgruppe.",
+  "req": null,
+  "url": "https://careers.novonordisk.com/job/Kalundborg-Associate-Process-Engineer%2C-Student-Regi/1458422833/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "produktionsøkonomi",
+   "matematik-økonomi",
+   "kemiteknologi",
+   "business analytics",
+   "matematisk modellering",
+   "operations research",
+   "industriel økonomi",
+   "logistik"
+  ],
+  "why": "Jobbet kræver modellering, optimering og forståelse for forsyningskæder, som især uddannelser inden for produktion, matematik og analytics dækker.",
+  "openToAll": false,
+  "id": "xf2e6261291d3",
+  "live": true
+ },
+ {
+  "title": "P&O Student Assistant",
   "co": "Novo Nordisk",
   "city": "Ørestad, Capital Region of Denmark, DK",
   "region": "kbh",
   "hMin": 15,
   "hMax": 20,
-  "danish": "plus",
+  "danish": "required",
   "fam": "hr",
   "sec": [
+   "procurement",
    "operations"
   ],
   "famConf": "text",
   "skills": [
-   "HR-administration",
    "SharePoint",
-   "intern kommunikation",
+   "HR-administration",
    "detaljeorientering",
-   "eventkoordinering"
+   "indkøb og fakturaopfølgning",
+   "dansk og engelsk"
   ],
   "industry": "Medicinal",
   "postedAt": "2026-11-16T00:00:00+00:00",
   "deadlineAt": "2026-11-30T23:59:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Du hjælper P&O med administration af medarbejderoplysninger, onboarding og offboarding samt med at holde SharePoint-sider og interne opslag på Viva Engage opdaterede. Du står også for kontor- og flådeadministration, fx BroBizz og parkering, og for praktisk støtte til firmadage og møder.",
+  "blurb": "Du hjælper med HR-administration, opdatering af SharePoint-sider, onboarding og offboarding samt kontor- og flådeadministration. Du støtter også interne events og står for bestillinger og fakturaopfølgning.",
   "req": null,
-  "url": "https://careers.novonordisk.com/job/%C3%98restad-P&O-Student-Intern-Capi/1457590133/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "url": "https://careers.novonordisk.com/job/%C3%98restad-P&O-Student-Assistant-Capi/1457590133/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "ai",
   "studies": [
-   "human resource management",
+   "hr",
+   "personaleledelse",
    "erhvervsøkonomi",
    "ha",
-   "cand.merc",
-   "organisationspsykologi",
    "kommunikation",
-   "international business"
+   "organisationspsykologi"
   ],
-  "why": "Jobbet kræver kendskab til organisation, HR-processer og administration, som HR- og erhvervsøkonomiske uddannelser dækker godt.",
+  "why": "Jobbet kræver kendskab til HR-processer, organisation og administration, som er centralt i HR- og erhvervsuddannelser.",
   "openToAll": false,
-  "id": "xa4337997e1c8",
+  "id": "xdc7a7102daa4",
   "live": true
  },
  {
@@ -1363,33 +1407,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1415,6 +1432,33 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1718,6 +1762,49 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172175&DepartmentId=20375&MediaId=5",
   "enrichedBy": "regler",
   "id": "x849604e2efc6",
+  "live": true
+ },
+ {
+  "title": "Det Kongelige Teater søger studentermedhjælper til Udvikling & Børn",
+  "co": "Børn og Udvikling, Det Kongelige Teater og Kapel",
+  "city": "Gamle Scene",
+  "region": "kbh",
+  "hMin": 12,
+  "hMax": 12,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "public",
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "koordinering",
+   "administration",
+   "skriftlig kommunikation",
+   "overblik og struktur",
+   "målgruppefokus børn"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-18T12:59:44+00:00",
+  "deadlineAt": "2026-12-02T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper med administrative og praktiske opgaver, fx oprydning, koordinering og registrering, og med at afvikle afdelingens aktiviteter for børn. Du skal også skrive en del i kontakt med teatrets interne og eksterne samarbejdspartnere.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173497&DepartmentId=19283&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "kulturvidenskab",
+   "kulturformidling",
+   "teatervidenskab",
+   "kunsthistorie",
+   "musikvidenskab",
+   "pædagogik",
+   "dramaturgi"
+  ],
+  "why": "Jobbet kræver interesse for kultur og formidling samt skriftlighed, så det passer bedst til kultur- og formidlingsuddannelser.",
+  "openToAll": false,
+  "id": "x2b84bd092374",
   "live": true
  },
  {
@@ -5077,6 +5164,50 @@
   "live": true
  },
  {
+  "title": "En studentermedhjælper søges til forskningsprojekt om arbejdsmiljø i ældreomsorgen for kvinder midt i livet (WELLCARE)",
+  "co": "Roskilde Universitet",
+  "city": "Roskilde Universitet",
+  "region": "sj",
+  "hMin": 9,
+  "hMax": 9,
+  "danish": "required",
+  "fam": "research",
+  "sec": [
+   "health",
+   "social"
+  ],
+  "famConf": "title",
+  "skills": [
+   "koordinering af møder",
+   "referatskrivning",
+   "transskribering",
+   "litteratursøgning",
+   "skriftlig formidling"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": "2026-11-18T15:18:34+00:00",
+  "deadlineAt": "2026-12-15T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du koordinerer møder og interviews i et forskningsprojekt om psykisk arbejdsmiljø i ældreomsorgen og skriver referater fra vigtige møder. Du transskriberer interviews, laver litteratursøgning og hjælper med intern kommunikation og opslag på sociale medier.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148358&DepartmentId=18971&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "folkesundhedsvidenskab",
+   "sociologi",
+   "psykologi",
+   "sundhedsvidenskab",
+   "socialt arbejde",
+   "antropologi",
+   "ergoterapi",
+   "socialvidenskab"
+  ],
+  "why": "Projektet kræver viden om sundhed, arbejdsmiljø og samfundsforhold, og arbejdet med litteratur, interviews og koordinering passer til kandidater i samfunds- og sundhedsvidenskab.",
+  "openToAll": false,
+  "id": "x3d357f29cc2f",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper (HK) til ressourcestyring på Institut for Samfundsvidenskab og Erhverv (ISE)",
   "co": "Roskilde Universitet",
   "city": "Roskilde Universitet",
@@ -5277,6 +5408,45 @@
   "why": "Jobbet kræver erfaring med sociale medier, visuel formidling og historiefortælling, hvilket passer til medie- og kommunikationsuddannelser.",
   "openToAll": false,
   "id": "x52243d3e22b8",
+  "live": true
+ },
+ {
+  "title": "Studenterundervisere til ergoterapeutuddannelsen",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 20,
+  "hMax": 30,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "health"
+  ],
+  "famConf": "title",
+  "skills": [
+   "undervisningsplanlægning",
+   "formidling",
+   "ergonomi",
+   "arbejdspladsindretning",
+   "vejledning"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-02T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du planlægger og underviser selvstændigt og sammen med andre i ergonomi og arbejdsmiljø for studerende på jordemoder- og laborantuddannelsen samt for ansatte på KP. Du får introduktion, en kontaktperson og et endagskursus i tilrettelæggelse af undervisning.",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studenterundervisere-til-ergoterapeutuddannelsen/4p9ygt",
+  "enrichedBy": "ai",
+  "studies": [
+   "ergoterapi",
+   "fysioterapi",
+   "arbejdsmiljø",
+   "sundhedsvidenskab"
+  ],
+  "why": "Jobbet kræver faglig viden om ergonomi og arbejdsmiljø, som ergoterapi- og fysioterapistuderende har fra deres uddannelse.",
+  "openToAll": false,
+  "id": "xd35dac8e762f",
   "live": true
  },
  {
@@ -6477,6 +6647,92 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Taskforce",
+  "co": "If P&C Insurance Ltd (publ), Branch Denmark",
+  "city": "København, Denmark",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "datakvalitet",
+   "Power Automate",
+   "databehandling",
+   "procesautomatisering"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-16T00:00:00+00:00",
+  "deadlineAt": "2026-12-01T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du kvalitetssikrer og retter data på tværs af systemer i If og hjælper forskellige afdelinger med administrative og ad hoc-opgaver. Du kan også automatisere simple arbejdsgange, fx med Power Automate.",
+  "req": null,
+  "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Kbenhavn/Studentermedhjlper-til-Taskforce_JobReqID11734",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "datalogi",
+   "it",
+   "matematik-økonomi",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver Excel-, data- og procesforståelse, som styrkes på økonomiske, it- og datafaglige uddannelser.",
+  "openToAll": false,
+  "id": "x11e8b1b91330",
+  "live": true
+ },
+ {
+  "title": "Talent Acquisition Coordinator",
+  "co": "If P&C Insurance Ltd (publ), Branch Denmark",
+  "city": "København, Denmark",
+  "region": "kbh",
+  "hMin": 16,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "marketing",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "rekruttering",
+   "employer branding",
+   "Workday",
+   "LinkedIn-sourcing",
+   "kommunikation"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-09T00:00:00+00:00",
+  "deadlineAt": "2026-11-23T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du støtter rekrutteringsprocesserne med administrative opgaver, fx jobopslag, kandidatadministration i Workday og reference- og baggrundstjek. Du hjælper også med at planlægge og koordinere employer branding-aktiviteter som karrieremesser og studenterarrangementer.",
+  "req": null,
+  "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Kbenhavn/Talent-Acquisition-Coordinator_JobReqID11689",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "personaleledelse",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "psykologi",
+   "kommunikation",
+   "medievidenskab"
+  ],
+  "why": "Jobbet kombinerer rekruttering, HR og employer branding, og kræver god forståelse for organisation, mennesker og kommunikation.",
+  "openToAll": false,
+  "id": "x2e4ae202e9c0",
+  "live": true
+ },
+ {
   "title": "Juridiske studenter til København",
   "co": "Kammeradvokaten",
   "city": "København",
@@ -6831,7 +7087,7 @@
  {
   "openToAll": true,
   "catFam": true,
-  "title": "Praktikanter til Moment Professionals: Århus & KBH",
+  "title": "Praktikanter til Moment Professionals: Aarhus & KBH",
   "co": "MOMENT A/S",
   "city": "København",
   "region": "kbh",
@@ -6845,29 +7101,31 @@
   ],
   "famConf": "title",
   "skills": [
-   "search",
+   "kandidatsearch",
    "CV-screening",
    "kandidatkontakt",
-   "dansk og engelsk",
-   "stillingsopslag"
+   "stillingsopslag",
+   "dansk og engelsk kommunikation"
   ],
   "industry": "Jobportal for studerende",
   "postedAt": null,
   "deadlineAt": null,
   "src": "StuderendeOnline.dk",
-  "blurb": "Du arbejder med search, CV-screening og kontakt til kandidater til specialist- og lederstillinger på tværs af brancher. Du er med i dialogen med kandidater og virksomheder, skriver stillingsopslag og researcher brancher og kandidatmarkeder.",
+  "blurb": "Du søger efter kandidater på LinkedIn Recruiter og Jobnet, screener CV'er og tager første kontakt til potentielle kandidater. Du hjælper også med stillingsopslag, research på virksomheder og brancher og koordinering af samtaler.",
   "req": null,
   "url": "https://studerendeonline.dk/job/3154957/?utm_source=studiematch.dk",
   "enrichedBy": "ai",
   "studies": [
-   "hrm",
    "psykologi",
    "erhvervsøkonomi",
+   "ha",
    "cand.merc",
    "sociologi",
-   "kommunikation"
+   "kommunikation",
+   "human resource management",
+   "arbejdspsykologi"
   ],
-  "why": "Rekruttering kræver indsigt i mennesker, virksomheder og arbejdsmarkeder, men opslaget lægger ikke vægt på en bestemt studieretning.",
+  "why": "Rekruttering kræver forståelse for mennesker, virksomheder og arbejdsmarkedet, og det kan studerende fra mange forskellige retninger bidrage til.",
   "id": "x1da9a9661f05",
   "live": true
  },
@@ -7533,6 +7791,65 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x8526cc41da66",
+  "live": true
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "arkitekt",
+   "design",
+   "kunst"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, humaniora.",
+  "catFam": true,
+  "title": "Studentermedhjælper til Marketing Support",
+  "co": "ELECTROLUX PROFESSIONAL A/S",
+  "city": "Vallensbæk",
+  "region": "kbh",
+  "hMin": 12,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "foto",
+   "videoproduktion",
+   "sociale medier",
+   "storytelling",
+   "LinkedIn-content"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-12-31T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du hjælper med foto- og videoproduktion og laver kundecases om professionelle køkkener og vaskerier. Du laver også content til LinkedIn og andre digitale kanaler og besøger kunder og samarbejdspartnere.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3162509/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x94f4f503300a",
   "live": true
  },
  {

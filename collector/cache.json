@@ -61967,5 +61967,305 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, sprog og kommunikation, samfundsvidenskab.",
   "openToAll": false
+ },
+ "3754bf3f6bb775bd6ca91873ee286ad66a1edfde": {
+  "fam": "operations",
+  "sec": [
+   "supply",
+   "datasci"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "matematisk modellering",
+   "MILP",
+   "optimering",
+   "Pyomo",
+   "Gurobi"
+  ],
+  "blurb": "Du bygger og bruger matematiske modeller til kapacitets-, produktions- og planlægningsbeslutninger i Novo Nordisks API-produktion i Kalundborg. Du arbejder med MILP-modeller og optimeringsprojekter sammen med en specialiseret optimeringsgruppe.",
+  "deadlineAt": "2026-11-27T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "produktionsøkonomi",
+   "matematik-økonomi",
+   "kemiteknologi",
+   "business analytics",
+   "matematisk modellering",
+   "operations research",
+   "industriel økonomi",
+   "logistik"
+  ],
+  "why": "Jobbet kræver modellering, optimering og forståelse for forsyningskæder, som især uddannelser inden for produktion, matematik og analytics dækker.",
+  "openToAll": false
+ },
+ "cddb0a04449ac7ede38a97fbda79f8f5816fb077": {
+  "fam": "hr",
+  "sec": [
+   "procurement",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "SharePoint",
+   "HR-administration",
+   "detaljeorientering",
+   "indkøb og fakturaopfølgning",
+   "dansk og engelsk"
+  ],
+  "blurb": "Du hjælper med HR-administration, opdatering af SharePoint-sider, onboarding og offboarding samt kontor- og flådeadministration. Du støtter også interne events og står for bestillinger og fakturaopfølgning.",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "personaleledelse",
+   "erhvervsøkonomi",
+   "ha",
+   "kommunikation",
+   "organisationspsykologi"
+  ],
+  "why": "Jobbet kræver kendskab til HR-processer, organisation og administration, som er centralt i HR- og erhvervsuddannelser.",
+  "openToAll": false
+ },
+ "d6e4544bbc64257c5b1c3508fcf035647f9d17e9": {
+  "fam": "education",
+  "sec": [
+   "public",
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 12,
+  "hMax": 12,
+  "skills": [
+   "koordinering",
+   "administration",
+   "skriftlig kommunikation",
+   "overblik og struktur",
+   "målgruppefokus børn"
+  ],
+  "blurb": "Du hjælper med administrative og praktiske opgaver, fx oprydning, koordinering og registrering, og med at afvikle afdelingens aktiviteter for børn. Du skal også skrive en del i kontakt med teatrets interne og eksterne samarbejdspartnere.",
+  "deadlineAt": "2026-12-02T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kulturvidenskab",
+   "kulturformidling",
+   "teatervidenskab",
+   "kunsthistorie",
+   "musikvidenskab",
+   "pædagogik",
+   "dramaturgi"
+  ],
+  "why": "Jobbet kræver interesse for kultur og formidling samt skriftlighed, så det passer bedst til kultur- og formidlingsuddannelser.",
+  "openToAll": false
+ },
+ "cee26b41f62f78651822f6bab6b3ade7151d8fb8": {
+  "fam": "legal",
+  "sec": [
+   "health",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "I Styrelsen for Patientklager får du mulighed for at arbejde selvstændigt med netop de sager – og samtidig blive en del af et stærkt fagligt fællesskab, hvor vi hjælper hinanden med at finde de rigtige løsninger.",
+  "deadlineAt": "2026-12-06T23:59:59+00:00",
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "0c2876663f79adf1cef3cbc97af1b8bb4fd2abb5": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Skriver du, så både hjerne og hjerte bliver ramt? Finder du energi i at udvikle kanaler og formidlingsformer og skabe en rød tråd i fortællinger fra strategi til hverdag?",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "c1d9451babc415f5dbddbad731280b4df7b63f2e": {
+  "fam": "finance",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Vi etablerer derfor en intern systemrevisorfunktion, der skal give vores danske direktion et uafhængigt og evidensbaseret billede af, om vores governance, risikostyring og sikkerhedskontroller fungerer som forudsat.",
+  "deadlineAt": null,
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "14c9f3e4679290f312f4e8e0e811ef441b2cdfa3": {
+  "fam": "research",
+  "sec": [
+   "health",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 9,
+  "hMax": 9,
+  "skills": [
+   "koordinering af møder",
+   "referatskrivning",
+   "transskribering",
+   "litteratursøgning",
+   "skriftlig formidling"
+  ],
+  "blurb": "Du koordinerer møder og interviews i et forskningsprojekt om psykisk arbejdsmiljø i ældreomsorgen og skriver referater fra vigtige møder. Du transskriberer interviews, laver litteratursøgning og hjælper med intern kommunikation og opslag på sociale medier.",
+  "deadlineAt": "2026-12-15T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "folkesundhedsvidenskab",
+   "sociologi",
+   "psykologi",
+   "sundhedsvidenskab",
+   "socialt arbejde",
+   "antropologi",
+   "ergoterapi",
+   "socialvidenskab"
+  ],
+  "why": "Projektet kræver viden om sundhed, arbejdsmiljø og samfundsforhold, og arbejdet med litteratur, interviews og koordinering passer til kandidater i samfunds- og sundhedsvidenskab.",
+  "openToAll": false
+ },
+ "29c8ecce5402942b5e85e9a1641b826578fbad1a": {
+  "fam": "education",
+  "sec": [
+   "health"
+  ],
+  "danish": "required",
+  "hMin": 20,
+  "hMax": 30,
+  "skills": [
+   "undervisningsplanlægning",
+   "formidling",
+   "ergonomi",
+   "arbejdspladsindretning",
+   "vejledning"
+  ],
+  "blurb": "Du planlægger og underviser selvstændigt og sammen med andre i ergonomi og arbejdsmiljø for studerende på jordemoder- og laborantuddannelsen samt for ansatte på KP. Du får introduktion, en kontaktperson og et endagskursus i tilrettelæggelse af undervisning.",
+  "deadlineAt": "2026-12-02T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ergoterapi",
+   "fysioterapi",
+   "arbejdsmiljø",
+   "sundhedsvidenskab"
+  ],
+  "why": "Jobbet kræver faglig viden om ergonomi og arbejdsmiljø, som ergoterapi- og fysioterapistuderende har fra deres uddannelse.",
+  "openToAll": false
+ },
+ "43d3dbe20f151c4de39019f979ba2ac880597553": {
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "datakvalitet",
+   "Power Automate",
+   "databehandling",
+   "procesautomatisering"
+  ],
+  "blurb": "Du kvalitetssikrer og retter data på tværs af systemer i If og hjælper forskellige afdelinger med administrative og ad hoc-opgaver. Du kan også automatisere simple arbejdsgange, fx med Power Automate.",
+  "deadlineAt": "2026-12-01T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "datalogi",
+   "it",
+   "matematik-økonomi",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver Excel-, data- og procesforståelse, som styrkes på økonomiske, it- og datafaglige uddannelser.",
+  "openToAll": false
+ },
+ "92950807d22b5b1452d4a99abe7b382c1a73e060": {
+  "fam": "hr",
+  "sec": [
+   "operations",
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "kandidatsearch",
+   "CV-screening",
+   "kandidatkontakt",
+   "stillingsopslag",
+   "dansk og engelsk kommunikation"
+  ],
+  "blurb": "Du søger efter kandidater på LinkedIn Recruiter og Jobnet, screener CV'er og tager første kontakt til potentielle kandidater. Du hjælper også med stillingsopslag, research på virksomheder og brancher og koordinering af samtaler.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "psykologi",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "sociologi",
+   "kommunikation",
+   "human resource management",
+   "arbejdspsykologi"
+  ],
+  "why": "Rekruttering kræver forståelse for mennesker, virksomheder og arbejdsmarkedet, og det kan studerende fra mange forskellige retninger bidrage til.",
+  "openToAll": true
+ },
+ "873f8d920fc3664e0ff96cc31314268191d4e5a4": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "plus",
+  "hMin": 12,
+  "hMax": 15,
+  "skills": [
+   "foto",
+   "videoproduktion",
+   "sociale medier",
+   "storytelling",
+   "LinkedIn-content"
+  ],
+  "blurb": "Du hjælper med foto- og videoproduktion og laver kundecases om professionelle køkkener og vaskerier. Du laver også content til LinkedIn og andre digitale kanaler og besøger kunder og samarbejdspartnere.",
+  "deadlineAt": "2026-12-31T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "arkitekt",
+   "design",
+   "kunst"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, humaniora.",
+  "openToAll": false
  }
 }

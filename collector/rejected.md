@@ -18,6 +18,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Syddansk Sundhedsinnovation søger en projektleder til internationale projekter | ikke et studiejob |
 | Energinet | International rådgiver, der sætter retning for Systemdrifts internationale samarbejde | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
+| HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
@@ -33,6 +34,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aarhus Kommune | The International Day Nursery – Aarhus søger to engagerede og eventyrlystne pædagoger | ikke et studiejob |
+| Næstved Kommune | Værksteds- og praktikvejleder til Næstved Ungdomsskoles heltidsundervisning | ikke et studiejob |
 | Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | Roskilde Universitet | Engageret studiemiljøtutor til StudieLiv | ikke et studiejob |
 | Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
@@ -42,6 +44,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
+| Topdanmark | Finansbachelorer til praktik 2027 | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
 | StuderendeOnline.dk | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | StuderendeOnline.dk | Studentermedhjælper til HR Operationsteam | ikke et studiejob |
