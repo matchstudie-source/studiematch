@@ -23,7 +23,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Midlertidig ansat til Internationale Ægteskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
-| Statslige arbejdsgivere | Skattespecialister til national og international selskabsskat i Store Selskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | Lunar | Junior Account Executive - Student Worker | udlandet: Stockholm |
