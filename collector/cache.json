@@ -63731,5 +63731,410 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for administration, HR, organisation og ledelse.",
   "openToAll": false
+ },
+ "d05db25cf9f952c1261d8fbfb4c320565b029f7f": {
+  "fam": "public",
+  "sec": [
+   "operations",
+   "marketing"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "sekretariatsdrift",
+   "mødeplanlægning",
+   "skriftlig formulering",
+   "research",
+   "kommunikation på sociale medie"
+  ],
+  "blurb": "Du planlægger og koordinerer møder og arrangementer for Cykelambassaden og laver research og mødemateriale til politiske sager. Du skriver opslag til sociale medier, håndterer henvendelser og medlemmer og er med til at opdatere hjemmesiden.",
+  "deadlineAt": "2025-12-09T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "kommunikation",
+   "erhvervsøkonomi",
+   "sociologi",
+   "geografi",
+   "journalistik",
+   "europastudier"
+  ],
+  "why": "Jobbet kræver struktur, skriftlig formidling og interesse for politik og virksomheder, som fx statskundskab og kommunikation dækker godt.",
+  "openToAll": true
+ },
+ "fa5f80ffd85909eb2c3ebbeea87758fdf5b80383": {
+  "fam": "legal",
+  "sec": [
+   "research",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "juridisk analyse",
+   "retspraksis-søgning",
+   "juridisk skrivning",
+   "research",
+   "kendskab til menneskerettighed"
+  ],
+  "blurb": "Du søger og overvåger lovgivning og retspraksis i Danmark, Grønland og internationalt, og hjælper med høringssvar, juridiske notater og rapporter. Du er også med til at planlægge møder og aktiviteter samt løse administrative opgaver.",
+  "deadlineAt": "2026-12-09T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab"
+  ],
+  "why": "Opgaverne kræver juridisk analyse, retspraksis-søgning og skriftlig juridisk formulering, som jurastuderende på minimum femte semester er trænet i.",
+  "openToAll": false
+ },
+ "9494143621f175ac36f084e1a7a889c26f0796b9": {
+  "fam": "marketing",
+  "sec": [
+   "hr",
+   "strategy"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "strategisk kommunikation",
+   "dataanalyse",
+   "rekrutteringsstrategi",
+   "skriftlig formidling",
+   "målgruppeanalyse"
+  ],
+  "blurb": "Du analyserer skolens rekrutteringskanaler, ansøgermønstre og kommunikationsindsatser og er med til at udvikle og evaluere nye rekrutteringstiltag. Du skriver også indhold til hjemmeside, nyhedsbreve og sociale medier og bidrager til PR for skolens arrangementer.",
+  "deadlineAt": "2026-12-01T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "medievidenskab",
+   "informationsvidenskab",
+   "journalistik",
+   "kulturformidling"
+  ],
+  "why": "Jobbet kræver analyse, strategisk kommunikation og god skriftlig formidling, som er kernen i kommunikations-, medie- og informationsuddannelserne.",
+  "openToAll": false
+ },
+ "a6bb8d00fcd79b4bf241604b18eceead6eda6779": {
+  "fam": "engineering",
+  "sec": [
+   "bi",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "ArcGIS Enterprise",
+   "QGIS",
+   "Python",
+   "SQL",
+   "HTML"
+  ],
+  "blurb": "Du producerer kortmateriale til web og tryksager til infrastrukturprojekter og er med til at opsætte webGIS-løsninger og opdatere lag. Du laver også dataudtræk, geografiske analyser og mindre udviklingsopgaver sammen med to GIS-medarbejdere.",
+  "deadlineAt": "2026-12-11T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "geografi",
+   "geoinformatik",
+   "landinspektør",
+   "planlægning",
+   "miljøvidenskab"
+  ],
+  "why": "Jobbet kræver kortproduktion, geodata og rumlige analyser, og det er kernen i geografi og geoinformatik.",
+  "openToAll": false
+ },
+ "1ae776440a520822b5cc6d6446aa1855b827b3eb": {
+  "fam": "bizdev",
+  "sec": [
+   "marketing",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "CRM-systemer",
+   "Office-pakken",
+   "engelsk",
+   "kommunikation",
+   "detaljeorientering"
+  ],
+  "blurb": "Du assisterer tre sælgere i DR Sales med administrative opgaver, CRM-opdateringer, booking af møder med internationale indkøbere og forberedelse til festivaler og markeder. Du varetager også fællespostkassen, kundeopfølgning og tekniske opgaver som tekstning og metadata.",
+  "deadlineAt": "2026-11-30T23:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "filmvidenskab",
+   "erhvervsøkonomi",
+   "international erhvervskommunikation",
+   "engelsk"
+  ],
+  "why": "Jobbet kræver forståelse for medie- og filmbranchen, internationale salgsprocesser og et sprogligt og kommunikativt set-up, som disse uddannelser giver.",
+  "openToAll": false
+ },
+ "245c36542f6265779e17ccf707b5c49501265059": {
+  "fam": "public",
+  "sec": [
+   "bi",
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "dataanalyse",
+   "ledelsesinformation",
+   "sagsbehandling",
+   "GDPR",
+   "kommunikation"
+  ],
+  "blurb": "Du indsamler, behandler og analyserer data og udarbejder ledelsesinformation og notater til ledelsen i Backoffice under Borgerservice. Opgaverne kan også omfatte automatisering af arbejdsgange, sagsbehandling og GDPR- og IT-sikkerhedsopgaver.",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "økonomi",
+   "jura",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "cand.polit",
+   "politik og administration",
+   "datavidenskab"
+  ],
+  "why": "Jobbet kræver analytisk arbejde med offentlig administration, økonomi og jura, som de nævnte uddannelser giver direkte kompetencer i.",
+  "openToAll": false
+ },
+ "5d8172de306e7b6e818c37313dd74585361f5052": {
+  "fam": "legal",
+  "sec": [
+   "finance",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "juridisk vurdering",
+   "strafferet",
+   "forvaltningsret",
+   "straffeproces",
+   "skriftlig juridisk formulering"
+  ],
+  "blurb": "Du vurderer juridiske spørgsmål i efterforskningssager om fx bedrageri, skat, moms og hvidvask, fx værneting, internationale retsanmodninger og påtalebegæringer. Du udarbejder skriftlige produkter på baggrund af vurderingerne.",
+  "deadlineAt": "2026-12-03T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "cand.jur.",
+   "erhvervsjura",
+   "cand.merc.jur."
+  ],
+  "why": "Jobbet kræver juridisk analyse inden for strafferet, forvaltningsret og straffeproces, som er kernen i jurastudiet.",
+  "openToAll": false
+ },
+ "5253053656ab6037e7075ff93ee02547df820a16": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "juridisk sagsbehandling",
+   "aktindsigt",
+   "forvaltningsret",
+   "databeskyttelsesret",
+   "formuleringsevne"
+  ],
+  "blurb": "Du laver udkast til afgørelser om aktindsigt efter forvaltningsloven, offentlighedsloven og retsplejeloven, og vurderer undtagelser og databeskyttelsesreglerne. Du læser straffe- og politisager og arbejder tæt sammen med juristerne i Ledelsessekretariatet.",
+  "deadlineAt": "2026-12-04T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "retsvidenskab",
+   "statskundskab",
+   "offentlig administration"
+  ],
+  "why": "Jobbet kræver juridisk sagsbehandling og kendskab til forvaltnings- og databeskyttelsesret, hvilket er kernen i en juridisk uddannelse.",
+  "openToAll": false
+ },
+ "69aabb8a7511382adc4091bf16fde821ef0f9309": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "no",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "pålidelighed",
+   "selvstændighed",
+   "kundekontakt"
+  ],
+  "blurb": "Du leverer en kage og et håndskrevet kort til kundeserviceteamet i en virksomhed og afleverer kortet i receptionen i Aarhus-området. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "openToAll": true
+ },
+ "9ab7c09824215ed9170350aa0b81970dba0e5f13": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "levering",
+   "kundeservice",
+   "kommunikation",
+   "punktlighed"
+  ],
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomhed i Odense og omegn og afleverer det i receptionen. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "logistik",
+   "erhvervsøkonomi",
+   "kommunikation"
+  ],
+  "why": "Opgaven kræver planlægning, levering og almindelig kommunikation med en virksomhed, og det er noget, mange uddannelser træner.",
+  "openToAll": true
+ },
+ "8f413d46eca9ef1806fe6ddcd24778198fd347d4": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "fleksibilitet",
+   "selvstændighed",
+   "pålidelighed",
+   "levering på stedet"
+  ],
+  "blurb": "Du udfører små opgaver på stedet i Aalborg og omegn, fx at levere en kage til et kundeserviceteam og et håndskrevet kort i receptionen. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "openToAll": true
+ },
+ "9d1135ec3227ff9cc43c890b066f38d2d53065ea": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "no",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "levering",
+   "kundekontakt",
+   "fleksibilitet",
+   "pålidelighed"
+  ],
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomheds kundeserviceteam på en adresse i København eller omegn. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "openToAll": true
+ },
+ "de3848a91e58d878bc06b5287afda5b6e3bdffb0": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "egen transport",
+   "pålidelighed",
+   "kommunikation"
+  ],
+  "blurb": "Du leverer en kage og et håndskrevet kort til et kundeserviceteam i Vejle og omegn, typisk over 2-5 timer pr. opgave, og du vælger selv dagene. Opslaget angiver både København og Vejle som sted, og løn udbetales via Factofly.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "erhvervsøkonomi",
+   "markedsføring"
+  ],
+  "why": "Opgaven kræver blot en pålidelig person på stedet, så den er relevant for studerende fra de fleste uddannelser.",
+  "openToAll": true
+ },
+ "22cdd9c2ac324ebe935cf23bd59285905607304a": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "fleksibilitet",
+   "pålidelighed",
+   "tilstedeværelse på stedet"
+  ],
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomhed i Slagelse, Holbæk eller omegn, typisk over 2-5 timer pr. opgave. Opslaget er uklart om arbejdsgiver, sted og betaling, og 50 % forskud på første opgave er et advarselstegn, så verificer virksomheden før du søger.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "openToAll": true
+ },
+ "ffa69132ccb1c5cbf8483e8bc198526e6f6c0c50": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "no",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "Kundeservice"
+  ],
+  "blurb": "Du udfører små, personlige opgaver på stedet i Randers og omegn, fx at aflevere en kage og et håndskrevet kort i en virksomheds reception. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "openToAll": true
+ },
+ "3cc3571a195db54ea8abde5404f14d2cd4f1811b": {
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 2,
+  "hMax": 5,
+  "skills": [
+   "levering",
+   "kundekontakt",
+   "pålidelighed",
+   "kommunikation"
+  ],
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomhed i Sønderborg og omegn og afleverer det i receptionen. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "logistik",
+   "erhvervsøkonomi",
+   "marketing",
+   "kommunikation"
+  ],
+  "why": "Opgaven kræver primært lokal tilstedeværelse og god kundekontakt, ikke særlige faglige forudsætninger.",
+  "openToAll": true
  }
 }

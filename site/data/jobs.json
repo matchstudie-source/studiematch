@@ -1381,6 +1381,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1406,33 +1433,6 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1473,6 +1473,90 @@
   "why": "Jobbet kræver skriftlig formidling, indholdsproduktion og visuel kommunikation, hvilket passer til kommunikations- og mediefag samt sprogfag.",
   "openToAll": false,
   "id": "x9de181496895",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Snapchat & TikTok (4-6 mdr.) Er du skarp til at skabe og klippe…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-snapchat-tiktok-4-6-mdr/udp3ne",
+  "enrichedBy": "regler",
+  "id": "x3e37b1490b05",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til Influencer Marketing & Local Brand Activation (4-6 mdr.) Har du…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-influencer-marketing-local-brand-activation-4/yvw1ih",
+  "enrichedBy": "regler",
+  "id": "x38abd0b8d81e",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.) Har du interesse…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-some-meta-community-management-4-6-mdr/ilt9mi",
+  "enrichedBy": "regler",
+  "id": "x6a4f7e879fef",
   "live": true
  },
  {
@@ -1909,6 +1993,44 @@
   "live": true
  },
  {
+  "title": "Fagligt skarp studentermedhjælper til Juridisk afdeling",
+  "co": "Institut for Menneskerettigheder",
+  "city": "Wilders Plads 8K, 1403 København K",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "research",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "juridisk analyse",
+   "retspraksis-søgning",
+   "juridisk skrivning",
+   "research",
+   "kendskab til menneskerettighed"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-19T15:24:58+00:00",
+  "deadlineAt": "2026-12-09T23:59:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du søger og overvåger lovgivning og retspraksis i Danmark, Grønland og internationalt, og hjælper med høringssvar, juridiske notater og rapporter. Du er også med til at planlægge møder og aktiviteter samt løse administrative opgaver.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173638&DepartmentId=18977&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab"
+  ],
+  "why": "Opgaverne kræver juridisk analyse, retspraksis-søgning og skriftlig juridisk formulering, som jurastuderende på minimum femte semester er trænet i.",
+  "openToAll": false,
+  "id": "x77c49ae3362e",
+  "live": true
+ },
+ {
   "title": "Finansministeriet søger dygtige studenter til arbejdet med finansloven",
   "co": "Finansministeriets departement",
   "city": "København",
@@ -2333,6 +2455,47 @@
   "why": "Jobbet kræver interesse for miljøemner, god kommunikation og evnen til at finde og vurdere information, og det er åbent for mange studieretninger.",
   "openToAll": true,
   "id": "xd61e812f383f",
+  "live": true
+ },
+ {
+  "title": "PRAKTIKANT TIL DEN DANSKE SCENEKUNSTSKOLE - KOMMUNIKATION OG REKRUTTERING AF STUDERENDE",
+  "co": "Den Danske Scenekunstskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [
+   "hr",
+   "strategy"
+  ],
+  "famConf": "title",
+  "skills": [
+   "strategisk kommunikation",
+   "dataanalyse",
+   "rekrutteringsstrategi",
+   "skriftlig formidling",
+   "målgruppeanalyse"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-19T14:54:42+00:00",
+  "deadlineAt": "2026-12-01T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du analyserer skolens rekrutteringskanaler, ansøgermønstre og kommunikationsindsatser og er med til at udvikle og evaluere nye rekrutteringstiltag. Du skriver også indhold til hjemmeside, nyhedsbreve og sociale medier og bidrager til PR for skolens arrangementer.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173642&DepartmentId=19822&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "medievidenskab",
+   "informationsvidenskab",
+   "journalistik",
+   "kulturformidling"
+  ],
+  "why": "Jobbet kræver analyse, strategisk kommunikation og god skriftlig formidling, som er kernen i kommunikations-, medie- og informationsuddannelserne.",
+  "openToAll": false,
+  "id": "x30ef2a8e23e8",
   "live": true
  },
  {
@@ -2945,6 +3108,47 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til GIS i Banedanmark",
+  "co": "Anlæg",
+  "city": "Region Hovedstaden",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "engineering",
+  "sec": [
+   "bi",
+   "public"
+  ],
+  "famConf": "text",
+  "skills": [
+   "ArcGIS Enterprise",
+   "QGIS",
+   "Python",
+   "SQL",
+   "HTML"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-19T13:55:53+00:00",
+  "deadlineAt": "2026-12-11T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du producerer kortmateriale til web og tryksager til infrastrukturprojekter og er med til at opsætte webGIS-løsninger og opdatere lag. Du laver også dataudtræk, geografiske analyser og mindre udviklingsopgaver sammen med to GIS-medarbejdere.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173612&DepartmentId=20424&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "geografi",
+   "geoinformatik",
+   "landinspektør",
+   "planlægning",
+   "miljøvidenskab"
+  ],
+  "why": "Jobbet kræver kortproduktion, geodata og rumlige analyser, og det er kernen i geografi og geoinformatik.",
+  "openToAll": false,
+  "id": "x9e9643f9fe38",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til juridisk afdeling i Vejdirektoratet",
   "co": "Vejsektor og myndighed",
   "city": "København",
@@ -3207,50 +3411,6 @@
   "why": "Jobbet kræver analytisk forståelse af økonomistyring og rapportering, som både økonomiske og samfundsvidenskabelige uddannelser giver.",
   "openToAll": false,
   "id": "x98f5e25fde75",
-  "live": true
- },
- {
-  "title": "Studentermedhjælpere søges til Ministeriet for Natur og Dyrevelfærd",
-  "co": "Ministeriet for Natur og Dyrevelfærds Departement",
-  "city": "Departementet",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "marketing",
-   "sustain"
-  ],
-  "famConf": "title",
-  "skills": [
-   "skriftlig formidling",
-   "mundtlig formidling",
-   "analytiske kompetencer",
-   "sociale medier",
-   "samarbejde"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-11-05T09:58:10+00:00",
-  "deadlineAt": "2026-11-19T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du arbejder med kommunikation, presse, SoMe og ministerbesøg og udarbejder skriftligt materiale, folketingssvar og ministersager. Afhængigt af din profil laver du indhold til hjemmeside og intranet, eller du besvarer henvendelser, deltager i møder og arbejder med samfundsfaglige opgaver.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172540&DepartmentId=19733&MediaId=5",
-  "enrichedBy": "ai",
-  "studies": [
-   "statskundskab",
-   "kommunikation",
-   "medievidenskab",
-   "journalistik",
-   "biologi",
-   "miljøvidenskab",
-   "jura",
-   "erhvervsøkonomi"
-  ],
-  "why": "Jobbet kræver både kommunikationsfaglige evner og samfunds- eller naturfaglig indsigt i den politiske proces.",
-  "openToAll": false,
-  "id": "x3331bc6614f1",
   "live": true
  },
  {
@@ -3606,46 +3766,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til HR, vikariat",
-  "co": "Alka",
-  "city": "Ballerup, DK",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "operations"
-  ],
-  "famConf": "title",
-  "skills": [
-   "detaljesans",
-   "systematik",
-   "servicemindset",
-   "prioritering",
-   "HR-systemer"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": "2026-11-17T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du håndterer personaleadministrative opgaver i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Arbejdet sker i et HR-team, der støtter ca. 4.000 medarbejdere, og er præget af digitale systemer.",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "ai",
-  "studies": [
-   "hr",
-   "organisation",
-   "kommunikation",
-   "erhvervsøkonomi",
-   "jura"
-  ],
-  "why": "Opgaverne kræver kendskab til HR-processer, organisation og kommunikation, som er centrale i HR- og organisationsuddannelser.",
-  "openToAll": false,
-  "id": "xed64a1b53877",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Operations & Training",
   "co": "Alka",
   "city": "Ballerup, DK",
@@ -3685,6 +3805,46 @@
   "why": "Jobbet kræver læringsdesign, skriftlig formidling og intern kommunikation, hvilket passer godt til kommunikations-, pædagogik- og medieuddannelser.",
   "openToAll": false,
   "id": "x62726fb98a24",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til HR, vikariat",
+  "co": "Alka",
+  "city": "Ballerup, DK",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "detaljesans",
+   "systematik",
+   "servicemindset",
+   "prioritering",
+   "HR-systemer"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-17T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du håndterer personaleadministrative opgaver i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Arbejdet sker i et HR-team, der støtter ca. 4.000 medarbejdere, og er præget af digitale systemer.",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "organisation",
+   "kommunikation",
+   "erhvervsøkonomi",
+   "jura"
+  ],
+  "why": "Opgaverne kræver kendskab til HR-processer, organisation og kommunikation, som er centrale i HR- og organisationsuddannelser.",
+  "openToAll": false,
+  "id": "xed64a1b53877",
   "live": true
  },
  {
@@ -3785,7 +3945,7 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til HR, vikariat",
+  "title": "Mødebooker (studiejob), Tryg Privat",
   "co": "Alka",
   "city": "Høje-Taastrup",
   "region": "kbh",
@@ -3794,35 +3954,23 @@
   "danish": "required",
   "fam": "hr",
   "sec": [
-   "operations"
+   "customer",
+   "social"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
-   "HR-administration",
-   "sans for detaljer",
-   "prioritering",
-   "systemunderstøttelse",
-   "serviceindstilling"
+   "Løn",
+   "Kundeservice"
   ],
   "industry": "Pension og forsikring",
   "postedAt": null,
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Du håndterer personaleadministration i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Opgaverne støtter HR-afdelingens interne kolleger og er digitale og systemunderstøttede.",
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
   "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/",
-  "enrichedBy": "ai",
-  "studies": [
-   "hr",
-   "erhvervsøkonomi",
-   "organisation",
-   "kommunikation",
-   "psykologi",
-   "jura"
-  ],
-  "why": "Jobbet kræver forståelse for HR-processer, personaleadministration og organisation, som HR- og organisationsfag dækker.",
-  "openToAll": false,
-  "id": "x9f6580deeca4",
+  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
+  "enrichedBy": "regler",
+  "id": "xc7e71abcfd04",
   "live": true
  },
  {
@@ -3894,35 +4042,6 @@
   "live": true
  },
  {
-  "title": "Mødebooker (studiejob), Tryg Privat",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "customer",
-   "social"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Kundeservice"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
-  "enrichedBy": "regler",
-  "id": "xc7e71abcfd04",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Operations & Training",
   "co": "Alka",
   "city": "Høje-Taastrup",
@@ -3962,6 +4081,47 @@
   "why": "Jobbet kræver læringsdesign, skriftlig formidling og intern kommunikation, som uddannelser inden for pædagogik, kommunikation og erhvervsøkonomi dækker.",
   "openToAll": false,
   "id": "xc63f0e3cb024",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til HR, vikariat",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "HR-administration",
+   "sans for detaljer",
+   "prioritering",
+   "systemunderstøttelse",
+   "serviceindstilling"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du håndterer personaleadministration i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Opgaverne støtter HR-afdelingens interne kolleger og er digitale og systemunderstøttede.",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "erhvervsøkonomi",
+   "organisation",
+   "kommunikation",
+   "psykologi",
+   "jura"
+  ],
+  "why": "Jobbet kræver forståelse for HR-processer, personaleadministration og organisation, som HR- og organisationsfag dækker.",
+  "openToAll": false,
+  "id": "x9f6580deeca4",
   "live": true
  },
  {
@@ -4133,90 +4293,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper med interesse for LCA, ESG og EU-taksonomi",
-  "co": "Per Aarsleff",
-  "city": "Øst Danmark",
-  "region": "oj",
-  "hMin": 8,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "sustain",
-  "sec": [
-   "engineering",
-   "bi"
-  ],
-  "famConf": "title",
-  "skills": [
-   "livscyklusvurdering",
-   "EU-taksonomi",
-   "dataanalyse",
-   "Power BI",
-   "LCAbyg"
-  ],
-  "industry": "Byggeri",
-  "postedAt": "2026-11-05T08:44:35+00:00",
-  "deadlineAt": "2026-12-04T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du hjælper med livscyklusvurderinger af projekter og produkter, screening af projekter efter EU-taksonomiens kriterier og indsamling og bearbejdning af data til bæredygtighedsanalyser. Opgaverne varierer efter aktuelle projekter.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182843&DepartmentId=21679&MediaId=5",
-  "enrichedBy": "ai",
-  "studies": [
-   "bygningsingeniør",
-   "byggeteknik",
-   "miljøteknik",
-   "civilingeniør",
-   "energiteknik",
-   "arkitektur"
-  ],
-  "why": "LCA og EU-taksonomi for byggeri og anlæg kræver teknisk forståelse af materialer, konstruktion og data, som ingeniør- og byggeuddannelser giver.",
-  "openToAll": false,
-  "id": "xfb733fea070e",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper",
-  "co": "DR",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "bizdev",
-  "sec": [
-   "marketing",
-   "customer"
-  ],
-  "famConf": "text",
-  "skills": [
-   "CRM-systemer",
-   "Office-pakken",
-   "databaser",
-   "flydende engelsk",
-   "flydende dansk"
-  ],
-  "industry": "Medier",
-  "postedAt": "2026-11-12T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du assisterer salgsteamet i DR Sales med administration, mødebooking med internationale indkøbere og forberedelse til festivaler og markeder. Du opdaterer CRM-systemet, varetager fællespostkassen og følger op på kundekontakt.",
-  "req": null,
-  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studentermedhj%C3%A6lper-0999/1456860733/",
-  "enrichedBy": "ai",
-  "studies": [
-   "medievidenskab",
-   "kommunikation",
-   "erhvervsøkonomi",
-   "ha",
-   "cand.merc",
-   "international business"
-  ],
-  "why": "Jobbet kombinerer international salg, kommunikation og mediebranchen, så det passer godt til studier i medier, kommunikation og erhvervsøkonomi.",
-  "openToAll": false,
-  "id": "xb4331ff28ce4",
-  "live": true
- },
- {
   "title": "Studiejob: Vil du være med til at styrke de gode samtaler på DR's sociale medier?",
   "co": "DR",
   "city": "København",
@@ -4297,6 +4373,48 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til DR's internationale salgsafdeling",
+  "co": "DR",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "bizdev",
+  "sec": [
+   "marketing",
+   "customer"
+  ],
+  "famConf": "text",
+  "skills": [
+   "CRM-systemer",
+   "Office-pakken",
+   "engelsk",
+   "kommunikation",
+   "detaljeorientering"
+  ],
+  "industry": "Medier",
+  "postedAt": "2026-11-12T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du assisterer tre sælgere i DR Sales med administrative opgaver, CRM-opdateringer, booking af møder med internationale indkøbere og forberedelse til festivaler og markeder. Du varetager også fællespostkassen, kundeopfølgning og tekniske opgaver som tekstning og metadata.",
+  "req": null,
+  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studentermedhj%C3%A6lper-til-DR's-internationale-salgsafdeling-0999/1456860733/",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "filmvidenskab",
+   "erhvervsøkonomi",
+   "international erhvervskommunikation",
+   "engelsk"
+  ],
+  "why": "Jobbet kræver forståelse for medie- og filmbranchen, internationale salgsprocesser og et sprogligt og kommunikativt set-up, som disse uddannelser giver.",
+  "openToAll": false,
+  "id": "x17a22ffd3fe5",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til CRM, CX og MarTech i 3",
   "co": "3 Danmark",
   "city": "København",
@@ -4363,6 +4481,50 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=318&ProjectId=180163&DepartmentId=20927&MediaId=5",
   "enrichedBy": "regler",
   "id": "xa2998b727a18",
+  "live": true
+ },
+ {
+  "title": "Analytiske, talstærke og kommunikativt dygtige studentermedhjælpere til Backoffice, Borgerservice",
+  "co": "Aarhus Kommune",
+  "city": "Hack Kampmanns Plads 2, Aarhus, Aarhus C",
+  "region": "oj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "bi",
+   "finance"
+  ],
+  "famConf": "title",
+  "skills": [
+   "dataanalyse",
+   "ledelsesinformation",
+   "sagsbehandling",
+   "GDPR",
+   "kommunikation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-19T14:46:32+00:00",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du indsamler, behandler og analyserer data og udarbejder ledelsesinformation og notater til ledelsen i Backoffice under Borgerservice. Opgaverne kan også omfatte automatisering af arbejdsgange, sagsbehandling og GDPR- og IT-sikkerhedsopgaver.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=145039&DepartmentId=20956&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "økonomi",
+   "jura",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "cand.polit",
+   "politik og administration",
+   "datavidenskab"
+  ],
+  "why": "Jobbet kræver analytisk arbejde med offentlig administration, økonomi og jura, som de nævnte uddannelser giver direkte kompetencer i.",
+  "openToAll": false,
+  "id": "x70fc2e00ec4f",
   "live": true
  },
  {
@@ -4773,6 +4935,85 @@
   "url": "https://job.politi.dk/job/K%C3%B8benhavn-V-Studentermedhj%C3%A6lpere-til-%C3%B8konomistyring-i-Rigspolitiet-1567/1374171055/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "regler",
   "id": "x6c106805d793",
+  "live": true
+ },
+ {
+  "title": "Jurastuderende til efterforskningscentret for Økonomisk Kriminalitet",
+  "co": "Politiet",
+  "city": "Horsens, DK, 8700",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "finance",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "juridisk vurdering",
+   "strafferet",
+   "forvaltningsret",
+   "straffeproces",
+   "skriftlig juridisk formulering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-19T00:00:00+00:00",
+  "deadlineAt": "2026-12-03T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du vurderer juridiske spørgsmål i efterforskningssager om fx bedrageri, skat, moms og hvidvask, fx værneting, internationale retsanmodninger og påtalebegæringer. Du udarbejder skriftlige produkter på baggrund af vurderingerne.",
+  "req": "jura",
+  "url": "https://job.politi.dk/job/Horsens-Jurastuderende-til-efterforskningscentret-for-%C3%98konomisk-Kriminalitet-8700/1377616755/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "cand.jur.",
+   "erhvervsjura",
+   "cand.merc.jur."
+  ],
+  "why": "Jobbet kræver juridisk analyse inden for strafferet, forvaltningsret og straffeproces, som er kernen i jurastudiet.",
+  "openToAll": false,
+  "id": "xfb298f89cfd5",
+  "live": true
+ },
+ {
+  "title": "Jurastuderende til Ledelsessekretariatet",
+  "co": "Politiet",
+  "city": "Odense, DK, 5000",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "famConf": "text",
+  "skills": [
+   "juridisk sagsbehandling",
+   "aktindsigt",
+   "forvaltningsret",
+   "databeskyttelsesret",
+   "formuleringsevne"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-19T00:00:00+00:00",
+  "deadlineAt": "2026-12-04T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du laver udkast til afgørelser om aktindsigt efter forvaltningsloven, offentlighedsloven og retsplejeloven, og vurderer undtagelser og databeskyttelsesreglerne. Du læser straffe- og politisager og arbejder tæt sammen med juristerne i Ledelsessekretariatet.",
+  "req": "jura",
+  "url": "https://job.politi.dk/job/Odense-Jurastuderende-til-Ledelsessekretariatet-5000/1377636355/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "retsvidenskab",
+   "statskundskab",
+   "offentlig administration"
+  ],
+  "why": "Jobbet kræver juridisk sagsbehandling og kendskab til forvaltnings- og databeskyttelsesret, hvilket er kernen i en juridisk uddannelse.",
+  "openToAll": false,
+  "id": "x44d596b3e070",
   "live": true
  },
  {
@@ -5858,6 +6099,47 @@
   "live": true
  },
  {
+  "title": "Student Assistant for driving the IT/Digital PMO team with PMO Cluster Lead and Management team",
+  "co": "DSV",
+  "city": "Hedehusene, 84, DK, 2640",
+  "region": "kbh",
+  "hMin": 20,
+  "hMax": 20,
+  "danish": "plus",
+  "fam": "pmo",
+  "sec": [
+   "software",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "PowerPoint",
+   "SharePoint",
+   "engelsk kommunikation",
+   "projektadministration"
+  ],
+  "industry": "Logistik og shipping",
+  "postedAt": "2026-11-17T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du støtter IT/Digital PMO-teamet med kalenderkoordinering, administration, dataopfølgning og opdatering af rapporteringsskabeloner. Du er næstkommanderende for IT/Digital Cluster Lead og hjælper projektledere og agile coaches i det daglige.",
+  "req": null,
+  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "informatik",
+   "kommunikation",
+   "projektledelse",
+   "it-økonomi"
+  ],
+  "why": "Jobbet kombinerer projektadministration, kommunikation og it-understøttelse, som er centrale i økonomi-, it- og kommunikationsuddannelser.",
+  "openToAll": false,
+  "id": "x099e04a53351",
+  "live": true
+ },
+ {
   "title": "Student Assistant - Change & Business Operations",
   "co": "DSV",
   "city": "Hedehusene, 84, DK, 2640",
@@ -5903,15 +6185,15 @@
  {
   "title": "Student Assistant for driving the IT/Digital PMO team with PMO Cluster Lead and Management team",
   "co": "DSV",
-  "city": "Hedehusene, 84, DK, 2640",
+  "city": "Hedehusene",
   "region": "kbh",
   "hMin": 20,
   "hMax": 20,
   "danish": "plus",
   "fam": "pmo",
   "sec": [
-   "software",
-   "operations"
+   "operations",
+   "hr"
   ],
   "famConf": "title",
   "skills": [
@@ -5923,22 +6205,22 @@
   ],
   "industry": "Logistik og shipping",
   "postedAt": "2026-11-17T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "deadlineAt": "2026-11-30T23:00:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Du støtter IT/Digital PMO-teamet med kalenderkoordinering, administration, dataopfølgning og opdatering af rapporteringsskabeloner. Du er næstkommanderende for IT/Digital Cluster Lead og hjælper projektledere og agile coaches i det daglige.",
+  "blurb": "Du er højre hånd for IT/Digital Cluster Lead og hjælper projektledere og agile coaches med kalendere, administration, dataopfølgning og onboarding. Du opdaterer også rapporteringsskabeloner og foreslår forbedringer af arbejdsgangene i PMO-teamet.",
   "req": null,
-  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/",
   "enrichedBy": "ai",
   "studies": [
    "erhvervsøkonomi",
-   "informatik",
+   "ha",
    "kommunikation",
    "projektledelse",
-   "it-økonomi"
+   "it"
   ],
-  "why": "Jobbet kombinerer projektadministration, kommunikation og it-understøttelse, som er centrale i økonomi-, it- og kommunikationsuddannelser.",
+  "why": "Jobbet kræver administrativ overblik, projektforståelse og kommunikation, som typisk trænes på erhvervsøkonomi, kommunikation og projektledelse.",
   "openToAll": false,
-  "id": "x099e04a53351",
+  "id": "x719de4f8cc6d",
   "live": true
  },
  {
@@ -5980,47 +6262,6 @@
   "why": "Jobbet kræver forretningsforståelse, koordinering, struktur og skriftlig kommunikation, som uddannelser i økonomi og kommunikation giver.",
   "openToAll": false,
   "id": "xffae9a3027a6",
-  "live": true
- },
- {
-  "title": "Student Assistant for driving the IT/Digital PMO team with PMO Cluster Lead and Management team",
-  "co": "DSV",
-  "city": "Hedehusene",
-  "region": "kbh",
-  "hMin": 20,
-  "hMax": 20,
-  "danish": "plus",
-  "fam": "pmo",
-  "sec": [
-   "operations",
-   "hr"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "PowerPoint",
-   "SharePoint",
-   "engelsk kommunikation",
-   "projektadministration"
-  ],
-  "industry": "Logistik og shipping",
-  "postedAt": "2026-11-17T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du er højre hånd for IT/Digital Cluster Lead og hjælper projektledere og agile coaches med kalendere, administration, dataopfølgning og onboarding. Du opdaterer også rapporteringsskabeloner og foreslår forbedringer af arbejdsgangene i PMO-teamet.",
-  "req": null,
-  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/",
-  "enrichedBy": "ai",
-  "studies": [
-   "erhvervsøkonomi",
-   "ha",
-   "kommunikation",
-   "projektledelse",
-   "it"
-  ],
-  "why": "Jobbet kræver administrativ overblik, projektforståelse og kommunikation, som typisk trænes på erhvervsøkonomi, kommunikation og projektledelse.",
-  "openToAll": false,
-  "id": "x719de4f8cc6d",
   "live": true
  },
  {
@@ -6150,46 +6391,6 @@
   "why": "Jobbet giver praktisk indsigt i socialrådgivernes sagsbehandling og myndighedsarbejde med unge, hvilket passer direkte til socialfaglige uddannelser.",
   "openToAll": false,
   "id": "xaf5d54f2f9c9",
-  "live": true
- },
- {
-  "title": "Student Assistant - Digital Solutions and AI at Cellerator",
-  "co": "Novo Nordisk Fonden",
-  "city": "Lyngby, Denmark",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "software",
-  "sec": [
-   "operations"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Copilot Studio",
-   "Power Apps",
-   "SharePoint",
-   "programmering",
-   "API og systemintegration"
-  ],
-  "industry": "Fonde",
-  "postedAt": "2026-11-13T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du bygger og vedligeholder Copilot Studio-agenter, Power Apps og SharePoint-løsninger sammen med forskere og kolleger. Du har ansvar for mindre løsninger fra kravindsamling til drift og underviser kolleger i brugen af værktøjerne.",
-  "req": null,
-  "url": "https://apply.workable.com/j/06FA0B29DD",
-  "enrichedBy": "ai",
-  "studies": [
-   "datalogi",
-   "softwareteknologi",
-   "data science",
-   "it-teknologi",
-   "matematik-datalogi"
-  ],
-  "why": "Jobbet kræver programmeringserfaring, dataforståelse og systemintegration, som især dækkes af it- og datauddannelser.",
-  "openToAll": false,
-  "id": "xaf188ad751b8",
   "live": true
  },
  {
@@ -9466,6 +9667,283 @@
   ],
   "why": "Jobbet kræver kvantitative færdigheder og en økonomisk forståelse af risiko, som matcher økonomi-, matematik- og statistikstudier.",
   "id": "x611d17fa3cec",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Aarhus og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "oj",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "no",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "pålidelighed",
+   "selvstændighed",
+   "kundekontakt"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du leverer en kage og et håndskrevet kort til kundeserviceteamet i en virksomhed og afleverer kortet i receptionen i Aarhus-området. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163313/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "id": "xec89d157b5e7",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Odense og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "fyn",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "plus",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "levering",
+   "kundeservice",
+   "kommunikation",
+   "punktlighed"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomhed i Odense og omegn og afleverer det i receptionen. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163314/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "studies": [
+   "logistik",
+   "erhvervsøkonomi",
+   "kommunikation"
+  ],
+  "why": "Opgaven kræver planlægning, levering og almindelig kommunikation med en virksomhed, og det er noget, mange uddannelser træner.",
+  "id": "x276c79ca3d50",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Aalborg og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "nj",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "plus",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "fleksibilitet",
+   "selvstændighed",
+   "pålidelighed",
+   "levering på stedet"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du udfører små opgaver på stedet i Aalborg og omegn, fx at levere en kage til et kundeserviceteam og et håndskrevet kort i receptionen. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163315/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "id": "xb03b2ef86bc2",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i København og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "no",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "levering",
+   "kundekontakt",
+   "fleksibilitet",
+   "pålidelighed"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomheds kundeserviceteam på en adresse i København eller omegn. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163316/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "id": "x3da4c67860f2",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Vejle og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "tre",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "plus",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "egen transport",
+   "pålidelighed",
+   "kommunikation"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du leverer en kage og et håndskrevet kort til et kundeserviceteam i Vejle og omegn, typisk over 2-5 timer pr. opgave, og du vælger selv dagene. Opslaget angiver både København og Vejle som sted, og løn udbetales via Factofly.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163317/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "erhvervsøkonomi",
+   "markedsføring"
+  ],
+  "why": "Opgaven kræver blot en pålidelig person på stedet, så den er relevant for studerende fra de fleste uddannelser.",
+  "id": "xeb116fb7db91",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Slagelse, Holbæk og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "sj",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "plus",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "fleksibilitet",
+   "pålidelighed",
+   "tilstedeværelse på stedet"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomhed i Slagelse, Holbæk eller omegn, typisk over 2-5 timer pr. opgave. Opslaget er uklart om arbejdsgiver, sted og betaling, og 50 % forskud på første opgave er et advarselstegn, så verificer virksomheden før du søger.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163318/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "id": "x5c380ea9f296",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Randers og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "oj",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "no",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Kundeservice"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du udfører små, personlige opgaver på stedet i Randers og omegn, fx at aflevere en kage og et håndskrevet kort i en virksomheds reception. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163319/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "id": "x31a12fc8488b",
+  "live": true
+ },
+ {
+  "openToAll": true,
+  "catFam": true,
+  "title": "Studiejob: 300 kr. i timen, opgaver i Sønderborg og omegn",
+  "co": "Wilmo ApS",
+  "city": "København",
+  "region": "sjy",
+  "hMin": 2,
+  "hMax": 5,
+  "danish": "plus",
+  "fam": "customer",
+  "sec": [
+   "salesops",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "levering",
+   "kundekontakt",
+   "pålidelighed",
+   "kommunikation"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-11-25T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du leverer en kage og et håndskrevet kort til en virksomhed i Sønderborg og omegn og afleverer det i receptionen. Opgaverne tager typisk 2-5 timer, og du vælger selv dagene.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3163320/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "studies": [
+   "logistik",
+   "erhvervsøkonomi",
+   "marketing",
+   "kommunikation"
+  ],
+  "why": "Opgaven kræver primært lokal tilstedeværelse og god kundekontakt, ikke særlige faglige forudsætninger.",
+  "id": "xbd9138a2b2c5",
   "live": true
  },
  {

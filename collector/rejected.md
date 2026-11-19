@@ -40,6 +40,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder til den ny fælles Studie- og Læsevejledning ved Syd- og Sønderjyllands største uddannelsesinstitution | ikke et studiejob |
+| Erhvervsakademi København | Studieadministrativ koordinator/PA til Studiefremdrift på EK (Erhvervsakademi København) | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
 | StuderendeOnline.dk | Rådet for Sikker Trafik søger: ung-til-ung underviser til meningsfuldt studiejob | ikke et studiejob |
