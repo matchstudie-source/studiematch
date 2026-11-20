@@ -12,7 +12,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Devoteam | Creative Marketing Intern | udlandet: Stockholm |
 | Devoteam | Business Development Intern | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
-| Region Syddanmark | Bliv introduktionslæge i intern medicin på Medicinske Sygdomme, Kolding Sygehus, og du vil få en bred medicinsk uddannelse. | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstillinger i intern medicin ved afdeling for Hjertesygdomme, Aabenraa | ikke et studiejob |
 | HOFOR | Sektionsleder til intern kommunikation, branding og kampagner | ikke et studiejob |
@@ -34,7 +33,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aarhus Kommune | The International Day Nursery – Aarhus søger to engagerede og eventyrlystne pædagoger | ikke et studiejob |
 | Næstved Kommune | Værksteds- og praktikvejleder til Næstved Ungdomsskoles heltidsundervisning | ikke et studiejob |
 | Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
-| Roskilde Universitet | Studielektor i Kulturmødestudier på Roskilde Universitet | ikke et studiejob |
 | IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
 | Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |
