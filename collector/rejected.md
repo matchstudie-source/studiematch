@@ -18,12 +18,12 @@ Bruges til at tjekke, om filteret er for strengt.
 | HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
+| Statslige arbejdsgivere | Kontorchef til International Arbejdskraft og EU-ophold (IAEU) i Udlændinge- og Integrationsministeriets departement | ikke et studiejob |
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Midlertidig ansat til Internationale Ægteskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Projektledere til internationale udviklingsprojekter | ikke et studiejob |
 | Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
-| Lunar | Junior Account Executive - Student Worker | udlandet: Stockholm |
 | ATP | Medarbejdere til sagsbehandling i internationale sager om familieydelse | ikke et studiejob |
 | ATP | Sagsbehandler til international kontrol (projektansættelse – 1 år) | ikke et studiejob |
 | Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |

@@ -567,41 +567,6 @@
   "live": true
  },
  {
-  "title": "Student Assistant, Football Data",
-  "co": "Veo",
-  "city": "Copenhagen Office",
-  "region": "kbh",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "datasci",
-  "sec": [
-   "software",
-   "research"
-  ],
-  "famConf": "text",
-  "skills": [],
-  "industry": "Tech og software",
-  "postedAt": "2026-11-06T13:02:49.664000+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du arbejder med fodbolddata fra Veos AI-kameraer, som bruges til videoanalyse af hold på alle niveauer. Opslaget beskriver ikke de præcise arbejdsopgaver.",
-  "req": null,
-  "url": "https://jobs.lever.co/veo/2148585b-5a5d-48d0-b165-deca52e853e7",
-  "enrichedBy": "ai",
-  "studies": [
-   "datalogi",
-   "statistik",
-   "matematik",
-   "data science",
-   "idrætsvidenskab"
-  ],
-  "why": "Jobbet handler om at analysere sportsdata, så det kræver analytiske og tekniske færdigheder i datalogi, statistik eller matematik.",
-  "openToAll": false,
-  "id": "x205f636ec0d5",
-  "live": true
- },
- {
   "title": "Student Intern (Unpaid) – AI Tools & Partner Marketing Solutions",
   "co": "Veo",
   "city": "Copenhagen Office",
@@ -641,6 +606,45 @@
   "why": "Jobbet kombinerer AI-værktøjer, automatisering og markedsføring, så det passer til studier med digitale, analytiske eller markedsrettede kompetencer.",
   "openToAll": false,
   "id": "xd704d86fdb9f",
+  "live": true
+ },
+ {
+  "title": "Devoteam Cyber Trust | Cybersecurity Engineer (IAM) | IEFP Internship",
+  "co": "Devoteam",
+  "city": "Lisboa",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "engineering",
+  "sec": [
+   "software"
+  ],
+  "famConf": "title",
+  "skills": [
+   "IAM",
+   "cybersikkerhed",
+   "identity and access management",
+   "systemadministration"
+  ],
+  "industry": "Rådgivning",
+  "postedAt": "2026-11-20T10:16:38.801000+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Praktik som cybersikkerhedsingeniør med fokus på identity and access management (IAM) i Devoteams Cyber Trust-team i Lisboa. Opslaget indeholder kun titel og sted, så de konkrete opgaver er ikke angivet.",
+  "req": null,
+  "url": "https://jobs.smartrecruiters.com/Devoteam/744000162699719",
+  "enrichedBy": "ai",
+  "studies": [
+   "datalogi",
+   "it-sikkerhed",
+   "softwareudvikling",
+   "it",
+   "elektroteknik"
+  ],
+  "why": "IAM-arbejde kræver viden om systemer, netværk og sikkerhed, som it- og datalogiuddannelser dækker.",
+  "openToAll": false,
+  "id": "x935ddff341e9",
   "live": true
  },
  {
@@ -848,6 +852,45 @@
   "live": true
  },
  {
+  "title": "Medhjælper til Bageriet – nattevagt",
+  "co": "Region Syddanmark",
+  "city": "Odense",
+  "region": "fyn",
+  "hMin": 5,
+  "hMax": 5,
+  "danish": "required",
+  "fam": "logistics",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "text",
+  "skills": [
+   "mødestabilitet",
+   "ansvarsbevidsthed",
+   "praktiske opgaver",
+   "selvstændigt arbejde",
+   "nattearbejde"
+  ],
+  "industry": "Sundhed og region",
+  "postedAt": "2026-11-20T08:53:15+00:00",
+  "deadlineAt": "2026-12-08T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du pakker brød til OUH's afdelinger i Odense og Svendborg og hjælper med praktiske opgaver i bageriet. Arbejdet foregår som nattevagter kl. 00.30-08.24, gennemsnitligt 5 timer om ugen.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237974&DepartmentId=10195&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "fødevarevidenskab",
+   "ernæring",
+   "logistik",
+   "produktionsteknologi"
+  ],
+  "why": "Jobbet handler om praktisk fødevareproduktion og levering til hospital, hvilket passer til fødevare- og ernæringsstudier, men det er åbent for de fleste.",
+  "openToAll": true,
+  "id": "x0f8043bad8b5",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper med interesse for statistiske analyser ved Center for Klinisk Epidemiologi, Odense Universitetshospital",
   "co": "Region Syddanmark",
   "city": "Odense",
@@ -872,44 +915,6 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237706&DepartmentId=21825&MediaId=5",
   "enrichedBy": "regler",
   "id": "xd5e78cf8901c",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Bageriet – nattevagt",
-  "co": "Region Syddanmark",
-  "city": "Odense",
-  "region": "fyn",
-  "hMin": 5,
-  "hMax": 5,
-  "danish": "plus",
-  "fam": "operations",
-  "sec": [
-   "logistics"
-  ],
-  "famConf": "text",
-  "skills": [
-   "mødestabilitet",
-   "ansvarsbevidsthed",
-   "selvstændighed",
-   "praktisk arbejde"
-  ],
-  "industry": "Sundhed og region",
-  "postedAt": "2026-11-20T08:53:15+00:00",
-  "deadlineAt": "2026-12-08T23:59:59+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du pakker brød og bagværk til OUH's afdelinger i Odense og Svendborg og hjælper med praktiske opgaver i bageriet. Arbejdet foregår som nattevagter fra kl. 00.30 til 08.24.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=198&ProjectId=237974&DepartmentId=10195&MediaId=5",
-  "enrichedBy": "ai",
-  "studies": [
-   "fødevarevidenskab",
-   "ernæring og sundhed",
-   "levnedsmiddelteknologi",
-   "logistik"
-  ],
-  "why": "Jobbet handler om praktisk fødevareproduktion og levering på et hospitalskøkken, og det passer derfor til studier med fokus på fødevarer og ernæring.",
-  "openToAll": true,
-  "id": "x0f8043bad8b5",
   "live": true
  },
  {
@@ -1419,33 +1424,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1471,6 +1449,33 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -1566,6 +1571,35 @@
   "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-influencer-marketing-local-brand-activation-4/yvw1ih",
   "enrichedBy": "regler",
   "id": "x38abd0b8d81e",
+  "live": true
+ },
+ {
+  "title": "Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.)",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "marketing",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "R",
+   "Sociale medier"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Forside Ledige stillinger Elev i Matas Persondatapolitik Farmakonom Uopfordrede ansøgninger Log ind Min profil Min profil Matas Group søger praktikant til SoMe (Meta) & Community Management (4-6 mdr.) Har du interesse…",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-soger-praktikant-til-some-meta-community-management-4-6-mdr/ilt9mi",
+  "enrichedBy": "regler",
+  "id": "x6a4f7e879fef",
   "live": true
  },
  {
@@ -2751,6 +2785,47 @@
   "live": true
  },
  {
+  "title": "Studentermedarbejder til Registraturen",
+  "co": "Statslige arbejdsgivere",
+  "city": "Statens Museum for Kunst",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "logistics",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "famConf": "text",
+  "skills": [
+   "MS Office",
+   "databasehåndtering",
+   "administration",
+   "journalisering",
+   "fakturering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-20T15:43:13+00:00",
+  "deadlineAt": "2026-12-09T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du assisterer Registraturen med udlån af museets værker, herunder modtagelse af låneanmodninger, forberedelse af lånekontrakter og oprettelse af transportsedler. Du opdaterer og trækker rapporter i databasen SARA samt står for journalisering og fakturering.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173697&DepartmentId=19818&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "kunsthistorie",
+   "museologi",
+   "informationsteknologi",
+   "biblioteks- og informationsvidenskab",
+   "erhvervsøkonomi"
+  ],
+  "why": "Arbejdet kræver kendskab til kunst og museets værker samt administrative opgaver og it-systemer som databaser og Office-programmer.",
+  "openToAll": false,
+  "id": "x65b8e845445f",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælp til forseglingsopgaver i FødevareSyd",
   "co": "Fødevarestyrelsen",
   "city": "Fødevarestyrelsen",
@@ -3129,6 +3204,48 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til indkøb, kontraktstyring og telefoni i Udlændingestyrelsen",
+  "co": "Udlændingestyrelsen",
+  "city": "Næstved",
+  "region": "ssj",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "procurement",
+  "sec": [
+   "operations",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "kontraktstyring",
+   "indkøbsprocesser",
+   "journalisering",
+   "servicedesk",
+   "telefoniadministration"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-20T13:22:44+00:00",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du understøtter indkøb og kontraktstyring, bl.a. ved at registrere og kvalitetssikre kontraktoplysninger og håndtere mindre bestillinger via servicedesk. Du hjælper også med daglig telefoniadministration og følger op på henvendelser.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172899&DepartmentId=19028&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "jura",
+   "offentlig administration",
+   "statskundskab",
+   "it"
+  ],
+  "why": "Kontraktstyring, indkøb og administration i en offentlig organisation kræver økonomisk, juridisk og administrativ forståelse, og opslaget lægger ikke vægt på en bestemt uddannelsesretning.",
+  "openToAll": true,
+  "id": "xcd3ec9db51d1",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til juridisk afdeling i Vejdirektoratet",
   "co": "Vejsektor og myndighed",
   "city": "København",
@@ -3282,6 +3399,47 @@
   "why": "Jobbet kræver en naturvidenskabelig, teknisk eller sundhedsfaglig baggrund og god forståelse for stråling, databaser og myndighedsarbejde.",
   "openToAll": false,
   "id": "xb0a8c9eb3381",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Styrelsen for Patientklager i Aarhus",
+  "co": "Styrelsen for Patientklager",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "legal",
+   "health"
+  ],
+  "famConf": "title",
+  "skills": [
+   "sagsbehandling",
+   "it-systemer",
+   "dokumenthåndtering",
+   "telefonbetjening",
+   "fortrolighed"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-20T11:22:58+00:00",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du hjælper med administrativ sagsbehandling for nævn under Styrelsen for Patientklager, fx ved at indhente og sortere sagsakter, anonymisere afgørelser og opdatere skabeloner. Du bistår også nævnsmedlemmer med IT-henvendelser og betjener telefonen.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173498&DepartmentId=19042&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "ha(jur.)",
+   "cand.scient.pol.",
+   "adm.bac.",
+   "statskundskab"
+  ],
+  "why": "Jobbet kræver forståelse for juridisk sagsbehandling og offentlig forvaltning, som disse uddannelser giver.",
+  "openToAll": false,
+  "id": "x7d76cea7dd77",
   "live": true
  },
  {
@@ -3746,6 +3904,47 @@
   "live": true
  },
  {
+  "title": "Talent Acquisition Student Worker, HR",
+  "co": "Alka",
+  "city": "Ballerup, DK",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "screening af kandidater",
+   "telefoninterviews",
+   "jobsamtaler",
+   "employer branding",
+   "projektarbejde"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-20T00:00:00+00:00",
+  "deadlineAt": "2026-12-03T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du støtter rekrutteringen af studentermedhjælpere og deltidsansatte, blandt andet ved at screene kandidater og afholde telefoninterviews. Du bidrager også til employer branding gennem events, skolebesøg og sociale medier og deltager i projekter, der udvikler rekrutteringsprocesserne.",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Talent-Acquisition-Student-Worker%2C-HR/1459262633/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "psykologi",
+   "erhvervsøkonomi",
+   "kommunikation",
+   "organisationspsykologi"
+  ],
+  "why": "Rekruttering kræver god relationsopbygning, struktureret arbejde og forståelse for mennesker og organisationer, og det er kernen i HR, psykologi og business.",
+  "openToAll": true,
+  "id": "xa96b1ddb28ac",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til HR, vikariat",
   "co": "Alka",
   "city": "Ballerup, DK",
@@ -3969,6 +4168,46 @@
   "live": true
  },
  {
+  "title": "Talent Acquisition Student Worker, HR",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "hr",
+  "sec": [
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "screening af kandidater",
+   "telefoninterview",
+   "employer branding",
+   "relationsopbygning",
+   "struktureret overblik"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": "2026-12-03T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du støtter rekrutteringen af studentermedhjælpere og deltidsansatte, screener kandidater og gennemfører telefoninterviews. Du bidrager også til employer branding via events, skolebesøg og SoMe og deltager i projekter, der forbedrer rekrutteringsprocesserne.",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Talent-Acquisition-Student-Worker%2C-HR/1459262633/",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "psykologi",
+   "erhvervsøkonomi",
+   "kommunikation",
+   "organisationspsykologi"
+  ],
+  "why": "Rekruttering kræver forståelse for mennesker, organisation og kommunikation, og opslaget nævner HR, psykologi, business og kommunikation som relevante baggrunde.",
+  "openToAll": false,
+  "id": "xc62081ec0b3a",
+  "live": true
+ },
+ {
   "title": "Audit & Assurance Praktikant 2027",
   "co": "BDO Danmark",
   "city": "København",
@@ -4137,48 +4376,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til DR's internationale salgsafdeling",
-  "co": "DR",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "bizdev",
-  "sec": [
-   "marketing",
-   "customer"
-  ],
-  "famConf": "text",
-  "skills": [
-   "CRM-systemer",
-   "Office-pakken",
-   "engelsk",
-   "kommunikation",
-   "detaljeorientering"
-  ],
-  "industry": "Medier",
-  "postedAt": "2026-11-12T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du assisterer tre sælgere i DR Sales med administrative opgaver, CRM-opdateringer, booking af møder med internationale indkøbere og forberedelse til festivaler og markeder. Du varetager også fællespostkassen, kundeopfølgning og tekniske opgaver som tekstning og metadata.",
-  "req": null,
-  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studentermedhj%C3%A6lper-til-DR's-internationale-salgsafdeling-0999/1456860733/",
-  "enrichedBy": "ai",
-  "studies": [
-   "medievidenskab",
-   "kommunikation",
-   "filmvidenskab",
-   "erhvervsøkonomi",
-   "international erhvervskommunikation",
-   "engelsk"
-  ],
-  "why": "Jobbet kræver forståelse for medie- og filmbranchen, internationale salgsprocesser og et sprogligt og kommunikativt set-up, som disse uddannelser giver.",
-  "openToAll": false,
-  "id": "x17a22ffd3fe5",
-  "live": true
- },
- {
   "title": "Studiejob: Vil du være med til at styrke de gode samtaler på DR's sociale medier?",
   "co": "DR",
   "city": "København",
@@ -4256,6 +4453,48 @@
   "why": "Jobbet handler om medieindhold, formidling og kommunikation på sociale medier, som medie- og kommunikationsuddannelser er rettet mod.",
   "openToAll": false,
   "id": "x14f48d583c67",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til DR's internationale salgsafdeling",
+  "co": "DR",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "bizdev",
+  "sec": [
+   "marketing",
+   "customer"
+  ],
+  "famConf": "text",
+  "skills": [
+   "CRM-systemer",
+   "Office-pakken",
+   "engelsk",
+   "kommunikation",
+   "detaljeorientering"
+  ],
+  "industry": "Medier",
+  "postedAt": "2026-11-12T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du assisterer tre sælgere i DR Sales med administrative opgaver, CRM-opdateringer, booking af møder med internationale indkøbere og forberedelse til festivaler og markeder. Du varetager også fællespostkassen, kundeopfølgning og tekniske opgaver som tekstning og metadata.",
+  "req": null,
+  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studentermedhj%C3%A6lper-til-DR's-internationale-salgsafdeling-0999/1456860733/",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "filmvidenskab",
+   "erhvervsøkonomi",
+   "international erhvervskommunikation",
+   "engelsk"
+  ],
+  "why": "Jobbet kræver forståelse for medie- og filmbranchen, internationale salgsprocesser og et sprogligt og kommunikativt set-up, som disse uddannelser giver.",
+  "openToAll": false,
+  "id": "x17a22ffd3fe5",
   "live": true
  },
  {
@@ -5252,29 +5491,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper med fokus på web og kommunikation på IT-Universitetet i København",
-  "co": "IT-Universitetet",
-  "city": "København S",
-  "region": "kbh",
-  "hMin": 12,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "marketing",
-  "sec": [],
-  "famConf": "title",
-  "skills": [],
-  "industry": "Uddannelse og forskning",
-  "postedAt": "2026-10-26T14:15:49+00:00",
-  "deadlineAt": "2026-11-20T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Har du stærke sproglige færdigheder og sans for detaljer - og interesserer du dig for krydsfeltet mellem web og kommunikation?",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181917&DepartmentId=3439&MediaId=5",
-  "enrichedBy": "regler",
-  "id": "x82a761a3b526",
-  "live": true
- },
- {
   "title": "Studerende til KP’s nye SoMe-redaktion på Instagram",
   "co": "Københavns Professionshøjskole",
   "city": "København",
@@ -5438,6 +5654,47 @@
   "why": "Jobbet kræver dansk og engelsk, skriftlig kommunikation og interesse for uddannelse og internationalisering, hvilket især passer til pædagogiske, sprog- og kommunikationsfaglige studier.",
   "openToAll": false,
   "id": "x4b6d9045800f",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Institut for Socialrådgiveruddannelse",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "bi",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Microsoft 365 (Teams)",
+   "Excel",
+   "SurveyXact",
+   "korrekturlæsning",
+   "kommunikation"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du understøtter undervisere med digitale læringsværktøjer, fx Teams, og løser opgaver som opgørelse af fremmøde, undervisningsevalueringer og redigering af litteraturlister. Du hjælper også med at planlægge og afvikle konferencer, seminarer og møder.",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-institut-for-socialradgiveruddannelse/oozdru",
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "sociologi",
+   "statskundskab",
+   "pædagogik"
+  ],
+  "why": "Jobbet kræver interesse for uddannelse, skriftlig kommunikation og arbejde med data og digitale systemer, som de nævnte fag beskæftiger sig med.",
+  "openToAll": false,
+  "id": "x4a797aa0763c",
   "live": true
  },
  {
@@ -6715,6 +6972,72 @@
   ],
   "why": "Rekruttering kræver forståelse for mennesker, virksomheder og arbejdsmarkedet, og det kan studerende fra mange forskellige retninger bidrage til.",
   "id": "x1da9a9661f05",
+  "live": true
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, humaniora.",
+  "catFam": true,
+  "title": "Universitetspraktikant til kommunikation i børneuniverset VILD – foråret 2027",
+  "co": "Danmarks Naturfredningsforening",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 30,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "sociale medier",
+   "indholdsproduktion",
+   "nyhedsbreve",
+   "hjemmesideredigering",
+   "community management"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-12-06T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du producerer og planlægger indhold til børnefamilier på tværs af sociale medier, hjemmeside og nyhedsbreve og kan selv foreslå nye formater og kampagner. Du arbejder også med community management og dialog med målgruppen.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3164181/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "xf057bcc8915a",
   "live": true
  },
  {

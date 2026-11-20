@@ -66019,5 +66019,316 @@
   ],
   "why": "Jobbet kræver forståelse for budgetter, finansielle data og indkøbsprocesser, hvilket passer godt til økonomi- og supply chain-uddannelser.",
   "openToAll": false
+ },
+ "0fb3f86aee9fd1bb125a62d2598d58a106be1e21": {
+  "fam": "engineering",
+  "sec": [
+   "software"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "IAM",
+   "cybersikkerhed",
+   "identity and access management",
+   "systemadministration"
+  ],
+  "blurb": "Praktik som cybersikkerhedsingeniør med fokus på identity and access management (IAM) i Devoteams Cyber Trust-team i Lisboa. Opslaget indeholder kun titel og sted, så de konkrete opgaver er ikke angivet.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "datalogi",
+   "it-sikkerhed",
+   "softwareudvikling",
+   "it",
+   "elektroteknik"
+  ],
+  "why": "IAM-arbejde kræver viden om systemer, netværk og sikkerhed, som it- og datalogiuddannelser dækker.",
+  "openToAll": false
+ },
+ "0a93773fafcf5c20b5cd0d5a515cb28bb93db9ca": {
+  "fam": "logistics",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 5,
+  "hMax": 5,
+  "skills": [
+   "mødestabilitet",
+   "ansvarsbevidsthed",
+   "praktiske opgaver",
+   "selvstændigt arbejde",
+   "nattearbejde"
+  ],
+  "blurb": "Du pakker brød til OUH's afdelinger i Odense og Svendborg og hjælper med praktiske opgaver i bageriet. Arbejdet foregår som nattevagter kl. 00.30-08.24, gennemsnitligt 5 timer om ugen.",
+  "deadlineAt": "2026-12-08T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "fødevarevidenskab",
+   "ernæring",
+   "logistik",
+   "produktionsteknologi"
+  ],
+  "why": "Jobbet handler om praktisk fødevareproduktion og levering til hospital, hvilket passer til fødevare- og ernæringsstudier, men det er åbent for de fleste.",
+  "openToAll": true
+ },
+ "84f35257f3fe84b994113c106b95407a9e5d5d0e": {
+  "fam": "logistics",
+  "sec": [
+   "operations",
+   "finance"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "MS Office",
+   "databasehåndtering",
+   "administration",
+   "journalisering",
+   "fakturering"
+  ],
+  "blurb": "Du assisterer Registraturen med udlån af museets værker, herunder modtagelse af låneanmodninger, forberedelse af lånekontrakter og oprettelse af transportsedler. Du opdaterer og trækker rapporter i databasen SARA samt står for journalisering og fakturering.",
+  "deadlineAt": "2026-12-09T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kunsthistorie",
+   "museologi",
+   "informationsteknologi",
+   "biblioteks- og informationsvidenskab",
+   "erhvervsøkonomi"
+  ],
+  "why": "Arbejdet kræver kendskab til kunst og museets værker samt administrative opgaver og it-systemer som databaser og Office-programmer.",
+  "openToAll": false
+ },
+ "34374e16321561005998872d2bcacd1887aec27f": {
+  "fam": "procurement",
+  "sec": [
+   "operations",
+   "public"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "kontraktstyring",
+   "indkøbsprocesser",
+   "journalisering",
+   "servicedesk",
+   "telefoniadministration"
+  ],
+  "blurb": "Du understøtter indkøb og kontraktstyring, bl.a. ved at registrere og kvalitetssikre kontraktoplysninger og håndtere mindre bestillinger via servicedesk. Du hjælper også med daglig telefoniadministration og følger op på henvendelser.",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "jura",
+   "offentlig administration",
+   "statskundskab",
+   "it"
+  ],
+  "why": "Kontraktstyring, indkøb og administration i en offentlig organisation kræver økonomisk, juridisk og administrativ forståelse, og opslaget lægger ikke vægt på en bestemt uddannelsesretning.",
+  "openToAll": true
+ },
+ "4b683482f84f751ac05c616ba3cdca82b7540fb9": {
+  "fam": "public",
+  "sec": [
+   "legal",
+   "health"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "sagsbehandling",
+   "it-systemer",
+   "dokumenthåndtering",
+   "telefonbetjening",
+   "fortrolighed"
+  ],
+  "blurb": "Du hjælper med administrativ sagsbehandling for nævn under Styrelsen for Patientklager, fx ved at indhente og sortere sagsakter, anonymisere afgørelser og opdatere skabeloner. Du bistår også nævnsmedlemmer med IT-henvendelser og betjener telefonen.",
+  "deadlineAt": "2026-11-29T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "ha(jur.)",
+   "cand.scient.pol.",
+   "adm.bac.",
+   "statskundskab"
+  ],
+  "why": "Jobbet kræver forståelse for juridisk sagsbehandling og offentlig forvaltning, som disse uddannelser giver.",
+  "openToAll": false
+ },
+ "e2d8fbd0b77cc7dcec3caec608d6afcae9a9c79c": {
+  "fam": "hr",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "screening af kandidater",
+   "telefoninterviews",
+   "jobsamtaler",
+   "employer branding",
+   "projektarbejde"
+  ],
+  "blurb": "Du støtter rekrutteringen af studentermedhjælpere og deltidsansatte, blandt andet ved at screene kandidater og afholde telefoninterviews. Du bidrager også til employer branding gennem events, skolebesøg og sociale medier og deltager i projekter, der udvikler rekrutteringsprocesserne.",
+  "deadlineAt": "2026-12-03T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "psykologi",
+   "erhvervsøkonomi",
+   "kommunikation",
+   "organisationspsykologi"
+  ],
+  "why": "Rekruttering kræver god relationsopbygning, struktureret arbejde og forståelse for mennesker og organisationer, og det er kernen i HR, psykologi og business.",
+  "openToAll": true
+ },
+ "7750ba81a7a59f70e3b5df55e567405506fcefdd": {
+  "fam": "hr",
+  "sec": [
+   "marketing"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "screening af kandidater",
+   "telefoninterview",
+   "employer branding",
+   "relationsopbygning",
+   "struktureret overblik"
+  ],
+  "blurb": "Du støtter rekrutteringen af studentermedhjælpere og deltidsansatte, screener kandidater og gennemfører telefoninterviews. Du bidrager også til employer branding via events, skolebesøg og SoMe og deltager i projekter, der forbedrer rekrutteringsprocesserne.",
+  "deadlineAt": "2026-12-03T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "psykologi",
+   "erhvervsøkonomi",
+   "kommunikation",
+   "organisationspsykologi"
+  ],
+  "why": "Rekruttering kræver forståelse for mennesker, organisation og kommunikation, og opslaget nævner HR, psykologi, business og kommunikation som relevante baggrunde.",
+  "openToAll": false
+ },
+ "e68c9c0d9fde33ab7b13d48da69a36ad700f0c4e": {
+  "fam": "education",
+  "sec": [
+   "bi",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Microsoft 365 (Teams)",
+   "Excel",
+   "SurveyXact",
+   "korrekturlæsning",
+   "kommunikation"
+  ],
+  "blurb": "Du understøtter undervisere med digitale læringsværktøjer, fx Teams, og løser opgaver som opgørelse af fremmøde, undervisningsevalueringer og redigering af litteraturlister. Du hjælper også med at planlægge og afvikle konferencer, seminarer og møder.",
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "sociologi",
+   "statskundskab",
+   "pædagogik"
+  ],
+  "why": "Jobbet kræver interesse for uddannelse, skriftlig kommunikation og arbejde med data og digitale systemer, som de nævnte fag beskæftiger sig med.",
+  "openToAll": false
+ },
+ "6a8982f9edb8f17ee08c2efe11cade7acdfb65a5": {
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [
+   "sociale medier",
+   "indholdsproduktion",
+   "nyhedsbreve",
+   "hjemmesideredigering",
+   "community management"
+  ],
+  "blurb": "Du producerer og planlægger indhold til børnefamilier på tværs af sociale medier, hjemmeside og nyhedsbreve og kan selv foreslå nye formater og kampagner. Du arbejder også med community management og dialog med målgruppen.",
+  "deadlineAt": "2026-12-06T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, humaniora.",
+  "openToAll": false
+ },
+ "7add8faf1731e99021ea3460df3a6e8460d6c96c": {
+  "fam": "public",
+  "sec": [
+   "procurement",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "kontraktstyring",
+   "indkøb",
+   "dokumenthåndtering",
+   "servicedesk",
+   "skriftlig kommunikation"
+  ],
+  "blurb": "Du hjælper med at registrere og kvalitetssikre kontraktoplysninger i et kontraktstyringssystem og undersøger indkøbsmuligheder, bl.a. via SKI-aftaler. Du håndterer mindre bestillinger i den interne servicedesk og følger op på telefoniopgaver.",
+  "deadlineAt": "2026-12-07T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "statskundskab",
+   "jura",
+   "offentlig administration",
+   "it"
+  ],
+  "why": "Arbejdet med indkøb, kontrakter og offentlig administration kræver kendskab til økonomi, jura og forvaltning, som de nævnte uddannelser dækker.",
+  "openToAll": false
  }
 }
