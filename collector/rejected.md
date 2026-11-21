@@ -6,9 +6,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | --- | --- | --- |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in HR department | udlandet: Warsaw |
-| SEB | Senior Software Developer (Vecākais izstrādātājs) in Internet Bank Customer Journey / SEB, Riga | ikke et studiejob |
-| SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Tallinn | ikke et studiejob |
-| SEB | Senior Software Developer in Internet Bank Customer Journey / SEB, Vilnius | udlandet: Vilnius |
 | Devoteam | Creative Marketing Intern | udlandet: Stockholm |
 | Devoteam | Business Development Intern | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
@@ -32,7 +29,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
 | Aarhus Kommune | The International Day Nursery – Aarhus søger to engagerede og eventyrlystne pædagoger | ikke et studiejob |
 | Næstved Kommune | Værksteds- og praktikvejleder til Næstved Ungdomsskoles heltidsundervisning | ikke et studiejob |
-| Svendborg Kommune | Vil du bringe verden ind i klasselokalet? Vestermarkskolen søger lærer med internationalt udsyn | ikke et studiejob |
 | IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
 | Københavns Professionshøjskole | Studenterkoordinator til Ledelses- og Kommunikationssekretariatet | ikke et studiejob |
 | Københavns Professionshøjskole | Serviceminded studieadministrativ koordinator | ikke et studiejob |

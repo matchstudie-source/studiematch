@@ -66330,5 +66330,1691 @@
   ],
   "why": "Arbejdet med indkøb, kontrakter og offentlig administration kræver kendskab til økonomi, jura og forvaltning, som de nævnte uddannelser dækker.",
   "openToAll": false
+ },
+ "35ffe4845e58e6b6d1a80a68570ff2cccf9d59ef": {
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "kontraktforståelse",
+   "kreditorafstemning",
+   "talforståelse",
+   "skriftlig formulering",
+   "intranet"
+  ],
+  "blurb": "Du opdaterer intranet og aftaleoversigten over kontrakter og skriver korte resuméer af kontrakter. Du afstemmer kreditor- og debitorlister og kontantkasser og hjælper kolleger med administrative opgaver.",
+  "deadlineAt": "2026-11-22T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, økonomi og revision, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "49483d0d006e455524c4a02280b984323ae6648e": {
+  "fam": "bi",
+  "sec": [
+   "software",
+   "engineering"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Python",
+   "Power BI",
+   "avanceret Excel",
+   "dataanalyse",
+   "automatisering"
+  ],
+  "blurb": "Du analyserer interne og eksterne data til prognoser og lagerstyring i den globale efterspørgselsplanlægning. Du automatiserer manuelle Excel-processer og laver rapporter og Power BI-visualiseringer til Integrated Business Planning-teamet.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, teknik og teknologi.",
+  "openToAll": false
+ },
+ "13aaa1fb27d1d50990d0d9bc42555899d5485df1": {
+  "fam": "bi",
+  "sec": [],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "Excel",
+   "Power BI",
+   "datamodellering",
+   "AI-værktøjer",
+   "Azure DevOps"
+  ],
+  "blurb": "Du hjælper med at opbygge en central datastruktur for R&D-porteføljen og laver dashboards og analyser i Power BI, som understøtter beslutninger om scope, prioriteter og kapacitet. Du automatiserer også faste opgaver som datarefresh og datakontrol.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, teknik og teknologi.",
+  "openToAll": false
+ },
+ "2b25ceb9bf28104eef33f5e05a319e40b9af2d1d": {
+  "fam": "education",
+  "sec": [
+   "finance",
+   "research"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "arkæologisk feltarbejde",
+   "udgravning",
+   "fundregistrering",
+   "opmåling med totalstation",
+   "undervisning"
+  ],
+  "blurb": "Du instruerer, vejleder og følger studerende i udgravning og materialebearbejdning i Kalydon i Grækenland. Du underviser også i opmålingsteknik med totalstation på forberedelseskurset.",
+  "deadlineAt": "2026-12-31T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, humaniora.",
+  "openToAll": false
+ },
+ "56832b79fcce0f394b45a9c3ce8e2d0e383df7b4": {
+  "fam": "marketing",
+  "sec": [
+   "research"
+  ],
+  "danish": "plus",
+  "hMin": 37,
+  "hMax": 37,
+  "skills": [
+   "projektledelse",
+   "kommunikation",
+   "internationalt samarbejde",
+   "ansøgningsskrivning",
+   "eventplanlægning"
+  ],
+  "blurb": "Du hjælper med at planlægge og afholde workshops, temadage og rundbordsdiskussioner for virksomheder og partnere, og du skriver ansøgninger om tilskud og udbud. Du hjælper også med markedsføring af Clean via hjemmeside, sociale medier og nyhedsbreve.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab",
+   "miljø",
+   "energi",
+   "klima",
+   "bæredygtig"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "43d9de10c69c89540a24ae8d307c388b875321ae": {
+  "fam": "logistics",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Power BI",
+   "Excel",
+   "SQL",
+   "Python",
+   "dataanalyse"
+  ],
+  "blurb": "Du analyserer og visualiserer driftsdata fra et stort logistikcenter for at finde forbedringsmuligheder. Du udvikler rapporter, dashboards og KPI'er og undersøger, hvordan AI og automatisering kan forenkle eksisterende arbejdsgange.",
+  "deadlineAt": "2027-01-05T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, teknik og teknologi.",
+  "openToAll": false
+ },
+ "521c541137b8243e7dba41475a031db4cd21de83": {
+  "fam": "education",
+  "sec": [
+   "marketing",
+   "bi"
+  ],
+  "danish": "plus",
+  "hMin": 3,
+  "hMax": 3,
+  "skills": [
+   "struktur og systematik",
+   "selvstændighed",
+   "serviceindstillethed",
+   "fleksibilitet",
+   "samarbejde"
+  ],
+  "blurb": "Du sætter bøger og tidsskrifter på plads, håndterer reserveringer og klargør materialer til studerende og ansatte. Du hjælper også med udstilling af materialer, praktisk oprydning og den daglige drift på biblioteket på Campus Sundhed.",
+  "deadlineAt": "2026-12-04T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "pædagog",
+   "lærer",
+   "pædagogik",
+   "undervisning"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, pædagogik og undervisning.",
+  "openToAll": true
+ },
+ "c19cabaca71a4cd4ce3ce7f43783d04f9f401b9f": {
+  "fam": "health",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Microsoft Office",
+   "Serviceindstilling",
+   "Selvstændighed",
+   "Organisering",
+   "Flydende dansk og engelsk"
+  ],
+  "blurb": "Du står for kontorets daglige drift, fx bestilling af kontorartikler, forberedelse af møder og forplejning samt hjælp med print og scanning. Du er også kontaktled til Facility Management og samarbejder med kolleger i Søborg og Odense.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, samfundsvidenskab.",
+  "openToAll": true
+ },
+ "15cc8896fd4baabc9108b057278d344d124c8d92": {
+  "fam": "marketing",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [
+   "sociale medier",
+   "indholdsproduktion",
+   "nyhedsbreve",
+   "skriftlig kommunikation",
+   "community management"
+  ],
+  "blurb": "Du producerer og planlægger indhold til børnefamilier på tværs af sociale medier, hjemmeside og nyhedsbreve og er med i kampagner. Du kan selv foreslå idéer og afprøve nye formater med sparring fra erfarne kolleger.",
+  "deadlineAt": "2026-12-06T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora.",
+  "openToAll": false
+ },
+ "36506e069c9c388b99b7178df0381dc46bad1ae0": {
+  "fam": "education",
+  "sec": [
+   "customer",
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "skriftlig dansk",
+   "skriftlig engelsk",
+   "mundtlig kommunikation",
+   "initiativ",
+   "hjælpsomhed"
+  ],
+  "blurb": "Du håndterer dokumenter, ansøgninger og afrapporteringer for ud- og indrejsende udvekslingsstuderende og hjælper med praktisk planlægning af events og møder. Du deltager også i enhedens Instagram-aktiviteter og andre opgaver.",
+  "deadlineAt": "2026-12-10T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "internationale studier",
+   "europastudier",
+   "kommunikation",
+   "engelsk",
+   "statskundskab",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver gode sprog- og kommunikationskompetencer samt forståelse for internationale udvekslingsforhold, hvilket passer til sprog-, kommunikations- og internationale studier.",
+  "openToAll": false
+ },
+ "d7eafd6237fa229e3c5984a81d8adc93aaab3581": {
+  "fam": "public",
+  "sec": [
+   "operations",
+   "software"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "kontraktstyring",
+   "indkøb",
+   "dokumenthåndtering",
+   "servicedesk",
+   "skriftlig kommunikation"
+  ],
+  "blurb": "Du registrerer og kvalitetssikrer kontraktoplysninger i kontraktstyringssystemet og undersøger indkøbsmuligheder, fx via SKI-aftaler. Du håndterer også mindre bestillinger via servicedesk, journalisering og den daglige telefoniadministration.",
+  "deadlineAt": "2026-12-07T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "7d6b805229935468014909ef197fbfc2e9e35517": {
+  "fam": "public",
+  "sec": [
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "kvalitativ metode",
+   "kvantitativ analyse",
+   "spørgeskemakonstruktion",
+   "transskription og kodning",
+   "rapportskrivning"
+  ],
+  "blurb": "Du hjælper analyseteamet med at udforme spørgeskemaer, transskribere og kode interviews og bidrage til rapporter og vidensopsamlinger om børn og unges demokratiske deltagelse, trivsel og foreningsliv. Du deltager også i lanceringer af DUFs analyser.",
+  "deadlineAt": "2026-12-10T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "f283949cfa3198da89b445ed7c66d948d2008f1e": {
+  "fam": "marketing",
+  "sec": [
+   "salesops",
+   "product"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "koordinering",
+   "sociale medier",
+   "eventplanlægning",
+   "PR",
+   "samarbejde"
+  ],
+  "blurb": "Du hjælper med marketing, PR og salg for Magniberg, blandt andet med sociale medier, presseomtale og events som modeuger. Du står også for kontorlogistik, administration af prøver og at holde showroomet klar.",
+  "deadlineAt": "2026-12-04T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "arkitekt",
+   "design",
+   "kunst"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, arkitektur, kunst og design.",
+  "openToAll": false
+ },
+ "6ca98dc21d3dbe5c6e932c008507d1aa3343c733": {
+  "fam": "customer",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "servicemindet",
+   "kundekontakt",
+   "samarbejde",
+   "dansk",
+   "engelsk"
+  ],
+  "blurb": "Du serverer mad og drikke til gæster ombord på færgerne i Gedser og Rødby og sørger for, at spiseområderne er rene og klar til næste hold. Du bidrager til en god stemning og en venlig betjening under overfarten.",
+  "deadlineAt": "2027-03-31T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "openToAll": true
+ },
+ "62e4a99d94afc33cab002802e7b449a0fe7e72be": {
+  "fam": "marketing",
+  "sec": [
+   "hr",
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "ISO/IEC 27001",
+   "SOC 2",
+   "GDPR",
+   "intern kontrol",
+   "skriftlig engelsk"
+  ],
+  "blurb": "Du hjælper med at opbygge et Trust Center, hvor kunder kan se, hvordan deres data beskyttes, og udarbejder indhold og FAQ ud fra tidligere sikkerhedsspørgeskemaer. Du støtter også security- og compliance-teamet med interne audits, kontrolcheck og gennemgang af, om processerne passer til den faktiske",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "cyber security",
+   "datalogi",
+   "it",
+   "informatik",
+   "jura",
+   "erhvervsøkonomi",
+   "revision"
+  ],
+  "why": "Jobbet kræver forståelse for IT-sikkerhed, databeskyttelse og compliance-rammer, som især it- og sikkerhedsuddannelser og jura dækker.",
+  "openToAll": false
+ },
+ "43bcb9ea61f342016d9fb82e748fe73c9da68583": {
+  "fam": "pmo",
+  "sec": [
+   "software",
+   "engineering"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "procesdokumentation",
+   "skabelonudvikling",
+   "projektstyring",
+   "Excel",
+   "PowerPoint"
+  ],
+  "blurb": "Du dokumenterer processer, roller og ansvar i porteføljе- og projektstyring og udvikler skabeloner, fx til projektplaner, statusrapportering og lessons learned. Du hjælper med at opsætte og vedligeholde et samlet porteføljeoverblik og med forberedelse og opfølgning på porteføljemøder.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, IT, teknik og teknologi.",
+  "openToAll": false
+ },
+ "24a94095bdd449ee3e408025aa6772bc75c38a0d": {
+  "fam": "operations",
+  "sec": [
+   "marketing"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "MS Office",
+   "databasearbejde",
+   "rapportering",
+   "fakturering",
+   "sprogkundskaber"
+  ],
+  "blurb": "Du assisterer Registraturen med ind- og udlån af kunstværker, fx ved at modtage og fordele låneanmodninger, forberede lånekontrakter og oprette transportsedler. Du opdaterer museets database SARA, trækker rapporter, hjælper med journalisering og fakturering og koordinerer værker, der midlertidigt er",
+  "deadlineAt": "2026-12-09T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "arkitekt",
+   "design",
+   "kunst"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, humaniora, arkitektur, kunst og design.",
+  "openToAll": false
+ },
+ "0b7238958330f9d2f56e261a5b13f4c19f4422a4": {
+  "fam": "pmo",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "projektledelse",
+   "ledelse",
+   "teamwork",
+   "kommunikation",
+   "inklusion"
+  ],
+  "blurb": "Du planlægger og gennemfører studiestarten for nye BSc- og MSc-studerende sammen med de andre head tutors. Du leder og inspirerer tutorerne og deltager i de faglige, sociale og praktiske dele, herunder opsætning og oprydning ved fælles arrangementer.",
+  "deadlineAt": "2027-01-13T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT.",
+  "openToAll": false
+ },
+ "9338d4dffa4867a7f4a15cfb58a5597322daf4a6": {
+  "fam": "bi",
+  "sec": [],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "ISO kvalitetsledelse",
+   "ESG-rapportering",
+   "kontraktstyring",
+   "Topdesk",
+   "auditarbejde"
+  ],
+  "blurb": "Du vedligeholder virksomhedens ISO-baserede kvalitetsledelsessystem, ESG-arbejdet og ECOVADIS-ratingen samt kontraktstyringen i Topdesk. Du forbereder og deltager i interne kvalitetsmøder og ISO-audits og kan senere udvide kontraktstyringen til kundekontrakter.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "ha",
+   "bæredygtighedsledelse",
+   "miljøteknologi"
+  ],
+  "why": "Arbejdet kræver forståelse for kontrakter, processer og ESG-krav, som jurister og økonomer arbejder med til daglig.",
+  "openToAll": false
+ },
+ "2e3a4d9f4976e2b0f65c795ae2424499e931b4a6": {
+  "fam": "bi",
+  "sec": [
+   "finance"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "forecasting",
+   "rapportering",
+   "Power BI",
+   "projektstyring",
+   "dataanalyse"
+  ],
+  "blurb": "Du driver forecastprocessen sammen med projektlederne, udtrækker og bearbejder data og laver kunde-, projekt- og månedsrapporter. Du præsenterer selv forecasttal på møder, følger op på afvigelser og flytter rapporteringen over i Power BI.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "0164438370d07a0e54c59ae24a714b0278720abf": {
+  "fam": "software",
+  "sec": [],
+  "danish": "no",
+  "hMin": 20,
+  "hMax": 20,
+  "skills": [
+   "Python",
+   "C#",
+   "SQL",
+   "Databricks",
+   "Kafka"
+  ],
+  "blurb": "Du hjælper med at udvikle og vedligeholde software til energihandel på terminmarkedet, fx værktøjer til traders og analytikere. Du deltager i code reviews, agile aktiviteter og arbejder med Azure, CI/CD, API'er og databaser.",
+  "deadlineAt": "2026-12-04T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "naturvidenskab",
+   "biologi",
+   "kemi",
+   "fysik",
+   "geografi",
+   "geologi",
+   "molekylær",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, naturvidenskab, teknik og teknologi.",
+  "openToAll": false
+ },
+ "501cd5ec4db3123b8dba9f8a5e634e3916ce7b2e": {
+  "fam": "software",
+  "sec": [
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "C#",
+   "C++",
+   "SQL",
+   "Git",
+   "Azure DevOps"
+  ],
+  "blurb": "Du arbejder med at udvikle desktop- og webapplikationer og bygger grænseflader mellem ABB-produkter og tredjepartssystemer, primært til ABB Ability System 800xA. Du tester og dokumenterer løsningerne og deltager i installation og konfiguration hos kunder.",
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "naturvidenskab",
+   "biologi",
+   "kemi",
+   "fysik",
+   "geografi",
+   "geologi",
+   "molekylær",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "elektro",
+   "elektronik",
+   "elektroteknologi",
+   "telekommunikation"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, naturvidenskab, teknik og teknologi.",
+  "openToAll": false
+ },
+ "d497f6369c6a0b545868798cafb1a2fd0a6d146f": {
+  "fam": "marketing",
+  "sec": [
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "skriftlig formidling",
+   "sociale medier",
+   "kampagneplanlægning",
+   "visuel formidling",
+   "storytelling"
+  ],
+  "blurb": "Du laver indhold til sociale medier, nyhedsbreve og kampagner og planlægger kommunikationsindsatser. Du arbejder også med visuel formidling, evaluerer og rapporterer aktiviteter og vedligeholder hjemmesiden.",
+  "deadlineAt": "2027-05-01T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora.",
+  "openToAll": false
+ },
+ "252167c1ecb6007092c30aa52aa7c9e78e0fe5ca": {
+  "fam": "social",
+  "sec": [
+   "bi"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "research og analyse",
+   "skriftlig formidling",
+   "fondsansøgninger",
+   "rapportering",
+   "mundtlig formidling"
+  ],
+  "blurb": "Du laver research om kontekster og målgrupper i det globale syd og bidrager til projektudvikling og ansøgninger til fonde og donorer. Du hjælper også med dokumentation, rapportering og fagligt indhold til kommunikation.",
+  "deadlineAt": "2027-05-01T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "1cde2b9e1e4c5faa64e74dd30beee1f2604bf2da": {
+  "fam": "health",
+  "sec": [
+   "operations",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "sagsbehandling",
+   "IT-kompetencer",
+   "struktureret arbejde",
+   "fortrolighed",
+   "teamarbejde"
+  ],
+  "blurb": "Du hjælper med administrativ sagsbehandling for nævn, fx ved at indhente og sortere sagsakter, anonymisere afgørelser og klargøre breve. Du betjener også telefon og nævnsmedlemmer, særligt ved IT-henvendelser.",
+  "deadlineAt": "2026-11-29T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "jura",
+   "erhvervsjura",
+   "law",
+   "medicin",
+   "sygepleje",
+   "farmaci",
+   "sundhed",
+   "folkesundhed",
+   "fysioterapeut",
+   "ergoterapeut",
+   "bioanalytiker",
+   "jordemoder",
+   "radiograf",
+   "tandpleje",
+   "odontologi"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, jura, medicin og sundhed.",
+  "openToAll": false
+ },
+ "735464d7bf26fe854b800da7be9452a1eca55816": {
+  "fam": "social",
+  "sec": [
+   "software",
+   "marketing"
+  ],
+  "danish": "plus",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "Microsoft 365 Teams",
+   "Excel",
+   "SurveyXact",
+   "korrekturlæsning",
+   "litteratursøgning"
+  ],
+  "blurb": "Du understøtter undervisere med digitale værktøjer, især Microsoft 365 Teams, og håndterer administrative opgaver som fremmødedata og undervisningsevalueringer. Du hjælper også med at planlægge arrangementer som konferencer og seminarer og med korrekturlæsning og litteratursøgning.",
+  "deadlineAt": "2026-12-08T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "sociologi",
+   "statskundskab",
+   "pædagogik",
+   "socialrådgiveruddannelse"
+  ],
+  "why": "Jobbet kræver interesse for uddannelse, skriftlig kommunikation og dataarbejde, hvilket passer til samfundsfaglige og pædagogiske studier.",
+  "openToAll": false
+ },
+ "3b89d17e4ff92b6610f3e4722913a9a1f4b35e47": {
+  "fam": "public",
+  "sec": [],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "fundraising",
+   "ansøgningsskrivning",
+   "budgetlægning",
+   "skriftlig dansk",
+   "koordinering af frister"
+  ],
+  "blurb": "Du kortlægger lokale fonde, puljer og virksomheder og holder styr på ansøgningsfrister og rapportering. Du udarbejder ansøgninger og budgetter sammen med headspace-centrene.",
+  "deadlineAt": "2027-01-04T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "humanistisk",
+   "humaniora",
+   "historie",
+   "filosofi",
+   "kultur",
+   "dansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, humaniora, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "ef1274a842672c76fb92b812fddbd805efbe28c9": {
+  "fam": "marketing",
+  "sec": [
+   "finance",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 17,
+  "hMax": 17,
+  "skills": [
+   "projektkoordinering",
+   "skriftlig kommunikation",
+   "præsentation",
+   "research og analyse",
+   "mødeplanlægning"
+  ],
+  "blurb": "Du koordinerer møder, workshops og materialer til dialog med medlemmer, politikere og embedsmænd. Du laver også research, oplæg, talepunkter og SoMe-opslag om finanssektorens digitale og samfundsmæssige dagsordener.",
+  "deadlineAt": "2026-12-10T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, IT, sprog og kommunikation.",
+  "openToAll": false
+ },
+ "4efaaf67d94029e9e72a75f13573dcd67077660f": {
+  "fam": "legal",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 13,
+  "hMax": 17,
+  "skills": [
+   "juridisk analyse",
+   "kontraktgennemgang",
+   "skriftlig dansk og engelsk",
+   "struktureret arbejde",
+   "detaljeorientering"
+  ],
+  "blurb": "Du hjælper med at udarbejde, gennemgå og vedligeholde aftaler med banker, betalingsinstitutter og leverandører til de danske clearingsystemer. Du laver også korte juridiske notater om betalingsregulering og bidrager til bestyrelsesmateriale og opfølgning på leverandøraftaler.",
+  "deadlineAt": "2026-12-10T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "jura",
+   "erhvervsjura",
+   "law",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, jura, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "8b464115afddef77a76aa84f2f5787f7a73021b4": {
+  "fam": "marketing",
+  "sec": [
+   "product"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "AVID Media Composer",
+   "grafisk indpakning",
+   "kvalitetssikring",
+   "detaljeorientering",
+   "samarbejde"
+  ],
+  "blurb": "Du indpakker, gennemser og kvalitetssikrer TV 2-trailere i AVID Media Composer, så de er grafisk korrekte og klar til lineære kanaler og TV 2 Play. Senere kan der komme opgaver med oprettelse af kampagner og finplacering af promotion.",
+  "deadlineAt": "2026-11-30T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation.",
+  "openToAll": false
+ },
+ "8b99d1ee06bd99a0b1bdfa7c036f5c9de6add3d4": {
+  "fam": "operations",
+  "sec": [
+   "education",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "analyse",
+   "skriftlig formidling",
+   "desk research",
+   "politisk forståelse",
+   "eventplanlægning"
+  ],
+  "blurb": "Du laver analyser, briefinger og beslutningsnotater til UCN's direktion og kortlægger interessenter og samarbejdspartnere. Du skriver også SoMe-opslag, presseindlæg og præsentationer og hjælper med at planlægge møder og arrangementer.",
+  "deadlineAt": "2026-12-10T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "pædagog",
+   "lærer",
+   "pædagogik",
+   "undervisning",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, sprog og kommunikation, pædagogik og undervisning.",
+  "openToAll": false
+ },
+ "c1cd6409b2262c9112dff077e01e6377fda20d9b": {
+  "fam": "finance",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "bogføring",
+   "afstemning",
+   "fakturering",
+   "Excel",
+   "Word"
+  ],
+  "blurb": "Du laver daglig bogføring, afstemninger og fakturering i økonomiafdelingen. Du arbejder også med ad hoc-analyser og er med til at gøre økonomiprocesserne mere effektive på tværs af lufthavnen.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "a734fefaf49a6bbafcc987d5b10585d4c0c14ac3": {
+  "fam": "hr",
+  "sec": [
+   "marketing"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "screening af kandidater",
+   "telefoninterview",
+   "jobsamtaler",
+   "employer branding",
+   "struktureret arbejde"
+  ],
+  "blurb": "Du støtter rekrutteringen af studentermedhjælpere og deltidsansatte, screener kandidater og gennemfører telefoninterviews. Du hjælper også med employer branding gennem events, skolebesøg og sociale medier og deltager i projekter, der forbedrer rekrutteringsprocessen.",
+  "deadlineAt": "2026-12-03T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "human resource"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for HR.",
+  "openToAll": false
+ },
+ "ba9ec1e64906db54f60c43c1e7de022baa2dc473": {
+  "fam": "software",
+  "sec": [
+   "engineering",
+   "education"
+  ],
+  "danish": "no",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "Python",
+   "PyTorch",
+   "OpenCV",
+   "computer vision",
+   "3D-rekonstruktion"
+  ],
+  "blurb": "Du hjælper med at udvikle og evaluere AI-metoder til fejl- og skadesdetektion, billedsegmentering og klassifikation, herunder implementering af algoritmer og dataforberedelse. Du arbejder også med 3D-rekonstruktion ud fra flere billeder, fx kamerakalibrering og punktskyer, og kan være med til at ops",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "naturvidenskab",
+   "biologi",
+   "kemi",
+   "fysik",
+   "geografi",
+   "geologi",
+   "molekylær",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "maskin",
+   "mekanik",
+   "produktudvikling"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, naturvidenskab, teknik og teknologi.",
+  "openToAll": false
+ },
+ "be8e0d21f5f652b8796b901b4aa3e1d0e9e21e09": {
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "pmo"
+  ],
+  "danish": "no",
+  "hMin": 12,
+  "hMax": 12,
+  "skills": [
+   "SQL",
+   "Big Data",
+   "Google Workspace",
+   "dataafstemning",
+   "præsentation til ledelse"
+  ],
+  "blurb": "Du står for den daglige og ugentlige managementrapportering og kontrollerer, at data stemmer på tværs af virksomhedens systemer. Du laver også præsentationer af BI-data til ledelsen og administrerer adgange og rapportkataloger på distributionsplatformen Compass.",
+  "deadlineAt": "2026-12-20T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "økonomi",
+   "ha",
+   "cand.merc",
+   "it-økonomi",
+   "matematik-økonomi",
+   "informatik",
+   "datalogi"
+  ],
+  "why": "Jobbet kræver forståelse for regnskab, nøgletal og datakvalitet, som økonomi- og it-uddannelserne giver.",
+  "openToAll": false
+ },
+ "553be886ce37caa02ddb0d74841b529a84adeb0f": {
+  "fam": "legal",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "GDPR",
+   "DPIA og risikovurderinger",
+   "juridisk research",
+   "analytiske færdigheder",
+   "dokumentation"
+  ],
+  "blurb": "Du hjælper Global Data Privacy-teamet med privacy-vurderinger, DPIA'er og research i GDPR og internationale databeskyttelseskrav. Du kan også støtte arbejdet med AI og nye teknologier samt udarbejdelse af vejledninger og skabeloner.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "erhvervsjura",
+   "law",
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for jura, IT.",
+  "openToAll": false
+ },
+ "19d1b40f01f3caee840f95c0d0c14701a82056ab": {
+  "fam": "software",
+  "sec": [
+   "engineering",
+   "marketing"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "IT-support",
+   "fejlfinding",
+   "ServiceNow",
+   "Microsoft- og Apple-systemer",
+   "kommunikation"
+  ],
+  "blurb": "Du hjælper medarbejdere på Mærsks kontor i København med hardware- og softwareproblemer, ofte ansigt til ansigt. Du fejlfinder, følger incident- og request-processer og videregiver sager til second line og eksterne leverandører.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik",
+   "naturvidenskab",
+   "biologi",
+   "kemi",
+   "fysik",
+   "geografi",
+   "geologi",
+   "molekylær",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for IT, naturvidenskab, teknik og teknologi.",
+  "openToAll": false
+ },
+ "fe4f8370bf76540f4502d5d6c3a9556a2b9b7f47": {
+  "fam": "finance",
+  "sec": [
+   "engineering"
+  ],
+  "danish": "no",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "finansiel analyse",
+   "budgettering og forecasting",
+   "Power BI",
+   "rapportering"
+  ],
+  "blurb": "Du hjælper med forecasting og budgettering og laver finansielle og operationelle analyser i Manufacturing Finance. Du bidrager også til den månedlige rapportering og vedligeholdelsen af finansiel dokumentation.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for økonomi og revision, teknik og teknologi, samfundsvidenskab.",
+  "openToAll": false
+ },
+ "649d7723fb2e2615f8eebf9f847fb7410d4d1335": {
+  "fam": "engineering",
+  "sec": [
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "risikovurdering",
+   "fault tree analysis",
+   "sikkerhedsdokumentation",
+   "dataanalyse",
+   "engelsk"
+  ],
+  "blurb": "Du støtter produktsikkerhedsteamet i at vurdere og styre produktrisici gennem hele produktets livscyklus. Du hjælper med sikkerhedsanalyser, teknisk dokumentation og undersøgelser af sikkerhedsrelaterede hændelser.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for teknik og teknologi.",
+  "openToAll": false
+ },
+ "c619760bb7b90da647c7359da1506175e9be6961": {
+  "fam": "research",
+  "sec": [
+   "engineering",
+   "bi"
+  ],
+  "danish": "required",
+  "hMin": 12,
+  "hMax": 12,
+  "skills": [
+   "laboratoriearbejde",
+   "mikrobiologi",
+   "kvalitetskontrol",
+   "GMP",
+   "Microsoft Office"
+  ],
+  "blurb": "Du forbereder laboratoriematerialer som plader, geler og buffere og sørger for forsyninger, kemikalieaffald og oprydning. Du hjælper også med udvalgte analyser, prøvehåndtering og digital arkivering i et GMP- og fødevarekontrolleret laboratorium.",
+  "deadlineAt": "2026-11-30T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "naturvidenskab",
+   "biologi",
+   "kemi",
+   "fysik",
+   "geografi",
+   "geologi",
+   "molekylær",
+   "fødevare",
+   "veterinær",
+   "ernæring",
+   "bioteknologi",
+   "biokemi",
+   "farmaci",
+   "materiale"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for naturvidenskab, fødevarer og veterinær, kemi og biotek.",
+  "openToAll": false
+ },
+ "d3a29826bdb9816597cb9afb316f26bc9a5a0a3e": {
+  "fam": "engineering",
+  "sec": [
+   "software",
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "mekatronik",
+   "Matlab/Simulink",
+   "prototyping og test",
+   "teknisk dokumentation",
+   "engelsk"
+  ],
+  "blurb": "Du udvikler, bygger og tester mekatroniske systemer til mobile maskiner som hjullastere, teleskoplæssere og traktorer. Du arbejder sammen med systemingeniører og værkstedstekniker og laver teknisk dokumentation.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering",
+   "elektro",
+   "elektronik",
+   "elektroteknologi",
+   "telekommunikation",
+   "maskin",
+   "mekanik",
+   "produktudvikling"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, teknik og teknologi, elektro.",
+  "openToAll": false
+ },
+ "adf9ea6346c6396cdae9a372f4b08616ba09c608": {
+  "fam": "marketing",
+  "sec": [
+   "customer",
+   "hr"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Microsoft Office",
+   "detaljeorientering",
+   "datakvalitet",
+   "analytisk tankegang",
+   "kommunikation"
+  ],
+  "blurb": "Du hjælper med den daglige drift af webshoppen, bl.a. oprettelse af nyt indhold på hjemmesiderne og opdatering af produktpriser. Du arbejder med data og indhold for at sikre korrekthed og samarbejder med andre teams om e-commerce-initiativer.",
+  "deadlineAt": "2026-12-06T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation.",
+  "openToAll": false
+ },
+ "fc949c107f8153a9fe67ee44fe34b32b5074b98d": {
+  "fam": "education",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "formidling",
+   "undervisning",
+   "pædagogisk forståelse",
+   "bæredygtighed",
+   "motivation af andre"
+  ],
+  "blurb": "Du underviser skoleelever fra 0.-10. klasse i bæredygtighedsemner som affaldssortering, energi, madspild og cirkulær økonomi, med hands-on aktiviteter både indendørs og udendørs. Du står selv foran klassen og fungerer som rollemodel for eleverne.",
+  "deadlineAt": "2026-12-09T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "pædagog",
+   "lærer",
+   "pædagogik",
+   "undervisning",
+   "miljø",
+   "energi",
+   "klima",
+   "bæredygtig"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for pædagogik og undervisning, klima, miljø og energi.",
+  "openToAll": false
+ },
+ "611ef7a8a12dacce17089dae57b9cf7a76df50a5": {
+  "fam": "public",
+  "sec": [
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "GDPR",
+   "databeskyttelsesret",
+   "NIS2",
+   "skriftlig formulering",
+   "interessenthåndtering"
+  ],
+  "blurb": "Du behandler indsigtsanmodninger fra registrerede, arbejder med tilsyn med databehandlere og vedligeholder fortegnelserne over behandlinger af personoplysninger i Økonomiforvaltningen. Du kan også rådgive medarbejdere om databeskyttelsesspørgsmål.",
+  "deadlineAt": "2026-12-09T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "erhvervsjura",
+   "law",
+   "it",
+   "datalogi",
+   "software",
+   "datamatiker",
+   "computer",
+   "data science",
+   "informatik"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for jura, IT.",
+  "openToAll": false
+ },
+ "355a0e68bb5680af2dedf62a4fb8e683dc44d5e1": {
+  "fam": "operations",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "finansiel analyse",
+   "Excel",
+   "PowerPoint",
+   "databaser",
+   "kreditanalyse"
+  ],
+  "blurb": "Du støtter ledelse og kundeteams i Large Corporates & Institutions med finansiel rapportering, kreditanalyser og opfølgning. Du laver kundepræsentationer og vedligeholder databaser.",
+  "deadlineAt": "2026-12-04T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "økonomi",
+   "revision",
+   "regnskab",
+   "finans",
+   "finansøkonom",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "business",
+   "marketing",
+   "markedsføring",
+   "handel",
+   "global business",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, økonomi og revision, marketing og business.",
+  "openToAll": false
+ },
+ "94f4ea97f3db85da39ef8b74082294e4639a03be": {
+  "fam": "hr",
+  "sec": [
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "varemodtagelse",
+   "pakning",
+   "mødestabilitet",
+   "ansvarlighed",
+   "teamwork"
+  ],
+  "blurb": "Du modtager og udpakker varer, lægger dem på plads og pakker udgående forsendelser på et lager i København. Du fragter også pakker frem og tilbage og løser ad hoc-opgaver.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "logistik",
+   "supply chain management",
+   "transportøkonomi",
+   "erhvervsøkonomi"
+  ],
+  "why": "Jobbet kræver ingen specifik uddannelse, men lagerdrift og forsendelser er relevante for studier i logistik og supply chain.",
+  "openToAll": true
  }
 }
