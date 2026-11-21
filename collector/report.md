@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-21 08:35 UTC
+# Jobindsamling 2026-11-21 18:09 UTC
 
-1124 studiejob gemt. AI-kald i denne kørsel: 46.
+1126 studiejob gemt. AI-kald i denne kørsel: 0.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 12 | 0 |  |
-| Region Syddanmark | hrmanager | 256 | 3 |  |
+| Region Syddanmark | hrmanager | 257 | 3 |  |
 | Novo Nordisk | rmk | 6 | 4 |  |
 | Novonesis | workday | 0 | 0 | fejl: HTTPError |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -81,7 +81,7 @@
 | HK | hrmanager | 7 | 1 |  |
 | Aarhus Kommune | hrmanager | 243 | 8 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 0 | 0 | 133 opslag på joblisten, 0 ligner studiejob |
+| Aalborg Kommune | emply | 0 | 0 | 108 opslag på joblisten, 0 ligner studiejob |
 | Frederiksberg Kommune | emply | 0 | 0 | 59 opslag på joblisten, 0 ligner studiejob |
 | Hvidovre Kommune | hrmanager | 27 | 0 |  |
 | Brøndby Kommune | emply | 0 | 0 | 44 opslag på joblisten, 0 ligner studiejob |
@@ -128,7 +128,7 @@
 | Morsø Kommune | emply | 0 | 0 | 14 opslag på joblisten, 0 ligner studiejob |
 | Nordfyns Kommune | emply | 0 | 0 | 33 opslag på joblisten, 0 ligner studiejob |
 | Nyborg Kommune | emply | 0 | 0 | 19 opslag på joblisten, 0 ligner studiejob |
-| Odder Kommune | hrmanager | 13 | 0 |  |
+| Odder Kommune | hrmanager | 14 | 0 |  |
 | Ringkøbing-Skjern Kommune | emply | 0 | 0 | 42 opslag på joblisten, 0 ligner studiejob |
 | Solrød Kommune | emply | 0 | 0 | 10 opslag på joblisten, 0 ligner studiejob |
 | Stevns Kommune | emply | 0 | 0 | 22 opslag på joblisten, 0 ligner studiejob |
@@ -145,7 +145,7 @@
 | 7-Eleven Danmark | emply | 0 | 0 | ingen jobliste fundet |
 | Boozt | teamtailor | 12 | 0 |  |
 | Danske Spil | teamtailor | 5 | 3 |  |
-| Topdanmark | workday | 0 | 0 | fejl: HTTPError |
+| Topdanmark | workday | 4 | 2 |  |
 | Accenture Danmark | workday | 0 | 0 | fejl: HTTPError |
 | Kammeradvokaten | emply | 1 | 1 | 9 opslag på joblisten, 1 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |

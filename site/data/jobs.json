@@ -3687,46 +3687,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til HR, vikariat",
-  "co": "Alka",
-  "city": "Ballerup, DK",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "operations"
-  ],
-  "famConf": "title",
-  "skills": [
-   "detaljesans",
-   "systematik",
-   "servicemindset",
-   "prioritering",
-   "HR-systemer"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": "2026-11-17T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du håndterer personaleadministrative opgaver i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Arbejdet sker i et HR-team, der støtter ca. 4.000 medarbejdere, og er præget af digitale systemer.",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "ai",
-  "studies": [
-   "hr",
-   "organisation",
-   "kommunikation",
-   "erhvervsøkonomi",
-   "jura"
-  ],
-  "why": "Opgaverne kræver kendskab til HR-processer, organisation og kommunikation, som er centrale i HR- og organisationsuddannelser.",
-  "openToAll": false,
-  "id": "xed64a1b53877",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til Operations & Training",
   "co": "Alka",
   "city": "Ballerup, DK",
@@ -3769,6 +3729,46 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til HR, vikariat",
+  "co": "Alka",
+  "city": "Ballerup, DK",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "detaljesans",
+   "systematik",
+   "servicemindset",
+   "prioritering",
+   "HR-systemer"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-17T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du håndterer personaleadministrative opgaver i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Arbejdet sker i et HR-team, der støtter ca. 4.000 medarbejdere, og er præget af digitale systemer.",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "organisation",
+   "kommunikation",
+   "erhvervsøkonomi",
+   "jura"
+  ],
+  "why": "Opgaverne kræver kendskab til HR-processer, organisation og kommunikation, som er centrale i HR- og organisationsuddannelser.",
+  "openToAll": false,
+  "id": "xed64a1b53877",
+  "live": true
+ },
+ {
   "title": "Mødebooker (studiejob), Tryg Privat",
   "co": "Alka",
   "city": "Århus N, DK",
@@ -3798,7 +3798,7 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til HR, vikariat",
+  "title": "Mødebooker (studiejob), Tryg Privat",
   "co": "Alka",
   "city": "Høje-Taastrup",
   "region": "kbh",
@@ -3807,35 +3807,23 @@
   "danish": "required",
   "fam": "hr",
   "sec": [
-   "operations"
+   "customer",
+   "social"
   ],
-  "famConf": "title",
+  "famConf": "text",
   "skills": [
-   "HR-administration",
-   "sans for detaljer",
-   "prioritering",
-   "systemunderstøttelse",
-   "serviceindstilling"
+   "Løn",
+   "Kundeservice"
   ],
   "industry": "Pension og forsikring",
   "postedAt": null,
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Du håndterer personaleadministration i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Opgaverne støtter HR-afdelingens interne kolleger og er digitale og systemunderstøttede.",
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
   "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/",
-  "enrichedBy": "ai",
-  "studies": [
-   "hr",
-   "erhvervsøkonomi",
-   "organisation",
-   "kommunikation",
-   "psykologi",
-   "jura"
-  ],
-  "why": "Jobbet kræver forståelse for HR-processer, personaleadministration og organisation, som HR- og organisationsfag dækker.",
-  "openToAll": false,
-  "id": "x9f6580deeca4",
+  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
+  "enrichedBy": "regler",
+  "id": "xc7e71abcfd04",
   "live": true
  },
  {
@@ -3921,7 +3909,7 @@
   "live": true
  },
  {
-  "title": "Mødebooker (studiejob), Tryg Privat",
+  "title": "Studentermedhjælper til HR, vikariat",
   "co": "Alka",
   "city": "Høje-Taastrup",
   "region": "kbh",
@@ -3930,23 +3918,35 @@
   "danish": "required",
   "fam": "hr",
   "sec": [
-   "customer",
-   "social"
+   "operations"
   ],
-  "famConf": "text",
+  "famConf": "title",
   "skills": [
-   "Løn",
-   "Kundeservice"
+   "HR-administration",
+   "sans for detaljer",
+   "prioritering",
+   "systemunderstøttelse",
+   "serviceindstilling"
   ],
   "industry": "Pension og forsikring",
   "postedAt": null,
-  "deadlineAt": null,
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "blurb": "Du håndterer personaleadministration i hele medarbejdercyklussen, fx udarbejdelse af kontrakter, oprettelse af medarbejdere, registrering af ændringer, tillæg og fratrædelser. Opgaverne støtter HR-afdelingens interne kolleger og er digitale og systemunderstøttede.",
   "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
-  "enrichedBy": "regler",
-  "id": "xc7e71abcfd04",
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-HR%2C-vikariat/1458035833/",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "erhvervsøkonomi",
+   "organisation",
+   "kommunikation",
+   "psykologi",
+   "jura"
+  ],
+  "why": "Jobbet kræver forståelse for HR-processer, personaleadministration og organisation, som HR- og organisationsfag dækker.",
+  "openToAll": false,
+  "id": "x9f6580deeca4",
   "live": true
  },
  {
@@ -4118,47 +4118,6 @@
   "live": true
  },
  {
-  "title": "Studiejob: Vil du være med til at styrke de gode samtaler på DR's sociale medier?",
-  "co": "DR",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "customer",
-  "sec": [
-   "marketing"
-  ],
-  "famConf": "title",
-  "skills": [
-   "community management",
-   "social medier",
-   "kundeservice",
-   "dansk sprogforståelse",
-   "skriftlig formidling"
-  ],
-  "industry": "Medier",
-  "postedAt": "2026-11-09T00:00:00+00:00",
-  "deadlineAt": "2026-11-23T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du deltager i samtaler i kommentarsporene på DR's sociale medier og svarer brugere i direkte beskeder. Du giver førstelinje-support om podcasts, apps og programmer og hjælper med at holde tonen konstruktiv.",
-  "req": null,
-  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studiejob-Vil-du-v%C3%A6re-med-til-at-styrke-de-gode-samtaler-p%C3%A5-DR's-sociale-medier-0999/1455624433/",
-  "enrichedBy": "ai",
-  "studies": [
-   "kommunikation",
-   "journalistik",
-   "medievidenskab",
-   "markedsføring",
-   "digitale medier",
-   "erhvervskommunikation"
-  ],
-  "why": "Jobbet kræver formidlingskompetence og forståelse for sociale medier, som uddannelser inden for kommunikation og medier giver.",
-  "openToAll": false,
-  "id": "x7b9351578ce6",
-  "live": true
- },
- {
   "title": "Studentermedhjælper til DR's internationale salgsafdeling",
   "co": "DR",
   "city": "København",
@@ -4198,6 +4157,47 @@
   "why": "Jobbet kræver forståelse for medie- og filmbranchen, internationale salgsprocesser og et sprogligt og kommunikativt set-up, som disse uddannelser giver.",
   "openToAll": false,
   "id": "x17a22ffd3fe5",
+  "live": true
+ },
+ {
+  "title": "Studiejob: Vil du være med til at styrke de gode samtaler på DR's sociale medier?",
+  "co": "DR",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "customer",
+  "sec": [
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "community management",
+   "social medier",
+   "kundeservice",
+   "dansk sprogforståelse",
+   "skriftlig formidling"
+  ],
+  "industry": "Medier",
+  "postedAt": "2026-11-09T00:00:00+00:00",
+  "deadlineAt": "2026-11-23T23:00:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du deltager i samtaler i kommentarsporene på DR's sociale medier og svarer brugere i direkte beskeder. Du giver førstelinje-support om podcasts, apps og programmer og hjælper med at holde tonen konstruktiv.",
+  "req": null,
+  "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studiejob-Vil-du-v%C3%A6re-med-til-at-styrke-de-gode-samtaler-p%C3%A5-DR's-sociale-medier-0999/1455624433/",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medievidenskab",
+   "markedsføring",
+   "digitale medier",
+   "erhvervskommunikation"
+  ],
+  "why": "Jobbet kræver formidlingskompetence og forståelse for sociale medier, som uddannelser inden for kommunikation og medier giver.",
+  "openToAll": false,
+  "id": "x7b9351578ce6",
   "live": true
  },
  {
@@ -5771,6 +5771,47 @@
   "live": true
  },
  {
+  "title": "Student Assistant for driving the IT/Digital PMO team with PMO Cluster Lead and Management team",
+  "co": "DSV",
+  "city": "Hedehusene, 84, DK, 2640",
+  "region": "kbh",
+  "hMin": 20,
+  "hMax": 20,
+  "danish": "plus",
+  "fam": "pmo",
+  "sec": [
+   "software",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "PowerPoint",
+   "SharePoint",
+   "engelsk kommunikation",
+   "projektadministration"
+  ],
+  "industry": "Logistik og shipping",
+  "postedAt": "2026-11-17T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du støtter IT/Digital PMO-teamet med kalenderkoordinering, administration, dataopfølgning og opdatering af rapporteringsskabeloner. Du er næstkommanderende for IT/Digital Cluster Lead og hjælper projektledere og agile coaches i det daglige.",
+  "req": null,
+  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "informatik",
+   "kommunikation",
+   "projektledelse",
+   "it-økonomi"
+  ],
+  "why": "Jobbet kombinerer projektadministration, kommunikation og it-understøttelse, som er centrale i økonomi-, it- og kommunikationsuddannelser.",
+  "openToAll": false,
+  "id": "x099e04a53351",
+  "live": true
+ },
+ {
   "title": "Student Assistant - Change & Business Operations",
   "co": "DSV",
   "city": "Hedehusene, 84, DK, 2640",
@@ -5816,15 +5857,15 @@
  {
   "title": "Student Assistant for driving the IT/Digital PMO team with PMO Cluster Lead and Management team",
   "co": "DSV",
-  "city": "Hedehusene, 84, DK, 2640",
+  "city": "Hedehusene",
   "region": "kbh",
   "hMin": 20,
   "hMax": 20,
   "danish": "plus",
   "fam": "pmo",
   "sec": [
-   "software",
-   "operations"
+   "operations",
+   "hr"
   ],
   "famConf": "title",
   "skills": [
@@ -5836,22 +5877,22 @@
   ],
   "industry": "Logistik og shipping",
   "postedAt": "2026-11-17T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "deadlineAt": "2026-11-30T23:00:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Du støtter IT/Digital PMO-teamet med kalenderkoordinering, administration, dataopfølgning og opdatering af rapporteringsskabeloner. Du er næstkommanderende for IT/Digital Cluster Lead og hjælper projektledere og agile coaches i det daglige.",
+  "blurb": "Du er højre hånd for IT/Digital Cluster Lead og hjælper projektledere og agile coaches med kalendere, administration, dataopfølgning og onboarding. Du opdaterer også rapporteringsskabeloner og foreslår forbedringer af arbejdsgangene i PMO-teamet.",
   "req": null,
-  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/",
   "enrichedBy": "ai",
   "studies": [
    "erhvervsøkonomi",
-   "informatik",
+   "ha",
    "kommunikation",
    "projektledelse",
-   "it-økonomi"
+   "it"
   ],
-  "why": "Jobbet kombinerer projektadministration, kommunikation og it-understøttelse, som er centrale i økonomi-, it- og kommunikationsuddannelser.",
+  "why": "Jobbet kræver administrativ overblik, projektforståelse og kommunikation, som typisk trænes på erhvervsøkonomi, kommunikation og projektledelse.",
   "openToAll": false,
-  "id": "x099e04a53351",
+  "id": "x719de4f8cc6d",
   "live": true
  },
  {
@@ -5893,47 +5934,6 @@
   "why": "Jobbet kræver forretningsforståelse, koordinering, struktur og skriftlig kommunikation, som uddannelser i økonomi og kommunikation giver.",
   "openToAll": false,
   "id": "xffae9a3027a6",
-  "live": true
- },
- {
-  "title": "Student Assistant for driving the IT/Digital PMO team with PMO Cluster Lead and Management team",
-  "co": "DSV",
-  "city": "Hedehusene",
-  "region": "kbh",
-  "hMin": 20,
-  "hMax": 20,
-  "danish": "plus",
-  "fam": "pmo",
-  "sec": [
-   "operations",
-   "hr"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "PowerPoint",
-   "SharePoint",
-   "engelsk kommunikation",
-   "projektadministration"
-  ],
-  "industry": "Logistik og shipping",
-  "postedAt": "2026-11-17T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:00:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du er højre hånd for IT/Digital Cluster Lead og hjælper projektledere og agile coaches med kalendere, administration, dataopfølgning og onboarding. Du opdaterer også rapporteringsskabeloner og foreslår forbedringer af arbejdsgangene i PMO-teamet.",
-  "req": null,
-  "url": "https://jobs.dsv.com/job/Hedehusene-Student-Assistant-for-driving-the-ITDigital-PMO-team-with-PMO-Cluster-Lead-and-Management-team-84-2640/1458080233/",
-  "enrichedBy": "ai",
-  "studies": [
-   "erhvervsøkonomi",
-   "ha",
-   "kommunikation",
-   "projektledelse",
-   "it"
-  ],
-  "why": "Jobbet kræver administrativ overblik, projektforståelse og kommunikation, som typisk trænes på erhvervsøkonomi, kommunikation og projektledelse.",
-  "openToAll": false,
-  "id": "x719de4f8cc6d",
   "live": true
  },
  {
@@ -6365,6 +6365,92 @@
   "url": "https://karriere.danskespil.dk/jobs/8656436-studentermedhjaelper-til-gdpr-compliance-og-informationssikkerhed",
   "enrichedBy": "regler",
   "id": "xb1571386d456",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Taskforce",
+  "co": "If P&C Insurance Ltd (publ), Branch Denmark",
+  "city": "København, Denmark",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "datakvalitet",
+   "Power Automate",
+   "databehandling",
+   "procesautomatisering"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-16T00:00:00+00:00",
+  "deadlineAt": "2026-12-01T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du kvalitetssikrer og retter data på tværs af systemer i If og hjælper forskellige afdelinger med administrative og ad hoc-opgaver. Du kan også automatisere simple arbejdsgange, fx med Power Automate.",
+  "req": null,
+  "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Kbenhavn/Studentermedhjlper-til-Taskforce_JobReqID11734",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "datalogi",
+   "it",
+   "matematik-økonomi",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver Excel-, data- og procesforståelse, som styrkes på økonomiske, it- og datafaglige uddannelser.",
+  "openToAll": false,
+  "id": "x11e8b1b91330",
+  "live": true
+ },
+ {
+  "title": "Talent Acquisition Coordinator",
+  "co": "If P&C Insurance Ltd (publ), Branch Denmark",
+  "city": "København, Denmark",
+  "region": "kbh",
+  "hMin": 16,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "marketing",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "rekruttering",
+   "employer branding",
+   "Workday",
+   "LinkedIn-sourcing",
+   "kommunikation"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-09T00:00:00+00:00",
+  "deadlineAt": "2026-11-23T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du støtter rekrutteringsprocesserne med administrative opgaver, fx jobopslag, kandidatadministration i Workday og reference- og baggrundstjek. Du hjælper også med at planlægge og koordinere employer branding-aktiviteter som karrieremesser og studenterarrangementer.",
+  "req": null,
+  "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Kbenhavn/Talent-Acquisition-Coordinator_JobReqID11689",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "personaleledelse",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "psykologi",
+   "kommunikation",
+   "medievidenskab"
+  ],
+  "why": "Jobbet kombinerer rekruttering, HR og employer branding, og kræver god forståelse for organisation, mennesker og kommunikation.",
+  "openToAll": false,
+  "id": "x2e4ae202e9c0",
   "live": true
  },
  {
