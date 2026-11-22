@@ -1,6 +1,6 @@
-# Jobindsamling 2026-11-21 18:09 UTC
+# Jobindsamling 2026-11-22 08:35 UTC
 
-1126 studiejob gemt. AI-kald i denne kørsel: 0.
+1099 studiejob gemt. AI-kald i denne kørsel: 1.
 
 | Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@
 | Carelink | evergreen | 1 | 1 |  |
 | SundVikar | evergreen | 1 | 1 |  |
 | Redpill Linpro | teamtailor | 12 | 0 |  |
-| Region Syddanmark | hrmanager | 257 | 3 |  |
+| Region Syddanmark | hrmanager | 256 | 3 |  |
 | Novo Nordisk | rmk | 6 | 4 |  |
 | Novonesis | workday | 0 | 0 | fejl: HTTPError |
 | LEO Pharma | rmk | 1 | 0 |  |
@@ -56,7 +56,7 @@
 | Matas | emply | 3 | 3 | 20 opslag på joblisten, 3 ligner studiejob |
 | Nationalbanken | workday | 0 | 0 | fejl: HTTPError |
 | Statslige arbejdsgivere | hrmanager | 434 | 59 |  |
-| Saxo Bank | workday | 0 | 0 | fejl: HTTPError |
+| Saxo Bank | workday | 0 | 0 |  |
 | Lunar | teamtailor | 26 | 0 |  |
 | Pleo | ashby | 33 | 0 |  |
 | PFA | sitemap | 0 | 0 |  |
@@ -79,10 +79,10 @@
 | 3 Danmark | teamtailor | 15 | 1 |  |
 | ISS | rmk | 1 | 0 |  |
 | HK | hrmanager | 7 | 1 |  |
-| Aarhus Kommune | hrmanager | 243 | 8 |  |
+| Aarhus Kommune | hrmanager | 240 | 7 |  |
 | Odense Kommune | hrmanager | 0 | 0 |  |
-| Aalborg Kommune | emply | 0 | 0 | 108 opslag på joblisten, 0 ligner studiejob |
-| Frederiksberg Kommune | emply | 0 | 0 | 59 opslag på joblisten, 0 ligner studiejob |
+| Aalborg Kommune | emply | 0 | 0 | 131 opslag på joblisten, 0 ligner studiejob |
+| Frederiksberg Kommune | emply | 0 | 0 | 62 opslag på joblisten, 0 ligner studiejob |
 | Hvidovre Kommune | hrmanager | 27 | 0 |  |
 | Brøndby Kommune | emply | 0 | 0 | 44 opslag på joblisten, 0 ligner studiejob |
 | Næstved Kommune | emply | 1 | 0 | 67 opslag på joblisten, 1 ligner studiejob |
@@ -92,8 +92,8 @@
 | Forbrugerrådet Tænk | hrmanager | 2 | 0 |  |
 | Roskilde Universitet | hrmanager | 6 | 4 |  |
 | IT-Universitetet | hrmanager | 6 | 1 |  |
-| Københavns Professionshøjskole | emply | 11 | 8 | 20 opslag på joblisten, 11 ligner studiejob |
-| Statslige arbejdsgivere | hrmanager | 65 | 5 |  |
+| Københavns Professionshøjskole | emply | 11 | 8 | 18 opslag på joblisten, 11 ligner studiejob |
+| Statslige arbejdsgivere | hrmanager | 64 | 5 |  |
 | VIA University College | emply | 2 | 1 | 22 opslag på joblisten, 2 ligner studiejob |
 | UCN | emply | 2 | 2 | 6 opslag på joblisten, 2 ligner studiejob |
 | Erhvervsakademi København | emply | 2 | 0 | 12 opslag på joblisten, 2 ligner studiejob |
@@ -114,7 +114,7 @@
 | Faxe Kommune | hrmanager | 29 | 0 |  |
 | Fredericia Kommune | emply | 0 | 0 | 39 opslag på joblisten, 0 ligner studiejob |
 | Frederikshavn Kommune | emply | 0 | 0 | 42 opslag på joblisten, 0 ligner studiejob |
-| Faaborg-Midtfyn Kommune | hrmanager | 34 | 0 |  |
+| Faaborg-Midtfyn Kommune | hrmanager | 33 | 0 |  |
 | Glostrup Kommune | emply | 1 | 1 | 29 opslag på joblisten, 1 ligner studiejob |
 | Greve Kommune | hrmanager | 4 | 0 |  |
 | Guldborgsund Kommune | emply | 0 | 0 | 40 opslag på joblisten, 0 ligner studiejob |
@@ -132,10 +132,10 @@
 | Ringkøbing-Skjern Kommune | emply | 0 | 0 | 42 opslag på joblisten, 0 ligner studiejob |
 | Solrød Kommune | emply | 0 | 0 | 10 opslag på joblisten, 0 ligner studiejob |
 | Stevns Kommune | emply | 0 | 0 | 22 opslag på joblisten, 0 ligner studiejob |
-| Struer Kommune | emply | 0 | 0 | 16 opslag på joblisten, 0 ligner studiejob |
+| Struer Kommune | emply | 0 | 0 | 15 opslag på joblisten, 0 ligner studiejob |
 | Syddjurs Kommune | emply | 0 | 0 | 6 opslag på joblisten, 0 ligner studiejob |
 | Tønder Kommune | emply | 0 | 0 | 35 opslag på joblisten, 0 ligner studiejob |
-| Varde Kommune | emply | 2 | 2 | 49 opslag på joblisten, 2 ligner studiejob |
+| Varde Kommune | emply | 2 | 2 | 48 opslag på joblisten, 2 ligner studiejob |
 | Tandlægen.dk | hrmanager | 10 | 0 |  |
 | Capio Danmark | emply | 0 | 0 | 7 opslag på joblisten, 0 ligner studiejob |
 | Aleris | hrmanager | 10 | 0 |  |
@@ -150,4 +150,4 @@
 | Kammeradvokaten | emply | 1 | 1 | 9 opslag på joblisten, 1 ligner studiejob |
 | Bech-Bruun | emply | 0 | 0 | ingen jobliste fundet |
 | Accura | hrmanager | 4 | 1 |  |
-| StuderendeOnline.dk | studerendeonline | 1050 | 991 | 1137 af 1137 opslag hentet, 1050 er studiejob eller praktik i Danmark |
+| StuderendeOnline.dk | studerendeonline | 1052 | 993 | 1139 af 1139 opslag hentet, 1052 er studiejob eller praktik i Danmark |

@@ -68016,5 +68016,31 @@
   ],
   "why": "Jobbet kræver ingen specifik uddannelse, men lagerdrift og forsendelser er relevante for studier i logistik og supply chain.",
   "openToAll": true
+ },
+ "3f9ffe101b67dccec89d5c858d8a4d8f6c0cbc5b": {
+  "fam": "operations",
+  "sec": [
+   "finance"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "dansk og engelsk",
+   "Microsoft Outlook",
+   "detaljeorientering",
+   "serviceforståelse",
+   "administration"
+  ],
+  "blurb": "Du håndterer den fælles postkasse, koordinerer møder og arrangementer og registrerer medarbejdernes uddannelse i ISOtrain. Du hjælper også med at booke kursuslokaler og planlægge Training Academy.",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration.",
+  "openToAll": true
  }
 }
