@@ -1307,6 +1307,33 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Culture & Leadership",
   "co": "Norlys",
   "city": "Silkeborg",
@@ -1332,33 +1359,6 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
   "live": true
  },
  {
