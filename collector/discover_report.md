@@ -1,6 +1,6 @@
-# Virksomhedsfinder 2026-11-09 04:09 UTC
+# Virksomhedsfinder 2026-11-23 04:14 UTC
 
-319 virksomheder tjekket. Jobsystem fundet hos 126. Nye kilder tilføjet: 0.
+319 virksomheder tjekket. Jobsystem fundet hos 121. Nye kilder tilføjet: 1.
 
 | Virksomhed | Fundet | Status |
 | --- | --- | --- |
@@ -36,7 +36,7 @@
 | Rockwool |  | intet jobsystem fundet |
 | FLSmidth | workday: https://flsmidth.wd3.myworkdayjobs.com/FLS_Global | kendt |
 | NKT | sitemap: https://www.nkt.com | kendt |
-| Velux | workday: https://velux.wd3.myworkdayjobs.com/Velux_Residential | kendt |
+| Velux |  | intet jobsystem fundet |
 | LEGO |  | forsiden kunne ikke hentes |
 | Bang & Olufsen | sitemap: https://www.bang-olufsen.com | kendt |
 | Pandora |  | intet jobsystem fundet |
@@ -57,7 +57,7 @@
 | Saxo Bank | workday: https://saxobank.wd3.myworkdayjobs.com/en-US/CareeratSaxoBank | kendt |
 | Lunar | teamtailor: https://jobs.lunar.app | kendt |
 | Pleo | ashby: pleo | kendt |
-| PFA | sitemap: https://www.pfa.dk | kendt |
+| PFA |  | intet jobsystem fundet |
 | ATP | hrmanager: atp | kendt |
 | PensionDanmark |  | intet jobsystem fundet |
 | Danica Pension |  | intet jobsystem fundet |
@@ -82,7 +82,7 @@
 | KMD |  | intet jobsystem fundet |
 | Systematic |  | intet jobsystem fundet |
 | Trifork |  | intet jobsystem fundet |
-| twoday | teamtailor: https://twodaydenmark.teamtailor.com | kendt |
+| twoday | teamtailor: https://twodayfinland.teamtailor.com | kendt |
 | Columbus | teamtailor: https://careers.columbusglobal.com | kendt |
 | Siteimprove |  | intet jobsystem fundet |
 | Templafy | teamtailor: https://templafy.teamtailor.com | kendt |
@@ -97,7 +97,7 @@
 | MT Højgaard |  | intet jobsystem fundet |
 | Per Aarsleff | hrmanager: aarsleff | kendt |
 | Bravida Danmark |  | intet jobsystem fundet |
-| DSB | sitemap: https://www.dsb.dk | kendt |
+| DSB |  | intet jobsystem fundet |
 | Københavns Lufthavne |  | forsiden kunne ikke hentes |
 | PostNord Danmark |  | forsiden kunne ikke hentes |
 | Movia |  | intet jobsystem fundet |
@@ -229,8 +229,8 @@
 | Morsø Kommune | emply: https://mors.career.emply.com | kendt |
 | Norddjurs Kommune |  | intet jobsystem fundet |
 | Nordfyns Kommune | emply: https://nordfynskommune.career.emply.com | kendt |
-| Nyborg Kommune | emply: https://nyborg.career.emply.com | kendt |
-| Næstved Kommune | emply: https://naestved.career.emply.com | kendt |
+| Nyborg Kommune |  | forsiden kunne ikke hentes |
+| Næstved Kommune |  | intet jobsystem fundet |
 | Odder Kommune | hrmanager: ofir_odder | kendt |
 | Odense Kommune |  | forsiden kunne ikke hentes |
 | Odsherred Kommune |  | intet jobsystem fundet |
@@ -269,7 +269,7 @@
 | Aarhus Kommune | hrmanager: aarhuskommune_tr | kendt |
 | Godt Smil Tandlægerne |  | intet jobsystem fundet |
 | ORIS Tandlægerne |  | intet jobsystem fundet |
-| Tandlægen.dk |  | forsiden kunne ikke hentes |
+| Tandlægen.dk | hrmanager: tand | kendt |
 | Colosseum Tandlægerne | teamtailor: https://colosseumklinikken.teamtailor.com | kendt |
 | Capio Danmark | emply: https://capio.career.emply.com | kendt |
 | Aleris | hrmanager: aleris | kendt |
@@ -295,7 +295,7 @@
 | Tivoli |  | intet jobsystem fundet |
 | Zalando Danmark |  | intet jobsystem fundet |
 | Boozt | teamtailor: https://careers.booztgroup.com | kendt |
-| Nemlig.com |  | intet jobsystem fundet |
+| Nemlig.com | hrmanager: nemlig | ny |
 | Wolt Danmark |  | intet jobsystem fundet |
 | Just Eat |  | forsiden kunne ikke hentes |
 | Vivino |  | forsiden kunne ikke hentes |
@@ -313,12 +313,12 @@
 | McKinsey København |  | forsiden kunne ikke hentes |
 | Boston Consulting Group |  | intet jobsystem fundet |
 | Bain & Company |  | intet jobsystem fundet |
-| Kammeradvokaten | emply: https://poulschmith.career.emply.com | kendt |
+| Kammeradvokaten |  | forsiden kunne ikke hentes |
 | Kromann Reumert |  | intet jobsystem fundet |
 | Gorrissen Federspiel |  | intet jobsystem fundet |
 | Bech-Bruun | emply: https://bechbruun.career.emply.com | kendt |
 | Plesner |  | intet jobsystem fundet |
-| Accura | hrmanager: accura | kendt |
+| Accura |  | forsiden kunne ikke hentes |
 | DLA Piper Danmark |  | forsiden kunne ikke hentes |
 | Mazanti-Andersen |  | intet jobsystem fundet |
 | Lundgrens |  | intet jobsystem fundet |

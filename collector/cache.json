@@ -68042,5 +68042,85 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for administration.",
   "openToAll": true
+ },
+ "cbbfd328dd76754062c79a0d8fbc3b1a241ae056": {
+  "fam": "public",
+  "sec": [
+   "sustain",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Statistik",
+   "Sociale medier"
+  ],
+  "blurb": "Studiejob som studentermedhjælper med myndighedsopgaver på miljøområdet i Mariagerfjord Kommune. Opslaget giver ikke flere konkrete arbejdsopgaver.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "miljøteknologi",
+   "miljøvidenskab",
+   "biologi",
+   "geografi",
+   "jura",
+   "statskundskab",
+   "planlægning",
+   "landmåling"
+  ],
+  "why": "Myndighedsopgaver på miljøområdet kræver faglig viden om miljølovgivning, natur og planlægning, og det kan jurister og naturfaglige studerende bruge.",
+  "openToAll": false
+ },
+ "981a7dad63990dd25a69a8b071175c667ac7edb8": {
+  "fam": "pmo",
+  "sec": [],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Do you want to help create a student experience where wellbeing, belonging, and community go hand in hand?",
+  "deadlineAt": "2026-12-07T00:00:00+00:00",
+  "enrichedBy": "regler",
+  "skip": true
+ },
+ "e2f7ff0eedc9a93f6a9ec87aa9402a1d67cd30b2": {
+  "fam": "engineering",
+  "sec": [
+   "marketing",
+   "software"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "vejledning",
+   "kommunikation",
+   "eventplanlægning",
+   "oplæg og workshops",
+   "samarbejde"
+  ],
+  "blurb": "Du vejleder studerende om studie- og gruppearbejde, dispensations- og meritsager og studieplaner, og du vejleder potentielle studerende. Du afholder workshops om studie- og eksamensteknik og er med til at planlægge arrangementer som Åbent Hus og Studiepraktik.",
+  "deadlineAt": "2026-12-06T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "administration",
+   "administrationsøkonom",
+   "offentlig administration",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "ingeniør",
+   "teknologi",
+   "teknik",
+   "engineering"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for administration, sprog og kommunikation, teknik og teknologi.",
+  "openToAll": false
  }
 }
