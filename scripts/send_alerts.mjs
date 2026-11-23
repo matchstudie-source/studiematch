@@ -48,7 +48,7 @@ for (const u of users) {
     .slice(0, PER_MAIL);
   if (!best.length) continue;
   alerts.push({ userId: u.id, jobs: best.map(({ j, ev }) => ({
-    id: j.id, title: j.title, co: j.co, city: j.city, url: j.url, level: ev.level,
+    id: j.id, title: j.title, co: j.co, city: j.city, url: j.url, level: ev.level, kind: j.kind || "studiejob",
     why: ev.ai === true && j.why ? j.why : "",
     deadline: j.deadlineAt && !j.rolling ? new Date(j.deadlineAt).toLocaleDateString("da-DK", { day: "numeric", month: "long" }) : "",
   })) });

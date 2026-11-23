@@ -96,7 +96,7 @@ def evergreen_job(e: dict) -> dict:
     """Løbende optag, fx regionernes vikarkorps: ingen frist, altid synlig."""
     hours = [int(x) for x in re.findall(r"\d+", e.get("hours", ""))] or [0, 0]
     return {
-        "title": e["title"], "co": e["name"], "city": e.get("city", ""), "region": enrich.employer_area(e),
+        "title": e["title"], "kind": enrich.job_kind(e["title"]), "co": e["name"], "city": e.get("city", ""), "region": enrich.employer_area(e),
         "hMin": hours[0], "hMax": hours[-1], "danish": e.get("danish") or "required",
         "fam": e.get("fam") or "health", "sec": [s for s in e.get("sec", "").split("|") if s],
         "skills": [], "industry": e.get("industry") or "Andet",
@@ -108,7 +108,7 @@ def evergreen_job(e: dict) -> dict:
 
 def manual_job(m: dict) -> dict:
     return {
-        "title": m["title"], "co": m["name"], "city": m.get("city", ""), "region": enrich.employer_area(m),
+        "title": m["title"], "kind": enrich.job_kind(m["title"]), "co": m["name"], "city": m.get("city", ""), "region": enrich.employer_area(m),
         "hMin": int(m.get("h_min") or 0), "hMax": int(m.get("h_max") or 0), "danish": m.get("danish") or "required",
         "fam": m.get("fam") or "operations", "sec": [s for s in m.get("sec", "").split("|") if s],
         "skills": [s for s in m.get("skills", "").split("|") if s], "industry": m.get("industry") or "Andet",

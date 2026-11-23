@@ -257,6 +257,19 @@ button,input,select,textarea{font:inherit;color:inherit}
 .meta{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-size:13px;font-weight:500;padding:3px 8px;border-radius:4px;background:var(--surface-2);color:var(--fg);white-space:nowrap}
 .tag-new{background:var(--good-soft);color:var(--good)}
+.tag-kind{background:var(--accent-soft);color:var(--accent-deep);font-weight:600}
+.kinds{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.kind{display:flex;align-items:center;gap:12px;text-align:left;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-md);padding:12px 14px;cursor:pointer;color:var(--fg);font:inherit;min-width:0}
+.kind svg{width:24px;height:24px;flex:none;color:var(--muted)}
+.kind .k-t{display:grid;line-height:1.25;min-width:0}
+.kind b{font-weight:700;font-size:15.5px;letter-spacing:-.01em}
+.kind small{color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kind .count{margin-left:auto;font-weight:600;font-size:14px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.kind:hover{border-color:var(--fg)}
+.kind[aria-selected="true"]{border-color:var(--fg);box-shadow:inset 0 0 0 1px var(--fg)}
+.kind[aria-selected="true"] svg{color:var(--accent)}
+.kind[aria-selected="true"] .count{color:var(--fg)}
+@media(max-width:520px){.kind small{display:none}.kind{padding:11px 12px;gap:10px}}
 .tag-hidden{background:var(--hidden-soft);color:var(--hidden)}
 .tag-soon{background:var(--worth-soft);color:var(--worth)}
 .sponsored{font-size:12px;font-weight:600;color:var(--muted);border:1px solid var(--line-2);border-radius:4px;padding:1px 6px}
@@ -717,7 +730,7 @@ const KEY = "studiematch-v1";
 /* Flyt profiler fra det gamle navn, så ingen mister deres data */
 try{ const old=localStorage.getItem("pathfit-proto-v3"); if(old && !localStorage.getItem(KEY)){ localStorage.setItem(KEY,old); } if(old) localStorage.removeItem("pathfit-proto-v3"); }catch(e){}
 function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",cvAt:0,cvBy:"",cvFams:[],extra:[],aiWeights:false,alerts:false,alertFreq:"daily",email:""}; }
-function fresh(){ return {view:"landing",tab:"foryou",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
+function fresh(){ return {view:"landing",tab:"foryou",kind:"studiejob",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
 function load(){
   try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); if(pr.hoursMax===25) pr.hoursMax=40; const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
   return fresh();
@@ -902,12 +915,24 @@ function studyFits(req, p){
   if(req==="ingenioer" && /global business/.test(hay)) return false;  /* GBE er ikke en teknisk ingeniøruddannelse i denne forstand */
   return rx.test(hay);
 }
+/* Studiejob eller praktik. Jobhentningen sætter job.kind, ellers gætter vi ud fra titlen (eksempeljob og direkte opslag).
+   "intern" tæller kun, når det ikke er det danske tillægsord, fx "intern kommunikation". */
+const INTERN_RE=/\b(?:[Ii]ntern|INTERN)[sS]?\b(?=\s*$|\s*[,|–\-:(\/&)]|\s+(?:for|at|to|in|with|til|hos|i|ved)\b|\s+[A-ZÆØÅ0-9])/;
+function guessKind(t){
+  const pr=/praktik|internship|trainee/i.test(t)||INTERN_RE.test(t);
+  const sj=/studiejob|studentermedhj|studentermedarbejder|student\s*(?:assistant|worker|job|helper)|studentassistent/i.test(t);
+  return pr&&sj?"begge":pr?"praktik":"studiejob";
+}
+function jobKind(j){ return j.kind||(j.kind=guessKind(j.title||"")); }
+function inKind(j,k){ const x=jobKind(j); return x===k||x==="begge"; }
+const KINDS=[{id:"studiejob",l:"Studiejob",sub:"Ved siden af studiet",icon:"briefcase",many:"studiejob"},{id:"praktik",l:"Praktik",sub:"Praktikplads og internship",icon:"cap",many:"praktikpladser"}];
 function evaluate(job, c){
   c=ctxOf(c); const p=c.profile, W=effW(p);
   if(job.req && !studyFits(job.req, p)) return {out:"study"};
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
-  if(job.hMin > p.hoursMax+2) return {out:"hours"};
+  const isPraktik = jobKind(job)==="praktik"; /* praktik er tit fuld tid i et semester, så timefilteret gælder kun studiejob */
+  if(!isPraktik && job.hMin > p.hoursMax+2) return {out:"hours"};
   const jr=area(job.region); if(!p.regions.includes("any") && jr!=="remote" && jr!=="dk" && !p.regions.map(area).includes(jr)) return {out:"location"};
   const prim = W[job.fam]||0;
   let bestSec={f:null,w:0};
@@ -943,7 +968,7 @@ function evaluate(job, c){
   let score = live.reduce((s,x)=>s+x.v*x.w,0)/wsum;
   if(job.postedH<12) score+=.03;
   if(job.danish==="plus" && p.danish!=="fluent") score-=.05;
-  if(job.hMax>p.hoursMax) score-=.04;
+  if(!isPraktik && job.hMax>p.hoursMax) score-=.04;
   score=clamp(score,0,1);
   /* Uden reel faglig sammenhæng vises jobbet ikke, uanset timer og interesser */
   const level = affinity<.45 ? null : score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
@@ -967,7 +992,7 @@ function reasonsFor(job, ev, c){
   if(job.danish==="no" && p.danish!=="fluent") pos.push("Arbejdssproget er engelsk");
   if(job.postedH<12) pos.push(`Slået op ${ago(job.postedH)}, så du er tidligt ude`);
   if(job.danish==="plus" && p.danish!=="fluent") neg.push("Dansk er et plus her");
-  if(job.hMax>p.hoursMax) neg.push(`Op til ${job.hMax} timer om ugen, mere end de ${p.hoursMax} timer, du kan`);
+  if(jobKind(job)!=="praktik" && job.hMax>p.hoursMax) neg.push(`Op til ${job.hMax} timer om ugen, mere end de ${p.hoursMax} timer, du kan`);
   if(job.deadline!=null && job.deadline<=5) neg.push(`Ansøgningsfrist om ${job.deadline} dage`);
   if(p.skills.length && !ev.skillHits.length) neg.push(`Efterspørger ${job.skills[0]}, som ikke står på din profil`);
   if(l<=-.1) neg.push(`Du har tidligere fravalgt ${FAM[job.fam].n}`);
@@ -981,8 +1006,9 @@ function hiddenWhy(job, ev, c){
 }
 function allEvals(){ return JOBS.map(j=>({job:j,ev:evaluate(j)})); }
 function fbOf(id){ return S.fb[id] || (S.fb[id]={}); }
-function feed(){
-  let items = allEvals().filter(x=>!x.ev.out && x.ev.level && !(S.fb[x.job.id]||{}).dismissed && !(S.fb[x.job.id]||{}).applied);
+function feed(kind){
+  kind=kind||S.kind||"studiejob";
+  let items = allEvals().filter(x=>inKind(x.job,kind) && !x.ev.out && x.ev.level && !(S.fb[x.job.id]||{}).dismissed && !(S.fb[x.job.id]||{}).applied);
   items = items.filter(x=>!x.job.sponsored || x.ev.score>=.55);
   items.sort((a,b)=>b.ev.score-a.ev.score);
   const out=[];
@@ -1000,12 +1026,12 @@ function feed(){
 function hiddenFeed(){ return feed().filter(x=>x.ev.hidden); }
 function filteredCounts(){
   const c={danish:0,hours:0,location:0,field:0,study:0,dismissed:0};
-  for(const x of allEvals()){ if((S.fb[x.job.id]||{}).dismissed) c.dismissed++; else if(x.ev.out) c[x.ev.out]++; }
+  for(const x of allEvals()){ if(!inKind(x.job,S.kind||"studiejob")) continue; if((S.fb[x.job.id]||{}).dismissed) c.dismissed++; else if(x.ev.out) c[x.ev.out]++; }
   return c;
 }
 /* Alle job, der ikke vises, med grunden */
 function filteredJobs(){
-  return allEvals().map(x=>({...x,why:(S.fb[x.job.id]||{}).dismissed?"dismissed":x.ev.out})).filter(x=>x.why);
+  return allEvals().filter(x=>inKind(x.job,S.kind||"studiejob")).map(x=>({...x,why:(S.fb[x.job.id]||{}).dismissed?"dismissed":x.ev.out})).filter(x=>x.why);
 }
 
 /* ============ IKONER ============ */
@@ -1021,6 +1047,8 @@ const I = {
   chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>',
   spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18.5 16.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg>',
   compass:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>',
+  briefcase:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"/><path d="M3 12.5h18"/></svg>',
+  cap:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5L12 5l10 4.5-10 4.5z"/><path d="M6 11.5V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.5"/><path d="M22 9.5V14"/></svg>',
   user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>'
 };
 
@@ -1044,6 +1072,7 @@ function cardHTML(job, ev, opts){
       <div class="lvl lvl-${ev.level}"><span class="lvl-pill">${levelLabel(ev.level)}</span><span class="meter" aria-hidden="true"><i></i><i></i><i></i></span></div>
     </div>
     <div class="meta">
+      ${jobKind(job)==="praktik"?'<span class="tag tag-kind">Praktik</span>':jobKind(job)==="begge"?'<span class="tag tag-kind">Studiejob eller praktik</span>':""}
       <span class="tag">${!job.hMin?"Timer: se opslag":job.hMin===job.hMax?job.hMin+" t/uge":job.hMin+"–"+job.hMax+" t/uge"}</span>
       <span class="tag">${danishTag}</span>
       ${job.rolling?'<span class="tag">Løbende optag</span>':job.deadline==null?"":`<span class="tag ${job.deadline<=5?"tag-soon":""}">Frist ${deadlineDate(job.deadline)}</span>`}
@@ -1101,7 +1130,7 @@ function vLanding(){
         <div class="hero-form">
           <p class="label">Hvor læser du?</p>
           <div class="hero-schools">${SCHOOLS.map(s=>`<button class="school-chip${(s.chip||s.name).length>9?" wide":""}" data-act="school" data-v="${s.key}">${esc(s.chip||s.name)}</button>`).join("")}<button class="school-chip ghost wide" data-act="school" data-v="other">Andet sted</button></div>
-          <p class="fine">${LIVE&&JOBS.length?`${JOBS.length.toLocaleString("da-DK")} studiejob i hele Danmark lige nu. `:""}Det tager under et minut, og du behøver ikke en bruger.</p>
+          <p class="fine">${LIVE&&JOBS.length?`${JOBS.length.toLocaleString("da-DK")} studiejob og praktikpladser i hele Danmark lige nu. `:""}Det tager under et minut, og du behøver ikke en bruger.</p>
         </div>
       </div>
       <div>
@@ -1275,7 +1304,9 @@ function filterNote(){
 }
 function tForYou(){
   const f=feed(); const now=new Date().toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"});
-  const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} job rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} studiejob gennemgået.</p></div>`;
+  const K=KINDS.find(k=>k.id===S.kind)||KINDS[0];
+  const kinds=`<div class="kinds" role="tablist" aria-label="Vis studiejob eller praktik">${KINDS.map(k=>`<button class="kind" role="tab" aria-selected="${k.id===K.id}" data-act="kind" data-v="${k.id}">${I[k.icon]}<span class="k-t"><b>${k.l}</b><small>${k.sub}</small></span><span class="count">${k.id===K.id?f.length:feed(k.id).length}</span></button>`).join("")}</div>`;
+  const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} ${K.many} rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} opslag gennemgået.</p></div>`+kinds;
   const nudge = ACC.backend && !ACC.user && !S.nudgeClosed ? `<section class="nudge"><div><b>Gem din profil</b><span>Opret en gratis bruger, så dine matches, gemte job og dit CV er med dig på alle enheder.</span></div><div class="chips"><button class="btn btn-primary btn-sm" data-act="auth" data-v="signup">Opret bruger</button><button class="btn btn-quiet btn-sm" data-act="nudge-close">Ikke nu</button></div></section>` : "";
   if(!f.length) return head+nudge+filterNote()+emptyFeed();
   return head+nudge+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
@@ -1283,7 +1314,7 @@ function tForYou(){
 function emptyFeed(){
   const p=S.profile;
   return `<div class="empty"><h2>Du har set alle matches lige nu</h2>
-    <p>Der kommer nye studiejob hver dag, og siden tjekker for nye to gange i døgnet. Kig forbi igen, eller vis job fra hele landet.</p>
+    <p>Der kommer nye ${S.kind==="praktik"?"praktikpladser":"studiejob"} hver dag, og siden tjekker for nye to gange i døgnet. Kig forbi igen, eller vis job fra hele landet.</p>
     <div class="chips"><button class="btn btn-ghost btn-sm" data-act="widen">Søg i hele landet</button></div></div>`;
 }
 function tSaved(){
@@ -1640,6 +1671,7 @@ function act(a, el){
     case "pw-sheet": UI.sheet={type:"password"}; UI.focus="pw-old"; return render();
     case "logout": (async()=>{ await api("auth/logout",{}); ACC.user=null; S=fresh(); try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Du er logget ud."); })(); return;
     case "nudge-close": S.nudgeClosed=true; return commit();
+    case "kind": if(S.kind!==v){ S.kind=v; UI.showFiltered=false; track("filter",{meta:"Type: "+(v==="praktik"?"Praktik":"Studiejob")}); } return commit();
     case "toggle-filtered": UI.showFiltered=!UI.showFiltered; return render();
     case "fields-on": S.disabled=[]; commit(); return toast("Alle felter er slået til igen.");
     case "undismiss": for(const k in S.fb) if(S.fb[k].dismissed) delete S.fb[k].dismissed; commit(); return toast("De fravalgte job vises igen.");

@@ -458,3 +458,19 @@ class StuderendeOnlineTest(unittest.TestCase):
         import os
         os.environ.pop("STUDERENDEONLINE_API_KEY", None)
         self.assertEqual(sources.fetch_studerendeonline("studerendeonline", "StuderendeOnline"), [])
+
+
+class JobKindTest(unittest.TestCase):
+    def test_kinds(self):
+        k = enrich.job_kind
+        self.assertEqual(k("Praktikant til Customer Relations"), "praktik")
+        self.assertEqual(k("Internship: Direct Procurement"), "praktik")
+        self.assertEqual(k("Data & Digitalisation Intern, Logistics"), "praktik")
+        self.assertEqual(k("Interns for 3XN - Copenhagen"), "praktik")
+        self.assertEqual(k("MECHANICAL ENGINEERING INTERN"), "praktik")
+        self.assertEqual(k("Studentermedhjælper til intern kommunikation"), "studiejob")
+        self.assertEqual(k("Student Worker, Internal Communications & Events"), "studiejob")
+        self.assertEqual(k("Praktik og studiejob som finansøkonom"), "begge")
+        self.assertEqual(k("Kommunikationsassistent", "Praktikplads for studerende"), "praktik")
+        self.assertEqual(k("Kommunikationsassistent", "Studiejob Praktikplads for studerende"), "studiejob")
+

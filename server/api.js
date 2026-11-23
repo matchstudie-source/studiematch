@@ -200,7 +200,7 @@ function alertMail(base, u, jobs, offUrl, freq) {
           <div style="font-size:13.5px;color:#5D6562"><b style="color:#1A1D1C;font-weight:600">${escHtml(j.co)}</b>${j.city ? "&nbsp;&nbsp;" + escHtml(j.city) : ""}</div>
           <div style="font-size:17px;font-weight:700;line-height:1.3;margin:2px 0 4px">${escHtml(j.title)}</div>
           ${j.why ? `<div style="font-size:14px;line-height:1.45;color:#3F4744">${escHtml(j.why)}</div>` : ""}
-          <div style="font-size:13px;margin-top:6px">${j.level === "strong" ? '<span style="color:#0B7D60;font-weight:600">Stærkt match</span>' : '<span style="color:#2F5E9E;font-weight:600">Godt match</span>'}${j.deadline ? `<span style="color:#5D6562">&nbsp;&nbsp;Frist ${escHtml(j.deadline)}</span>` : ""}</div>
+          <div style="font-size:13px;margin-top:6px">${j.kind === "praktik" ? '<span style="color:#075E48;font-weight:600">Praktik</span>&nbsp;&nbsp;' : ""}${j.level === "strong" ? '<span style="color:#0B7D60;font-weight:600">Stærkt match</span>' : '<span style="color:#2F5E9E;font-weight:600">Godt match</span>'}${j.deadline ? `<span style="color:#5D6562">&nbsp;&nbsp;Frist ${escHtml(j.deadline)}</span>` : ""}</div>
           <a href="${escHtml(j.url)}" style="display:inline-block;margin-top:10px;background:#FFFFFF;border:1px solid #C9CECB;border-radius:6px;padding:7px 14px;color:#1A1D1C;font-size:14px;font-weight:600;text-decoration:none">Se jobbet</a>
         </td></tr></table>
     </td></tr>`).join("");

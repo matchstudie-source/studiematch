@@ -153,6 +153,24 @@ STUDENT_TEXT_RE = re.compile(
 FOREIGN_NORDIC_RE = re.compile(r"medarbetare|vi söker|tjänst|ansökan|söknad|stillingen er ledig i norge|arbeidssted", re.I)
 
 
+# Praktik og internships vises i deres egen fane på siden.
+# "intern" tæller kun som internship, når det ikke er det danske tillægsord ("intern kommunikation").
+PRAKTIK_RE = re.compile(r"(?i:praktik|internship|trainee)|(?i:\bintern)s?\b(?=\s*$|\s*[,|–\-:(/&)]|\s+(?:for|at|to|in|with|til|hos|i|ved)\b|\s+[A-ZÆØÅ0-9])")
+STUDIEJOB_RE = re.compile(r"studiejob|studentermedhj|studentermedarbejder|student\s*(?:assistant|worker|job|helper)|studentassistent", re.I)
+
+
+def job_kind(title: str, commitment: str = "") -> str:
+    """'praktik' for praktikpladser og internships, 'begge' når titlen nævner begge dele, ellers 'studiejob'."""
+    p, s = PRAKTIK_RE.search(title or ""), STUDIEJOB_RE.search(title or "")
+    if p and s:
+        return "begge"
+    if p:
+        return "praktik"
+    if not p and not s and re.search(r"praktikplads", commitment or "", re.I) and not re.search(r"studiejob", commitment or "", re.I):
+        return "praktik"
+    return "studiejob"
+
+
 def is_student_job(title: str, text: str, commitment: str = "") -> bool:
     if FOREIGN_NORDIC_RE.search(title) or len(FOREIGN_NORDIC_RE.findall(text[:2000])) >= 2:
         return False
@@ -304,6 +322,7 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
         extra["catFam"] = True
     return {**extra,
         "title": title,
+        "kind": job_kind(title, raw.get("commitment", "")),
         "co": raw.get("company") or employer["name"],
         "city": city or employer.get("city", ""),
         "region": region,
