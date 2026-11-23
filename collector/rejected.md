@@ -4,6 +4,7 @@ Bruges til at tjekke, om filteret er for strengt.
 
 | Arbejdsgiver | Titel | Årsag |
 | --- | --- | --- |
+| SEB | Credit area Internal Auditor with ideas for the future / SEB, Tallinn | ikke et studiejob |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in HR department | udlandet: Warsaw |
 | Devoteam | Creative Marketing Intern | udlandet: Stockholm |

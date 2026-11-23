@@ -68122,5 +68122,68 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for administration, sprog og kommunikation, teknik og teknologi.",
   "openToAll": false
+ },
+ "e88187751da19b9781637ef0056124c5c8cf4f59": {
+  "fam": "marketing",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "skrivning",
+   "sociale medier",
+   "indholdsproduktion",
+   "nyhedsbreve",
+   "hjemmesideopdatering"
+  ],
+  "blurb": "Du finder gode historier fra CFU Absalons kurser og projekter og skriver opslag til Facebook, Instagram og LinkedIn. Du opdaterer også hjemmesiden og opsætter nyhedsmails til lærere og skoler.",
+  "deadlineAt": "2026-12-06T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "medievidenskab",
+   "journalistik",
+   "pædagogik",
+   "dansk"
+  ],
+  "why": "Jobbet kræver god skriftlig formidling og forståelse for sociale medier, som især kommunikations-, medie- og sprogfag træner.",
+  "openToAll": false
+ },
+ "e3e0c67a633dcff77834a06ba440c713664cbce9": {
+  "fam": "product",
+  "sec": [
+   "engineering"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "planlægning",
+   "byggeledelse",
+   "kvalitetsdokumentation",
+   "produktionsopfølgning",
+   "digitalisering af byggeri"
+  ],
+  "blurb": "Du er med til at planlægge opgaver på Viborg Centralrenseanlæg og deltager i arbejdet ude i marken. Du arbejder også med kvalitetsdokumentation og produktionsopfølgning i det udførende byggeledelsesteam.",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "landbrug",
+   "jordbrug",
+   "skov",
+   "biologi",
+   "byggeri",
+   "bygning",
+   "anlæg",
+   "konstruktør",
+   "byggeteknologi",
+   "maskin",
+   "mekanik",
+   "produktudvikling"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for landbrug og natur, byggeri og konstruktion, maskin og design.",
+  "openToAll": false
  }
 }
