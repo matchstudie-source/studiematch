@@ -68307,5 +68307,154 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation.",
   "openToAll": false
+ },
+ "1aeab29d153b67e8bc692e759f1cb454f109cb13": {
+  "fam": "salesops",
+  "sec": [
+   "bizdev",
+   "sustain"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "CRM",
+   "Excel",
+   "Outlook",
+   "projektbudgetter",
+   "SharePoint"
+  ],
+  "blurb": "Du støtter salgsteamet i Berlin med kontraktdokumenter, projektbudgetter og kundekommunikation. Du holder data i CRM-systemet opdateret og videreudvikler dokumentstyringen i SharePoint.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "global business engineering",
+   "international business",
+   "energiteknologi",
+   "maskinteknik"
+  ],
+  "why": "Jobbet kræver forretningsforståelse for salg af store projekter og teknisk forståelse for vindenergi, hvilket passer til økonomi- og ingeniøruddannelser.",
+  "openToAll": false
+ },
+ "de3d8a4cdece2974b89f00786537a5c82b279654": {
+  "fam": "salesops",
+  "sec": [
+   "bizdev",
+   "finance"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "CRM",
+   "Excel",
+   "Outlook",
+   "SharePoint",
+   "tysk"
+  ],
+  "blurb": "Du støtter salgsteamet med vertragsdokumenter, projektbudgetter og kundekommunikation. Du vedligeholder data i CRM-systemet og er med til at udvikle dokumentstyringen i SharePoint.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "global business engineering",
+   "international business",
+   "energiteknologi"
+  ],
+  "why": "Arbejdet kræver forretningsforståelse, økonomisk tilgang til projektbudgetter og interesse for salg af store energiprojekter.",
+  "openToAll": false
+ },
+ "2e9a3fb97b7c9437c5cc558658b931a34e13ae42": {
+  "fam": "operations",
+  "sec": [
+   "engineering"
+  ],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "lydafvikling",
+   "musikforståelse",
+   "instruktionsfølgning",
+   "fleksibilitet",
+   "pålidelighed"
+  ],
+  "blurb": "Du klargør prøvesalen til audio-afvikling og afspiller musik fra iPad, computer eller iPhone under balletprøver. Du koordinerer med producent og instruktør om, hvilke numre der skal spilles, og hvornår.",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "musikvidenskab",
+   "lydteknik",
+   "musikteknologi",
+   "medievidenskab",
+   "teatervidenskab",
+   "audiovisuel produktion"
+  ],
+  "why": "Jobbet kræver musikforståelse, lydteknisk håndtering og kendskab til teater- og medieproduktion.",
+  "openToAll": false
+ },
+ "e8f89ef4ce2061519d8cbeade86fbc5e7f021210": {
+  "fam": "bizdev",
+  "sec": [
+   "customer",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "udgående salg",
+   "kundekontakt",
+   "kvalitetssikring",
+   "administration",
+   "struktur"
+  ],
+  "blurb": "Du ringer ud til kunder og er med i kundekontakt og salg i samarbejde med partnere. Du laver også kvalitetssikring og administrative opgaver som mails, videresendelse af opgaver og kontakt til leverandører og kunder.",
+  "deadlineAt": "2026-12-15T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "markedsføring",
+   "kommunikation",
+   "psykologi",
+   "international business",
+   "jura"
+  ],
+  "why": "Jobbet kræver kundekontakt, salg og administrativ struktur, hvilket passer til uddannelser med fokus på erhvervsforståelse, kommunikation og kundeforhold.",
+  "openToAll": true
+ },
+ "96a91f7420475e185c4bd8f1156fa011228caa5f": {
+  "fam": "bizdev",
+  "sec": [
+   "customer",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "udgående telefonsalg",
+   "kundekontakt",
+   "kvalitetssikring",
+   "mailhåndtering",
+   "selvstændighed"
+  ],
+  "blurb": "Du ringer ud til kunder, kvalitetssikrer forskellige områder og håndterer administrative opgaver som mails, videresendelse af opgaver og kontakt til leverandører og kunder. Stillingen er i dagtimerne på kontoret i Aarhus.",
+  "deadlineAt": "2026-12-15T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "markedsføringsøkonomi",
+   "international handel"
+  ],
+  "why": "Jobbet kombinerer salg, kundekontakt og administration, hvilket passer godt til økonomi- og handelsuddannelser.",
+  "openToAll": false
  }
 }

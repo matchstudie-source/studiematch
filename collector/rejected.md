@@ -11,6 +11,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Devoteam | Business Development Intern | udlandet: Stockholm |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
+| Vestas | Lead / Assistant Lead Engineer - Power System Studies | ikke et studiejob |
 | HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
