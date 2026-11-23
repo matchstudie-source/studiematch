@@ -68185,5 +68185,127 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for landbrug og natur, byggeri og konstruktion, maskin og design.",
   "openToAll": false
+ },
+ "4f6e05c768b5699f45aa93a48d2c16c0d50a8b74": {
+  "fam": "legal",
+  "sec": [
+   "public",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "forvaltningsret",
+   "sagsbehandling",
+   "juridisk skrivning",
+   "borgerkontakt",
+   "struktureret arbejde"
+  ],
+  "blurb": "Du sagsbehandler ansøgninger om reserverede handicapparkeringspladser og udformer svar til rekursmyndigheden ved klager over afslag. Du har borgerkontakt og samarbejder med kolleger fra andre faggrupper.",
+  "deadlineAt": "2026-12-15T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "politik og administration"
+  ],
+  "why": "Jobbet kræver forståelse for forvaltningsretten og evnen til at skrive juridiske dokumenter, hvilket passer til jura og statskundskab.",
+  "openToAll": false
+ },
+ "fa51f208953b8f6ca6e2b0f4686391f8a58c0d78": {
+  "fam": "marketing",
+  "sec": [
+   "education"
+  ],
+  "danish": "plus",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "content creation",
+   "Instagram",
+   "visuel kommunikation",
+   "IT-systemer",
+   "kommunikation"
+  ],
+  "blurb": "Du laver billeder, stories og reels til læreruddannelsens Instagram i Vordingborg og planlægger opslag i en indholdskalender sammen med kolleger og en ledelseskonsulent. Målet er at engagere følgere og understøtte rekruttering til læreruddannelsen.",
+  "deadlineAt": "2026-12-30T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "kommunikation",
+   "journalistik",
+   "grafisk design",
+   "pædagogik",
+   "læreruddannelse"
+  ],
+  "why": "Jobbet kræver kreativ kommunikation, visuel formidling og kendskab til læreruddannelsen, som medie-, kommunikations- og designstuderende typisk har styrker i.",
+  "openToAll": false
+ },
+ "14f33ddccbab8de71820f73243265cd4dfba3ec7": {
+  "fam": "education",
+  "sec": [
+   "social",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 3,
+  "hMax": 3,
+  "skills": [
+   "kommunikation",
+   "lytteevne",
+   "vejledning",
+   "samarbejde",
+   "fleksibilitet"
+  ],
+  "blurb": "Du taler med lærerstuderende om deres studieliv, holder vejledningssamtaler og bemander VIAs chatvejledning. Du deltager også i arrangementer som Åbent Hus og studiepraktik.",
+  "deadlineAt": "2026-12-11T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "læreruddannelse",
+   "pædagogik",
+   "psykologi",
+   "uddannelsesvidenskab",
+   "sociologi"
+  ],
+  "why": "Jobbet kræver, at man selv er lærerstuderende og kan vejlede medstuderende om studiet, så læreruddannelse og nære pædagogiske og psykologiske fag passer bedst.",
+  "openToAll": false
+ },
+ "fcce78d9e954a8c495285896d6a29fbea0e89c0f": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "sociale medier",
+   "indholdsproduktion",
+   "tekstforfatning",
+   "layout",
+   "statistikanalyse"
+  ],
+  "blurb": "Du laver reels, memes, billeder og tekster til Facebook og Instagram om museets workshops og aktiviteter. Du laver også en enkel indholdsplan og holder hjemmesiden og aktivitetsopslag på kulturkalendere opdateret.",
+  "deadlineAt": "2026-12-20T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation.",
+  "openToAll": false
  }
 }

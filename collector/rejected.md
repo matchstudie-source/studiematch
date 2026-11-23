@@ -14,6 +14,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
+| Statslige arbejdsgivere | Jurist med erfaring indenfor moms til intern rådgivningsfunktion | ikke et studiejob |
 | Statslige arbejdsgivere | Kontorchef til International Arbejdskraft og EU-ophold (IAEU) i Udlændinge- og Integrationsministeriets departement | ikke et studiejob |
 | Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Midlertidig ansat til Internationale Ægteskaber | ikke et studiejob |
