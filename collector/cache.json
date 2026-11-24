@@ -69746,5 +69746,420 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for pædagogik og undervisning.",
   "openToAll": false
+ },
+ "8f8dc2c54cf622dd17fe29f9e82a0ce60a4ff12c": {
+  "fam": "finance",
+  "sec": [
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "analyse",
+   "kreditvurdering",
+   "prissætning af interne lån",
+   "præsentationer",
+   "kommunikation"
+  ],
+  "blurb": "Du laver analyser inden for treasury, fx kreditvurdering af datterselskaber og prissætning af interne lån, og hjælper med likviditetsstyring og præsentationer. Arbejdet består af både projektopgaver og selvstændig opgaveløsning.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "finansiering",
+   "cand.merc",
+   "økonomi",
+   "jura"
+  ],
+  "why": "Jobbet kræver finansiel analyse og interesse for økonomi og finans, hvilket er kernen i disse uddannelser.",
+  "openToAll": false
+ },
+ "1c743ac3098c049072381544cb70909a91cd62b1": {
+  "fam": "software",
+  "sec": [
+   "finance",
+   "bi"
+  ],
+  "danish": "plus",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "dataanalyse",
+   "ERP-systemer",
+   "datakvalitet",
+   "dokumentation"
+  ],
+  "blurb": "Du analyserer og kvalitetssikrer data fra ERP- og finanssystemer og hjælper med konfiguration, test af ændringer og dokumentation af processer. Du skriver også vejledninger til brugerne i Matas Groups ERP-team.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "finansiering",
+   "datalogi",
+   "it-økonomi"
+  ],
+  "why": "Jobbet kombinerer økonomiske processer med data og IT, så det kræver både økonomisk forståelse og teknisk interesse.",
+  "openToAll": false
+ },
+ "6ce495ad013344f4f3b320803dc5f041b5864f3b": {
+  "fam": "public",
+  "sec": [
+   "legal",
+   "sustain"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "sagsbehandling",
+   "forvaltningsforståelse",
+   "skriftlig kommunikation",
+   "databaser",
+   "rapportskrivning"
+  ],
+  "blurb": "Du besvarer henvendelser om jagt og vildt, opdaterer materiale til hjemmesiden og hjælper med sagsbehandling og afgørelser. Du kan også opdatere databaser, sammenfatte rapporter og besvare aktindsigter.",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "biologi",
+   "miljøvidenskab",
+   "offentlig administration"
+  ],
+  "why": "Opgaverne kræver forvaltningsforståelse og lovkendskab kombineret med naturfaglig viden om arter og biodiversitet.",
+  "openToAll": false
+ },
+ "3cbef71a2eb55fb105206d0160a9c55d8723b207": {
+  "fam": "finance",
+  "sec": [
+   "research",
+   "bi"
+  ],
+  "danish": "plus",
+  "hMin": 10,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "statistik",
+   "dataanalyse",
+   "dataudtræk",
+   "dokumentation"
+  ],
+  "blurb": "Du henter og analyserer data, bl.a. fra styrelsens fagsystemer og Danmarks Statistik, og beregner standardomkostninger (SCO) til landbrugs- og miljøtilskud, inkl. statistisk vurdering af resultatet. Du dokumenterer beregningsgrundlaget og laver mindre analyser i Excel.",
+  "deadlineAt": "2026-12-08T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "erhvervsøkonomi",
+   "statistik",
+   "landbrugsvidenskab",
+   "matematik-økonomi",
+   "biologi",
+   "miljøteknologi"
+  ],
+  "why": "Jobbet kræver økonomisk og statistisk analyse samt interesse for dansk landbrug og miljøtilskud, hvilket passer til økonomi, statistik og landbrugsvidenskab.",
+  "openToAll": false
+ },
+ "6c6b212144b7ca50da93bab2af304c5b26530bb9": {
+  "fam": "legal",
+  "sec": [
+   "sustain",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "aktindsigt",
+   "juridisk forståelse",
+   "forvaltningsret",
+   "struktureret arbejde",
+   "samarbejde"
+  ],
+  "blurb": "Du behandler aktindsigter og andre forvaltningsopgaver i enheden for arts- og naturforvaltning, bl.a. om ulv. Du kan også komme til at vejlede borgere og virksomheder om regler på naturområdet.",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "offentlig administration",
+   "statskundskab",
+   "biologi",
+   "miljøvidenskab"
+  ],
+  "why": "Opgaverne kræver juridisk forståelse af forvaltningsregler kombineret med interesse for natur, miljø og offentlig administration.",
+  "openToAll": false
+ },
+ "98568408fff3755e65fd398897d9469649fda050": {
+  "fam": "sustain",
+  "sec": [
+   "engineering"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [],
+  "blurb": "Praktikant hos Sweco Danmark i Aarhus med fokus på miljø. Opslaget beskriver ikke de konkrete arbejdsopgaver.",
+  "deadlineAt": "2027-01-24T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "miljøteknologi",
+   "miljøvidenskab",
+   "geografi",
+   "bygningsingeniør",
+   "biologi"
+  ],
+  "why": "Miljøfaglige og tekniske uddannelser passer til miljøarbejde i en rådgivningsvirksomhed.",
+  "openToAll": false
+ },
+ "6b4b3e1f1ea7232550185855e5365d795925ef62": {
+  "fam": "social",
+  "sec": [
+   "health",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 2,
+  "hMax": 20,
+  "skills": [
+   "empati",
+   "relationsarbejde",
+   "samarbejde",
+   "dokumentation",
+   "kørekort"
+  ],
+  "blurb": "Du støtter voksne med erhvervet hjerneskade i hverdagen, både pædagogisk og sundhedsfagligt, enten tæt på én beboer eller i fælles aktiviteter. Arbejdet tager udgangspunkt i borgerens ressourcer og mål og dokumenteres fagligt.",
+  "deadlineAt": "2027-01-03T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "pædagogik",
+   "socialt arbejde",
+   "psykologi",
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi"
+  ],
+  "why": "Uddannelserne giver den faglige baggrund for omsorg, rehabilitering og relationsarbejde med borgere med omfattende støttebehov.",
+  "openToAll": false
+ },
+ "a2ab9eeca1cbc6d9d204e24d8c53464fe048d9cb": {
+  "fam": "operations",
+  "sec": [
+   "public",
+   "logistics"
+  ],
+  "danish": "plus",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "planlægning",
+   "sagsbehandling",
+   "projektstyring",
+   "skriftlig kommunikation",
+   "administration"
+  ],
+  "blurb": "Du behandler høringssager og skriver bemærkninger til politikredsens høringssvar, og du fungerer som stabsfunktion for Operativt Center. Du laver oversigter over aktiviteter og hændelser, skriver instrukser og vejledninger og er med i beredskabsplanlægning, fx ved VIP-besøg og naturkatastrofer.",
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "jura",
+   "samfundsvidenskab",
+   "geografi",
+   "erhvervsøkonomi",
+   "logistik",
+   "offentlig administration"
+  ],
+  "why": "Jobbet kræver planlægning, juridisk sagsbehandling og forståelse for samfundets beredskab, hvilket passer til samfundsfag, jura og logistik.",
+  "openToAll": false
+ },
+ "60dcbfd97e8022d954002576c427a323b6e4553a": {
+  "fam": "health",
+  "sec": [
+   "education",
+   "operations"
+  ],
+  "danish": "plus",
+  "hMin": 4,
+  "hMax": 4,
+  "skills": [
+   "klargøring af materialer",
+   "lageroptælling",
+   "renlighed",
+   "mødestabilitet",
+   "praktisk sans"
+  ],
+  "blurb": "Du sætter udstyr op og rydder op efter simulationsøvelser, fylder op i medicinrum og depoter og klargør materialer som blodprodukter og hætteglas. Du arbejder typisk alene på vagt og fordeler selv vagterne med teamet.",
+  "deadlineAt": "2026-12-15T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "sygepleje",
+   "sundhedsvidenskab",
+   "jordemoderuddannelse",
+   "fysioterapi",
+   "ergoterapi"
+  ],
+  "why": "Jobbet kræver indsigt i kliniske sygeplejefaglige færdigheder og praktisk arbejde med udstyr og medicin, som er centralt i sundhedsfaglige uddannelser.",
+  "openToAll": false
+ },
+ "d1c78ba1142ec93c3a2a31aee3c0a47e7b32fbe8": {
+  "fam": "marketing",
+  "sec": [
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 20,
+  "skills": [
+   "dansk skriftlig formidling",
+   "sociale medier",
+   "indholdsproduktion",
+   "nyhedsmail-opsætning",
+   "hjemmesideopdatering"
+  ],
+  "blurb": "Du finder gode historier fra CFU Absalons kurser, konferencer og projekter og skriver og producerer indhold til Facebook, Instagram og LinkedIn. Du holder også hjemmesiden opdateret og opsætter nyhedsmails med tekst, billeder og links.",
+  "deadlineAt": "2026-12-06T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "medievidenskab",
+   "journalistik",
+   "dansk",
+   "kommunikation",
+   "pædagogik",
+   "læreruddannelse"
+  ],
+  "why": "Jobbet kræver god skrivning og kendskab til sociale medier, og det er netop kompetencer, som studerende på medie-, sprog- og kommunikationsuddannelser typisk har.",
+  "openToAll": true
+ },
+ "d3f3488efd1f0b613033a2fa0384bf0afd2cfcc5": {
+  "fam": "research",
+  "sec": [
+   "social",
+   "operations"
+  ],
+  "danish": "plus",
+  "hMin": 8,
+  "hMax": 10,
+  "skills": [
+   "metode og analyse",
+   "struktureret arbejde",
+   "selvstændighed",
+   "fleksibilitet",
+   "YPAR"
+  ],
+  "blurb": "Du hjælper sekretariatet med analyse- og administrative opgaver, fx litteraturstudier, transskription af interviews og praktisk hjælp ved netværksmøder og konferencer. Opgaverne kan ændre sig undervejs efter centerets behov.",
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "pædagogik",
+   "socialt arbejde",
+   "sociologi",
+   "psykologi",
+   "socialvidenskab"
+  ],
+  "why": "Jobbet kræver metodeforståelse og viden om børn og unge i udsatte positioner, og det passer derfor til socialvidenskabelige og pædagogiske uddannelser.",
+  "openToAll": false
+ },
+ "f3a8ff51f8925e4e62e1347169fad37174331c77": {
+  "fam": "education",
+  "sec": [
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 3,
+  "hMax": 3,
+  "skills": [
+   "vejledningssamtaler",
+   "chatvejledning",
+   "kommunikation",
+   "samarbejde",
+   "fleksibilitet"
+  ],
+  "blurb": "Du taler med lærerstuderende om deres studieliv og afholder vejledningssamtaler. Du bemander også VIAs chatvejledning og hjælper til arrangementer som Åbent Hus og studiepraktik.",
+  "deadlineAt": "2026-12-11T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "læreruddannelse",
+   "pædagogik",
+   "psykologi",
+   "socialt arbejde",
+   "sociologi"
+  ],
+  "why": "Jobbet kræver erfaring som lærerstuderende og samtalefærdigheder, som læreruddannelsen og de pædagogiske og psykologiske fag træner.",
+  "openToAll": false
+ },
+ "eac7f25e8ca4bdd62a41e4f07e2098c010571036": {
+  "fam": "marketing",
+  "sec": [],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "formidling",
+   "kommunikation",
+   "planlægning",
+   "koordinering",
+   "indholdsproduktion"
+  ],
+  "blurb": "Du deltager i skolebesøg og planlægger workshops for sjetteklasser i projektet Verdens Bedste Venner, der forbinder danske og borneanske børn. Du hjælper også med events, billeder, video og tekst til formidling om orangutangerne.",
+  "deadlineAt": "2026-12-07T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation.",
+  "openToAll": false
+ },
+ "25206ff66ced70d89df71be18d56482e946d852c": {
+  "fam": "marketing",
+  "sec": [
+   "salesops"
+  ],
+  "danish": "no",
+  "hMin": 30,
+  "hMax": 37,
+  "skills": [
+   "SEO",
+   "GA4",
+   "WordPress",
+   "Ahrefs",
+   "Search Console"
+  ],
+  "blurb": "Du laver søgeordsanalyse, konkurrentanalyse og performance-analyse i GA4 og Search Console, og skriver SEO-tekster til webshops og virksomhedssider. Du arbejder også med teknisk SEO, on-page optimering i WordPress og rapportering på kampagneresultater.",
+  "deadlineAt": "2027-01-04T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation.",
+  "openToAll": false
  }
 }

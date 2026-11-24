@@ -5,10 +5,12 @@ Bruges til at tjekke, om filteret er for strengt.
 | Arbejdsgiver | Titel | Årsag |
 | --- | --- | --- |
 | SEB | Credit area Internal Auditor with ideas for the future / SEB, Tallinn | ikke et studiejob |
+| SEB | Information Security Consultant (internal role) / Informācijas drošības konsultants(-e) / SEB, Riga | ikke et studiejob |
+| SEB | Information Security Consultant (Internal role) / SEB, Tallinn | ikke et studiejob |
+| SEB | Information Security Consultant (Internal role) / SEB, Vilnius | udlandet: Vilnius |
 | SEB | Internal Auditor to Group Finance and Compliance / SEB, Stockholm | udlandet: Stockholm |
 | SEB | Internship in HR department | udlandet: Warsaw |
-| Devoteam | Creative Marketing Intern | udlandet: Stockholm |
-| Devoteam | Business Development Intern | udlandet: Stockholm |
+| SEB | Serviceinriktade Studenter till vår Telefonbank / SEB Göteborg | udlandet: Göteborg |
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Vestas | Lead / Assistant Lead Engineer - Power System Studies | ikke et studiejob |
@@ -31,6 +33,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Erhvervsakademi København | Studieadministrativ koordinator/PA til Studiefremdrift på EK (Erhvervsakademi København) | ikke et studiejob |
+| Kræftens Bekæmpelse | Postdoctoral Fellows and PhD Students - Genome Stress and Cell State - Nussenzweig Group | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
 | StuderendeOnline.dk | Rådet for Sikker Trafik søger: ung-til-ung underviser til meningsfuldt studiejob | ikke et studiejob |

@@ -451,7 +451,7 @@
   "title": "Tandplejerstuderende praktik - uopfordret ansøgning",
   "kind": "praktik",
   "co": "Colosseum Tandlægerne",
-  "city": "Hellerup, Holbæk, Aarup, Ballerup, Brøndby, Dragør, Esbjerg, Herlev, Hørsholm, Odense, København, Køge, Næstved, København, København, Ribe, Roskilde, Skibby, Slagelse, Odense, Sønderborg, Varde, Vejle, Viborg, København, København",
+  "city": "Hellerup, Holbæk, Aarup, Ballerup, Brøndby, Esbjerg, Herlev, Hørsholm, Odense, København, Køge, Næstved, København, København, Ribe, Roskilde, Skibby, Slagelse, Odense, Sønderborg, Varde, Vejle, Viborg, København, København",
   "region": "dk",
   "hMin": 0,
   "hMax": 0,
@@ -1123,51 +1123,6 @@
   "live": true
  },
  {
-  "title": "Procurement Intern",
-  "kind": "praktik",
-  "co": "Vestas",
-  "city": "Aarhus N, Region Central Jutland, DK, 8200",
-  "region": "oj",
-  "hMin": 0,
-  "hMax": 0,
-  "danish": "no",
-  "fam": "procurement",
-  "sec": [
-   "strategy",
-   "bi"
-  ],
-  "famConf": "title",
-  "skills": [
-   "strategisk indkøb",
-   "leverandørforhandlinger",
-   "dataanalyse",
-   "kontraktforhandling",
-   "procesoptimering"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-23T00:00:00+00:00",
-  "deadlineAt": "2026-11-30T23:59:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du arbejder i Global Procurement med strategisk sourcing, leverandørforhandlinger og omkostningsoptimering, enten i direkte indkøb af turbinekomponenter eller i strategi og governance med procesoptimering og dataanalyse.",
-  "req": null,
-  "url": "https://careers.vestas.com/job/Aarhus-N-Procurement-Intern-Regi-8200/1459946933/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
-  "enrichedBy": "ai",
-  "studies": [
-   "supply chain management",
-   "international business",
-   "innovation og business development",
-   "økonomi",
-   "cand.merc",
-   "erhvervsøkonomi",
-   "ha",
-   "global business engineering"
-  ],
-  "why": "Jobbet kræver forståelse for indkøb, supply chain og forretningsøkonomi, som de nævnte kandidatuddannelser dækker.",
-  "openToAll": false,
-  "id": "x7521d6a3e8d1",
-  "live": true
- },
- {
   "title": "Finance Intern",
   "kind": "praktik",
   "co": "Vestas",
@@ -1210,6 +1165,51 @@
   "why": "Jobbet kræver finansiel analyse, planlægning og forretningsforståelse, som er kernen i disse økonomiske uddannelser.",
   "openToAll": false,
   "id": "x38b1672e9f0a",
+  "live": true
+ },
+ {
+  "title": "Procurement Intern",
+  "kind": "praktik",
+  "co": "Vestas",
+  "city": "Aarhus N, Region Central Jutland, DK, 8200",
+  "region": "oj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "procurement",
+  "sec": [
+   "strategy",
+   "bi"
+  ],
+  "famConf": "title",
+  "skills": [
+   "strategisk indkøb",
+   "leverandørforhandlinger",
+   "dataanalyse",
+   "kontraktforhandling",
+   "procesoptimering"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-23T00:00:00+00:00",
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du arbejder i Global Procurement med strategisk sourcing, leverandørforhandlinger og omkostningsoptimering, enten i direkte indkøb af turbinekomponenter eller i strategi og governance med procesoptimering og dataanalyse.",
+  "req": null,
+  "url": "https://careers.vestas.com/job/Aarhus-N-Procurement-Intern-Regi-8200/1459946933/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "supply chain management",
+   "international business",
+   "innovation og business development",
+   "økonomi",
+   "cand.merc",
+   "erhvervsøkonomi",
+   "ha",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver forståelse for indkøb, supply chain og forretningsøkonomi, som de nævnte kandidatuddannelser dækker.",
+  "openToAll": false,
+  "id": "x7521d6a3e8d1",
   "live": true
  },
  {
@@ -1434,6 +1434,91 @@
   "why": "Jobbet kræver skriftlig formidling, indholdsproduktion og visuel kommunikation, hvilket passer til kommunikations- og mediefag samt sprogfag.",
   "openToAll": false,
   "id": "x9de181496895",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper, Global Treasury, Randers",
+  "kind": "studiejob",
+  "co": "Danish Crown",
+  "city": "Randers SV, DK, 8940",
+  "region": "oj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "legal"
+  ],
+  "famConf": "text",
+  "skills": [
+   "analyse",
+   "kreditvurdering",
+   "prissætning af interne lån",
+   "præsentationer",
+   "kommunikation"
+  ],
+  "industry": "Fødevarer og drikkevarer",
+  "postedAt": "2026-11-24T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du laver analyser inden for treasury, fx kreditvurdering af datterselskaber og prissætning af interne lån, og hjælper med likviditetsstyring og præsentationer. Arbejdet består af både projektopgaver og selvstændig opgaveløsning.",
+  "req": null,
+  "url": "https://jobs.danishcrown.com/job/Randers-SV-Studentermedhj%C3%A6lper%2C-Global-Treasury%2C-Randers-8940/1460261633/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "finansiering",
+   "cand.merc",
+   "økonomi",
+   "jura"
+  ],
+  "why": "Jobbet kræver finansiel analyse og interesse for økonomi og finans, hvilket er kernen i disse uddannelser.",
+  "openToAll": false,
+  "id": "xb24ddba50658",
+  "live": true
+ },
+ {
+  "title": "Matas Group - Student Assistant – ERP & Finance Systems",
+  "kind": "studiejob",
+  "co": "Matas",
+  "city": "Allerød",
+  "region": "nsj",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "software",
+  "sec": [
+   "finance",
+   "bi"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "dataanalyse",
+   "ERP-systemer",
+   "datakvalitet",
+   "dokumentation"
+  ],
+  "industry": "Detailhandel",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du analyserer og kvalitetssikrer data fra ERP- og finanssystemer og hjælper med konfiguration, test af ændringer og dokumentation af processer. Du skriver også vejledninger til brugerne i Matas Groups ERP-team.",
+  "req": null,
+  "url": "https://matas.career.emply.com/ad/matas-group-student-assistant-erp-finance-systems/t6yxcg",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "finansiering",
+   "datalogi",
+   "it-økonomi"
+  ],
+  "why": "Jobbet kombinerer økonomiske processer med data og IT, så det kræver både økonomisk forståelse og teknisk interesse.",
+  "openToAll": false,
+  "id": "x7e2ca5397d60",
   "live": true
  },
  {
@@ -1837,6 +1922,48 @@
   "why": "Jobbet kombinerer dataanalyse med politisk-administrativ sagsbehandling om uddannelsessystemet, hvilket passer til samfundsfaglige og økonomiske uddannelser.",
   "openToAll": false,
   "id": "xecf5bb1df4d6",
+  "live": true
+ },
+ {
+  "title": "Er du vores nye studentermedhjælper inden for jagt og vildt?",
+  "kind": "studiejob",
+  "co": "Styrelsen for Grøn Arealomlægning og Vandmiljø",
+  "city": "Region Syddanmark",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "legal",
+   "sustain"
+  ],
+  "famConf": "text",
+  "skills": [
+   "sagsbehandling",
+   "forvaltningsforståelse",
+   "skriftlig kommunikation",
+   "databaser",
+   "rapportskrivning"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-24T14:22:37+00:00",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du besvarer henvendelser om jagt og vildt, opdaterer materiale til hjemmesiden og hjælper med sagsbehandling og afgørelser. Du kan også opdatere databaser, sammenfatte rapporter og besvare aktindsigter.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173843&DepartmentId=19833&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "biologi",
+   "miljøvidenskab",
+   "offentlig administration"
+  ],
+  "why": "Opgaverne kræver forvaltningsforståelse og lovkendskab kombineret med naturfaglig viden om arter og biodiversitet.",
+  "openToAll": false,
+  "id": "xb46d978b38c9",
   "live": true
  },
  {
@@ -2542,46 +2669,47 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper med interesse for internationalt og nordisk samarbejde søges til Folketinget",
+  "title": "Studentermedhjælper med baggrund i økonomi, landbrugsvidenskab eller lignende til beregning af projektstøttesatser",
   "kind": "studiejob",
-  "co": "Folketinget",
-  "city": "København K",
+  "co": "Styrelsen for Grøn Arealomlægning og Vandmiljø",
+  "city": "Region Hovedstaden",
   "region": "kbh",
-  "hMin": 15,
+  "hMin": 10,
   "hMax": 15,
-  "danish": "required",
-  "fam": "public",
+  "danish": "plus",
+  "fam": "finance",
   "sec": [
-   "operations",
-   "research"
-  ],
-  "famConf": "text",
-  "skills": [
-   "eventplanlægning",
    "research",
-   "deltagerkoordinering",
-   "engelsk",
-   "struktureret arbejde"
+   "bi"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "statistik",
+   "dataanalyse",
+   "dataudtræk",
+   "dokumentation"
   ],
   "industry": "Offentlig",
-  "postedAt": "2026-11-11T14:16:51+00:00",
-  "deadlineAt": "2026-11-24T12:00:00+00:00",
+  "postedAt": "2026-11-24T12:10:52+00:00",
+  "deadlineAt": "2026-12-08T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du hjælper med at planlægge og gennemføre møder, konferencer og høringer for Folketingets internationale delegationer, primært til Nordisk Råd. Du researcher og udarbejder baggrundsmateriale og håndterer deltagerlister, tilmeldinger og praktisk information.",
+  "blurb": "Du henter og analyserer data, bl.a. fra styrelsens fagsystemer og Danmarks Statistik, og beregner standardomkostninger (SCO) til landbrugs- og miljøtilskud, inkl. statistisk vurdering af resultatet. Du dokumenterer beregningsgrundlaget og laver mindre analyser i Excel.",
   "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172993&DepartmentId=18972&MediaId=5",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173864&DepartmentId=19833&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
-   "statskundskab",
-   "kommunikation",
-   "samfundsvidenskab",
-   "international politik",
-   "europastudier",
-   "skandinavistik"
+   "økonomi",
+   "erhvervsøkonomi",
+   "statistik",
+   "landbrugsvidenskab",
+   "matematik-økonomi",
+   "biologi",
+   "miljøteknologi"
   ],
-  "why": "Jobbet kræver interesse for samfundsforhold og internationalt samarbejde samt god skriftlig formulering, hvilket passer til samfundsfaglige og kommunikationsfaglige uddannelser.",
+  "why": "Jobbet kræver økonomisk og statistisk analyse samt interesse for dansk landbrug og miljøtilskud, hvilket passer til økonomi, statistik og landbrugsvidenskab.",
   "openToAll": false,
-  "id": "x7c77aa590028",
+  "id": "xaaf23be4c4cd",
   "live": true
  },
  {
@@ -3157,6 +3285,48 @@
   "why": "Jobbet kræver analytisk forståelse af økonomistyring og rapportering, som både økonomiske og samfundsvidenskabelige uddannelser giver.",
   "openToAll": false,
   "id": "x98f5e25fde75",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere søges til Arter & Natur",
+  "kind": "studiejob",
+  "co": "Styrelsen for Grøn Arealomlægning og Vandmiljø",
+  "city": "Region Syddanmark",
+  "region": "fyn",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "sustain",
+   "public"
+  ],
+  "famConf": "text",
+  "skills": [
+   "aktindsigt",
+   "juridisk forståelse",
+   "forvaltningsret",
+   "struktureret arbejde",
+   "samarbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-24T14:33:16+00:00",
+  "deadlineAt": "2026-12-07T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du behandler aktindsigter og andre forvaltningsopgaver i enheden for arts- og naturforvaltning, bl.a. om ulv. Du kan også komme til at vejlede borgere og virksomheder om regler på naturområdet.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173844&DepartmentId=19833&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "offentlig administration",
+   "statskundskab",
+   "biologi",
+   "miljøvidenskab"
+  ],
+  "why": "Opgaverne kræver juridisk forståelse af forvaltningsregler kombineret med interesse for natur, miljø og offentlig administration.",
+  "openToAll": false,
+  "id": "x9be389db8e17",
   "live": true
  },
  {
@@ -3759,49 +3929,6 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper til Operations & Training",
-  "kind": "studiejob",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "operations",
-   "marketing"
-  ],
-  "famConf": "title",
-  "skills": [
-   "e-læring",
-   "PowerPoint",
-   "Excel",
-   "Microsoft Copilot",
-   "skriftlig formidling"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": "2026-12-01T23:59:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du udarbejder og vedligeholder e-læringer og undervisningsmateriale til salgsorganisationen i Tryg Commercial Lines. Du indsamler information til den interne nyhedsplatform S&K News og laver PowerPoint-præsentationer til ledere og teamet.",
-  "req": null,
-  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Operations-&-Training/1458039433/",
-  "enrichedBy": "ai",
-  "studies": [
-   "pædagogik",
-   "kommunikation",
-   "medievidenskab",
-   "erhvervsøkonomi",
-   "markedsføringsøkonomi",
-   "personaleledelse"
-  ],
-  "why": "Jobbet kræver læringsdesign, skriftlig formidling og intern kommunikation, som uddannelser inden for pædagogik, kommunikation og erhvervsøkonomi dækker.",
-  "openToAll": false,
-  "id": "xc63f0e3cb024",
-  "live": true
- },
- {
   "title": "Mødebooker (studiejob), Tryg Privat",
   "kind": "studiejob",
   "co": "Alka",
@@ -3874,6 +4001,108 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Operations & Training",
+  "kind": "studiejob",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "operations",
+   "marketing"
+  ],
+  "famConf": "title",
+  "skills": [
+   "e-læring",
+   "PowerPoint",
+   "Excel",
+   "Microsoft Copilot",
+   "skriftlig formidling"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": "2026-12-01T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du udarbejder og vedligeholder e-læringer og undervisningsmateriale til salgsorganisationen i Tryg Commercial Lines. Du indsamler information til den interne nyhedsplatform S&K News og laver PowerPoint-præsentationer til ledere og teamet.",
+  "req": null,
+  "url": "https://careers.tryg.com/Tryg/job/Ballerup-Studentermedhj%C3%A6lper-til-Operations-&-Training/1458039433/",
+  "enrichedBy": "ai",
+  "studies": [
+   "pædagogik",
+   "kommunikation",
+   "medievidenskab",
+   "erhvervsøkonomi",
+   "markedsføringsøkonomi",
+   "personaleledelse"
+  ],
+  "why": "Jobbet kræver læringsdesign, skriftlig formidling og intern kommunikation, som uddannelser inden for pædagogik, kommunikation og erhvervsøkonomi dækker.",
+  "openToAll": false,
+  "id": "xc63f0e3cb024",
+  "live": true
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "kind": "praktik",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "kind": "praktik",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
   "title": "Arkitektpraktikanter, Aarhus eller Silkeborg",
   "kind": "praktik",
   "co": "Sweco Danmark",
@@ -3919,6 +4148,41 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=87&ProjectId=182929&DepartmentId=2127&MediaId=5",
   "enrichedBy": "regler",
   "id": "x48173df0676b",
+  "live": true
+ },
+ {
+  "title": "Praktikant til Miljø i Aarhus",
+  "kind": "praktik",
+  "co": "Sweco Danmark",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "sustain",
+  "sec": [
+   "engineering"
+  ],
+  "famConf": "title",
+  "skills": [],
+  "industry": "Ingeniørrådgivning",
+  "postedAt": "2026-11-24T13:50:51+00:00",
+  "deadlineAt": "2027-01-24T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Praktikant hos Sweco Danmark i Aarhus med fokus på miljø. Opslaget beskriver ikke de konkrete arbejdsopgaver.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=87&ProjectId=183760&DepartmentId=2127&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "miljøteknologi",
+   "miljøvidenskab",
+   "geografi",
+   "bygningsingeniør",
+   "biologi"
+  ],
+  "why": "Miljøfaglige og tekniske uddannelser passer til miljøarbejde i en rådgivningsvirksomhed.",
+  "openToAll": false,
+  "id": "xc4b69becac03",
   "live": true
  },
  {
@@ -4438,6 +4702,49 @@
   "live": true
  },
  {
+  "title": "Studiemedarbejdere til Døgntilbuddet Attruphøj",
+  "kind": "studiejob",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 2,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "health",
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [
+   "empati",
+   "relationsarbejde",
+   "samarbejde",
+   "dokumentation",
+   "kørekort"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2027-01-03T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du støtter voksne med erhvervet hjerneskade i hverdagen, både pædagogisk og sundhedsfagligt, enten tæt på én beboer eller i fælles aktiviteter. Arbejdet tager udgangspunkt i borgerens ressourcer og mål og dokumenteres fagligt.",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studiemedarbejdere-til-dogntilbuddet-attruphoj/0n11r7",
+  "enrichedBy": "ai",
+  "studies": [
+   "pædagogik",
+   "socialt arbejde",
+   "psykologi",
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi"
+  ],
+  "why": "Uddannelserne giver den faglige baggrund for omsorg, rehabilitering og relationsarbejde med borgere med omfattende støttebehov.",
+  "openToAll": false,
+  "id": "x80dc7b3ce25f",
+  "live": true
+ },
+ {
   "title": "SYSTEMATISK OG KVALITETSBEVIST STUDENTERMEDHJÆLPER MED FLAIR FOR FORVALTNINGSRET SØGES TIL SAGSBEHANDLING I FREDERIKSBERG KOMMUNE.",
   "kind": "studiejob",
   "co": "Frederiksberg Kommune",
@@ -4731,6 +5038,50 @@
   "live": true
  },
  {
+  "title": "Grønlands Politi søger studentermedhjælper til Planlægningssektionen",
+  "kind": "studiejob",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "operations",
+  "sec": [
+   "public",
+   "logistics"
+  ],
+  "famConf": "title",
+  "skills": [
+   "planlægning",
+   "sagsbehandling",
+   "projektstyring",
+   "skriftlig kommunikation",
+   "administration"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du behandler høringssager og skriver bemærkninger til politikredsens høringssvar, og du fungerer som stabsfunktion for Operativt Center. Du laver oversigter over aktiviteter og hændelser, skriver instrukser og vejledninger og er med i beredskabsplanlægning, fx ved VIP-besøg og naturkatastrofer.",
+  "req": null,
+  "url": "https://job.politi.dk/job/Nuuk-Gr%C3%B8nlands-Politi-s%C3%B8ger-studentermedhj%C3%A6lper-til-Planl%C3%A6gningssektionen-3900/1378289155/",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "jura",
+   "samfundsvidenskab",
+   "geografi",
+   "erhvervsøkonomi",
+   "logistik",
+   "offentlig administration"
+  ],
+  "why": "Jobbet kræver planlægning, juridisk sagsbehandling og forståelse for samfundets beredskab, hvilket passer til samfundsfag, jura og logistik.",
+  "openToAll": false,
+  "id": "x106bc6988c47",
+  "live": true
+ },
+ {
   "title": "En studentermedhjælper søges til forskningsprojekt om arbejdsmiljø i ældreomsorgen for kvinder midt i livet (WELLCARE)",
   "kind": "studiejob",
   "co": "Roskilde Universitet",
@@ -4916,6 +5267,48 @@
   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5",
   "enrichedBy": "regler",
   "id": "xc795046bf838",
+  "live": true
+ },
+ {
+  "title": "Studiejob i sygeplejerskeuddannelsens simulationsmiljø",
+  "kind": "studiejob",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 4,
+  "hMax": 4,
+  "danish": "plus",
+  "fam": "health",
+  "sec": [
+   "education",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "klargøring af materialer",
+   "lageroptælling",
+   "renlighed",
+   "mødestabilitet",
+   "praktisk sans"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-15T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du sætter udstyr op og rydder op efter simulationsøvelser, fylder op i medicinrum og depoter og klargør materialer som blodprodukter og hætteglas. Du arbejder typisk alene på vagt og fordeler selv vagterne med teamet.",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studiejob-i-sygeplejerskeuddannelsens-simulationsmiljo/eml6hl",
+  "enrichedBy": "ai",
+  "studies": [
+   "sygepleje",
+   "sundhedsvidenskab",
+   "jordemoderuddannelse",
+   "fysioterapi",
+   "ergoterapi"
+  ],
+  "why": "Jobbet kræver indsigt i kliniske sygeplejefaglige færdigheder og praktisk arbejde med udstyr og medicin, som er centralt i sundhedsfaglige uddannelser.",
+  "openToAll": false,
+  "id": "x8d3b29ef558c",
   "live": true
  },
  {
@@ -5344,30 +5737,31 @@
   ],
   "famConf": "title",
   "skills": [
-   "skrivning",
+   "dansk skriftlig formidling",
    "sociale medier",
    "indholdsproduktion",
-   "nyhedsbreve",
+   "nyhedsmail-opsætning",
    "hjemmesideopdatering"
   ],
   "industry": "Uddannelse og forskning",
   "postedAt": "2026-11-23T09:13:58+00:00",
   "deadlineAt": "2026-12-06T23:59:59+00:00",
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du finder gode historier fra CFU Absalons kurser og projekter og skriver opslag til Facebook, Instagram og LinkedIn. Du opdaterer også hjemmesiden og opsætter nyhedsmails til lærere og skoler.",
+  "blurb": "Du finder gode historier fra CFU Absalons kurser, konferencer og projekter og skriver og producerer indhold til Facebook, Instagram og LinkedIn. Du holder også hjemmesiden opdateret og opsætter nyhedsmails med tekst, billeder og links.",
   "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194561&DepartmentId=7794&MediaId=5",
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194561&DepartmentId=9368&MediaId=5",
   "enrichedBy": "ai",
   "studies": [
-   "kommunikation",
    "medievidenskab",
    "journalistik",
+   "dansk",
+   "kommunikation",
    "pædagogik",
-   "dansk"
+   "læreruddannelse"
   ],
-  "why": "Jobbet kræver god skriftlig formidling og forståelse for sociale medier, som især kommunikations-, medie- og sprogfag træner.",
-  "openToAll": false,
-  "id": "xbb43b7224ee2",
+  "why": "Jobbet kræver god skrivning og kendskab til sociale medier, og det er netop kompetencer, som studerende på medie-, sprog- og kommunikationsuddannelser typisk har.",
+  "openToAll": true,
+  "id": "x1ad51b3c484c",
   "live": true
  },
  {
@@ -5456,7 +5850,50 @@
   "live": true
  },
  {
-  "title": "Studentermedhjælper ved Læreruddannelsen i Vestjylland",
+  "title": "Studentermedhjælpere søges til Nationalt center for forskning i Udsathed blandt Børn og Unge (NUBU) ved VIA University College",
+  "kind": "studiejob",
+  "co": "VIA University College",
+  "city": "Aarhus",
+  "region": "oj",
+  "hMin": 8,
+  "hMax": 10,
+  "danish": "plus",
+  "fam": "research",
+  "sec": [
+   "social",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "metode og analyse",
+   "struktureret arbejde",
+   "selvstændighed",
+   "fleksibilitet",
+   "YPAR"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du hjælper sekretariatet med analyse- og administrative opgaver, fx litteraturstudier, transskription af interviews og praktisk hjælp ved netværksmøder og konferencer. Opgaverne kan ændre sig undervejs efter centerets behov.",
+  "req": null,
+  "url": "https://via.career.emply.com/ad/studentermedhjaelpere-soges-til-nationalt-center-for-forskning-i-udsathed-blandt-b/41pd9t",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "pædagogik",
+   "socialt arbejde",
+   "sociologi",
+   "psykologi",
+   "socialvidenskab"
+  ],
+  "why": "Jobbet kræver metodeforståelse og viden om børn og unge i udsatte positioner, og det passer derfor til socialvidenskabelige og pædagogiske uddannelser.",
+  "openToAll": false,
+  "id": "x9385b397f394",
+  "live": true
+ },
+ {
+  "title": "Studentervejleder ved Læreruddannelsen i Vestjylland",
   "kind": "studiejob",
   "co": "VIA University College",
   "city": "Aarhus",
@@ -5466,14 +5903,13 @@
   "danish": "required",
   "fam": "education",
   "sec": [
-   "social",
-   "customer"
+   "social"
   ],
   "famConf": "title",
   "skills": [
+   "vejledningssamtaler",
+   "chatvejledning",
    "kommunikation",
-   "lytteevne",
-   "vejledning",
    "samarbejde",
    "fleksibilitet"
   ],
@@ -5481,20 +5917,20 @@
   "postedAt": null,
   "deadlineAt": "2026-12-11T23:59:00+00:00",
   "src": "Virksomhedens karriereside",
-  "blurb": "Du taler med lærerstuderende om deres studieliv, holder vejledningssamtaler og bemander VIAs chatvejledning. Du deltager også i arrangementer som Åbent Hus og studiepraktik.",
+  "blurb": "Du taler med lærerstuderende om deres studieliv og afholder vejledningssamtaler. Du bemander også VIAs chatvejledning og hjælper til arrangementer som Åbent Hus og studiepraktik.",
   "req": null,
-  "url": "https://via.career.emply.com/ad/studentermedhjaelper-ved-laereruddannelsen-i-vestjylland/pb20qk",
+  "url": "https://via.career.emply.com/ad/studentervejleder-ved-laereruddannelsen-i-vestjylland/pb20qk",
   "enrichedBy": "ai",
   "studies": [
    "læreruddannelse",
    "pædagogik",
    "psykologi",
-   "uddannelsesvidenskab",
+   "socialt arbejde",
    "sociologi"
   ],
-  "why": "Jobbet kræver, at man selv er lærerstuderende og kan vejlede medstuderende om studiet, så læreruddannelse og nære pædagogiske og psykologiske fag passer bedst.",
+  "why": "Jobbet kræver erfaring som lærerstuderende og samtalefærdigheder, som læreruddannelsen og de pædagogiske og psykologiske fag træner.",
   "openToAll": false,
-  "id": "x14b5c4e50f0d",
+  "id": "xbc985150a153",
   "live": true
  },
  {
@@ -6346,6 +6782,50 @@
   "url": "https://karriere.danskespil.dk/jobs/8656436-studentermedhjaelper-til-gdpr-compliance-og-informationssikkerhed",
   "enrichedBy": "regler",
   "id": "xb1571386d456",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Taskforce",
+  "kind": "studiejob",
+  "co": "If P&C Insurance Ltd (publ), Branch Denmark",
+  "city": "København, Denmark",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "bi",
+   "software"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "datakvalitet",
+   "Power Automate",
+   "databehandling",
+   "procesautomatisering"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": "2026-11-16T00:00:00+00:00",
+  "deadlineAt": "2026-12-01T00:00:00+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du kvalitetssikrer og retter data på tværs af systemer i If og hjælper forskellige afdelinger med administrative og ad hoc-opgaver. Du kan også automatisere simple arbejdsgange, fx med Power Automate.",
+  "req": null,
+  "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Kbenhavn/Studentermedhjlper-til-Taskforce_JobReqID11734",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "datalogi",
+   "it",
+   "matematik-økonomi",
+   "global business engineering"
+  ],
+  "why": "Jobbet kræver Excel-, data- og procesforståelse, som styrkes på økonomiske, it- og datafaglige uddannelser.",
+  "openToAll": false,
+  "id": "x11e8b1b91330",
   "live": true
  },
  {
@@ -9039,6 +9519,102 @@
   ],
   "why": "Opgaverne handler om kundekontakt og relationspleje for virksomheder, og det kræver ikke specifik faglig baggrund.",
   "id": "x76b0a633f754",
+  "live": true
+ },
+ {
+  "studies": [
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation.",
+  "catFam": true,
+  "title": "Praktikant til oplysning- og engagementsarbejde i Red Orangutangen",
+  "kind": "praktik",
+  "co": "Red Orangutangen",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "formidling",
+   "kommunikation",
+   "planlægning",
+   "koordinering",
+   "indholdsproduktion"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2026-12-07T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du deltager i skolebesøg og planlægger workshops for sjetteklasser i projektet Verdens Bedste Venner, der forbinder danske og borneanske børn. Du hjælper også med events, billeder, video og tekst til formidling om orangutangerne.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3165956/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x84961bb95955",
+  "live": true
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation.",
+  "catFam": true,
+  "title": "SEO-Praktikant hos WebHibe – Forår 2027",
+  "kind": "praktik",
+  "co": "WebHibe ApS",
+  "city": "Albertslund",
+  "region": "kbh",
+  "hMin": 30,
+  "hMax": 37,
+  "danish": "no",
+  "fam": "marketing",
+  "sec": [
+   "salesops"
+  ],
+  "famConf": "title",
+  "skills": [
+   "SEO",
+   "GA4",
+   "WordPress",
+   "Ahrefs",
+   "Search Console"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": "2027-01-04T00:00:00+00:00",
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du laver søgeordsanalyse, konkurrentanalyse og performance-analyse i GA4 og Search Console, og skriver SEO-tekster til webshops og virksomhedssider. Du arbejder også med teknisk SEO, on-page optimering i WordPress og rapportering på kampagneresultater.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3165957/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "xa9621d94186e",
   "live": true
  },
  {
