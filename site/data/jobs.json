@@ -1,5 +1,48 @@
 [
  {
+  "title": "Studenterjob i DI – Arbejd med kommunikation, events og interessevaretagelse",
+  "kind": "studiejob",
+  "co": "Dansk Industri",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "kommunikation",
+   "eventplanlægning",
+   "skriftlig dansk",
+   "mødeforberedelse",
+   "detaljeorientering"
+  ],
+  "industry": "Interesseorganisation",
+  "postedAt": "2026-11-25T10:50:30+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du planlægger og afvikler events og erhvervstræf og udarbejder invitationer, programtekster og kommunikationsmateriale, fx på LinkedIn. Du forbereder også dagsordener, talepunkter og baggrundsnotater til møder med borgmestre og andre beslutningstagere.",
+  "req": null,
+  "url": "https://danskindustri.teamtailor.com/jobs/8794117-studenterjob-i-di-arbejd-med-kommunikation-events-og-interessevaretagelse",
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "statskundskab",
+   "samfundsvidenskab",
+   "politik og administration",
+   "erhvervsøkonomi",
+   "journalistik"
+  ],
+  "why": "Jobbet kræver sikker dansk kommunikation og indsigt i politik og erhvervsliv, hvilket passer godt til samfunds- og kommunikationsfag.",
+  "openToAll": false,
+  "id": "xddf74c1489c8",
+  "live": true
+ },
+ {
   "title": "Kommunikationsstudent til DI Turisme, Kultur & Oplevelser",
   "kind": "studiejob",
   "co": "Dansk Industri",
@@ -1253,6 +1296,34 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "kind": "studiejob",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælper til Culture & Leadership",
   "kind": "studiejob",
   "co": "Norlys",
@@ -1279,34 +1350,6 @@
   "url": "https://www.job-karriere.dk/Norlys/job/Silkeborg-Studentermedhj%C3%A6lper-til-Culture-&-Leadership-8600/1453783733/",
   "enrichedBy": "regler",
   "id": "x77933f416508",
-  "live": true
- },
- {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "kind": "studiejob",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
   "live": true
  },
  {
@@ -2006,48 +2049,6 @@
   "live": true
  },
  {
-  "title": "Folketingets internationale konsulentenhed søger studentermedhjælpere",
-  "kind": "studiejob",
-  "co": "Folketinget",
-  "city": "København K",
-  "region": "kbh",
-  "hMin": 8,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "public",
-  "sec": [
-   "research"
-  ],
-  "famConf": "title",
-  "skills": [
-   "skriftlig formulering",
-   "engelsk",
-   "analytisk sans",
-   "internationale politiske forho",
-   "kendskab til internationale me"
-  ],
-  "industry": "Offentlig",
-  "postedAt": "2026-11-05T15:21:03+00:00",
-  "deadlineAt": "2026-11-25T12:00:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du udarbejder selvstændigt, under vejledning, korte elektroniske nyhedsbreve om internationale emner til folketingsmedlemmer. Du laver også resuméer af internationale nyheder og bidrager til udenrigspolitiske noter og praktisk bistand til møder og udvalgsrejser.",
-  "req": null,
-  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=172629&DepartmentId=18972&MediaId=5",
-  "enrichedBy": "ai",
-  "studies": [
-   "statskundskab",
-   "internationale studier",
-   "europastudier",
-   "sociologi",
-   "økonomi",
-   "jura"
-  ],
-  "why": "Jobbet kræver analyse af internationale politiske forhold og skriftlig formidling, som samfundsvidenskabelige uddannelser træner.",
-  "openToAll": false,
-  "id": "x45aa25da5b11",
-  "live": true
- },
- {
   "title": "Har du lyst til at understøtte det parlamentariske arbejde i et selvstændigt, lærerigt og fleksibelt job på Christiansborg?",
   "kind": "studiejob",
   "co": "Folketinget",
@@ -2361,6 +2362,46 @@
   "why": "Jobbet kræver forståelse for politiske og administrative processer samt økonomi og regulering, som disse uddannelser dækker.",
   "openToAll": false,
   "id": "x9941c42a8cf0",
+  "live": true
+ },
+ {
+  "title": "SMK søger studentermedarbejder til Bevaringsafdelingen",
+  "kind": "studiejob",
+  "co": "Statslige arbejdsgivere",
+  "city": "Statens Museum for Kunst",
+  "region": "kbh",
+  "hMin": 8,
+  "hMax": 8,
+  "danish": "required",
+  "fam": "operations",
+  "sec": [
+   "procurement",
+   "research"
+  ],
+  "famConf": "text",
+  "skills": [
+   "MS Office",
+   "systematisk",
+   "struktureret"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-25T14:45:56+00:00",
+  "deadlineAt": "2026-12-16T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du assisterer konservatorerne i Bevaringsafdelingen med fx passepartout-fremstilling, afstøvning, tilsyn med dataloggere og skadedyrsmonitorering. Du arkiverer tilstandsrapporter og søger efter og indkøber materialer til konserveringsværkstederne.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=173973&DepartmentId=19818&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "konservering",
+   "kunsthistorie",
+   "kemi",
+   "arkæologi",
+   "materialevidenskab"
+  ],
+  "why": "Jobbet kræver viden om kunstværkers materialer og bevaring, som hører til konservering, kunsthistorie og naturvidenskab.",
+  "openToAll": false,
+  "id": "xf9719b3a3be3",
   "live": true
  },
  {
@@ -4088,6 +4129,65 @@
   "live": true
  },
  {
+  "title": "Audit & Assurance Praktikant 2027",
+  "kind": "praktik",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "kind": "praktik",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true
+ },
+ {
   "title": "Arkitektpraktikanter, Aarhus eller Silkeborg",
   "kind": "praktik",
   "co": "Sweco Danmark",
@@ -4562,6 +4662,51 @@
   "live": true
  },
  {
+  "title": "STUDENTERMEDHJÆLPER TIL LEDELSESSEKRETARIATET I SOCIALE FORHOLD OG BESKÆFTIGELSE",
+  "kind": "studiejob",
+  "co": "Aarhus Kommune",
+  "city": "Rådhuset, Rådhuspladsen 2, 8000 Aarhus C",
+  "region": "oj",
+  "hMin": 14,
+  "hMax": 14,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "social"
+  ],
+  "famConf": "title",
+  "skills": [
+   "notatskrivning",
+   "researchopgaver",
+   "mødeforberedelse",
+   "koordinering",
+   "analytisk tænkning"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-25T14:07:59+00:00",
+  "deadlineAt": "2026-12-15T23:59:59+00:00",
+  "src": "Virksomhedens rekrutteringssystem",
+  "blurb": "Du forbereder rådmandens møder og dagsordener, skriver notater og researcher, og koordinerer besøg og bemærkninger til byråds- og magistratsmøder. Du hjælper også sekretariatet med sagsjournalisering og opfølgning på henvendelser.",
+  "req": null,
+  "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=145111&DepartmentId=22983&MediaId=5",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "politologi",
+   "sociologi",
+   "offentlig administration",
+   "jura",
+   "økonomi",
+   "filosofi",
+   "historie"
+  ],
+  "why": "Jobbet kræver analytisk skriftlig formulering og politisk-strategisk forståelse, som samfundsvidenskabelige og humanistiske uddannelser træner.",
+  "openToAll": false,
+  "id": "x022e78c313ef",
+  "live": true
+ },
+ {
   "title": "Studiejob med mening – vi søger weekendafløsere til Hasle Plejehjem!",
   "kind": "studiejob",
   "co": "Aarhus Kommune",
@@ -4647,6 +4792,49 @@
   "live": true
  },
  {
+  "title": "Studiemedarbejdere til Døgntilbuddet Attruphøj",
+  "kind": "studiejob",
+  "co": "Aalborg Kommune",
+  "city": "Aalborg",
+  "region": "nj",
+  "hMin": 2,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "health",
+   "education"
+  ],
+  "famConf": "text",
+  "skills": [
+   "empati",
+   "relationsarbejde",
+   "samarbejde",
+   "dokumentation",
+   "kørekort"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2027-01-03T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du støtter voksne med erhvervet hjerneskade i hverdagen, både pædagogisk og sundhedsfagligt, enten tæt på én beboer eller i fælles aktiviteter. Arbejdet tager udgangspunkt i borgerens ressourcer og mål og dokumenteres fagligt.",
+  "req": null,
+  "url": "https://aalborg.career.emply.com/ad/studiemedarbejdere-til-dogntilbuddet-attruphoj/0n11r7",
+  "enrichedBy": "ai",
+  "studies": [
+   "pædagogik",
+   "socialt arbejde",
+   "psykologi",
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi"
+  ],
+  "why": "Uddannelserne giver den faglige baggrund for omsorg, rehabilitering og relationsarbejde med borgere med omfattende støttebehov.",
+  "openToAll": false,
+  "id": "x80dc7b3ce25f",
+  "live": true
+ },
+ {
   "title": "SYSTEMATISK OG KVALITETSBEVIST STUDENTERMEDHJÆLPER MED FLAIR FOR FORVALTNINGSRET SØGES TIL SAGSBEHANDLING I FREDERIKSBERG KOMMUNE.",
   "kind": "studiejob",
   "co": "Frederiksberg Kommune",
@@ -4684,6 +4872,46 @@
   "why": "Jobbet kræver forståelse for forvaltningsretten og evnen til at skrive juridiske dokumenter, hvilket passer til jura og statskundskab.",
   "openToAll": false,
   "id": "x4251574672d2",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere søges til anklagemyndigheden i Københavns Politi",
+  "kind": "studiejob",
+  "co": "Politiet",
+  "city": "København SV, DK, 2450",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "famConf": "text",
+  "skills": [
+   "analytisk evne",
+   "skriftlig formidling",
+   "sagsbehandling",
+   "Microsoft Office",
+   "struktureret arbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-25T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du sætter dig ind i konkrete straffesager og aktindsigtssager, analyserer sagsakter og skriver oplæg og udkast til afgørelser. Du bistår også anklagerne og laver almindeligt kontorarbejde.",
+  "req": null,
+  "url": "https://job.politi.dk/job/K%C3%B8benhavn-SV-Studentermedhj%C3%A6lpere-s%C3%B8ges-til-anklagemyndigheden-i-K%C3%B8benhavns-Politi-2450/1378485755/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "retsvidenskab",
+   "statskundskab",
+   "kriminologi"
+  ],
+  "why": "Opgaverne går ud på juridisk sagsbehandling, analyse og skriftlige udkast til afgørelser, hvilket passer til jura og samfundsfag.",
+  "openToAll": false,
+  "id": "x25d18fec103b",
   "live": true
  },
  {
@@ -4770,6 +4998,49 @@
   "why": "Jobbet kræver talforståelse og kendskab til økonomi samt skatte- eller hvidvaskregler, som især dækkes af økonomi- og juraforløb.",
   "openToAll": false,
   "id": "x7e79dd1635c1",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Rigspolitiets Koncernregnskab",
+  "kind": "studiejob",
+  "co": "Politiet",
+  "city": "København V, DK, 1567",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "regnskab",
+   "økonomisystemer",
+   "dokumentation",
+   "struktureret arbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": "2026-11-25T00:00:00+00:00",
+  "deadlineAt": "2026-12-16T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du hjælper med den løbende regnskabsdrift og vejleder andre enheder i politiet i brugen af økonomisystemer. Du laver også dokumentation af regnskabsregler og forretningsgange samt beregninger og præsentationer i Excel og PowerPoint.",
+  "req": null,
+  "url": "https://job.politi.dk/job/K%C3%B8benhavn-V-Studentermedhj%C3%A6lper-til-Rigspolitiets-Koncernregnskab-1567/1378508655/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "økonomi",
+   "jura",
+   "statskundskab"
+  ],
+  "why": "Jobbet kræver regnskabsforståelse, Excel-arbejde og kendskab til økonomisystemer, hvilket passer godt til økonomiske uddannelser.",
+  "openToAll": false,
+  "id": "x43a18b6ffd22",
   "live": true
  },
  {
@@ -5069,6 +5340,89 @@
   "why": "Arbejdet kræver talforståelse, kendskab til regnskab og lovgivning samt analytisk sans, som økonomi-, revisions- og jurastudier træner.",
   "openToAll": false,
   "id": "x1213e709ac7e",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælpere søges til anklagemyndigheden i Københavns Politi",
+  "kind": "studiejob",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "famConf": "text",
+  "skills": [
+   "analyse",
+   "skriftlig formidling",
+   "sagsbehandling",
+   "Microsoft Office",
+   "prioritering"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du sætter dig ind i konkrete straffesager, gennemgår sagsakter og analyserer oplysningerne. Du udarbejder udkast til afgørelser, oplæg til bødeforlæg, klagesager og aktindsigt.",
+  "req": null,
+  "url": "https://job.politi.dk/job/K%C3%B8benhavn-SV-Studentermedhj%C3%A6lpere-s%C3%B8ges-til-anklagemyndigheden-i-K%C3%B8benhavns-Politi-2450/1378485755/",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "kriminologi",
+   "politividenskab",
+   "samfundsvidenskab"
+  ],
+  "why": "Arbejdet kræver analytisk og skriftlig sagsbehandling af straffesager, hvilket ligger tæt på jura og samfundsfaglige uddannelser.",
+  "openToAll": false,
+  "id": "xfcd4e86aec1f",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Rigspolitiets Koncernregnskab",
+  "kind": "studiejob",
+  "co": "Politiet",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "regnskab",
+   "Excel",
+   "økonomisystemer",
+   "dokumentation",
+   "struktureret arbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-12-16T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du hjælper med den daglige regnskabsdrift, vejleder andre enheder i brugen af økonomisystemer og dokumenterer regnskabsregler og forretningsgange. Du laver også beregninger i Excel og administrative opgaver for kontoret.",
+  "req": null,
+  "url": "https://job.politi.dk/job/K%C3%B8benhavn-V-Studentermedhj%C3%A6lper-til-Rigspolitiets-Koncernregnskab-1567/1378508655/",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "økonomi",
+   "regnskab",
+   "jura"
+  ],
+  "why": "Jobbet kræver forståelse for regnskab, økonomisystemer og regnskabsregler, som økonomiske uddannelser giver.",
+  "openToAll": false,
+  "id": "xda48b2dd8c63",
   "live": true
  },
  {
@@ -5469,6 +5823,134 @@
   "why": "Jobbet kræver dansk og engelsk, skriftlig kommunikation og interesse for uddannelse og internationalisering, hvilket især passer til pædagogiske, sprog- og kommunikationsfaglige studier.",
   "openToAll": false,
   "id": "x4b6d9045800f",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til Institut for Socialrådgiveruddannelse",
+  "kind": "studiejob",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "bi",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Microsoft 365 (Teams)",
+   "Excel",
+   "SurveyXact",
+   "korrekturlæsning",
+   "kommunikation"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-08T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du understøtter undervisere med digitale læringsværktøjer, fx Teams, og løser opgaver som opgørelse af fremmøde, undervisningsevalueringer og redigering af litteraturlister. Du hjælper også med at planlægge og afvikle konferencer, seminarer og møder.",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-institut-for-socialradgiveruddannelse/oozdru",
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "sociologi",
+   "statskundskab",
+   "pædagogik"
+  ],
+  "why": "Jobbet kræver interesse for uddannelse, skriftlig kommunikation og arbejde med data og digitale systemer, som de nævnte fag beskæftiger sig med.",
+  "openToAll": false,
+  "id": "x4a797aa0763c",
+  "live": true
+ },
+ {
+  "title": "Studentermedhjælper til databeskyttelse (GDPR)",
+  "kind": "studiejob",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "plus",
+  "fam": "legal",
+  "sec": [
+   "operations"
+  ],
+  "famConf": "text",
+  "skills": [
+   "GDPR-kendskab",
+   "fortegnelser over behandlinger",
+   "dokumentation og opfølgning",
+   "detaljeorientering",
+   "samarbejde på tværs"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-01T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du vedligeholder fortegnelser over behandling af personoplysninger i et GRC-system og hjælper med at gennemføre og følge op på tilsyn med databehandlere. Du indsamler dokumentation fra forskellige afdelinger og følger op på udestående opgaver.",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/studentermedhjaelper-til-databeskyttelse-gdpr/xzzayy",
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "digital forvaltning",
+   "datalogi",
+   "it",
+   "statskundskab",
+   "informationsvidenskab"
+  ],
+  "why": "Arbejdet kræver juridisk forståelse af reglerne for persondata og teknisk indsigt i IT-systemer og dokumentation.",
+  "openToAll": false,
+  "id": "xa9081f7fe045",
+  "live": true
+ },
+ {
+  "title": "Bliv studenterunderviser eller serviceassistent på fysioterapeutuddannelsen på Campus Hillerød",
+  "kind": "studiejob",
+  "co": "Københavns Professionshøjskole",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 20,
+  "hMax": 25,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "health",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "anatomisk palpation",
+   "human fysiologi",
+   "undervisning",
+   "samarbejde",
+   "ansvarlighed"
+  ],
+  "industry": "Uddannelse og forskning",
+  "postedAt": null,
+  "deadlineAt": "2026-12-01T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du tilrettelægger og underviser medstuderende i anatomisk palpation og human fysiologi og ernæringslære på fysioterapeutuddannelsen. Som serviceassistent hjælper du med praktiske opgaver som vask af linned og samling af skeletter.",
+  "req": null,
+  "url": "https://kp.career.emply.com/en/ad/bliv-studenterunderviser-eller-serviceassistent-pa-fysioterapeutuddannelsen-pa-ca/6ajk3m",
+  "enrichedBy": "ai",
+  "studies": [
+   "fysioterapi",
+   "ergoterapi",
+   "sygeplejerske",
+   "jordemoder",
+   "human biologi",
+   "biomedicin",
+   "idrætsvidenskab"
+  ],
+  "why": "Undervisningen kræver fagligt stærke studerende på fysioterapi, som kender pensum og de svære dele af anatomi og fysiologi.",
+  "openToAll": false,
+  "id": "x481712477629",
   "live": true
  },
  {
@@ -6266,6 +6748,51 @@
   "live": true
  },
  {
+  "title": "Studentermedhjælper i Jobcenter Albertslund (20-30 timer ugentligt)",
+  "kind": "studiejob",
+  "co": "Albertslund Kommune",
+  "city": "Albertslund",
+  "region": "kbh",
+  "hMin": 20,
+  "hMax": 30,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "public",
+   "legal"
+  ],
+  "famConf": "text",
+  "skills": [
+   "sagsbehandling",
+   "dokumentation",
+   "beskæftigelseslovgivning",
+   "mundtlig og skriftlig kommunik",
+   "samarbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-12-13T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du forbereder borgersager, indhenter oplysninger og journalisérer i fagsystemer. Med tiden overtager du selvstændig sagsbehandling for borgere, der er langt fra arbejdsmarkedet.",
+  "req": null,
+  "url": "https://albertslund.career.emply.com/da/ad/studentermedhjaelper-i-jobcenter-albertslund-20-30-timer-ugentligt/967war",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "socialformidler",
+   "socialvidenskab",
+   "jura",
+   "psykologi",
+   "sociologi",
+   "pædagogik",
+   "statskundskab"
+  ],
+  "why": "Jobbet kræver viden om socialt arbejde, lovgivning og sagsbehandling, som disse uddannelser giver.",
+  "openToAll": false,
+  "id": "x7817251a4af0",
+  "live": true
+ },
+ {
   "title": "Studentermedhjælp til fritidspasordningen",
   "kind": "studiejob",
   "co": "Glostrup Kommune",
@@ -6362,6 +6889,50 @@
   "why": "Myndighedsopgaver på miljøområdet kræver faglig viden om miljølovgivning, natur og planlægning, og det kan jurister og naturfaglige studerende bruge.",
   "openToAll": false,
   "id": "x7dca7e194d2e",
+  "live": true
+ },
+ {
+  "title": "uddannet SOSU, ufaglært, efterlønner eller studerende",
+  "kind": "studiejob",
+  "co": "Ringkøbing-Skjern Kommune",
+  "city": "Ringkøbing-Skjern",
+  "region": "mvj",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "health"
+  ],
+  "famConf": "text",
+  "skills": [
+   "personlig pleje",
+   "medicingivning",
+   "omsorg for ældre",
+   "mødestabilitet",
+   "samarbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-12-18T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du hjælper ældre beboere med personlig pleje, måltider og medicingivning samt praktiske og sociale aktiviteter på Centerparken i Videbæk. Vagterne kan være dag-, aften- eller nattevagter, og du kan vælge faste weekendforløb eller løse vagter.",
+  "req": null,
+  "url": "https://rksk-v2.career.emply.com/ad/uddannet-sosu-ufaglaert-efterlonner-eller-studerende/4k62ov",
+  "enrichedBy": "ai",
+  "studies": [
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi",
+   "pædagogik",
+   "socialt arbejde",
+   "psykologi",
+   "folkesundhed",
+   "medicin"
+  ],
+  "why": "Arbejdet kræver omsorg, samarbejde og viden om pleje og sundhed, som studier i sundhed, pædagogik og socialt arbejde giver.",
+  "openToAll": false,
+  "id": "xc9afbe26c7d4",
   "live": true
  },
  {
@@ -6502,93 +7073,6 @@
   "url": "https://karriere.magasin.dk/jobs/6239725-modeinteresseret-studiepraktikant-til-creative",
   "enrichedBy": "regler",
   "id": "x8f839e9f8473",
-  "live": true
- },
- {
-  "title": "Student Assistant – Social Media and Event Planning",
-  "kind": "studiejob",
-  "co": "Danske Spil",
-  "city": "Brøndby",
-  "region": "kbh",
-  "hMin": 12,
-  "hMax": 16,
-  "danish": "no",
-  "fam": "marketing",
-  "sec": [
-   "product"
-  ],
-  "famConf": "title",
-  "skills": [
-   "sociale medier",
-   "kampagnestyring",
-   "content creation",
-   "eventplanlægning",
-   "dataanalyse"
-  ],
-  "industry": "Underholdning",
-  "postedAt": "2026-11-05T12:10:17+00:00",
-  "deadlineAt": "2026-11-26T23:59:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du hjælper med at planlægge og udføre sociale medie-kampagner for nye spilprodukter, herunder indhold til Instagram og TikTok. Du er også med til at planlægge og gennemføre lanceringsevents og følge op med analyser af resultaterne.",
-  "req": null,
-  "url": "https://karriere.danskespil.dk/jobs/8672144-student-assistant-social-media-and-event-planning",
-  "enrichedBy": "ai",
-  "studies": [
-   "kommunikation og kultur",
-   "digital marketing",
-   "erhvervsøkonomi",
-   "medievidenskab",
-   "informationsvidenskab",
-   "eventmanagement",
-   "brand og strategisk kommunikation",
-   "digital design"
-  ],
-  "why": "Jobbet kræver kendskab til sociale medier, kommunikation og events, hvilket passer til marketing- og kommunikationsuddannelser.",
-  "openToAll": false,
-  "id": "xf9a212f94741",
-  "live": true
- },
- {
-  "title": "Student Assistant, Commercial",
-  "kind": "studiejob",
-  "co": "Danske Spil",
-  "city": "Brøndby",
-  "region": "kbh",
-  "hMin": 12,
-  "hMax": 16,
-  "danish": "no",
-  "fam": "bizdev",
-  "sec": [
-   "marketing",
-   "bi"
-  ],
-  "famConf": "title",
-  "skills": [
-   "salg og pitch",
-   "markedsanalyse",
-   "dataanalyse",
-   "AI-værktøjer",
-   "projektstyring"
-  ],
-  "industry": "Underholdning",
-  "postedAt": "2026-11-05T09:44:12+00:00",
-  "deadlineAt": "2026-11-26T23:59:00+00:00",
-  "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du hjælper med at udvikle nye spilprodukter fra idé til lancering og støtter salget med pitches og salgsmateriale. Du laver også konkurrentanalyser og analyserer salgs- og brugerdata.",
-  "req": null,
-  "url": "https://karriere.danskespil.dk/jobs/8670936-student-assistant-commercial",
-  "enrichedBy": "ai",
-  "studies": [
-   "erhvervsøkonomi",
-   "ha",
-   "cand.merc",
-   "markedsføring",
-   "global business engineering",
-   "datalogi"
-  ],
-  "why": "Jobbet kombinerer salg, markedsanalyse og forretningsudvikling, hvilket passer til økonomi-, handels- og markedsføringsuddannelser med en teknologisk vinkel.",
-  "openToAll": false,
-  "id": "x6bf20740118e",
   "live": true
  },
  {
@@ -6744,6 +7228,52 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x00dcc1a82b53",
+  "live": true
+ },
+ {
+  "openToAll": false,
+  "catFam": true,
+  "title": "Praktik forår 2027: Vil du være med til at udvikle Danmarks største aftenskole?",
+  "kind": "praktik",
+  "co": "FOF København og Nordsjælland",
+  "city": "Charlottenlund",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "education",
+  "sec": [
+   "marketing",
+   "public"
+  ],
+  "famConf": "title",
+  "skills": [
+   "målgruppeanalyse",
+   "dataanalyse",
+   "videoproduktion",
+   "videoredigering",
+   "sociale medier"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "StuderendeOnline.dk",
+  "blurb": "Praktikanten analyserer deltagerevalueringer og observerer hold for at udvikle målgruppesegmenter, tilbud og kommunikationskanaler. Den anden praktikant filmer, redigerer og planlægger indhold til sociale medier og følger, hvordan det virker.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3166859/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "medievidenskab",
+   "marketing",
+   "socialt entreprenørskab",
+   "sociologi",
+   "pædagogik",
+   "erhvervskommunikation"
+  ],
+  "why": "Jobbet kræver forståelse for målgrupper, kommunikation og indhold, som ligger tæt på disse uddannelser.",
+  "id": "xa076e0a6718c",
   "live": true
  },
  {
@@ -9211,6 +9741,57 @@
   "why": "Jobbet kræver dataanalyse, forståelse for forretningen og tværgående projektarbejde, hvilket passer til datafaglige, statistiske og it- og økonomiske studier.",
   "openToAll": false,
   "id": "x226b0b53d99e",
+  "live": true
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, samfundsvidenskab.",
+  "catFam": true,
+  "title": "Research And Development Intern",
+  "kind": "praktik",
+  "co": "OAM CONSULT ApS",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "plus",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "kildekritik",
+   "R",
+   "Excel",
+   "Stata",
+   "Power BI"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "StuderendeOnline.dk",
+  "blurb": "Man laver baggrundsresearch, finder litteratur og datakilder og opsummerer resultaterne til teamet. Afhængigt af sporet analyserer man kvalitative eller kvantitative data, eller er med til at udvikle og køre økonomiske modeller og simuleringer.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3166860/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "xb314d97a3fe6",
   "live": true
  },
  {
@@ -14945,50 +15526,6 @@
   "live": true
  },
  {
-  "openToAll": false,
-  "catFam": true,
-  "title": "Studentermedhjælper til Institut for Socialrådgiveruddannelse",
-  "kind": "studiejob",
-  "co": "Københavns Professionshøjskole",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 10,
-  "danish": "plus",
-  "fam": "social",
-  "sec": [
-   "software",
-   "marketing"
-  ],
-  "famConf": "title",
-  "skills": [
-   "Microsoft 365 Teams",
-   "Excel",
-   "SurveyXact",
-   "korrekturlæsning",
-   "litteratursøgning"
-  ],
-  "industry": "Jobportal for studerende",
-  "postedAt": null,
-  "deadlineAt": "2026-12-08T00:00:00+00:00",
-  "src": "StuderendeOnline.dk",
-  "blurb": "Du understøtter undervisere med digitale værktøjer, især Microsoft 365 Teams, og håndterer administrative opgaver som fremmødedata og undervisningsevalueringer. Du hjælper også med at planlægge arrangementer som konferencer og seminarer og med korrekturlæsning og litteratursøgning.",
-  "req": null,
-  "url": "https://studerendeonline.dk/job/3164567/?utm_source=studiematch.dk",
-  "enrichedBy": "ai",
-  "studies": [
-   "uddannelsesvidenskab",
-   "kommunikation",
-   "sociologi",
-   "statskundskab",
-   "pædagogik",
-   "socialrådgiveruddannelse"
-  ],
-  "why": "Jobbet kræver interesse for uddannelse, skriftlig kommunikation og dataarbejde, hvilket passer til samfundsfaglige og pædagogiske studier.",
-  "id": "x6c824384d841",
-  "live": true
- },
- {
   "studies": [
    "kommunikation",
    "journalistik",
@@ -16908,7 +17445,7 @@
   "catFam": true,
   "title": "Student Worker - Internal Project Management",
   "kind": "studiejob",
-  "co": "Siemens Gamesa Renewable Energy",
+  "co": "Omterra A/S",
   "city": "København",
   "region": "tre",
   "hMin": 0,
@@ -16952,7 +17489,7 @@
   "catFam": true,
   "title": "Student worker - Project Controlling Governance",
   "kind": "studiejob",
-  "co": "Siemens Gamesa Renewable Energy",
+  "co": "Omterra A/S",
   "city": "København",
   "region": "tre",
   "hMin": 0,
@@ -21041,64 +21578,6 @@
  },
  {
   "studies": [
-   "medicin",
-   "sygepleje",
-   "farmaci",
-   "sundhed",
-   "folkesundhed",
-   "fysioterapeut",
-   "ergoterapeut",
-   "bioanalytiker",
-   "jordemoder",
-   "radiograf",
-   "tandpleje",
-   "odontologi",
-   "statskundskab",
-   "samfundsvidenskab",
-   "sociologi",
-   "økonomi",
-   "politik",
-   "antropologi",
-   "samfundsfag",
-   "socialvidenskab"
-  ],
-  "why": "Arbejdsgiveren søger studerende inden for medicin og sundhed, samfundsvidenskab.",
-  "catFam": true,
-  "title": "Studentermedhjælper til databeskyttelse (GDPR)",
-  "kind": "studiejob",
-  "co": "Københavns Professionshøjskole",
-  "city": "København",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "plus",
-  "fam": "health",
-  "sec": [
-   "education",
-   "legal"
-  ],
-  "famConf": "title",
-  "skills": [
-   "GDPR",
-   "dokumentation",
-   "systematisk arbejde",
-   "samarbejde",
-   "detaljeorientering"
-  ],
-  "industry": "Jobportal for studerende",
-  "postedAt": null,
-  "deadlineAt": "2026-12-01T00:00:00+00:00",
-  "src": "StuderendeOnline.dk",
-  "blurb": "Du vedligeholder fortegnelser over behandling af personoplysninger i et GRC-system og følger op på tilsyn med databehandlere. Du hjælper også med at indsamle dokumentation, udarbejde rapporter og løse mindre GDPR-rådgivningsopgaver.",
-  "req": null,
-  "url": "https://studerendeonline.dk/job/3162010/?utm_source=studiematch.dk",
-  "enrichedBy": "ai",
-  "openToAll": false,
-  "id": "x63ae8ee13c8f",
-  "live": true
- },
- {
-  "studies": [
    "pædagog",
    "lærer",
    "pædagogik",
@@ -22622,7 +23101,7 @@
   "catFam": true,
   "title": "Student Worker - HR Services",
   "kind": "studiejob",
-  "co": "Siemens Gamesa Renewable Energy",
+  "co": "Omterra A/S",
   "city": "København",
   "region": "nj",
   "hMin": 8,
@@ -25121,7 +25600,7 @@
   "catFam": true,
   "title": "Studen Worker - HR Data, Automation & AI",
   "kind": "studiejob",
-  "co": "Siemens Gamesa Renewable Energy",
+  "co": "Omterra A/S",
   "city": "København",
   "region": "nj",
   "hMin": 8,
@@ -26317,7 +26796,7 @@
   "catFam": true,
   "title": "Student Worker - Wind turbine control",
   "kind": "studiejob",
-  "co": "Siemens Gamesa Renewable Energy",
+  "co": "Omterra A/S",
   "city": "København",
   "region": "kbh",
   "hMin": 0,

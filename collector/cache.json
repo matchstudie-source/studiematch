@@ -71913,5 +71913,340 @@
   ],
   "why": "Jobbet kræver erfaring som lærerstuderende og evner til at vejlede og lytte, hvilket passer til lærer- og pædagogikstudier.",
   "openToAll": false
+ },
+ "50d6e48cf60f9122a17af8a78ceb8f13c95e0384": {
+  "fam": "public",
+  "sec": [
+   "marketing",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "kommunikation",
+   "eventplanlægning",
+   "skriftlig dansk",
+   "mødeforberedelse",
+   "detaljeorientering"
+  ],
+  "blurb": "Du planlægger og afvikler events og erhvervstræf og udarbejder invitationer, programtekster og kommunikationsmateriale, fx på LinkedIn. Du forbereder også dagsordener, talepunkter og baggrundsnotater til møder med borgmestre og andre beslutningstagere.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "kommunikation",
+   "statskundskab",
+   "samfundsvidenskab",
+   "politik og administration",
+   "erhvervsøkonomi",
+   "journalistik"
+  ],
+  "why": "Jobbet kræver sikker dansk kommunikation og indsigt i politik og erhvervsliv, hvilket passer godt til samfunds- og kommunikationsfag.",
+  "openToAll": false
+ },
+ "a41ee4eb9b4129e11681c482f3aaaf394f9a4bb3": {
+  "fam": "operations",
+  "sec": [
+   "procurement",
+   "research"
+  ],
+  "danish": "required",
+  "hMin": 8,
+  "hMax": 8,
+  "skills": [
+   "MS Office",
+   "systematisk",
+   "struktureret"
+  ],
+  "blurb": "Du assisterer konservatorerne i Bevaringsafdelingen med fx passepartout-fremstilling, afstøvning, tilsyn med dataloggere og skadedyrsmonitorering. Du arkiverer tilstandsrapporter og søger efter og indkøber materialer til konserveringsværkstederne.",
+  "deadlineAt": "2026-12-16T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "konservering",
+   "kunsthistorie",
+   "kemi",
+   "arkæologi",
+   "materialevidenskab"
+  ],
+  "why": "Jobbet kræver viden om kunstværkers materialer og bevaring, som hører til konservering, kunsthistorie og naturvidenskab.",
+  "openToAll": false
+ },
+ "26b96a7583b60d86c642dd9a3d2f3b16a75820cc": {
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "social"
+  ],
+  "danish": "required",
+  "hMin": 14,
+  "hMax": 14,
+  "skills": [
+   "notatskrivning",
+   "researchopgaver",
+   "mødeforberedelse",
+   "koordinering",
+   "analytisk tænkning"
+  ],
+  "blurb": "Du forbereder rådmandens møder og dagsordener, skriver notater og researcher, og koordinerer besøg og bemærkninger til byråds- og magistratsmøder. Du hjælper også sekretariatet med sagsjournalisering og opfølgning på henvendelser.",
+  "deadlineAt": "2026-12-15T23:59:59+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "politologi",
+   "sociologi",
+   "offentlig administration",
+   "jura",
+   "økonomi",
+   "filosofi",
+   "historie"
+  ],
+  "why": "Jobbet kræver analytisk skriftlig formulering og politisk-strategisk forståelse, som samfundsvidenskabelige og humanistiske uddannelser træner.",
+  "openToAll": false
+ },
+ "ad7bf061225e672eddba8b524b8c9eabc1cbed01": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "analytisk evne",
+   "skriftlig formidling",
+   "sagsbehandling",
+   "Microsoft Office",
+   "struktureret arbejde"
+  ],
+  "blurb": "Du sætter dig ind i konkrete straffesager og aktindsigtssager, analyserer sagsakter og skriver oplæg og udkast til afgørelser. Du bistår også anklagerne og laver almindeligt kontorarbejde.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "retsvidenskab",
+   "statskundskab",
+   "kriminologi"
+  ],
+  "why": "Opgaverne går ud på juridisk sagsbehandling, analyse og skriftlige udkast til afgørelser, hvilket passer til jura og samfundsfag.",
+  "openToAll": false
+ },
+ "92d4ea221cc5ee796e8058ec54e8dfba68fbb0cc": {
+  "fam": "finance",
+  "sec": [
+   "operations",
+   "education"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "regnskab",
+   "økonomisystemer",
+   "dokumentation",
+   "struktureret arbejde"
+  ],
+  "blurb": "Du hjælper med den løbende regnskabsdrift og vejleder andre enheder i politiet i brugen af økonomisystemer. Du laver også dokumentation af regnskabsregler og forretningsgange samt beregninger og præsentationer i Excel og PowerPoint.",
+  "deadlineAt": "2026-12-16T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "økonomi",
+   "jura",
+   "statskundskab"
+  ],
+  "why": "Jobbet kræver regnskabsforståelse, Excel-arbejde og kendskab til økonomisystemer, hvilket passer godt til økonomiske uddannelser.",
+  "openToAll": false
+ },
+ "82f1efc829a4b94c69ec0cdb40a516b5cf6c4559": {
+  "fam": "legal",
+  "sec": [
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "analyse",
+   "skriftlig formidling",
+   "sagsbehandling",
+   "Microsoft Office",
+   "prioritering"
+  ],
+  "blurb": "Du sætter dig ind i konkrete straffesager, gennemgår sagsakter og analyserer oplysningerne. Du udarbejder udkast til afgørelser, oplæg til bødeforlæg, klagesager og aktindsigt.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "jura",
+   "statskundskab",
+   "kriminologi",
+   "politividenskab",
+   "samfundsvidenskab"
+  ],
+  "why": "Arbejdet kræver analytisk og skriftlig sagsbehandling af straffesager, hvilket ligger tæt på jura og samfundsfaglige uddannelser.",
+  "openToAll": false
+ },
+ "a151594fac090e629d3026e4110b9e09a24c58f2": {
+  "fam": "finance",
+  "sec": [
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "regnskab",
+   "Excel",
+   "økonomisystemer",
+   "dokumentation",
+   "struktureret arbejde"
+  ],
+  "blurb": "Du hjælper med den daglige regnskabsdrift, vejleder andre enheder i brugen af økonomisystemer og dokumenterer regnskabsregler og forretningsgange. Du laver også beregninger i Excel og administrative opgaver for kontoret.",
+  "deadlineAt": "2026-12-16T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "økonomi",
+   "regnskab",
+   "jura"
+  ],
+  "why": "Jobbet kræver forståelse for regnskab, økonomisystemer og regnskabsregler, som økonomiske uddannelser giver.",
+  "openToAll": false
+ },
+ "6bae1f9c22423672603f33a0c8e4c2077f9f06d0": {
+  "fam": "social",
+  "sec": [
+   "public",
+   "legal"
+  ],
+  "danish": "required",
+  "hMin": 20,
+  "hMax": 30,
+  "skills": [
+   "sagsbehandling",
+   "dokumentation",
+   "beskæftigelseslovgivning",
+   "mundtlig og skriftlig kommunik",
+   "samarbejde"
+  ],
+  "blurb": "Du forbereder borgersager, indhenter oplysninger og journalisérer i fagsystemer. Med tiden overtager du selvstændig sagsbehandling for borgere, der er langt fra arbejdsmarkedet.",
+  "deadlineAt": "2026-12-13T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "socialformidler",
+   "socialvidenskab",
+   "jura",
+   "psykologi",
+   "sociologi",
+   "pædagogik",
+   "statskundskab"
+  ],
+  "why": "Jobbet kræver viden om socialt arbejde, lovgivning og sagsbehandling, som disse uddannelser giver.",
+  "openToAll": false
+ },
+ "0dd4ffac46a0b1700e2ca2f990bec84f8e731f24": {
+  "fam": "social",
+  "sec": [
+   "health"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "personlig pleje",
+   "medicingivning",
+   "omsorg for ældre",
+   "mødestabilitet",
+   "samarbejde"
+  ],
+  "blurb": "Du hjælper ældre beboere med personlig pleje, måltider og medicingivning samt praktiske og sociale aktiviteter på Centerparken i Videbæk. Vagterne kan være dag-, aften- eller nattevagter, og du kan vælge faste weekendforløb eller løse vagter.",
+  "deadlineAt": "2026-12-18T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "sygepleje",
+   "ergoterapi",
+   "fysioterapi",
+   "pædagogik",
+   "socialt arbejde",
+   "psykologi",
+   "folkesundhed",
+   "medicin"
+  ],
+  "why": "Arbejdet kræver omsorg, samarbejde og viden om pleje og sundhed, som studier i sundhed, pædagogik og socialt arbejde giver.",
+  "openToAll": false
+ },
+ "56a63a890157b12f6acead1148d448d90ae55922": {
+  "fam": "education",
+  "sec": [
+   "marketing",
+   "public"
+  ],
+  "danish": "required",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "målgruppeanalyse",
+   "dataanalyse",
+   "videoproduktion",
+   "videoredigering",
+   "sociale medier"
+  ],
+  "blurb": "Praktikanten analyserer deltagerevalueringer og observerer hold for at udvikle målgruppesegmenter, tilbud og kommunikationskanaler. Den anden praktikant filmer, redigerer og planlægger indhold til sociale medier og følger, hvordan det virker.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "uddannelsesvidenskab",
+   "kommunikation",
+   "medievidenskab",
+   "marketing",
+   "socialt entreprenørskab",
+   "sociologi",
+   "pædagogik",
+   "erhvervskommunikation"
+  ],
+  "why": "Jobbet kræver forståelse for målgrupper, kommunikation og indhold, som ligger tæt på disse uddannelser.",
+  "openToAll": false
+ },
+ "afbe66752f44ba4303fd0727e7c997ac4ab06cfa": {
+  "fam": "pmo",
+  "sec": [],
+  "danish": "plus",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "kildekritik",
+   "R",
+   "Excel",
+   "Stata",
+   "Power BI"
+  ],
+  "blurb": "Man laver baggrundsresearch, finder litteratur og datakilder og opsummerer resultaterne til teamet. Afhængigt af sporet analyserer man kvalitative eller kvantitative data, eller er med til at udvikle og køre økonomiske modeller og simuleringer.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, samfundsvidenskab.",
+  "openToAll": false
  }
 }
