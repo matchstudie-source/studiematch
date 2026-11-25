@@ -32,6 +32,9 @@ let jobs = JSON.parse(fs.readFileSync(path.join(here, "..", "site", "data", "job
 try { const d = await (await fetch(`${SITE}/api/jobs`)).json(); const hidden = new Set(d.hidden || []); jobs = [...(d.jobs || []), ...jobs].filter((j) => !hidden.has(j.id)); } catch { /* direkte opslag og skjulte job er en bonus */ }
 jobs = jobs.filter((j) => j && j.id && j.title && site.FAM[j.fam]).map(toLive).filter((j) => j.deadline == null || j.deadline >= 1);
 
+// Ryd gamle data op først (aktivitet kobles fra brugere efter 6 måneder og slettes efter 12)
+try { const c = await api("cron/cleanup", {}); console.log(`Oprydning: ${c.unlinked} klik koblet fra brugere, ${c.deleted} gamle klik slettet`); }
+catch (e) { console.log("Oprydning fejlede:", e.message); }
 const { users, mail } = await api("cron/subscribers");
 if (!mail) console.log("Jobalarmer: RESEND_API_KEY mangler i Cloudflare, så mails kan ikke sendes.");
 const alerts = [];

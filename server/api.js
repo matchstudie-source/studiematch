@@ -450,6 +450,19 @@ async function route(ctx, path, method) {
       200, { "Set-Cookie": cookie });
   }
   /* ----- jobalarmer: kaldes af GitHub efter hver jobindsamling ----- */
+  /* ----- oprydning (kaldes efter hver jobhentning): vi gemmer ikke data længere end nødvendigt ----- */
+  if (path === "cron/cleanup" && method === "POST") {
+    if (!cronOk(env, req)) return err("Ikke adgang", 401);
+    const t = now(), D = 864e5;
+    const r = await db.batch([
+      db.prepare("UPDATE events SET user_id=NULL WHERE user_id IS NOT NULL AND ts < ?").bind(t - 183 * D),
+      db.prepare("DELETE FROM events WHERE ts < ?").bind(t - 365 * D),
+      db.prepare("DELETE FROM alert_sent WHERE ts < ?").bind(t - 365 * D),
+      db.prepare("DELETE FROM password_resets WHERE expires_at < ?").bind(t - D),
+      db.prepare("DELETE FROM sessions WHERE expires_at < ?").bind(t),
+    ]);
+    return json({ unlinked: r[0].meta?.changes || 0, deleted: r[1].meta?.changes || 0 });
+  }
   if (path === "cron/subscribers" && method === "GET") {
     if (!cronOk(env, req)) return err("Ingen adgang", 401);
     const rows = await db.prepare(`SELECT id, email, name, profile, state, last_alert FROM users
@@ -598,6 +611,8 @@ async function route(ctx, path, method) {
     await db.batch([
       db.prepare("DELETE FROM sessions WHERE user_id=?").bind(user.id),
       db.prepare("UPDATE events SET user_id=NULL WHERE user_id=?").bind(user.id),
+      db.prepare("DELETE FROM alert_sent WHERE user_id=?").bind(user.id),
+      db.prepare("DELETE FROM password_resets WHERE user_id=?").bind(user.id),
       db.prepare("DELETE FROM users WHERE id=?").bind(user.id),
     ]);
     return clearCookies(json({ ok: true }), new URL(req.url).host);
@@ -741,6 +756,8 @@ async function admin(ctx, path, method, me) {
       await db.batch([
         db.prepare("DELETE FROM sessions WHERE user_id=?").bind(id),
         db.prepare("UPDATE events SET user_id=NULL WHERE user_id=?").bind(id),
+        db.prepare("DELETE FROM alert_sent WHERE user_id=?").bind(id),
+        db.prepare("DELETE FROM password_resets WHERE user_id=?").bind(id),
         db.prepare("DELETE FROM users WHERE id=?").bind(id),
       ]);
       return json({ ok: true });
