@@ -24,7 +24,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | ATP | Sagsbehandler til international kontrol (projektansættelse – 1 år) | ikke et studiejob |
-| Alka | Studentaktuarie, Företagsmarknad | ikke et studiejob |
 | NIRAS | Unsolicited intern applications | ikke et studiejob |
 | Sweco Danmark | Interns for Sweco’s International Department | ikke et studiejob |
 | Per Aarsleff | Kom i praktik som el-installatør i foråret 2027 | ikke et studiejob |
@@ -36,5 +35,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Kræftens Bekæmpelse | Postdoctoral Fellows and PhD Students - Genome Stress and Cell State - Nussenzweig Group | ikke et studiejob |
 | Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
+| StuderendeOnline.dk | To studentermedhjælpere til AU Summer University | ikke et studiejob |
 | StuderendeOnline.dk | Rådet for Sikker Trafik søger: ung-til-ung underviser til meningsfuldt studiejob | ikke et studiejob |
 | StuderendeOnline.dk | Praktikplats hos ECIT! | ikke et studiejob |
