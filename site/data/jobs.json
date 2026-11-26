@@ -1293,35 +1293,6 @@
   "whyEn": "The job requires professional knowledge of high-voltage power, power transmission and grid simulation, which is at the core of electrical and energy engineering programmes."
  },
  {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "kind": "studiejob",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
-  "live": true,
-  "blurbEn": "Can you see yourself in a student job where you get responsibility, influence and insight into project management?"
- },
- {
   "title": "Studentermedhjælper til Culture & Leadership",
   "kind": "studiejob",
   "co": "Norlys",
@@ -1350,6 +1321,35 @@
   "id": "x77933f416508",
   "live": true,
   "blurbEn": "Student assistant for culture, leadership and organisational development, Silkeborg | Expected start around February 2027. Would you like to help strengthen culture, leadership and organisational development in the Norlys Group?"
+ },
+ {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "kind": "studiejob",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
+  "live": true,
+  "blurbEn": "Can you see yourself in a student job where you get responsibility, influence and insight into project management?"
  },
  {
   "title": "Studentermedhjælper til Management Support i CTO Kontoret",
@@ -4856,51 +4856,6 @@
   "whyEn": "The job requires pedagogical and social understanding of people with intellectual disabilities and a recovery-oriented approach to support."
  },
  {
-  "title": "Studiemedarbejdere til Døgntilbuddet Attruphøj",
-  "kind": "studiejob",
-  "co": "Aalborg Kommune",
-  "city": "Aalborg",
-  "region": "nj",
-  "hMin": 2,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "social",
-  "sec": [
-   "health",
-   "education"
-  ],
-  "famConf": "text",
-  "skills": [
-   "empati",
-   "relationsarbejde",
-   "samarbejde",
-   "dokumentation",
-   "kørekort"
-  ],
-  "industry": "Offentlig",
-  "postedAt": null,
-  "deadlineAt": "2027-01-03T23:59:00+00:00",
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du støtter voksne med erhvervet hjerneskade i hverdagen, både pædagogisk og sundhedsfagligt, enten tæt på én beboer eller i fælles aktiviteter. Arbejdet tager udgangspunkt i borgerens ressourcer og mål og dokumenteres fagligt.",
-  "req": null,
-  "url": "https://aalborg.career.emply.com/ad/studiemedarbejdere-til-dogntilbuddet-attruphoj/0n11r7",
-  "enrichedBy": "ai",
-  "studies": [
-   "pædagogik",
-   "socialt arbejde",
-   "psykologi",
-   "sygepleje",
-   "ergoterapi",
-   "fysioterapi"
-  ],
-  "why": "Uddannelserne giver den faglige baggrund for omsorg, rehabilitering og relationsarbejde med borgere med omfattende støttebehov.",
-  "openToAll": false,
-  "id": "x80dc7b3ce25f",
-  "live": true,
-  "blurbEn": "You support adults with acquired brain injury in daily life, both pedagogically and in health-related ways, either closely with one resident or in shared activities. The work is based on the resident's resources and goals and is professionally documented.",
-  "whyEn": "The programmes provide the professional background for care, rehabilitation and relationship work with residents who have extensive support needs."
- },
- {
   "title": "SYSTEMATISK OG KVALITETSBEVIST STUDENTERMEDHJÆLPER MED FLAIR FOR FORVALTNINGSRET SØGES TIL SAGSBEHANDLING I FREDERIKSBERG KOMMUNE.",
   "kind": "studiejob",
   "co": "Frederiksberg Kommune",
@@ -6582,6 +6537,52 @@
   "id": "x95a6233546c7",
   "live": true,
   "blurbEn": "Would you like to work with prevention?"
+ },
+ {
+  "title": "Student Assistant",
+  "kind": "studiejob",
+  "co": "Ørsted",
+  "city": "Gentofte, DK",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "no",
+  "fam": "hr",
+  "sec": [
+   "operations",
+   "bi"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Excel",
+   "dataanalyse",
+   "procesforbedring",
+   "dokumentation",
+   "engelsk"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-26T00:00:00+00:00",
+  "deadlineAt": "2026-12-13T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du opdaterer, validerer og analyserer data om medarbejdere og løn, herunder berettigelse og omkostningsberegninger. Du vedligeholder procesdokumentation og hjælper ansatte og ledere med spørgsmål om HR-processer og datafejl.",
+  "req": null,
+  "url": "https://applyforjob.orsted.com/job/Gentofte-Student-Assistant/1378569457/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "personaleledelse",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "psykologi",
+   "business analytics",
+   "datalogi"
+  ],
+  "why": "Jobbet kombinerer HR-processer med dataanalyse og Excel, hvilket passer til HR-, økonomi- og analysefag.",
+  "openToAll": false,
+  "id": "x7161718b6f7e",
+  "live": true,
+  "blurbEn": "You update, validate, and analyze employee and payroll data, including eligibility and cost calculations. You maintain process documentation and help employees and managers with HR process questions and data errors.",
+  "whyEn": "The job combines HR processes with data analysis and Excel, which suits students in HR, economics, and analytics."
  },
  {
   "title": "Student Assistant - Change & Business Operations",
@@ -9034,6 +9035,72 @@
   "live": true,
   "blurbEn": "You advise current and prospective students in political science and social studies by email, phone, and in personal meetings. You plan and hold group guidance as online presentations and information meetings, and help with practical tasks at recruitment events.",
   "whyEn": "The job requires knowledge of the rules and study regulations in political science and social studies; students in those subjects know the study environment and can advise others about it."
+ },
+ {
+  "studies": [
+   "ha",
+   "erhvervsøkonomi",
+   "business",
+   "marketing",
+   "markedsføring",
+   "cand.merc",
+   "handel",
+   "global business",
+   "kommunikation",
+   "journalistik",
+   "medie",
+   "sprog",
+   "engelsk",
+   "tysk",
+   "fransk",
+   "spansk",
+   "arkitekt",
+   "design",
+   "kunst",
+   "statskundskab",
+   "samfundsvidenskab",
+   "sociologi",
+   "økonomi",
+   "politik",
+   "antropologi",
+   "samfundsfag",
+   "socialvidenskab"
+  ],
+  "why": "Arbejdsgiveren søger studerende inden for marketing og business, sprog og kommunikation, arkitektur, kunst og design.",
+  "catFam": true,
+  "title": "Praktikanter til Marketing i Norlys - Aarhus eller København, forår 2027",
+  "kind": "praktik",
+  "co": "Norlys",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "plus",
+  "fam": "marketing",
+  "sec": [
+   "product"
+  ],
+  "famConf": "title",
+  "skills": [
+   "digital marketing",
+   "performanceanalyse",
+   "kampagneudvikling",
+   "CRM",
+   "grafisk produktion"
+  ],
+  "industry": "Jobportal for studerende",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "StuderendeOnline.dk",
+  "blurb": "Du opsætter og optimerer norlys.dk, callme.dk og sociale medier og producerer materiale til kampagner og events. Du analyserer kampagneresultater og omsætter dem til konkrete forbedringsforslag.",
+  "req": null,
+  "url": "https://studerendeonline.dk/job/3158231/?utm_source=studiematch.dk",
+  "enrichedBy": "ai",
+  "openToAll": false,
+  "id": "x9237d23a8377",
+  "live": true,
+  "whyEn": "The employer is looking for students in marketing and business, languages and communication, architecture, art and design.",
+  "blurbEn": "You set up and optimize norlys.dk, callme.dk, and social media, and produce material for campaigns and events. You analyze campaign results and turn them into concrete improvement suggestions."
  },
  {
   "studies": [
@@ -50525,7 +50592,8 @@
   "openToAll": false,
   "id": "xc50946a3a229",
   "live": true,
-  "whyEn": "The employer is looking for students in economics and auditing, social science."
+  "whyEn": "The employer is looking for students in economics and auditing, social science.",
+  "blurbEn": "You help with smaller bookkeeping tasks, accounting support, and administration for small and medium-sized businesses. You join audit teams, meet clients, and learn audit practice through a training program."
  },
  {
   "studies": [
@@ -50583,7 +50651,8 @@
   "openToAll": false,
   "id": "xcad333532473",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication, humanities and social sciences."
+  "whyEn": "The employer is looking for students in language and communication, humanities and social sciences.",
+  "blurbEn": "You produce and maintain content about We Do Democracy's democracy projects for the website, LinkedIn, and other channels. You also contribute to the communication strategy and quality-check the content published."
  },
  {
   "studies": [
@@ -50630,7 +50699,8 @@
   "openToAll": false,
   "id": "x9c9f4cbd7444",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, engineering and technology.",
+  "blurbEn": "You work with an experienced IT developer on software development using open-source tools such as Java, Spring Boot, and React. The internship content is agreed on together, and the company prefers to have at least two interns at a time."
  },
  {
   "studies": [
@@ -50678,7 +50748,9 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x5a82f7bc70aa",
-  "live": true
+  "live": true,
+  "blurbEn": "You work on nutrition and health projects, e.g., content for ernaeringsfokus.dk, Madskoler, and events. You dive into topics, summarize knowledge, and develop material with support from a small team.",
+  "whyEn": "The employer is looking for students in food and veterinary, agriculture, and nature, climate, environment, and energy."
  },
  {
   "studies": [
@@ -50727,7 +50799,8 @@
   "openToAll": false,
   "id": "x336aa68035da",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, engineering and technology.",
+  "blurbEn": "You help develop and maintain REST and GraphQL APIs and integrations with, among others, payroll systems, time registration, and job portals. The work is done in Node.js and TypeScript, with the databases PostgreSQL and MariaDB."
  },
  {
   "catFam": true,
@@ -50770,7 +50843,9 @@
   "why": "Jobbet kræver forståelse for psykisk sygdom, relationsarbejde og pædagogisk støtte, som især uddannelser i psykologi, pædagogik og socialt arbejde giver.",
   "openToAll": false,
   "id": "x465169396e76",
-  "live": true
+  "live": true,
+  "blurbEn": "You support young people with eating disorders during meals and in everyday life, and act as a role model in a fixed meal team. You receive supervision in dialectical behavior therapy and take part in collaborative meetings with the interdisciplinary staff.",
+  "whyEn": "The job requires understanding of mental illness, relationship work, and pedagogical support, which education in psychology, pedagogy, and social work especially provides."
  },
  {
   "catFam": true,
@@ -50810,7 +50885,9 @@
   "why": "Jobbet handler om relationer, trivsel og fritidsliv for unge, hvilket passer godt til uddannelser inden for pædagogik og socialt arbejde.",
   "openToAll": true,
   "id": "x0c10b3a2d11a",
-  "live": true
+  "live": true,
+  "blurbEn": "You are present at a youth club for 13–17-year-olds, where you create safe frameworks and relationships and help with leisure activities. You also take part in events and trips outside the club.",
+  "whyEn": "The job is about relationships, well-being, and leisure life for young people, which fits well with education in pedagogy and social work."
  },
  {
   "studies": [
@@ -50860,7 +50937,8 @@
   "openToAll": false,
   "id": "x9fc83c2f0285",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication, humanities."
+  "whyEn": "The employer is looking for students in language and communication, humanities.",
+  "blurbEn": "You work on press relations, research tasks, versioning, press contact, and newsletters together with Epicent's PR specialists. You also write for social media and receive professional guidance along the way."
  },
  {
   "studies": [
@@ -50916,7 +50994,8 @@
   "openToAll": false,
   "id": "xe6f127014d85",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, natural science, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, natural science, engineering and technology.",
+  "blurbEn": "You work in the development team on real projects, e.g., data models for BI analysis, JIRA dashboards, and prototypes for automated testing of embedded software. You get a mentor and work alongside experienced developers."
  },
  {
   "studies": [
@@ -50966,7 +51045,9 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x6baf548bce58",
-  "live": true
+  "live": true,
+  "blurbEn": "You stand watch on the bridge and in the engine room of a ferry on the Baltic Sea routes as part of your internship. The program alternates between school periods on land and internship at sea.",
+  "whyEn": "The employer is looking for students in humanities, production and logistics, and machinery and design."
  },
  {
   "openToAll": false,
@@ -51012,7 +51093,9 @@
   ],
   "why": "Jobbet kræver ingeniør- og miljøfaglig viden om vand og klima samt færdigheder i modellering, data og software.",
   "id": "xddf9a7c73923",
-  "live": true
+  "live": true,
+  "blurbEn": "You may be connected to DHI's projects on water and environment as an intern, student assistant, or collaborator on a thesis. The work involves applying professional knowledge to modeling, data, and digital solutions for water projects.",
+  "whyEn": "The job requires engineering and environmental knowledge of water and climate, as well as skills in modeling, data, and software."
  },
  {
   "studies": [
@@ -51065,7 +51148,8 @@
   "openToAll": false,
   "id": "x034732a2c200",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication, humanities, architecture, art and design."
+  "whyEn": "The employer is looking for students in language and communication, humanities, architecture, art and design.",
+  "blurbEn": "You develop, produce, and evaluate content for Frej's social media, and work on press relations and making the organization's work on green food communication visible. You write texts and reportages and take part in communication advisory on projects."
  },
  {
   "studies": [
@@ -51121,7 +51205,8 @@
   "openToAll": false,
   "id": "xc9c917179d55",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication, humanities, architecture, art and design."
+  "whyEn": "The employer is looking for students in language and communication, humanities, architecture, art and design.",
+  "blurbEn": "You work in the communication team with templates, presentations, content, and campaigns for the website, social media, and intranet. You also work on graphic design for architecture projects, e.g., wayfinding and branded space, from brief to delivery."
  },
  {
   "studies": [
@@ -51174,7 +51259,9 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "xb880714e5f99",
-  "live": true
+  "live": true,
+  "blurbEn": "You help clients implement Microsoft Business Central and ERP solutions and advise them on wishes and changes. You take part in client meetings and workshops and get to know the system along the way.",
+  "whyEn": "The employer is looking for students in economics and auditing, IT."
  },
  {
   "studies": [
@@ -51215,7 +51302,8 @@
   "openToAll": false,
   "id": "xbb4ceed59656",
   "live": true,
-  "whyEn": "The employer is looking for students in law."
+  "whyEn": "The employer is looking for students in law.",
+  "blurbEn": "You help with legal research, analyses, and memos, prepare hearings and client meetings, and draft or review legal documents and contracts. You work on transactions, conflict management, and corporate law advice alongside an experienced colleague."
  },
  {
   "studies": [
@@ -51256,7 +51344,8 @@
   "openToAll": false,
   "id": "x205ee349c1bc",
   "live": true,
-  "whyEn": "The employer is looking for students in law."
+  "whyEn": "The employer is looking for students in law.",
+  "blurbEn": "You do legal research, analyses, and memos, and help prepare meetings and hearings. You also work on drafts of legal documents and contracts and follow transactions and business law advice."
  },
  {
   "catFam": true,
@@ -51295,7 +51384,9 @@
   "why": "Jobbet kræver statik, konstruktion og beregning af bygningsdele, og det er netop det, bygnings- og civilingeniørstuderende arbejder med.",
   "openToAll": false,
   "id": "x044e91c94a84",
-  "live": true
+  "live": true,
+  "blurbEn": "You review drawings, structural assumptions and project materials and make calculations for quotes. You talk with clients and partners about technical solutions and work with quality management and document handling.",
+  "whyEn": "The job involves structural analysis, construction and calculation of building components, which is exactly what building and civil engineering students work with."
  },
  {
   "studies": [
@@ -51336,7 +51427,8 @@
   "openToAll": false,
   "id": "xfaaccb9185e9",
   "live": true,
-  "whyEn": "The employer is looking for students in construction and building engineering."
+  "whyEn": "The employer is looking for students in construction and building engineering.",
+  "blurbEn": "You review projects, prepare quote calculations and talk with clients and partners. You also help with quality management, document handling and discussions about product development."
  },
  {
   "studies": [
@@ -51382,7 +51474,8 @@
   "openToAll": true,
   "id": "x4a40b12b8199",
   "live": true,
-  "whyEn": "The employer is looking for students in social sciences."
+  "whyEn": "The employer is looking for students in social sciences.",
+  "blurbEn": "You approach passers-by in Copenhagen to sign them up as members of Børns Vilkår at selected locations. You work alongside colleagues and receive introduction and ongoing training."
  },
  {
   "studies": [
@@ -51435,7 +51528,8 @@
   "openToAll": false,
   "id": "xe49e43fed9b6",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, architecture, arts and design, engineering, and technology."
+  "whyEn": "The employer is looking for students in IT, architecture, arts and design, engineering, and technology.",
+  "blurbEn": "You take part in brainstorming and concept development and design posts, apps, graphics and events across platforms. You join the design team and gradually take responsibility for your own tasks from start to delivery."
  },
  {
   "studies": [
@@ -51500,7 +51594,8 @@
   "openToAll": false,
   "id": "x7ad1ddd2dacd",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business, IT, languages and communication."
+  "whyEn": "The employer is looking for students in marketing and business, IT, languages and communication.",
+  "blurbEn": "You create social media content and manage social media accounts for clients, including Facebook and Instagram. You research and analyze for campaigns, work with SEO, SEM and influencer collaborations, and help run events."
  },
  {
   "studies": [
@@ -51560,7 +51655,8 @@
   "openToAll": false,
   "id": "x4e811d2429d8",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business, language and communication, and humanities."
+  "whyEn": "The employer is looking for students in marketing and business, language and communication, and humanities.",
+  "blurbEn": "You write press releases, social media posts, and text for videos and brochures for 2–4 clients. You also help with press contact, events, influencer collaborations, and ongoing media and KPI reports."
  },
  {
   "studies": [
@@ -51600,7 +51696,8 @@
   "openToAll": false,
   "id": "xf2e0b8dd839d",
   "live": true,
-  "whyEn": "The employer is looking for students in engineering and technology."
+  "whyEn": "The employer is looking for students in engineering and technology.",
+  "blurbEn": "You work in project teams with experienced building designers and engineers on electrical construction projects and take part in collaboration between client, contractor and architect. You receive introduction and guidance along the way, and tasks are adapted to your development."
  },
  {
   "studies": [
@@ -51649,7 +51746,8 @@
   "openToAll": false,
   "id": "x671a63209922",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, engineering and technology.",
+  "blurbEn": "You develop backend and features for Morningtrain's internal tools, e.g. a booking system and internal platforms, after training in best practices. Later in the internship, you may work on client projects under close guidance and quality assurance from your mentor."
  },
  {
   "studies": [
@@ -51698,7 +51796,8 @@
   "openToAll": false,
   "id": "x15bbc2cdda3c",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, engineering and technology.",
+  "blurbEn": "You develop website frontends from design files using HTML, CSS (SASS), JavaScript and PHP. You work on smaller internal projects and can later take on client projects under your mentor's quality assurance."
  },
  {
   "studies": [
@@ -51743,7 +51842,8 @@
   "openToAll": false,
   "id": "x5107a85c8f4f",
   "live": true,
-  "whyEn": "The employer is looking for students in engineering and technology, chemistry and biotech."
+  "whyEn": "The employer is looking for students in engineering and technology, chemistry and biotech.",
+  "blurbEn": "You work on a development project in Research and Development at AAK in Aarhus as an intern, bachelor's or master's student. Projects must create value for the company, and you get a supervisor for day-to-day work."
  },
  {
   "studies": [
@@ -51792,7 +51892,8 @@
   "openToAll": false,
   "id": "xcc080f548b21",
   "live": true,
-  "whyEn": "The employer is looking for students in administration, marketing and business."
+  "whyEn": "The employer is looking for students in administration, marketing and business.",
+  "blurbEn": "You identify needs among families and students, find a suitable tutor and sell tutoring programs. You also follow up that the sessions take place and handle general customer service tasks."
  },
  {
   "studies": [
@@ -51836,7 +51937,8 @@
   "openToAll": false,
   "id": "x6141cecb1a4d",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication."
+  "whyEn": "The employer is looking for students in language and communication.",
+  "blurbEn": "You write blog posts, landing pages and social media posts for GoTutors' website and platforms. The work also includes content analysis and SEO, so the texts get read and rank high on Google."
  },
  {
   "studies": [
@@ -51890,7 +51992,8 @@
   "openToAll": false,
   "id": "x0ffa6f331104",
   "live": true,
-  "whyEn": "The employer is looking for students in economics and auditing, social science."
+  "whyEn": "The employer is looking for students in economics and auditing, social science.",
+  "blurbEn": "You assist with bookkeeping, credit card transactions and invoicing nationally and internationally, and work on optimizing processes in Business Central. In time, you may take part in budgets, forecasts and financial reports."
  },
  {
   "studies": [
@@ -51941,7 +52044,8 @@
   "openToAll": false,
   "id": "xf97823dd41e0",
   "live": true,
-  "whyEn": "The employer is looking for students in medicine and health."
+  "whyEn": "The employer is looking for students in medicine and health.",
+  "blurbEn": "You are a student ambassador for DSA at your educational institution and help fellow students with questions about student membership at a monthly stand. You promote DSA's talks, organize an event and run competitions at the institution."
  },
  {
   "studies": [
@@ -51998,7 +52102,8 @@
   "openToAll": false,
   "id": "xd4e04a4c93ba",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, natural science, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, natural science, engineering and technology.",
+  "blurbEn": "You handle IT support, computer setup and user administration, as well as operation and security of systems. You document and standardize work processes according to ISO 27000 and contribute to digitalization projects and the website/intranet."
  },
  {
   "studies": [
@@ -52045,7 +52150,8 @@
   "openToAll": false,
   "id": "x2653903f48ff",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business."
+  "whyEn": "The employer is looking for students in marketing and business.",
+  "blurbEn": "You work on concrete projects in production, finance, sustainability or IT and gain insight into how an international company operates. The internship lasts 3–6 months and can be adapted to your study plan."
  },
  {
   "openToAll": false,
@@ -52089,7 +52195,9 @@
   ],
   "why": "Jobbet kræver teknisk viden om elektronik, software og test, som er kerneområderne i ingeniøruddannelserne.",
   "id": "x0592f6664600",
-  "live": true
+  "live": true,
+  "blurbEn": "You work in a small development team building decentralized power control for power plants, e.g. by creating automatic functional tests or writing software in C/C++. Testing is partly done on real test equipment, including generator sets.",
+  "whyEn": "The job requires technical knowledge of electronics, software and testing, which are core areas of engineering programs."
  },
  {
   "title": "Fittingmodel XL - Part Time",
@@ -52129,7 +52237,9 @@
   "why": "Jobbet kræver forståelse for tøjets konstruktion, materialer og passform, som uddannelser inden for tekstil og mode dækker.",
   "openToAll": false,
   "id": "xee30156bc90e",
-  "live": true
+  "live": true,
+  "blurbEn": "You try on clothes from the women's collections and give feedback on fit. The work takes place on Ryesgade in Nørrebro, and hours vary from week to week on weekdays between 8 a.m. and 4 p.m.",
+  "whyEn": "The job requires understanding of garment construction, materials and fit, which textile and fashion programs cover."
  },
  {
   "studies": [
@@ -52175,7 +52285,8 @@
   "openToAll": false,
   "id": "xce91faa6d5ae",
   "live": true,
-  "whyEn": "The employer is looking for students in economics and auditing."
+  "whyEn": "The employer is looking for students in economics and auditing.",
+  "blurbEn": "You conduct sales conversations with new private and business customers and train them in Saxo's financial products and trading platforms. You also take part in meetings with VIP clients together with Relationship Managers and keep up to date on financial markets."
  },
  {
   "openToAll": false,
@@ -52218,7 +52329,9 @@
   ],
   "why": "Opgaverne kræver viden om bogholderi, regnskab og kontrolprocesser, som kernefagene på disse uddannelser dækker.",
   "id": "x07c709392e63",
-  "live": true
+  "live": true,
+  "blurbEn": "You get your own portfolio of bookkeeping tasks and help with incoming and outgoing orders in the company's finance department. The work includes registration, follow-up and control, including rules to prevent errors and fraud.",
+  "whyEn": "The tasks require knowledge of bookkeeping, accounting and control processes, which are core subjects in these programs."
  },
  {
   "studies": [
@@ -52276,7 +52389,8 @@
   "openToAll": false,
   "id": "x01640a2dcb56",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business, language and communication, and humanities."
+  "whyEn": "The employer is looking for students in marketing and business, language and communication, and humanities.",
+  "blurbEn": "You produce content such as texts, images and videos for the agency's own channels, e.g. website, social media and ads. You help develop the marketing strategy together with the agency director and the social media team."
  },
  {
   "studies": [
@@ -52330,7 +52444,8 @@
   "openToAll": false,
   "id": "xa8da287911e5",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business, languages and communication."
+  "whyEn": "The employer is looking for students in marketing and business, languages and communication.",
+  "blurbEn": "You create content for LinkedIn and other channels, update the website, and prepare newsletters. You take part in the company's employer branding and help prepare for and attend trade fairs."
  },
  {
   "studies": [
@@ -52374,7 +52489,8 @@
   "openToAll": false,
   "id": "xc2b2abd9a589",
   "live": true,
-  "whyEn": "The employer is looking for students in administration and law."
+  "whyEn": "The employer is looking for students in administration and law.",
+  "blurbEn": "You search legal literature and case law, write notes and drafts of court submissions and agreements, and take part in client meetings and court hearings. You work across the firm's legal areas, with a mentor as your main contact."
  },
  {
   "studies": [
@@ -52426,7 +52542,8 @@
   "openToAll": false,
   "id": "x1ece461cff5e",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication, humanities."
+  "whyEn": "The employer is looking for students in language and communication, humanities.",
+  "blurbEn": "You call companies in the industry and sign them up for Nordiske Medier's digital newsletters, and you introduce clients to the media. You work in AboTeam to develop the subscription business and can suggest your own growth ideas."
  },
  {
   "studies": [
@@ -52485,7 +52602,8 @@
   "openToAll": false,
   "id": "xded830362d39",
   "live": true,
-  "whyEn": "The employer is looking for students in economics and auditing, marketing and business, social science."
+  "whyEn": "The employer is looking for students in economics and auditing, marketing and business, social science.",
+  "blurbEn": "You work as a consultant helping companies digitize finance functions in the ERP system Microsoft Dynamics 365 Business Central, e.g. budgeting, accounting flows, and project finance. You help tailor the system to clients' accounting and reporting needs together with experienced consultants."
  },
  {
   "studies": [
@@ -52536,7 +52654,9 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x28e3944ad78b",
-  "live": true
+  "live": true,
+  "blurbEn": "You reach out to potential clients by phone, email, and LinkedIn, hold initial sales conversations, and update the CRM system. You also help schedule client meetings and prepare sales presentations.",
+  "whyEn": "The employer is looking for students in marketing and business, production, and logistics."
  },
  {
   "studies": [
@@ -52588,7 +52708,8 @@
   "openToAll": false,
   "id": "x4e66e990a744",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business, languages and communication."
+  "whyEn": "The employer is looking for students in marketing and business, languages and communication.",
+  "blurbEn": "You write texts, do graphic design tasks, and update websites for the company's e-commerce solutions. You also work with social media and advertising and help colleagues with daily tasks."
  },
  {
   "studies": [
@@ -52648,7 +52769,8 @@
   "openToAll": false,
   "id": "x85b3f57a0b2c",
   "live": true,
-  "whyEn": "The employer is looking for students in IT, natural science, engineering and technology."
+  "whyEn": "The employer is looking for students in IT, natural science, engineering and technology.",
+  "blurbEn": "You help develop and maintain data pipelines for extracting, transforming, and loading data together with experienced data engineers. You monitor and troubleshoot workflows and collaborate with other teams to improve the data systems."
  },
  {
   "studies": [
@@ -52699,7 +52821,8 @@
   "openToAll": false,
   "id": "xd266dfad39b5",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing, business, and IT."
+  "whyEn": "The employer is looking for students in marketing, business, and IT.",
+  "blurbEn": "You maintain and update websites on a couple therapy platform, do SEO updates, and create profiles for couple therapists. The work is independent and takes place in the office in Copenhagen N."
  },
  {
   "studies": [
@@ -52741,7 +52864,8 @@
   "openToAll": false,
   "id": "x660d046f1949",
   "live": true,
-  "whyEn": "The employer is looking for students in pedagogy and teaching."
+  "whyEn": "The employer is looking for students in pedagogy and teaching.",
+  "blurbEn": "You guide young people on part-time jobs, hold workshops and talks at schools and youth institutions, and reach out to local companies. You write grant applications, analyze questionnaires, and create content for social media."
  },
  {
   "studies": [
@@ -52791,7 +52915,8 @@
   "openToAll": false,
   "id": "x7aca9043dfdd",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication, humanities."
+  "whyEn": "The employer is looking for students in language and communication, humanities.",
+  "blurbEn": "You design and maintain the company's social media strategy, including Facebook and LinkedIn, and create content and posts. You also help with video production, create profiles for couple therapists, and update the platform."
  },
  {
   "studies": [
@@ -52837,7 +52962,8 @@
   "openToAll": false,
   "id": "x3834a95ce184",
   "live": true,
-  "whyEn": "The employer is looking for students in engineering and technology, machinery, and design."
+  "whyEn": "The employer is looking for students in engineering and technology, machinery, and design.",
+  "blurbEn": "You work in the technical departments helping find and size motor and frequency converter solutions for customers, including through testing and documentation. You also develop calculation tools in MATLAB and Excel and create FAQs based on inquiries from sales."
  },
  {
   "studies": [
@@ -52881,7 +53007,8 @@
   "openToAll": true,
   "id": "xc99db4abf139",
   "live": true,
-  "whyEn": "The employer is looking for students in social sciences."
+  "whyEn": "The employer is looking for students in social sciences.",
+  "blurbEn": "You help with information, event, and project tasks in a small volunteer secretariat for a solidarity organization working for Central America. Tasks vary and may include working with volunteers, networks, and partners."
  },
  {
   "studies": [
@@ -52925,7 +53052,8 @@
   "openToAll": true,
   "id": "x3a7b5629366d",
   "live": true,
-  "whyEn": "The employer is looking for students in language and communication."
+  "whyEn": "The employer is looking for students in language and communication.",
+  "blurbEn": "You present Pandasia's products in weekly livestreams on social media and answer viewers' questions as they come in. The job is based in Galten near Aarhus, where the camera equipment is already set up."
  },
  {
   "studies": [
@@ -52983,7 +53111,8 @@
   "openToAll": false,
   "id": "xe4e2d7d73bd5",
   "live": true,
-  "whyEn": "The employer is looking for students in marketing and business, language and communication, and humanities."
+  "whyEn": "The employer is looking for students in marketing and business, language and communication, and humanities.",
+  "blurbEn": "You film and edit video content for social media such as TikTok, Instagram Reels, and YouTube, and help develop creative campaigns. You also contribute to the marketing strategy and work closely with the marketing team."
  },
  {
   "studies": [
@@ -53024,7 +53153,8 @@
   "openToAll": false,
   "id": "xfa108c1e4282",
   "live": true,
-  "whyEn": "The employer is looking for students in construction and building engineering."
+  "whyEn": "The employer is looking for students in construction and building engineering.",
+  "blurbEn": "You work in the office on project management, design, and quotes, and take part in tasks on the construction site. The tasks cover several types of building construction."
  },
  {
   "studies": [
@@ -53070,7 +53200,8 @@
   "openToAll": true,
   "id": "xc80802e40adb",
   "live": true,
-  "whyEn": "The employer is looking for students in IT."
+  "whyEn": "The employer is looking for students in IT.",
+  "blurbEn": "You answer user inquiries by phone and email and help register and follow up on errors in a driving test booking system and Mit Sygefravær. You also help build and organize support documentation."
  },
  {
   "studies": [
@@ -53115,7 +53246,9 @@
   "enrichedBy": "ai",
   "openToAll": false,
   "id": "x80a7cbab6f33",
-  "live": true
+  "live": true,
+  "blurbEn": "You take part in projects in the laboratory and pilot facilities in Gråsten, where you work on improving products and processes, or on how Essentia's proteins are used in customers' applications. The projects may also be analytical in nature.",
+  "whyEn": "The employer is looking for students in food and veterinary science, chemistry, and biotech."
  },
  {
   "studies": [
@@ -53154,7 +53287,8 @@
   "openToAll": false,
   "id": "x99454553c83a",
   "live": true,
-  "whyEn": "The employer is looking for students in architecture, art and design."
+  "whyEn": "The employer is looking for students in architecture, art and design.",
+  "blurbEn": "You work in the competition department on Danish and international architecture projects, contributing design and graphics. It is a paid full-time position for 6 months."
  },
  {
   "catFam": true,
@@ -53192,6 +53326,8 @@
   "why": "Jobbet kræver teknisk indsigt i elektriske anlæg og jernbanesystemer, som er kernen i disse ingeniøruddannelser.",
   "openToAll": false,
   "id": "x36853ba96f3a",
-  "live": true
+  "live": true,
+  "blurbEn": "You carry out feasibility studies, technical expertise, owner's advisory work, and supervision during construction on railway projects. You can write a final-year project in collaboration with the company and use its data.",
+  "whyEn": "The job requires technical insight into electrical installations and railway systems, which are the core of these engineering programmes."
  }
 ]

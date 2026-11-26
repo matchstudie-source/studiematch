@@ -73699,5 +73699,36 @@
   ],
   "why": "Arbejdsgiveren søger studerende inden for administration, økonomi og revision, samfundsvidenskab.",
   "openToAll": false
+ },
+ "e880d255f32753b747e814df162c9581e73622e2": {
+  "fam": "hr",
+  "sec": [
+   "operations",
+   "bi"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "dataanalyse",
+   "procesforbedring",
+   "dokumentation",
+   "engelsk"
+  ],
+  "blurb": "Du opdaterer, validerer og analyserer data om medarbejdere og løn, herunder berettigelse og omkostningsberegninger. Du vedligeholder procesdokumentation og hjælper ansatte og ledere med spørgsmål om HR-processer og datafejl.",
+  "deadlineAt": "2026-12-13T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "hr",
+   "personaleledelse",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "psykologi",
+   "business analytics",
+   "datalogi"
+  ],
+  "why": "Jobbet kombinerer HR-processer med dataanalyse og Excel, hvilket passer til HR-, økonomi- og analysefag.",
+  "openToAll": false
  }
 }
