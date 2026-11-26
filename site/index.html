@@ -579,6 +579,7 @@ Object.assign(EN,{
 "Vores AI har læst dit CV. Fravælg det, der ikke passer, og tryk Tilføj.":"Our AI has read your CV. Untick what doesn't fit and tap Add.","Vi har læst dit CV i din browser. Fravælg det, der ikke passer, og tryk Tilføj.":"We read your CV in your browser. Untick what doesn't fit and tap Add.",
 "Startup-jobbørs":"Startup job board","Universitetets jobside":"University job page","Kommunens jobportal":"Municipal job portal","Regionens jobportal":"Regional job portal","Statens jobportal":"Government job portal","Vikarbureau":"Temp agency","Vagtbureau":"Staffing agency","Lægeforeningernes jobopslag":"Medical association job posts",
 "Del jobbet":"Share the job","Søg, fx firma, by eller Excel":"Search, e.g. company, city or Excel","Søg i job":"Search jobs","Sortering":"Sort","Bedste match":"Best match","Nyeste først":"Newest first","Frist først":"Deadline first","Linket er kopieret. Send det til en ven.":"Link copied. Send it to a friend.","Nogen har delt et job med dig":"Someone shared a job with you","Til mit feed":"To my feed","Find job, der passer til mig":"Find jobs that fit me","Se jobbet":"See the job",
+"er kun for studerende på en bestemt skole, fx CBS":"are only for students at a specific school, like CBS",
 "Advokat":"Law firm","Biotek":"Biotech","Byggeri":"Construction","Børn og unge":"Children and youth","Detailhandel":"Retail","Energi":"Energy","Fonde":"Foundations","Fødevarer og drikkevarer":"Food and beverages","Fødevarer og drikke":"Food and beverages","Ingeniørrådgivning":"Engineering consultancy","Interesseorganisation":"Interest organisation","Jobportal for studerende":"Student job portal","Logistik og shipping":"Logistics and shipping","Medicinal":"Pharmaceuticals","Medicinsk udstyr":"Medical devices","Medier":"Media","Offentlig":"Public sector","Offentlig sektor":"Public sector","Pension og forsikring":"Pensions and insurance","Revision og rådgivning":"Audit and advisory","Rådgivning":"Consulting","Sundhed":"Health","Sundhed og region":"Health and regions","Tech og software":"Tech and software","Telekommunikation":"Telecom","Uddannelse og forskning":"Education and research","Uddannelse":"Education","Finans":"Finance","Transport":"Transport","Produktion":"Manufacturing","Kultur":"Culture","Forskning":"Research","Socialt arbejde":"Social work","Pharma og medtech":"Pharma and medtech"
 });
 EN_RE.push(
@@ -1129,11 +1130,15 @@ function guessKind(t){
 function jobKind(j){ return j.kind||(j.kind=guessKind(j.title||"")); }
 function inKind(j,k){ const x=jobKind(j); return x===k||x==="begge"; }
 const KINDS=[{id:"studiejob",l:"Studiejob",sub:"Ved siden af studiet",icon:"briefcase",many:"studiejob"},{id:"praktik",l:"Praktik",sub:"Praktikplads og internship",icon:"cap",many:"praktikpladser"}];
+/* Skolerne, brugeren læser på (primær uddannelse og ekstra uddannelser) */
+function userSchools(p){ return [p.uniKey,...(p.extra||[]).map(e=>e.uniKey)].filter(k=>k && k!=="other"); }
+const schoolName = k => (SCHOOLS.find(s=>s.key===k)||{}).name || k.toUpperCase();
 function evaluate(job, c){
   c=ctxOf(c); const p=c.profile, W=effW(p);
   if(job.req && !studyFits(job.req, p)) return {out:"study"};
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
+  if(job.onlySchools && job.onlySchools.length && !userSchools(p).some(k=>job.onlySchools.includes(k))) return {out:"school"};
   const jr=area(job.region); if(!p.regions.includes("any") && jr!=="remote" && jr!=="dk" && !p.regions.map(area).includes(jr)) return {out:"location"};
   const prim = W[job.fam]||0;
   let bestSec={f:null,w:0};
@@ -1226,7 +1231,7 @@ function feed(kind){
 }
 function hiddenFeed(){ return feed().filter(x=>x.ev.hidden); }
 function filteredCounts(){
-  const c={danish:0,location:0,field:0,study:0,dismissed:0};
+  const c={danish:0,school:0,location:0,field:0,study:0,dismissed:0};
   for(const x of allEvals()){ if(!inKind(x.job,S.kind||"studiejob")) continue; if((S.fb[x.job.id]||{}).dismissed) c.dismissed++; else if(x.ev.out) c[x.ev.out]++; }
   return c;
 }
@@ -1277,6 +1282,7 @@ function cardHTML(job, ev, opts){
     <div class="meta">
       ${jobKind(job)==="praktik"?'<span class="tag tag-kind">Praktik</span>':jobKind(job)==="begge"?'<span class="tag tag-kind">Studiejob eller praktik</span>':""}
       <span class="tag">${danishTag}</span>
+      ${job.onlySchools&&job.onlySchools.length?`<span class="tag">${L("Kun for","Only for")} ${job.onlySchools.map(schoolName).join("/")}${L("-studerende"," students")}</span>`:""}
       ${job.rolling?'<span class="tag">Løbende optag</span>':job.deadline==null?"":`<span class="tag ${job.deadline<=5?"tag-soon":""}">Frist ${deadlineDate(job.deadline)}</span>`}
       ${job.postedH<12?`<span class="tag tag-new">Ny, ${agoShort(job.postedH)}</span>`:""}
       ${ev.hidden && !opts.hiddenMode?'<span class="tag tag-hidden" title="Titlen nævner ikke dit felt, men arbejdet passer. Tryk Hvorfor for at se mere.">Uventet match</span>':""}
@@ -1494,6 +1500,7 @@ const WHY = {
   location:{l:"ligger uden for dine områder", fix:["widen","","Vis hele landet"]},
   field:{l:"er i felter, du har slået fra", fix:["fields-on","","Slå felterne til igen"]},
   study:{l:"kræver en bestemt uddannelse, fx jura eller sygepleje", fix:null},
+  school:{l:"er kun for studerende på en bestemt skole, fx CBS", fix:null},
   dismissed:{l:"har du selv fravalgt", fix:["undismiss","","Vis dem igen"]}
 };
 function filterNote(){

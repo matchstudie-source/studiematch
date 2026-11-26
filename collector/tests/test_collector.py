@@ -474,3 +474,14 @@ class JobKindTest(unittest.TestCase):
         self.assertEqual(k("Kommunikationsassistent", "Praktikplads for studerende"), "praktik")
         self.assertEqual(k("Kommunikationsassistent", "Studiejob Praktikplads for studerende"), "studiejob")
 
+
+class SchoolOnlyTest(unittest.TestCase):
+    def test_school_only(self):
+        f = enrich.detect_school_only
+        self.assertEqual(f("Currently enrolled as a student at Copenhagen Business School (CBS)."), ["cbs"])
+        self.assertEqual(f("Du skal være indskrevet på en kandidatuddannelse ved Københavns Universitet."), ["ku"])
+        self.assertEqual(f("You must be a CBS student."), ["cbs"])
+        self.assertEqual(f("Vi søger studerende fra DTU, KU eller CBS."), [])
+        self.assertEqual(f("You must be enrolled at DTU or another Danish university."), [])
+        self.assertEqual(f("We collaborate with CBS and DTU. You are currently enrolled in a relevant programme."), [])
+

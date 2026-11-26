@@ -305,6 +305,46 @@ def detect_required_study(title: str) -> str | None:
     return None
 
 
+# Job, der kun er for studerende fra én bestemt skole ("Currently enrolled at CBS", "indskrevet ved Københavns Universitet")
+SCHOOL_PAT = {
+    "cbs": r"copenhagen business school|handelshøjskolen i københavn|\bcbs\b",
+    "dtu": r"danmarks tekniske universitet|technical university of denmark|\bdtu\b",
+    "ku": r"københavns universitet|university of copenhagen|\bku\b",
+    "itu": r"it[- ]universitetet|it university of copenhagen|\bitu\b",
+    "ruc": r"roskilde universitet|roskilde university|\bruc\b",
+    "au": r"aarhus universitet|aarhus university",
+    "aau": r"aalborg universitet|aalborg university|\baau\b",
+    "sdu": r"syddansk universitet|university of southern denmark|\bsdu\b",
+    "kp": r"københavns professionshøjskole|university college copenhagen",
+    "absalon": r"professionshøjskolen absalon",
+    "ucl": r"\bucl\b",
+    "ucsyd": r"\buc syd\b",
+    "via": r"via university college",
+    "ucn": r"\bucn\b",
+    "ek": r"erhvervsakademi københavn|\bkea\b|cphbusiness",
+    "eaaa": r"erhvervsakademi aarhus|\beaaa\b",
+    "iba": r"\biba\b",
+}
+ENROLLED_RE = re.compile(
+    r"enrolled|registered as a student|matriculated|must be (?:a|an) [\w ,()-]{0,40}student|students? (?:at|from) [\w ()-]{2,40} only"
+    r"|only (?:open )?(?:to|for) [\w ()-]{2,40} students|indskrevet|optaget (?:på|ved)|skal være studerende (?:på|ved)"
+    r"|kun for studerende (?:på|ved|fra)|forbeholdt studerende (?:på|ved|fra)", re.I)
+OPEN_RE = re.compile(r"or (?:another|other|a similar)|or similar|any danish|eller (?:en )?anden|eller lignende|tilsvarende|a danish (?:university|institution)", re.I)
+
+
+def detect_school_only(text: str) -> list:
+    """Skolerne, et job er forbeholdt, eller [] hvis alle kan søge."""
+    found = set()
+    for sent in re.split(r"(?<=[.!?\n])\s+|\n|•", text or ""):
+        if not ENROLLED_RE.search(sent) or OPEN_RE.search(sent):
+            continue
+        low = sent.lower()
+        for key, pat in SCHOOL_PAT.items():
+            if re.search(pat, low):
+                found.add(key)
+    return sorted(found)
+
+
 def enrich_rules(raw: dict, employer: dict) -> dict | None:
     title, text = raw["title"], raw.get("description", "")
     if not title or not is_student_job(title, text, raw.get("commitment", "")):
@@ -337,6 +377,7 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
         "src": raw.get("source", "Virksomhedens karriereside"),
         "blurb": make_blurb(text),
         "req": detect_required_study(title),
+        "onlySchools": detect_school_only(text),
         "url": raw.get("url", ""),
         "enrichedBy": "regler",
     }
