@@ -371,6 +371,35 @@ Tekst: {text}
 """
 
 
+TRANSLATE_PROMPT = """Oversæt hver tekst nedenfor til naturligt, kort engelsk til internationale studerende. Behold navne på virksomheder, produkter og systemer. Er en tekst allerede på engelsk, så returnér den uændret.
+Svar KUN med ét JSON-objekt på én linje, hvor nøglerne er de samme id'er som i input, og værdierne er oversættelserne.
+
+Input:
+{items}
+"""
+
+
+def translate_batch(batch: list, api_key: str) -> dict:
+    """batch er [(id, dansk tekst)]. Returnerer {id: engelsk tekst} for dem, der lykkedes."""
+    prompt = TRANSLATE_PROMPT.format(items=json.dumps(dict(batch), ensure_ascii=False))
+    text = ""
+    try:
+        resp = requests.post(AI_URL, timeout=90, headers={
+            "x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json",
+        }, json={"model": AI_MODEL, "max_tokens": 6000, "messages": [{"role": "user", "content": prompt}]})
+        resp.raise_for_status()
+        text = "".join(part.get("text", "") for part in resp.json().get("content", []))
+        data = json.loads(text[text.index("{"): text.rindex("}") + 1])
+    except (requests.RequestException, ValueError, KeyError) as err:
+        global AI_ERROR
+        if not AI_ERROR:
+            AI_ERROR = f"oversættelse: {type(err).__name__}: {err} (svar: {text[:160]!r})"
+            print("AI-fejl:", AI_ERROR)
+        return {}
+    ids = {k for k, _ in batch}
+    return {k: str(v)[:400] for k, v in data.items() if k in ids and isinstance(v, str) and v.strip()}
+
+
 def enrich_ai(raw: dict, base: dict, api_key: str) -> dict:
     """Forbedrer et regel-beriget job med AI. Returnerer base uændret, hvis noget går galt."""
     prompt = PROMPT.format(families=", ".join(FAMILIES), title=raw["title"], company=base["co"],

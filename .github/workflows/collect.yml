@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "studiematch-bot"
           git config user.email "studiematch-bot@users.noreply.github.com"
-          git add site/data/jobs.json collector/cache.json collector/report.md collector/rejected.md
+          git add site/data/jobs.json collector/cache.json collector/translations.json collector/report.md collector/rejected.md
           git diff --cached --quiet || git commit -m "Opdater job"
           git pull --rebase -X theirs   # opstår der en konflikt med en anden kørsel, vinder de nyeste job
           git push

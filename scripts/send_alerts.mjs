@@ -52,8 +52,8 @@ for (const u of users) {
   if (!best.length) continue;
   alerts.push({ userId: u.id, jobs: best.map(({ j, ev }) => ({
     id: j.id, title: j.title, co: j.co, city: j.city, url: j.url, level: ev.level, kind: j.kind || "studiejob",
-    why: ev.ai === true && j.why ? j.why : "",
-    deadline: j.deadlineAt && !j.rolling ? new Date(j.deadlineAt).toLocaleDateString("da-DK", { day: "numeric", month: "long" }) : "",
+    why: ev.ai === true ? (profile.lang === "en" ? j.whyEn || "" : j.why || "") : "",
+    deadline: j.deadlineAt && !j.rolling ? new Date(j.deadlineAt).toLocaleDateString(profile.lang === "en" ? "en-GB" : "da-DK", { day: "numeric", month: "long" }) : "",
   })) });
 }
 const res = alerts.length && mail ? await api("cron/alerts", { alerts, dry: process.env.ALERTS_DRY === "1" }) : { sent: 0, failed: 0 };

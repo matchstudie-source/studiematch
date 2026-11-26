@@ -176,8 +176,8 @@ function initialsOf(co) {
   return ((w[0] || "?")[0] + (w[1] ? w[1][0] : (w[0] || "")[1] || "")).toUpperCase();
 }
 // Fælles ramme om alle mails: logo øverst, hvidt kort på lys grå baggrund, kort fod
-function mailShell(base, inner, foot) {
-  return `<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head>
+function mailShell(base, inner, foot, lang) {
+  return `<!doctype html><html lang="${lang === "en" ? "en" : "da"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head>
 <body style="margin:0;padding:0;background:#F4F5F3">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F4F5F3"><tr><td align="center" style="padding:28px 12px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;font-family:${FONT};color:#1A1D1C">
@@ -190,7 +190,8 @@ function mailShell(base, inner, foot) {
 }
 function alertMail(base, u, jobs, offUrl, freq) {
   const p = parse(u.profile, {}) || {};
-  const prog = p.programShort || p.programName || "din uddannelse";
+  const en = p.lang === "en", L = (da, eng) => (en ? eng : da);
+  const prog = p.programShort || p.programName || L("din uddannelse", "your degree");
   const n = jobs.length;
   const items = jobs.map((j) => `
     <tr><td style="padding:16px 0;border-top:1px solid #DFE2E0">
@@ -200,18 +201,21 @@ function alertMail(base, u, jobs, offUrl, freq) {
           <div style="font-size:13.5px;color:#5D6562"><b style="color:#1A1D1C;font-weight:600">${escHtml(j.co)}</b>${j.city ? "&nbsp;&nbsp;" + escHtml(j.city) : ""}</div>
           <div style="font-size:17px;font-weight:700;line-height:1.3;margin:2px 0 4px">${escHtml(j.title)}</div>
           ${j.why ? `<div style="font-size:14px;line-height:1.45;color:#3F4744">${escHtml(j.why)}</div>` : ""}
-          <div style="font-size:13px;margin-top:6px">${j.kind === "praktik" ? '<span style="color:#075E48;font-weight:600">Praktik</span>&nbsp;&nbsp;' : ""}${j.level === "strong" ? '<span style="color:#0B7D60;font-weight:600">Stærkt match</span>' : '<span style="color:#2F5E9E;font-weight:600">Godt match</span>'}${j.deadline ? `<span style="color:#5D6562">&nbsp;&nbsp;Frist ${escHtml(j.deadline)}</span>` : ""}</div>
-          <a href="${escHtml(j.url)}" style="display:inline-block;margin-top:10px;background:#FFFFFF;border:1px solid #C9CECB;border-radius:6px;padding:7px 14px;color:#1A1D1C;font-size:14px;font-weight:600;text-decoration:none">Se jobbet</a>
+          <div style="font-size:13px;margin-top:6px">${j.kind === "praktik" ? `<span style="color:#075E48;font-weight:600">${L("Praktik", "Internship")}</span>&nbsp;&nbsp;` : ""}${j.level === "strong" ? `<span style="color:#0B7D60;font-weight:600">${L("Stærkt match", "Strong match")}</span>` : `<span style="color:#2F5E9E;font-weight:600">${L("Godt match", "Good match")}</span>`}${j.deadline ? `<span style="color:#5D6562">&nbsp;&nbsp;${L("Frist", "Deadline")} ${escHtml(j.deadline)}</span>` : ""}</div>
+          <a href="${escHtml(j.url)}" style="display:inline-block;margin-top:10px;background:#FFFFFF;border:1px solid #C9CECB;border-radius:6px;padding:7px 14px;color:#1A1D1C;font-size:14px;font-weight:600;text-decoration:none">${L("Se jobbet", "See the job")}</a>
         </td></tr></table>
     </td></tr>`).join("");
   const inner = `
-    <p style="font-size:15px;margin:0 0 6px;color:#5D6562">Hej${u.name ? " " + escHtml(u.name) : ""}</p>
-    <h1 style="font-size:23px;line-height:1.2;letter-spacing:-0.4px;margin:0 0 6px;font-weight:800">${n === 1 ? "Et nyt studiejob" : `${n} nye studiejob`}, der passer til ${escHtml(prog)}</h1>
-    <p style="font-size:15px;margin:0 0 14px;color:#5D6562">Fundet ud fra din uddannelse, dine timer og dine områder.</p>
+    <p style="font-size:15px;margin:0 0 6px;color:#5D6562">${L("Hej", "Hi")}${u.name ? " " + escHtml(u.name) : ""}</p>
+    <h1 style="font-size:23px;line-height:1.2;letter-spacing:-0.4px;margin:0 0 6px;font-weight:800">${en ? `${n === 1 ? "A new job" : `${n} new jobs`} that fit ${escHtml(prog)}` : `${n === 1 ? "Et nyt job" : `${n} nye job`}, der passer til ${escHtml(prog)}`}</h1>
+    <p style="font-size:15px;margin:0 0 14px;color:#5D6562">${L("Fundet ud fra din uddannelse, dit svar om dansk og dine områder.", "Picked from your degree, your Danish answer and your regions.")}</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${items}</table>
-    <p style="margin:20px 0 0"><a href="${base}/" style="display:inline-block;background:#0B7D60;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:6px">Se alle dine match</a></p>`;
-  const foot = `Du får denne mail ${freq === "weekly" ? "højst én gang om ugen" : "højst én gang om dagen"}, fordi du har slået jobmails til på Studiematch. Du kan ændre det under Profil eller <a href="${offUrl}" style="color:#5D6562">afmelde jobmails med ét klik</a>.`;
-  return { subject: n === 1 ? `Nyt studiejob til dig: ${jobs[0].title}`.slice(0, 120) : `${n} nye studiejob til dig som ${prog}`.slice(0, 120), html: mailShell(base, inner, foot) };
+    <p style="margin:20px 0 0"><a href="${base}/" style="display:inline-block;background:#0B7D60;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:6px">${L("Se alle dine match", "See all your matches")}</a></p>`;
+  const foot = en
+    ? `You get this email ${freq === "weekly" ? "at most once a week" : "at most once a day"} because you turned on job emails on Studiematch. You can change it under Profile or <a href="${offUrl}" style="color:#5D6562">unsubscribe with one click</a>.`
+    : `Du får denne mail ${freq === "weekly" ? "højst én gang om ugen" : "højst én gang om dagen"}, fordi du har slået jobmails til på Studiematch. Du kan ændre det under Profil eller <a href="${offUrl}" style="color:#5D6562">afmelde jobmails med ét klik</a>.`;
+  const subject = en ? (n === 1 ? `New job for you: ${jobs[0].title}` : `${n} new jobs for you as a ${prog} student`) : (n === 1 ? `Nyt job til dig: ${jobs[0].title}` : `${n} nye job til dig som ${prog}`);
+  return { subject: subject.slice(0, 120), html: mailShell(base, inner, foot, p.lang) };
 }
 async function salt(db) {
   const row = await db.prepare("SELECT v FROM kv WHERE k='salt'").first();
@@ -486,7 +490,7 @@ async function route(ctx, path, method) {
     for (const a of (b.alerts || []).slice(0, Number(env.ALERT_MAX_PER_RUN || 90))) {
       const u = await db.prepare("SELECT * FROM users WHERE id=?").bind(Number(a.userId)).first();
       const jobs = (a.jobs || []).slice(0, 6).map((j) => ({ id: clip(j.id, 60), title: clip(j.title, 140), co: clip(j.co, 100), city: clip(j.city, 60),
-        url: /^https?:\/\//.test(String(j.url || "")) ? clip(j.url, 400) : `${base}/`, why: clip(j.why, 200), deadline: clip(j.deadline, 30), level: j.level === "strong" ? "strong" : "good" }));
+        url: /^https?:\/\//.test(String(j.url || "")) ? clip(j.url, 400) : `${base}/`, why: clip(j.why, 200), deadline: clip(j.deadline, 30), level: j.level === "strong" ? "strong" : "good", kind: j.kind === "praktik" ? "praktik" : "studiejob" }));
       if (!u || !jobs.length || (parse(u.profile, {}) || {}).alerts !== true) continue;
       const freq = (parse(u.profile, {}) || {}).alertFreq === "weekly" ? "weekly" : "daily";
       const offUrl = `${base}/api/alerts/off?u=${u.id}&t=${await hmac(env.CRON_SECRET, "off:" + u.id)}`;
@@ -507,11 +511,11 @@ async function route(ctx, path, method) {
     const id = Number(url.searchParams.get("u"));
     const page = (msg) => new Response(`<!doctype html><html lang="da"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jobmails · Studiematch</title>
       <body style="font-family:system-ui,sans-serif;max-width:520px;margin:60px auto;padding:0 16px;color:#1F2C33;line-height:1.5"><h1 style="color:#0B7D60;font-size:24px">${msg}</h1>
-      <p>Du kan altid slå jobmails til igen under Profil på <a href="/" style="color:#0B7D60">studiematch.dk</a>.</p></body></html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
-    if (!env.CRON_SECRET || !id || !safeEqual(String(url.searchParams.get("t") || ""), await hmac(env.CRON_SECRET, "off:" + id))) return page("Linket virker ikke");
+      <p>Du kan altid slå jobmails til igen under Profil på <a href="/" style="color:#0B7D60">studiematch.dk</a>.</p><p style="color:#5D6562">You can always turn job emails back on under Profile on <a href="/?lang=en" style="color:#0B7D60">studiematch.dk</a>.</p></body></html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    if (!env.CRON_SECRET || !id || !safeEqual(String(url.searchParams.get("t") || ""), await hmac(env.CRON_SECRET, "off:" + id))) return page("Linket virker ikke / The link doesn't work");
     const u = await db.prepare("SELECT profile FROM users WHERE id=?").bind(id).first();
     if (u) { const p = parse(u.profile, {}) || {}; p.alerts = false; await db.prepare("UPDATE users SET profile=? WHERE id=?").bind(JSON.stringify(p), id).run(); }
-    return page("Du får ikke flere jobmails");
+    return page("Du får ikke flere jobmails / You won't get more job emails");
   }
 
   /* ----- glemt adgangskode: et link på mail, der virker i en time ----- */
@@ -522,20 +526,23 @@ async function route(ctx, path, method) {
     if (!env.RESEND_API_KEY) return err("Nulstilling på mail er ikke slået til endnu. Skriv til matchstudie@gmail.com.", 503);
     const recent = await db.prepare("SELECT COUNT(*) AS n FROM events WHERE type='reset_req' AND label=? AND ts>?").bind(email, now() - 3600e3).first();
     await db.prepare("INSERT INTO events (ts, day, type, label) VALUES (?, ?, 'reset_req', ?)").bind(now(), day(), email).run();
-    const u = await db.prepare("SELECT id, name FROM users WHERE email=?").bind(email).first();
+    const u = await db.prepare("SELECT id, name, profile FROM users WHERE email=?").bind(email).first();
     /* Samme svar, uanset om brugeren findes, så ingen kan teste, hvilke mails der har en bruger */
     if (u && (recent?.n || 0) < 3) {
       const token = randHex(32);
       await db.prepare("INSERT INTO password_resets (token, user_id, expires_at) VALUES (?, ?, ?)").bind(await sha256(token), u.id, now() + RESET_MINUTES * 60e3).run();
       const link = `${env.SITE_URL || new URL(req.url).origin}/#nulstil=${token}`;
       const base = env.SITE_URL || new URL(req.url).origin;
+      const en = b.lang === "en" || (parse(u.profile, {}) || {}).lang === "en";
+      const T = en ? { h: "Choose a new password", hi: "Hi", body: `Someone, hopefully you, asked to reset the password for your Studiematch account. Press the button to choose a new one. The link works for ${RESET_MINUTES} minutes.`, btn: "Choose new password", foot: "If you didn't ask for this, just ignore this email. Your password has not been changed.", subj: "Reset your Studiematch password" }
+        : { h: "Vælg en ny adgangskode", hi: "Hej", body: `Nogen, forhåbentlig dig, har bedt om at nulstille adgangskoden til din bruger på Studiematch. Tryk på knappen for at vælge en ny. Linket virker i ${RESET_MINUTES} minutter.`, btn: "Vælg ny adgangskode", foot: "Har du ikke bedt om det, kan du bare ignorere mailen. Din adgangskode er ikke ændret.", subj: "Nulstil din adgangskode til Studiematch" };
       const html = mailShell(base, `
-        <h1 style="font-size:23px;line-height:1.2;letter-spacing:-0.4px;margin:0 0 12px;font-weight:800">Vælg en ny adgangskode</h1>
-        <p style="font-size:15px;line-height:1.5;margin:0 0 10px">Hej${u.name ? " " + escHtml(u.name) : ""}</p>
-        <p style="font-size:15px;line-height:1.5;margin:0 0 18px">Nogen, forhåbentlig dig, har bedt om at nulstille adgangskoden til din bruger på Studiematch. Tryk på knappen for at vælge en ny. Linket virker i ${RESET_MINUTES} minutter.</p>
-        <p style="margin:0 0 8px"><a href="${link}" style="display:inline-block;background:#0B7D60;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:6px">Vælg ny adgangskode</a></p>`,
-        "Har du ikke bedt om det, kan du bare ignorere mailen. Din adgangskode er ikke ændret.");
-      const send = sendMail(env, email, "Nulstil din adgangskode til Studiematch", html).catch((e) => console.error(e));
+        <h1 style="font-size:23px;line-height:1.2;letter-spacing:-0.4px;margin:0 0 12px;font-weight:800">${T.h}</h1>
+        <p style="font-size:15px;line-height:1.5;margin:0 0 10px">${T.hi}${u.name ? " " + escHtml(u.name) : ""}</p>
+        <p style="font-size:15px;line-height:1.5;margin:0 0 18px">${T.body}</p>
+        <p style="margin:0 0 8px"><a href="${link}" style="display:inline-block;background:#0B7D60;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:6px">${T.btn}</a></p>`,
+        T.foot, en ? "en" : "da");
+      const send = sendMail(env, email, T.subj, html).catch((e) => console.error(e));
       if (ctx.waitUntil) ctx.waitUntil(send); else await send;
     }
     return json({ ok: true });

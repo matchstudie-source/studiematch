@@ -78,6 +78,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .top-links{margin-left:auto;display:flex;align-items:center;gap:14px}
 .link-quiet{color:var(--fg);text-decoration:none;font-weight:500;font-size:14.5px}
 .link-quiet:hover{color:var(--accent)}
+.lang-btn{font-weight:600}
+.lang-btn .l-short{display:none}
+@media(max-width:480px){.lang-btn .l-long{display:none}.lang-btn .l-short{display:inline}.lang-btn{padding-inline:6px}.top-links{gap:4px}.top-links .btn-primary{padding-inline:12px}}
+.ob-right{display:flex;align-items:center;gap:14px;margin-left:auto}
 .ctx{min-width:0;flex:1;font-size:14px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* forside */
@@ -240,6 +244,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .job-top{display:flex;gap:13px;align-items:flex-start}
 .monogram{width:42px;height:42px;border-radius:var(--r-sm);display:grid;place-items:center;font-weight:700;font-size:14px;background:var(--surface-2);color:var(--muted);border:1px solid var(--line);flex:none;letter-spacing:-.01em}
 .job-head{min-width:0;flex:1}
+.job-badges{display:flex;gap:6px;margin-top:4px}
 .job-co{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 12px;align-items:center}
 .job-co .co-name{color:var(--fg);font-weight:600}
 .job-title{font-family:var(--font-display);font-size:19px;line-height:1.25;font-weight:700;letter-spacing:-.02em;margin-top:2px;text-wrap:balance}
@@ -432,6 +437,181 @@ button.ctx:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 <script>
 /* ============ DATA ============ */
 /* label = navn på feltet, n = samme ord midt i en sætning */
+/* ============ SPROG ============
+   Siden skrives på dansk. På engelsk oversættes teksten, efter siden er tegnet (EN og EN_RE nedenfor),
+   og sætninger med tal og navne skrives med L(dansk, engelsk). Jobtitler og virksomhedsnavne oversættes ikke. */
+function detectLang(){
+  if(typeof window==="undefined") return "da";
+  try{ const q=new URLSearchParams(location.search).get("lang"); if(q==="en"||q==="da") return q; }catch(e){}
+  try{ return (navigator.languages||[navigator.language||"da"]).some(l=>/^(da|nb|nn|no|sv)\b/i.test(l)) ? "da" : "en"; }catch(e){ return "da"; }
+}
+let LANG="da";
+const L=(da,en)=>LANG==="en"?en:da;
+const EN={}, EN_RE=[];
+function tr(x){
+  if(LANG!=="en"||x==null) return x;
+  const s=String(x), t=s.trim(); if(!t) return s;
+  let r=EN[t];
+  if(r===undefined){ for(const [re,f] of EN_RE){ if(re.test(t)){ r=t.replace(re,f); break; } } }
+  return r===undefined ? s : s.replace(t,r);
+}
+function translateDOM(el){
+  if(LANG!=="en"||!el) return;
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement&&n.parentElement.closest("[data-notr],script,style")?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  const nodes=[]; while(w.nextNode()) nodes.push(w.currentNode);
+  for(const n of nodes){ const v=tr(n.nodeValue); if(v!==n.nodeValue) n.nodeValue=v; }
+  el.querySelectorAll("[placeholder],[aria-label],[title],[alt]").forEach(e=>{ for(const a of ["placeholder","aria-label","title","alt"]){ const v=e.getAttribute(a); if(v){ const t=tr(v); if(t!==v) e.setAttribute(a,t); } } });
+}
+function langBtn(cls){ return `<button class="btn btn-quiet btn-sm lang-btn ${cls||""}" data-act="lang" data-v="${LANG==="en"?"da":"en"}" lang="${LANG==="en"?"da":"en"}" aria-label="${LANG==="en"?"Dansk":"English"}" data-notr><span class="l-long">${LANG==="en"?"Dansk":"English"}</span><span class="l-short">${LANG==="en"?"DA":"EN"}</span></button>`; }
+function jobTitle(j){ return LANG==="en" && j.titleEn ? j.titleEn : j.title; }
+function jobBlurb(j){ return LANG==="en" && j.blurbEn ? j.blurbEn : j.blurb; }
+function jobWhy(j){ return LANG==="en" ? (j.whyEn||"") : j.why; }
+/* Engelske tekster. Nøglen er den danske tekst, præcis som den står på siden. */
+Object.assign(EN,{
+/* forside */
+"For virksomheder":"For employers","Find mine matches":"Find my matches","Åbn mit feed":"Open my feed","Log ind":"Log in",
+"Studiejob, der passer til det, du læser.":"Student jobs that fit what you study.",
+"Vælg din uddannelse, så viser vi de studiejob, der passer til den. Også dem med titler, du aldrig selv ville have søgt på.":"Pick your degree and we show you the student jobs that fit it. Including the ones with titles you would never have searched for.",
+"Hvor læser du?":"Where do you study?","Andet sted":"Somewhere else",
+"Det tager under et minut, og du behøver ikke en bruger.":"It takes less than a minute, and you don't need an account.",
+"Sådan ser det ud for en HA-studerende på RUC, der vil arbejde med regnskab og revision.":"This is what it looks like for a Business Analytics student at DTU who doesn't speak Danish.",
+"Sådan virker det":"How it works","Vælg skole og uddannelse":"Pick your school and degree",
+"Vi ved, hvilke felter din uddannelse fører til. For Global Business er det fx supply chain, indkøb, PMO og BI.":"We know which fields your degree leads to. For Global Business that is supply chain, procurement, PMO and BI, for example.",
+"Sig, om du taler dansk":"Tell us if you speak Danish",
+"Taler du ikke flydende dansk, ser du ikke job, der kræver det. Så er alt i dit feed noget, du reelt kan søge.":"If you are not fluent in Danish, you won't see jobs that require it. So everything in your feed is something you can actually apply for.",
+"Gem, søg eller fravælg":"Save, apply or skip",
+"Det, du gør, flytter rækkefølgen. Uploader du dit CV, bruger vi også din erfaring.":"What you do changes the order. If you upload your CV, we use your experience too.",
+"Lavet til studerende, ikke til rekrutterere":"Made for students, not recruiters",
+"De fleste jobsider forudsætter, at du kender de rigtige jobtitler. Det gør de færreste studerende.":"Most job sites assume you know the right job titles. Few students do.",
+"Sprog er et filter, ikke en overraskelse":"Language is a filter, not a surprise",
+"Taler du ikke flydende dansk, ser du ikke job, der kræver det. Internationale studerende får en liste med reelle muligheder.":"If you are not fluent in Danish, you won't see jobs that require it. International students get a list of real options.",
+"Studiejob og praktik hver for sig":"Student jobs and internships kept apart",
+"Praktikpladser og internships har deres egen fane, så de ikke drukner mellem studiejobbene.":"Internships have their own tab, so they don't get lost among the student jobs.",
+"Job, du ikke ville have søgt på":"Jobs you would not have searched for",
+"\"Udbudsstyring\" eller \"Prisanalytiker\" nævner sjældent din uddannelse, men arbejdet kan passe præcist.":"\"Tender management\" or \"Pricing analyst\" rarely mention your degree, but the work can be a perfect fit.",
+"Du kan se, hvorfor et job er med":"You can see why a job is there",
+"Hvert job viser, hvad der passer, og hvad der ikke gør. Fx krav om dansk eller en frist om tre dage.":"Every job shows what fits and what doesn't. For example a Danish requirement or a deadline in three days.",
+"Betalte opslag er altid markeret og vises kun, hvis de passer godt til dig. Der er ingen bannerreklamer.":"Paid posts are always marked and only shown if they fit you well. There are no banner ads.",
+"Ansætter I studerende?":"Do you hire students?",
+"Slå et studiejob op, så viser vi det til de studerende, det passer til, også dem der ikke selv leder aktivt.":"Post a student job and we show it to the students it fits, including those who are not actively looking.",
+"Jobbet lander direkte i feedet hos studerende med et stærkt match":"The job goes straight into the feed of students with a strong match",
+"Færre irrelevante ansøgninger at læse igennem":"Fewer irrelevant applications to read",
+"Nå passive kandidater, der aldrig selv havde fundet opslaget":"Reach passive candidates who would never have found the post",
+"Slå et studiejob op, gratis":"Post a student job for free","Vi tjekker jobbet og lægger det op inden for et døgn.":"We check the job and publish it within a day.",
+"Skriv til os":"Write to us","Virksomhed":"Company","Dit navn":"Your name","(valgfrit)":"(optional)","Arbejdsmail":"Work email","Hvad søger I?":"What are you looking for?","Send":"Send",
+"Virksomhedens navn":"Company name","navn@virksomhed.dk":"name@company.com","Fx to studentermedhjælpere til økonomi i Aarhus fra januar":"E.g. two student assistants for finance in Aarhus from January",
+"Tak for jeres besked. Vi vender tilbage hurtigst muligt.":"Thanks for your message. We will get back to you as soon as we can.",
+"Privatliv":"Privacy","Kontakt":"Contact","Studiematch forside":"Studiematch home",
+"Job hentes fra arbejdsgivernes egne sider og jobportaler, vi samarbejder med. Din profil bliver i din browser, medmindre du opretter en bruger.":"Jobs are collected from employers' own sites and job portals we work with. Your profile stays in your browser unless you create an account.",
+/* job-kort */
+"Stærkt match":"Strong match","Godt match":"Good match","Værd at se":"Worth a look",
+"Kræver dansk":"Danish required","Dansk er et plus":"Danish is a plus","Engelsk OK":"English OK","Løbende optag":"Rolling intake",
+"Praktik":"Internship","Studiejob eller praktik":"Student job or internship","Uventet match":"Unexpected match",
+"Titlen nævner ikke dit felt, men arbejdet passer. Tryk Hvorfor for at se mere.":"The title doesn't mention your field, but the work fits. Tap Why to see more.",
+"Sponsoreret":"Sponsored","Direkte opslag":"Direct post","Derfor ville du overse det":"Why you would miss it","Derfor passer det til dig":"Why it fits you",
+"Fundet via":"Found via","Kilde i den rigtige version:":"Source in the real version:","Virksomhedens karriereside":"Company careers page","Virksomhedens rekrutteringssystem":"Company recruiting system",
+"Ikke interesseret":"Not interested","Gem":"Save","Gemt":"Saved","Interesseret":"Interested","Hvorfor":"Why","dette match":"this match","Søg":"Apply",
+"Passer jobbet til din uddannelse?":"Does the job fit your degree?","Ja":"Yes","Nej":"No","Du sagde ja. Tak!":"You said yes. Thanks!","Du sagde nej. Tak!":"You said no. Thanks!",
+"Sådan er det scoret.":"How it is scored.",
+"Uddannelsen vejer tungest. Derefter kommer kompetencer, interesser og erfaring fra dit CV. Det, du ikke har udfyldt, trækker ikke ned.":"Your degree counts the most. Then skills, interests and experience from your CV. What you haven't filled in doesn't count against you.",
+"Uddannelse":"Degree","Kompetencer":"Skills","Interesser":"Interests","Erfaring":"Experience","Tilføj kompetencer":"Add skills","Tilføj interesser":"Add interests","Tilføj CV":"Add CV","Ikke relevant her":"Not relevant here",
+"Sprog":"Language","Område":"Area","Felt ikke fravalgt":"Field not hidden","Nulstil det, vi har lært":"Reset what we have learned",
+/* onboarding */
+"Vælg din skole. Bagefter kan du søge i alle dens uddannelser.":"Pick your school. Then you can search all its degrees.",
+"Universiteter":"Universities","Professionshøjskoler":"University colleges","Erhvervsakademier":"Business academies","Andet":"Other","En anden skole, eller søg på tværs":"Another school, or search across all",
+"Søg efter din uddannelse":"Search for your degree","Søg efter uddannelse":"Search for a degree","Alle":"All","Bachelor":"Bachelor","Diplomingeniør":"BEng","Kandidat":"Master's","Professionsbachelor":"Professional bachelor","Erhvervsakademi":"Academy profession","Fortsæt":"Continue","Skift skole":"Change school","Niveau":"Level","Uddannelser":"Degrees","vi tolker det":"we will interpret it","vores AI tolker den":"our AI will interpret it","vi tolker den":"we will interpret it","Ingen uddannelser på dette niveau.":"No degrees at this level.",
+"Søg på tværs af alle skoler.":"Search across all schools.",
+"To hurtige spørgsmål":"Two quick questions","Så viser dit feed kun job, du reelt kan søge.":"So your feed only shows jobs you can actually apply for.",
+"Er du flydende i dansk?":"Are you fluent in Danish?",
+"Mange studiejob kræver flydende dansk. Svarer du nej, skjuler vi dem og viser job, hvor arbejdssproget er engelsk.":"Many student jobs require fluent Danish. If you answer no, we hide them and show jobs where the working language is English.",
+"Hvor kan du arbejde?":"Where can you work?","Vælg alle de landsdele, du kan arbejde i. Remote-job og landsdækkende job er altid med.":"Pick all the regions you can work in. Remote and nationwide jobs are always included.",
+"Tilbage":"Back","Her kigger vi":"This is where we look","Kerne":"Core","God pasform":"Good fit","Mulig":"Possible",
+"Sjælland og øerne":"Zealand and islands","Storkøbenhavn":"Greater Copenhagen","Nordsjælland":"North Zealand","Midt- og Vestsjælland":"Central and West Zealand","Sydsjælland og Lolland-Falster":"South Zealand and Lolland-Falster","Bornholm":"Bornholm","Fyn":"Funen","Fyn og øerne":"Funen and islands","Jylland":"Jutland","Sønderjylland":"South Jutland","Sydvestjylland (Esbjerg)":"Southwest Jutland (Esbjerg)","Trekantområdet":"Triangle Region","Østjylland (Aarhus)":"East Jutland (Aarhus)","Midt- og Vestjylland":"Central and West Jutland","Nordjylland":"North Jutland","Hele landet":"All of Denmark",
+/* app */
+"Ret profil":"Edit profile","Min konto":"My account","Til dig":"For you","Profil":"Profile","Skift uddannelse":"Change degree","Sektioner":"Sections",
+"Studiejob":"Student jobs","Ved siden af studiet":"Alongside your studies","Praktikplads og internship":"Internships and placements","Vis studiejob eller praktik":"Show student jobs or internships",
+". Se hvilke og hvorfor":". See which and why",". skjul listen":". Hide the list","Vis igen":"Show again",
+"kræver flydende dansk":"require fluent Danish","Ret svar om dansk":"Change Danish answer","ligger uden for dine områder":"are outside your regions","Vis hele landet":"Show all of Denmark","er i felter, du har slået fra":"are in fields you turned off","Slå felterne til igen":"Turn the fields back on","kræver en bestemt uddannelse, fx jura eller sygepleje":"require a specific degree, like law or nursing","har du selv fravalgt":"you hid yourself","Vis dem igen":"Show them again",
+"Det har vi lært":"What we have learned","Starter fra din uddannelse. Hver gang du siger interesseret, gemmer eller fravælger, flytter søjlerne sig.":"Starts from your degree. Every time you say interested, save or skip, the bars move.",
+"Job hentes automatisk fra arbejdsgivernes egne sider flere gange om dagen. Tjek altid detaljerne i det originale opslag. Din profil bliver i denne browser.":"Jobs are collected automatically from employers' own sites several times a day. Always check the details in the original post. Your profile stays in this browser.",
+"Job hentes automatisk fra arbejdsgivernes egne sider flere gange om dagen. Tjek altid detaljerne i det originale opslag. Din profil er gemt på din bruger.":"Jobs are collected automatically from employers' own sites several times a day. Always check the details in the original post. Your profile is saved to your account.",
+"Du har set alle matches lige nu":"You have seen all matches for now","Søg i hele landet":"Search all of Denmark",
+"Job du har gemt eller søgt.":"Jobs you saved or applied for.","Intet gemt endnu":"Nothing saved yet","Tryk på bogmærket på et job for at gemme det her. Job, du søger, havner her også, så du kan holde styr på dem.":"Tap the bookmark on a job to save it here. Jobs you apply for end up here too, so you can keep track of them.","Tilbage til Til dig":"Back to For you","Ingen frist angivet":"No deadline given","Søgt":"Applied",
+"Hvorfor ikke dette job?":"Why not this job?","Valgfrit, men det lærer dit feed meget hurtigere.":"Optional, but it teaches your feed much faster.","Ikke mit felt":"Not my field","Sproget passer ikke":"Wrong language","For langt væk":"Too far away","Ikke denne virksomhed":"Not this company","Noget andet":"Something else","Skjul bare jobbet":"Just hide the job",
+"Gem til senere":"Save for later","Ja, jeg har søgt":"Yes, I applied","Vi søger aldrig på dine vegne.":"We never apply on your behalf.","I den rigtige version åbner dette det originale jobopslag på virksomhedens egen side.":"In the real version this opens the original job post on the company's own site.","Løbende optag, så du kan tilmelde dig når som helst.":"Rolling intake, so you can apply any time.","Fristen står i opslaget.":"The deadline is in the post.","Markér jobbet som søgt for at holde styr på det under Gemt.":"Mark the job as applied to keep track of it under Saved.","Ansøgningsfrist:":"Deadline:","Åbn jobopslaget":"Open the job post","Skriv til virksomheden":"Write to the company","Markér som søgt":"Mark as applied",
+/* profil */
+"Jo mere du tilføjer, jo skarpere bliver dine matches. Alt er valgfrit.":"The more you add, the sharper your matches. Everything is optional.","Profilstyrke":"Profile strength",
+"Upload dit CV. Så finder vi dine kompetencer og din erfaring, og dine matches bliver skarpere.":"Upload your CV. Then we find your skills and experience, and your matches get sharper.",
+"Tilføj mindst 3 kompetencer. De tæller med i hvert match.":"Add at least 3 skills. They count in every match.","Vælg de felter, du er nysgerrig på. Interesser kan løfte et job.":"Pick the fields you are curious about. Interests can lift a job.","Vælg brancher, du gerne vil arbejde i.":"Pick industries you would like to work in.","Tilføj dit semester, så vi kan foreslå praktik på det rigtige tidspunkt.":"Add your semester so we can suggest internships at the right time.","Tilføj et tidligere job. Selv et cafejob viser erfaring med kunder og vagter.":"Add a previous job. Even a café job shows experience with customers and shifts.","Din profil ser godt ud.":"Your profile looks good.",
+"Dine uddannelser":"Your degrees","Primær":"Primary","Skift":"Change","Fjern":"Remove","Gør til primær":"Make primary","+ Tilføj en uddannelse mere":"+ Add another degree","Fx din bachelor, hvis du nu læser kandidat, eller et sidefag. Vi matcher på alle dine uddannelser.":"E.g. your bachelor's if you are now doing a master's, or a minor. We match on all your degrees.","tolket af AI":"interpreted by AI","tolket ud fra din tekst":"interpreted from your text",
+"Semester":"Semester","Ikke angivet":"Not given","1. semester":"1st semester","2. semester":"2nd semester","3. semester":"3rd semester","4. semester":"4th semester","5. semester":"5th semester","6. semester":"6th semester","7. semester (kandidat 1.)":"7th semester (master's 1st)","8. semester (kandidat 2.)":"8th semester (master's 2nd)","9. semester (kandidat 3.)":"9th semester (master's 3rd)","10. semester (speciale)":"10th semester (thesis)",
+"Filtre":"Filters","Job, der ikke består dem, kommer aldrig i dit feed.":"Jobs that don't pass them never reach your feed.","Flydende i dansk?":"Fluent in Danish?","Felter, der er med":"Fields included",
+"Værktøjer og metoder, du har brugt i fag, projekter eller job.":"Tools and methods you have used in courses, projects or jobs.","Ingen kompetencer endnu.":"No skills yet.","Tilføj en kompetence":"Add a skill","Tilføj":"Add","Ofte efterspurgt i dine felter:":"Often asked for in your fields:",
+"Felter og brancher, du gerne vil prøve. Et match her løfter et job.":"Fields and industries you would like to try. A match here lifts a job.","Brancher":"Industries","Felter":"Fields",
+"CV og erfaring":"CV and experience","Upload dit CV":"Upload your CV","Vi finder dine kompetencer og din erfaring og bruger dem til at give dig stærkere matches. Du vælger selv, hvad der kommer med.":"We find your skills and experience and use them to give you stronger matches. You choose what goes in.","Vælg fil":"Choose file","Skift fil":"Change file","PDF eller Word (.docx). Uden bruger læses CV'et kun i din browser og sendes ingen steder hen.":"PDF or Word (.docx). Without an account, the CV is only read in your browser and sent nowhere.","PDF eller Word (.docx). CV'et gemmes på din bruger, og vores AI læser det, så vi kan finde mere end nøgleord.":"PDF or Word (.docx). The CV is saved to your account and our AI reads it, so we can find more than keywords.",
+"Tidligere job":"Previous jobs","Tilføj et tidligere job":"Add a previous job","Relevante fag":"Relevant courses","Tilføj et fag":"Add a course","fx Power BI":"e.g. Power BI","fx Barista, 2 år":"e.g. Barista, 2 years","fx Supply Chain Management (5 ECTS)":"e.g. Supply Chain Management (5 ECTS)",
+"Jobmails":"Job emails","Opret en gratis bruger, så mailer vi dig, når der kommer nye studiejob, der passer til din uddannelse.":"Create a free account and we email you when new student jobs fit your degree.","Opret bruger og få jobmails":"Create an account and get job emails","Få en mail, når der kommer nye studiejob, der passer til din uddannelse og dine filtre. Kun når der er noget nyt.":"Get an email when new student jobs fit your degree and filters. Only when there is something new.","Mail mig nye job, der passer til mig":"Email me new jobs that fit me","Hver dag":"Daily","Hver uge":"Weekly","Dagligt":"Daily","Ugentligt":"Weekly",
+"Dine data":"Your data","Alt her gemmes kun i denne browser.":"Everything here is only stored in this browser.","Slet mine data og start forfra":"Delete my data and start over","Din profil, dine gemte job og dit CV er gemt på din bruger. Læs mere i vores":"Your profile, saved jobs and CV are saved to your account. Read more in our","privatlivspolitik":"privacy policy","Slet min bruger og alle mine data":"Delete my account and all my data","Din konto":"Your account","Log ud":"Log out","Skift adgangskode":"Change password",
+"Er du sikker? Det kan ikke fortrydes.":"Are you sure? This cannot be undone.","Ja, slet":"Yes, delete",
+/* log ind og opret */
+"Gem din profil":"Save your profile","Opret en gratis bruger, så din profil, dine gemte job og dit CV er gemt, og du kan logge ind fra alle dine enheder.":"Create a free account so your profile, saved jobs and CV are saved and you can log in from all your devices.","Opret bruger":"Create account","E-mail":"Email","Adgangskode":"Password","Glemt adgangskode?":"Forgot password?","Ny på Studiematch?":"New to Studiematch?","Opret en gratis bruger":"Create a free account","Luk":"Close",
+"Så gemmes din profil, dine gemte job og dit CV, og du kan logge ind fra alle dine enheder.":"Then your profile, saved jobs and CV are saved, and you can log in from all your devices.","Navn":"Name","Mindst 8 tegn.":"At least 8 characters.","Hvor hørte du om Studiematch?":"Where did you hear about Studiematch?","Vælg":"Choose","Plakat":"Poster","Instagram eller TikTok":"Instagram or TikTok","En ven":"A friend","Mit studie eller en underviser":"My programme or a teacher","En jobportal":"A job portal",
+"Send mig nye studiejob, der passer til min uddannelse, på mail. Højst én gang om dagen, og du kan altid afmelde.":"Email me new student jobs that fit my degree. At most once a day, and you can always unsubscribe.","Jeg har læst":"I have read the","privatlivspolitikken":"privacy policy","og accepterer, at Studiematch gemmer min profil.":"and accept that Studiematch stores my profile.","Har du allerede en bruger?":"Already have an account?",
+"Skriv din mail, så sender vi et link, hvor du kan vælge en ny.":"Enter your email and we will send you a link to choose a new one.","Send link":"Send link","Tilbage til log ind":"Back to log in","Tjek din mail":"Check your email",
+"Vælg en ny adgangskode":"Choose a new password","Ny adgangskode":"New password","Gentag adgangskoden":"Repeat the password","Gem og log ind":"Save and log in","Nuværende adgangskode":"Current password","Annuller":"Cancel","Gem adgangskode":"Save password","Opretter…":"Creating…","Logger ind…":"Logging in…","Sender…":"Sending…","Gemmer…":"Saving…",
+"Tilføj en uddannelse":"Add a degree","Har du flere uddannelser, fx en bachelor og en kandidat, bruger vi dem alle, når vi finder job.":"If you have several degrees, like a bachelor's and a master's, we use all of them when finding jobs.","Alle skoler":"All schools","Skole":"School","Søg, fx jura, HA eller sygeplejerske":"Search, e.g. law, business or nursing","Skift din uddannelse":"Change your degree",
+"Det fandt vi i dit CV":"This is what we found in your CV","Vores AI har læst dit CV.":"Our AI has read your CV.","Vi har læst dit CV i din browser.":"We read your CV in your browser.","Fravælg det, der ikke passer, og tryk Tilføj.":"Untick what doesn't fit and tap Add.","Felter, du har arbejdet med":"Fields you have worked in","Vi fandt ikke noget, vi kunne bruge. Du kan stadig skrive dine kompetencer og tidligere job ind selv.":"We didn't find anything we could use. You can still add your skills and previous jobs yourself.","Tilføj til min profil":"Add to my profile",
+/* opslag fra virksomheder */
+"Slå et studiejob op":"Post a student job","Gratis. Vi viser jobbet til de studerende, hvis uddannelse passer til det.":"Free. We show the job to the students whose degree fits it.","Jobtitel":"Job title","By":"City","Landsdel":"Region","Remote":"Remote","Dansk":"Danish","Kræves":"Required","En fordel":"An advantage","Ikke nødvendigt":"Not needed","Hvad skal den studerende lave, og hvem søger I?":"What will the student do, and who are you looking for?","Link til opslaget":"Link to the post","Uden link søger de studerende ved at skrive til jeres mail.":"Without a link, students apply by writing to your email.","Ansøgningsfrist":"Application deadline","Mail til ansøgninger":"Email for applications","Send til godkendelse":"Send for approval","Studentermedhjælper til …":"Student assistant for …","Opgaver, hvilke uddannelser der passer, hvornår I starter":"Tasks, which degrees fit, when you start","Tak, jobbet er modtaget":"Thanks, we got the job",
+/* toasts og fejl */
+"Gemt. Du finder det under Gemt.":"Saved. You will find it under Saved.","Fjernet fra Gemt":"Removed from Saved","Fjernet fra interesseret":"Removed from interested","Fjernet":"Removed","Markeret som søgt. Du finder det under Gemt.":"Marked as applied. You will find it under Saved.","Læringen er nulstillet til din uddannelses udgangspunkt.":"Learning is reset to your degree's starting point.","Viser nu job fra hele landet.":"Now showing jobs from all of Denmark.","Jobmails er slået til.":"Job emails are on.","Jobmails er slået fra.":"Job emails are off.","Det lykkedes ikke. Prøv igen.":"That didn't work. Try again.","Det lykkedes ikke.":"That didn't work.","Dine data er slettet.":"Your data has been deleted.","Tak! Det hjælper os med at ramme endnu bedre.":"Thanks! That helps us match even better.","Tak! Vi bruger det til at gøre matchningen bedre.":"Thanks! We use it to improve the matching.","Du er logget ud.":"You are logged out.","Alle felter er slået til igen.":"All fields are turned on again.","De fravalgte job vises igen.":"The hidden jobs are shown again.","Jobbet vises igen.":"The job is shown again.","CV'et er fjernet. Kompetencer og job, du har tilføjet, bliver på profilen.":"The CV is removed. Skills and jobs you added stay on your profile.","CV'et kunne ikke læses.":"The CV could not be read.","Dit CV er brugt. Dine matches er opdateret.":"Your CV has been used. Your matches are updated.","Din nye adgangskode er gemt, og du er logget ind.":"Your new password is saved and you are logged in.","Din bruger er oprettet. Din profil gemmes nu automatisk.":"Your account is created. Your profile is now saved automatically.","Din adgangskode er gemt.":"Your password is saved.","Den uddannelse er allerede på din profil.":"That degree is already on your profile.","Skjult.":"Hidden.","Skjult. Tip: svar på, om du taler dansk, under Profil.":"Hidden. Tip: answer whether you speak Danish under Profile.","Skjult. Tip: ret dit område under Profil.":"Hidden. Tip: change your region under Profile.",
+"Det virker ikke lige nu. Skriv til matchstudie@gmail.com.":"It isn't working right now. Write to matchstudie@gmail.com.","De to adgangskoder er ikke ens.":"The two passwords don't match.","Sæt flueben ved privatlivspolitikken for at oprette en bruger.":"Tick the privacy policy box to create an account.",
+"Adgangskoden skal være mindst 8 tegn":"The password must be at least 8 characters","Brugeren findes allerede":"The account already exists","Den nuværende adgangskode er forkert":"The current password is wrong","Der findes allerede en bruger med den mail. Log ind i stedet.":"There is already an account with that email. Log in instead.","Du er ikke logget ind":"You are not logged in","Du skal acceptere privatlivspolitikken":"You must accept the privacy policy","For mange forsøg. Prøv igen om et kvarter.":"Too many attempts. Try again in 15 minutes.","Forkert mail eller adgangskode":"Wrong email or password","Linket er udløbet eller allerede brugt. Bed om et nyt.":"The link has expired or was already used. Ask for a new one.","Linket ser ikke rigtigt ud":"The link doesn't look right","Noget gik galt på serveren":"Something went wrong on the server","Nulstilling på mail er ikke slået til endnu. Skriv til matchstudie@gmail.com.":"Password reset by email isn't set up yet. Write to matchstudie@gmail.com.","Skriv en gyldig mail":"Enter a valid email","Udfyld virksomhed og mail":"Fill in company and email","Vi kunne ikke læse tekst i CV'et":"We couldn't read any text in the CV","Vælg en landsdel":"Choose a region",
+/* brancher (fra jobdata) */
+"Vores AI har læst dit CV. Fravælg det, der ikke passer, og tryk Tilføj.":"Our AI has read your CV. Untick what doesn't fit and tap Add.","Vi har læst dit CV i din browser. Fravælg det, der ikke passer, og tryk Tilføj.":"We read your CV in your browser. Untick what doesn't fit and tap Add.",
+"Startup-jobbørs":"Startup job board","Universitetets jobside":"University job page","Kommunens jobportal":"Municipal job portal","Regionens jobportal":"Regional job portal","Statens jobportal":"Government job portal","Vikarbureau":"Temp agency","Vagtbureau":"Staffing agency","Lægeforeningernes jobopslag":"Medical association job posts",
+"Advokat":"Law firm","Biotek":"Biotech","Byggeri":"Construction","Børn og unge":"Children and youth","Detailhandel":"Retail","Energi":"Energy","Fonde":"Foundations","Fødevarer og drikkevarer":"Food and beverages","Fødevarer og drikke":"Food and beverages","Ingeniørrådgivning":"Engineering consultancy","Interesseorganisation":"Interest organisation","Jobportal for studerende":"Student job portal","Logistik og shipping":"Logistics and shipping","Medicinal":"Pharmaceuticals","Medicinsk udstyr":"Medical devices","Medier":"Media","Offentlig":"Public sector","Offentlig sektor":"Public sector","Pension og forsikring":"Pensions and insurance","Revision og rådgivning":"Audit and advisory","Rådgivning":"Consulting","Sundhed":"Health","Sundhed og region":"Health and regions","Tech og software":"Tech and software","Telekommunikation":"Telecom","Uddannelse og forskning":"Education and research","Uddannelse":"Education","Finans":"Finance","Transport":"Transport","Produktion":"Manufacturing","Kultur":"Culture","Forskning":"Research","Socialt arbejde":"Social work","Pharma og medtech":"Pharma and medtech"
+});
+EN_RE.push(
+ [/^Trin (\d) af 4$/,"Step $1 of 4"],
+ [/^Hvad læser du på (.+)\?$/,"What do you study at $1?"],[/^Hvad læser du\?$/,"What do you study?"],
+ [/^Listen er hentet fra (.+) i oktober 2026\.$/,"The list is taken from $1 in October 2026."],
+ [/^Et udvalg af uddannelserne på (.+); listen er ikke komplet endnu\.$/,"A selection of the degrees at $1; the list isn't complete yet."],
+ [/^Kan du ikke finde din, så skriv navnet og tryk Fortsæt\.$/,"Can't find yours? Type the name and press Continue."],
+ [/^Søg blandt (.+?)s uddannelser$/,"Search $1 degrees"],
+ [/^(\d+) uddannelser$/,"$1 degrees"],[/^1 uddannelse$/,"1 degree"],
+ [/^Brug “(.+)”$/,"Use “$1”"],
+ [/^Baseret på (.+?)( på (.+))?\. Slå det fra, der ikke er noget for dig\. Du kan ændre det senere\.$/,(m,a,b,c)=>`Based on ${a}${c?" at "+c:""}. Turn off what isn't for you. You can change it later.`],
+ [/^Vis mine (\d+) matches$/,"Show my $1 matches"],
+ [/^(\d+) studiejob rangeret til (.+)\. Opdateret kl\. (.+), (\d+) opslag gennemgået\.$/,"$1 student jobs ranked for $2. Updated at $3, $4 posts checked."],
+ [/^(\d+) praktikpladser rangeret til (.+)\. Opdateret kl\. (.+), (\d+) opslag gennemgået\.$/,"$1 internships ranked for $2. Updated at $3, $4 posts checked."],
+ [/^(\d+) job vises ikke for dig$/,"$1 jobs are hidden for you"],
+ [/^Frist (.+)$/,"Deadline $1"],[/^Ny, (.+)$/,"New, $1"],
+ [/^Søgt · (\d+)$/,"Applied · $1"],[/^Gemt · (\d+)$/,"Saved · $1"],
+ [/^Fjern (.+)$/,"Remove $1"],
+ [/^Din feedback har flyttet uddannelses-pasformen (op|ned) med (\d+) point\.$/,(m,d,n)=>`Your feedback has moved the degree fit ${d==="op"?"up":"down"} by ${n} points.`],
+ [/^Vis færre job inden for (.+)$/,"Show fewer jobs in $1"],
+ [/^Skjult\. Færre job inden for (.+) fremover\.$/,"Hidden. Fewer jobs in $1 from now on."],
+ [/^Noteret\. Flere job inden for (.+) fremover\.$/,"Noted. More jobs in $1 from now on."],
+ [/^Søgte du jobbet hos (.+)\?$/,"Did you apply at $1?"],
+ [/^Så holder vi styr på det under Gemt, og du kan se fristen \((.+)\)\.$/,"Then we keep track of it under Saved, and you can see the deadline ($1)."],
+ [/^Så holder vi styr på det under Gemt\.$/,"Then we keep track of it under Saved."],
+ [/^Søg hos (.+)$/,"Apply at $1"],
+ [/^Du søger direkte hos (.+) på deres egen side\.$/,"You apply directly at $1 on their own site."],
+ [/^Vores AI har tolket “(.+)”, så dine matches passer bedre\.$/,"Our AI has interpreted “$1”, so your matches fit better."],
+ [/^(.+) er tilføjet\. Dine matches bruger nu begge uddannelser\.$/,"$1 is added. Your matches now use both degrees."],
+ [/^Matcher nu som (.+)\.$/,"Now matching as $1."],[/^(.+) er nu din primære uddannelse\.$/,"$1 is now your primary degree."],[/^(.+) er fjernet\.$/,"$1 is removed."],
+ [/^Velkommen tilbage(, (.+))?\.$/,(m,a,n)=>`Welcome back${n?", "+n:""}.`],
+ [/^Hvis der findes en bruger med$/,"If there is an account with"],
+ [/^, har vi sendt et link, hvor du kan vælge en ny adgangskode\. Linket virker i en time\. Kig også i spam\.$/,", we have sent a link to choose a new password. The link works for an hour. Check your spam too."],
+ [/^Vi kigger på det og lægger det op inden for et døgn\. Har vi spørgsmål, skriver vi til (.+)\.$/,"We will look at it and publish it within a day. If we have questions, we will write to $1."],
+ [/^Læst (.+)$/,"Read $1"],
+ [/^(.+) · Diplomingeniør$/,"$1 · BEng"],[/^(.+) · Kandidat$/,"$1 · Master's"],[/^(.+) · Bachelor$/,"$1 · Bachelor"],[/^(.+) · Professionsbachelor$/,"$1 · Professional bachelor"],[/^(.+) · Erhvervsakademi$/,"$1 · Academy profession"],
+ [/^(.+) \/ Flydende dansk$/,"$1 / Fluent Danish"],[/^(.+) \/ Engelsk$/,"$1 / English"],
+ [/^Fundet via (.+)$/,(m,a)=>"Found via "+(EN[a]||a)],[/^Kilde i den rigtige version: (.+)$/,(m,a)=>"Source in the real version: "+(EN[a]||a)]
+);
+
+
 const FAM = {
   supply:{label:"Supply Chain",n:"supply chain"}, procurement:{label:"Indkøb",n:"indkøb"}, pmo:{label:"Projektledelse / PMO",n:"projektledelse"},
   bizdev:{label:"Forretningsudvikling",n:"forretningsudvikling"}, strategy:{label:"Strategi og rådgivning",n:"strategi og rådgivning"}, salesops:{label:"Salgsoperationer",n:"salgsoperationer"},
@@ -444,6 +624,9 @@ const FAM = {
   social:{label:"Socialt arbejde",n:"socialt arbejde"}, public:{label:"Offentlig forvaltning",n:"offentlig forvaltning"}
 };
 /* ord, en studerende ville skrive i et søgefelt for hvert felt (dansk og engelsk) */
+const FAM_EN = {supply:["Supply chain","supply chain"],procurement:["Procurement","procurement"],pmo:["Project management / PMO","project management"],bizdev:["Business development","business development"],strategy:["Strategy and consulting","strategy and consulting"],salesops:["Sales operations","sales operations"],logistics:["Logistics","logistics"],operations:["Operations and processes","operations and processes"],bi:["BI and data analysis","BI and data analysis"],finance:["Finance, accounting and audit","finance and accounting"],marketing:["Marketing and communication","marketing and communication"],product:["Product and UX","product and UX"],software:["Software development","software development"],datasci:["Data science","data science"],hr:["HR and recruitment","HR and recruitment"],sustain:["Sustainability and ESG","sustainability and ESG"],customer:["Customer success","customer success"],legal:["Law and compliance","law and compliance"],research:["Research","research"],engineering:["Engineering","engineering"],health:["Health and care","health and care"],education:["Teaching and childcare","teaching and childcare"],social:["Social work","social work"],public:["Public administration","public administration"]};
+/* FAM[f].label og .n følger sproget */
+function applyLangData(){ for(const f in FAM){ if(!FAM[f].da) FAM[f].da={label:FAM[f].label,n:FAM[f].n}; const e=FAM_EN[f]; FAM[f].label=LANG==="en"&&e?e[0]:FAM[f].da.label; FAM[f].n=LANG==="en"&&e?e[1]:FAM[f].da.n; } }
 const TITLE_KW = {
   supply:["supply","demand","planning","planlægning","forsyning"], procurement:["procurement","purchasing","sourcing","buyer","indkøb"],
   pmo:["project","projekt","pmo"], bizdev:["business development","forretningsudvikling","partnership","growth"], strategy:["strategy","strategi","consult","konsulent"],
@@ -627,23 +810,21 @@ function regionChips(p, labelId){
   return REGION_GROUPS.map(g=>`<p class="fine region-group">${g.l}</p><div class="chips" role="group" aria-label="${g.l}">${g.r.map(r=>`<button class="chip" data-act="region" data-v="${r.v}" aria-pressed="${p.regions.includes(r.v)}">${r.l}</button>`).join("")}</div>`).join("")
     + `<div class="chips region-any"><button class="chip" data-act="region" data-v="any" aria-pressed="${p.regions.includes("any")}">Hele landet</button></div>`;
 }
-/* v = det højeste antal timer om ugen, man kan arbejde. 40 = alle timer, ingen grænse. */
-const HOURS = [{v:5,l:"Op til 5 t"},{v:10,l:"Op til 10 t"},{v:15,l:"Op til 15 t"},{v:20,l:"Op til 20 t"},{v:40,l:"Alle timer"}];
-const DANISH = [{v:"fluent",l:"Flydende dansk"},{v:"some",l:"Lidt dansk"},{v:"none",l:"Intet dansk"}];
+const DANISH = [{v:"fluent",l:"Ja"},{v:"none",l:"Nej"}];
 const SKILLS_COMMON = ["Excel","Bogføring","Regnskab","Løn","Power BI","SQL","Python","SAP","Salesforce","Tableau","Lean","Procesforbedring","Projektkoordinering","Stakeholder management","Dataanalyse","Forhandling","Forecasting","Figma","JavaScript","React","Statistik","R","Skriftlig formidling","Sociale medier","Copywriting","Kundeservice","Rekruttering","Kontraktret","ESG-rapportering","LCA","CAD","Laboratoriearbejde","Dokumentation","PowerPoint","CRM","Brugerundersøgelser","Optimering","Eventplanlægning","Prototyping"];
 
 /* Eksempeljob. Alle arbejdsgivere er opdigtede. src = den type kilde, jobbet i den rigtige version ville komme fra. */
 const JOBS = [
-  {id:"j1",title:"Studentermedhjælper – Supply Chain Planning",co:"Nordkaj Logistics",city:"København Ø",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"supply",sec:["bi","logistics"],skills:["Excel","Power BI","SAP"],industry:"Logistik og shipping",postedH:3,deadline:9,src:"Virksomhedens rekrutteringssystem",blurb:"Hjælp planlæggerne med at fordele varer mellem tre nordiske lagre, og hold de ugentlige tal for udbud og efterspørgsel ajour."},
+  {id:"j1",title:"Studentermedhjælper – Supply Chain Planning",titleEn:"Student assistant, supply chain planning",blurbEn:"Help the planners distribute goods between three Nordic warehouses, and keep the weekly supply and demand figures up to date.",co:"Nordkaj Logistics",city:"København Ø",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"supply",sec:["bi","logistics"],skills:["Excel","Power BI","SAP"],industry:"Logistik og shipping",postedH:3,deadline:9,src:"Virksomhedens rekrutteringssystem",blurb:"Hjælp planlæggerne med at fordele varer mellem tre nordiske lagre, og hold de ugentlige tal for udbud og efterspørgsel ajour."},
   {id:"j2",title:"Studentermedhjælper i indkøb",co:"Skærgaard Wind",city:"Ballerup",region:"cph",hMin:12,hMax:15,danish:"no",fam:"procurement",sec:["supply"],skills:["Excel","Forhandling","SAP"],industry:"Energi",postedH:20,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Støt indkøberne, der køber komponenter til havvindprojekter: tilbud, leverandøropfølgning og prisanalyser. Arbejdssproget er engelsk."},
   {id:"j3",title:"PMO-studentermedhjælper",co:"Fjordlys Pharma",city:"Søborg",region:"cph",hMin:15,hMax:15,danish:"no",fam:"pmo",sec:["operations"],skills:["Projektkoordinering","Excel","Stakeholder management"],industry:"Pharma og medtech",postedH:5,deadline:6,src:"Virksomhedens rekrutteringssystem",blurb:"Hold styr på 14 byggeprojekter på fabrikken: statusrapporter, risikolister og forberedelse af styregruppemøder."},
-  {id:"j4",title:"Business Intelligence-studerende",co:"Lindholm Retail Group",city:"København V",region:"cph",hMin:10,hMax:15,danish:"plus",fam:"bi",sec:["finance"],skills:["Power BI","SQL","Excel"],industry:"Detailhandel",postedH:30,deadline:12,src:"Virksomhedens karriereside",blurb:"Byg og vedligehold de Power BI-rapporter, som 40 butikschefer bruger hver mandag."},
+  {id:"j4",title:"Business Intelligence-studerende",titleEn:"Business Intelligence student",blurbEn:"Build and maintain the Power BI reports that 40 store managers use every Monday.",co:"Lindholm Retail Group",city:"København V",region:"cph",hMin:10,hMax:15,danish:"plus",fam:"bi",sec:["finance"],skills:["Power BI","SQL","Excel"],industry:"Detailhandel",postedH:30,deadline:12,src:"Virksomhedens karriereside",blurb:"Byg og vedligehold de Power BI-rapporter, som 40 butikschefer bruger hver mandag."},
   {id:"j5",title:"Studentermedhjælper – Forretningsudvikling",co:"Amagerbro Pay",city:"København S",region:"cph",hMin:15,hMax:20,danish:"required",fam:"bizdev",sec:["salesops","strategy"],skills:["Salesforce","Excel","Stakeholder management"],industry:"Finans",postedH:8,deadline:10,src:"Startup-jobbørs",blurb:"Find og kvalificér små og mellemstore danske virksomheder som kunder, og forbered materiale til partnermøder."},
   {id:"j6",title:"Logistikkoordinator (student)",co:"Tårnby Air Cargo",city:"Kastrup",region:"cph",hMin:15,hMax:20,danish:"required",fam:"logistics",sec:["operations","customer"],skills:["SAP","Excel","Kundeservice"],industry:"Logistik og shipping",postedH:26,deadline:4,src:"Virksomhedens karriereside",blurb:"Koordinér luftfragt mellem fragtfirmaer og kunder. Enkelte tidlige morgenvagter."},
   {id:"j7",title:"Studentermedhjælper – Drift og procesforbedring",co:"Humlegaard Bryghus",city:"Valby",region:"cph",hMin:12,hMax:16,danish:"plus",fam:"operations",sec:["supply"],skills:["Lean","Procesforbedring","Excel"],industry:"Fødevarer og drikke",postedH:48,deadline:15,src:"Virksomhedens karriereside",blurb:"Find flaskehalsene på tappelinjen, og hjælp med at køre korte forbedringsforløb sammen med produktionen."},
-  {id:"j8",title:"Studentermedhjælper – Strategi og analyse",co:"Holmen Advisory",city:"København K",region:"cph",hMin:15,hMax:20,danish:"no",fam:"strategy",sec:["bi","bizdev"],skills:["Excel","PowerPoint","Dataanalyse"],industry:"Rådgivning",postedH:12,deadline:7,src:"Virksomhedens rekrutteringssystem",blurb:"Markedsanalyser, konkurrentoverblik og slides til strategiprojekter for nordiske kunder."},
-  {id:"j9",title:"Sales Operations Student",co:"Nordlicht Software",city:"København N",region:"cph",hMin:12,hMax:15,danish:"no",fam:"salesops",sec:["bi","customer"],skills:["Salesforce","Excel","CRM"],industry:"Tech og software",postedH:2,deadline:18,src:"Startup-jobbørs",blurb:"Ryd op i salgsdata, byg salgsrapporter, og hjælp salgsteamet over i et nyt CRM-system."},
-  {id:"j10",title:"Dataanalytiker (student)",co:"Sundby Mobility",city:"København SV",region:"cph",hMin:15,hMax:15,danish:"no",fam:"bi",sec:["datasci"],skills:["Python","SQL","Tableau"],industry:"Transport",postedH:40,deadline:11,src:"Startup-jobbørs",blurb:"Analysér turdata fra 2.000 delecykler, og lav en ugentlig rapport om, hvor og hvornår de bruges."},
+  {id:"j8",title:"Studentermedhjælper – Strategi og analyse",titleEn:"Student assistant, strategy and analysis",blurbEn:"Market analyses, competitor overviews and slides for strategy projects for Nordic clients.",co:"Holmen Advisory",city:"København K",region:"cph",hMin:15,hMax:20,danish:"no",fam:"strategy",sec:["bi","bizdev"],skills:["Excel","PowerPoint","Dataanalyse"],industry:"Rådgivning",postedH:12,deadline:7,src:"Virksomhedens rekrutteringssystem",blurb:"Markedsanalyser, konkurrentoverblik og slides til strategiprojekter for nordiske kunder."},
+  {id:"j9",title:"Sales Operations Student",blurbEn:"Clean up sales data, build sales reports and help the sales team move to a new CRM system.",co:"Nordlicht Software",city:"København N",region:"cph",hMin:12,hMax:15,danish:"no",fam:"salesops",sec:["bi","customer"],skills:["Salesforce","Excel","CRM"],industry:"Tech og software",postedH:2,deadline:18,src:"Startup-jobbørs",blurb:"Ryd op i salgsdata, byg salgsrapporter, og hjælp salgsteamet over i et nyt CRM-system."},
+  {id:"j10",title:"Dataanalytiker (student)",titleEn:"Data analyst (student)",blurbEn:"Analyse trip data from 2,000 shared bikes and write a weekly report on where and when they are used.",co:"Sundby Mobility",city:"København SV",region:"cph",hMin:15,hMax:15,danish:"no",fam:"bi",sec:["datasci"],skills:["Python","SQL","Tableau"],industry:"Transport",postedH:40,deadline:11,src:"Startup-jobbørs",blurb:"Analysér turdata fra 2.000 delecykler, og lav en ugentlig rapport om, hvor og hvornår de bruges."},
   {id:"j11",title:"Studentermedhjælper – ESG-rapportering",co:"Bølge Energi",city:"Aarhus C",region:"aar",hMin:12,hMax:15,danish:"plus",fam:"sustain",sec:["finance"],skills:["ESG-rapportering","Excel","LCA"],industry:"Energi",postedH:18,deadline:9,src:"Virksomhedens rekrutteringssystem",blurb:"Indsaml og kvalitetstjek tal til virksomhedens årlige bæredygtighedsrapport."},
   {id:"j12",title:"Student Software Developer",co:"Mølleå Robotics",city:"Kgs. Lyngby",region:"cph",hMin:15,hMax:20,danish:"no",fam:"software",sec:["engineering"],skills:["Python","JavaScript","React"],industry:"Tech og software",postedH:6,deadline:21,sponsored:true,src:"Virksomhedens rekrutteringssystem",blurb:"Byg interne værktøjer, der overvåger virksomhedens robotter, i et team på 8 udviklere."},
   {id:"j13",title:"Studentermedhjælper i marketing",co:"Fjordlys Pharma",city:"Søborg",region:"cph",hMin:12,hMax:15,danish:"required",fam:"marketing",sec:["customer"],skills:["Copywriting","Sociale medier"],industry:"Pharma og medtech",postedH:10,deadline:8,src:"Virksomhedens rekrutteringssystem",blurb:"Skriv danske tekster til nyhedsbreve, LinkedIn og karrieresiden."},
@@ -655,16 +836,16 @@ const JOBS = [
   {id:"j19",title:"Studentermedhjælper – Demand Planning",co:"Humlegaard Bryghus",city:"Valby",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"supply",sec:["bi"],skills:["Excel","Power BI","Forecasting"],industry:"Fødevarer og drikke",postedH:4,deadline:5,src:"Virksomhedens karriereside",blurb:"Stå for den ugentlige salgsprognose for 120 produkter, og sig til, før afvigelser rammer produktionen."},
   {id:"j20",title:"Studentermedhjælper i økonomi og controlling",co:"Amagerbro Pay",city:"København S",region:"cph",hMin:15,hMax:15,danish:"plus",fam:"finance",sec:["bi"],skills:["Excel","SAP","Dataanalyse"],industry:"Finans",postedH:14,deadline:9,src:"Startup-jobbørs",blurb:"Hjælp med månedsafslutning, omkostningsrapporter og opfølgning på budgettet."},
   {id:"j21",title:"Studentermedhjælper – Tilbuds- og udbudsstyring",co:"Holmen Infrastruktur",city:"Glostrup",region:"cph",hMin:12,hMax:15,danish:"no",fam:"pmo",sec:["procurement","bizdev"],skills:["Projektkoordinering","Skriftlig formidling","Excel"],industry:"Byggeri",postedH:16,deadline:10,src:"Virksomhedens rekrutteringssystem",blurb:"Saml input fra ingeniører, jurister og økonomer til tilbud på offentlige opgaver med faste frister."},
-  {id:"j22",title:"Prisanalytiker (student)",co:"Nordkaj Logistics",city:"København Ø",region:"cph",hMin:12,hMax:15,danish:"no",fam:"bi",sec:["strategy","salesops"],skills:["Excel","Dataanalyse","SQL"],industry:"Logistik og shipping",postedH:28,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Beregn fragtpriser og avancer til kundetilbud, og følg med i, hvilke tilbud der bliver vundet."},
+  {id:"j22",title:"Prisanalytiker (student)",titleEn:"Pricing analyst (student)",blurbEn:"Calculate freight prices and margins for customer quotes, and track which quotes are won.",co:"Nordkaj Logistics",city:"København Ø",region:"cph",hMin:12,hMax:15,danish:"no",fam:"bi",sec:["strategy","salesops"],skills:["Excel","Dataanalyse","SQL"],industry:"Logistik og shipping",postedH:28,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Beregn fragtpriser og avancer til kundetilbud, og følg med i, hvilke tilbud der bliver vundet."},
   {id:"j23",title:"Studentermedhjælper – Produktcompliance",co:"Avedøre Medtech",city:"Hvidovre",region:"cph",hMin:12,hMax:15,danish:"no",fam:"legal",sec:["operations","pmo"],skills:["Dokumentation","Procesforbedring","Excel"],industry:"Pharma og medtech",postedH:34,deadline:12,src:"Virksomhedens rekrutteringssystem",blurb:"Hold teknisk dokumentation og ændringer i orden, så produkterne fortsat er godkendt til salg i EU."},
   {id:"j24",title:"Studentermedhjælper – Energihandel og drift",co:"Vestkyst Energihandel",city:"Aarhus C",region:"aar",hMin:15,hMax:20,danish:"no",fam:"operations",sec:["bi","finance"],skills:["Excel","Python","Dataanalyse"],industry:"Energi",postedH:7,deadline:8,src:"Virksomhedens rekrutteringssystem",blurb:"Lav daglige rapporter til strømhandlerne, og automatisér manuelle tjek i Excel."},
   {id:"j25",title:"Studentermedhjælper – Maskinkonstruktion",co:"Mølleå Robotics",city:"Kgs. Lyngby",region:"cph",hMin:15,hMax:15,danish:"no",fam:"engineering",sec:[],skills:["CAD","Prototyping"],industry:"Tech og software",postedH:11,deadline:14,src:"Virksomhedens rekrutteringssystem",blurb:"Tegn og 3D-print gribedele til robotterne, og test dem på produktionslinjen."},
   {id:"j26",title:"Laboratoriestuderende",co:"Kløver Bio",city:"København S",region:"cph",hMin:10,hMax:15,danish:"no",fam:"research",sec:["engineering"],skills:["Laboratoriearbejde","Dokumentation"],industry:"Pharma og medtech",postedH:19,deadline:10,src:"Startup-jobbørs",blurb:"Klargør prøver og kør faste analyser i et lille forskningsteam, der arbejder med enzymer."},
-  {id:"j27",title:"Studentermedhjælper – Flåde- og ruteoptimering",co:"Sundby Mobility",city:"København SV",region:"cph",hMin:12,hMax:15,danish:"no",fam:"logistics",sec:["datasci","bi"],skills:["Python","Excel","Optimering"],industry:"Transport",postedH:3,deadline:12,src:"Startup-jobbørs",blurb:"Beregn, hvor delecyklerne skal flyttes hen om natten, ud fra data om efterspørgsel."},
+  {id:"j27",title:"Studentermedhjælper – Flåde- og ruteoptimering",titleEn:"Student assistant, fleet and route optimisation",blurbEn:"Work out where the shared bikes should be moved overnight, based on demand data.",co:"Sundby Mobility",city:"København SV",region:"cph",hMin:12,hMax:15,danish:"no",fam:"logistics",sec:["datasci","bi"],skills:["Python","Excel","Optimering"],industry:"Transport",postedH:3,deadline:12,src:"Startup-jobbørs",blurb:"Beregn, hvor delecyklerne skal flyttes hen om natten, ud fra data om efterspørgsel."},
   {id:"j28",title:"UX- og produktstuderende",co:"Nordlicht Software",city:"København N",region:"cph",hMin:12,hMax:15,danish:"no",fam:"product",sec:["research"],skills:["Figma","Brugerundersøgelser"],industry:"Tech og software",postedH:15,deadline:17,src:"Startup-jobbørs",blurb:"Interview brugere, og gør det, du lærer, til skitser og prototyper i Figma sammen med produktteamet."},
   {id:"j29",title:"Indkøbsstudent – Fødevarer",co:"Lindholm Retail Group",city:"Odense C",region:"ode",hMin:15,hMax:15,danish:"required",fam:"procurement",sec:["supply"],skills:["Excel","Forhandling"],industry:"Detailhandel",postedH:44,deadline:9,src:"Virksomhedens karriereside",blurb:"Støt indkøberne i fødevareafdelingen med opfølgning på leverandører og prisforhandlinger."},
   {id:"j30",title:"Bæredygtighedsstudent – Emballage",co:"Fynbo Emballage",city:"Odense SØ",region:"ode",hMin:12,hMax:15,danish:"plus",fam:"sustain",sec:["supply","engineering"],skills:["LCA","Excel","ESG-rapportering"],industry:"Produktion",postedH:25,deadline:11,src:"Virksomhedens karriereside",blurb:"Beregn CO₂-aftrykket af emballage, og foreslå materialer, der belaster miljøet mindre."},
-  {id:"j31",title:"Business Analyst-studerende",co:"Tryghavn Forsikring",city:"Ballerup",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"bi",sec:["pmo","operations"],skills:["SQL","Excel","Procesforbedring"],industry:"Finans",postedH:13,deadline:15,sponsored:true,src:"Virksomhedens rekrutteringssystem",blurb:"Beskriv, hvordan skader bliver behandlet i dag, og skriv krav til et nyt sagssystem."},
+  {id:"j31",title:"Business Analyst-studerende",titleEn:"Business Analyst student",blurbEn:"Describe how claims are handled today and write requirements for a new case system.",co:"Tryghavn Forsikring",city:"Ballerup",region:"cph",hMin:15,hMax:20,danish:"plus",fam:"bi",sec:["pmo","operations"],skills:["SQL","Excel","Procesforbedring"],industry:"Finans",postedH:13,deadline:15,sponsored:true,src:"Virksomhedens rekrutteringssystem",blurb:"Beskriv, hvordan skader bliver behandlet i dag, og skriv krav til et nyt sagssystem."},
   {id:"j32",title:"Studentermedhjælper – Employer branding og events",co:"Holmen Advisory",city:"København K",region:"cph",hMin:8,hMax:12,danish:"required",fam:"marketing",sec:["hr"],skills:["Sociale medier","Eventplanlægning"],industry:"Rådgivning",postedH:36,deadline:7,src:"Virksomhedens rekrutteringssystem",blurb:"Planlæg arrangementer på universiteterne, og drift virksomhedens sociale medier rettet mod studerende."},
   {id:"j33",title:"Markedsanalyse-student (remote)",co:"Northbound Insights",city:"Remote",region:"remote",hMin:8,hMax:12,danish:"no",fam:"strategy",sec:["research","bizdev"],skills:["Dataanalyse","Excel","Skriftlig formidling"],industry:"Rådgivning",postedH:15,deadline:16,src:"Startup-jobbørs",blurb:"Research og korte rapporter om nordiske markeder. Du arbejder hjemmefra med fleksible timer."},
   {id:"j34",title:"Studentermedhjælper – Produktionsplanlægning",co:"Limfjord Manufacturing",city:"Aalborg Øst",region:"aal",hMin:15,hMax:20,danish:"plus",fam:"operations",sec:["supply"],skills:["SAP","Excel","Lean"],industry:"Produktion",postedH:21,deadline:10,src:"Virksomhedens karriereside",blurb:"Planlæg produktionsordrer, følg op på manglende materialer, og opdatér kapacitetsplanerne i SAP."},
@@ -716,12 +897,12 @@ const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const hasPhrase = (t,p) => (" "+t+" ").includes(" "+p+" ");
 const byId = id => JOBS.find(j=>j.id===id);
-const listJoin = a => a.length<=1 ? (a[0]||"") : a.slice(0,-1).join(", ")+" og "+a[a.length-1];
-const ago = h => h<1 ? "lige nu" : h<24 ? `for ${h} timer siden` : `for ${Math.round(h/24)} dage siden`;
-const agoShort = h => h<1 ? "nu" : h<24 ? `${h} t. siden` : `${Math.round(h/24)} d. siden`;
-const hoursText = v => (HOURS.find(x=>x.v===v)||HOURS.find(x=>x.v>=v)||HOURS[HOURS.length-1]).l;
-const danishLabel = v => v==="fluent" ? "Dansk OK" : v==="some" ? "Lidt dansk" : "Kun engelsk";
-const deadlineDate = d => new Date(Date.now()+d*864e5).toLocaleDateString("da-DK",{day:"numeric",month:"short"});
+const listJoin = a => a.length<=1 ? (a[0]||"") : a.slice(0,-1).join(", ")+L(" og "," and ")+a[a.length-1];
+const ago = h => h<1 ? L("lige nu","just now") : h<24 ? L(`for ${h} timer siden`,`${h} hours ago`) : L(`for ${Math.round(h/24)} dage siden`,`${Math.round(h/24)} days ago`);
+const agoShort = h => h<1 ? L("nu","now") : h<24 ? L(`${h} t. siden`,`${h}h ago`) : L(`${Math.round(h/24)} d. siden`,`${Math.round(h/24)}d ago`);
+const danishLabel = v => v==="fluent" ? "Flydende dansk" : "Engelsk";
+const LOC = () => LANG==="en" ? "en-GB" : "da-DK";
+const deadlineDate = d => new Date(Date.now()+d*864e5).toLocaleDateString(LOC(),{day:"numeric",month:"short"});
 function hue(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))%360; return h; }
 function initials(s){ return s.split(/\s+/).filter(w=>/^[A-ZÆØÅ]/.test(w)).slice(0,2).map(w=>w[0]).join(""); }
 
@@ -730,12 +911,15 @@ const KEY = "studiematch-v1";
 /* Flyt profiler fra det gamle navn, så ingen mister deres data */
 try{ const old=localStorage.getItem("pathfit-proto-v3"); if(old && !localStorage.getItem(KEY)){ localStorage.setItem(KEY,old); } if(old) localStorage.removeItem("pathfit-proto-v3"); }catch(e){}
 function freshProfile(){ return {studyText:"",programId:null,programName:"",programShort:"",uni:"",uniKey:"",level:"",weights:{},guessed:false,semester:"",danish:null,hoursMax:15,regions:["kbh","nsj"],skills:[],interests:[],industries:[],pastJobs:[],courses:[],cvName:"",cvAt:0,cvBy:"",cvFams:[],extra:[],aiWeights:false,alerts:false,alertFreq:"daily",email:""}; }
-function fresh(){ return {view:"landing",tab:"foryou",kind:"studiejob",step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
+function fresh(){ return {view:"landing",tab:"foryou",kind:"studiejob",lang:detectLang(),step:1,onboarded:false,profile:freshProfile(),disabled:[],learned:{},fb:{},nudgeClosed:false}; }
 function load(){
-  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); if(pr.hoursMax===25) pr.hoursMax=40; const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
+  try{ const raw = localStorage.getItem(KEY); if(raw){ const s=JSON.parse(raw); const f=fresh(); const pr=Object.assign(freshProfile(),s.profile||{}); if(pr.hoursMax===25) pr.hoursMax=40; if(pr.danish==="some") pr.danish="none"; const old=(pr.regions||[]).filter(r=>OLD_AREA[r]); if(old.length) pr.regions=[...new Set(pr.regions.flatMap(r=>OLD_AREA[r]?nearAreas(r):[r]))]; return Object.assign(f,s,{profile:pr}); } }catch(e){}
   return fresh();
 }
 let S = load();
+if(!S.lang) S.lang=detectLang();
+if(!S.profile.lang) S.profile.lang=S.lang;
+setLang(S.lang);
 const UI = {sheet:null,expanded:{},heroText:"",obText:"",obUni:"",obLevel:"all",pfUni:null,waitlistDone:false,confirmDelete:false,focus:null,showFiltered:false,cvBusy:false,auth:{email:"",name:"",consent:false}};
 let snapshot = null;
 function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} if(ACC.user) syncSoon(); }
@@ -759,6 +943,7 @@ function applyServer(d){
     const keepView=S.view;
     S=Object.assign(fresh(), d.state, {profile:Object.assign(freshProfile(), d.profile||{})});
     if(S.profile.hoursMax===25) S.profile.hoursMax=40;
+    if(S.profile.danish==="some") S.profile.danish="none";
     S.view = keepView==="landing" ? "landing" : "app";
     persist();
   } else if(S.onboarded) syncSoon();
@@ -931,8 +1116,6 @@ function evaluate(job, c){
   if(job.req && !studyFits(job.req, p)) return {out:"study"};
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
-  const isPraktik = jobKind(job)==="praktik"; /* praktik er tit fuld tid i et semester, så timefilteret gælder kun studiejob */
-  if(!isPraktik && job.hMin > p.hoursMax+2) return {out:"hours"};
   const jr=area(job.region); if(!p.regions.includes("any") && jr!=="remote" && jr!=="dk" && !p.regions.map(area).includes(jr)) return {out:"location"};
   const prim = W[job.fam]||0;
   let bestSec={f:null,w:0};
@@ -968,9 +1151,8 @@ function evaluate(job, c){
   let score = live.reduce((s,x)=>s+x.v*x.w,0)/wsum;
   if(job.postedH<12) score+=.03;
   if(job.danish==="plus" && p.danish!=="fluent") score-=.05;
-  if(!isPraktik && job.hMax>p.hoursMax) score-=.04;
   score=clamp(score,0,1);
-  /* Uden reel faglig sammenhæng vises jobbet ikke, uanset timer og interesser */
+  /* Uden reel faglig sammenhæng vises jobbet ikke, uanset interesser */
   const level = affinity<.45 ? null : score>=.72 ? "strong" : score>=.55 ? "good" : score>=.4 ? "worth" : null;
   const vocab=[]; for(const f in W){ if(W[f]>=.6) vocab.push(...(TITLE_KW[f]||[])); }
   const title=" "+job.title.toLowerCase()+" ";
@@ -979,30 +1161,31 @@ function evaluate(job, c){
   return {score,level,prim,bestSec,affinity,learnedAdj,skillHits,interestHit,expHit,ai,comps,hidden};
 }
 function reasonsFor(job, ev, c){
-  c=ctxOf(c); const p=c.profile; const pos=[], neg=[]; const pname=p.programShort||p.programName||"din uddannelse";
-  if(ev.ai===true && job.why) pos.push(job.why);
-  else if(ev.prim>=.6) pos.push(p.guessed ? `${FAM[job.fam].label} passer til det, du har fortalt om dit studie` : `${FAM[job.fam].label} er et oplagt felt for ${pname}`);
-  else if(ev.bestSec.f && ev.bestSec.w>=.45) pos.push(`Arbejdet er i høj grad ${FAM[ev.bestSec.f].n}, som passer til ${pname}`);
-  else if(ev.prim>=.4) pos.push(`Beslægtet med ${pname}`);
-  if(ev.skillHits.length) pos.push(`Du har ${listJoin(ev.skillHits)}`);
-  if(ev.expHit) pos.push(`Du har erfaring med ${FAM[ev.expHit].n}`);
-  if(ev.interestHit){ pos.push(ev.interestHit.startsWith("ind:") ? `Inden for ${ev.interestHit.slice(4).toLowerCase()}, en branche du har valgt` : `Matcher din interesse for ${FAM[ev.interestHit].n}`); }
+  c=ctxOf(c); const p=c.profile; const pos=[], neg=[]; const pname=p.programShort||p.programName||L("din uddannelse","your degree");
+  const why=jobWhy(job);
+  if(ev.ai===true && why) pos.push(why);
+  else if(ev.prim>=.6) pos.push(p.guessed ? L(`${FAM[job.fam].label} passer til det, du har fortalt om dit studie`,`${FAM[job.fam].label} fits what you told us about your studies`) : L(`${FAM[job.fam].label} er et oplagt felt for ${pname}`,`${FAM[job.fam].label} is an obvious field for ${pname}`));
+  else if(ev.bestSec.f && ev.bestSec.w>=.45) pos.push(L(`Arbejdet er i høj grad ${FAM[ev.bestSec.f].n}, som passer til ${pname}`,`Much of the work is ${FAM[ev.bestSec.f].n}, which fits ${pname}`));
+  else if(ev.prim>=.4) pos.push(L(`Beslægtet med ${pname}`,`Related to ${pname}`));
+  if(ev.skillHits.length) pos.push(L(`Du har ${listJoin(ev.skillHits)}`,`You have ${listJoin(ev.skillHits)}`));
+  if(ev.expHit) pos.push(L(`Du har erfaring med ${FAM[ev.expHit].n}`,`You have experience with ${FAM[ev.expHit].n}`));
+  if(ev.interestHit){ pos.push(ev.interestHit.startsWith("ind:") ? L(`Inden for ${ev.interestHit.slice(4).toLowerCase()}, en branche du har valgt`,`In ${ev.interestHit.slice(4).toLowerCase()}, an industry you picked`) : L(`Matcher din interesse for ${FAM[ev.interestHit].n}`,`Matches your interest in ${FAM[ev.interestHit].n}`)); }
   const l=c.learned[job.fam]||0;
-  if(l>=.1) pos.push(`Du har tidligere vist interesse for ${FAM[job.fam].n}`);
-  if(job.danish==="no" && p.danish!=="fluent") pos.push("Arbejdssproget er engelsk");
-  if(job.postedH<12) pos.push(`Slået op ${ago(job.postedH)}, så du er tidligt ude`);
-  if(job.danish==="plus" && p.danish!=="fluent") neg.push("Dansk er et plus her");
-  if(jobKind(job)!=="praktik" && job.hMax>p.hoursMax) neg.push(`Op til ${job.hMax} timer om ugen, mere end de ${p.hoursMax} timer, du kan`);
-  if(job.deadline!=null && job.deadline<=5) neg.push(`Ansøgningsfrist om ${job.deadline} dage`);
-  if(p.skills.length && !ev.skillHits.length) neg.push(`Efterspørger ${job.skills[0]}, som ikke står på din profil`);
-  if(l<=-.1) neg.push(`Du har tidligere fravalgt ${FAM[job.fam].n}`);
+  if(l>=.1) pos.push(L(`Du har tidligere vist interesse for ${FAM[job.fam].n}`,`You have shown interest in ${FAM[job.fam].n} before`));
+  if(job.danish==="no" && p.danish!=="fluent") pos.push(L("Arbejdssproget er engelsk","The working language is English"));
+  if(job.postedH<12) pos.push(L(`Slået op ${ago(job.postedH)}, så du er tidligt ude`,`Posted ${ago(job.postedH)}, so you are early`));
+  if(job.danish==="plus" && p.danish!=="fluent") neg.push(L("Dansk er et plus her","Danish is a plus here"));
+  if(job.deadline!=null && job.deadline<=5) neg.push(L(`Ansøgningsfrist om ${job.deadline} dage`,`Application deadline in ${job.deadline} days`));
+  if(p.skills.length && !ev.skillHits.length) neg.push(L(`Efterspørger ${job.skills[0]}, som ikke står på din profil`,`Asks for ${job.skills[0]}, which is not on your profile`));
+  if(l<=-.1) neg.push(L(`Du har tidligere fravalgt ${FAM[job.fam].n}`,`You have hidden ${FAM[job.fam].n} before`));
   return {pos:pos.slice(0,3),neg:neg.slice(0,2)};
 }
 function hiddenWhy(job, ev, c){
-  c=ctxOf(c); const pname=c.profile.programShort||"din uddannelse";
+  c=ctxOf(c); const pname=c.profile.programShort||L("din uddannelse","your degree");
   const work=[job.fam,...(job.sec||[])].filter(f=>(effW(c.profile)[f]||0)>=.5).slice(0,2).map(f=>FAM[f].n);
   const t=job.title.replace(/^Studentermedhjælper – /,"");
-  return `“${t}” bruger ikke de ord, du ville søge på som ${pname}-studerende, men arbejdet er i praksis ${work.length?listJoin(work):"tæt på dit felt"}.`;
+  return L(`“${t}” bruger ikke de ord, du ville søge på som ${pname}-studerende, men arbejdet er i praksis ${work.length?listJoin(work):"tæt på dit felt"}.`,
+    `“${t}” does not use the words you would search for as a ${pname} student, but the work is really ${work.length?listJoin(work):"close to your field"}.`);
 }
 function allEvals(){ return JOBS.map(j=>({job:j,ev:evaluate(j)})); }
 function fbOf(id){ return S.fb[id] || (S.fb[id]={}); }
@@ -1025,7 +1208,7 @@ function feed(kind){
 }
 function hiddenFeed(){ return feed().filter(x=>x.ev.hidden); }
 function filteredCounts(){
-  const c={danish:0,hours:0,location:0,field:0,study:0,dismissed:0};
+  const c={danish:0,location:0,field:0,study:0,dismissed:0};
   for(const x of allEvals()){ if(!inKind(x.job,S.kind||"studiejob")) continue; if((S.fb[x.job.id]||{}).dismissed) c.dismissed++; else if(x.ev.out) c[x.ev.out]++; }
   return c;
 }
@@ -1062,24 +1245,23 @@ function cardHTML(job, ev, opts){
   const open=!!UI.expanded[job.id]; const p=ctxOf(c).profile;
   const danishTag = job.danish==="required" ? "Kræver dansk" : job.danish==="plus" ? "Dansk er et plus" : "Engelsk OK";
   const da = opts.demo ? 'data-act="start"' : '';
-  return `<article class="job" id="card-${job.id}" aria-label="${esc(job.title)} hos ${esc(job.co)}">
+  return `<article class="job" id="card-${job.id}" aria-label="${esc(job.title)} ${L("hos","at")} ${esc(job.co)}">
     <div class="job-top">
       <div class="monogram" aria-hidden="true">${esc(initials(job.co))}</div>
       <div class="job-head">
-        <div class="job-co"><span class="co-name">${esc(job.co)}</span><span>${esc(job.city)}</span>${job.sponsored?'<span class="sponsored">Sponsoreret</span>':''}${job.direct?'<span class="sponsored direct">Direkte opslag</span>':''}</div>
-        <h3 class="job-title">${esc(job.title)}</h3>
+        <div class="job-co" data-notr><span class="co-name">${esc(job.co)}</span><span>${esc(job.city)}</span></div>${job.sponsored||job.direct?`<div class="job-badges">${job.sponsored?'<span class="sponsored">Sponsoreret</span>':''}${job.direct?'<span class="sponsored direct">Direkte opslag</span>':''}</div>`:""}
+        <h3 class="job-title" data-notr>${esc(jobTitle(job))}</h3>
       </div>
       <div class="lvl lvl-${ev.level}"><span class="lvl-pill">${levelLabel(ev.level)}</span><span class="meter" aria-hidden="true"><i></i><i></i><i></i></span></div>
     </div>
     <div class="meta">
       ${jobKind(job)==="praktik"?'<span class="tag tag-kind">Praktik</span>':jobKind(job)==="begge"?'<span class="tag tag-kind">Studiejob eller praktik</span>':""}
-      <span class="tag">${!job.hMin?"Timer: se opslag":job.hMin===job.hMax?job.hMin+" t/uge":job.hMin+"–"+job.hMax+" t/uge"}</span>
       <span class="tag">${danishTag}</span>
       ${job.rolling?'<span class="tag">Løbende optag</span>':job.deadline==null?"":`<span class="tag ${job.deadline<=5?"tag-soon":""}">Frist ${deadlineDate(job.deadline)}</span>`}
       ${job.postedH<12?`<span class="tag tag-new">Ny, ${agoShort(job.postedH)}</span>`:""}
       ${ev.hidden && !opts.hiddenMode?'<span class="tag tag-hidden" title="Titlen nævner ikke dit felt, men arbejdet passer. Tryk Hvorfor for at se mere.">Uventet match</span>':""}
     </div>
-    ${job.blurb?`<p class="blurb">${esc(job.blurb)}</p>`:""}
+    ${jobBlurb(job)?`<p class="blurb" data-notr>${esc(jobBlurb(job))}</p>`:""}
     ${opts.hiddenMode?`<div class="callout-hidden"><b>Derfor ville du overse det</b><span>${esc(hiddenWhy(job,ev,c))}</span></div>`:""}
     <ul class="reasons" aria-label="Derfor passer det til dig">
       ${r.pos.map(t=>`<li class="r-pos">${I.check}<span>${esc(t)}</span></li>`).join("")}
@@ -1108,11 +1290,15 @@ function whyPanel(job, ev, p){
     ${ev.hidden?`<div class="callout-hidden"><b>Uventet match</b><span>${esc(hiddenWhy(job,ev))}</span></div>`:""}
     <p><b>Sådan er det scoret.</b> Uddannelsen vejer tungest. Derefter kommer kompetencer, interesser og erfaring fra dit CV. Det, du ikke har udfyldt, trækker ikke ned.</p>
     ${rows}${lt}
-    <div class="filters-ok"><span>${I.check}Sprog</span><span>${I.check}Timer</span><span>${I.check}Område</span><span>${I.check}Felt ikke fravalgt</span></div>
+    <div class="filters-ok"><span>${I.check}Sprog</span><span>${I.check}Område</span><span>${I.check}Felt ikke fravalgt</span></div>
     ${job.live?(()=>{ const m=(S.fb[job.id]||{}).mfb; return `<div class="mfb"><span>Passer jobbet til din uddannelse?</span>${m?`<b>${m==="good"?"Du sagde ja. Tak!":"Du sagde nej. Tak!"}</b>`:`<button class="btn btn-ghost btn-sm" data-act="mfb" data-v="good" data-id="${job.id}">Ja</button><button class="btn btn-ghost btn-sm" data-act="mfb" data-v="bad" data-id="${job.id}">Nej</button>`}</div>`; })():""}
   </div>`;
 }
 function demoCtx(){
+  if(LANG==="en"){ /* på engelsk: en international studerende uden dansk */
+    const q=progById("dtu-kandidat-business-analytics");
+    if(q) return {profile:Object.assign(freshProfile(),{programName:q.name,programShort:shortName(q.name),uni:"DTU",uniKey:"dtu",weights:q.w,danish:"none",regions:["cph"],skills:["Python","SQL","Excel"],interests:["bi"]}),learned:{},disabled:[]};
+  }
   const p=progById("ruc-fag-erhvervsøkonomi-ha");
   return {profile:Object.assign(freshProfile(),{programName:p.name,programShort:shortName(p.name),uni:"RUC",uniKey:"ruc",weights:p.w,danish:"fluent",hoursMax:15,regions:["cph"],skills:["Excel","Bogføring","Regnskab"],interests:["finance"]}),learned:{},disabled:[]};
 }
@@ -1120,7 +1306,7 @@ function vLanding(){
   const c=demoCtx(); const df=EXAMPLE_JOBS.map(j=>({job:j,ev:evaluate(j,c)})).filter(x=>!x.ev.out&&x.ev.level).sort((a,b)=>b.ev.score-a.ev.score); const top=df.filter(x=>!x.ev.hidden).slice(0,4); const hid=df.find(x=>x.ev.hidden);
   return `
   <header class="topbar"><div class="wrap topbar-in">${logo()}
-    <nav class="top-links"><a href="#virksomheder" class="link-quiet">For virksomheder</a>${ACC.backend&&!ACC.user?'<button class="btn btn-quiet btn-sm" data-act="auth" data-v="login">Log ind</button>':""}<button class="btn btn-primary btn-sm" data-act="start">${S.onboarded?"Åbn mit feed":"Find mine matches"}</button></nav>
+    <nav class="top-links">${langBtn()}<a href="#virksomheder" class="link-quiet">For virksomheder</a>${ACC.backend&&!ACC.user?'<button class="btn btn-quiet btn-sm" data-act="auth" data-v="login">Log ind</button>':""}<button class="btn btn-primary btn-sm" data-act="start">${S.onboarded?"Åbn mit feed":"Find mine matches"}</button></nav>
   </div></header>
   <main>
     <section class="hero"><div class="wrap hero-grid">
@@ -1130,14 +1316,14 @@ function vLanding(){
         <div class="hero-form">
           <p class="label">Hvor læser du?</p>
           <div class="hero-schools">${SCHOOLS.map(s=>`<button class="school-chip${(s.chip||s.name).length>9?" wide":""}" data-act="school" data-v="${s.key}">${esc(s.chip||s.name)}</button>`).join("")}<button class="school-chip ghost wide" data-act="school" data-v="other">Andet sted</button></div>
-          <p class="fine">${LIVE&&JOBS.length?`${JOBS.length.toLocaleString("da-DK")} studiejob og praktikpladser i hele Danmark lige nu. `:""}Det tager under et minut, og du behøver ikke en bruger.</p>
+          <p class="fine">${LIVE&&JOBS.length?`<span>${L(`${JOBS.length.toLocaleString("da-DK")} studiejob og praktikpladser i hele Danmark lige nu.`,`${JOBS.length.toLocaleString("en-GB")} student jobs and internships across Denmark right now.`)}</span> `:""}<span>Det tager under et minut, og du behøver ikke en bruger.</span></p>
         </div>
       </div>
       <div>
         <p class="demo-cap">Sådan ser det ud for en HA-studerende på RUC, der vil arbejde med regnskab og revision.</p>
         <div class="demo-stack">
           ${cardHTML(top[0].job,top[0].ev,{demo:true,ctx:c})}
-          <div class="demo-more">${top.slice(1).map(x=>`<div class="srow"><div class="monogram" aria-hidden="true">${esc(initials(x.job.co))}</div><div class="srow-main"><div class="srow-title">${esc(x.job.title)}</div><div class="srow-sub">${esc(x.job.co)}, ${esc(x.job.city)}</div></div><span class="status ${x.ev.level==="strong"?"st-applied":"st-saved"}">${levelLabel(x.ev.level)}</span></div>`).join("")}</div>
+          <div class="demo-more">${top.slice(1).map(x=>`<div class="srow"><div class="monogram" aria-hidden="true">${esc(initials(x.job.co))}</div><div class="srow-main"><div class="srow-title" data-notr>${esc(jobTitle(x.job))}</div><div class="srow-sub" data-notr>${esc(x.job.co)}, ${esc(x.job.city)}</div></div><span class="status ${x.ev.level==="strong"?"st-applied":"st-saved"}">${levelLabel(x.ev.level)}</span></div>`).join("")}</div>
         </div>
       </div>
     </div></section>
@@ -1146,7 +1332,7 @@ function vLanding(){
       <h2>Sådan virker det</h2>
       <div class="steps">
         <div class="step"><span class="step-n">1</span><h3>Vælg skole og uddannelse</h3><p>Vi ved, hvilke felter din uddannelse fører til. For Global Business er det fx supply chain, indkøb, PMO og BI.</p></div>
-        <div class="step"><span class="step-n">2</span><h3>Sæt dansk og timer</h3><p>Job, der kræver flydende dansk eller flere timer, end du kan arbejde, kommer ikke øverst.</p></div>
+        <div class="step"><span class="step-n">2</span><h3>Sig, om du taler dansk</h3><p>Taler du ikke flydende dansk, ser du ikke job, der kræver det. Så er alt i dit feed noget, du reelt kan søge.</p></div>
         <div class="step"><span class="step-n">3</span><h3>Gem, søg eller fravælg</h3><p>Det, du gør, flytter rækkefølgen. Uploader du dit CV, bruger vi også din erfaring.</p></div>
       </div>
     </div></section>
@@ -1156,9 +1342,9 @@ function vLanding(){
       <p class="band-sub">De fleste jobsider forudsætter, at du kender de rigtige jobtitler. Det gør de færreste studerende.</p>
       <div class="feat">
         <div class="feat-item"><h3>Sprog er et filter, ikke en overraskelse</h3><p>Taler du ikke flydende dansk, ser du ikke job, der kræver det. Internationale studerende får en liste med reelle muligheder.</p></div>
-        <div class="feat-item"><h3>Timerne passer til dit studie</h3><p>Kan du arbejde 10 timer om ugen, ligger et job på 30 timer ikke øverst.</p></div>
+        <div class="feat-item"><h3>Studiejob og praktik hver for sig</h3><p>Praktikpladser og internships har deres egen fane, så de ikke drukner mellem studiejobbene.</p></div>
         <div class="feat-item"><h3>Job, du ikke ville have søgt på</h3><p>"Udbudsstyring" eller "Prisanalytiker" nævner sjældent din uddannelse, men arbejdet kan passe præcist.</p></div>
-        <div class="feat-item"><h3>Du kan se, hvorfor et job er med</h3><p>Hvert job viser, hvad der passer, og hvad der ikke gør. Fx flere timer end du ønsker, krav om dansk eller en frist om tre dage.</p></div>
+        <div class="feat-item"><h3>Du kan se, hvorfor et job er med</h3><p>Hvert job viser, hvad der passer, og hvad der ikke gør. Fx krav om dansk eller en frist om tre dage.</p></div>
       </div>
       <p class="fine" style="margin-top:8px">Betalte opslag er altid markeret og vises kun, hvis de passer godt til dig. Der er ingen bannerreklamer.</p>
     </div></section>
@@ -1187,14 +1373,14 @@ function vLanding(){
       </form>
     </div></section>
   </main>
-  <footer class="foot"><div class="wrap"><span class="foot-links"><b>Studiematch</b><a href="/privatliv.html">Privatliv</a><a href="mailto:matchstudie@gmail.com">Kontakt</a></span><span>${LIVE?"Job hentes fra arbejdsgivernes egne sider og jobportaler, vi samarbejder med.":"Eksempeljob fra opdigtede virksomheder."} Din profil bliver i din browser, medmindre du opretter en bruger.</span></div></footer>`;
+  <footer class="foot"><div class="wrap"><span class="foot-links"><b>Studiematch</b><a href="${L("/privatliv.html","/privacy.html")}">Privatliv</a><a href="mailto:matchstudie@gmail.com">Kontakt</a></span><span>${LIVE?"Job hentes fra arbejdsgivernes egne sider og jobportaler, vi samarbejder med.":"Eksempeljob fra opdigtede virksomheder."} Din profil bliver i din browser, medmindre du opretter en bruger.</span></div></footer>`;
 }
 
 function vOnboard(){
   if(!UI.obUni) UI.obUni=S.profile.uniKey||"other";
   const st=S.step; const body = st===1?obSchool():st===2?obProgram():st===3?obFilters():obFields();
   return `<div class="ob">
-    <header class="wrap ob-top">${logo()}<div class="ob-progress" role="img" aria-label="Trin ${st} af 4">${[1,2,3,4].map(i=>`<span class="${i<=st?"on":""}"></span>`).join("")}</div></header>
+    <header class="wrap ob-top">${logo()}<div class="ob-right">${langBtn()}<div class="ob-progress" role="img" aria-label="Trin ${st} af 4">${[1,2,3,4].map(i=>`<span class="${i<=st?"on":""}"></span>`).join("")}</div></div></header>
     <main class="wrap"><div class="ob-main">${body}</div></main>
   </div>`;
 }
@@ -1235,14 +1421,12 @@ function obProgram(){
 function obFilters(){
   const p=S.profile;
   return `<p class="ob-step">Trin 3 af 4</p>
-  <h1 class="ob-h">To hurtige filtre</h1>
-  <p class="ob-p">De fjerner job, du ikke kan tage, så dit feed kun viser reelle muligheder.</p>
+  <h1 class="ob-h">To hurtige spørgsmål</h1>
+  <p class="ob-p">Så viser dit feed kun job, du reelt kan søge.</p>
   <div class="ob-body">
-    <div class="field"><span class="label" id="lb-da">Hvor meget dansk taler du?</span>
+    <div class="field"><span class="label" id="lb-da">Er du flydende i dansk?</span>
       <div class="seg" role="group" aria-labelledby="lb-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div>
-      <p class="fine">Mange danske studiejob kræver flydende dansk. Hvis du ikke taler det, skjuler vi dem.</p></div>
-    <div class="field"><span class="label" id="lb-h">Timer om ugen</span>
-      <div class="seg" role="group" aria-labelledby="lb-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
+      <p class="fine">Mange studiejob kræver flydende dansk. Svarer du nej, skjuler vi dem og viser job, hvor arbejdssproget er engelsk.</p></div>
     <div class="field"><span class="label" id="lb-r">Hvor kan du arbejde?</span>
       ${regionChips(p,"lb-r")}
       <p class="fine">Vælg alle de landsdele, du kan arbejde i. Remote-job og landsdækkende job er altid med.</p></div>
@@ -1273,9 +1457,9 @@ function tabsHTML(kind){
     return `<button data-act="tab" data-tab="${t.id}" ${cur}>${I[t.icon]}<span>${t.short}</span></button>`;
   }).join("");
 }
-function ctxLine(){ const p=S.profile; const more=(p.extra||[]).length; return esc([p.programShort+(p.uni?", "+p.uni:"")+(more?` + ${more} mere`:""),(p.hoursMax>=40?"Alle timer":hoursText(p.hoursMax)+"/uge"),danishLabel(p.danish)].join(" / ")); }
+function ctxLine(){ const p=S.profile; const more=(p.extra||[]).length; return esc([p.programShort+(p.uni?", "+p.uni:"")+(more?` + ${more} mere`:""),danishLabel(p.danish)].join(" / ")); }
 function vApp(){
-  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<button class="ctx" data-act="program-sheet" data-v="replace" title="Skift uddannelse">${ctxLine()}</button>${ACC.backend?(ACC.user?`<button class="btn btn-ghost btn-sm acct" data-act="tab" data-tab="profile" title="${esc(ACC.user.email)}">${I.user}<span class="hide-mobile">${esc(ACC.user.name||"Min konto")}</span></button>`:'<button class="btn btn-ghost btn-sm" data-act="auth" data-v="login">Log ind</button>'):'<button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button>'}</div></header>
+  return `<div class="app"><header class="topbar"><div class="wrap topbar-in">${logo()}<button class="ctx" data-act="program-sheet" data-v="replace" title="Skift uddannelse">${ctxLine()}</button>${langBtn("hide-mobile")}${ACC.backend?(ACC.user?`<button class="btn btn-ghost btn-sm acct" data-act="tab" data-tab="profile" title="${esc(ACC.user.email)}">${I.user}<span class="hide-mobile">${esc(ACC.user.name||"Min konto")}</span></button>`:'<button class="btn btn-ghost btn-sm" data-act="auth" data-v="login">Log ind</button>'):'<button class="btn btn-ghost btn-sm hide-mobile" data-act="tab" data-tab="profile">Ret profil</button>'}</div></header>
   <div class="wrap app-grid">
     <nav class="rail" aria-label="Sektioner">${tabsHTML("rail")}</nav>
     <main class="feed-col" id="main">${S.tab==="saved"?tSaved():S.tab==="profile"?tProfile():tForYou()}</main>
@@ -1285,9 +1469,8 @@ function vApp(){
   ${sheetHTML()}</div>`;
 }
 const WHY = {
-  danish:{l:"kræver flydende dansk", fix:["tab","profile","Ret dansk-niveau"]},
+  danish:{l:"kræver flydende dansk", fix:["tab","profile","Ret svar om dansk"]},
   location:{l:"ligger uden for dine områder", fix:["widen","","Vis hele landet"]},
-  hours:{l:"kræver flere timer, end du kan", fix:["tab","profile","Ret timer"]},
   field:{l:"er i felter, du har slået fra", fix:["fields-on","","Slå felterne til igen"]},
   study:{l:"kræver en bestemt uddannelse, fx jura eller sygepleje", fix:null},
   dismissed:{l:"har du selv fravalgt", fix:["undismiss","","Vis dem igen"]}
@@ -1298,12 +1481,12 @@ function filterNote(){
   if(!total) return "";
   const open=UI.showFiltered;
   const rows=keys.map(k=>`<li><span><b>${c[k]}</b> ${WHY[k].l}</span>${WHY[k].fix?`<button class="btn btn-quiet btn-sm" data-act="${WHY[k].fix[0]}" ${WHY[k].fix[1]?`data-tab="${WHY[k].fix[1]}"`:""}>${WHY[k].fix[2]}</button>`:""}</li>`).join("");
-  const list = open ? `<ul class="fl-jobs">${filteredJobs().slice(0,40).map(x=>`<li><span class="fl-t">${esc(x.job.title)}</span><span class="fl-s">${esc(x.job.co)} · ${WHY[x.why].l}</span>${x.why==="dismissed"?`<button class="btn btn-quiet btn-sm" data-act="undismiss-one" data-id="${x.job.id}">Vis igen</button>`:""}</li>`).join("")}</ul>` : "";
+  const list = open ? `<ul class="fl-jobs">${filteredJobs().slice(0,40).map(x=>`<li><span class="fl-t" data-notr>${esc(x.job.title)}</span><span class="fl-s"><span data-notr>${esc(x.job.co)}</span> · <span>${WHY[x.why].l}</span></span>${x.why==="dismissed"?`<button class="btn btn-quiet btn-sm" data-act="undismiss-one" data-id="${x.job.id}">Vis igen</button>`:""}</li>`).join("")}</ul>` : "";
   return `<section class="filtered"><button class="fl-head" data-act="toggle-filtered" aria-expanded="${open}"><span><b>${total} job vises ikke for dig</b>. ${open?"skjul listen":"Se hvilke og hvorfor"}</span>${I.chev}</button>
     ${open?`<ul class="fl-why">${rows}</ul>${list}`:""}</section>`;
 }
 function tForYou(){
-  const f=feed(); const now=new Date().toLocaleTimeString("da-DK",{hour:"2-digit",minute:"2-digit"});
+  const f=feed(); const now=new Date().toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"});
   const K=KINDS.find(k=>k.id===S.kind)||KINDS[0];
   const kinds=`<div class="kinds" role="tablist" aria-label="Vis studiejob eller praktik">${KINDS.map(k=>`<button class="kind" role="tab" aria-selected="${k.id===K.id}" data-act="kind" data-v="${k.id}">${I[k.icon]}<span class="k-t"><b>${k.l}</b><small>${k.sub}</small></span><span class="count">${k.id===K.id?f.length:feed(k.id).length}</span></button>`).join("")}</div>`;
   const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} ${K.many} rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} opslag gennemgået.</p></div>`+kinds;
@@ -1314,7 +1497,7 @@ function tForYou(){
 function emptyFeed(){
   const p=S.profile;
   return `<div class="empty"><h2>Du har set alle matches lige nu</h2>
-    <p>Der kommer nye ${S.kind==="praktik"?"praktikpladser":"studiejob"} hver dag, og siden tjekker for nye to gange i døgnet. Kig forbi igen, eller vis job fra hele landet.</p>
+    <p>${L(`Der kommer nye ${S.kind==="praktik"?"praktikpladser":"studiejob"} hver dag, og siden tjekker for nye to gange i døgnet. Kig forbi igen, eller vis job fra hele landet.`,`New ${S.kind==="praktik"?"internships":"student jobs"} arrive every day, and we check for new ones twice a day. Come back later, or show jobs from all of Denmark.`)}</p>
     <div class="chips"><button class="btn btn-ghost btn-sm" data-act="widen">Søg i hele landet</button></div></div>`;
 }
 function tSaved(){
@@ -1323,7 +1506,7 @@ function tSaved(){
   if(!ids.length) return head+`<div class="empty"><h2>Intet gemt endnu</h2><p>Tryk på bogmærket på et job for at gemme det her. Job, du søger, havner her også, så du kan holde styr på dem.</p><button class="btn btn-primary btn-sm" data-act="tab" data-tab="foryou">Tilbage til Til dig</button></div>`;
   const row=id=>{ const j=byId(id); const fb=S.fb[id]; const ev=evaluate(j);
     return `<div class="srow"><div class="monogram" aria-hidden="true">${esc(initials(j.co))}</div>
-      <div class="srow-main"><div class="srow-title">${esc(j.title)}</div><div class="srow-sub">${esc(j.co)} · ${j.rolling?"Løbende optag":j.deadline==null?"Ingen frist angivet":"Frist "+deadlineDate(j.deadline)}${ev.level?" · "+levelLabel(ev.level):""}</div></div>
+      <div class="srow-main"><div class="srow-title" data-notr>${esc(j.title)}</div><div class="srow-sub"><span data-notr>${esc(j.co)}</span> · <span>${j.rolling?"Løbende optag":j.deadline==null?"Ingen frist angivet":"Frist "+deadlineDate(j.deadline)}</span>${ev.level?` · <span>${levelLabel(ev.level)}</span>`:""}</div></div>
       <span class="status ${fb.applied?"st-applied":"st-saved"}">${fb.applied?"Søgt":"Gemt"}</span>
       ${fb.applied?"":j.url?applyLink(j,"btn btn-primary btn-sm","Søg"):`<button class="btn btn-primary btn-sm" data-act="apply" data-id="${id}">Søg</button>`}
       <button class="mini-x" data-act="unsave" data-id="${id}" aria-label="Fjern ${esc(j.title)}">${I.x}</button></div>`; };
@@ -1331,7 +1514,7 @@ function tSaved(){
   return head+(applied.length?`<h2 class="group-h">Søgt · ${applied.length}</h2><div class="row-list">${applied.map(row).join("")}</div>`:"")+(saved.length?`<h2 class="group-h">Gemt · ${saved.length}</h2><div class="row-list">${saved.map(row).join("")}</div>`:"");
 }
 function completeness(){
-  const p=S.profile; const checks=[!!p.programName,!!p.semester,!!p.danish,!!p.hoursMax,p.regions.length>0,p.skills.length>=3,p.interests.length>0,p.industries.length>0,p.pastJobs.length>0,p.courses.length>0,!!p.cvName,!!ACC.user];
+  const p=S.profile; const checks=[!!p.programName,!!p.semester,!!p.danish,p.regions.length>0,p.skills.length>=3,p.interests.length>0,p.industries.length>0,p.pastJobs.length>0,p.courses.length>0,!!p.cvName,!!ACC.user];
   return Math.round(100*checks.filter(Boolean).length/checks.length);
 }
 function nextTip(){
@@ -1365,8 +1548,7 @@ function tProfile(){
   </section>
 
   <section class="pcard"><h2>Filtre</h2><p class="hint">Job, der ikke består dem, kommer aldrig i dit feed.</p>
-    <div class="field"><span class="label" id="pl-da">Dansk-niveau</span><div class="seg" role="group" aria-labelledby="pl-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div></div>
-    <div class="field"><span class="label" id="pl-h">Timer om ugen</span><div class="seg" role="group" aria-labelledby="pl-h">${HOURS.map(h=>`<button class="chip" data-act="hours" data-v="${h.v}" aria-pressed="${p.hoursMax===h.v}">${h.l}</button>`).join("")}</div></div>
+    <div class="field"><span class="label" id="pl-da">Flydende i dansk?</span><div class="seg" role="group" aria-labelledby="pl-da">${DANISH.map(d=>`<button class="chip" data-act="danish" data-v="${d.v}" aria-pressed="${p.danish===d.v}">${d.l}</button>`).join("")}</div></div>
     <div class="field"><span class="label" id="pl-r">Område</span>${regionChips(p,"pl-r")}</div>
     <div class="field"><span class="label" id="pl-f">Felter, der er med</span><div class="chips" role="group" aria-labelledby="pl-f">${Object.keys(W).filter(f=>W[f]>=.3).sort((a,b)=>W[b]-W[a]).map(f=>`<button class="chip" data-act="fam-toggle" data-v="${f}" aria-pressed="${!S.disabled.includes(f)}">${FAM[f].label}</button>`).join("")}</div></div>
   </section>
@@ -1385,7 +1567,7 @@ function tProfile(){
 
   <section class="pcard"><h2>CV og erfaring</h2>
     <div class="cv-box">
-      <div><b>${p.cvName?esc(p.cvName):"Upload dit CV"}</b><span class="fine">${p.cvName?`Læst ${new Date(p.cvAt||Date.now()).toLocaleDateString("da-DK",{day:"numeric",month:"short"})}${p.cvBy==="ai"?" af vores AI":""}. Erfaringen tæller med i dine matches.`:"Vi finder dine kompetencer og din erfaring og bruger dem til at give dig stærkere matches. Du vælger selv, hvad der kommer med."}</span></div>
+      <div><b>${p.cvName?esc(p.cvName):"Upload dit CV"}</b><span class="fine">${p.cvName?`Læst ${new Date(p.cvAt||Date.now()).toLocaleDateString(LOC(),{day:"numeric",month:"short"})}${p.cvBy==="ai"?" af vores AI":""}. Erfaringen tæller med i dine matches.`:"Vi finder dine kompetencer og din erfaring og bruger dem til at give dig stærkere matches. Du vælger selv, hvad der kommer med."}</span></div>
       <label class="btn ${p.cvName?"btn-ghost":"btn-primary"} btn-sm file-btn">${UI.cvBusy?"Læser…":p.cvName?"Upload nyt":"Vælg fil"}<input id="pf-cv" type="file" accept=".pdf,.docx,.txt" data-change="cv" ${UI.cvBusy?"disabled":""}></label>
     </div>
     <p class="fine">PDF eller Word (.docx). ${ACC.user?"CV'et gemmes på din bruger, og vores AI læser det, så vi kan finde mere end nøgleord.":"Uden bruger læses CV'et kun i din browser og sendes ingen steder hen."}${p.cvName?' <button class="link-btn" data-act="cv-remove">Fjern CV</button>':""}</p>
@@ -1407,7 +1589,8 @@ function tProfile(){
 
   <div class="only-narrow">${tasteHTML()}</div>
 
-  <section class="pcard"><h2>Dine data</h2><p class="hint">${ACC.user?"Din profil, dine gemte job og dit CV er gemt på din bruger. Læs mere i vores <a href=\"/privatliv.html\">privatlivspolitik</a>.":"Alt her gemmes kun i denne browser."}</p>
+  <section class="pcard"><h2>Sprog</h2><div class="seg" role="group" aria-label="Sprog"><button class="chip" data-act="lang" data-v="da" aria-pressed="${LANG==="da"}" data-notr>Dansk</button><button class="chip" data-act="lang" data-v="en" aria-pressed="${LANG==="en"}" data-notr>English</button></div></section>
+  <section class="pcard"><h2>Dine data</h2><p class="hint">${ACC.user?"Din profil, dine gemte job og dit CV er gemt på din bruger. Læs mere i vores <a href=\""+L("/privatliv.html","/privacy.html")+"\">privatlivspolitik</a>.":"Alt her gemmes kun i denne browser."}</p>
     ${UI.confirmDelete?`<p>${ACC.user?"Slet din bruger, din profil, dit CV og dine gemte job? Det kan ikke fortrydes.":"Slet din profil, din feedback og dine gemte job? Det kan ikke fortrydes."}</p><div class="chips"><button class="btn btn-danger btn-sm" data-act="delete-yes">Slet alt</button><button class="btn btn-ghost btn-sm" data-act="delete-no">Annuller</button></div>`:`<div><button class="btn btn-ghost btn-sm danger" data-act="delete-ask">${ACC.user?"Slet min bruger og alle mine data":"Slet mine data og start forfra"}</button></div>`}
   </section>`;
 }
@@ -1426,7 +1609,7 @@ function tasteHTML(){
     .sort((a,b)=>(a.off-b.off)||(b.v-a.v)).slice(0,8);
   const any=Object.values(S.learned).some(v=>Math.abs(v)>=.01);
   return `<section class="taste"><h3>Det har vi lært</h3><p class="fine">Starter fra din uddannelse. Hver gang du siger interesseret, gemmer eller fravælger, flytter søjlerne sig.</p>
-    ${rows.map(r=>`<div class="trow ${r.off?"off":""}"><span class="tname">${FAM[r.f].label}</span><span class="delta ${r.l>0?"up":r.l<0?"down":""}">${r.off?"fra":Math.abs(r.l)>=.05?(r.l>0?"+":"−")+Math.round(Math.abs(r.l)*100):""}</span><span class="bar"><span style="width:${Math.round(r.v*100)}%"></span></span></div>`).join("")}
+    ${rows.map(r=>`<div class="trow ${r.off?"off":""}"><span class="tname">${FAM[r.f].label}</span><span class="delta ${r.l>0?"up":r.l<0?"down":""}">${r.off?L("fra","off"):Math.abs(r.l)>=.05?(r.l>0?"+":"−")+Math.round(Math.abs(r.l)*100):""}</span><span class="bar"><span style="width:${Math.round(r.v*100)}%"></span></span></div>`).join("")}
     ${any?`<button class="btn btn-quiet" data-act="reset-learning">Nulstil det, vi har lært</button>`:""}
   </section>`;
 }
@@ -1453,7 +1636,7 @@ function authSheet(sh){
       <div class="field"><label class="label" for="au-pw">Adgangskode</label><input id="au-pw" class="input" type="password" autocomplete="new-password" required minlength="8"><p class="fine">Mindst 8 tegn.</p></div>
       <div class="field"><label class="label" for="au-heard">Hvor hørte du om Studiematch? <span class="fine">(valgfrit)</span></label><select id="au-heard" class="input select"><option value="">Vælg</option>${["Plakat","Instagram eller TikTok","En ven","Google","Mit studie eller en underviser","En jobportal","Andet"].map(o=>`<option ${a.heard===o?"selected":""}>${o}</option>`).join("")}</select></div>
       <label class="check"><input type="checkbox" id="au-alerts" ${a.alerts!==false?"checked":""}><span>Send mig nye studiejob, der passer til min uddannelse, på mail. Højst én gang om dagen, og du kan altid afmelde.</span></label>
-      <label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="/privatliv.html" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>
+      <label class="check"><input type="checkbox" id="au-consent" ${a.consent?"checked":""}><span>Jeg har læst <a href="${L("/privatliv.html","/privacy.html")}" target="_blank" rel="noopener">privatlivspolitikken</a> og accepterer, at Studiematch gemmer min profil.</span></label>
       ${err}
       <button class="btn btn-primary btn-block" type="submit" ${sh.busy?"disabled":""}>${sh.busy?"Vent…":"Opret bruger"}</button>
       <p class="auth-switch">Har du allerede en bruger? <button class="link-btn" type="button" data-act="auth-mode" data-v="login">Log ind</button></p>
@@ -1534,7 +1717,7 @@ function postJobSheet(sh){
         <div class="field"><label class="label" for="pj-title">Jobtitel</label><input id="pj-title" class="input" required placeholder="Studentermedhjælper til …" value="${val("title")}"></div></div>
       <div class="field-row"><div class="field"><label class="label" for="pj-city">By</label><input id="pj-city" class="input" required value="${val("city")}"></div>
         <div class="field"><label class="label" for="pj-region">Landsdel</label><select id="pj-region" class="select" required><option value="">Vælg</option>${areaOpts}</select></div></div>
-      <div class="field-row"><div class="field"><label class="label" for="pj-hmin">Timer om ugen</label><div class="inline-form"><input id="pj-hmin" class="input" type="number" min="1" max="40" placeholder="fra" value="${val("hMin")}"><input id="pj-hmax" class="input" type="number" min="1" max="40" placeholder="til" value="${val("hMax")}"></div></div>
+      <div class="field-row">
         <div class="field"><label class="label" for="pj-danish">Dansk</label><select id="pj-danish" class="select">${[["required","Kræves"],["plus","En fordel"],["no","Ikke nødvendigt"]].map(([k,l])=>`<option value="${k}" ${v.danish===k?"selected":""}>${l}</option>`).join("")}</select></div></div>
       <div class="field"><label class="label" for="pj-desc">Hvad skal den studerende lave, og hvem søger I?</label><textarea id="pj-desc" class="input" rows="6" required placeholder="Opgaver, hvilke uddannelser der passer, hvornår I starter">${val("description")}</textarea></div>
       <div class="field-row"><div class="field"><label class="label" for="pj-url">Link til opslaget <span class="fine">(valgfrit)</span></label><input id="pj-url" class="input" placeholder="https://…" value="${val("url")}"><p class="fine">Uden link søger de studerende ved at skrive til jeres mail.</p></div>
@@ -1566,7 +1749,7 @@ function sheetHTML(){
   if(UI.sheet.type==="cv") return cvSheet(UI.sheet);
   const j=byId(UI.sheet.id);
   if(UI.sheet.type==="dismiss"){
-    const opts=[["field","Ikke mit felt",`Vis færre job inden for ${FAM[j.fam].n}`],["hours","Forkerte timer",""],["danish","Sproget passer ikke",""],["location","For langt væk",""],["company","Ikke denne virksomhed",""],["other","Noget andet",""]];
+    const opts=[["field","Ikke mit felt",`Vis færre job inden for ${FAM[j.fam].n}`],["danish","Sproget passer ikke",""],["location","For langt væk",""],["company","Ikke denne virksomhed",""],["other","Noget andet",""]];
     return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
       <h2 id="sh-t">Hvorfor ikke dette job?</h2><p>Valgfrit, men det lærer dit feed meget hurtigere.</p>
       <div class="reason-list">${opts.map(([v,l,s])=>`<button data-act="reason" data-v="${v}">${l}${s?`<small>${esc(s)}</small>`:""}</button>`).join("")}</div>
@@ -1574,7 +1757,7 @@ function sheetHTML(){
   }
   if(UI.sheet.ask) return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
     <h2 id="sh-t">Søgte du jobbet hos ${esc(j.co)}?</h2>
-    <p>${esc(j.title)}</p>
+    <p data-notr>${esc(j.title)}</p>
     <p>Så holder vi styr på det under Gemt${j.deadline!=null&&!j.rolling?`, og du kan se fristen (${deadlineDate(j.deadline)})`:""}.</p>
     <div class="sheet-actions"><button class="btn btn-quiet" data-act="close-sheet">Nej</button><button class="btn btn-ghost" data-act="apply-later">Gem til senere</button><button class="btn btn-primary" data-act="apply-go">Ja, jeg har søgt</button></div></div></div>`;
   return `<div class="scrim" data-act="close-sheet"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
@@ -1586,9 +1769,15 @@ function sheetHTML(){
 
 /* ============ TEGN ============ */
 const root=typeof document!=="undefined" ? document.getElementById("root") : null;
+function setLang(l){
+  LANG = l==="en" ? "en" : "da"; applyLangData();
+  if(typeof document!=="undefined"){ document.documentElement.lang=LANG; document.title=L("Studiematch","Studiematch: student jobs that fit your degree"); }
+}
 function render(){
   if(S.view==="app" && !S.onboarded) S.view="landing";
+  if(LANG!==S.lang) setLang(S.lang);
   root.innerHTML = S.view==="landing" ? vLanding()+sheetHTML() : S.view==="onboard" ? vOnboard()+sheetHTML() : vApp();
+  translateDOM(root);
   trackView();
   if(UI.focus){ const el=document.getElementById(UI.focus); if(el){ el.focus(); if(el.setSelectionRange && el.value!=null){ const n=el.value.length; try{el.setSelectionRange(n,n);}catch(e){} } } UI.focus=null; }
 }
@@ -1596,7 +1785,7 @@ function commit(){ persist(); render(); }
 let toastTimer=null;
 function toast(msg, undo){
   const t=document.getElementById("toast");
-  t.innerHTML=`<span>${esc(msg)}</span>${undo?'<button data-act="undo">Fortryd</button>':""}`;
+  t.innerHTML=`<span>${esc(tr(msg))}</span>${undo?`<button data-act="undo">${L("Fortryd","Undo")}</button>`:""}`;
   t.classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),4200);
 }
 function snap(){ snapshot=JSON.stringify({learned:S.learned,fb:S.fb}); }
@@ -1616,7 +1805,6 @@ function act(a, el){
     case "pick": setProgram(progById(id)); S.step=3; window.scrollTo(0,0); return commit();
     case "use-text": setFreeText(UI.obText, UI.obUni); S.step=3; window.scrollTo(0,0); return commit();
     case "danish": p.danish=v; if(S.view==="app") track("filter",{meta:"Dansk: "+danishLabel(v)}); return commit();
-    case "hours": p.hoursMax=Number(v); if(S.view==="app") track("filter",{meta:"Timer: "+hoursText(Number(v))}); return commit();
     case "region": if(S.view==="app") track("filter",{meta:"Område: "+((REGIONS.find(r=>r.v===v)||{}).l||v)});
       if(v==="any") p.regions=["any"];
       else { p.regions=p.regions.filter(r=>r!=="any"); p.regions = p.regions.includes(v) ? p.regions.filter(r=>r!==v) : [...p.regions,v]; if(!p.regions.length) p.regions=[v]; }
@@ -1642,8 +1830,7 @@ function act(a, el){
       const fb=fbOf(jid); fb.dismissed=v; track("dismiss",{jobId:jid,label:jobLabel(j),meta:({field:"Ikke mit felt",hours:"Forkerte timer",danish:"Sproget passer ikke",location:"For langt væk",company:"Ikke denne virksomhed",other:"Noget andet",skip:"Ingen grund"})[v]||v});
       let msg="Skjult.";
       if(v==="field"){ bump(j.fam,-.2); (j.sec||[]).forEach(f=>bump(f,-.05)); msg=`Skjult. Færre job inden for ${FAM[j.fam].n} fremover.`; }
-      else if(v==="hours") msg="Skjult. Tip: angiv dine timer under Profil, så frasorterer vi dem.";
-      else if(v==="danish") msg="Skjult. Tip: angiv dit dansk-niveau under Profil.";
+      else if(v==="danish") msg="Skjult. Tip: svar på, om du taler dansk, under Profil.";
       else if(v==="location") msg="Skjult. Tip: ret dit område under Profil.";
       else if(v==="other") bump(j.fam,-.05);
       const card=document.getElementById("card-"+jid);
@@ -1671,6 +1858,7 @@ function act(a, el){
     case "pw-sheet": UI.sheet={type:"password"}; UI.focus="pw-old"; return render();
     case "logout": (async()=>{ await api("auth/logout",{}); ACC.user=null; S=fresh(); try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Du er logget ud."); })(); return;
     case "nudge-close": S.nudgeClosed=true; return commit();
+    case "lang": S.lang=v; p.lang=v; setLang(v); track("filter",{meta:"Sprog: "+v}); syncSoon(); return commit();
     case "kind": if(S.kind!==v){ S.kind=v; UI.showFiltered=false; track("filter",{meta:"Type: "+(v==="praktik"?"Praktik":"Studiejob")}); } return commit();
     case "toggle-filtered": UI.showFiltered=!UI.showFiltered; return render();
     case "fields-on": S.disabled=[]; commit(); return toast("Alle felter er slået til igen.");
@@ -1748,7 +1936,7 @@ function applyCV(){
 function saveAuthFields(){ const g=id=>document.getElementById(id); if(g("au-alerts")) UI.auth.alerts=g("au-alerts").checked; if(g("au-heard")) UI.auth.heard=g("au-heard").value; if(g("au-mail")) UI.auth.email=g("au-mail").value; if(g("au-name")) UI.auth.name=g("au-name").value; if(g("au-consent")) UI.auth.consent=g("au-consent").checked; }
 async function submitPostJob(form){
   const g=id=>(form.querySelector("#pj-"+id)||{}).value||"";
-  UI.post={company:g("company"),title:g("title"),city:g("city"),region:g("region"),hMin:g("hmin"),hMax:g("hmax"),danish:g("danish"),description:g("desc"),url:g("url"),deadline:g("deadline"),contact:g("contact"),email:g("email")};
+  UI.post={company:g("company"),title:g("title"),city:g("city"),region:g("region"),danish:g("danish"),description:g("desc"),url:g("url"),deadline:g("deadline"),contact:g("contact"),email:g("email")};
   const sh=UI.sheet; sh.busy=true; sh.err=""; render();
   const r=await api("jobs/submit",UI.post); sh.busy=false;
   if(!r.ok){ sh.err=r.status===503?"Det virker ikke lige nu. Skriv til matchstudie@gmail.com.":(r.data.error||"Det lykkedes ikke. Prøv igen."); return render(); }
@@ -1756,7 +1944,7 @@ async function submitPostJob(form){
 }
 async function submitForgot(form){
   saveAuthFields(); const sh=UI.sheet; sh.busy=true; sh.err=""; render();
-  const r=await api("auth/forgot",{email:UI.auth.email}); sh.busy=false;
+  const r=await api("auth/forgot",{email:UI.auth.email,lang:LANG}); sh.busy=false;
   if(!r.ok){ sh.err=r.data.error||"Det lykkedes ikke. Prøv igen."; return render(); }
   sh.sent=true; render();
 }

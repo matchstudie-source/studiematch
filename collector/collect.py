@@ -26,6 +26,7 @@ import sources  # noqa: E402
 EMPLOYERS = HERE / "employers.csv"
 MANUAL = HERE / "manual_jobs.csv"
 CACHE = HERE / "cache.json"
+TRANSLATIONS = HERE / "translations.json"  # engelske udgaver af beskrivelser til internationale studerende
 REPORT = HERE / "report.md"
 REJECTED = HERE / "rejected.md"
 OUT = ROOT / "site" / "data" / "jobs.json"
@@ -127,6 +128,37 @@ def is_expired(job: dict) -> bool:
         return False
 
 
+def translate_en(final: list, api_key: str) -> int:
+    """Giver hvert job blurbEn og whyEn. Oversættelser gemmes, så hver tekst kun oversættes én gang."""
+    tcache = json.loads(TRANSLATIONS.read_text(encoding="utf-8")) if TRANSLATIONS.exists() else {}
+    todo, wanted = [], {}
+    for j in final:
+        for field, out in (("blurb", "blurbEn"), ("why", "whyEn")):
+            t = (j.get(field) or "").strip()
+            if not t:
+                continue
+            k = hashlib.sha1(t.encode()).hexdigest()[:16]
+            if k in tcache:
+                j[out] = tcache[k]
+            else:
+                todo.append((j, out, k))
+                wanted[k] = t
+    if not (api_key and wanted):
+        return 0
+    limit = int(os.environ.get("STUDIEMATCH_MAX_TRANSLATE", "2000"))
+    items = list(wanted.items())[:limit]
+    batches = [items[i:i + 25] for i in range(0, len(items), 25)]
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=int(os.environ.get("STUDIEMATCH_AI_WORKERS", "8"))) as pool:
+        for res in pool.map(lambda b: enrich.translate_batch(b, api_key), batches):
+            tcache.update(res)
+    for j, out, k in todo:
+        if k in tcache:
+            j[out] = tcache[k]
+    TRANSLATIONS.write_text(json.dumps(tcache, ensure_ascii=False, indent=0), encoding="utf-8")
+    return len(batches)
+
+
 def main() -> int:
     employers = normalize_sources(read_csv(EMPLOYERS))
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
@@ -203,12 +235,13 @@ def main() -> int:
         j["live"] = True
         final.append(j)
 
+    translate_calls = translate_en(final, api_key)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(final, ensure_ascii=False, indent=1), encoding="utf-8")
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
 
     lines = [f"# Jobindsamling {now().strftime('%Y-%m-%d %H:%M')} UTC", "",
-             f"{len(final)} studiejob gemt. AI-kald i denne kørsel: {ai_calls}." + (f" AI-fejl: {enrich.AI_ERROR}" if enrich.AI_ERROR else ""), "",
+             f"{len(final)} studiejob gemt. AI-kald i denne kørsel: {ai_calls}, oversættelser: {translate_calls}." + (f" AI-fejl: {enrich.AI_ERROR}" if enrich.AI_ERROR else ""), "",
              "| Arbejdsgiver | Kilde | Job i alt | Studiejob | Bemærkning |", "| --- | --- | --- | --- | --- |"]
     lines += [f"| {n} | {s} | {a} | {k} | {note} |" for n, s, a, k, note in report_rows]
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
