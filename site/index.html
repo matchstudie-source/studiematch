@@ -1131,6 +1131,13 @@ function jobKind(j){ return j.kind||(j.kind=guessKind(j.title||"")); }
 function inKind(j,k){ const x=jobKind(j); return x===k||x==="begge"; }
 const KINDS=[{id:"studiejob",l:"Studiejob",sub:"Ved siden af studiet",icon:"briefcase",many:"studiejob"},{id:"praktik",l:"Praktik",sub:"Praktikplads og internship",icon:"cap",many:"praktikpladser"}];
 /* Skolerne, brugeren læser på (primær uddannelse og ekstra uddannelser) */
+/* Uddannelser, jobteksten kræver (fx "installatør", "maskinmester"). Kendte fag bruger REQ_STUDY, resten søges i uddannelsesnavnet. */
+const REQ_WORD = [[/^ingeni/,"ingenioer"],[/^jura|^jurist/,"jura"],[/^sygepleje/,"sygepleje"],[/^pædagog/,"paedagog"],[/^socialrådgiv/,"socialraadgiver"],[/^maskinmester|^skibs/,"maritim"],[/^farma/,"farmaci"],[/^medicin|^læge/,"medicin"],[/^arkitekt/,"arkitekt"],[/^konstrukt/,"konstruktoer"],[/^økonom/,"oekonomi"],[/^psykolog/,"psykologi"],[/^tandpleje/,"tandpleje"]];
+function reqStudiesFit(list, p){
+  const hay=studyHay(p);
+  return list.some(w=>{ const hit=REQ_WORD.find(([rx])=>rx.test(w)); if(hit) return studyFits(hit[1],p);
+    const st=norm(w).slice(0,Math.max(5,w.length-2)); return st.length>=3 && hay.includes(st); });
+}
 function userSchools(p){ return [p.uniKey,...(p.extra||[]).map(e=>e.uniKey)].filter(k=>k && k!=="other"); }
 const schoolName = k => (SCHOOLS.find(s=>s.key===k)||{}).name || k.toUpperCase();
 function evaluate(job, c){
@@ -1138,6 +1145,7 @@ function evaluate(job, c){
   if(job.req && !studyFits(job.req, p)) return {out:"study"};
   if(c.disabled.includes(job.fam)) return {out:"field"};
   if(job.danish==="required" && p.danish!=="fluent") return {out:"danish"};
+  if(job.reqStudies && job.reqStudies.length && !reqStudiesFit(job.reqStudies, p)) return {out:"study"};
   if(job.onlySchools && job.onlySchools.length && !userSchools(p).some(k=>job.onlySchools.includes(k))) return {out:"school"};
   const jr=area(job.region); if(!p.regions.includes("any") && jr!=="remote" && jr!=="dk" && !p.regions.map(area).includes(jr)) return {out:"location"};
   const prim = W[job.fam]||0;

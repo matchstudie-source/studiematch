@@ -485,3 +485,9 @@ class SchoolOnlyTest(unittest.TestCase):
         self.assertEqual(f("You must be enrolled at DTU or another Danish university."), [])
         self.assertEqual(f("We collaborate with CBS and DTU. You are currently enrolled in a relevant programme."), [])
 
+    def test_required_studies(self):
+        f = enrich.detect_required_studies
+        self.assertEqual(f("Er du studerende på installatør- eller maskinmesteruddannelsen, og har du lyst"), ["installatør", "maskinmester"])
+        self.assertEqual(f("Vi søger studerende på en videregående uddannelse"), [])
+        self.assertEqual(f("Vi søger studerende på pædagoguddannelsen, socialrådgiveruddannelsen eller lignende uddannelse"), [])
+

@@ -305,6 +305,37 @@ def detect_required_study(title: str) -> str | None:
     return None
 
 
+# Job, hvor teksten kræver bestemte uddannelser ("Er du studerende på installatør- eller maskinmesteruddannelsen")
+REQ_TEXT_RE = re.compile(
+    r"(?:er du|du er|du skal være|vi søger|søger)\s+(?:[\wæøå]+\s+){0,2}?(?:studerende|elev)\s+(?:på|ved|fra|i)\s+"
+    r"(?:en\s+|den\s+)?([\wæøå ,/-]{3,80}?)uddannelse(?:n|rne)?\b", re.I)
+GENERIC_STUDY = {"videregående", "relevant", "relevante", "kandidat", "bachelor", "professionsbachelor", "lang", "mellemlang",
+                 "kort", "teknisk", "tekniske", "merkantil", "økonomisk", "naturvidenskabelig", "samfundsvidenskabelig",
+                 "humanistisk", "universitets", "erhvervsakademi", "en", "din", "relevant videregående", "lignende"}
+
+
+def detect_required_studies(text: str) -> list:
+    """Uddannelser, en jobtekst kræver, fx ["installatør", "maskinmester"], eller [] hvis den ikke kræver bestemte."""
+    out, text = [], text or ""
+    for m in REQ_TEXT_RE.finditer(text):
+        parts = [m.group(1)]
+        rest = text[m.end():]
+        while True:  # flere uddannelser i træk: "jurauddannelsen eller statskundskabsuddannelsen"
+            n = re.match(r"\s*(?:,|eller|og)\s*([\wæøå-]{3,40}?)uddannelse(?:n|rne)?\b", rest, re.I)
+            if not n:
+                break
+            parts.append(n.group(1))
+            rest = rest[n.end():]
+        if re.match(r"\s*(?:,\s*)?(?:eller|og)\s+(?:en\s+)?(?:lignende|tilsvarende|anden|beslægtet)", rest, re.I):
+            continue  # "... eller lignende": jobbet er åbent for flere
+        for chunk in parts:
+            for part in re.split(r"\s*(?:,|/|\s+eller\s+|\s+og\s+)\s*", chunk.lower()):
+                w = part.strip(" -")
+                if len(w) >= 3 and w not in GENERIC_STUDY and not any(g in w.split() for g in GENERIC_STUDY) and w not in out:
+                    out.append(w)
+    return out[:6]
+
+
 # Job, der kun er for studerende fra én bestemt skole ("Currently enrolled at CBS", "indskrevet ved Københavns Universitet")
 SCHOOL_PAT = {
     "cbs": r"copenhagen business school|handelshøjskolen i københavn|\bcbs\b",
@@ -378,6 +409,7 @@ def enrich_rules(raw: dict, employer: dict) -> dict | None:
         "blurb": make_blurb(text),
         "req": detect_required_study(title),
         "onlySchools": detect_school_only(text),
+        "reqStudies": detect_required_studies(f"{title}. {text}"),
         "url": raw.get("url", ""),
         "enrichedBy": "regler",
     }
