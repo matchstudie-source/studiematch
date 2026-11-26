@@ -23,7 +23,7 @@ const FAMS = {
   engineering: "Ingeniørarbejde", health: "Sundhed og pleje", education: "Pædagogik og undervisning",
   social: "Socialt arbejde", public: "Offentlig forvaltning",
 };
-const TRACK_TYPES = new Set(["pageview", "onboarded", "apply_click", "save", "like", "dismiss", "cv_added", "program_changed", "match_good", "match_bad", "why", "auth_open", "filter", "postjob_open", "tab"]);
+const TRACK_TYPES = new Set(["pageview", "onboarded", "apply_click", "save", "like", "dismiss", "cv_added", "program_changed", "match_good", "match_bad", "why", "auth_open", "filter", "postjob_open", "tab", "share"]);
 const AREAS = { kbh: "Storkøbenhavn", nsj: "Nordsjælland", sj: "Midt- og Vestsjælland", ssj: "Sydsjælland og Lolland-Falster", bh: "Bornholm",
   fyn: "Fyn", sjy: "Sønderjylland", svj: "Sydvestjylland", tre: "Trekantområdet", oj: "Østjylland", mvj: "Midt- og Vestjylland", nj: "Nordjylland", remote: "Remote" };
 /* Ord i jobtitlen, der peger på et felt. Bruges som forslag, når en virksomhed slår et job op (og AI ikke er slået til). */

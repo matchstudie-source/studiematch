@@ -214,7 +214,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media(min-width:900px){.hide-mobile{display:inline-flex}}
 @media(min-width:1180px){.only-narrow{display:none}}
 @media(max-width:480px){.top-links .link-quiet{display:none}}
-@media(max-width:440px){.why-long{display:none}.actions{gap:6px}.actions .icon-btn{width:40px;height:40px}}
+@media(max-width:440px){.why-long{display:none}.job .actions{gap:4px}.actions .icon-btn{width:36px;height:36px}.actions .icon-btn svg{width:17px;height:17px}.why-btn{padding:8px 2px}.actions .b-like{display:none}}
 
 .feed-col{min-width:0;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-content:start}
 .h-feed{font-size:clamp(28px,3.6vw,34px);line-height:1.08;letter-spacing:-.035em}
@@ -262,6 +262,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .meta{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-size:13px;font-weight:500;padding:3px 8px;border-radius:4px;background:var(--surface-2);color:var(--fg);white-space:nowrap}
 .tag-new{background:var(--good-soft);color:var(--good)}
+.feed-tools{display:flex;gap:10px;margin-top:14px}
+.feed-tools .search{flex:1;display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-sm);padding:0 12px;min-width:0}
+.feed-tools .search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.feed-tools .search svg{width:18px;height:18px;color:var(--muted);flex:none}
+.feed-tools .search input{border:0;outline:none;background:none;font:inherit;font-size:15.5px;padding:11px 0;width:100%;min-width:0;color:var(--fg)}
+.feed-tools .sort{width:auto;flex:none;padding-right:34px}
+.search-count{margin:0 0 4px}
+@media(max-width:520px){.feed-tools{flex-direction:column}.feed-tools .sort{width:100%}}
 .tag-kind{background:var(--accent-soft);color:var(--accent-deep);font-weight:600}
 .kinds{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
 .kind{display:flex;align-items:center;gap:12px;text-align:left;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-md);padding:12px 14px;cursor:pointer;color:var(--fg);font:inherit;min-width:0}
@@ -570,6 +578,7 @@ Object.assign(EN,{
 /* brancher (fra jobdata) */
 "Vores AI har læst dit CV. Fravælg det, der ikke passer, og tryk Tilføj.":"Our AI has read your CV. Untick what doesn't fit and tap Add.","Vi har læst dit CV i din browser. Fravælg det, der ikke passer, og tryk Tilføj.":"We read your CV in your browser. Untick what doesn't fit and tap Add.",
 "Startup-jobbørs":"Startup job board","Universitetets jobside":"University job page","Kommunens jobportal":"Municipal job portal","Regionens jobportal":"Regional job portal","Statens jobportal":"Government job portal","Vikarbureau":"Temp agency","Vagtbureau":"Staffing agency","Lægeforeningernes jobopslag":"Medical association job posts",
+"Del jobbet":"Share the job","Søg, fx firma, by eller Excel":"Search, e.g. company, city or Excel","Søg i job":"Search jobs","Sortering":"Sort","Bedste match":"Best match","Nyeste først":"Newest first","Frist først":"Deadline first","Linket er kopieret. Send det til en ven.":"Link copied. Send it to a friend.","Nogen har delt et job med dig":"Someone shared a job with you","Til mit feed":"To my feed","Find job, der passer til mig":"Find jobs that fit me","Se jobbet":"See the job",
 "Advokat":"Law firm","Biotek":"Biotech","Byggeri":"Construction","Børn og unge":"Children and youth","Detailhandel":"Retail","Energi":"Energy","Fonde":"Foundations","Fødevarer og drikkevarer":"Food and beverages","Fødevarer og drikke":"Food and beverages","Ingeniørrådgivning":"Engineering consultancy","Interesseorganisation":"Interest organisation","Jobportal for studerende":"Student job portal","Logistik og shipping":"Logistics and shipping","Medicinal":"Pharmaceuticals","Medicinsk udstyr":"Medical devices","Medier":"Media","Offentlig":"Public sector","Offentlig sektor":"Public sector","Pension og forsikring":"Pensions and insurance","Revision og rådgivning":"Audit and advisory","Rådgivning":"Consulting","Sundhed":"Health","Sundhed og region":"Health and regions","Tech og software":"Tech and software","Telekommunikation":"Telecom","Uddannelse og forskning":"Education and research","Uddannelse":"Education","Finans":"Finance","Transport":"Transport","Produktion":"Manufacturing","Kultur":"Culture","Forskning":"Research","Socialt arbejde":"Social work","Pharma og medtech":"Pharma and medtech"
 });
 EN_RE.push(
@@ -967,6 +976,15 @@ async function initAccount(){
 }
 /* Anonym statistik: ingen cookies. Serveren tæller besøgende med en hash, der skifter hver dag. */
 let lastPV="", firstPV=true;
+/* Et delt job: studiematch.dk/?job=ID åbner jobbet, når joblisten er hentet */
+const SHARED_JOB = typeof window==="undefined" ? "" : (()=>{ try{ return new URLSearchParams(location.search).get("job")||""; }catch(e){ return ""; } })();
+function openShared(){
+  if(!SHARED_JOB || UI.sharedDone) return; UI.sharedDone=true;
+  try{ const u=new URL(location.href); u.searchParams.delete("job"); history.replaceState(null,"",u.pathname+(u.search||"")+u.hash); }catch(e){}
+  const j=byId(SHARED_JOB);
+  if(j){ UI.sheet={type:"shared",id:j.id}; track("tab",{meta:"Åbnede delt job",jobId:j.id}); render(); }
+  else toast(L("Jobbet er ikke længere slået op.","The job is no longer posted."));
+}
 /* Hvor kom den besøgende fra? ?ref=plakat eller ?utm_source=instagram vinder over den side, de kom fra. */
 const SRC_PARAM = (()=>{ try{ const q=new URLSearchParams(location.search); return (q.get("ref")||q.get("utm_source")||"").toLowerCase().replace(/[^a-z0-9._-]/g,"").slice(0,40); }catch(e){ return ""; } })();
 const SRC_NOW = SRC_PARAM || (()=>{ try{ const h=new URL(document.referrer).hostname.replace(/^www\./,""); return h && h!==location.hostname.replace(/^www\./,"") ? h : ""; }catch(e){ return ""; } })();
@@ -1225,6 +1243,8 @@ const I = {
   x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   bookmark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 4h10v16l-5-3.5L7 20z"/></svg>',
   bookmarkOn:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 4h10v16l-5-3.5L7 20z"/></svg>',
+  share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M7.5 7.5 12 3l4.5 4.5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>',
+  search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
   thumb:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v9H4v-9z"/><path d="M7 11l4-7c1.4 0 2.4 1.1 2.1 2.6L12.6 10H18a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 16.8 20H7"/></svg>',
   out:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16L16 8M9.5 8H16v6.5"/></svg>',
   chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>',
@@ -1273,6 +1293,7 @@ function cardHTML(job, ev, opts){
       <button class="icon-btn b-pass" ${da||`data-act="dismiss" data-id="${job.id}"`} aria-label="Ikke interesseret" title="Ikke interesseret">${I.x}</button>
       <button class="icon-btn b-save" ${da||`data-act="save" data-id="${job.id}"`} aria-pressed="${!!fb.saved}" aria-label="${fb.saved?"Gemt":"Gem"}" title="Gem">${fb.saved?I.bookmarkOn:I.bookmark}</button>
       <button class="icon-btn b-like" ${da||`data-act="like" data-id="${job.id}"`} aria-pressed="${!!fb.liked}" aria-label="Interesseret" title="Interesseret">${I.thumb}</button>
+      <button class="icon-btn b-share" ${da||`data-act="share" data-id="${job.id}"`} aria-label="Del jobbet" title="Del jobbet">${I.share}</button>
       <button class="why-btn" ${da||`data-act="why" data-id="${job.id}"`} aria-expanded="${open}"><span>Hvorfor<span class="why-long"> dette match</span></span>${I.chev}</button>
       <span class="act-spacer"></span>
       ${!da && job.url ? applyLink(job,"btn btn-primary btn-sm",`Søg ${I.out}`) : `<button class="btn btn-primary btn-sm" ${da||`data-act="apply" data-id="${job.id}"`}>Søg ${I.out}</button>`}
@@ -1491,8 +1512,45 @@ function tForYou(){
   const kinds=`<div class="kinds" role="tablist" aria-label="Vis studiejob eller praktik">${KINDS.map(k=>`<button class="kind" role="tab" aria-selected="${k.id===K.id}" data-act="kind" data-v="${k.id}">${I[k.icon]}<span class="k-t"><b>${k.l}</b><small>${k.sub}</small></span><span class="count">${k.id===K.id?f.length:feed(k.id).length}</span></button>`).join("")}</div>`;
   const head=`<div><h1 class="h-feed">Til dig</h1><p class="sub">${f.length} ${K.many} rangeret til ${esc(S.profile.programShort)}. Opdateret kl. ${now}, ${JOBS.length} opslag gennemgået.</p></div>`+kinds;
   const nudge = ACC.backend && !ACC.user && !S.nudgeClosed ? `<section class="nudge"><div><b>Gem din profil</b><span>Opret en gratis bruger, så dine matches, gemte job og dit CV er med dig på alle enheder.</span></div><div class="chips"><button class="btn btn-primary btn-sm" data-act="auth" data-v="signup">Opret bruger</button><button class="btn btn-quiet btn-sm" data-act="nudge-close">Ikke nu</button></div></section>` : "";
-  if(!f.length) return head+nudge+filterNote()+emptyFeed();
-  return head+nudge+filterNote()+`<div class="cards">${f.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
+  const sort=S.sort||"match";
+  const tools=`<div class="feed-tools"><label class="search">${I.search}<input id="feed-q" type="search" placeholder="Søg, fx firma, by eller Excel" value="${esc(UI.q||"")}" autocomplete="off" aria-label="Søg i job"></label>
+    <select class="select sort" data-change="sort" aria-label="Sortering">${[["match","Bedste match"],["new","Nyeste først"],["deadline","Frist først"]].map(([v,l])=>`<option value="${v}" ${sort===v?"selected":""}>${l}</option>`).join("")}</select></div>`;
+  return head+nudge+tools+filterNote()+`<div id="feed-results">${feedResultsHTML(f)}</div>`;
+}
+/* Søgning og sortering i feedet */
+function searchHit(j,q){ const h=norm([j.title,j.titleEn,j.co,j.city,j.blurb,j.blurbEn,(j.skills||[]).join(" "),j.industry].filter(Boolean).join(" ")); return q.split(" ").filter(Boolean).every(w=>h.includes(w)); }
+const dlOf = j => j.rolling||j.deadline==null ? 9e9 : j.deadline;
+function sortItems(list){
+  const s=S.sort||"match";
+  if(s==="new") return list.slice().sort((a,b)=>(a.job.postedH??9e9)-(b.job.postedH??9e9));
+  if(s==="deadline") return list.slice().sort((a,b)=>dlOf(a.job)-dlOf(b.job));
+  return list;
+}
+function feedResultsHTML(f){
+  f=f||feed(); const q=norm(UI.q||"");
+  if(!q){ return f.length ? `<div class="cards">${sortItems(f).map(x=>cardHTML(x.job,x.ev)).join("")}</div>` : emptyFeed(); }
+  const hits=sortItems(f.filter(x=>searchHit(x.job,q)));
+  const ids=new Set(hits.map(x=>x.job.id));
+  const extra=sortItems(allEvals().filter(x=>!ids.has(x.job.id) && inKind(x.job,S.kind||"studiejob") && !x.ev.out && !(S.fb[x.job.id]||{}).dismissed && searchHit(x.job,q))).slice(0,30);
+  let h=`<p class="fine search-count">${L(`${hits.length} af dine matches passer til “${esc(UI.q.trim())}”`,`${hits.length} of your matches fit “${esc(UI.q.trim())}”`)}</p>`;
+  if(hits.length) h+=`<div class="cards">${hits.map(x=>cardHTML(x.job,x.ev)).join("")}</div>`;
+  if(extra.length) h+=`<h2 class="group-h">${L(`${extra.length} andre job med “${esc(UI.q.trim())}”`,`${extra.length} other jobs with “${esc(UI.q.trim())}”`)}</h2><p class="fine">${L("De passer ikke så godt til din profil, men indeholder det, du søger efter.","They don't fit your profile as well, but contain what you searched for.")}</p><div class="cards">${extra.map(x=>cardHTML(x.job,x.ev.level?x.ev:{...x.ev,level:"worth"})).join("")}</div>`;
+  if(!hits.length && !extra.length) h+=`<div class="empty"><h2>${L("Ingen job fundet","No jobs found")}</h2><p>${L("Prøv et andet ord, fx et firmanavn, en by eller et program som Excel.","Try another word, like a company name, a city or a tool like Excel.")}</p></div>`;
+  return h;
+}
+let searchTrack=null;
+function onSearch(v){
+  UI.q=v; const el=document.getElementById("feed-results"); if(el){ el.innerHTML=feedResultsHTML(); translateDOM(el); }
+  clearTimeout(searchTrack); if(v.trim().length>=2) searchTrack=setTimeout(()=>track("filter",{meta:"Søgning: "+v.trim().slice(0,60)}),1500);
+}
+/* Del et job: på mobil åbnes telefonens del-menu, ellers kopieres linket */
+async function shareJob(j){
+  const url=`${location.origin}/?job=${encodeURIComponent(j.id)}&ref=del`;
+  const text=L(`${j.title} hos ${j.co}. Fundet på Studiematch.`,`${j.title} at ${j.co}. Found on Studiematch.`);
+  track("share",{jobId:j.id,label:jobLabel(j)});
+  try{ if(navigator.share){ await navigator.share({title:j.title,text,url}); return; } }catch(e){ if(e&&e.name==="AbortError") return; }
+  try{ await navigator.clipboard.writeText(url); toast("Linket er kopieret. Send det til en ven."); }
+  catch(e){ window.prompt(L("Kopiér linket:","Copy the link:"),url); }
 }
 function emptyFeed(){
   const p=S.profile;
@@ -1747,6 +1805,16 @@ function sheetHTML(){
   if(UI.sheet.type==="reset") return resetSheet(UI.sheet);
   if(UI.sheet.type==="program") return programSheet(UI.sheet);
   if(UI.sheet.type==="cv") return cvSheet(UI.sheet);
+  if(UI.sheet.type==="shared"){ const sj=byId(UI.sheet.id); if(!sj) return "";
+    const tags=[jobKind(sj)==="praktik"?"Praktik":"", sj.danish==="required"?"Kræver dansk":sj.danish==="plus"?"Dansk er et plus":"Engelsk OK", sj.rolling?"Løbende optag":sj.deadline==null?"":"Frist "+deadlineDate(sj.deadline)].filter(Boolean);
+    return `<div class="scrim" data-act="close-sheet"><div class="sheet sheet-wide" role="dialog" aria-modal="true" aria-labelledby="sh-t" data-stop>
+      <p class="fine">Nogen har delt et job med dig</p>
+      <h2 id="sh-t" data-notr>${esc(jobTitle(sj))}</h2>
+      <p data-notr><b>${esc(sj.co)}</b>${sj.city?", "+esc(sj.city):""}</p>
+      <div class="meta">${tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
+      ${jobBlurb(sj)?`<p data-notr>${esc(jobBlurb(sj))}</p>`:""}
+      <div class="sheet-actions">${S.onboarded?'<button class="btn btn-quiet" data-act="close-sheet">Til mit feed</button>':'<button class="btn btn-ghost" data-act="start">Find job, der passer til mig</button>'}${sj.url?applyLink(sj,"btn btn-primary",`Se jobbet ${I.out}`):""}</div>
+    </div></div>`; }
   const j=byId(UI.sheet.id);
   if(UI.sheet.type==="dismiss"){
     const opts=[["field","Ikke mit felt",`Vis færre job inden for ${FAM[j.fam].n}`],["danish","Sproget passer ikke",""],["location","For langt væk",""],["company","Ikke denne virksomhed",""],["other","Noget andet",""]];
@@ -1797,6 +1865,7 @@ function act(a, el){
   switch(a){
     case "home": S.view="landing"; window.scrollTo(0,0); return commit();
     case "start":
+      UI.sheet=null;
       if(S.onboarded){ S.view="app"; S.tab="foryou"; }
       else { S.view="onboard"; S.step=1; }
       window.scrollTo(0,0); return commit();
@@ -1859,6 +1928,7 @@ function act(a, el){
     case "logout": (async()=>{ await api("auth/logout",{}); ACC.user=null; S=fresh(); try{localStorage.removeItem(KEY);}catch(e){} window.scrollTo(0,0); render(); toast("Du er logget ud."); })(); return;
     case "nudge-close": S.nudgeClosed=true; return commit();
     case "lang": S.lang=v; p.lang=v; setLang(v); track("filter",{meta:"Sprog: "+v}); syncSoon(); return commit();
+    case "share": { const j=byId(id); if(j) shareJob(j); return; }
     case "kind": if(S.kind!==v){ S.kind=v; UI.showFiltered=false; track("filter",{meta:"Type: "+(v==="praktik"?"Praktik":"Studiejob")}); } return commit();
     case "toggle-filtered": UI.showFiltered=!UI.showFiltered; return render();
     case "fields-on": S.disabled=[]; commit(); return toast("Alle felter er slået til igen.");
@@ -2011,12 +2081,14 @@ if(typeof document!=="undefined"){
   document.addEventListener("submit",e=>{ e.preventDefault(); onSubmit(e.target); });
   document.addEventListener("input",e=>{
     if(e.target.id==="hero-study") UI.heroText=e.target.value;
+    if(e.target.id==="feed-q") onSearch(e.target.value);
     if(e.target.id==="ps-q" && UI.sheet && UI.sheet.type==="program"){ UI.sheet.q=e.target.value; const l=document.getElementById("ps-list"); if(l) l.innerHTML=psListHTML(); }
     if(e.target.id==="ob-study"){ UI.obText=e.target.value; const l=document.getElementById("prog-list"); if(l) l.innerHTML=progListHTML(); const c=document.getElementById("prog-count"); if(c) c.textContent=progCount(); const b=document.getElementById("ob-go"); if(b) b.disabled=!norm(UI.obText); }
   });
   document.addEventListener("change",e=>{
     const k=e.target.dataset.change; if(!k) return; const p=S.profile;
     if(k==="pf-uni"){ UI.pfUni=e.target.value; return render(); }
+    if(k==="sort"){ S.sort=e.target.value; track("filter",{meta:"Sortering: "+S.sort}); return commit(); }
     if(k==="semester") p.semester=e.target.value;
     if(k==="email") p.email=e.target.value.trim();
     if(k==="cv"){ const f=e.target.files&&e.target.files[0]; return handleCV(f); }
@@ -2049,7 +2121,7 @@ async function loadLiveJobs(){
   if(!live.length) return;
   JOBS.length=0; JOBS.push(...live);
   INDUSTRIES.length=0; INDUSTRIES.push(...[...new Set(JOBS.map(j=>j.industry))].sort((a,b)=>a.localeCompare(b,"da")));
-  LIVE=true; render();
+  LIVE=true; render(); openShared();
 }
 </script>
 </body>
