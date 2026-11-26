@@ -73730,5 +73730,66 @@
   ],
   "why": "Jobbet kombinerer HR-processer med dataanalyse og Excel, hvilket passer til HR-, økonomi- og analysefag.",
   "openToAll": false
+ },
+ "770d8436b7c5ed9c31304d518a107b4198d54f1b": {
+  "fam": "marketing",
+  "sec": [
+   "bi",
+   "procurement"
+  ],
+  "danish": "plus",
+  "hMin": 20,
+  "hMax": 25,
+  "skills": [
+   "marketing praktik",
+   "CMS (Umbraco)",
+   "webanalyse",
+   "grafisk design",
+   "e-mail-marketing"
+  ],
+  "blurb": "Du hjælper MarCom-teamet med planlægning af kundeevents, opsætning af nyhedsbreve og automatiske flows samt opdatering af hjemmesiden i Umbraco. Du laver også webrapportering, LinkedIn-opfølgning, konkurrentovervågning og indkøb af merchandise.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "markedsføringsøkonomi",
+   "kommunikation",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "medievidenskab",
+   "international business"
+  ],
+  "why": "Jobbet kombinerer marketing, digital analyse og kommunikation, som netop er kernen i disse uddannelser.",
+  "openToAll": false
+ },
+ "297be36a67941e0abde0ec537853ff7608c09856": {
+  "fam": "marketing",
+  "sec": [
+   "education",
+   "customer"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "relationelle kompetencer",
+   "formidling af litteratur",
+   "arrangementsafvikling",
+   "værtskab",
+   "udlån og vagtbetjening"
+  ],
+  "blurb": "Du indgår i værtskabet på Vesterbro Bibliotek og Kulturhus med udlånsvagter og hjælp til arrangementer. Du formidler litteratur til børn og voksne og klarer praktiske opgaver i huset.",
+  "deadlineAt": "2026-12-10T00:00:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "biblioteks- og informationsvidenskab",
+   "litteratur",
+   "dansk",
+   "kulturformidling",
+   "pædagogik",
+   "kommunikation"
+  ],
+  "why": "Jobbet kræver interesse for litteratur og formidling samt evne til at samarbejde med borgere, hvilket passer til humanistiske, pædagogiske og kommunikationsfaglige uddannelser.",
+  "openToAll": false
  }
 }

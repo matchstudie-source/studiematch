@@ -31,6 +31,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Aarhus Kommune | The International Day Nursery – Aarhus søger to engagerede og eventyrlystne pædagoger | ikke et studiejob |
 | Næstved Kommune | Værksteds- og praktikvejleder til Næstved Ungdomsskoles heltidsundervisning | ikke et studiejob |
 | IT-Universitetet | Postdoc in Secure and Verifiable Computation for Internet Voting | ikke et studiejob |
+| Statslige arbejdsgivere | Studieadministrativ medarbejder til processer og optag | ikke et studiejob |
 | Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Erhvervsakademi København | Studieadministrativ koordinator/PA til Studiefremdrift på EK (Erhvervsakademi København) | ikke et studiejob |
 | Kræftens Bekæmpelse | Postdoctoral Fellows and PhD Students - Genome Stress and Cell State - Nussenzweig Group | ikke et studiejob |
