@@ -14,6 +14,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | 2 introduktionsstillinger i Intern Medicin, Hjertesygdomme, Kolding Sygehus, Sygehus Lillebælt | ikke et studiejob |
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling, intern medicin, Geriatrisk Afdeling G, Odense | ikke et studiejob |
+| Region Syddanmark | Studentermedhjælper til Bygningsdrift og -service | ikke et studiejob |
 | Vestas | Lead / Assistant Lead Engineer - Power System Studies | ikke et studiejob |
 | HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
@@ -21,9 +22,7 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Engagerede medarbejdere til politikudvikling for landdistrikter og internationale opgaver i By-, Land- og Transportministeriets departement | ikke et studiejob |
 | Statslige arbejdsgivere | Jurist med erfaring indenfor moms til intern rådgivningsfunktion | ikke et studiejob |
 | Statslige arbejdsgivere | Kontorchef til International Arbejdskraft og EU-ophold (IAEU) i Udlændinge- og Integrationsministeriets departement | ikke et studiejob |
-| Statslige arbejdsgivere | Medarbejdere til det internationale samarbejde søges til Styrelsen for Samfundssikkerhed | ikke et studiejob |
 | Statslige arbejdsgivere | Midlertidig ansat til Internationale Ægteskaber | ikke et studiejob |
-| Statslige arbejdsgivere | Udpegning af advokater til varetagelse af sager om internationale børnebortførelser | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | ATP | Sagsbehandler til international kontrol (projektansættelse – 1 år) | ikke et studiejob |
 | NIRAS | Unsolicited intern applications | ikke et studiejob |
@@ -35,7 +34,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Erhvervsakademi København | Studieadministrativ koordinator/PA til Studiefremdrift på EK (Erhvervsakademi København) | ikke et studiejob |
 | Kræftens Bekæmpelse | Postdoctoral Fellows and PhD Students - Genome Stress and Cell State - Nussenzweig Group | ikke et studiejob |
-| Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
 | StuderendeOnline.dk | To studentermedhjælpere til AU Summer University | ikke et studiejob |
 | StuderendeOnline.dk | Rådet for Sikker Trafik søger: ung-til-ung underviser til meningsfuldt studiejob | ikke et studiejob |
