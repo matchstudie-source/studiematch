@@ -35,7 +35,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | Statslige arbejdsgivere | Studievejleder - barselsvikar | ikke et studiejob |
 | Erhvervsakademi København | Studieadministrativ koordinator/PA til Studiefremdrift på EK (Erhvervsakademi København) | ikke et studiejob |
 | Kræftens Bekæmpelse | Postdoctoral Fellows and PhD Students - Genome Stress and Cell State - Nussenzweig Group | ikke et studiejob |
-| Billund Kommune | Konsulent til international arbejdskraft, netværk og virksomhedssamarbejde | ikke et studiejob |
 | StuderendeOnline.dk | Ung-til-ung underviser til meningsfuldt studiejob (Region Syddanmark, Sjælland eller Hovedstadsområdet) | ikke et studiejob |
 | StuderendeOnline.dk | To studentermedhjælpere til AU Summer University | ikke et studiejob |
 | StuderendeOnline.dk | Rådet for Sikker Trafik søger: ung-til-ung underviser til meningsfuldt studiejob | ikke et studiejob |

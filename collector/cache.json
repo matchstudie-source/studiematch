@@ -73734,20 +73734,19 @@
  "770d8436b7c5ed9c31304d518a107b4198d54f1b": {
   "fam": "marketing",
   "sec": [
-   "bi",
-   "procurement"
+   "bi"
   ],
-  "danish": "plus",
+  "danish": "required",
   "hMin": 20,
   "hMax": 25,
   "skills": [
-   "marketing praktik",
-   "CMS (Umbraco)",
-   "webanalyse",
+   "CMS",
+   "e-mailmarketing",
    "grafisk design",
-   "e-mail-marketing"
+   "webanalyse",
+   "LinkedIn-rapportering"
   ],
-  "blurb": "Du hjælper MarCom-teamet med planlægning af kundeevents, opsætning af nyhedsbreve og automatiske flows samt opdatering af hjemmesiden i Umbraco. Du laver også webrapportering, LinkedIn-opfølgning, konkurrentovervågning og indkøb af merchandise.",
+  "blurb": "Du hjælper med planlægning af kundeevents, nyhedsbreve og grafisk materiale samt opdatering af hjemmesiden i Umbraco. Du laver også rapportering på web, LinkedIn og betalt indhold og overvåger konkurrenter.",
   "deadlineAt": null,
   "enrichedBy": "ai",
   "studies": [
@@ -73756,10 +73755,41 @@
    "erhvervsøkonomi",
    "ha",
    "cand.merc",
-   "medievidenskab",
-   "international business"
+   "medievidenskab"
   ],
-  "why": "Jobbet kombinerer marketing, digital analyse og kommunikation, som netop er kernen i disse uddannelser.",
+  "why": "Jobbet kombinerer marketing, kommunikation og webanalyse, hvilket passer godt til økonomi- og kommunikationsuddannelser.",
+  "openToAll": false
+ },
+ "4389cb68eb881a17d8e491f176aff7c1280623c3": {
+  "fam": "finance",
+  "sec": [
+   "bi",
+   "operations"
+  ],
+  "danish": "no",
+  "hMin": 15,
+  "hMax": 15,
+  "skills": [
+   "Excel",
+   "budgetopfølgning",
+   "rapportering",
+   "dataanalyse",
+   "kvalitetssikring"
+  ],
+  "blurb": "Du indsamler og sammenstiller økonomidata om budgetter og forbrug på kontorets projekter og er med til at udvikle Excel-baserede rapporter til projektledere og ledelse. Du kvalitetssikrer data fra økonomi- og tidsregistreringssystemer og hjælper med budgetarbejde og analyser.",
+  "deadlineAt": "2027-01-03T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "økonomi",
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "statskundskab",
+   "offentlig administration",
+   "business analytics",
+   "statistik"
+  ],
+  "why": "Jobbet kræver talforståelse, Excel-kompetencer og indsigt i økonomistyring, som økonomiske, administrative og analytiske uddannelser giver.",
   "openToAll": false
  },
  "297be36a67941e0abde0ec537853ff7608c09856": {
@@ -73768,28 +73798,30 @@
    "education",
    "customer"
   ],
-  "danish": "required",
+  "danish": "plus",
   "hMin": 10,
   "hMax": 10,
   "skills": [
    "relationelle kompetencer",
-   "formidling af litteratur",
+   "litteraturkendskab",
+   "formidling",
    "arrangementsafvikling",
-   "værtskab",
-   "udlån og vagtbetjening"
+   "værtskab"
   ],
-  "blurb": "Du indgår i værtskabet på Vesterbro Bibliotek og Kulturhus med udlånsvagter og hjælp til arrangementer. Du formidler litteratur til børn og voksne og klarer praktiske opgaver i huset.",
+  "blurb": "Du er biblioteksvært i børne- og voksenafdelingen og står for udlånsvagter og lokale arrangementer. Du formidler litteratur til børn og voksne og hjælper med praktiske opgaver i huset.",
   "deadlineAt": "2026-12-10T00:00:00+00:00",
   "enrichedBy": "ai",
   "studies": [
-   "biblioteks- og informationsvidenskab",
-   "litteratur",
+   "biblioteksvidenskab",
+   "litteraturvidenskab",
    "dansk",
    "kulturformidling",
+   "kommunikation",
    "pædagogik",
-   "kommunikation"
+   "historie",
+   "medievidenskab"
   ],
-  "why": "Jobbet kræver interesse for litteratur og formidling samt evne til at samarbejde med borgere, hvilket passer til humanistiske, pædagogiske og kommunikationsfaglige uddannelser.",
+  "why": "Jobbet kræver interesse for litteratur og formidling, hvilket især passer til sprog-, litteratur- og kulturfag.",
   "openToAll": false
  }
 }
