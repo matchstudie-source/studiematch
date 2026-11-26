@@ -178,6 +178,8 @@ function vOverview(){
     <div class="kpi"><div class="v">${fmt(s.totals.with_cv)}</div><div class="l">Brugere med CV</div></div>
     <div class="kpi"><div class="v">${fmt(s.totals.active7)}</div><div class="l">Aktive brugere, 7 dage</div></div>
     <div class="kpi"><div class="v">${fmt((s.alerts||{}).subs)}</div><div class="l">Har jobmails slået til · ${fmt((s.alerts||{}).mails)} mails sendt</div></div>
+    ${(()=>{ const lu=(s.lang||{}).users||{}, lv=(s.lang||{}).visits||{}; const tv=(lv.en||0)+(lv.da||0);
+      return `<div class="kpi"><div class="v">${fmt(lu.en||0)}</div><div class="l">Brugere på engelsk (af ${fmt((lu.en||0)+(lu.da||0))}) · ${tv?Math.round(100*(lv.en||0)/tv):0} % af besøgene på engelsk, 30 dage</div></div>`; })()}
   </div>
   <section class="card"><h2>Besøgende de sidste 30 dage</h2>${chart(s)}<p class="muted small">En besøgende tælles én gang pr. dag. Vi bruger ingen cookies til statistik.</p></section>
   <div class="grid2">

@@ -998,7 +998,7 @@ function track(type, extra){
 function trackView(){
   const key = S.view==="app" ? "/app/"+S.tab : S.view==="onboard" ? "/opsaetning/"+S.step : "/";
   if(key===lastPV) return; lastPV=key;
-  track("pageview",{path:key, ref: firstPV ? (SRC_PARAM ? "https://"+SRC_PARAM+".kilde" : document.referrer) : ""}); firstPV=false;
+  track("pageview",{path:key, meta:"sprog:"+LANG, ref: firstPV ? (SRC_PARAM ? "https://"+SRC_PARAM+".kilde" : document.referrer) : ""}); firstPV=false;
 }
 const jobLabel = j => j ? `${j.title} · ${j.co}`.slice(0,160) : "";
 

@@ -639,7 +639,7 @@ async function admin(ctx, path, method, me) {
   if (path === "stats" && method === "GET") {
     const since = day(now() - 29 * 864e5);
     const q = (sql, ...a) => db.prepare(sql).bind(...a);
-    const [daily, signups, totals, topJobs, refs, paths, programs, funnel, companies, recent, quality, badList, reasons, pendingJobs, alertStats, todayV, hours, dows, actions, anonPrograms] = await db.batch([
+    const [daily, signups, totals, topJobs, refs, paths, programs, funnel, companies, recent, quality, badList, reasons, pendingJobs, alertStats, todayV, hours, dows, actions, anonPrograms, langUsers, langVisits] = await db.batch([
       q(`SELECT day, COUNT(DISTINCT visitor) AS visitors, COUNT(*) AS views FROM events WHERE type='pageview' AND day>=? GROUP BY day ORDER BY day`, since),
       q(`SELECT day, COUNT(*) AS n FROM events WHERE type='signup' AND day>=? GROUP BY day`, since),
       q(`SELECT (SELECT COUNT(*) FROM users) AS users, (SELECT COUNT(*) FROM users WHERE cv_name IS NOT NULL) AS with_cv,
@@ -662,6 +662,8 @@ async function admin(ctx, path, method, me) {
       q(`SELECT ((ts/86400000) + 3) % 7 AS dow, COUNT(DISTINCT visitor || day) AS n FROM events WHERE type='pageview' AND day>=? GROUP BY dow`, since),
       q(`SELECT type, COUNT(*) AS n FROM events WHERE day>=? AND visitor IS NOT NULL AND type NOT IN ('pageview') GROUP BY type ORDER BY n DESC`, since),
       q(`SELECT label, COUNT(*) AS n FROM events WHERE type='onboarded' AND day>=? AND user_id IS NULL AND label IS NOT NULL GROUP BY label ORDER BY n DESC LIMIT 15`, since),
+      q(`SELECT CASE WHEN json_extract(profile,'$.lang')='en' THEN 'en' ELSE 'da' END AS lang, COUNT(*) AS n FROM users GROUP BY lang`),
+      q(`SELECT CASE WHEN meta='sprog:en' THEN 'en' ELSE 'da' END AS lang, COUNT(DISTINCT visitor || day) AS n FROM events WHERE type='pageview' AND day>=? AND meta LIKE 'sprog:%' GROUP BY lang`, since),
     ]);
     return json({
       daily: daily.results, signups: signups.results, totals: totals.results[0], topJobs: topJobs.results,
@@ -670,6 +672,7 @@ async function admin(ctx, path, method, me) {
       quality: Object.fromEntries(quality.results.map((r) => [r.type, r.n])), badMatches: badList.results, dismissReasons: reasons.results,
       pendingJobs: pendingJobs.results[0].n, alerts: alertStats.results[0], today: todayV.results[0],
       hours: hours.results, weekdays: dows.results, actions: actions.results, anonPrograms: anonPrograms.results,
+      lang: { users: Object.fromEntries(langUsers.results.map((r) => [r.lang, r.n])), visits: Object.fromEntries(langVisits.results.map((r) => [r.lang, r.n])) },
     });
   }
   if (path === "hidden" && method === "GET") {
