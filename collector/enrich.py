@@ -8,6 +8,7 @@ To lag:
 from __future__ import annotations
 
 import json
+import time
 import os
 import re
 
@@ -384,9 +385,13 @@ def translate_batch(batch: list, api_key: str) -> dict:
     prompt = TRANSLATE_PROMPT.format(items=json.dumps(dict(batch), ensure_ascii=False))
     text = ""
     try:
-        resp = requests.post(AI_URL, timeout=90, headers={
-            "x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json",
-        }, json={"model": AI_MODEL, "max_tokens": 6000, "messages": [{"role": "user", "content": prompt}]})
+        for attempt in range(4):  # ved "for mange kald" venter vi lidt og prøver igen
+            resp = requests.post(AI_URL, timeout=90, headers={
+                "x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json",
+            }, json={"model": AI_MODEL, "max_tokens": 6000, "messages": [{"role": "user", "content": prompt}]})
+            if resp.status_code not in (429, 529) or attempt == 3:
+                break
+            time.sleep(float(resp.headers.get("retry-after") or 0) or 10 * (attempt + 1))
         resp.raise_for_status()
         text = "".join(part.get("text", "") for part in resp.json().get("content", []))
         data = json.loads(text[text.index("{"): text.rindex("}") + 1])
