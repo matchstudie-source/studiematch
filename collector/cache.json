@@ -73823,5 +73823,95 @@
   ],
   "why": "Jobbet kræver interesse for litteratur og formidling, hvilket især passer til sprog-, litteratur- og kulturfag.",
   "openToAll": false
+ },
+ "47cecdd883df43b284eab568b651386f5092e685": {
+  "fam": "marketing",
+  "sec": [
+   "software",
+   "bizdev"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "AI-værktøjer",
+   "automatisering",
+   "partnermarketing",
+   "prototyping"
+  ],
+  "blurb": "Du designer, tester og implementerer AI-baserede løsninger, der automatiserer manuelle processer i Partner-teamet. Du hjælper også med partnermarketing ved at bruge smartere værktøjer.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "markedsføringsøkonomi",
+   "erhvervsøkonomi",
+   "cand.merc",
+   "datalogi",
+   "informatik",
+   "it"
+  ],
+  "why": "Jobbet kombinerer AI- og automatiseringsarbejde med markedsføring, så både it- og erhvervsfaglige uddannelser passer godt.",
+  "openToAll": false
+ },
+ "4cdf272cb4185f86dc53cea88eda62c9f0a78711": {
+  "fam": "hr",
+  "sec": [
+   "bi",
+   "operations"
+  ],
+  "danish": "no",
+  "hMin": 0,
+  "hMax": 0,
+  "skills": [
+   "Excel",
+   "dataanalyse",
+   "procesforbedring",
+   "procesdokumentation",
+   "engelsk kommunikation"
+  ],
+  "blurb": "Du opdaterer, validerer og analyserer medarbejder- og lønrelaterede data, herunder berettigelse og omkostningsberegninger. Du vedligeholder procesdokumentation og vejledninger og hjælper medarbejdere og ledere med spørgsmål om HR-processer.",
+  "deadlineAt": null,
+  "enrichedBy": "ai",
+  "studies": [
+   "erhvervsøkonomi",
+   "ha",
+   "cand.merc",
+   "personaleledelse",
+   "økonomi",
+   "statistik"
+  ],
+  "why": "Jobbet kræver analytisk arbejde med HR- og løndata i Excel samt forståelse for procesforbedring, hvilket passer til økonomi- og HR-uddannelser.",
+  "openToAll": false
+ },
+ "ff4e84158701f96da4c0e6ff61b80e046956fb90": {
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "operations"
+  ],
+  "danish": "required",
+  "hMin": 10,
+  "hMax": 10,
+  "skills": [
+   "koordinering",
+   "administration",
+   "projektstøtte",
+   "skriftlig kommunikation",
+   "mundtlig kommunikation"
+  ],
+  "blurb": "Du løser alsidige administrative opgaver i sekretariatet, bl.a. planlægning af besøg, møder og arrangementer og praktiske opgaver i velkomstinitiativer for tilflyttere. Du indsamler viden og understøtter projekter på tværs af afdelingen.",
+  "deadlineAt": "2026-12-11T23:59:00+00:00",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "erhvervsøkonomi",
+   "jura",
+   "geografi",
+   "byplanlægning",
+   "kommunikation",
+   "socialvidenskab"
+  ],
+  "why": "Opgaverne kræver overblik over administration, projektarbejde og kommunal udvikling, hvilket passer til samfundsfaglige og økonomiske uddannelser.",
+  "openToAll": false
  }
 }

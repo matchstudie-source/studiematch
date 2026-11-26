@@ -687,41 +687,40 @@
   "danish": "no",
   "fam": "marketing",
   "sec": [
-   "datasci",
-   "software"
+   "software",
+   "bizdev"
   ],
   "famConf": "title",
   "skills": [
    "AI-værktøjer",
    "automatisering",
    "partnermarketing",
-   "prototyping",
-   "procesforbedring"
+   "prototyping"
   ],
   "industry": "Tech og software",
   "postedAt": "2025-10-20T06:40:27.080000+00:00",
   "deadlineAt": null,
   "src": "Virksomhedens rekrutteringssystem",
-  "blurb": "Du hjælper Partner-teamet med at designe, teste og implementere AI-baserede løsninger, fx ved at automatisere manuelle processer. Du arbejder også med at understøtte partnermarketing med bedre værktøjer.",
+  "blurb": "Du designer, tester og implementerer AI-baserede løsninger, der automatiserer manuelle processer i Partner-teamet. Du hjælper også med partnermarketing ved at bruge smartere værktøjer.",
   "req": null,
   "onlySchools": [],
   "reqStudies": [],
   "url": "https://jobs.lever.co/veo/76dfa53f-a63e-4ea4-a935-8119ff2bf6e0",
   "enrichedBy": "ai",
   "studies": [
-   "datalogi",
-   "it",
+   "markedsføringsøkonomi",
    "erhvervsøkonomi",
    "cand.merc",
-   "markedsføring",
-   "kommunikation"
+   "datalogi",
+   "informatik",
+   "it"
   ],
-  "why": "Jobbet kombinerer AI-værktøjer, automatisering og markedsføring, så det passer til studier med digitale, analytiske eller markedsrettede kompetencer.",
+  "why": "Jobbet kombinerer AI- og automatiseringsarbejde med markedsføring, så både it- og erhvervsfaglige uddannelser passer godt.",
   "openToAll": false,
   "id": "xd704d86fdb9f",
   "live": true,
-  "blurbEn": "You help the Partner team design, test and implement AI-based solutions, e.g. by automating manual processes. You also support partner marketing with better tools.",
-  "whyEn": "The job combines AI tools, automation and marketing, so it suits studies with digital, analytical or market-oriented skills."
+  "blurbEn": "You design, test, and implement AI-based solutions that automate manual processes in the Partner team. You also support partner marketing by using smarter tools.",
+  "whyEn": "The job combines AI and automation work with marketing, so it suits both IT and business-related degree programs well."
  },
  {
   "title": "Devoteam Cyber Trust | Cybersecurity Engineer (IAM) | IEFP Internship",
@@ -1228,52 +1227,6 @@
   "whyEn": "The job requires financial analysis, planning, and business understanding, which is the core of these economics programmes."
  },
  {
-  "title": "Working Student (m/w/d) Sales",
-  "kind": "studiejob",
-  "co": "Vestas",
-  "city": "Aarhus",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "no",
-  "fam": "salesops",
-  "sec": [
-   "bizdev",
-   "customer"
-  ],
-  "famConf": "title",
-  "skills": [
-   "MS Excel",
-   "MS Outlook",
-   "CRM-systemer",
-   "SharePoint",
-   "Tysk og engelsk"
-  ],
-  "industry": "Energi",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Du hjælper salgsteamet med kontraktdokumenter, projektbudgetter og kundekontakt. Du vedligeholder data i CRM-systemet og er med til at udvikle dokumentstyringen i SharePoint.",
-  "req": null,
-  "onlySchools": [],
-  "reqStudies": [],
-  "url": "https://careers.vestas.com/job/Berlin-Working-Student-%28mwd%29-Sales-BE-10963/1459986433/",
-  "enrichedBy": "ai",
-  "studies": [
-   "erhvervsøkonomi",
-   "ha",
-   "cand.merc",
-   "global business engineering",
-   "energiteknik"
-  ],
-  "why": "Jobbet kræver forretningsforståelse og viden om salg, projektøkonomi og administrative processer, hvilket passer til økonomi- og erhvervsuddannelser.",
-  "openToAll": false,
-  "id": "xeac90d2a8a1c",
-  "live": true,
-  "blurbEn": "You support the sales team with contract documents, project budgets, and customer contact. You maintain data in the CRM system and help develop document management in SharePoint.",
-  "whyEn": "The job requires business understanding and knowledge of sales, project economics, and administrative processes, which suits economics and vocational programmes."
- },
- {
   "title": "Praktikant til Anlægskommunikation",
   "kind": "praktik",
   "co": "Energinet",
@@ -1366,6 +1319,37 @@
   "whyEn": "The job requires professional knowledge of high-voltage power, power transmission and grid simulation, which is at the core of electrical and energy engineering programmes."
  },
  {
+  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
+  "kind": "studiejob",
+  "co": "Norlys",
+  "city": "Silkeborg",
+  "region": "oj",
+  "hMin": 15,
+  "hMax": 20,
+  "danish": "required",
+  "fam": "pmo",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Excel",
+   "Power BI",
+   "PowerPoint"
+  ],
+  "industry": "Energi",
+  "postedAt": "2026-11-03T00:00:00+00:00",
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
+  "req": null,
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
+  "enrichedBy": "regler",
+  "id": "x0da1049a63d3",
+  "live": true,
+  "blurbEn": "Can you see yourself in a student job where you get responsibility, influence and insight into project management?"
+ },
+ {
   "title": "Studentermedhjælper til Culture & Leadership",
   "kind": "studiejob",
   "co": "Norlys",
@@ -1396,37 +1380,6 @@
   "id": "x77933f416508",
   "live": true,
   "blurbEn": "Student assistant for culture, leadership and organisational development, Silkeborg | Expected start around February 2027. Would you like to help strengthen culture, leadership and organisational development in the Norlys Group?"
- },
- {
-  "title": "Studentermedhjælper til Project Management Office - få hands-on erfaring med kritisk infrastruktur",
-  "kind": "studiejob",
-  "co": "Norlys",
-  "city": "Silkeborg",
-  "region": "oj",
-  "hMin": 15,
-  "hMax": 20,
-  "danish": "required",
-  "fam": "pmo",
-  "sec": [],
-  "famConf": "title",
-  "skills": [
-   "Excel",
-   "Power BI",
-   "PowerPoint"
-  ],
-  "industry": "Energi",
-  "postedAt": "2026-11-03T00:00:00+00:00",
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Kan du se dig selv i et studiejob hvor du får ansvar, indflydelse og indblik i projektstyring?",
-  "req": null,
-  "onlySchools": [],
-  "reqStudies": [],
-  "url": "https://www.job-karriere.dk/Sinal/job/Silkeborg-Studentermedhj%C3%A6lper-til-Project-Management-Office-f%C3%A5-hands-on-erfaring-med-kritisk-infrastruktur-8600/1453883933/",
-  "enrichedBy": "regler",
-  "id": "x0da1049a63d3",
-  "live": true,
-  "blurbEn": "Can you see yourself in a student job where you get responsibility, influence and insight into project management?"
  },
  {
   "title": "Studentermedhjælper til Management Support i CTO Kontoret",
@@ -4255,39 +4208,6 @@
   "whyEn": "The job requires learning design, written communication, and internal communication, as covered by programs in pedagogy, communication, and business administration."
  },
  {
-  "title": "Mødebooker (studiejob), Tryg Privat",
-  "kind": "studiejob",
-  "co": "Alka",
-  "city": "Høje-Taastrup",
-  "region": "kbh",
-  "hMin": 15,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "customer",
-   "social"
-  ],
-  "famConf": "text",
-  "skills": [
-   "Løn",
-   "Kundeservice"
-  ],
-  "industry": "Pension og forsikring",
-  "postedAt": null,
-  "deadlineAt": null,
-  "src": "Virksomhedens karriereside",
-  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
-  "req": null,
-  "onlySchools": [],
-  "reqStudies": [],
-  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
-  "enrichedBy": "regler",
-  "id": "xc7e71abcfd04",
-  "live": true,
-  "blurbEn": "Are you looking for a student job that fits into your everyday life and also gives you experience you can take with you?"
- },
- {
   "title": "Studentermedhjælper til Kundefront Partnersalg",
   "kind": "studiejob",
   "co": "Alka",
@@ -4377,6 +4297,104 @@
   "live": true,
   "blurbEn": "You support the recruitment of student assistants and part-time staff, screen candidates, and conduct phone interviews. You also contribute to employer branding through events, school visits, and SoMe, and take part in projects that improve recruitment processes.",
   "whyEn": "Recruitment requires an understanding of people, organizations, and communication, and the posting lists HR, psychology, business, and communication as relevant backgrounds."
+ },
+ {
+  "title": "Mødebooker (studiejob), Tryg Privat",
+  "kind": "studiejob",
+  "co": "Alka",
+  "city": "Høje-Taastrup",
+  "region": "kbh",
+  "hMin": 15,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "hr",
+  "sec": [
+   "customer",
+   "social"
+  ],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "Kundeservice"
+  ],
+  "industry": "Pension og forsikring",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Leder du efter et studiejob, der passer ind i din hverdag – og som samtidig giver dig erfaring, du kan tage med videre?",
+  "req": null,
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://careers.tryg.com/Tryg/job/%C3%85rhus-N-M%C3%B8debooker-%28studiejob%29%2C-Tryg-Privat/1395019133/",
+  "enrichedBy": "regler",
+  "id": "xc7e71abcfd04",
+  "live": true,
+  "blurbEn": "Are you looking for a student job that fits into your everyday life and also gives you experience you can take with you?"
+ },
+ {
+  "title": "Audit & Assurance Praktikant 2027",
+  "kind": "praktik",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "finance",
+  "sec": [],
+  "famConf": "title",
+  "skills": [
+   "Regnskab",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Audit & Assurance Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din teoretiske…",
+  "req": null,
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://bdo.career.emply.com/ad/audit-assurance-praktikant-2027/gwnh3i",
+  "enrichedBy": "regler",
+  "id": "xca1a8d4ee87b",
+  "live": true,
+  "blurbEn": "Audit & Assurance Trainee 2027: You start at the BDO office on your first day and look forward to putting your theoretical knowledge into practice…"
+ },
+ {
+  "title": "Financial Outsourcing Praktikant 2027",
+  "kind": "praktik",
+  "co": "BDO Danmark",
+  "city": "København",
+  "region": "kbh",
+  "hMin": 37,
+  "hMax": 37,
+  "danish": "required",
+  "fam": "procurement",
+  "sec": [
+   "finance",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "Bogføring",
+   "Regnskab",
+   "Løn",
+   "R"
+  ],
+  "industry": "Revision og rådgivning",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Ledige stillinger Søg uopfordret Jobagent Ledige stillinger - Trainee Log ind Min profil Min profil Financial Outsourcing Praktikant 2027 Du træder ind på BDO-kontoret første dag og glæder dig til at prøve din…",
+  "req": null,
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://bdo.career.emply.com/ad/financial-outsourcing-praktikant-2027/o5ksyr",
+  "enrichedBy": "regler",
+  "id": "x5e77473a7a23",
+  "live": true,
+  "blurbEn": "Financial Outsourcing Trainee 2027: You start at the BDO office on your first day and look forward to putting your…"
  },
  {
   "title": "2 studentermedhjælpere til Group Finance",
@@ -6907,42 +6925,41 @@
   "danish": "no",
   "fam": "hr",
   "sec": [
-   "operations",
-   "bi"
+   "bi",
+   "operations"
   ],
   "famConf": "text",
   "skills": [
    "Excel",
    "dataanalyse",
    "procesforbedring",
-   "dokumentation",
-   "engelsk"
+   "procesdokumentation",
+   "engelsk kommunikation"
   ],
   "industry": "Energi",
   "postedAt": "2026-11-26T00:00:00+00:00",
-  "deadlineAt": "2026-12-13T23:59:00+00:00",
+  "deadlineAt": null,
   "src": "Virksomhedens karriereside",
-  "blurb": "Du opdaterer, validerer og analyserer data om medarbejdere og løn, herunder berettigelse og omkostningsberegninger. Du vedligeholder procesdokumentation og hjælper ansatte og ledere med spørgsmål om HR-processer og datafejl.",
+  "blurb": "Du opdaterer, validerer og analyserer medarbejder- og lønrelaterede data, herunder berettigelse og omkostningsberegninger. Du vedligeholder procesdokumentation og vejledninger og hjælper medarbejdere og ledere med spørgsmål om HR-processer.",
   "req": null,
   "onlySchools": [],
   "reqStudies": [],
   "url": "https://applyforjob.orsted.com/job/Gentofte-Student-Assistant/1378569457/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
   "enrichedBy": "ai",
   "studies": [
-   "hr",
-   "personaleledelse",
    "erhvervsøkonomi",
+   "ha",
    "cand.merc",
-   "psykologi",
-   "business analytics",
-   "datalogi"
+   "personaleledelse",
+   "økonomi",
+   "statistik"
   ],
-  "why": "Jobbet kombinerer HR-processer med dataanalyse og Excel, hvilket passer til HR-, økonomi- og analysefag.",
+  "why": "Jobbet kræver analytisk arbejde med HR- og løndata i Excel samt forståelse for procesforbedring, hvilket passer til økonomi- og HR-uddannelser.",
   "openToAll": false,
   "id": "x7161718b6f7e",
   "live": true,
-  "blurbEn": "You update, validate, and analyze employee and payroll data, including eligibility and cost calculations. You maintain process documentation and help employees and managers with HR process questions and data errors.",
-  "whyEn": "The job combines HR processes with data analysis and Excel, which suits students in HR, economics, and analytics."
+  "blurbEn": "You update, validate, and analyze employee and payroll-related data, including eligibility and cost calculations. You maintain process documentation and guidelines, and help employees and managers with questions about HR processes.",
+  "whyEn": "The job requires analytical work with HR and payroll data in Excel, as well as an understanding of process improvement, which suits economics and HR degree programs."
  },
  {
   "title": "Student Assistant - Change & Business Operations",
@@ -7195,6 +7212,54 @@
   "blurbEn": "Are you our new ambitious student assistant that wants to help us in the R&D department and gain hands-on experience working in the Medico Industry?"
  },
  {
+  "title": "To studentermedhjælpere til Ballerups Kommunale Ungeindsats i Center for Social og Arbejdsmarked - for socialrådgiverstuderende",
+  "kind": "studiejob",
+  "co": "Ballerup Kommune",
+  "city": "Ballerup",
+  "region": "kbh",
+  "hMin": 10,
+  "hMax": 15,
+  "danish": "required",
+  "fam": "social",
+  "sec": [
+   "public",
+   "education"
+  ],
+  "famConf": "title",
+  "skills": [
+   "sagsbehandling",
+   "dokumentation",
+   "motiverende samtaler",
+   "IT-kompetencer",
+   "tværfagligt samarbejde"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-11-30T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du assisterer sagsbehandlere i ungeindsatsen for unge mellem 15 og 30 år uden uddannelse eller job, blandt andet med dokumentation, koordinering af forløb og forberedelse af tværfaglige møder. Du deltager også i motiverende samtaler og får indblik i kommunale myndighedsopgaver og lovgivning.",
+  "req": "socialraadgiver",
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://job.ballerup.dk/ad/to-studentermedhjaelpere-til-ballerups-kommunale-ungeindsats-i-center-for-social-o/idlny1",
+  "enrichedBy": "ai",
+  "studies": [
+   "socialrådgiver",
+   "socialt arbejde",
+   "socialpædagogik",
+   "pædagogik",
+   "psykologi",
+   "sociologi",
+   "jura"
+  ],
+  "why": "Jobbet giver praktisk indsigt i socialrådgivernes sagsbehandling og myndighedsarbejde med unge, hvilket passer direkte til socialfaglige uddannelser.",
+  "openToAll": false,
+  "id": "xaf5d54f2f9c9",
+  "live": true,
+  "blurbEn": "You assist caseworkers in the youth initiative for young people aged 15 to 30 who are not in education or employment, including documentation, coordinating programmes and preparing interdisciplinary meetings. You also take part in motivational conversations and gain insight into municipal authority tasks and legislation.",
+  "whyEn": "The job gives practical insight into social workers' case management and authority work with young people, which fits directly with social work programmes."
+ },
+ {
   "title": "Student Assistant, Projects & Communications at Cellerator",
   "kind": "studiejob",
   "co": "Novo Nordisk Fonden",
@@ -7326,6 +7391,36 @@
   "blurbEn": "Open positions Log in My profile My profile Student assistant for the leisure time scheme. Do you want to help open the door to good leisure communities for children and young people in Glostrup? A leisure community can mean a lot."
  },
  {
+  "title": "Studerende/ufaglærte til Nattevagtsteamet",
+  "kind": "studiejob",
+  "co": "Haderslev Kommune",
+  "city": "Haderslev",
+  "region": "sjy",
+  "hMin": 0,
+  "hMax": 0,
+  "danish": "required",
+  "fam": "health",
+  "sec": [],
+  "famConf": "text",
+  "skills": [
+   "Løn",
+   "R"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": null,
+  "src": "Virksomhedens karriereside",
+  "blurb": "Jobagent Log ind Min profil Min profil Studerende/ufaglærte til Nattevagtsteamet Har du sabbatår eller er du studerende og har du lyst til at arbejde med pleje for borgere i eget hjem eller på center? Så se her.",
+  "req": null,
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://haderslev.career.emply.com/ad/studerende-ufaglaerte-til-nattevagtsteamet/aw4fkr",
+  "enrichedBy": "regler",
+  "id": "x5c89c9f2f18f",
+  "live": true,
+  "blurbEn": "Job agent Log in My profile My profile Student/unskilled for the Night Shift Team. Do you have a gap year or are you a student who wants to work with care for citizens in their own homes or at a centre? Then look here."
+ },
+ {
   "title": "Studentermedhjælper søges til myndighedsopgaver på miljøområdet i Mariagerfjord Kommune",
   "kind": "studiejob",
   "co": "Mariagerfjord Kommune",
@@ -7370,6 +7465,54 @@
   "live": true,
   "blurbEn": "Student job as student assistant with authority tasks in the environmental area at Mariagerfjord Municipality. The posting does not give any specific work tasks.",
   "whyEn": "Public authority tasks in the environmental field require professional knowledge of environmental law, nature and planning, which law and science students can use."
+ },
+ {
+  "title": "Studentermedhjælper til Sekretariat, Strategi og Vækst",
+  "kind": "studiejob",
+  "co": "Morsø Kommune",
+  "city": "Morsø",
+  "region": "nj",
+  "hMin": 10,
+  "hMax": 10,
+  "danish": "required",
+  "fam": "public",
+  "sec": [
+   "strategy",
+   "operations"
+  ],
+  "famConf": "title",
+  "skills": [
+   "koordinering",
+   "administration",
+   "projektstøtte",
+   "skriftlig kommunikation",
+   "mundtlig kommunikation"
+  ],
+  "industry": "Offentlig",
+  "postedAt": null,
+  "deadlineAt": "2026-12-11T23:59:00+00:00",
+  "src": "Virksomhedens karriereside",
+  "blurb": "Du løser alsidige administrative opgaver i sekretariatet, bl.a. planlægning af besøg, møder og arrangementer og praktiske opgaver i velkomstinitiativer for tilflyttere. Du indsamler viden og understøtter projekter på tværs af afdelingen.",
+  "req": null,
+  "onlySchools": [],
+  "reqStudies": [],
+  "url": "https://mors.career.emply.com/ad/studentermedhjaelper-til-sekretariat-strategi-og-vaekst/suwsbz",
+  "enrichedBy": "ai",
+  "studies": [
+   "statskundskab",
+   "erhvervsøkonomi",
+   "jura",
+   "geografi",
+   "byplanlægning",
+   "kommunikation",
+   "socialvidenskab"
+  ],
+  "why": "Opgaverne kræver overblik over administration, projektarbejde og kommunal udvikling, hvilket passer til samfundsfaglige og økonomiske uddannelser.",
+  "openToAll": false,
+  "id": "xcddfb621cf6c",
+  "live": true,
+  "blurbEn": "You handle varied administrative tasks in the secretariat, including planning visits, meetings, and events, and practical tasks in welcome initiatives for newcomers. You gather knowledge and support projects across the department.",
+  "whyEn": "The tasks require an overview of administration, project work, and municipal development, which suits social science and economics degree programs."
  },
  {
   "title": "uddannet SOSU, ufaglært, efterlønner eller studerende",
@@ -12129,63 +12272,6 @@
   "live": true,
   "blurbEn": "You support the global NINJAGO marketing team with campaigns, product launches, and fan events. You also track marketing results and create presentations and sales materials for internal teams.",
   "whyEn": "The employer is looking for students in marketing and business, languages and communication, engineering and technology."
- },
- {
-  "studies": [
-   "kommunikation",
-   "journalistik",
-   "medie",
-   "sprog",
-   "engelsk",
-   "tysk",
-   "fransk",
-   "spansk",
-   "statskundskab",
-   "samfundsvidenskab",
-   "sociologi",
-   "økonomi",
-   "politik",
-   "antropologi",
-   "samfundsfag",
-   "socialvidenskab"
-  ],
-  "why": "Arbejdsgiveren søger studerende inden for sprog og kommunikation, samfundsvidenskab.",
-  "catFam": true,
-  "title": "Studentermedhjælper i Jobcenter Albertslund (20-30 timer ugentligt)",
-  "kind": "studiejob",
-  "co": "Albertslund Kommune",
-  "city": "Albertslund",
-  "region": "kbh",
-  "hMin": 20,
-  "hMax": 30,
-  "danish": "required",
-  "fam": "hr",
-  "sec": [
-   "social",
-   "legal"
-  ],
-  "famConf": "title",
-  "skills": [
-   "sagsbehandling",
-   "lovgivning",
-   "dokumentation",
-   "mundtlig og skriftlig kommunik",
-   "samarbejde"
-  ],
-  "industry": "Jobportal for studerende",
-  "postedAt": null,
-  "deadlineAt": "2026-12-13T00:00:00+00:00",
-  "src": "StuderendeOnline.dk",
-  "blurb": "Du forbereder borgersager, indhenter oplysninger og journalfører i fagsystemer, og følger op på virksomhedsrettede indsatser og lønnede timer. Med tiden overtager du selvstændig sagsbehandling for borgere langt fra arbejdsmarkedet.",
-  "req": null,
-  "onlySchools": [],
-  "url": "https://studerendeonline.dk/job/3167211/?utm_source=studiematch.dk",
-  "enrichedBy": "ai",
-  "openToAll": false,
-  "id": "xe33566712006",
-  "live": true,
-  "whyEn": "The employer is looking for students in language and communication, social science.",
-  "blurbEn": "You prepare citizen cases, gather information, and record entries in case-management systems, and follow up on business-oriented initiatives and paid hours. Over time, you take on independent case handling for citizens far from the labour market."
  },
  {
   "studies": [
@@ -26678,51 +26764,6 @@
   "live": true,
   "blurbEn": "You register and process applications to DTU's bachelor's programs and assess whether applicants meet the admission requirements, including foreign diplomas. You answer emails and phone calls from applicants in Danish and English.",
   "whyEn": "The employer is looking for students in administration."
- },
- {
-  "studies": [
-   "administration",
-   "administrationsøkonom",
-   "offentlig administration"
-  ],
-  "why": "Arbejdsgiveren søger studerende inden for administration.",
-  "catFam": true,
-  "title": "To studentermedhjælpere til Ballerups Kommunale Ungeindsats i Center for Social og Arbejdsmarked - for socialrådgiverstuderende",
-  "kind": "studiejob",
-  "co": "Ballerup Kommune",
-  "city": "Ballerup",
-  "region": "kbh",
-  "hMin": 10,
-  "hMax": 15,
-  "danish": "required",
-  "fam": "social",
-  "sec": [
-   "operations",
-   "legal"
-  ],
-  "famConf": "title",
-  "skills": [
-   "sagsbehandling",
-   "dokumentation",
-   "IT-kompetencer",
-   "motiverende samtaler",
-   "tværfagligt samarbejde"
-  ],
-  "industry": "Jobportal for studerende",
-  "postedAt": null,
-  "deadlineAt": "2026-11-30T00:00:00+00:00",
-  "src": "StuderendeOnline.dk",
-  "blurb": "Du assisterer sagsbehandlere med dokumentation, koordinering af forløb og administrative opgaver for unge mellem 15 og 30 år, der står uden uddannelse eller job. Du deltager i motiverende samtaler og forbereder materiale til tværfaglige møder.",
-  "req": "socialraadgiver",
-  "onlySchools": [],
-  "reqStudies": [],
-  "url": "https://studerendeonline.dk/job/3161158/?utm_source=studiematch.dk",
-  "enrichedBy": "ai",
-  "openToAll": false,
-  "id": "x1554aebe06ac",
-  "live": true,
-  "whyEn": "The employer is looking for students in administration.",
-  "blurbEn": "You assist caseworkers with documentation, process coordination and administrative tasks for young people aged 15 to 30 who are not in education or employment. You take part in motivational conversations and prepare material for interdisciplinary meetings."
  },
  {
   "studies": [
