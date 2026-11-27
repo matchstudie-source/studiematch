@@ -15,13 +15,13 @@ Bruges til at tjekke, om filteret er for strengt.
 | Region Syddanmark | Bliv pædagogisk assistent i regionens interne vikarordning - og få værdifuld erfaring fra socialområdet | ikke et studiejob |
 | Region Syddanmark | Introduktionsstilling, intern medicin, Geriatrisk Afdeling G, Odense | ikke et studiejob |
 | Region Syddanmark | Studentermedhjælper til Bygningsdrift og -service | ikke et studiejob |
+| ALK | Senior Director, Key Account, International Markets | ikke et studiejob |
 | Vestas | Lead / Assistant Lead Engineer - Power System Studies | ikke et studiejob |
 | HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
 | Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
 | Statslige arbejdsgivere | Engagerede medarbejdere til politikudvikling for landdistrikter og internationale opgaver i By-, Land- og Transportministeriets departement | ikke et studiejob |
 | Statslige arbejdsgivere | Jurist med erfaring indenfor moms til intern rådgivningsfunktion | ikke et studiejob |
-| Statslige arbejdsgivere | Kontorchef til International Arbejdskraft og EU-ophold (IAEU) i Udlændinge- og Integrationsministeriets departement | ikke et studiejob |
 | Statslige arbejdsgivere | Midlertidig ansat til Internationale Ægteskaber | ikke et studiejob |
 | Statslige arbejdsgivere | Virksomhedspraktik i en af Skatteforvaltningens styrelser - uopfordret ansøgning | ikke et studiejob |
 | ATP | Sagsbehandler til international kontrol (projektansættelse – 1 år) | ikke et studiejob |
