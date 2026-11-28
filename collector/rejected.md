@@ -18,7 +18,6 @@ Bruges til at tjekke, om filteret er for strengt.
 | ALK | Senior Director, Key Account, International Markets | ikke et studiejob |
 | Vestas | Lead / Assistant Lead Engineer - Power System Studies | ikke et studiejob |
 | HOFOR | To maskinmestre til bachelorpraktik i HOFORs fjernvarmeafdeling | ikke et studiejob |
-| Statslige arbejdsgivere | Brænder du for internationalt samarbejde? Og vil du være med til at sætte retningen for fremtidens EU-politik inden for forskning og innovation? | ikke et studiejob |
 | Statslige arbejdsgivere | Du skaber rammen - de finder retningen. Bliv studie- og karrierevejleder (barselsvikariat) | ikke et studiejob |
 | Statslige arbejdsgivere | Engagerede medarbejdere til politikudvikling for landdistrikter og internationale opgaver i By-, Land- og Transportministeriets departement | ikke et studiejob |
 | Statslige arbejdsgivere | Jurist med erfaring indenfor moms til intern rådgivningsfunktion | ikke et studiejob |
